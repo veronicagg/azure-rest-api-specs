@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "gatewayName": "rameshr12",
+    "api-version": "2016-07-01-preview",
+    "$expand": "status"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/rameshr12",
+        "name": "rameshr12",
+        "type": "microsoft.servermanagement/gateways",
+        "location": "centralus",
+        "etag": "W/\"datetime'2016-10-14T01%3A13%3A59.8545155Z'\"",
+        "properties": {
+          "created": "2016-10-14T01:13:56.0773541Z",
+          "updated": "2016-10-14T01:13:56.0773541Z",
+          "autoUpgrade": "On",
+          "upgradeMode": "Automatic",
+          "desiredVersion": null,
+          "minimumVersion": "1.0.1547.0",
+          "instances": [
+            {
+              "availableMemoryMByte": 23633,
+              "gatewayWorkingSetMByte": 120.086525,
+              "totalCpuUtilizationPercent": 5.313473,
+              "gatewayCpuUtilizationPercent": 1.14499533,
+              "gatewayVersion": "1.0.1773.0",
+              "friendlyOsName": "Microsoft Windows 10 Enterprise",
+              "installedDate": "2016-10-07T19:19:00Z",
+              "logicalProcessorCount": 12,
+              "name": "RAMESHR12",
+              "gatewayId": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/rameshr12",
+              "allowGatewayGroupPolicyStatus": true,
+              "requireMfaGroupPolicyStatus": false,
+              "encryptionCertificateThumbprint": "69A20C48806D128935AD614A1C5A68769B6BAF99",
+              "secondaryEncryptionCertificateThumbprint": null,
+              "encryptionJwk": {
+                "kty": "RSA",
+                "alg": "RSA-OAEP",
+                "e": "AQAB",
+                "n": "uqGwd2gWUuu_G-OGAkujW6JSPth7nxT_LEO4TJkrCx4mLxOvlYPHyCf9I6eN9shI2GfFlMxGo-A6hoeoI_T2d29I6oCONLbqVoF0cl4mI7PEZ_sverUpOWN8vvwZMXtM9dBuhmqDmu_ZqY8DET4pf4e3nolbyXxdUmZDCMJBj_FPHin2cbaCJlS-EH9bXJlmA2aSFchoBorf2r0iACNYm_TIerS9tQ2TSWYseUtQ36h0DOKbaB9xD9rZv_JxeWtI2O0zEM3m622AbDsirtXb8eu6aNe_5EH5gbPTxSBJtuuRoyJjuqKsGaLtph0_-VBM6FvJXQOQSyKctujqkkGHlQ"
+              },
+              "secondaryEncryptionJwk": null,
+              "upgradeMode": "Automatic",
+              "groupPolicyError": "",
+              "statusUpdated": "2016-10-21T20:49:59Z"
+            }
+          ],
+          "activeMessageCount": 0,
+          "latestPublishedMsiVersion": "1.0.1645.0",
+          "publishedTimeUtc": "2016-09-12T17:52:47Z"
+        }
+      }
+    }
+  }
+}

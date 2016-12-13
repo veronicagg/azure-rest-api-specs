@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Application Insights Component Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage Application Insights components, but not access to them.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Insights/components/*",
+                "Microsoft.Insights/webtests/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:19.4048058Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/ae349356-3a1b-4a5e-921d-050484c6347e",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "ae349356-3a1b-4a5e-921d-050484c6347e"
+      }
+    }
+  }
+}

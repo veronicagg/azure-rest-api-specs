@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6099",
+    "eventHubName": "sdk-EventHub-5084",
+    "authorizationRuleName": "sdk-Authrules-8822",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "primaryConnectionString": "Endpoint=sb://sdk-namespace-6099.servicebus.windows.net/;SharedAccessKeyName=sdk-Authrules-8822;SharedAccessKey=xuV1mZMGfpKNmP2D+EQREHeryGR51piEhQuIih82JwM=;EntityPath=sdk-EventHub-5084",
+        "secondaryConnectionString": "Endpoint=sb://sdk-namespace-6099.servicebus.windows.net/;SharedAccessKeyName=sdk-Authrules-8822;SharedAccessKey=FMIa0+LV12QKc2wnD9rErAiG9qzQ9n0Xw1+I8L4cqXY=;EntityPath=sdk-EventHub-5084",
+        "primaryKey": "xuV1mZMGfpKNmP2D+EQREHeryGR51piEhQuIih82JwM=",
+        "secondaryKey": "FMIa0+LV12QKc2wnD9rErAiG9qzQ9n0Xw1+I8L4cqXY=",
+        "keyName": "sdk-Authrules-8822"
+      }
+    }
+  }
+}

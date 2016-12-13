@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg8311",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": []
+      }
+    }
+  }
+}

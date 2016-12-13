@@ -1,0 +1,55 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2016-01-01",
+    "subscriptionId": "subcriptionID",
+    "createUpdateParameters": {
+        "location": "West US",
+        "tags": {
+            "key": "value"
+        },
+        "properties": {
+            "databaseAccountOfferType": "Standard",
+            "consistencyPolicy": {
+                "defaultConsistencyLevel": "Eventual",
+                "maxStalenessPrefix": 100,
+                "maxStalenessIntervalInSeconds": 10
+            },
+            "locations": [
+                {
+                    "locationName": "West US",
+                    "failoverPriority": 0
+                },
+                {
+                    "locationName": "East US",
+                    "failoverPriority": 1
+                }
+            ]
+        }
+    }
+  },
+  "responses":{
+    "200":{ 
+      "body": {
+        "id": "/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.DocumentDB/databaseAccounts/<accountName>",
+        "name": "<accountName>",
+        "location": "West US",
+        "type": "Microsoft.DocumentDB/databaseAccounts",
+        "kind": "GlobalDocumentDB",
+        "tags": {},
+        "properties": {
+            "provisioningState": "Initializing",
+            "databaseAccountOfferType": "Standard",
+            "consistencyPolicy": {
+                "defaultConsistencyLevel": "Eventual",
+                "maxIntervalInSeconds": 5,
+                "maxStalenessPrefix": 100
+            }
+	    }
+      }
+    }
+  }
+}
+
+

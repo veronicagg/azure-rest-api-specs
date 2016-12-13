@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "a064e0b9-e6c9-4a0d-b993-22efebefe2af",
+    "resourceGroupName": "res2193",
+    "accountName": "nonExistedAccountName",
+    "api-version": "2016-02-01-preview",
+    "body": {}
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.CognitiveServices/accounts/nonExistedAccountName' under resource group 'res2193' was not found."
+        }
+      }
+    }
+  }
+}

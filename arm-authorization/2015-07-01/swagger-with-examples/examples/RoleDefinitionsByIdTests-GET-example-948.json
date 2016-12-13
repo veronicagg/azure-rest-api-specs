@@ -1,0 +1,48 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "SQL Server Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage SQL servers and databases, but not access to them, and not their security -related policies.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Sql/servers/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": [
+                "Microsoft.Sql/servers/auditingPolicies/*",
+                "Microsoft.Sql/servers/databases/auditingPolicies/*",
+                "Microsoft.Sql/servers/databases/connectionPolicies/*",
+                "Microsoft.Sql/servers/databases/dataMaskingPolicies/*",
+                "Microsoft.Sql/servers/databases/securityMetrics/*",
+                "Microsoft.Sql/servers/databases/securityAlertPolicies/*"
+              ]
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:43.3542035Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/6d8ee4ec-f05a-4a1d-8b00-a9b17e38b437",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "6d8ee4ec-f05a-4a1d-8b00-a9b17e38b437"
+      }
+    }
+  }
+}

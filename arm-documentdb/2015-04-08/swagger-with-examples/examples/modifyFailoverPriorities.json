@@ -1,0 +1,30 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2015-04-08",
+    "subscriptionId": "subcriptionID",
+    "failoverParameters": [
+        {
+          "locationName": "West US",
+          "failoverPriority": 1
+        },
+        {
+          "locationName": "East US",
+          "failoverPriority": 0
+        }
+      ]
+  },
+  "responses":{
+    "202":{ 
+      "body": {
+        "status": "Enqueued",
+        "error": {}
+      }
+    },
+    "400":{},
+    "204": {}
+  }
+}
+
+

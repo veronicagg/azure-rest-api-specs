@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar4881",
+    "vmScaleSetName": "vmss9482",
+    "instanceId": "0",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$filter": "properties/latestModelApplied%20eq%20true",
+    "$expand": "instanceView",
+    "$select": "instanceView"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

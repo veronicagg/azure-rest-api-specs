@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg3523",
+    "networkInterfaceName": "azsmnet2464",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet2464",
+        "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkInterfaces/azsmnet2464",
+        "etag": "W/\"c0b01fc5-44d6-48ef-af67-f01f7b4cd730\"",
+        "location": "eastus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "80f31d74-e2b0-49de-886d-ab92481c1044",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet9385",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkInterfaces/azsmnet2464/ipConfigurations/azsmnet9385",
+              "etag": "W/\"c0b01fc5-44d6-48ef-af67-f01f7b4cd730\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.4",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/virtualNetworks/azsmnet7612/subnets/azsmnet1289"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "noknqvtjyfbuhghch5kfw3ncdf.bx.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false,
+          "networkSecurityGroup": {
+            "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980"
+          }
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

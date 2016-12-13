@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "destinationPath": "SDKTestFolder011108%2FSDKTestConcatFile01.txt",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSCONCAT",
+    "write": "true"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

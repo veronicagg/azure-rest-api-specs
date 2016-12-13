@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg8698",
+    "localNetworkGatewayName": "azsmnet6398",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "tags": {
+        "test": "value"
+      },
+      "properties": {
+        "localNetworkAddressSpace": {
+          "addressPrefixes": [
+            "192.168.0.0/16"
+          ]
+        },
+        "gatewayIpAddress": "192.168.3.4"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet6398",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg8698/providers/Microsoft.Network/localNetworkGateways/azsmnet6398",
+        "etag": "W/\"6d74fd79-b320-4655-88d4-7ca8b3d60488\"",
+        "type": "Microsoft.Network/localNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "test": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "daf1ad3d-f575-4d15-84e5-170a27964e4d",
+          "localNetworkAddressSpace": {
+            "addressPrefixes": [
+              "192.168.0.0/16"
+            ]
+          },
+          "gatewayIpAddress": "192.168.3.4"
+        }
+      }
+    }
+  }
+}

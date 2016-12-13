@@ -1,0 +1,1632 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "vmId": "57c173d4-eb47-4c7f-8397-6b7e26be8f0b",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.1-LTS",
+                  "version": "14.04.201409090"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "cli50269ed35be5357b-os-1455811558436",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://xplatstdocker8501.blob.core.windows.net/xplatscntdocker6428/cli50269ed35be5357b-os-1455811558436.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "xplatvmdocker9845",
+                "adminUsername": "azureuser",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/azureuser/.ssh/authorized_keys",
+                        "keyData": "MIID/zCCAuegAwIBAgIJAMUAa+XVLvAeMA0GCSqGSIb3DQEBBQUAMIGVMQswCQYD\r\nVQQGEwJJbjESMBAGA1UECAwJS2FybmF0YWthMRIwEAYDVQQHDAlCYW5nYWxvcmUx\r\nEDAOBgNVBAoMB2JyaWxsaW8xEjAQBgNVBAsMCW1pY3Jvc29mdDEQMA4GA1UEAwwH\r\nYnJpbGxpbzEmMCQGCSqGSIb3DQEJARYXc3JlZWthbnRoYnNAeWFob28uY28uaW4w\r\nHhcNMTUwMzA1MTE1MzEyWhcNMTYwMzA0MTE1MzEyWjCBlTELMAkGA1UEBhMCSW4x\r\nEjAQBgNVBAgMCUthcm5hdGFrYTESMBAGA1UEBwwJQmFuZ2Fsb3JlMRAwDgYDVQQK\r\nDAdicmlsbGlvMRIwEAYDVQQLDAltaWNyb3NvZnQxEDAOBgNVBAMMB2JyaWxsaW8x\r\nJjAkBgkqhkiG9w0BCQEWF3NyZWVrYW50aGJzQHlhaG9vLmNvLmluMIIBIjANBgkq\r\nhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyUNKaOuT0NK+S8Ck81zy9xJ6hXfZvAC6\r\nlhbmf/6s/WVimJ/TX5NMhQJwC9k6ZIF92KfYrojHNvHDufSZ3EtKUVwRFCDjmgMT\r\nDL09WkGaZt7gROYFK0iZ4KrYGovUwlwum9fHB24OJiOV4bi0ek62/rHx9fjYZpvp\r\naIH2PV/hN8SCZ0x7HJMberD4gVoU/Kv42nNvwjLUW6IZfVx/Gv5OeFDtWHfSvUEF\r\ndadHKTPn3Ab20Iu6gZIbLO9Vuf38/IpaYGfnFCouHdzmiTiLieYNe3CUPcOJNSv7\r\n1G8KYpx3uNJRkJPab5OsRyJw75Gvzkr9OgaPss9tVD6Gt68u3WQtVQIDAQABo1Aw\r\nTjAdBgNVHQ4EFgQUogvhXB+xZ2JJPfLO6cVs4ForzscwHwYDVR0jBBgwFoAUogvh\r\nXB+xZ2JJPfLO6cVs4ForzscwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOC\r\nAQEAdDj7qUNJ45xlF5cjd+4x5NHvAD1VTjOKu+Xh/uzSSjXqB2F0aOMWA9lx0qaQ\r\noJgHkGxj3zz/W7ik/cVGL2O+vRIOKv/y0OPogEmS3Hw+P+O6OGE7x1G6YN0zLVoL\r\nu4BN/BEYmjttxM9I7qqL7C5cJoE+K3s/w1/pt/68ohJcr7F9Ohi7cso62xuGY1Rm\r\nksAh2EUDsU9JV/P+C9AMpLSrb03JJYzVj4w1RHbrmw2AjFyGXdQYkggyXisg+Ifr\r\n5gbNN7HigpHf7b2i3CQBUqp9m23frh5AhnLI2qp3UXgc52U5ieLdi/t6j0TTZqqY\r\nHhHqofKrj938HHlBNpC5/LVh3w==\r\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "properties": {},
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/xplatTestGVMDocker2951/providers/Microsoft.Network/networkInterfaces/xplatnicdocker3887"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://xplatstdocker8501.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/XPLATTESTGVMDOCKER2951/providers/Microsoft.Compute/virtualMachines/xplatvmdocker9845/extensions/DockerExtension"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/XPLATTESTGVMDOCKER2951/providers/Microsoft.Compute/virtualMachines/xplatvmdocker9845",
+            "name": "xplatvmdocker9845",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "eastus",
+            "tags": {}
+          },
+          {
+            "properties": {
+              "vmId": "ffe57dd9-bb61-4bc2-b1e9-ff8f648774e6",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "12.04.5-LTS",
+                  "version": "12.04.201605160"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm2-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorageuom3wdvopff6i.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm2-cli-smoke-test-20160601-123645",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm2-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm2-cli-smoke-test-20160601-123645",
+            "name": "vm2-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "8303ca59-8d25-48a6-97a6-a08a47195ab8",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "15.10",
+                  "version": "15.10.201605160"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm3-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorageht2sbwwjtcuv2.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm3-cli-smoke-test-20160601-123645",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm3-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm3-cli-smoke-test-20160601-123645",
+            "name": "vm3-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "202a94a0-eb92-43ff-be8f-1772b58706b6",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "16.04.0-LTS",
+                  "version": "16.04.201605161"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm4-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragepevbwpj6eng4a.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm4-cli-smoke-test-20160601-123645",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm4-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm4-cli-smoke-test-20160601-123645",
+            "name": "vm4-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "b0813608-62ef-4db9-9fd4-db093de79c93",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "6.5",
+                  "version": "6.5.20160309"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm5-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragenxizg4rz3dwuq.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm5-cli-smoke-test-20160601-123645",
+                "adminUsername": "centos",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/centos/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm5-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm5-cli-smoke-test-20160601-123645",
+            "name": "vm5-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "5252972e-2c8a-4923-b0c9-d719e1c48629",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "6.6",
+                  "version": "6.6.20160309"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm6-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragepk5l6g6gv3lco.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm6-cli-smoke-test-20160601-123645",
+                "adminUsername": "centos",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/centos/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm6-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm6-cli-smoke-test-20160601-123645",
+            "name": "vm6-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "f0eff617-393d-426f-a04f-f131582fcb29",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "6.7",
+                  "version": "6.7.20160310"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm7-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragetygu7a2u4w5ss.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm7-cli-smoke-test-20160601-123645",
+                "adminUsername": "centos",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/centos/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm7-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm7-cli-smoke-test-20160601-123645",
+            "name": "vm7-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "ded236f1-c124-4ac6-b3c7-06fdfdab9239",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "7.1",
+                  "version": "7.1.20160308"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm8-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorage632dh6kdlqse6.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm8-cli-smoke-test-20160601-123645",
+                "adminUsername": "centos",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/centos/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm8-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm8-cli-smoke-test-20160601-123645",
+            "name": "vm8-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "5c10a0d7-2a46-4d6a-8a32-dbfbd5781365",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "7.2",
+                  "version": "7.2.20160308"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskvm9-cli-smoke-test-20160601-123645",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorage7jvlrb4f7w4ka.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "vm9-cli-smoke-test-20160601-123645",
+                "adminUsername": "centos",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/centos/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cli-smoke-test-20160601-123645/providers/Microsoft.Network/networkInterfaces/vm9-cli-smoke-test-20160601-123645VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLI-SMOKE-TEST-20160601-123645/providers/Microsoft.Compute/virtualMachines/vm9-cli-smoke-test-20160601-123645",
+            "name": "vm9-cli-smoke-test-20160601-123645",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "b3d0ec2e-db49-4737-badd-b26386d69594",
+              "hardwareProfile": {
+                "vmSize": "Standard_D1"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "15.10",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "cli583383e3aea1dc4a-os-1459451313753",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://cli36503979831772408646.blob.core.windows.net/vhds/cli583383e3aea1dc4a-os-1459451313753.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "clitele",
+                "adminUsername": "cliteleuser",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cliTeleBenchRG/providers/Microsoft.Network/networkInterfaces/clite-westu-3650397983-nic"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://cli36503979831772408646.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLITELEBENCHRG/providers/Microsoft.Compute/virtualMachines/clitele",
+            "name": "clitele",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {}
+          },
+          {
+            "properties": {
+              "vmId": "26cb36fe-59f1-4a0e-8644-0fafc3ea3b4b",
+              "hardwareProfile": {
+                "vmSize": "Standard_A3"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServerHPCPack",
+                  "offer": "WindowsServerHPCPack",
+                  "sku": "2012R2CN",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "windows-ext",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://clitestrgvmextension7420.blob.core.windows.net/vhds/windows-ext201649163924.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "windows-ext",
+                "adminUsername": "windows",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/cliTestRg_VMExtensions/providers/Microsoft.Network/networkInterfaces/windows-ext304"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://clitestrgvmextension7420.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CLITESTRG_VMEXTENSIONS/providers/Microsoft.Compute/virtualMachines/windows-ext",
+            "name": "windows-ext",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "vmId": "0262d3fe-529a-44f9-acd4-8d980ce2b4af",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskderekdemovm",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragerd5jas7girqg4.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "derekdemovm",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCpEBY+tpm1FwEHCjOcTpHkU/OxERszsj2n5dDdTFmk5vRRhkvU05KQe3ZqrqZkqm6bhBUMLgECv0/cG9GERfQ3HGCgqmadqfP6uvKNaR8hbMxqBCDZuil7LbdEKxBUJH7P5AFto7quukkfqUXSWaWUNJviPKgTXjV/drapMEUzkSHPrKeEQn3UewYVKEBAvECcT/ZaM15QYeZsVDTtnHfg0oPmzyqozuC6uq6+agbdki2xhd0XFb8cjOFUJ9iX04SZ5HstPWsMIZBXd2yef7mr9R0Zi3qLJp3j8fs2rIWP3KGCiw4Fr5F419Bw0oFNqSO1kJHic5WdvbaueC7wHn19 root@af1c6ebc5f02\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/derekdemo/providers/Microsoft.Network/networkInterfaces/VMNicderekdemovm"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/DEREKDEMO/providers/Microsoft.Compute/virtualMachines/derekdemovm",
+            "name": "derekdemovm",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "28e3d6ff-aa51-4a46-af31-5a979359fffb",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskhelloteam",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorageepulkzjgreepu.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "helloteam",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDLYjEASsnGR5IyUAQUCy6F+tmFihHF+/KSJkeiEwkX5rr2gbpmXrLPoHo8G9XMsRdYzCTDJjSIh8pH/mPFsGs7gBI9R8JFPgSLtjwdDpuW7JHHkJ90krPaHY3/NNe64ZSHF+q5WauWa4wd28LmCVovj55OHViaC7KnTClId1jWCQ7Qr+z0gpvBRzVo1tIY5te+p85vmlun5SXy369IENV48JR1exV7nJBSpwH+aeEYm+WPhvjOkoaOBJo0fDHqcO2RRpo0lna7+O9argB+plQOLgMY5ctw7ZtpEb+ji4fPYgxpnxhlz+koTCI3+w6/fmvAg5UzWZMAXi8Pv2iNxRJh root@ced836226929\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/derekdemo_t/providers/Microsoft.Network/networkInterfaces/VMNichelloteam"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/DEREKDEMO_T/providers/Microsoft.Compute/virtualMachines/helloteam",
+            "name": "helloteam",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "b76bf64d-8878-404b-bf8f-35ee32a74cd8",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskderekdemovm1",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoraged35ln5l37pdcy.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "derekdemovm1",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/derekdemo1/providers/Microsoft.Network/networkInterfaces/derekdemovm1VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/DEREKDEMO1/providers/Microsoft.Compute/virtualMachines/derekdemovm1",
+            "name": "derekdemovm1",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "c6040da4-086c-4d75-8270-f7dbccd2d2c0",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskderekdemovm2",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorage4d3ffm336i4r2.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "derekdemovm2",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/ubuntu/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDAqi+NCucTLxDyNjufdXsRN3APnKflIFju2TnpVGvho++Fk1X6aCidwIfMkr0ovA/MVogxo0MXl3DknGZ0e6yr2rDUe9ht1WZRrDgwT8yWdAfi+4ZU/59llKB1jayY3DoNzHY9beR+wSocwX+ve/u7yR8q51qwAee72dK1U7cA3OW9489PMiME01KxQIj3aAiOlTnHK5KIXi33I0h1Z/JccjZQl7g6OGkM2gyA9bDr/B4V8RkVHITf45d8jyYV/Y0/0MuNBd77A3+/M2PcFJgHMkFF1iTR8Lo+b6ctMnScVGtX/ydA9gNfF6gaDWimX+MdEAdLUnGRg3yJWvkRl62p debekoe@dereks-mbp-2.guest.corp.microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/derekdemo1/providers/Microsoft.Network/networkInterfaces/derekdemovm2VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/DEREKDEMO1/providers/Microsoft.Compute/virtualMachines/derekdemovm2",
+            "name": "derekdemovm2",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "95c6d6ae-8070-4a45-9b17-9aad461b0780",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "haocVM",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://haocrg2184.blob.core.windows.net/vhds/haocVM201649143050.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "haocVM",
+                "adminUsername": "haoc",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/haocrg/providers/Microsoft.Network/networkInterfaces/haocvm53"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://haocrg2184.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/HAOCRG/providers/Microsoft.Compute/virtualMachines/haocVM/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/HAOCRG/providers/Microsoft.Compute/virtualMachines/haocVM",
+            "name": "haocVM",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "vmId": "58f429eb-fb4d-4757-a5c2-369b1f3ad4a4",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdisklinux-test-public-ips-vm2",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstorageo42yswfrhfzia.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "linux-test-public-ips-vm2",
+                "adminUsername": "ubuntu",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TravisTestResourceGroup/providers/Microsoft.Network/networkInterfaces/VMNiclinux-test-public-ips-vm2"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TRAVISTESTRESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/linux-test-public-ips-vm2",
+            "name": "linux-test-public-ips-vm2",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "0d8c364d-5494-483a-9cfc-457083fe0b98",
+              "hardwareProfile": {
+                "vmSize": "Basic_A0"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "12.04.5-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "linuxtestvm",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://travistestresourcegr3014.blob.core.windows.net/vhds/linuxtestvm2016411155452.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": [
+                  {
+                    "lun": 0,
+                    "name": "linxtestvm-20160511-161612",
+                    "createOption": "Empty",
+                    "vhd": {
+                      "uri": "https://travistestresourcegr3014.blob.core.windows.net/vhds/linuxtestvm-20160511-161612.vhd"
+                    },
+                    "caching": "None",
+                    "diskSizeGB": 1023
+                  }
+                ]
+              },
+              "osProfile": {
+                "computerName": "linuxtestvm",
+                "adminUsername": "trpresco",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/trpresco/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEAqZl3v8YwniNggfui1KiHLvy6BaT9wtAxjbo7lCCkAAgzybJiY2a0w0rhN9nfJO6r+3TaJlLNPK8pXm9HVKDYotP2TQJRV3uzQFaGnGstx3/9QrS2gwcpA28V0ZwAqc1CBI9g4dCsBNeAP/P0zcsO/br/sOcO8PziJMIW1XOkpDT0Rne+e/IhMGObBnLnn5/sLgzmZ15lSVqXuuPbyJyKCirLbS4CAlno3bdudNXn21KA6grClUgdPDIuWt0JD/2Aso/d8kcQGKZGzH1HXD6XyA/fRYmWlVEONP/KeYD5HAYifldrjv8x9JKMZV40pK/f8jFc02DkFdFdNCdzogBH+w=="
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TravisTestResourceGroup/providers/Microsoft.Network/networkInterfaces/linuxtestvm493"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://travistestresourcegr3014.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Failed"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TRAVISTESTRESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/linuxtestvm/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TRAVISTESTRESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/linuxtestvm",
+            "name": "linuxtestvm",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {}
+          },
+          {
+            "properties": {
+              "vmId": "2006bcb8-19b1-48c0-9822-da025cd5a5f4",
+              "hardwareProfile": {
+                "vmSize": "Basic_A0"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "Windows-Server-Technical-Preview",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "windowstestvm",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://travistestresourcegr3014.blob.core.windows.net/vhds/windowstestvm2016326132744.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "windowstestvm",
+                "adminUsername": "trpresco",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TravisTestResourceGroup/providers/Microsoft.Network/networkInterfaces/windowstestvm58"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://travistestresourcegr3014.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TRAVISTESTRESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/windowstestvm/extensions/Microsoft.Insights.VMDiagnosticsSettings"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/TRAVISTESTRESOURCEGROUP/providers/Microsoft.Compute/virtualMachines/windowstestvm",
+            "name": "windowstestvm",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "vmId": "186cedda-7cf5-429b-84eb-a15ef9e1ff97",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "canonical",
+                  "offer": "ubuntuserver",
+                  "sku": "16.04.0-LTS",
+                  "version": "16.04.201604203"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "cli6b8751652bb38c96-os-1461559731713",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://yugangwstorage.blob.core.windows.net/vhds/cli6b8751652bb38c96-os-1461559731713.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangwvm1",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "properties": {},
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw/providers/Microsoft.Network/networkInterfaces/yugangw-nic"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://yugangwstorage.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm1/extensions/VMAccessForLinux"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm1",
+            "name": "yugangwvm1",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "vm-id": "1"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "a001d434-58a5-4d6b-aa7f-3df065b9f674",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "cliffc75ffc12b734ae-os-1461526127303",
+                  "createOption": "FromImage",
+                  "image": {
+                    "uri": "https://yugangwstorage2.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/yugangw-vm2-template-osDisk.f79f5193-5e2f-4de7-aac0-db4d3a4b4e49.vhd"
+                  },
+                  "vhd": {
+                    "uri": "https://yugangwstorage2.blob.core.windows.net/vhds/cliffc75ffc12b734ae-os-1461526127303.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangwvm2",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/yugangw/.ssh/authorized_keys",
+                        "keyData": "MIID/TCCAuWgAwIBAgIJAPwy0FRBVP8bMA0GCSqGSIb3DQEBBQUAMFwxCzAJBgNV\nBAYTAlVTMQswCQYDVQQIEwJXQTELMAkGA1UEBxMCUkUxCzAJBgNVBAoTAk1TMREw\nDwYDVQQLEwhBenVyZVNESzETMBEGA1UEAxMKWXVnYW5nV2FuZzAeFw0xNTA2Mjgx\nNTQwMDRaFw0xNjA2MjcxNTQwMDRaMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJX\nQTELMAkGA1UEBxMCUkUxCzAJBgNVBAoTAk1TMREwDwYDVQQLEwhBenVyZVNESzET\nMBEGA1UEAxMKWXVnYW5nV2FuZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\nggEBAMWhGRmi79SquBVkJrTlXQpSqAa/lNQ5IPubE4VgA6tCBdGp5rnFT+D83BKi\ncwIIOrydE6zu8N8jM+1VzakunGT/5+C5sThEEuk+Z+qvLeJkAGz+Je24UwIzyCQp\nv0x0deJbdgHE1kyb7o1pVnDINQzKlhincaATIlnvPaibHtpdpUDtZ8Rz5AJ/odHA\n8rmf5zzGttNm7Mwq3dt02aMXMhX6N+DzY7EIHAbTcR/fOSoXtm1W21LN7AXPtEEk\nMB/VIVzTYsg5lxiQl8xYRp7oD1FqC5liR5MILkLq3gNip62XOQXtm17ZLGKoEaHK\nKa5rdu0FMz18g4dECXq0wVl1IMECAwEAAaOBwTCBvjAdBgNVHQ4EFgQUSjX9dw/0\npijXvUitgrobVNHLEZwwgY4GA1UdIwSBhjCBg4AUSjX9dw/0pijXvUitgrobVNHL\nEZyhYKReMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXQTELMAkGA1UEBxMCUkUx\nCzAJBgNVBAoTAk1TMREwDwYDVQQLEwhBenVyZVNESzETMBEGA1UEAxMKWXVnYW5n\nV2FuZ4IJAPwy0FRBVP8bMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEB\nAAeyvD6GqK6kK6ovebHAyAb21ktUlXCw+nQdYOxgokzZUoljFpbPk8fxVJnDwdq2\nW525gYJuRYKccbyht4gMRBYwBHX2IKBkQbg6phKo+k0aphimx1DKSQbXyBFH9opP\n+hVh8x9jX1ta8gi9WJRmOkgV3an3+TqmoZdbziUHd5oG69PdUnYkPE26QevjYMq7\nJLt7vjf/BPCQNzg8kiyF9EjWi8zlZreJynYGeR2T4T/vEz+rmNl5asCrf1EB3ltR\nNdzF7y4Ae3oBKLVO2QeNfLuX9dhamCz6dxu7iO+E7OMaAcIbq6iO3B6pRwVLtfpu\nb/10Ic6+pw+Bnv+AV9KjZJs=\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "properties": {},
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw/providers/Microsoft.Network/networkInterfaces/yugangw-nic2"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://yugangwstorage2.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm2/extensions/VMAccessForLinux"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm2",
+            "name": "yugangwvm2",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {}
+          },
+          {
+            "properties": {
+              "vmId": "d95b6894-d223-41c5-9997-f97ed70c4378",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "yugangw-vm2-template-osDisk.f79f5193-5e2f-4de7-aac0-db4d3a4b4e49.vhd",
+                  "createOption": "FromImage",
+                  "image": {
+                    "uri": "https://yugangwstorage2.blob.core.windows.net/system/Microsoft.Compute/Images/vhds/yugangw-vm2-template-osDisk.f79f5193-5e2f-4de7-aac0-db4d3a4b4e49.vhd"
+                  },
+                  "vhd": {
+                    "uri": "https://yugangwstorage2.blob.core.windows.net/vmcontainer447b909e-f295-47f2-8971-281316c97146/osDisk.447b909e-f295-47f2-8971-281316c97146.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangwvm2-t",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw/providers/Microsoft.Network/networkInterfaces/yugangw-nic3"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://yugangwstorage2.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm2-t",
+            "name": "yugangwvm2-t",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "vmId": "77350755-0559-432d-9a32-1aa18d7b9331",
+              "hardwareProfile": {
+                "vmSize": "Standard_A1"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "canonical",
+                  "offer": "ubuntuserver",
+                  "sku": "16.04.0-LTS",
+                  "version": "16.04.201604203"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "cli9fbfa3ac91752f49-os-1461612796594",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://yugangwstorage2.blob.core.windows.net/vhds/cli9fbfa3ac91752f49-os-1461612796594.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangwvm4",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/yugangw/.ssh/authorized_keys",
+                        "keyData": "MIID/TCCAuWgAwIBAgIJAPwy0FRBVP8bMA0GCSqGSIb3DQEBBQUAMFwxCzAJBgNV\nBAYTAlVTMQswCQYDVQQIEwJXQTELMAkGA1UEBxMCUkUxCzAJBgNVBAoTAk1TMREw\nDwYDVQQLEwhBenVyZVNESzETMBEGA1UEAxMKWXVnYW5nV2FuZzAeFw0xNTA2Mjgx\nNTQwMDRaFw0xNjA2MjcxNTQwMDRaMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJX\nQTELMAkGA1UEBxMCUkUxCzAJBgNVBAoTAk1TMREwDwYDVQQLEwhBenVyZVNESzET\nMBEGA1UEAxMKWXVnYW5nV2FuZzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoC\nggEBAMWhGRmi79SquBVkJrTlXQpSqAa/lNQ5IPubE4VgA6tCBdGp5rnFT+D83BKi\ncwIIOrydE6zu8N8jM+1VzakunGT/5+C5sThEEuk+Z+qvLeJkAGz+Je24UwIzyCQp\nv0x0deJbdgHE1kyb7o1pVnDINQzKlhincaATIlnvPaibHtpdpUDtZ8Rz5AJ/odHA\n8rmf5zzGttNm7Mwq3dt02aMXMhX6N+DzY7EIHAbTcR/fOSoXtm1W21LN7AXPtEEk\nMB/VIVzTYsg5lxiQl8xYRp7oD1FqC5liR5MILkLq3gNip62XOQXtm17ZLGKoEaHK\nKa5rdu0FMz18g4dECXq0wVl1IMECAwEAAaOBwTCBvjAdBgNVHQ4EFgQUSjX9dw/0\npijXvUitgrobVNHLEZwwgY4GA1UdIwSBhjCBg4AUSjX9dw/0pijXvUitgrobVNHL\nEZyhYKReMFwxCzAJBgNVBAYTAlVTMQswCQYDVQQIEwJXQTELMAkGA1UEBxMCUkUx\nCzAJBgNVBAoTAk1TMREwDwYDVQQLEwhBenVyZVNESzETMBEGA1UEAxMKWXVnYW5n\nV2FuZ4IJAPwy0FRBVP8bMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEFBQADggEB\nAAeyvD6GqK6kK6ovebHAyAb21ktUlXCw+nQdYOxgokzZUoljFpbPk8fxVJnDwdq2\nW525gYJuRYKccbyht4gMRBYwBHX2IKBkQbg6phKo+k0aphimx1DKSQbXyBFH9opP\n+hVh8x9jX1ta8gi9WJRmOkgV3an3+TqmoZdbziUHd5oG69PdUnYkPE26QevjYMq7\nJLt7vjf/BPCQNzg8kiyF9EjWi8zlZreJynYGeR2T4T/vEz+rmNl5asCrf1EB3ltR\nNdzF7y4Ae3oBKLVO2QeNfLuX9dhamCz6dxu7iO+E7OMaAcIbq6iO3B6pRwVLtfpu\nb/10Ic6+pw+Bnv+AV9KjZJs=\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw/providers/Microsoft.Network/networkInterfaces/yugangw-nic4"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": false,
+                  "storageUri": "https://yugangwstorage2.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW/providers/Microsoft.Compute/virtualMachines/yugangwvm4",
+            "name": "yugangwvm4",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {}
+          },
+          {
+            "properties": {
+              "vmId": "c293473b-042c-40b5-9d6c-e680f9a40e56",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "Canonical",
+                  "offer": "UbuntuServer",
+                  "sku": "14.04.4-LTS",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskyugangw4-1",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragekxpwa2r5uixlu.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangw4-1",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": false
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw4/providers/Microsoft.Network/networkInterfaces/VMNicyugangw4-1"
+                  }
+                ]
+              },
+              "diagnosticsProfile": {
+                "bootDiagnostics": {
+                  "enabled": true,
+                  "storageUri": "https://yugangwstorage.blob.core.windows.net/"
+                }
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW4/providers/Microsoft.Compute/virtualMachines/yugangw4-1/extensions/LinuxDiagnostic"
+              },
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW4/providers/Microsoft.Compute/virtualMachines/yugangw4-1/extensions/VMAccessForLinux"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW4/providers/Microsoft.Compute/virtualMachines/yugangw4-1",
+            "name": "yugangw4-1",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "9da65fb6-44f9-481d-9354-352f7ebcfe1e",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2012-R2-Datacenter",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "osdiskyugangw6-1",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://vhdstoragevzn7osoxecbjq.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangw6-1",
+                "adminUsername": "yugangw",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw6/providers/Microsoft.Network/networkInterfaces/VMNicyugangw6-1"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "resources": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW6/providers/Microsoft.Compute/virtualMachines/yugangw6-1/extensions/VMAccessAgent"
+              }
+            ],
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW6/providers/Microsoft.Compute/virtualMachines/yugangw6-1",
+            "name": "yugangw6-1",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "6647ae57-825e-4ab7-8149-a8a3f0bb56c8",
+              "hardwareProfile": {
+                "vmSize": "Standard_A2"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "OpenLogic",
+                  "offer": "CentOS",
+                  "sku": "7.2",
+                  "version": "latest"
+                },
+                "osDisk": {
+                  "osType": "Linux",
+                  "name": "osdiskyugangw9-1",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "http://yugangwstorage.blob.core.windows.net/vhds/osdiskimage.vhd"
+                  },
+                  "caching": "ReadWrite"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "yugangw9-1",
+                "adminUsername": "yugangw",
+                "linuxConfiguration": {
+                  "disablePasswordAuthentication": true,
+                  "ssh": {
+                    "publicKeys": [
+                      {
+                        "path": "/home/yugangw/.ssh/authorized_keys",
+                        "keyData": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC8InHIPLAu6lMc0d+5voyXqigZfT5r6fAM1+FQAi+mkPDdk2hNq1BG0Bwfc88Gm7BImw8TS+x2bnZmhCbVnHd6BPCDY7a+cHCSqrQMW89Cv6Vl4ueGOeAWHpJTV9CTLVz4IY1x4HBdkLI2lKIHri9+z7NIdvFk7iOkMVGyez5H1xDbF2szURxgc4I2/o5wycSwX+G8DrtsBvWLmFv9YAPx+VkEHQDjR0WWezOjuo1rDn6MQfiKfqAjPuInwNOg5AIxXAOResrin2PUlArNtdDH1zlvI4RZi36+tJO7mtm3dJiKs4Sj7G6b1CjIU6aaj27MmKy3arIFChYav9yYM3IT yugangw@microsoft.com\n"
+                      }
+                    ]
+                  }
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/yugangw9/providers/Microsoft.Network/networkInterfaces/yugangw9-1VMNic"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/YUGANGW9/providers/Microsoft.Compute/virtualMachines/yugangw9-1",
+            "name": "yugangw9-1",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "westus",
+            "tags": {
+              "displayName": "VirtualMachine"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "cd6f4774-22fa-4ecf-abf8-6831ad3e0b72",
+              "availabilitySet": {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR8785A/providers/Microsoft.Compute/availabilitySets/AS9874"
+              },
+              "hardwareProfile": {
+                "vmSize": "Standard_A0"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2012-R2-Datacenter",
+                  "version": "4.0.20151120"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "test",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://crptestar8014.blob.core.windows.net/crptestar6807/oscrptestar936.vhd"
+                  },
+                  "caching": "None"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "test",
+                "adminUsername": "Foo12",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar8785a/providers/Microsoft.Network/networkInterfaces/nic9929"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR8785A/providers/Microsoft.Compute/virtualMachines/vm7903",
+            "name": "vm7903",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "southeastasia",
+            "tags": {
+              "RG": "rg",
+              "testTag": "1"
+            }
+          },
+          {
+            "properties": {
+              "vmId": "cf3544c0-513c-48a1-850e-ec8e852aff85",
+              "availabilitySet": {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR8785B/providers/Microsoft.Compute/availabilitySets/AS9874"
+              },
+              "hardwareProfile": {
+                "vmSize": "Standard_A0"
+              },
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2012-R2-Datacenter",
+                  "version": "4.0.20151120"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "test",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://crptestar8014.blob.core.windows.net/crptestar5087/oscrptestar3684.vhd"
+                  },
+                  "caching": "None"
+                },
+                "dataDisks": []
+              },
+              "osProfile": {
+                "computerName": "test",
+                "adminUsername": "Foo12",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar8785b/providers/Microsoft.Network/networkInterfaces/nic2501"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR8785B/providers/Microsoft.Compute/virtualMachines/vm5117",
+            "name": "vm5117",
+            "type": "Microsoft.Compute/virtualMachines",
+            "location": "southeastasia",
+            "tags": {
+              "RG": "rg",
+              "testTag": "1"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

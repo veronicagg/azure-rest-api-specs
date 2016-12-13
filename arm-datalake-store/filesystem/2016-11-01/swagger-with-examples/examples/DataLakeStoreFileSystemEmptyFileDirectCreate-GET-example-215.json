@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01%2FSDKTestFile01.txt6149",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "op": "GETFILESTATUS",
+    "write": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatus": {
+          "length": 0,
+          "pathSuffix": "",
+          "type": "FILE",
+          "blockSize": 268435456,
+          "accessTime": 1452129657663,
+          "modificationTime": 1452129657663,
+          "replication": 0,
+          "permission": "777",
+          "owner": "NotSupportYet",
+          "group": "NotSupportYet"
+        }
+      }
+    }
+  }
+}

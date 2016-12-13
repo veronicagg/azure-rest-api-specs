@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount1922",
+    "agreementName": "IntegrationAccountAgreement3107",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.Logic/integrationAccounts/IntegrationAccount1922' under resource group 'flowrg' was not found."
+        }
+      }
+    }
+  }
+}

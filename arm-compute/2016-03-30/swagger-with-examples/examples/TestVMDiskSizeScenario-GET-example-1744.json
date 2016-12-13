@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar3730",
+    "vmName": "vm2104",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "vmId": "ebaa231f-b622-4f3f-864f-a25efe5012f7",
+          "availabilitySet": {
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3730/providers/Microsoft.Compute/availabilitySets/AS6182"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A0"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar5933.blob.core.windows.net/crptestar7108/oscrptestar5729.vhd"
+              },
+              "caching": "None",
+              "diskSizeGB": 150
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3730/providers/Microsoft.Network/networkInterfaces/nic6213"
+              }
+            ]
+          },
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3730/providers/Microsoft.Compute/virtualMachines/vm2104",
+        "name": "vm2104",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

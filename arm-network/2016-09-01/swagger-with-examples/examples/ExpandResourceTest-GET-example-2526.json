@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg4616",
+    "networkInterfaceName": "azsmnet7712",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet7712",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4616/providers/Microsoft.Network/networkInterfaces/azsmnet7712",
+        "etag": "W/\"f5ead2b9-dfb3-4c70-b382-cb597537d3e9\"",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "044c708c-5c2f-434a-b7db-782cab3e1457",
+          "ipConfigurations": [
+            {
+              "name": "ipconfig",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4616/providers/Microsoft.Network/networkInterfaces/azsmnet7712/ipConfigurations/ipconfig",
+              "etag": "W/\"f5ead2b9-dfb3-4c70-b382-cb597537d3e9\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.6",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4616/providers/Microsoft.Network/virtualNetworks/azsmnet7507/subnets/azsmnet8767"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "r1xgp2vafd1uxn2ermb540f5dg.dx.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

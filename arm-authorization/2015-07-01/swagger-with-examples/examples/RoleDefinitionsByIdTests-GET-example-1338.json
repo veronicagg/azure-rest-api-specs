@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "roleDefinitionId": "subscriptions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Owner",
+          "type": "BuiltInRole",
+          "description": "Lets you manage everything, including access to resources.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:51.8999226Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+      }
+    }
+  }
+}

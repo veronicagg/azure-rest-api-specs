@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "databaseName": "testdb12673",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testadlac16849.azuredatalakeanalytics.net/sqlip/$metadata#databases/$entity",
+        "computeAccountName": "testadlac16849",
+        "databaseName": "testdb12673",
+        "version": "e8fdb7ec-8477-4a53-ba63-7a64290ac726"
+      }
+    }
+  }
+}

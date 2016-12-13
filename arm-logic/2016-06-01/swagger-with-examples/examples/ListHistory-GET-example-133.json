@@ -1,0 +1,73 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "workflowName": "logicwf3306",
+    "triggerName": "httpTrigger",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "startTime": "2016-07-20T17:29:31.9599876Z",
+              "endTime": "2016-07-20T17:29:31.9773494Z",
+              "status": "Failed",
+              "code": "BadRequest",
+              "error": {
+                "code": "BadRequest",
+                "message": "The provided 'Http' trigger URI 'invalidUri' is not valid. The URI must be a well formed absolute URI not referencing local host or UNC path."
+              },
+              "correlation": {
+                "clientTrackingId": "08587325711135096577893222940"
+              },
+              "inputsLink": {
+                "uri": "https://prod-03.westus.logic.azure.com:443/workflows/0e1199f96dce4cc4b5fd04c1afaa021a/triggers/httpTrigger/histories/08587325711135096577893222940/contents/TriggerInputs?api-version=2016-06-01&se=2016-07-20T21%3A29%3A33.3627202Z&sp=%2Ftriggers%2FhttpTrigger%2Fhistories%2F08587325711135096577893222940%2Fcontents%2FTriggerInputs%2Fread&sv=1.0&sig=OsLJf1BksrDJIjI9n6Vsnh096Gur1ads1WRdRTCQ9hI",
+                "contentVersion": "mvjBdQPV3500O+iSJ4rDcg==",
+                "contentSize": 35,
+                "contentHash": {
+                  "algorithm": "md5",
+                  "value": "mvjBdQPV3500O+iSJ4rDcg=="
+                }
+              },
+              "fired": false
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf3306/triggers/httpTrigger/histories/08587325711135096577893222940",
+            "name": "08587325711135096577893222940",
+            "type": "Microsoft.Logic/workflows/triggers/histories"
+          },
+          {
+            "properties": {
+              "startTime": "2016-07-20T17:29:26.7869829Z",
+              "endTime": "2016-07-20T17:29:26.8096701Z",
+              "status": "Failed",
+              "code": "BadRequest",
+              "error": {
+                "code": "BadRequest",
+                "message": "The provided 'Http' trigger URI 'invalidUri' is not valid. The URI must be a well formed absolute URI not referencing local host or UNC path."
+              },
+              "correlation": {
+                "clientTrackingId": "08587325711186783604430151698"
+              },
+              "inputsLink": {
+                "uri": "https://prod-03.westus.logic.azure.com:443/workflows/0e1199f96dce4cc4b5fd04c1afaa021a/triggers/httpTrigger/histories/08587325711186783604430151698/contents/TriggerInputs?api-version=2016-06-01&se=2016-07-20T21%3A29%3A33.3627202Z&sp=%2Ftriggers%2FhttpTrigger%2Fhistories%2F08587325711186783604430151698%2Fcontents%2FTriggerInputs%2Fread&sv=1.0&sig=jKAooIQXP0pjdpF3ceZdwUXsUQonw8QuPt2e0fhJ3GM",
+                "contentVersion": "mvjBdQPV3500O+iSJ4rDcg==",
+                "contentSize": 35,
+                "contentHash": {
+                  "algorithm": "md5",
+                  "value": "mvjBdQPV3500O+iSJ4rDcg=="
+                }
+              },
+              "fired": false
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf3306/triggers/httpTrigger/histories/08587325711186783604430151698",
+            "name": "08587325711186783604430151698",
+            "type": "Microsoft.Logic/workflows/triggers/histories"
+          }
+        ]
+      }
+    }
+  }
+}

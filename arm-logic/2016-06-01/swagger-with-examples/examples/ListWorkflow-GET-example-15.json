@@ -1,0 +1,1921 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "api-version": "2016-06-01",
+    "$filter": "state%20eq%20'Disabled'",
+    "$top": "1"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-19T21:44:39.3526405Z",
+              "changedTime": "2016-07-19T21:44:39.3534393Z",
+              "state": "Enabled",
+              "version": "08587326422063334566",
+              "accessEndpoint": "https://prod-01.northcentralus.logic.azure.com:443/workflows/93608d166f9c4e169521fde0e1a90fa5",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Logic/workflows/jaden1",
+            "name": "jaden1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-19T21:45:02.6890453Z",
+              "changedTime": "2016-07-19T21:45:02.6894495Z",
+              "state": "Enabled",
+              "version": "08587326421829206185",
+              "accessEndpoint": "https://prod-00.northcentralus.logic.azure.com:443/workflows/19c730bdaaa346e2887b17b8698994a8",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Logic/workflows/jadentest1",
+            "name": "jadentest1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-02T07:57:52.1287948Z",
+              "changedTime": "2016-07-02T07:57:52.1292818Z",
+              "state": "Enabled",
+              "version": "08587341606134396481",
+              "accessEndpoint": "https://prod-07.northcentralus.logic.azure.com:443/workflows/a7baad071a2049949913815e62874b98",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-onprem1/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-onprem1/providers/Microsoft.Logic/workflows/sw-onprem-sql1",
+            "name": "sw-onprem-sql1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-20T20:20:43.8162882Z",
+              "changedTime": "2016-07-13T23:32:18.3522328Z",
+              "state": "Disabled",
+              "version": "08587331541471676239",
+              "accessEndpoint": "https://prod-02.northcentralus.logic.azure.com:443/workflows/c15a6ad4610d43eb8671fcf1e053a9f4",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "Recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Delay": {
+                    "foreach": "@body('List_files_and_folders_in_root_folder')",
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": "1",
+                        "unit": "Minute"
+                      }
+                    },
+                    "conditions": [
+                      {
+                        "expression": "@equals(item()['Id'], 12345)"
+                      },
+                      {
+                        "dependsOn": "List_files_and_folders_in_root_folder"
+                      }
+                    ]
+                  },
+                  "Delay_2": {
+                    "foreach": "@body('List_files_and_folders_in_root_folder')",
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": "5",
+                        "unit": "Minute"
+                      }
+                    },
+                    "conditions": [
+                      {
+                        "expression": "@equals(actions('Delay').status, 'Skipped')"
+                      }
+                    ]
+                  },
+                  "List_files_and_folders_in_root_folder": {
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-northcentralus.azure-apim.net/apim/dropbox"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['dropbox']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/folders"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "dropbox": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/connections/dropbox",
+                      "connectionName": "dropbox",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/northcentralus/managedApis/dropbox"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/logic-sw-test-0620",
+            "name": "logic-sw-test-0620",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-17T23:58:44.0186612Z",
+              "changedTime": "2016-07-12T23:49:41.1720628Z",
+              "state": "Enabled",
+              "version": "08587332395043367399",
+              "accessEndpoint": "https://prod-04.northcentralus.logic.azure.com:443/workflows/df0dfa0b96dc4731b4ca1d225f74f054",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-la-20160617",
+            "name": "sw-la-20160617",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-12T23:46:12.2317893Z",
+              "changedTime": "2016-07-12T23:48:42.7998107Z",
+              "state": "Enabled",
+              "version": "08587332395628014427",
+              "accessEndpoint": "https://prod-03.northcentralus.logic.azure.com:443/workflows/263b928003c6454193723aee6b49ff8b",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Request",
+                    "kind": "Http",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "runAfter": {},
+                    "type": "Response",
+                    "inputs": {
+                      "statusCode": 200
+                    }
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-la-20160712",
+            "name": "sw-la-20160712",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-02T20:33:46.9151835Z",
+              "changedTime": "2016-06-02T21:02:24.2070668Z",
+              "state": "Enabled",
+              "version": "08587367055413245800",
+              "accessEndpoint": "https://prod-04.northcentralus.logic.azure.com:443/workflows/45bebcf2f8ce4684a93ba9c39c4eece3",
+              "sku": {
+                "name": "Basic",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Http": {
+                    "runAfter": {},
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "http://microsoft.com"
+                    }
+                  },
+                  "until": {
+                    "actions": {},
+                    "runAfter": {
+                      "Http": [
+                        "Succeeded"
+                      ]
+                    },
+                    "expression": "@equals('', '')",
+                    "limit": {
+                      "count": 60,
+                      "timeout": "10"
+                    },
+                    "type": "Until"
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-logicapp-bugbash-0602",
+            "name": "sw-logicapp-bugbash-0602",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-05-31T23:08:24.6119662Z",
+              "changedTime": "2016-06-06T22:51:22.1421348Z",
+              "state": "Enabled",
+              "version": "08587363534033761821",
+              "accessEndpoint": "https://prod-01.northcentralus.logic.azure.com:443/workflows/c70a592185104c9eae2d6716e8d76506",
+              "sku": {
+                "name": "Basic",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverFarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "body": "Content from child flow response",
+                      "headers": {
+                        "some-header": "some-value"
+                      },
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-test-0531",
+            "name": "sw-test-0531",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-05-22T21:23:48.3151281Z",
+              "changedTime": "2016-06-17T17:30:10.3798302Z",
+              "state": "Enabled",
+              "version": "08587354222751352902",
+              "accessEndpoint": "https://prod-07.northcentralus.logic.azure.com:443/workflows/62d9cf77bae14746ab55e884b574957b",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "body": "@triggerBody()['text']",
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-test-05-22",
+            "name": "sw-test-05-22",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-05-23T16:29:22.3912969Z",
+              "changedTime": "2016-05-24T15:54:19.1026607Z",
+              "state": "Enabled",
+              "version": "08587375016264625378",
+              "accessEndpoint": "https://prod-07.northcentralus.logic.azure.com:443/workflows/a70bf41477de42729f0174287db52dc7",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "When_a_file_is_created": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "metadata": {
+                      "6e202211-2856-4d17-9ded-5beb8b8626b0": "/"
+                    },
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-northcentralus.azure-apim.net/apim/dropbox"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['dropbox']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/triggers/onnewfile",
+                      "queries": {
+                        "folderId": "6e202211-2856-4d17-9ded-5beb8b8626b0"
+                      }
+                    },
+                    "conditions": []
+                  }
+                },
+                "actions": {
+                  "Delay": {
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": "1",
+                        "unit": "minute"
+                      }
+                    },
+                    "conditions": []
+                  },
+                  "Http_Webhook": {
+                    "type": "HttpWebhook",
+                    "inputs": {
+                      "subscribe": {
+                        "body": "@listCallbackUrl()",
+                        "method": "POST",
+                        "uri": "http://test.com"
+                      }
+                    },
+                    "conditions": [
+                      {
+                        "dependsOn": "Delay"
+                      }
+                    ]
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "dropbox": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/connections/dropbox",
+                      "connectionName": "dropbox",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/northcentralus/managedApis/dropbox"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-test-05-22copy",
+            "name": "sw-test-05-22copy",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-02T21:11:32.0606919Z",
+              "changedTime": "2016-06-02T21:31:36.5430152Z",
+              "state": "Enabled",
+              "version": "08587367037889771403",
+              "accessEndpoint": "https://prod-00.northcentralus.logic.azure.com:443/workflows/0a3d665d32504fe09448d466425b6e28",
+              "sku": {
+                "name": "Basic",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverFarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "foreach": {
+                    "foreach": "@body('List_files_and_folders_in_folder')",
+                    "actions": {},
+                    "runAfter": {
+                      "until": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Foreach"
+                  },
+                  "foreach_2": {
+                    "foreach": "@body('List_files_and_folders_in_folder')",
+                    "actions": {
+                      "Delay": {
+                        "runAfter": {},
+                        "type": "Wait",
+                        "inputs": {
+                          "interval": {
+                            "count": 1,
+                            "unit": "Minute"
+                          }
+                        }
+                      }
+                    },
+                    "runAfter": {
+                      "foreach": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Foreach"
+                  },
+                  "foreach_3": {
+                    "foreach": "@body('List_files_and_folders_in_folder')",
+                    "actions": {
+                      "Delay_2": {
+                        "runAfter": {},
+                        "type": "Wait",
+                        "inputs": {
+                          "interval": {
+                            "count": 1,
+                            "unit": "Minute"
+                          }
+                        }
+                      }
+                    },
+                    "runAfter": {
+                      "foreach_2": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Foreach"
+                  },
+                  "foreach_4": {
+                    "foreach": "@body('List_files_and_folders_in_folder')",
+                    "actions": {},
+                    "runAfter": {
+                      "foreach_3": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Foreach"
+                  },
+                  "until": {
+                    "actions": {
+                      "List_files_and_folders_in_folder": {
+                        "runAfter": {},
+                        "type": "ApiConnection",
+                        "inputs": {
+                          "host": {
+                            "api": {
+                              "runtimeUrl": "https://logic-apis-northcentralus.azure-apim.net/apim/dropbox"
+                            },
+                            "connection": {
+                              "name": "@parameters('$connections')['dropbox']['connectionId']"
+                            }
+                          },
+                          "method": "get",
+                          "path": "/datasets/default/folders/@{encodeURIComponent(string('6e202211-2856-4d17-9ded-5beb8b8626b0'))}"
+                        }
+                      }
+                    },
+                    "runAfter": {},
+                    "expression": "@equals(body('List_files_and_folders_in_folder'), body('List_files_and_folders_in_folder'))",
+                    "limit": {
+                      "count": 60,
+                      "timeout": "PT1H"
+                    },
+                    "type": "Until"
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "dropbox": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/connections/dropbox",
+                      "connectionName": "dropbox",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/northcentralus/managedApis/dropbox"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Logic/workflows/sw-upgradetest1",
+            "name": "sw-upgradetest1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-01T00:11:52.5927907Z",
+              "changedTime": "2016-06-01T00:27:00.1849032Z",
+              "state": "Enabled",
+              "version": "08587368660653363160",
+              "accessEndpoint": "https://prod-04.northcentralus.logic.azure.com:443/workflows/8f807e74251a46a49fb61bc4d2333a34",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/TestRG/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Get_my_profile": {
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-northcentralus.azure-apim.net/apim/office365users"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['office365users']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/users/me"
+                    },
+                    "conditions": [
+                      {
+                        "dependsOn": "Response"
+                      }
+                    ]
+                  },
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "body": "@triggerBody()",
+                      "headers": "@triggerBody()",
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  },
+                  "Send_email": {
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "body": {
+                        "Body": "@{triggerBody()}",
+                        "Subject": "asfasfasdfgasg",
+                        "To": "bshyam@microsoft.com"
+                      },
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-northcentralus.azure-apim.net/apim/office365"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['office365']['connectionId']"
+                        }
+                      },
+                      "method": "post",
+                      "path": "/Mail"
+                    },
+                    "conditions": [
+                      {
+                        "dependsOn": "Get_my_profile"
+                      }
+                    ]
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "office365": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/TestRG/providers/Microsoft.Web/connections/office365-3",
+                      "connectionName": "office365-3",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/northcentralus/managedApis/office365"
+                    },
+                    "office365users": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/TestRG/providers/Microsoft.Web/connections/office365users",
+                      "connectionName": "office365users",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/northcentralus/managedApis/office365users"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/TestRG/providers/Microsoft.Logic/workflows/BUG6223009",
+            "name": "BUG6223009",
+            "type": "Microsoft.Logic/workflows",
+            "location": "northcentralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-05-31T23:20:10.225398Z",
+              "changedTime": "2016-07-12T23:44:30.5075055Z",
+              "state": "Enabled",
+              "version": "08587332398150265926",
+              "accessEndpoint": "https://prod-02.centralus.logic.azure.com:443/workflows/59cb37bdfb584effbec89aa4a711a7ae",
+              "sku": {
+                "name": "Basic",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test/providers/Microsoft.Web/serverfarms/plan-centralus",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "plan-centralus"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-centralus-group/providers/Microsoft.Logic/workflows/sw-test0531v3",
+            "name": "sw-test0531v3",
+            "type": "Microsoft.Logic/workflows",
+            "location": "centralus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T17:19:37.8074052Z",
+              "changedTime": "2016-07-20T17:19:38.4460311Z",
+              "state": "Enabled",
+              "version": "08587325717070597516",
+              "accessEndpoint": "https://prod-04.westus.logic.azure.com:443/workflows/ff06092e89354a21b593f8357908ed09",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "runworkflowmanually": {
+                    "defaultValue": true,
+                    "type": "Bool"
+                  },
+                  "subscription": {
+                    "defaultValue": "1a66ce04-b633-4a0b-b2bc-a912ec8986a6",
+                    "type": "String"
+                  },
+                  "resourceGroup": {
+                    "defaultValue": "logicapps-e2e",
+                    "type": "String"
+                  },
+                  "authentication": {
+                    "defaultValue": {
+                      "type": "ActiveDirectoryOAuth",
+                      "audience": "https://management.azure.com/",
+                      "tenant": "00000000-0000-0000-0000-000000000000",
+                      "clientId": "00000000-0000-0000-0000-000000000000",
+                      "secret": "Dummy"
+                    },
+                    "type": "Object"
+                  }
+                },
+                "triggers": {},
+                "actions": {
+                  "listWorkflows": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "someUri",
+                      "authentication": "@parameters('authentication')"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf1024",
+            "name": "logicwf1024",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus",
+            "tags": {
+              "abc": "def"
+            }
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T17:19:54.8097669Z",
+              "changedTime": "2016-07-20T17:19:54.8103522Z",
+              "state": "Disabled",
+              "version": "08587325716907006468",
+              "accessEndpoint": "https://prod-10.westus.logic.azure.com:443/workflows/b5edaa0f16a4473fb3debd146bea321d",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "runworkflowmanually": {
+                    "defaultValue": true,
+                    "type": "Bool"
+                  },
+                  "subscription": {
+                    "defaultValue": "1a66ce04-b633-4a0b-b2bc-a912ec8986a6",
+                    "type": "String"
+                  },
+                  "resourceGroup": {
+                    "defaultValue": "logicapps-e2e",
+                    "type": "String"
+                  },
+                  "authentication": {
+                    "defaultValue": {
+                      "type": "ActiveDirectoryOAuth",
+                      "audience": "https://management.azure.com/",
+                      "tenant": "00000000-0000-0000-0000-000000000000",
+                      "clientId": "00000000-0000-0000-0000-000000000000",
+                      "secret": "Dummy"
+                    },
+                    "type": "Object"
+                  }
+                },
+                "triggers": {},
+                "actions": {
+                  "listWorkflows": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "someUri",
+                      "authentication": "@parameters('authentication')"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf15",
+            "name": "logicwf15",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T17:19:49.8202996Z",
+              "changedTime": "2016-07-20T17:19:49.820896Z",
+              "state": "Enabled",
+              "version": "08587325716957505762",
+              "accessEndpoint": "https://prod-08.westus.logic.azure.com:443/workflows/49ddb0a78db445ce9d563604e7746358",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "httpTrigger": {
+                    "recurrence": {
+                      "frequency": "Minute",
+                      "interval": 60
+                    },
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "invalidUri"
+                    }
+                  }
+                },
+                "actions": {},
+                "outputs": {
+                  "output1": {
+                    "type": "String",
+                    "value": "@trigger().outputs"
+                  }
+                }
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf5425",
+            "name": "logicwf5425",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T17:19:55.5925207Z",
+              "changedTime": "2016-07-20T17:19:55.5934761Z",
+              "state": "Disabled",
+              "version": "08587325716899560499",
+              "accessEndpoint": "https://prod-08.westus.logic.azure.com:443/workflows/f0fdce597575435ca091b5f53432d46b",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "runworkflowmanually": {
+                    "defaultValue": true,
+                    "type": "Bool"
+                  },
+                  "subscription": {
+                    "defaultValue": "1a66ce04-b633-4a0b-b2bc-a912ec8986a6",
+                    "type": "String"
+                  },
+                  "resourceGroup": {
+                    "defaultValue": "logicapps-e2e",
+                    "type": "String"
+                  },
+                  "authentication": {
+                    "defaultValue": {
+                      "type": "ActiveDirectoryOAuth",
+                      "audience": "https://management.azure.com/",
+                      "tenant": "00000000-0000-0000-0000-000000000000",
+                      "clientId": "00000000-0000-0000-0000-000000000000",
+                      "secret": "Dummy"
+                    },
+                    "type": "Object"
+                  }
+                },
+                "triggers": {},
+                "actions": {
+                  "listWorkflows": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "someUri",
+                      "authentication": "@parameters('authentication')"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf8364",
+            "name": "logicwf8364",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-04-27T01:43:42.5962393Z",
+              "changedTime": "2016-05-25T01:03:58.474686Z",
+              "state": "Enabled",
+              "version": "08587374686471832453",
+              "accessEndpoint": "https://prod-00.westus.logic.azure.com:443/workflows/94f0095125c448cc85b4c926a9bf2297",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/prateesh-test/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Delay": {
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": "3",
+                        "unit": "minute"
+                      }
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/prateesh-test/providers/Microsoft.Logic/workflows/sdfasdfasd",
+            "name": "sdfasdfasd",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-04-07T23:17:25.6396809Z",
+              "changedTime": "2016-05-14T01:03:36.0682096Z",
+              "state": "Enabled",
+              "version": "08587384190695227511",
+              "accessEndpoint": "https://prod-06.westus.logic.azure.com:443/workflows/0b98d4d7c05e423eb9031e46e2fc5163",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/prateesh-test/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Delay": {
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": "3",
+                        "unit": "minute"
+                      }
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/prateesh-test/providers/Microsoft.Logic/workflows/testLogicApp1",
+            "name": "testLogicApp1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-06-03T19:06:09.5519754Z",
+              "changedTime": "2016-06-03T19:06:49.7622385Z",
+              "state": "Enabled",
+              "version": "08587366260757461647",
+              "accessEndpoint": "https://prod-03.westus.logic.azure.com:443/workflows/d0daa0b62edb402580947e1e35019678",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/prateesh-test/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Response": {
+                    "type": "Response",
+                    "inputs": {
+                      "statusCode": 200
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test-westus/providers/Microsoft.Logic/workflows/logicapp-0603-westus",
+            "name": "logicapp-0603-westus",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-02T07:52:58.9457188Z",
+              "changedTime": "2016-07-02T07:52:58.945907Z",
+              "state": "Enabled",
+              "version": "08587341609066707075",
+              "accessEndpoint": "https://prod-15.westus.logic.azure.com:443/workflows/760f612143534e5f8f68cddfc292161f",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverfarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test-westus/providers/Microsoft.Logic/workflows/sw-onprem-testsql1",
+            "name": "sw-onprem-testsql1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-04-07T23:53:16.3012298Z",
+              "changedTime": "2016-04-07T23:53:16.3014984Z",
+              "state": "Enabled",
+              "version": "08587415336894218405",
+              "accessEndpoint": "https://prod-06.brazilus.logic.azure.com:443/workflows/51d1dca4da3b4942a8514d9ff0e745d9",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/danchart-la-df-01/providers/Microsoft.Web/serverFarms/danchart-la-df-01",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "danchart-la-df-01"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/danchart-la-df-01/providers/Microsoft.Logic/workflows/danchart-la-df-01",
+            "name": "danchart-la-df-01",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-07T01:38:27.334178Z",
+              "changedTime": "2016-07-07T01:43:10.6936108Z",
+              "state": "Enabled",
+              "version": "08587337510948846180",
+              "accessEndpoint": "https://prod-02.brazilus.logic.azure.com:443/workflows/ce7e32dcfe2e455b838fe49d1522cc6b",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "Recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 4
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Get_tables": {
+                    "runAfter": {},
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-df.azure-apim.net/apim/sql"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['sql']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/tables"
+                    }
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "sql": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/connections/sql",
+                      "connectionName": "sql",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/brazilsouth/managedApis/sql"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Logic/workflows/ilygre-gw-lg",
+            "name": "ilygre-gw-lg",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-07T01:52:39.4175785Z",
+              "changedTime": "2016-07-07T01:54:42.709603Z",
+              "state": "Enabled",
+              "version": "08587337504028099018",
+              "accessEndpoint": "https://prod-06.brazilus.logic.azure.com:443/workflows/9147043fa830430f94d9735e73b429c2",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "Recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 555
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Get_tables": {
+                    "runAfter": {},
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-df.azure-apim.net/apim/sql"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['sql_1']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/tables"
+                    }
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "sql_1": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/connections/sql-1",
+                      "connectionName": "sql-1",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/brazilsouth/managedApis/sql"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Logic/workflows/la1",
+            "name": "la1",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-19T21:19:05.8239656Z",
+              "changedTime": "2016-07-19T21:19:05.8248241Z",
+              "state": "Enabled",
+              "version": "08587326437397581625",
+              "accessEndpoint": "https://prod-04.brazilus.logic.azure.com:443/workflows/249a51bb901c4edb8e5ea5b49b1e8bf7",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/ilygre-rg/providers/Microsoft.Logic/workflows/latest4",
+            "name": "latest4",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-05-28T02:09:38.3274798Z",
+              "changedTime": "2016-07-20T00:46:47.5491625Z",
+              "state": "Enabled",
+              "version": "08587326312779643525",
+              "accessEndpoint": "https://prod-01.brazilus.logic.azure.com:443/workflows/a6faf7e979584263bcc1ced08d19c5e6",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverfarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 11
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Http": {
+                    "runAfter": {},
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "http://www.google.com"
+                    }
+                  },
+                  "Http_2": {
+                    "runAfter": {
+                      "Http": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "http://www.wwwwwwwwwwwwwwwwwwwwww.com"
+                    }
+                  },
+                  "Scope": {
+                    "actions": {
+                      "Http_3": {
+                        "runAfter": {},
+                        "type": "Http",
+                        "inputs": {
+                          "method": "GET",
+                          "uri": "http://www.google.com"
+                        }
+                      }
+                    },
+                    "runAfter": {
+                      "Http_2": [
+                        "Succeeded"
+                      ]
+                    },
+                    "type": "Scope"
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Logic/workflows/johnwa-logicv3",
+            "name": "johnwa-logicv3",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-04-14T02:06:28.0220277Z",
+              "changedTime": "2016-07-18T18:56:56.058485Z",
+              "state": "Enabled",
+              "version": "08587327386695380958",
+              "accessEndpoint": "https://prod-06.brazilus.logic.azure.com:443/workflows/f1d234b34743451188c35f8c52a4f3e2",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverfarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {}
+                    }
+                  }
+                },
+                "actions": {
+                  "Http": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "http://www.googe.com"
+                    },
+                    "conditions": [
+                      {
+                        "dependsOn": "Post_a_new_tweet"
+                      }
+                    ]
+                  },
+                  "Post_a_new_tweet": {
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-df.azure-apim.net/apim/twitter"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['twitter_1']['connectionId']"
+                        }
+                      },
+                      "method": "post",
+                      "path": "/posttweet",
+                      "queries": {
+                        "tweetText": "@{triggerBody()}"
+                      }
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "twitter_1": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/connections/twitter-2",
+                      "connectionName": "twitter-2",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/brazilsouth/managedApis/twitter"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Logic/workflows/johnwa-salesforce",
+            "name": "johnwa-salesforce",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-04-07T21:10:52.3401113Z",
+              "changedTime": "2016-07-15T18:27:30.277472Z",
+              "state": "Enabled",
+              "version": "08587329996352736847",
+              "accessEndpoint": "https://prod-07.brazilus.logic.azure.com:443/workflows/7e497c10e5704a0c850014daf7403c1b",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverFarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "manual": {
+                    "type": "Manual",
+                    "inputs": {
+                      "schema": {
+                        "properties": {},
+                        "required": [],
+                        "type": "object"
+                      }
+                    }
+                  }
+                },
+                "actions": {
+                  "Http": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "http://www.bing.com"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Logic/workflows/logicapp-dogfood",
+            "name": "logicapp-dogfood",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-19T23:39:02.8772232Z",
+              "changedTime": "2016-07-19T23:39:02.8781985Z",
+              "state": "Enabled",
+              "version": "08587326353426512766",
+              "accessEndpoint": "https://prod-01.brazilus.logic.azure.com:443/workflows/739c583ebf8d4724b0e383e2562111db",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sheldonaux/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {},
+                "actions": {},
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sheldonaux/providers/Microsoft.Logic/workflows/sheldonauxlogicapp",
+            "name": "sheldonauxlogicapp",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-07T01:37:06.1964683Z",
+              "changedTime": "2016-07-12T18:18:59.5038211Z",
+              "state": "Enabled",
+              "version": "08587332593460017183",
+              "accessEndpoint": "https://prod-05.brazilus.logic.azure.com:443/workflows/fbc8fc5d4c1b41399d9e631936c2b62e",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverfarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "Recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Delay": {
+                    "runAfter": {},
+                    "type": "Wait",
+                    "inputs": {
+                      "interval": {
+                        "count": 0,
+                        "unit": "Minute"
+                      }
+                    }
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-onprem1/providers/Microsoft.Logic/workflows/sw-la-prodonprem",
+            "name": "sw-la-prodonprem",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-02T08:13:50.0500777Z",
+              "changedTime": "2016-07-02T08:34:25.0436612Z",
+              "state": "Enabled",
+              "version": "08587341584204925232",
+              "accessEndpoint": "https://prod-06.brazilus.logic.azure.com:443/workflows/cd00a9f95b7b4966828ebc21d4aff2dc",
+              "sku": {
+                "name": "Free",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/johnwa_logicapp_dogfood/providers/Microsoft.Web/serverfarms/johnwaaspdogfood",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "johnwaaspdogfood"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2015-08-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Get_rows": {
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "connection": {
+                          "name": "@parameters('$connections')['sql']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/tables/@{encodeURIComponent(encodeURIComponent(string('[Production].[Product]')))}/items"
+                    },
+                    "conditions": []
+                  }
+                }
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "sql": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test-westus/providers/Microsoft.Web/connections/sw-msit-sqonprem1",
+                      "connectionName": "sw-msit-sqonprem1",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/brazilsouth/managedApis/hybridsql"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/sw-test-westus/providers/Microsoft.Logic/workflows/sw-onprem-testsql2-brazils",
+            "name": "sw-onprem-testsql2-brazils",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazil south"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-13T18:32:38.4632704Z",
+              "changedTime": "2016-07-19T21:29:31.6204046Z",
+              "state": "Enabled",
+              "version": "08587326431138986505",
+              "accessEndpoint": "https://prod-02.brazilus.logic.azure.com:443/workflows/dd62112427184a3695d26d7bc33b0219",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/tonyrgTiP/providers/Microsoft.Web/serverFarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-04-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "$connections": {
+                    "defaultValue": {},
+                    "type": "Object"
+                  }
+                },
+                "triggers": {
+                  "Recurrence": {
+                    "recurrence": {
+                      "frequency": "Hour",
+                      "interval": 1
+                    },
+                    "type": "Recurrence"
+                  }
+                },
+                "actions": {
+                  "Get_tables": {
+                    "runAfter": {},
+                    "type": "ApiConnection",
+                    "inputs": {
+                      "host": {
+                        "api": {
+                          "runtimeUrl": "https://logic-apis-df.azure-apim.net/apim/db2"
+                        },
+                        "connection": {
+                          "name": "@parameters('$connections')['db2']['connectionId']"
+                        }
+                      },
+                      "method": "get",
+                      "path": "/datasets/default/tables"
+                    }
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {
+                "$connections": {
+                  "value": {
+                    "db2": {
+                      "connectionId": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/tonyrgTiP/providers/Microsoft.Web/connections/db2",
+                      "connectionName": "db2",
+                      "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/providers/Microsoft.Web/locations/brazilsouth/managedApis/db2"
+                    }
+                  }
+                }
+              }
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/tonyrgTiP/providers/Microsoft.Logic/workflows/flow0",
+            "name": "flow0",
+            "type": "Microsoft.Logic/workflows",
+            "location": "brazilsouth"
+          }
+        ]
+      }
+    }
+  }
+}

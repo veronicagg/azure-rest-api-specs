@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "listFilePath": "%2Fnonexistentfile001.txt",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /nonexistentfile001.txt [d1287c83-2bde-4962-9098-b8cab3a4fa0e][2016-11-10T14:56:50.0607406-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6562",
+    "eventHubName": "sdk-EventHub-4600",
+    "consumerGroupName": "sdk-ConsumerGroup-7518",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "message": "40400: Endpoint not found.",
+          "code": "NotFound"
+        }
+      }
+    }
+  }
+}

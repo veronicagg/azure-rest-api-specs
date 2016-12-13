@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg15696",
+    "accountName": "testadlfs13161",
+    "api-version": "2016-11-01"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.DataLakeStore/accounts/testadlfs13161' under resource group 'datalakerg15696' was not found."
+        }
+      }
+    }
+  }
+}

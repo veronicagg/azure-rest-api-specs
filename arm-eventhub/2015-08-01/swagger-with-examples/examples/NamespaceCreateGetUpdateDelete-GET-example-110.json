@@ -1,0 +1,92 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-8716",
+            "name": "sdk-Namespace-8716",
+            "type": "Microsoft.EventHub/namespaces",
+            "location": "Australia East",
+            "kind": "EventHub",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-8716",
+              "status": "Active",
+              "createdAt": "2016-09-01T22:41:30.737Z",
+              "serviceBusEndpoint": "https://sdk-Namespace-8716.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-09-01T22:41:55.303Z",
+              "eventHubEnabled": true,
+              "namespaceType": "EventHub",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asdfsdfsdf/providers/Microsoft.EventHub/namespaces/ardsouza-4-13-EH",
+            "name": "ardsouza-4-13-EH",
+            "type": "Microsoft.EventHub/namespaces",
+            "location": "West Europe",
+            "kind": "EventHub",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:ardsouza-4-13-EH",
+              "status": "Active",
+              "createdAt": "2016-04-14T02:58:24.637Z",
+              "serviceBusEndpoint": "https://ardsouza-4-13-EH.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-22T00:50:08.9Z",
+              "eventHubEnabled": true,
+              "namespaceType": "EventHub",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-2332",
+            "name": "sdk-Namespace-2332",
+            "type": "Microsoft.EventHub/namespaces",
+            "location": "Australia East",
+            "kind": "EventHub",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-2332",
+              "status": "Active",
+              "createdAt": "2016-09-01T22:35:02.137Z",
+              "serviceBusEndpoint": "https://sdk-Namespace-2332.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-09-01T22:35:28.267Z",
+              "eventHubEnabled": true,
+              "namespaceType": "EventHub",
+              "messagingSku": 2
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

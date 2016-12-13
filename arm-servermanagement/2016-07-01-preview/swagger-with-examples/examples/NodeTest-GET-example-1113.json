@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "nodeName": "rameshr12",
+    "session": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+    "api-version": "2016-07-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/rameshr12/sessions/80b6d83e-dbcf-43cd-8e60-43b5e5d742ac/features/powerShellConsole/pssessions/4108dd13-fafb-4b45-93ea-14db87dec00b",
+            "name": "4108dd13-fafb-4b45-93ea-14db87dec00b",
+            "type": "Microsoft.ServerManagement/nodes/features/pssessions",
+            "properties": {
+              "sessionId": "4108dd13-fafb-4b45-93ea-14db87dec00b",
+              "state": "Disconnected",
+              "runspaceAvailability": "None",
+              "disconnectedOn": "2016-10-21T13:49:57.2368075-07:00",
+              "expiresOn": "2016-10-21T14:09:57.2368075-07:00",
+              "version": {
+                "major": 5,
+                "minor": 1,
+                "build": 14393,
+                "revision": 206,
+                "majorRevision": 0,
+                "minorRevision": 206
+              },
+              "name": "Runspace10"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

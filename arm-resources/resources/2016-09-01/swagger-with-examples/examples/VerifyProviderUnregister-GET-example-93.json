@@ -1,0 +1,272 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceProviderNamespace": "microsoft.insights",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/providers/microsoft.insights",
+        "namespace": "microsoft.insights",
+        "authorization": {
+          "applicationId": "11c174dc-1945-4a9a-a36b-c79a0f246b9b",
+          "roleDefinitionId": "dd9d4347-f397-45f2-b538-85f21c90037b"
+        },
+        "resourceTypes": [
+          {
+            "resourceType": "components",
+            "locations": [
+              "Central US"
+            ],
+            "apiVersions": [
+              "2015-05-01",
+              "2014-12-01-preview",
+              "2014-08-01",
+              "2014-04-01"
+            ],
+            "capabilities": "None"
+          },
+          {
+            "resourceType": "webtests",
+            "locations": [
+              "Central US"
+            ],
+            "apiVersions": [
+              "2015-05-01",
+              "2014-08-01",
+              "2014-04-01"
+            ],
+            "capabilities": "None"
+          },
+          {
+            "resourceType": "queries",
+            "locations": [
+              "Central US"
+            ],
+            "apiVersions": [
+              "2015-05-01",
+              "2014-08-01"
+            ]
+          },
+          {
+            "resourceType": "logprofiles",
+            "locations": [],
+            "apiVersions": [
+              "2016-03-01"
+            ]
+          },
+          {
+            "resourceType": "alertrules",
+            "locations": [
+              "West US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2016-03-01",
+              "2015-04-01",
+              "2014-04-01"
+            ],
+            "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+          },
+          {
+            "resourceType": "autoscalesettings",
+            "locations": [
+              "West US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-04-01"
+            ],
+            "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+          },
+          {
+            "resourceType": "eventtypes",
+            "locations": [],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-11-01",
+              "2014-04-01"
+            ]
+          },
+          {
+            "resourceType": "locations",
+            "locations": [
+              "East US"
+            ],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-04-01"
+            ]
+          },
+          {
+            "resourceType": "locations/operationResults",
+            "locations": [],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-04-01"
+            ]
+          },
+          {
+            "resourceType": "operations",
+            "locations": [],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-06-01",
+              "2014-04-01"
+            ]
+          },
+          {
+            "resourceType": "automatedExportSettings",
+            "locations": [
+              "West US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2015-04-01",
+              "2014-04-01"
+            ]
+          },
+          {
+            "resourceType": "diagnosticSettings",
+            "locations": [
+              "West US",
+              "West US 2",
+              "West Central US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Canada East",
+              "Canada Central",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2015-07-01"
+            ]
+          },
+          {
+            "resourceType": "metricDefinitions",
+            "locations": [
+              "West US",
+              "West US 2",
+              "West Central US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Canada East",
+              "Canada Central",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2015-07-01"
+            ]
+          },
+          {
+            "resourceType": "logDefinitions",
+            "locations": [
+              "West US",
+              "East US",
+              "North Europe",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Canada East",
+              "Canada Central",
+              "Central US",
+              "Brazil South"
+            ],
+            "apiVersions": [
+              "2015-07-01"
+            ]
+          },
+          {
+            "resourceType": "eventCategories",
+            "locations": [],
+            "apiVersions": [
+              "2015-04-01"
+            ]
+          },
+          {
+            "resourceType": "metrics",
+            "locations": [
+              "East US",
+              "West US",
+              "West Europe",
+              "East Asia",
+              "Southeast Asia",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "South Central US",
+              "East US 2",
+              "Canada East",
+              "Canada Central",
+              "Central US",
+              "Brazil South",
+              "North Europe"
+            ],
+            "apiVersions": [
+              "2016-06-01"
+            ]
+          }
+        ],
+        "registrationState": "Unregistering"
+      }
+    }
+  }
+}

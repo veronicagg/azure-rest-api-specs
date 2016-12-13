@@ -1,0 +1,97 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg6946",
+    "name": "csmws4003",
+    "api-version": "2015-08-01",
+    "details": "true",
+    "$filter": "%28name.value%20eq%20%27CPU%27%20or%20name.value%20eq%20%27MemoryWorkingSet%27%20or%20name.value%20eq%20%27Requests%27%29%20and%20startTime%20eq%202015-10-04T16%3A49%3A31Z%20and%20endTime%20eq%202015-10-05T16%3A49%3A31Z%20and%20timeGrain%20eq%20duration%27PT1H%27"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg6946/providers/Microsoft.Web/sites/csmws4003/metrics",
+        "value": [
+          {
+            "name": {
+              "value": "Requests",
+              "localizedValue": "Requests"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "Requests",
+              "localizedValue": "Requests"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "MemoryWorkingSet",
+              "localizedValue": "Memory working set"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "MemoryWorkingSet",
+              "localizedValue": "Memory working set"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "CPU",
+              "localizedValue": "CPU"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "CPU",
+              "localizedValue": "CPU"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-10-04T16:00:00Z",
+            "endTime": "2015-10-05T16:49:31Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          }
+        ]
+      }
+    }
+  }
+}

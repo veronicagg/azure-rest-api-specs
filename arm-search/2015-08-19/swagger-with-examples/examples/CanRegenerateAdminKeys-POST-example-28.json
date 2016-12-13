@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet9276",
+    "searchServiceName": "azs-6412",
+    "keyKind": "secondary",
+    "api-version": "2015-08-19"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "primaryKey": "30906AFBDFAC65E83EEA878958A39FB2",
+        "secondaryKey": "7C5DA3B91ED8248669A4AB1909927DA5"
+      }
+    }
+  }
+}

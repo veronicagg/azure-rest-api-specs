@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8624",
+    "profileName": "profile4641",
+    "endpointName": "endpoint8921",
+    "api-version": "2016-10-02",
+    "contentFilePaths": {
+      "contentPaths": [
+        "invalidpath!"
+      ]
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "BadRequest",
+          "message": "Invalid ContentPath \"invalidpath!\". ContentPath for purge action must be a relative path: either for a single resource \"/path/pic.jpg\" or a wild card \"/path/*\"."
+        }
+      }
+    }
+  }
+}

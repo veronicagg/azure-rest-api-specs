@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg956",
+    "publicIpAddressName": "azsmnet1717",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "Australia Southeast",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "dnsSettings": {
+          "domainNameLabel": "azsmnet2781"
+        },
+        "idleTimeoutInMinutes": 16
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet1717",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg956/providers/Microsoft.Network/publicIPAddresses/azsmnet1717",
+        "etag": "W/\"2288f5f4-4a5c-4959-89dd-00f77b3567cb\"",
+        "type": "Microsoft.Network/publicIPAddresses",
+        "location": "australiasoutheast",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "565a8af7-d851-4520-8442-5901971e7630",
+          "publicIPAllocationMethod": "Dynamic",
+          "idleTimeoutInMinutes": 16,
+          "dnsSettings": {
+            "domainNameLabel": "azsmnet2781",
+            "fqdn": "azsmnet2781.australiasoutheast.cloudapp.azure.com"
+          }
+        }
+      }
+    }
+  }
+}

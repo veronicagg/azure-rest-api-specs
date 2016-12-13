@@ -1,0 +1,68 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar8785a",
+    "vmName": "vm7903",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "vmId": "cd6f4774-22fa-4ecf-abf8-6831ad3e0b72",
+          "availabilitySet": {
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar8785a/providers/Microsoft.Compute/availabilitySets/AS9874"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A0"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar8014.blob.core.windows.net/crptestar6807/oscrptestar936.vhd"
+              },
+              "caching": "None"
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar8785a/providers/Microsoft.Network/networkInterfaces/nic9929"
+              }
+            ]
+          },
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar8785a/providers/Microsoft.Compute/virtualMachines/vm7903",
+        "name": "vm7903",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

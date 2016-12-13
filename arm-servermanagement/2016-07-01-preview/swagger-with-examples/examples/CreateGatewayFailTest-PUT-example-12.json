@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "gatewayName": "testgateway",
+    "api-version": "2016-07-01-preview",
+    "GatewayParameters": {
+      "location": "neverneverland"
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "LocationNotAvailableForResourceType",
+          "message": "The provided location 'neverneverland' is not available for resource type 'Microsoft.ServerManagement/gateways'. List of available regions for the resource type is 'centralus,eastus,northeurope,westeurope'."
+        }
+      }
+    }
+  }
+}

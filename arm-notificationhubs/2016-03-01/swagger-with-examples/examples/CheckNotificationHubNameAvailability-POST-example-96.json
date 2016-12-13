@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH3343",
+    "namespaceName": "HydraNH-Namespace7522",
+    "api-version": "2016-03-01",
+    "parameters": {
+      "name": "HydraNH-NotificationHub4848-validazsmnet2449",
+      "location": "South Central US"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "isAvailiable": false,
+        "id": "/subscriptions/111c36dc-4047-4c69-acd5-301072ff1fc2/resourceGroups/TestRg-NH3343/providers/Microsoft.NotificationHubs/namespaces/HydraNH-Namespace7522/checkNotificationHubAvailability",
+        "name": "HydraNH-NotificationHub4848-validazsmnet2449",
+        "type": "Microsoft.NotificationHubs/namespaces/notificationHubs/checkNotificationHubAvailability",
+        "location": null,
+        "tags": null,
+        "properties": false
+      }
+    }
+  }
+}

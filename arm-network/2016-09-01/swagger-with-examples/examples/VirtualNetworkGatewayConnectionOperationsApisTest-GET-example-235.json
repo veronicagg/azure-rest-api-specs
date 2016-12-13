@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg7047",
+    "localNetworkGatewayName": "azsmnet3822",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet3822",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/localNetworkGateways/azsmnet3822",
+        "etag": "W/\"3059310d-826c-48d7-a60e-a659c7899dcd\"",
+        "type": "Microsoft.Network/localNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "test": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "40985b67-82b6-44b8-98dc-8ae704fa7bf3",
+          "localNetworkAddressSpace": {
+            "addressPrefixes": [
+              "192.168.0.0/16"
+            ]
+          },
+          "gatewayIpAddress": "192.168.3.4"
+        }
+      }
+    }
+  }
+}

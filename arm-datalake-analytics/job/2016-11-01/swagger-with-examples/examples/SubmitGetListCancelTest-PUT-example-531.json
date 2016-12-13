@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "jobIdentity": "32d3a192-9c60-437c-b487-d972d5180290",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "name": "azure sdk data lake analytics job",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "32d3a192-9c60-437c-b487-d972d5180290",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+        "degreeOfParallelism": 2,
+        "priority": 1000,
+        "submitTime": "2016-11-07T20:16:13.9670584-08:00",
+        "state": "Compiling",
+        "result": "Succeeded",
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "2016-11-07T20:16:13.9670584-08:00",
+            "details": "userName:;submitMachine:N/A"
+          }
+        ],
+        "properties": {
+          "owner": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+          "resources": [],
+          "runtimeVersion": "default",
+          "rootProcessNodeId": "00000000-0000-0000-0000-000000000000",
+          "algebraFilePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "PT0S",
+          "totalPausedTime": "PT0S",
+          "totalQueuedTime": "PT0S",
+          "totalRunningTime": "PT0S",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "location": "SoutheastAsia",
+    "publisherName": "datastax",
+    "offer": "datastax-enterprise-non-production-use-only",
+    "skus": "sandbox_single-node",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "southeastasia",
+          "name": "1.0.0",
+          "id": "/Subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/datastax/ArtifactTypes/VMImage/Offers/datastax-enterprise-non-production-use-only/Skus/sandbox_single-node/Versions/1.0.0"
+        }
+      ]
+    }
+  }
+}

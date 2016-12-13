@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "$filter": "userPrincipalName%20eq%20'test2%40rbacclitest.onmicrosoft.com'",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.User",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.User",
+            "objectType": "User",
+            "objectId": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0",
+            "deletionTimestamp": null,
+            "accountEnabled": true,
+            "signInNames": [],
+            "assignedLicenses": [],
+            "assignedPlans": [],
+            "city": null,
+            "companyName": null,
+            "country": null,
+            "creationType": null,
+            "department": null,
+            "dirSyncEnabled": null,
+            "displayName": "test2",
+            "facsimileTelephoneNumber": null,
+            "givenName": "test",
+            "immutableId": null,
+            "isCompromised": null,
+            "jobTitle": null,
+            "lastDirSyncTime": null,
+            "mail": null,
+            "mailNickname": "test2",
+            "mobile": null,
+            "onPremisesSecurityIdentifier": null,
+            "otherMails": [
+              "shubhamagarwal05@gmail.com"
+            ],
+            "passwordPolicies": "None",
+            "passwordProfile": null,
+            "physicalDeliveryOfficeName": null,
+            "postalCode": null,
+            "preferredLanguage": "en-US",
+            "provisionedPlans": [],
+            "provisioningErrors": [],
+            "proxyAddresses": [],
+            "refreshTokensValidFromDateTime": "2016-02-08T04:57:13Z",
+            "sipProxyAddress": null,
+            "state": null,
+            "streetAddress": null,
+            "surname": "test2",
+            "telephoneNumber": null,
+            "usageLocation": null,
+            "userPrincipalName": "test2@rbacCliTest.onmicrosoft.com",
+            "userType": "Member"
+          }
+        ]
+      }
+    }
+  }
+}

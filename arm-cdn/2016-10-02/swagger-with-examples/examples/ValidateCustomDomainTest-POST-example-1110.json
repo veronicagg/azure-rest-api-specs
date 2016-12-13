@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup556",
+    "profileName": "profile69",
+    "endpointName": "endpoint-8e02deffed3c",
+    "api-version": "2016-10-02",
+    "customDomainProperties": {
+      "hostName": "customdomain4.hello.com"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "customDomainValidated": false,
+        "message": "We couldn't find a DNS record for custom domain that points to endpoint. To map a domain to this endpoint, create a CNAME record with your DNS provider for custom domain that points to endpoint.",
+        "reason": "IncorrectMapping"
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "80c77c76-74ba-4c8c-8229-4c3b2957990c",
+    "resourceGroupName": "amlrg1855",
+    "commitmentPlanName": "amlcp4285",
+    "api-version": "2016-05-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

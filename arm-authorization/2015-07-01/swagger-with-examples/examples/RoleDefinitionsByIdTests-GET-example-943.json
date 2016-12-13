@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "roleAssignmentId": "",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Redis Cache Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage Redis caches, but not access to them.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Cache/redis/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:24.2947109Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/e0f68234-74aa-48ed-b826-c38b57376e17",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "e0f68234-74aa-48ed-b826-c38b57376e17"
+      }
+    }
+  }
+}

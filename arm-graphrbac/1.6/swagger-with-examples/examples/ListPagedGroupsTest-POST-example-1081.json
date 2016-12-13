@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "tenantID": "rbacclitest.onmicrosoft.com",
+    "api-version": "1.6",
+    "parameters": {
+      "displayName": "adgroup9277",
+      "mailNickname": "adgroup9277tester",
+      "mailEnabled": false,
+      "securityEnabled": true
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/rbacclitest.onmicrosoft.com/$metadata#directoryObjects/Microsoft.DirectoryServices.Group/@Element",
+        "odata.type": "Microsoft.DirectoryServices.Group",
+        "objectType": "Group",
+        "objectId": "09f4707d-61dd-4ce0-a861-df911f627d31",
+        "deletionTimestamp": null,
+        "description": null,
+        "dirSyncEnabled": null,
+        "displayName": "adgroup9277",
+        "lastDirSyncTime": null,
+        "mail": null,
+        "mailNickname": "adgroup9277tester",
+        "mailEnabled": false,
+        "onPremisesSecurityIdentifier": null,
+        "provisioningErrors": [],
+        "proxyAddresses": [],
+        "securityEnabled": true
+      }
+    }
+  }
+}

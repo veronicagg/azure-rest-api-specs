@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg6499/providers/SuccessBricks.ClearDB/databases/csmr8260",
+        "name": "csmr8260",
+        "type": "SuccessBricks.ClearDB/database",
+        "location": "Canada East",
+        "plan": {
+          "name": "Free"
+        },
+        "properties": {
+          "hostname": "ca-cdbr-azure-east-a.cloudapp.net",
+          "name": "csmr8260",
+          "id": "E2C1C2C26E87612E66994745ED401E0C",
+          "size_mb": 0,
+          "max_size_mb": "20",
+          "port": 3306,
+          "status": {
+            "name": "Healthy",
+            "message": "Database is healthy and ready for use.",
+            "level": "Info"
+          }
+        },
+        "tags": {}
+      }
+    }
+  }
+}

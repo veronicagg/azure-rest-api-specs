@@ -1,0 +1,2442 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "AuthorizationManagementClient",
+    "version": "2015-07-01",
+    "description": "Role based access control provides you a way to apply granular level policy administration down to individual resources or resource groups. These operations enable you to manage role definitions and role assignments. A role definition describes the set of actions that can be performed on resources. A role assignment grants access to Azure Active Directory users."
+  },
+  "host": "management.azure.com",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json",
+    "text/json"
+  ],
+  "produces": [
+    "application/json",
+    "text/json"
+  ],
+  "security": [
+    {
+      "azure_auth": [
+        "user_impersonation"
+      ]
+    }
+  ],
+  "securityDefinitions": {
+    "azure_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "flow": "implicit",
+      "description": "Azure Active Directory OAuth2 Flow",
+      "scopes": {
+        "user_impersonation": "impersonate your user account"
+      }
+    }
+  },
+  "paths": {
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/classicAdministrators": {
+      "get": {
+        "tags": [
+          "ClassicAdministrators"
+        ],
+        "operationId": "ClassicAdministrators_List",
+        "description": "Gets service administrator, account administrator, and co-administrators for the subscription.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "The API version to use for this operation."
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns an array of administrators.",
+            "schema": {
+              "$ref": "#/definitions/ClassicAdministratorListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "ClassicAdministratorListTestsGET11": {
+            "$ref": "../examples/ClassicAdministratorListTests-GET-example-11.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/Microsoft.Authorization/permissions": {
+      "get": {
+        "tags": [
+          "Permissions"
+        ],
+        "operationId": "Permissions_ListForResourceGroup",
+        "description": "Gets all permissions the caller has for a resource group.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group to get the permissions for. The name is case insensitive."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of permissions.",
+            "schema": {
+              "$ref": "#/definitions/PermissionGetResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-examples": {
+          "GetNonExistentResourceGroupPermissionsGET21": {
+            "$ref": "../examples/GetNonExistentResourceGroupPermissions-GET-example-21.json"
+          },
+          "GetResourceGroupPermissionsGET22": {
+            "$ref": "../examples/GetResourceGroupPermissions-GET-example-22.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{parentResourcePath}/{resourceType}/{resourceName}/providers/Microsoft.Authorization/permissions": {
+      "get": {
+        "tags": [
+          "Permissions"
+        ],
+        "operationId": "Permissions_ListForResource",
+        "description": "Gets all permissions the caller has for a resource.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group containing the resource. The name is case insensitive."
+          },
+          {
+            "name": "resourceProviderNamespace",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The namespace of the resource provider."
+          },
+          {
+            "name": "parentResourcePath",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The parent resource identity.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "resourceType",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The resource type of the resource.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "resourceName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource to get the permissions for."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of permissions.",
+            "schema": {
+              "$ref": "#/definitions/PermissionGetResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/providers/Microsoft.Authorization/providerOperations/{resourceProviderNamespace}": {
+      "get": {
+        "tags": [
+          "ProviderOperationsMetadata"
+        ],
+        "operationId": "ProviderOperationsMetadata_Get",
+        "description": "Gets provider operations metadata for the specified resource provider.",
+        "parameters": [
+          {
+            "name": "resourceProviderNamespace",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The namespace of the resource provider."
+          },
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "The API version to use for the operation."
+          },
+          {
+            "name": "$expand",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "resourceTypes",
+            "description": "Specifies whether to expand the values."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns the operations metadata.",
+            "schema": {
+              "$ref": "#/definitions/ProviderOperationsMetadata"
+            }
+          }
+        }
+      }
+    },
+    "/providers/Microsoft.Authorization/providerOperations": {
+      "get": {
+        "tags": [
+          "ProviderOperationsMetadata"
+        ],
+        "operationId": "ProviderOperationsMetadata_List",
+        "description": "Gets provider operations metadata for all resource providers.",
+        "parameters": [
+          {
+            "name": "api-version",
+            "in": "query",
+            "required": true,
+            "type": "string",
+            "description": "The API version to use for this operation."
+          },
+          {
+            "name": "$expand",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "default": "resourceTypes",
+            "description": "Specifies whether to expand the values."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of the operations metadata.",
+            "schema": {
+              "$ref": "#/definitions/ProviderOperationsMetadataListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{parentResourcePath}/{resourceType}/{resourceName}providers/Microsoft.Authorization/roleAssignments": {
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_ListForResource",
+        "description": "Gets role assignments for a resource.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group."
+          },
+          {
+            "name": "resourceProviderNamespace",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The namespace of the resource provider."
+          },
+          {
+            "name": "parentResourcePath",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The parent resource identity.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "resourceType",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The resource type of the resource.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "resourceName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource to get role assignments for."
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The filter to apply on the operation. Use $filter=atScope() to return all role assignments at or above the scope. Use $filter=principalId eq {id} to return all role assignments at, above or below the scope for the specified principal."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of role assignments.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/RoleAssignmentFilter"
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Authorization/roleAssignments": {
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_ListForResourceGroup",
+        "description": "Gets role assignments for a resource group.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the resource group."
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The filter to apply on the operation. Use $filter=atScope() to return all role assignments at or above the scope. Use $filter=principalId eq {id} to return all role assignments at, above or below the scope for the specified principal."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of role assignments.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/RoleAssignmentFilter"
+      }
+    },
+    "/{scope}/providers/Microsoft.Authorization/roleAssignments/{roleAssignmentName}": {
+      "delete": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_Delete",
+        "description": "Deletes a role assignment.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role assignment to delete.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleAssignmentName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the role assignment to delete."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns information about the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsDELETE84": {
+            "$ref": "../examples/RoleAssignmentByIdTests-DELETE-example-84.json"
+          },
+          "RoleAssignmentPagingTestDELETE826": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-826.json"
+          },
+          "RoleAssignmentPagingTestDELETE827": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-827.json"
+          },
+          "RoleAssignmentPagingTestDELETE828": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-828.json"
+          },
+          "RoleAssignmentPagingTestDELETE829": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-829.json"
+          },
+          "RoleAssignmentPagingTestDELETE830": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-830.json"
+          },
+          "RoleAssignmentPagingTestDELETE831": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-831.json"
+          },
+          "RoleAssignmentPagingTestDELETE832": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-832.json"
+          },
+          "RoleAssignmentPagingTestDELETE833": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-833.json"
+          },
+          "RoleAssignmentPagingTestDELETE834": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-834.json"
+          },
+          "RoleAssignmentPagingTestDELETE835": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-835.json"
+          },
+          "RoleAssignmentPagingTestDELETE836": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-836.json"
+          },
+          "RoleAssignmentPagingTestDELETE837": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-837.json"
+          },
+          "RoleAssignmentPagingTestDELETE838": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-838.json"
+          },
+          "RoleAssignmentPagingTestDELETE839": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-839.json"
+          },
+          "RoleAssignmentPagingTestDELETE840": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-840.json"
+          },
+          "RoleAssignmentPagingTestDELETE841": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-841.json"
+          },
+          "RoleAssignmentPagingTestDELETE842": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-842.json"
+          },
+          "RoleAssignmentPagingTestDELETE843": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-843.json"
+          },
+          "RoleAssignmentPagingTestDELETE844": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-844.json"
+          },
+          "RoleAssignmentPagingTestDELETE845": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-845.json"
+          },
+          "RoleAssignmentPagingTestDELETE846": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-846.json"
+          },
+          "RoleAssignmentPagingTestDELETE847": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-847.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsDELETE83": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-DELETE-example-83.json"
+          },
+          "RoleAssignmentsListGetTestsDELETE85": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-DELETE-example-85.json"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_Create",
+        "description": "Creates a role assignment.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role assignment to create. The scope can be any REST resource instance. For example, use '/subscriptions/{subscription-id}/' for a subscription, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for a resource group, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' for a resource.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleAssignmentName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the role assignment to create. It can be any valid GUID."
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentCreateParameters"
+            },
+            "description": "Parameters for the role assignment."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created - Returns information about the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsPUT82": {
+            "$ref": "../examples/RoleAssignmentByIdTests-PUT-example-82.json"
+          },
+          "RoleAssignmentListByFilterTestPUT82": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-82.json"
+          },
+          "RoleAssignmentListByFilterTestPUT83": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-83.json"
+          },
+          "RoleAssignmentListByFilterTestPUT84": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-84.json"
+          },
+          "RoleAssignmentListByFilterTestPUT85": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-85.json"
+          },
+          "RoleAssignmentListByFilterTestPUT86": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-86.json"
+          },
+          "RoleAssignmentListByFilterTestPUT87": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-87.json"
+          },
+          "RoleAssignmentListByFilterTestPUT88": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-88.json"
+          },
+          "RoleAssignmentListByFilterTestPUT89": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-89.json"
+          },
+          "RoleAssignmentListByFilterTestPUT810": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-810.json"
+          },
+          "RoleAssignmentListByFilterTestPUT811": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-811.json"
+          },
+          "RoleAssignmentPagingTestPUT82": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-82.json"
+          },
+          "RoleAssignmentPagingTestPUT83": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-83.json"
+          },
+          "RoleAssignmentPagingTestPUT84": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-84.json"
+          },
+          "RoleAssignmentPagingTestPUT85": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-85.json"
+          },
+          "RoleAssignmentPagingTestPUT86": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-86.json"
+          },
+          "RoleAssignmentPagingTestPUT87": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-87.json"
+          },
+          "RoleAssignmentPagingTestPUT88": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-88.json"
+          },
+          "RoleAssignmentPagingTestPUT89": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-89.json"
+          },
+          "RoleAssignmentPagingTestPUT810": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-810.json"
+          },
+          "RoleAssignmentPagingTestPUT811": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-811.json"
+          },
+          "RoleAssignmentPagingTestPUT812": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-812.json"
+          },
+          "RoleAssignmentPagingTestPUT813": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-813.json"
+          },
+          "RoleAssignmentPagingTestPUT814": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-814.json"
+          },
+          "RoleAssignmentPagingTestPUT815": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-815.json"
+          },
+          "RoleAssignmentPagingTestPUT816": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-816.json"
+          },
+          "RoleAssignmentPagingTestPUT817": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-817.json"
+          },
+          "RoleAssignmentPagingTestPUT818": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-818.json"
+          },
+          "RoleAssignmentPagingTestPUT819": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-819.json"
+          },
+          "RoleAssignmentPagingTestPUT820": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-820.json"
+          },
+          "RoleAssignmentPagingTestPUT821": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-821.json"
+          },
+          "RoleAssignmentPagingTestPUT822": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-822.json"
+          },
+          "RoleAssignmentPagingTestPUT823": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-823.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsPUT82": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-PUT-example-82.json"
+          },
+          "RoleAssignmentsListGetTestsPUT82": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-PUT-example-82.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_Get",
+        "description": "Get the specified role assignment.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role assignment.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleAssignmentName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the role assignment to get."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns information about the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsGET83": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-83.json"
+          },
+          "RoleAssignmentsListGetTestsGET84": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-84.json"
+          }
+        }
+      }
+    },
+    "/{roleAssignmentId}": {
+      "delete": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_DeleteById",
+        "description": "Deletes a role assignment.",
+        "parameters": [
+          {
+            "name": "roleAssignmentId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role assignment to delete.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns information about the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsDELETE94": {
+            "$ref": "../examples/RoleAssignmentByIdTests-DELETE-example-94.json"
+          },
+          "RoleAssignmentPagingTestDELETE926": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-926.json"
+          },
+          "RoleAssignmentPagingTestDELETE927": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-927.json"
+          },
+          "RoleAssignmentPagingTestDELETE928": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-928.json"
+          },
+          "RoleAssignmentPagingTestDELETE929": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-929.json"
+          },
+          "RoleAssignmentPagingTestDELETE930": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-930.json"
+          },
+          "RoleAssignmentPagingTestDELETE931": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-931.json"
+          },
+          "RoleAssignmentPagingTestDELETE932": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-932.json"
+          },
+          "RoleAssignmentPagingTestDELETE933": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-933.json"
+          },
+          "RoleAssignmentPagingTestDELETE934": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-934.json"
+          },
+          "RoleAssignmentPagingTestDELETE935": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-935.json"
+          },
+          "RoleAssignmentPagingTestDELETE936": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-936.json"
+          },
+          "RoleAssignmentPagingTestDELETE937": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-937.json"
+          },
+          "RoleAssignmentPagingTestDELETE938": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-938.json"
+          },
+          "RoleAssignmentPagingTestDELETE939": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-939.json"
+          },
+          "RoleAssignmentPagingTestDELETE940": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-940.json"
+          },
+          "RoleAssignmentPagingTestDELETE941": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-941.json"
+          },
+          "RoleAssignmentPagingTestDELETE942": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-942.json"
+          },
+          "RoleAssignmentPagingTestDELETE943": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-943.json"
+          },
+          "RoleAssignmentPagingTestDELETE944": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-944.json"
+          },
+          "RoleAssignmentPagingTestDELETE945": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-945.json"
+          },
+          "RoleAssignmentPagingTestDELETE946": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-946.json"
+          },
+          "RoleAssignmentPagingTestDELETE947": {
+            "$ref": "../examples/RoleAssignmentPagingTest-DELETE-example-947.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsDELETE93": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-DELETE-example-93.json"
+          },
+          "RoleAssignmentsListGetTestsDELETE95": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-DELETE-example-95.json"
+          },
+          "RoleDefinitionCreateTestsDELETE99": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-99.json"
+          },
+          "RoleDefinitionCreateTestsDELETE910": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-910.json"
+          },
+          "RoleDefinitionCreateTestsDELETE911": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-911.json"
+          },
+          "RoleDefinitionUpdateTestsDELETE94": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-DELETE-example-94.json"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_CreateById",
+        "description": "Creates a role assignment by ID.",
+        "parameters": [
+          {
+            "name": "roleAssignmentId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role assignment to create.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentCreateParameters"
+            },
+            "description": "Parameters for the role assignment."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Created - Returns the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsPUT92": {
+            "$ref": "../examples/RoleAssignmentByIdTests-PUT-example-92.json"
+          },
+          "RoleAssignmentListByFilterTestPUT92": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-92.json"
+          },
+          "RoleAssignmentListByFilterTestPUT93": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-93.json"
+          },
+          "RoleAssignmentListByFilterTestPUT94": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-94.json"
+          },
+          "RoleAssignmentListByFilterTestPUT95": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-95.json"
+          },
+          "RoleAssignmentListByFilterTestPUT96": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-96.json"
+          },
+          "RoleAssignmentListByFilterTestPUT97": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-97.json"
+          },
+          "RoleAssignmentListByFilterTestPUT98": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-98.json"
+          },
+          "RoleAssignmentListByFilterTestPUT99": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-99.json"
+          },
+          "RoleAssignmentListByFilterTestPUT910": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-910.json"
+          },
+          "RoleAssignmentListByFilterTestPUT911": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-PUT-example-911.json"
+          },
+          "RoleAssignmentPagingTestPUT92": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-92.json"
+          },
+          "RoleAssignmentPagingTestPUT93": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-93.json"
+          },
+          "RoleAssignmentPagingTestPUT94": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-94.json"
+          },
+          "RoleAssignmentPagingTestPUT95": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-95.json"
+          },
+          "RoleAssignmentPagingTestPUT96": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-96.json"
+          },
+          "RoleAssignmentPagingTestPUT97": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-97.json"
+          },
+          "RoleAssignmentPagingTestPUT98": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-98.json"
+          },
+          "RoleAssignmentPagingTestPUT99": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-99.json"
+          },
+          "RoleAssignmentPagingTestPUT910": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-910.json"
+          },
+          "RoleAssignmentPagingTestPUT911": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-911.json"
+          },
+          "RoleAssignmentPagingTestPUT912": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-912.json"
+          },
+          "RoleAssignmentPagingTestPUT913": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-913.json"
+          },
+          "RoleAssignmentPagingTestPUT914": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-914.json"
+          },
+          "RoleAssignmentPagingTestPUT915": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-915.json"
+          },
+          "RoleAssignmentPagingTestPUT916": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-916.json"
+          },
+          "RoleAssignmentPagingTestPUT917": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-917.json"
+          },
+          "RoleAssignmentPagingTestPUT918": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-918.json"
+          },
+          "RoleAssignmentPagingTestPUT919": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-919.json"
+          },
+          "RoleAssignmentPagingTestPUT920": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-920.json"
+          },
+          "RoleAssignmentPagingTestPUT921": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-921.json"
+          },
+          "RoleAssignmentPagingTestPUT922": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-922.json"
+          },
+          "RoleAssignmentPagingTestPUT923": {
+            "$ref": "../examples/RoleAssignmentPagingTest-PUT-example-923.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsPUT92": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-PUT-example-92.json"
+          },
+          "RoleAssignmentsListGetTestsPUT92": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-PUT-example-92.json"
+          },
+          "RoleDefinitionCreateTestsPUT91": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-91.json"
+          },
+          "RoleDefinitionCreateTestsPUT92": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-92.json"
+          },
+          "RoleDefinitionCreateTestsPUT93": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-93.json"
+          },
+          "RoleDefinitionCreateTestsPUT94": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-94.json"
+          },
+          "RoleDefinitionCreateTestsPUT95": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-95.json"
+          },
+          "RoleDefinitionCreateTestsPUT96": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-96.json"
+          },
+          "RoleDefinitionCreateTestsPUT97": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-97.json"
+          },
+          "RoleDefinitionCreateTestsPUT98": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-98.json"
+          },
+          "RoleDefinitionCreateTestsPUT912": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-912.json"
+          },
+          "RoleDefinitionCreateTestsPUT914": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-914.json"
+          },
+          "RoleDefinitionUpdateTestsPUT91": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-91.json"
+          },
+          "RoleDefinitionUpdateTestsPUT92": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-92.json"
+          },
+          "RoleDefinitionUpdateTestsPUT93": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-93.json"
+          },
+          "GetResourceGroupPermissionsPUT91": {
+            "$ref": "../examples/GetResourceGroupPermissions-PUT-example-91.json"
+          },
+          "GetResourcePermissionsPUT91": {
+            "$ref": "../examples/GetResourcePermissions-PUT-example-91.json"
+          },
+          "GetResourcePermissionsPUT92": {
+            "$ref": "../examples/GetResourcePermissions-PUT-example-92.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_GetById",
+        "description": "Gets a role assignment by ID.",
+        "parameters": [
+          {
+            "name": "roleAssignmentId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role assignment to get.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns the role assignment.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignment"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "ClassicAdministratorListTestsGET91": {
+            "$ref": "../examples/ClassicAdministratorListTests-GET-example-91.json"
+          },
+          "RoleAssignmentAtScopeAndAboveTestGET91": {
+            "$ref": "../examples/RoleAssignmentAtScopeAndAboveTest-GET-example-91.json"
+          },
+          "RoleAssignmentByIdTestsGET91": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-91.json"
+          },
+          "RoleAssignmentByIdTestsGET93": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-93.json"
+          },
+          "RoleAssignmentByIdTestsGET95": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-95.json"
+          },
+          "RoleAssignmentListByFilterTestGET91": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-GET-example-91.json"
+          },
+          "RoleAssignmentListByFilterTestGET912": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-GET-example-912.json"
+          },
+          "RoleAssignmentListForScopeTestGET91": {
+            "$ref": "../examples/RoleAssignmentListForScopeTest-GET-example-91.json"
+          },
+          "RoleAssignmentListWithAssignedToFilterTestGET91": {
+            "$ref": "../examples/RoleAssignmentListWithAssignedToFilterTest-GET-example-91.json"
+          },
+          "RoleAssignmentPagingTestGET91": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-91.json"
+          },
+          "RoleAssignmentPagingTestGET924": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-924.json"
+          },
+          "RoleAssignmentPagingTestGET925": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-925.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsGET91": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-GET-example-91.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsGET94": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-GET-example-94.json"
+          },
+          "RoleAssignmentsListGetTestsGET91": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-91.json"
+          },
+          "RoleAssignmentsListGetTestsGET93": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-93.json"
+          },
+          "RoleAssignmentsListGetTestsGET94": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-94.json"
+          },
+          "RoleDefinitionCreateTestsGET913": {
+            "$ref": "../examples/RoleDefinitionCreateTests-GET-example-913.json"
+          },
+          "RoleDefinitionsByIdTestsGET91": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-91.json"
+          },
+          "RoleDefinitionsByIdTestsGET92": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-92.json"
+          },
+          "RoleDefinitionsByIdTestsGET93": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-93.json"
+          },
+          "RoleDefinitionsByIdTestsGET94": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-94.json"
+          },
+          "RoleDefinitionsByIdTestsGET95": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-95.json"
+          },
+          "RoleDefinitionsByIdTestsGET96": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-96.json"
+          },
+          "RoleDefinitionsByIdTestsGET97": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-97.json"
+          },
+          "RoleDefinitionsByIdTestsGET98": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-98.json"
+          },
+          "RoleDefinitionsByIdTestsGET99": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-99.json"
+          },
+          "RoleDefinitionsByIdTestsGET910": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-910.json"
+          },
+          "RoleDefinitionsByIdTestsGET911": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-911.json"
+          },
+          "RoleDefinitionsByIdTestsGET912": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-912.json"
+          },
+          "RoleDefinitionsByIdTestsGET913": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-913.json"
+          },
+          "RoleDefinitionsByIdTestsGET914": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-914.json"
+          },
+          "RoleDefinitionsByIdTestsGET915": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-915.json"
+          },
+          "RoleDefinitionsByIdTestsGET916": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-916.json"
+          },
+          "RoleDefinitionsByIdTestsGET917": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-917.json"
+          },
+          "RoleDefinitionsByIdTestsGET918": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-918.json"
+          },
+          "RoleDefinitionsByIdTestsGET919": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-919.json"
+          },
+          "RoleDefinitionsByIdTestsGET920": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-920.json"
+          },
+          "RoleDefinitionsByIdTestsGET921": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-921.json"
+          },
+          "RoleDefinitionsByIdTestsGET922": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-922.json"
+          },
+          "RoleDefinitionsByIdTestsGET923": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-923.json"
+          },
+          "RoleDefinitionsByIdTestsGET924": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-924.json"
+          },
+          "RoleDefinitionsByIdTestsGET925": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-925.json"
+          },
+          "RoleDefinitionsByIdTestsGET926": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-926.json"
+          },
+          "RoleDefinitionsByIdTestsGET927": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-927.json"
+          },
+          "RoleDefinitionsByIdTestsGET928": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-928.json"
+          },
+          "RoleDefinitionsByIdTestsGET929": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-929.json"
+          },
+          "RoleDefinitionsByIdTestsGET930": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-930.json"
+          },
+          "RoleDefinitionsByIdTestsGET931": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-931.json"
+          },
+          "RoleDefinitionsByIdTestsGET932": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-932.json"
+          },
+          "RoleDefinitionsByIdTestsGET933": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-933.json"
+          },
+          "RoleDefinitionsByIdTestsGET934": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-934.json"
+          },
+          "RoleDefinitionsByIdTestsGET935": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-935.json"
+          },
+          "RoleDefinitionsByIdTestsGET936": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-936.json"
+          },
+          "RoleDefinitionsByIdTestsGET937": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-937.json"
+          },
+          "RoleDefinitionsByIdTestsGET938": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-938.json"
+          },
+          "RoleDefinitionsByIdTestsGET939": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-939.json"
+          },
+          "RoleDefinitionsByIdTestsGET940": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-940.json"
+          },
+          "RoleDefinitionsByIdTestsGET941": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-941.json"
+          },
+          "RoleDefinitionsByIdTestsGET942": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-942.json"
+          },
+          "RoleDefinitionsByIdTestsGET943": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-943.json"
+          },
+          "RoleDefinitionsByIdTestsGET944": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-944.json"
+          },
+          "RoleDefinitionsByIdTestsGET945": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-945.json"
+          },
+          "RoleDefinitionsByIdTestsGET946": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-946.json"
+          },
+          "RoleDefinitionsByIdTestsGET947": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-947.json"
+          },
+          "RoleDefinitionsByIdTestsGET948": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-948.json"
+          },
+          "RoleDefinitionsByIdTestsGET949": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-949.json"
+          },
+          "RoleDefinitionsByIdTestsGET950": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-950.json"
+          },
+          "RoleDefinitionsByIdTestsGET951": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-951.json"
+          },
+          "RoleDefinitionsByIdTestsGET952": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-952.json"
+          },
+          "RoleDefinitionsByIdTestsGET953": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-953.json"
+          },
+          "RoleDefinitionsByIdTestsGET954": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-954.json"
+          },
+          "RoleDefinitionsByIdTestsGET955": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-955.json"
+          },
+          "RoleDefinitionsByIdTestsGET956": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-956.json"
+          },
+          "RoleDefinitionsByIdTestsGET957": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-957.json"
+          },
+          "RoleDefinitionsByIdTestsGET958": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-958.json"
+          },
+          "RoleDefinitionsByIdTestsGET959": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-959.json"
+          },
+          "RoleDefinitionsByIdTestsGET960": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-960.json"
+          },
+          "RoleDefinitionsByIdTestsGET961": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-961.json"
+          },
+          "RoleDefinitionsByIdTestsGET962": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-962.json"
+          },
+          "RoleDefinitionsByIdTestsGET963": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-963.json"
+          },
+          "RoleDefinitionsByIdTestsGET964": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-964.json"
+          },
+          "RoleDefinitionsByIdTestsGET965": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-965.json"
+          },
+          "RoleDefinitionsByIdTestsGET966": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-966.json"
+          },
+          "RoleDefinitionsByIdTestsGET967": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-967.json"
+          },
+          "RoleDefinitionsListGetTestsGET91": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-91.json"
+          },
+          "RoleDefinitionsListGetTestsGET92": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-92.json"
+          },
+          "RoleDefinitionsListGetTestsGET93": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-93.json"
+          },
+          "RoleDefinitionsListGetTestsGET94": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-94.json"
+          },
+          "RoleDefinitionsListGetTestsGET95": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-95.json"
+          },
+          "RoleDefinitionsListGetTestsGET96": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-96.json"
+          },
+          "RoleDefinitionsListGetTestsGET97": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-97.json"
+          },
+          "RoleDefinitionsListGetTestsGET98": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-98.json"
+          },
+          "RoleDefinitionsListGetTestsGET99": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-99.json"
+          },
+          "RoleDefinitionsListGetTestsGET910": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-910.json"
+          },
+          "RoleDefinitionsListGetTestsGET911": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-911.json"
+          },
+          "RoleDefinitionsListGetTestsGET912": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-912.json"
+          },
+          "RoleDefinitionsListGetTestsGET913": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-913.json"
+          },
+          "RoleDefinitionsListGetTestsGET914": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-914.json"
+          },
+          "RoleDefinitionsListGetTestsGET915": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-915.json"
+          },
+          "RoleDefinitionsListGetTestsGET916": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-916.json"
+          },
+          "RoleDefinitionsListGetTestsGET917": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-917.json"
+          },
+          "RoleDefinitionsListGetTestsGET918": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-918.json"
+          },
+          "RoleDefinitionsListGetTestsGET919": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-919.json"
+          },
+          "RoleDefinitionsListGetTestsGET920": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-920.json"
+          },
+          "RoleDefinitionsListGetTestsGET921": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-921.json"
+          },
+          "RoleDefinitionsListGetTestsGET922": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-922.json"
+          },
+          "RoleDefinitionsListGetTestsGET923": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-923.json"
+          },
+          "RoleDefinitionsListGetTestsGET924": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-924.json"
+          },
+          "RoleDefinitionsListGetTestsGET925": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-925.json"
+          },
+          "RoleDefinitionsListGetTestsGET926": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-926.json"
+          },
+          "RoleDefinitionsListGetTestsGET927": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-927.json"
+          },
+          "RoleDefinitionsListGetTestsGET928": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-928.json"
+          },
+          "RoleDefinitionsListGetTestsGET929": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-929.json"
+          },
+          "RoleDefinitionsListGetTestsGET930": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-930.json"
+          },
+          "RoleDefinitionsListGetTestsGET931": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-931.json"
+          },
+          "RoleDefinitionsListGetTestsGET932": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-932.json"
+          },
+          "RoleDefinitionsListGetTestsGET933": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-933.json"
+          },
+          "RoleDefinitionsListGetTestsGET934": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-934.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET91": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-91.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET92": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-92.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET93": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-93.json"
+          },
+          "GetNonExistentResourceGroupPermissionsGET91": {
+            "$ref": "../examples/GetNonExistentResourceGroupPermissions-GET-example-91.json"
+          },
+          "GetNonExistentResourcePermissionsGET91": {
+            "$ref": "../examples/GetNonExistentResourcePermissions-GET-example-91.json"
+          },
+          "GetResourceGroupPermissionsGET92": {
+            "$ref": "../examples/GetResourceGroupPermissions-GET-example-92.json"
+          },
+          "GetResourcePermissionsGET93": {
+            "$ref": "../examples/GetResourcePermissions-GET-example-93.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Authorization/roleAssignments": {
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_List",
+        "description": "Gets all role assignments for the subscription.",
+        "parameters": [
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The filter to apply on the operation. Use $filter=atScope() to return all role assignments at or above the scope. Use $filter=principalId eq {id} to return all role assignments at, above or below the scope for the specified principal."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of role assignments.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/RoleAssignmentFilter",
+        "x-ms-examples": {
+          "RoleAssignmentAtScopeAndAboveTestGET101": {
+            "$ref": "../examples/RoleAssignmentAtScopeAndAboveTest-GET-example-101.json"
+          },
+          "RoleAssignmentByIdTestsGET105": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-105.json"
+          },
+          "RoleAssignmentListByFilterTestGET1012": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-GET-example-1012.json"
+          },
+          "RoleAssignmentListForScopeTestGET101": {
+            "$ref": "../examples/RoleAssignmentListForScopeTest-GET-example-101.json"
+          },
+          "RoleAssignmentPagingTestGET1024": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-1024.json"
+          },
+          "RoleAssignmentPagingTestGET1025": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-1025.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsGET104": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-GET-example-104.json"
+          },
+          "RoleAssignmentsListGetTestsGET103": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-103.json"
+          }
+        }
+      }
+    },
+    "/{scope}/providers/Microsoft.Authorization/roleAssignments": {
+      "get": {
+        "tags": [
+          "RoleAssignments"
+        ],
+        "operationId": "RoleAssignments_ListForScope",
+        "description": "Gets role assignments for a scope.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role assignments.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The filter to apply on the operation. Use $filter=atScope() to return all role assignments at or above the scope. Use $filter=principalId eq {id} to return all role assignments at, above or below the scope for the specified principal."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of role assignments.",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignmentListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/RoleAssignmentFilter",
+        "x-ms-examples": {
+          "RoleAssignmentAtScopeAndAboveTestGET111": {
+            "$ref": "../examples/RoleAssignmentAtScopeAndAboveTest-GET-example-111.json"
+          },
+          "RoleAssignmentByIdTestsGET115": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-115.json"
+          },
+          "RoleAssignmentListByFilterTestGET1112": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-GET-example-1112.json"
+          },
+          "RoleAssignmentListForScopeTestGET111": {
+            "$ref": "../examples/RoleAssignmentListForScopeTest-GET-example-111.json"
+          },
+          "RoleAssignmentPagingTestGET1124": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-1124.json"
+          },
+          "RoleAssignmentPagingTestGET1125": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-1125.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsGET114": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-GET-example-114.json"
+          },
+          "RoleAssignmentsListGetTestsGET113": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-113.json"
+          }
+        }
+      }
+    },
+    "/{scope}/providers/Microsoft.Authorization/roleDefinitions/{roleDefinitionId}": {
+      "delete": {
+        "tags": [
+          "RoleDefinitions"
+        ],
+        "operationId": "RoleDefinitions_Delete",
+        "description": "Deletes a role definition.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role definition.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleDefinitionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role definition to delete."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns information about the role definition.",
+            "schema": {
+              "$ref": "#/definitions/RoleDefinition"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleDefinitionCreateTestsDELETE129": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-129.json"
+          },
+          "RoleDefinitionCreateTestsDELETE1210": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-1210.json"
+          },
+          "RoleDefinitionCreateTestsDELETE1211": {
+            "$ref": "../examples/RoleDefinitionCreateTests-DELETE-example-1211.json"
+          },
+          "RoleDefinitionUpdateTestsDELETE124": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-DELETE-example-124.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "RoleDefinitions"
+        ],
+        "operationId": "RoleDefinitions_Get",
+        "description": "Get role definition by name (GUID).",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role definition.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleDefinitionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role definition."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns information about the role definition.",
+            "schema": {
+              "$ref": "#/definitions/RoleDefinition"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleDefinitionsByIdTestsGET122": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-122.json"
+          },
+          "RoleDefinitionsByIdTestsGET123": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-123.json"
+          },
+          "RoleDefinitionsByIdTestsGET124": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-124.json"
+          },
+          "RoleDefinitionsByIdTestsGET125": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-125.json"
+          },
+          "RoleDefinitionsByIdTestsGET126": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-126.json"
+          },
+          "RoleDefinitionsByIdTestsGET127": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-127.json"
+          },
+          "RoleDefinitionsByIdTestsGET128": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-128.json"
+          },
+          "RoleDefinitionsByIdTestsGET129": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-129.json"
+          },
+          "RoleDefinitionsByIdTestsGET1210": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1210.json"
+          },
+          "RoleDefinitionsByIdTestsGET1211": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1211.json"
+          },
+          "RoleDefinitionsByIdTestsGET1212": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1212.json"
+          },
+          "RoleDefinitionsByIdTestsGET1213": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1213.json"
+          },
+          "RoleDefinitionsByIdTestsGET1214": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1214.json"
+          },
+          "RoleDefinitionsByIdTestsGET1215": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1215.json"
+          },
+          "RoleDefinitionsByIdTestsGET1216": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1216.json"
+          },
+          "RoleDefinitionsByIdTestsGET1217": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1217.json"
+          },
+          "RoleDefinitionsByIdTestsGET1218": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1218.json"
+          },
+          "RoleDefinitionsByIdTestsGET1219": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1219.json"
+          },
+          "RoleDefinitionsByIdTestsGET1220": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1220.json"
+          },
+          "RoleDefinitionsByIdTestsGET1221": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1221.json"
+          },
+          "RoleDefinitionsByIdTestsGET1222": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1222.json"
+          },
+          "RoleDefinitionsByIdTestsGET1223": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1223.json"
+          },
+          "RoleDefinitionsByIdTestsGET1224": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1224.json"
+          },
+          "RoleDefinitionsByIdTestsGET1225": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1225.json"
+          },
+          "RoleDefinitionsByIdTestsGET1226": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1226.json"
+          },
+          "RoleDefinitionsByIdTestsGET1227": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1227.json"
+          },
+          "RoleDefinitionsByIdTestsGET1228": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1228.json"
+          },
+          "RoleDefinitionsByIdTestsGET1229": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1229.json"
+          },
+          "RoleDefinitionsByIdTestsGET1230": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1230.json"
+          },
+          "RoleDefinitionsByIdTestsGET1231": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1231.json"
+          },
+          "RoleDefinitionsByIdTestsGET1232": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1232.json"
+          },
+          "RoleDefinitionsByIdTestsGET1233": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1233.json"
+          },
+          "RoleDefinitionsByIdTestsGET1234": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1234.json"
+          },
+          "RoleDefinitionsByIdTestsGET1235": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1235.json"
+          },
+          "RoleDefinitionsByIdTestsGET1236": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1236.json"
+          },
+          "RoleDefinitionsByIdTestsGET1237": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1237.json"
+          },
+          "RoleDefinitionsByIdTestsGET1238": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1238.json"
+          },
+          "RoleDefinitionsByIdTestsGET1239": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1239.json"
+          },
+          "RoleDefinitionsByIdTestsGET1240": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1240.json"
+          },
+          "RoleDefinitionsByIdTestsGET1241": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1241.json"
+          },
+          "RoleDefinitionsByIdTestsGET1242": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1242.json"
+          },
+          "RoleDefinitionsByIdTestsGET1243": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1243.json"
+          },
+          "RoleDefinitionsByIdTestsGET1244": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1244.json"
+          },
+          "RoleDefinitionsByIdTestsGET1245": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1245.json"
+          },
+          "RoleDefinitionsByIdTestsGET1246": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1246.json"
+          },
+          "RoleDefinitionsByIdTestsGET1247": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1247.json"
+          },
+          "RoleDefinitionsByIdTestsGET1248": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1248.json"
+          },
+          "RoleDefinitionsByIdTestsGET1249": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1249.json"
+          },
+          "RoleDefinitionsByIdTestsGET1250": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1250.json"
+          },
+          "RoleDefinitionsByIdTestsGET1251": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1251.json"
+          },
+          "RoleDefinitionsByIdTestsGET1252": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1252.json"
+          },
+          "RoleDefinitionsByIdTestsGET1253": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1253.json"
+          },
+          "RoleDefinitionsByIdTestsGET1254": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1254.json"
+          },
+          "RoleDefinitionsByIdTestsGET1255": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1255.json"
+          },
+          "RoleDefinitionsByIdTestsGET1256": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1256.json"
+          },
+          "RoleDefinitionsByIdTestsGET1257": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1257.json"
+          },
+          "RoleDefinitionsByIdTestsGET1258": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1258.json"
+          },
+          "RoleDefinitionsByIdTestsGET1259": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1259.json"
+          },
+          "RoleDefinitionsByIdTestsGET1260": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1260.json"
+          },
+          "RoleDefinitionsByIdTestsGET1261": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1261.json"
+          },
+          "RoleDefinitionsByIdTestsGET1262": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1262.json"
+          },
+          "RoleDefinitionsByIdTestsGET1263": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1263.json"
+          },
+          "RoleDefinitionsByIdTestsGET1264": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1264.json"
+          },
+          "RoleDefinitionsByIdTestsGET1265": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1265.json"
+          },
+          "RoleDefinitionsByIdTestsGET1266": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1266.json"
+          },
+          "RoleDefinitionsByIdTestsGET1267": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-1267.json"
+          },
+          "RoleDefinitionsListGetTestsGET122": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-122.json"
+          },
+          "RoleDefinitionsListGetTestsGET123": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-123.json"
+          },
+          "RoleDefinitionsListGetTestsGET124": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-124.json"
+          },
+          "RoleDefinitionsListGetTestsGET125": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-125.json"
+          },
+          "RoleDefinitionsListGetTestsGET126": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-126.json"
+          },
+          "RoleDefinitionsListGetTestsGET127": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-127.json"
+          },
+          "RoleDefinitionsListGetTestsGET128": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-128.json"
+          },
+          "RoleDefinitionsListGetTestsGET129": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-129.json"
+          },
+          "RoleDefinitionsListGetTestsGET1210": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1210.json"
+          },
+          "RoleDefinitionsListGetTestsGET1211": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1211.json"
+          },
+          "RoleDefinitionsListGetTestsGET1212": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1212.json"
+          },
+          "RoleDefinitionsListGetTestsGET1213": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1213.json"
+          },
+          "RoleDefinitionsListGetTestsGET1214": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1214.json"
+          },
+          "RoleDefinitionsListGetTestsGET1215": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1215.json"
+          },
+          "RoleDefinitionsListGetTestsGET1216": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1216.json"
+          },
+          "RoleDefinitionsListGetTestsGET1217": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1217.json"
+          },
+          "RoleDefinitionsListGetTestsGET1218": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1218.json"
+          },
+          "RoleDefinitionsListGetTestsGET1219": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1219.json"
+          },
+          "RoleDefinitionsListGetTestsGET1220": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1220.json"
+          },
+          "RoleDefinitionsListGetTestsGET1221": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1221.json"
+          },
+          "RoleDefinitionsListGetTestsGET1222": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1222.json"
+          },
+          "RoleDefinitionsListGetTestsGET1223": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1223.json"
+          },
+          "RoleDefinitionsListGetTestsGET1224": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1224.json"
+          },
+          "RoleDefinitionsListGetTestsGET1225": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1225.json"
+          },
+          "RoleDefinitionsListGetTestsGET1226": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1226.json"
+          },
+          "RoleDefinitionsListGetTestsGET1227": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1227.json"
+          },
+          "RoleDefinitionsListGetTestsGET1228": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1228.json"
+          },
+          "RoleDefinitionsListGetTestsGET1229": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1229.json"
+          },
+          "RoleDefinitionsListGetTestsGET1230": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1230.json"
+          },
+          "RoleDefinitionsListGetTestsGET1231": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1231.json"
+          },
+          "RoleDefinitionsListGetTestsGET1232": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1232.json"
+          },
+          "RoleDefinitionsListGetTestsGET1233": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1233.json"
+          },
+          "RoleDefinitionsListGetTestsGET1234": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-1234.json"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "RoleDefinitions"
+        ],
+        "operationId": "RoleDefinitions_CreateOrUpdate",
+        "description": "Creates or updates a role definition.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role definition.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "roleDefinitionId",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The ID of the role definition."
+          },
+          {
+            "name": "roleDefinition",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RoleDefinition"
+            },
+            "description": "The values for the role definition."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "OK - Returns information about the role definition.",
+            "schema": {
+              "$ref": "#/definitions/RoleDefinition"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "RoleDefinitionCreateTestsPUT121": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-121.json"
+          },
+          "RoleDefinitionCreateTestsPUT122": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-122.json"
+          },
+          "RoleDefinitionCreateTestsPUT123": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-123.json"
+          },
+          "RoleDefinitionCreateTestsPUT124": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-124.json"
+          },
+          "RoleDefinitionCreateTestsPUT125": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-125.json"
+          },
+          "RoleDefinitionCreateTestsPUT126": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-126.json"
+          },
+          "RoleDefinitionCreateTestsPUT128": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-128.json"
+          },
+          "RoleDefinitionCreateTestsPUT1212": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-1212.json"
+          },
+          "RoleDefinitionCreateTestsPUT1214": {
+            "$ref": "../examples/RoleDefinitionCreateTests-PUT-example-1214.json"
+          },
+          "RoleDefinitionUpdateTestsPUT121": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-121.json"
+          },
+          "RoleDefinitionUpdateTestsPUT122": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-122.json"
+          },
+          "RoleDefinitionUpdateTestsPUT123": {
+            "$ref": "../examples/RoleDefinitionUpdateTests-PUT-example-123.json"
+          }
+        }
+      }
+    },
+   "/{scope}/providers/Microsoft.Authorization/roleDefinitions": {
+      "get": {
+        "tags": [
+          "RoleDefinitions"
+        ],
+        "operationId": "RoleDefinitions_List",
+        "description": "Get all role definitions that are applicable at scope and above.",
+        "parameters": [
+          {
+            "name": "scope",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The scope of the role definition.",
+            "x-ms-skip-url-encoding": true
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "The filter to apply on the operation. Use atScopeAndBelow filter to search below the given scope as well."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK - Returns an array of role definitions.",
+            "schema": {
+              "$ref": "#/definitions/RoleDefinitionListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/RoleDefinitionFilter",
+        "x-ms-examples": {
+          "RoleAssignmentByIdTestsGET141": {
+            "$ref": "../examples/RoleAssignmentByIdTests-GET-example-141.json"
+          },
+          "RoleAssignmentListByFilterTestGET141": {
+            "$ref": "../examples/RoleAssignmentListByFilterTest-GET-example-141.json"
+          },
+          "RoleAssignmentListWithAssignedToFilterTestGET141": {
+            "$ref": "../examples/RoleAssignmentListWithAssignedToFilterTest-GET-example-141.json"
+          },
+          "RoleAssignmentPagingTestGET141": {
+            "$ref": "../examples/RoleAssignmentPagingTest-GET-example-141.json"
+          },
+          "RoleAssignmentsCreateDeleteTestsGET141": {
+            "$ref": "../examples/RoleAssignmentsCreateDeleteTests-GET-example-141.json"
+          },
+          "RoleAssignmentsListGetTestsGET141": {
+            "$ref": "../examples/RoleAssignmentsListGetTests-GET-example-141.json"
+          },
+          "RoleDefinitionCreateTestsGET1413": {
+            "$ref": "../examples/RoleDefinitionCreateTests-GET-example-1413.json"
+          },
+          "RoleDefinitionsByIdTestsGET141": {
+            "$ref": "../examples/RoleDefinitionsByIdTests-GET-example-141.json"
+          },
+          "RoleDefinitionsListGetTestsGET141": {
+            "$ref": "../examples/RoleDefinitionsListGetTests-GET-example-141.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET141": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-141.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET142": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-142.json"
+          },
+          "RoleDefinitionsListWithFilterTestsGET143": {
+            "$ref": "../examples/RoleDefinitionsListWithFilterTests-GET-example-143.json"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "RoleAssignmentFilter": {
+      "properties": {
+        "principalId": {
+          "type": "string",
+          "description": "Returns role assignment of the specific principal."
+        }
+      },
+      "description": "Role Assignments filter"
+    },
+    "RoleDefinitionFilter": {
+      "properties": {
+        "roleName": {
+          "type": "string",
+          "description": "Returns role definition with the specific name."
+        }
+      },
+      "description": "Role Definitions filter"
+    },
+    "ClassicAdministratorProperties": {
+      "properties": {
+        "emailAddress": {
+          "type": "string",
+          "description": "The email address of the administrator."
+        },
+        "role": {
+          "type": "string",
+          "description": "The role of the administrator."
+        }
+      },
+      "description": "Classic Administrator properties."
+    },
+    "ClassicAdministrator": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The ID of the administrator."
+        },
+        "name": {
+          "type": "string",
+          "description": "The name of the administrator."
+        },
+        "type": {
+          "type": "string",
+          "description": "The type of the administrator."
+        },
+        "properties": {
+          "$ref": "#/definitions/ClassicAdministratorProperties",
+          "description": "Properties for the classic administrator."
+        }
+      },
+      "description": "Classic Administrators"
+    },
+    "ClassicAdministratorListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ClassicAdministrator"
+          },
+          "description": "An array of administrators."
+        },
+        "nextLink": {
+          "type": "string",
+          "description": "The URL to use for getting the next set of results."
+        }
+      },
+      "description": "ClassicAdministrator list result information."
+    },
+    "Permission": {
+      "properties": {
+        "actions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Allowed actions."
+        },
+        "notActions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Denied actions."
+        }
+      },
+      "description": "Role definition permissions."
+    },
+    "PermissionGetResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Permission"
+          },
+          "description": "An array of permissions."
+        },
+        "nextLink": {
+          "type": "string",
+          "description": "The URL to use for getting the next set of results."
+        }
+      },
+      "description": "Permissions information."
+    },
+    "ProviderOperation": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The operation name."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The operation display name."
+        },
+        "description": {
+          "type": "string",
+          "description": "The operation description."
+        },
+        "origin": {
+          "type": "string",
+          "description": "The operation origin."
+        },
+        "properties": {
+          "type": "object",
+          "description": "The operation properties."
+        }
+      },
+      "description": "Operation"
+    },
+    "ResourceType": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The resource type name."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The resource type display name."
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProviderOperation"
+          },
+          "description": "The resource type operations."
+        }
+      },
+      "description": "Resource Type"
+    },
+    "ProviderOperationsMetadata": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The provider id."
+        },
+        "name": {
+          "type": "string",
+          "description": "The provider name."
+        },
+        "type": {
+          "type": "string",
+          "description": "The provider type."
+        },
+        "displayName": {
+          "type": "string",
+          "description": "The provider display name."
+        },
+        "resourceTypes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ResourceType"
+          },
+          "description": "The provider resource types"
+        },
+        "operations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProviderOperation"
+          },
+          "description": "The provider operations."
+        }
+      },
+      "description": "Provider Operations metadata"
+    },
+    "ProviderOperationsMetadataListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProviderOperationsMetadata"
+          },
+          "description": "The list of providers."
+        },
+        "nextLink": {
+          "type": "string",
+          "description": "The URL to use for getting the next set of results."
+        }
+      },
+      "description": "Provider operations metadata list"
+    },
+    "RoleAssignmentPropertiesWithScope": {
+      "properties": {
+        "scope": {
+          "type": "string",
+          "description": "The role assignment scope."
+        },
+        "roleDefinitionId": {
+          "type": "string",
+          "description": "The role definition ID."
+        },
+        "principalId": {
+          "type": "string",
+          "description": "The principal ID."
+        }
+      },
+      "description": "Role assignment properties with scope."
+    },
+    "RoleAssignment": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The role assignment ID."
+        },
+        "name": {
+          "type": "string",
+          "description": "The role assignment name."
+        },
+        "type": {
+          "type": "string",
+          "description": "The role assignment type."
+        },
+        "properties": {
+          "$ref": "#/definitions/RoleAssignmentPropertiesWithScope",
+          "description": "Role assignment properties."
+        }
+      },
+      "description": "Role Assignments"
+    },
+    "RoleAssignmentListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RoleAssignment"
+          },
+          "description": "Role assignment list."
+        },
+        "nextLink": {
+          "type": "string",
+          "description": "The URL to use for getting the next set of results."
+        }
+      },
+      "description": "Role assignment list operation result."
+    },
+    "RoleAssignmentProperties": {
+      "properties": {
+        "roleDefinitionId": {
+          "type": "string",
+          "description": "The role definition ID used in the role assignment."
+        },
+        "principalId": {
+          "type": "string",
+          "description": "The principal ID assigned to the role. This maps to the ID inside the Active Directory. It can point to a user, service principal, or security group."
+        }
+      },
+      "description": "Role assignment properties."
+    },
+    "RoleAssignmentCreateParameters": {
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/RoleAssignmentProperties",
+          "description": "Role assignment properties."
+        }
+      },
+      "description": "Role assignment create parameters."
+    },
+    "RoleDefinitionProperties": {
+      "properties": {
+        "roleName": {
+          "type": "string",
+          "description": "The role name."
+        },
+        "description": {
+          "type": "string",
+          "description": "The role definition description."
+        },
+        "type": {
+          "type": "string",
+          "description": "The role type."
+        },
+        "permissions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Permission"
+          },
+          "description": "Role definition permissions."
+        },
+        "assignableScopes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Role definition assignable scopes."
+        }
+      },
+      "description": "Role definition properties."
+    },
+    "RoleDefinition": {
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "The role definition ID."
+        },
+        "name": {
+          "type": "string",
+          "description": "The role definition name."
+        },
+        "type": {
+          "type": "string",
+          "description": "The role definition type."
+        },
+        "properties": {
+          "$ref": "#/definitions/RoleDefinitionProperties",
+          "description": "Role definition properties."
+        }
+      },
+      "description": "Role definition."
+    },
+    "RoleDefinitionListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RoleDefinition"
+          },
+          "description": "Role definition list."
+        },
+        "nextLink": {
+          "type": "string",
+          "description": "The URL to use for getting the next set of results."
+        }
+      },
+      "description": "Role definition list operation result."
+    }
+  },
+  "parameters": {
+    "SubscriptionIdParameter": {
+      "name": "subscriptionId",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "The ID of the target subscription."
+    },
+    "ApiVersionParameter": {
+      "name": "api-version",
+      "in": "query",
+      "required": true,
+      "type": "string",
+      "description": "The API version to use for this operation."
+    }
+  }
+}

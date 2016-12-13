@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "3d1cd7a8-b035-4563-9288-dbe706cd672e",
+    "resourceGroupName": "rg6832",
+    "workspaceCollectionName": "wc535",
+    "api-version": "2016-01-29",
+    "body": {
+      "location": "WestUS",
+      "sku": {
+        "name": "S1",
+        "tier": "Standard"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg6832/providers/Microsoft.PowerBI/workspaceCollections/wc535",
+        "name": "wc535",
+        "type": "Microsoft.PowerBI/workspaceCollections",
+        "location": "West US",
+        "tags": {},
+        "properties": {
+          "provisioningState": "Succeeded",
+          "createdDate": "2016-06-17T19:40:21.0059936Z",
+          "status": "Active"
+        },
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      }
+    }
+  }
+}

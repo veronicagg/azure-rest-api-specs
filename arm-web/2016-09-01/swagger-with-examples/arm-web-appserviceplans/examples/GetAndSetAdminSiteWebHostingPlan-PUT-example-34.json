@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg4399",
+    "name": "csmsf3454",
+    "api-version": "2015-08-01",
+    "appServicePlan": {
+      "sku": {
+        "name": "S1",
+        "tier": "Standard",
+        "size": "S1",
+        "family": "S",
+        "capacity": 1
+      },
+      "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg4399/providers/Microsoft.Web/serverfarms/csmsf3454",
+      "name": "csmsf3454",
+      "location": "West US",
+      "type": "Microsoft.Web/serverfarms",
+      "properties": {
+        "name": "csmsf3454",
+        "adminSiteName": "csmws2354",
+        "maximumNumberOfWorkers": 10,
+        "perSiteScaling": false
+      }
+    }
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

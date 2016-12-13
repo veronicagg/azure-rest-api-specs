@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "fabricName": "Azure",
+    "containerName": "IaasVMContainer%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "protectedItemName": "VM%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "operationId": "a78ebb34-2f55-4c77-9fca-92ba133ff2f6",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/Subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesBackupTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault/backupFabrics/Azure/protectionContainers/IaasVMContainer;iaasvmcontainerv2;pstestrg;pstestv2vm1/protectedItems/VM;iaasvmcontainerv2;pstestrg;pstestv2vm1",
+        "name": "iaasvmcontainerv2;pstestrg;pstestv2vm1",
+        "type": "Microsoft.RecoveryServices/vaults/backupFabrics/protectionContainers/protectedItems",
+        "properties": {
+          "friendlyName": "pstestv2vm1",
+          "virtualMachineId": "/subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/pstestrg/providers/Microsoft.Compute/virtualMachines/pstestv2vm1",
+          "protectionStatus": "Healthy",
+          "protectionState": "IRPending",
+          "lastBackupStatus": "",
+          "lastBackupTime": "2001-01-01T00:00:00Z",
+          "extendedInfo": {
+            "recoveryPointCount": 0,
+            "policyInconsistent": false
+          },
+          "protectedItemType": "Microsoft.Compute/virtualMachines",
+          "backupManagementType": "AzureIaasVM",
+          "workloadType": "VM",
+          "containerName": "iaasvmcontainerv2;pstestrg;pstestv2vm1",
+          "sourceResourceId": "/subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/pstestrg/providers/Microsoft.Compute/virtualMachines/pstestv2vm1",
+          "policyId": "/Subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesBackupTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault/backupPolicies/DefaultPolicy",
+          "policyName": "DefaultPolicy"
+        }
+      }
+    }
+  }
+}

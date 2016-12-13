@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "gatewayName": "test_gateway_175399666",
+    "api-version": "2016-07-01-preview"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.ServerManagement/gateways/test_gateway_175399666' under resource group 'sdktest' was not found."
+        }
+      }
+    }
+  }
+}

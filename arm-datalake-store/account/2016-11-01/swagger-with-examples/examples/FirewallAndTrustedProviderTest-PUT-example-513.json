@@ -1,0 +1,71 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg1727",
+    "name": "adlsacct9646",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "firewallState": "Enabled",
+        "firewallRules": [
+          {
+            "properties": {
+              "startIpAddress": "127.0.0.1",
+              "endIpAddress": "127.0.0.2"
+            },
+            "name": "firerule11739"
+          }
+        ],
+        "trustedIdProviderState": "Enabled",
+        "trustedIdProviders": [
+          {
+            "properties": {
+              "idProvider": "https://sts.windows.net/9ebec75f-d4ca-4005-8ffe-2690817a35a9"
+            },
+            "name": "trustedrule19423"
+          }
+        ]
+      },
+      "location": "East US 2"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "firewallState": "Enabled",
+          "firewallRules": [
+            {
+              "properties": {
+                "startIpAddress": "127.0.0.1",
+                "endIpAddress": "127.0.0.2"
+              },
+              "name": "firerule11739"
+            }
+          ],
+          "trustedIdProviderState": "Enabled",
+          "trustedIdProviders": [
+            {
+              "properties": {
+                "idProvider": "https://sts.windows.net/9ebec75f-d4ca-4005-8ffe-2690817a35a9"
+              },
+              "name": "trustedrule19423"
+            }
+          ],
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "accountId": "5180156b-f90b-4849-895f-e52e71ac48ae",
+          "creationTime": null,
+          "lastModifiedTime": null
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg1727/providers/Microsoft.DataLakeStore/accounts/adlsacct9646",
+        "name": "adlsacct9646",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

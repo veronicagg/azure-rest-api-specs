@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "19b520e4-39a7-4fac-b1da-d940f2d39a38",
+    "resourceGroupName": "redisCacheCreateRG",
+    "name": "sunnybegincreate-1",
+    "api-version": "2016-04-01"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

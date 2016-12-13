@@ -1,0 +1,127 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg6711",
+    "name": "csmws1449",
+    "api-version": "2015-08-01",
+    "siteConfig": {
+      "location": "West US",
+      "properties": {
+        "limits": {
+          "maxPercentageCpu": 70.5,
+          "maxMemoryInMb": 1024,
+          "maxDiskSizeInMb": 512
+        }
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg6711/providers/Microsoft.Web/sites/csmws1449",
+        "name": "csmws1449",
+        "type": "Microsoft.Web/sites",
+        "location": "West US",
+        "tags": null,
+        "properties": {
+          "numberOfWorkers": 1,
+          "defaultDocuments": [
+            "Default.htm",
+            "Default.html",
+            "Default.asp",
+            "index.htm",
+            "index.html",
+            "iisstart.htm",
+            "default.aspx",
+            "index.php",
+            "hostingstart.html"
+          ],
+          "netFrameworkVersion": "v4.0",
+          "phpVersion": "5.4",
+          "pythonVersion": "",
+          "requestTracingEnabled": false,
+          "requestTracingExpirationTime": null,
+          "remoteDebuggingEnabled": false,
+          "remoteDebuggingVersion": null,
+          "httpLoggingEnabled": false,
+          "logsDirectorySizeLimit": 35,
+          "detailedErrorLoggingEnabled": false,
+          "publishingUsername": "$csmws1449",
+          "publishingPassword": null,
+          "appSettings": null,
+          "metadata": null,
+          "connectionStrings": null,
+          "handlerMappings": null,
+          "documentRoot": null,
+          "scmType": "None",
+          "use32BitWorkerProcess": true,
+          "webSocketsEnabled": false,
+          "alwaysOn": false,
+          "javaVersion": null,
+          "javaContainer": null,
+          "javaContainerVersion": null,
+          "managedPipelineMode": 0,
+          "virtualApplications": [
+            {
+              "virtualPath": "/",
+              "physicalPath": "site\\wwwroot",
+              "preloadEnabled": false,
+              "virtualDirectories": null
+            }
+          ],
+          "winAuthAdminState": 0,
+          "winAuthTenantState": 0,
+          "customAppPoolIdentityAdminState": false,
+          "customAppPoolIdentityTenantState": false,
+          "runtimeADUser": null,
+          "runtimeADUserPassword": null,
+          "loadBalancing": 1,
+          "routingRules": [],
+          "experiments": {
+            "rampUpRules": []
+          },
+          "limits": {
+            "maxPercentageCpu": 70.5,
+            "maxMemoryInMb": 1024,
+            "maxDiskSizeInMb": 512
+          },
+          "autoHealEnabled": false,
+          "autoHealRules": {
+            "triggers": null,
+            "actions": null
+          },
+          "tracingOptions": null,
+          "vnetName": "",
+          "siteAuthEnabled": false,
+          "siteAuthSettings": {
+            "enabled": null,
+            "httpApiPrefixPath": null,
+            "unauthenticatedClientAction": null,
+            "tokenStoreEnabled": null,
+            "allowedExternalRedirectUrls": null,
+            "defaultProvider": null,
+            "clientId": null,
+            "clientSecret": null,
+            "issuer": null,
+            "allowedAudiences": null,
+            "isAadAutoProvisioned": false,
+            "googleClientId": null,
+            "googleClientSecret": null,
+            "googleOAuthScopes": null,
+            "facebookAppId": null,
+            "facebookAppSecret": null,
+            "facebookOAuthScopes": null,
+            "twitterConsumerKey": null,
+            "twitterConsumerSecret": null,
+            "microsoftAccountClientId": null,
+            "microsoftAccountClientSecret": null,
+            "microsoftAccountOAuthScopes": null
+          },
+          "cors": null,
+          "apiDefinition": null,
+          "autoSwapSlotName": null
+        }
+      }
+    }
+  }
+}

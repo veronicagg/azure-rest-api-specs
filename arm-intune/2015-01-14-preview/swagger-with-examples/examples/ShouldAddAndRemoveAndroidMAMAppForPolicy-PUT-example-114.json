@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "83f6c36c-1f62-4844-b283-736580655261",
+    "appName": "com.microsoft.skydrive.Android",
+    "api-version": "2015-01-14-preview",
+    "$filter": "platform%20eq%20'android'",
+    "parameters": {
+      "properties": {
+        "url": "https://management.azure.com/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.skydrive.Android"
+      }
+    }
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

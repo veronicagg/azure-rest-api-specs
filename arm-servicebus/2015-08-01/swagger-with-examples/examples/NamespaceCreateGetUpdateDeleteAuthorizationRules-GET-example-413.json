@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-9854",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-9854/AuthorizationRules/RootManageSharedAccessKey",
+            "name": "RootManageSharedAccessKey",
+            "type": "Microsoft.ServiceBus/AuthorizationRules",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "rights": [
+                "Listen",
+                "Manage",
+                "Send"
+              ]
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-9854/AuthorizationRules/sdk-AuthRules-2401",
+            "name": "sdk-AuthRules-2401",
+            "type": "Microsoft.ServiceBus/AuthorizationRules",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "rights": [
+                "Listen",
+                "Send"
+              ]
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "subscriptionId": "46153750-fa3b-4140-bf57-8beb7d5c971a",
+    "resourceGroupName": "rgaba17277",
+    "name": "testaba15944",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "parameters": {
+      "location": "East US 2",
+      "name": "testaba15944",
+      "tags": {
+        "testkey": "testvalue"
+      },
+      "properties": {
+        "defaultDataLakeStoreAccount": "testdatalake12761",
+        "dataLakeStoreAccounts": [
+          {
+            "name": "testdatalake12761",
+            "properties": {
+              "suffix": "azuredatalakestore.net"
+            }
+          }
+        ],
+        "creationTime": "0001-01-01T00:00:00",
+        "lastModifiedTime": "0001-01-01T00:00:00"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "defaultDataLakeStoreAccount": "testdatalake12761",
+          "dataLakeStoreAccounts": [
+            {
+              "properties": {
+                "suffix": "azuredatalakestore.net"
+              },
+              "name": "testdatalake12761"
+            }
+          ],
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "creationTime": "0001-01-01T00:00:00",
+          "lastModifiedTime": "0001-01-01T00:00:00"
+        },
+        "location": "East US 2",
+        "tags": {
+          "testkey": "testvalue"
+        },
+        "id": "/subscriptions/46153750-fa3b-4140-bf57-8beb7d5c971a/resourceGroups/rgaba17277/providers/Microsoft.DataLakeAnalytics/accounts/testaba15944",
+        "name": "testaba15944",
+        "type": "Microsoft.DataLakeAnalytics/accounts"
+      }
+    }
+  }
+}

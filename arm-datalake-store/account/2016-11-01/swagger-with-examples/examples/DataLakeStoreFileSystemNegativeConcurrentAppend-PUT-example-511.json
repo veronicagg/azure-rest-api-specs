@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg11376",
+    "name": "testadlfs18466",
+    "api-version": "2016-11-01",
+    "parameters": {
+      "location": "East US 2"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "accountId": "68399479-5875-4bc6-8e76-15cadf53f8f8",
+          "creationTime": null,
+          "lastModifiedTime": null
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg11376/providers/Microsoft.DataLakeStore/accounts/testadlfs18466",
+        "name": "testadlfs18466",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

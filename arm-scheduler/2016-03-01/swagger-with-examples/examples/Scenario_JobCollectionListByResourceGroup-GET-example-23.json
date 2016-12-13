@@ -1,0 +1,76 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc17334",
+            "type": "Microsoft.Scheduler/jobCollections",
+            "name": "jc17334",
+            "location": "South Central US",
+            "properties": {
+              "sku": {
+                "name": "P10Premium"
+              },
+              "state": "Suspended",
+              "quota": {
+                "maxJobCount": 20,
+                "maxRecurrence": {
+                  "frequency": "week",
+                  "interval": 1
+                }
+              }
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc25148",
+            "type": "Microsoft.Scheduler/jobCollections",
+            "name": "jc25148",
+            "location": "South Central US",
+            "tags": {
+              "department": "marketing"
+            },
+            "properties": {
+              "sku": {
+                "name": "P20Premium"
+              },
+              "state": "Enabled",
+              "quota": {
+                "maxJobCount": 50,
+                "maxRecurrence": {
+                  "frequency": "day",
+                  "interval": 2
+                }
+              }
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test",
+            "type": "Microsoft.Scheduler/jobCollections",
+            "name": "sdk-test",
+            "location": "South Central US",
+            "properties": {
+              "sku": {
+                "name": "Standard"
+              },
+              "state": "Enabled",
+              "quota": {
+                "maxJobCount": 50,
+                "maxRecurrence": {
+                  "frequency": "minute",
+                  "interval": 1
+                }
+              }
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

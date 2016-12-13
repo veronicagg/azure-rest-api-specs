@@ -1,0 +1,66 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6",
+    "parameters": {
+      "accountEnabled": true,
+      "displayName": "aduser8240",
+      "passwordProfile": {
+        "password": "Test12345",
+        "forceChangePasswordNextLogin": false
+      },
+      "userPrincipalName": "aduser8240@rbacclitest.onmicrosoft.com",
+      "mailNickname": "aduser8240test"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.User/@Element",
+        "odata.type": "Microsoft.DirectoryServices.User",
+        "objectType": "User",
+        "objectId": "c63e9ae2-e54b-41d2-a373-a567b6198dcb",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "signInNames": [],
+        "assignedLicenses": [],
+        "assignedPlans": [],
+        "city": null,
+        "companyName": null,
+        "country": null,
+        "creationType": null,
+        "department": null,
+        "dirSyncEnabled": null,
+        "displayName": "aduser8240",
+        "facsimileTelephoneNumber": null,
+        "givenName": null,
+        "immutableId": null,
+        "isCompromised": null,
+        "jobTitle": null,
+        "lastDirSyncTime": null,
+        "mail": null,
+        "mailNickname": "aduser8240test",
+        "mobile": null,
+        "onPremisesSecurityIdentifier": null,
+        "otherMails": [],
+        "passwordPolicies": null,
+        "passwordProfile": null,
+        "physicalDeliveryOfficeName": null,
+        "postalCode": null,
+        "preferredLanguage": null,
+        "provisionedPlans": [],
+        "provisioningErrors": [],
+        "proxyAddresses": [],
+        "refreshTokensValidFromDateTime": "2016-08-03T06:29:18.7633984Z",
+        "sipProxyAddress": null,
+        "state": null,
+        "streetAddress": null,
+        "surname": null,
+        "telephoneNumber": null,
+        "usageLocation": null,
+        "userPrincipalName": "aduser8240@rbacclitest.onmicrosoft.com",
+        "userType": "Member"
+      }
+    }
+  }
+}

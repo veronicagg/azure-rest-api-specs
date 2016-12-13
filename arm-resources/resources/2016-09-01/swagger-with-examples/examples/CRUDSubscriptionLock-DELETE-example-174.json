@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2015-01-01",
+    "$filter": "atScope()"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

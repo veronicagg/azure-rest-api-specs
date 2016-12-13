@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup6649",
+    "profileName": "profile5996",
+    "endpointName": "endpoint4366",
+    "originName": "origin1",
+    "api-version": "2016-10-02",
+    "originUpdateProperties": {
+      "properties": {
+        "hostName": "invalid!Hostname&",
+        "httpPort": 1234,
+        "httpsPort": 8081
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "BadRequest",
+          "message": "HostName \"invalid!Hostname&\" is invalid. It must be a valid domain name, IP version 4, or IP version 6."
+        }
+      }
+    }
+  }
+}

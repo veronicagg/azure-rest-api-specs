@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount5349",
+    "api-version": "2015-08-01-preview",
+    "integrationAccount": {
+      "properties": {},
+      "sku": {
+        "name": "Standard"
+      },
+      "name": "IntegrationAccount5349",
+      "location": "westus"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {},
+        "sku": {
+          "name": "Standard"
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount5349",
+        "name": "IntegrationAccount5349",
+        "type": "Microsoft.Logic/integrationAccounts",
+        "location": "westus"
+      }
+    }
+  }
+}

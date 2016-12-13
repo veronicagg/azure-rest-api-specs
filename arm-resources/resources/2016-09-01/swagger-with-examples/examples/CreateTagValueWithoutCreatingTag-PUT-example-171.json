@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01",
+    "parameters": ""
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "SubscriptionTagNameNotFound",
+          "message": "Subscription tag name 'csmtg9923' could not be found."
+        }
+      }
+    }
+  }
+}

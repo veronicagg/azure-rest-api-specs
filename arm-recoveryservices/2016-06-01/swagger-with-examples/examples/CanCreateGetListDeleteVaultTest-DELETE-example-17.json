@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesTestRg",
+    "vaultName": "SDKTestRsVault2",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

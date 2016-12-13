@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc15447",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc15447",
+        "type": "Microsoft.Scheduler/jobCollections",
+        "name": "jc15447",
+        "location": "South Central US",
+        "properties": {
+          "sku": {
+            "name": "Standard"
+          },
+          "state": "Suspended",
+          "quota": {
+            "maxJobCount": 20,
+            "maxRecurrence": {
+              "frequency": "week",
+              "interval": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

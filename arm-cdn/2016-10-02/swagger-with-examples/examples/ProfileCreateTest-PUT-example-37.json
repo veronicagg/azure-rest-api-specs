@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup5114",
+    "profileName": "profile5104",
+    "api-version": "2016-10-02",
+    "profile": {
+      "sku": {
+        "name": "Standard_Verizon"
+      },
+      "location": "WestUs",
+      "tags": {}
+    }
+  },
+  "responses": {
+    "409": {
+      "body": {
+        "error": {
+          "code": "InvalidResourceLocation",
+          "message": "The resource 'profile5104' already exists in location 'eastus' in resource group 'cdnResourceGroup5114'. A resource with the same name cannot be created in location 'WestUs'. Please select a new resource name."
+        }
+      }
+    }
+  }
+}

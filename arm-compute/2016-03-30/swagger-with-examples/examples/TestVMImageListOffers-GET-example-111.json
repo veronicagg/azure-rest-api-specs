@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "location": "SoutheastAsia",
+    "publisherName": "MicrosoftWindowsServer",
+    "api-version": "2016-03-30"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "southeastasia",
+          "name": "WindowsServer",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer"
+        }
+      ]
+    }
+  }
+}

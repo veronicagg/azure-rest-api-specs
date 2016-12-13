@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "subscriptionId": "e48bff2b-f633-4bd6-857a-ff243767676e",
+    "resourceGroupName": "TestRG",
+    "serverName": "azsdktest2",
+    "api-version": "2016-05-16"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/azsdktest2",
+        "name": "azsdktest2",
+        "type": "Microsoft.AnalysisServices/servers",
+        "location": "West US",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "tags": {
+          "key1": "value1",
+          "key2": "value2"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/azsdktest2",
+          "asAdministrators": {
+            "members": [
+              "aztest0@stabletest.ccsctp.net",
+              "aztest1@stabletest.ccsctp.net",
+              "aztest2@aspaastestloop1.ccsctp.net"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

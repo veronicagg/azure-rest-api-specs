@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8624",
+    "profileName": "profile4641",
+    "endpointName": "endpoint8921",
+    "api-version": "2016-10-02",
+    "contentFilePaths": {
+      "contentPaths": [
+        "/movies/amazing.mp4",
+        "/pictures/pic1.jpg"
+      ]
+    }
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "directFilePath": "%2F",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MODIFYACLENTRIES",
+    "aclspec": "user:027c28d5-c91d-49f0-98c5-d10134b169b3:rwx",
+    "streamContents": ""
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

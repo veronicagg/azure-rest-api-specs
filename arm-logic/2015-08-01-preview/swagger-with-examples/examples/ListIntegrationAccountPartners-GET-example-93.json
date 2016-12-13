@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount2050",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "partnerType": "B2B",
+              "content": {
+                "b2b": {
+                  "businessIdentities": [
+                    {
+                      "qualifier": "AA",
+                      "value": "ZZ"
+                    }
+                  ]
+                }
+              },
+              "createdTime": "2016-07-20T17:21:57.4196504Z",
+              "changedTime": "2016-07-20T17:21:57.4205748Z",
+              "metadata": "IntegrationAccountPartner1370"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount2050/partners/IntegrationAccountPartner1370",
+            "name": "IntegrationAccountPartner1370",
+            "type": "Microsoft.Logic/integrationAccounts/partners"
+          }
+        ]
+      }
+    }
+  }
+}

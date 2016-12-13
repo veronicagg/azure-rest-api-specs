@@ -1,0 +1,131 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg332",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "azsmnet4546",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546",
+            "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "location": "eastus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "d143519b-6f35-4d9f-bcfa-1f3a5b1d274b",
+              "securityRules": [],
+              "defaultSecurityRules": [
+                {
+                  "name": "AllowVnetInBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/AllowVnetInBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Inbound"
+                  }
+                },
+                {
+                  "name": "AllowAzureLoadBalancerInBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow inbound traffic from azure load balancer",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "AzureLoadBalancer",
+                    "destinationAddressPrefix": "*",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Inbound"
+                  }
+                },
+                {
+                  "name": "DenyAllInBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/DenyAllInBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all inbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Inbound"
+                  }
+                },
+                {
+                  "name": "AllowVnetOutBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/AllowVnetOutBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "VirtualNetwork",
+                    "destinationAddressPrefix": "VirtualNetwork",
+                    "access": "Allow",
+                    "priority": 65000,
+                    "direction": "Outbound"
+                  }
+                },
+                {
+                  "name": "AllowInternetOutBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/AllowInternetOutBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Allow outbound traffic from all VMs to Internet",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "Internet",
+                    "access": "Allow",
+                    "priority": 65001,
+                    "direction": "Outbound"
+                  }
+                },
+                {
+                  "name": "DenyAllOutBound",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg332/providers/Microsoft.Network/networkSecurityGroups/azsmnet4546/defaultSecurityRules/DenyAllOutBound",
+                  "etag": "W/\"5e90626d-9616-49cf-9130-021dbc0a03e8\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "description": "Deny all outbound traffic",
+                    "protocol": "*",
+                    "sourcePortRange": "*",
+                    "destinationPortRange": "*",
+                    "sourceAddressPrefix": "*",
+                    "destinationAddressPrefix": "*",
+                    "access": "Deny",
+                    "priority": 65500,
+                    "direction": "Outbound"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

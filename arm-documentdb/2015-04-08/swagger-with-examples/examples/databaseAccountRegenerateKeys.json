@@ -1,0 +1,21 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2015-04-08",
+    "subscriptionId": "subcriptionID",
+    "keyToRegenerate": {
+      "keyKind": "primary"
+    }
+  },
+  "responses":{
+    "202":{ 
+      "body": {    
+        "status": "Enqueued",
+        "error": {}
+    }
+    }
+  }
+}
+
+

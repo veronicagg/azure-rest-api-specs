@@ -1,0 +1,169 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceGroupName": "csmrg369",
+    "deploymentName": "csmd5783",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json"
+        },
+        "parameters": {
+          "repoURL": {
+            "value": "https://github.com/devigned/az-roadshow-oss.git"
+          },
+          "siteName": {
+            "value": "csres2760"
+          },
+          "hostingPlanName": {
+            "value": "someplan"
+          },
+          "sku": {
+            "value": "F1"
+          }
+        },
+        "mode": "Incremental"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Resources/deployments/csmd5783",
+        "name": "csmd5783",
+        "properties": {
+          "templateLink": {
+            "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "siteName": {
+              "type": "String",
+              "value": "csres2760"
+            },
+            "hostingPlanName": {
+              "type": "String",
+              "value": "someplan"
+            },
+            "sku": {
+              "type": "String",
+              "value": "F1"
+            },
+            "workerSize": {
+              "type": "String",
+              "value": "0"
+            },
+            "repoURL": {
+              "type": "String",
+              "value": "https://github.com/devigned/az-roadshow-oss.git"
+            },
+            "branch": {
+              "type": "String",
+              "value": "master"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Accepted",
+          "timestamp": "2016-07-27T00:36:57.1013428Z",
+          "duration": "PT0S",
+          "correlationId": "e9818067-2046-47d5-afa2-05d365dd3de5",
+          "providers": [
+            {
+              "namespace": "Microsoft.Web",
+              "resourceTypes": [
+                {
+                  "resourceType": "serverfarms",
+                  "locations": [
+                    "westeurope"
+                  ]
+                },
+                {
+                  "resourceType": "sites",
+                  "locations": [
+                    "westeurope"
+                  ]
+                },
+                {
+                  "resourceType": "sites/sourcecontrols",
+                  "locations": [
+                    null
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/serverfarms/someplan",
+                  "resourceType": "Microsoft.Web/serverfarms",
+                  "resourceName": "someplan"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/sites/csres2760",
+              "resourceType": "Microsoft.Web/sites",
+              "resourceName": "csres2760"
+            },
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/Sites/csres2760",
+                  "resourceType": "Microsoft.Web/Sites",
+                  "resourceName": "csres2760"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/sites/csres2760/sourcecontrols/web",
+              "resourceType": "Microsoft.Web/sites/sourcecontrols",
+              "resourceName": "csres2760/web"
+            }
+          ],
+          "validatedResources": [
+            {
+              "apiVersion": "2015-08-01",
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/serverfarms/someplan",
+              "name": "someplan",
+              "type": "Microsoft.Web/serverfarms",
+              "sku": {
+                "name": "F1",
+                "capacity": 0
+              },
+              "location": "westeurope",
+              "properties": {
+                "name": "someplan"
+              }
+            },
+            {
+              "dependsOn": [
+                "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/serverfarms/someplan"
+              ],
+              "apiVersion": "2015-08-01",
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/sites/csres2760",
+              "name": "csres2760",
+              "type": "Microsoft.Web/sites",
+              "location": "westeurope",
+              "properties": {
+                "serverFarmId": "someplan"
+              }
+            },
+            {
+              "dependsOn": [
+                "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/Sites/csres2760"
+              ],
+              "apiVersion": "2015-08-01",
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg369/providers/Microsoft.Web/sites/csres2760/sourcecontrols/web",
+              "name": "csres2760/web",
+              "type": "Microsoft.Web/sites/sourcecontrols",
+              "properties": {
+                "RepoUrl": "https://github.com/devigned/az-roadshow-oss.git",
+                "branch": "master",
+                "IsManualIntegration": true
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

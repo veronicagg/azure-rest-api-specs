@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup1911",
+    "profileName": "profile275",
+    "endpointName": "endpoint171",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "202": {
+      "body": {
+        "hostName": "endpoint171.azureedge.net",
+        "originHostHeader": null,
+        "provisioningState": "Succeeded",
+        "resourceState": "Starting",
+        "isHttpAllowed": true,
+        "isHttpsAllowed": true,
+        "queryStringCachingBehavior": "IgnoreQueryString",
+        "originPath": null,
+        "origins": [
+          {
+            "name": "origin1",
+            "properties": {
+              "hostName": "host1.hello.com",
+              "httpPort": null,
+              "httpsPort": null
+            }
+          }
+        ],
+        "customDomains": [],
+        "contentTypesToCompress": [],
+        "isCompressionEnabled": false,
+        "optimizationType": null,
+        "geoFilters": []
+      }
+    }
+  }
+}

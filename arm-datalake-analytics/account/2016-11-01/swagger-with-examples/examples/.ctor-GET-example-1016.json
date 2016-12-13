@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "subscriptionId": "46153750-fa3b-4140-bf57-8beb7d5c971a",
+    "resourceGroupName": "abarg19711",
+    "accountName": "testadlac16849",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "defaultDataLakeStoreAccount": "testadlsc17231",
+          "dataLakeStoreAccounts": [
+            {
+              "properties": {
+                "suffix": "azuredatalakestore.net"
+              },
+              "name": "testadlsc17231"
+            }
+          ],
+          "storageAccounts": [],
+          "maxDegreeOfParallelism": 20,
+          "maxJobCount": 3,
+          "provisioningState": "Succeeded",
+          "state": "Active",
+          "endpoint": "testadlac16849.azuredatalakeanalytics.net",
+          "creationTime": "2015-11-20T22:16:35.4153191Z",
+          "lastModifiedTime": "2015-11-20T22:16:35.4153191Z"
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/46153750-fa3b-4140-bf57-8beb7d5c971a/resourceGroups/abarg19711/providers/Microsoft.DataLakeAnalytics/accounts/testadlac16849",
+        "name": "testadlac16849",
+        "type": "Microsoft.DataLakeAnalytics/accounts"
+      }
+    }
+  }
+}

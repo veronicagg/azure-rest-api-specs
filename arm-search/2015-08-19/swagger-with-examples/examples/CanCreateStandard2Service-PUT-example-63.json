@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet2798",
+    "searchServiceName": "azs-7853",
+    "api-version": "2015-08-19",
+    "service": {
+      "properties": {
+        "replicaCount": 1,
+        "partitionCount": 1
+      },
+      "sku": {
+        "name": "standard2"
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/b80cf239-2c72-47ab-b309-b26aec4656b1/resourceGroups/azsmnet2798/providers/Microsoft.Search/searchServices/azs-7853",
+        "name": "azs-7853",
+        "type": "Microsoft.Search/searchServices",
+        "location": "West US",
+        "properties": {
+          "replicaCount": 1,
+          "partitionCount": 1,
+          "status": "provisioning",
+          "statusDetails": null,
+          "provisioningState": "provisioning",
+          "hostingMode": "Default"
+        },
+        "sku": {
+          "name": "standard2"
+        }
+      }
+    }
+  }
+}

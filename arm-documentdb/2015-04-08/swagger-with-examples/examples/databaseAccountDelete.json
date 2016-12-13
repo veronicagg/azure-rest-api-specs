@@ -1,0 +1,19 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2016-01-01",
+    "subscriptionId": "subcriptionID"
+  },
+  "responses":{
+    "202":{ 
+      "body": {
+        "status": "Enqueued",
+        "error": {}
+      }
+    },
+    "204":{}
+  }
+}
+
+

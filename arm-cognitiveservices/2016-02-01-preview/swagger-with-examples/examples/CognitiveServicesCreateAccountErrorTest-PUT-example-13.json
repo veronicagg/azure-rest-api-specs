@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "a064e0b9-e6c9-4a0d-b993-22efebefe2af",
+    "resourceGroupName": "res2161",
+    "accountName": "csa2440",
+    "api-version": "2016-02-01-preview",
+    "parameters": {
+      "sku": {
+        "name": "F0"
+      },
+      "kind": "ComputerVision",
+      "location": "BLA",
+      "properties": {}
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "LocationNotAvailableForResourceType",
+          "message": "The provided location 'BLA' is not available for resource type 'Microsoft.CognitiveServices/accounts'. List of available regions for the resource type is 'westus'."
+        }
+      }
+    }
+  }
+}

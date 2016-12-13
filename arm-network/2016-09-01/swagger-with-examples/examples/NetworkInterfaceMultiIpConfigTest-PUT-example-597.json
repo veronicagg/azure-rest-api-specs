@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8219",
+    "virtualNetworkName": "azsmnet3994",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "East US",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "azsmnet3029",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet3994",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/virtualNetworks/azsmnet3994",
+        "etag": "W/\"eb11028b-89d9-4822-a154-6a7a6d8cca56\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "dbc0f46b-2763-4107-b905-7a968a5593d1",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet3029",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/virtualNetworks/azsmnet3994/subnets/azsmnet3029",
+              "etag": "W/\"eb11028b-89d9-4822-a154-6a7a6d8cca56\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

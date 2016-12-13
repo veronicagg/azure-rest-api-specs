@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg4490",
+    "virtualNetworkName": "azsmnet5651",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "GatewaySubnet",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet5651",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworks/azsmnet5651",
+        "etag": "W/\"2092a2a7-2382-42b7-8458-1e8194d84320\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "4354848e-86de-4da6-a17a-d946db9a8283",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "GatewaySubnet",
+              "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworks/azsmnet5651/subnets/GatewaySubnet",
+              "etag": "W/\"2092a2a7-2382-42b7-8458-1e8194d84320\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

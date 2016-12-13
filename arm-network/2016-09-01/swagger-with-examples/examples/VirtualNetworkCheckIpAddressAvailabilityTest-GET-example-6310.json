@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "subscriptionId": "c1fd1678-d0fe-4253-a15f-a03eee323432",
+    "resourceGroupName": "csmrg3365",
+    "virtualNetworkName": "azsmnet1390",
+    "api-version": "2016-09-01",
+    "ipAddress": "10.0.1.9"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "available": false,
+        "availableIPAddresses": [
+          "10.0.1.4",
+          "10.0.1.5",
+          "10.0.1.6",
+          "10.0.1.7",
+          "10.0.1.8"
+        ]
+      }
+    }
+  }
+}

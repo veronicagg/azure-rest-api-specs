@@ -1,0 +1,55 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "api-version": "2015-01-14-preview",
+    "$filter": "platform%20eq%20'ios'"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.skydrive.IOS",
+            "name": "com.microsoft.skydrive.IOS",
+            "type": "Microsoft.Intune/locations/apps",
+            "properties": {
+              "friendlyName": "OneDrive",
+              "platform": "ios",
+              "appId": "af124e86-4e96-495a-b70a-90f90ab96707"
+            }
+          },
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.office.excel.IOS",
+            "name": "com.microsoft.office.excel.IOS",
+            "type": "Microsoft.Intune/locations/apps",
+            "properties": {
+              "friendlyName": "Excel",
+              "platform": "ios",
+              "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c"
+            }
+          },
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.office.powerpoint.IOS",
+            "name": "com.microsoft.office.powerpoint.IOS",
+            "type": "Microsoft.Intune/locations/apps",
+            "properties": {
+              "friendlyName": "PowerPoint",
+              "platform": "ios",
+              "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c"
+            }
+          },
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.office.word.IOS",
+            "name": "com.microsoft.office.word.IOS",
+            "type": "Microsoft.Intune/locations/apps",
+            "properties": {
+              "friendlyName": "Word",
+              "platform": "ios",
+              "appId": "d3590ed6-52b3-4102-aeff-aad2292ab01c"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

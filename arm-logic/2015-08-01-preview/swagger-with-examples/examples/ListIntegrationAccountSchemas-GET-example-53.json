@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount8994",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "schemaType": "Xml",
+              "targetNamespace": "http://Inbound_EDI.OrderFile",
+              "documentName": "OrderFile",
+              "contentLink": {
+                "uri": "https://flowprodcu01by01.blob.core.windows.net/integrationaccountsaee3313964124588935e0a948c536f35/3839E_XML_INTEGRATIONACCOUNTSCHEMA7172-420B82EF057643E1B5BA5978A7504E14?sv=2014-02-14&sr=b&sig=cDqAnOYKEoBx1bVCpBM2sMPMJO8SIba7DzMwQPA9vQ0%3D&se=2016-07-20T21%3A23%3A23Z&sp=r",
+                "contentVersion": "\"0x8D3B0C28C59F3D5\"",
+                "contentSize": 7901,
+                "contentHash": {
+                  "algorithm": "md5",
+                  "value": "a+4ZnOsIm8I/Mr0aKJIK6w=="
+                }
+              },
+              "createdTime": "2016-07-20T17:23:22.894104Z",
+              "changedTime": "2016-07-20T17:23:22.8943905Z",
+              "metadata": "IntegrationAccountSchema7172"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount8994/schemas/IntegrationAccountSchema7172",
+            "name": "IntegrationAccountSchema7172",
+            "type": "Microsoft.Logic/integrationAccounts/schemas"
+          }
+        ]
+      }
+    }
+  }
+}

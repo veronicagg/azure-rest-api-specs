@@ -1,0 +1,68 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar18481",
+    "vmName": "vm7629",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "vmId": "2ae756aa-eb21-4a76-a775-f91ccdd99f08",
+          "availabilitySet": {
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar18481/providers/Microsoft.Compute/availabilitySets/AS913"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A0"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar6738.blob.core.windows.net/crptestar7868/oscrptestar2778.vhd"
+              },
+              "caching": "None"
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar18481/providers/Microsoft.Network/networkInterfaces/nic4295"
+              }
+            ]
+          },
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar18481/providers/Microsoft.Compute/virtualMachines/vm7629",
+        "name": "vm7629",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

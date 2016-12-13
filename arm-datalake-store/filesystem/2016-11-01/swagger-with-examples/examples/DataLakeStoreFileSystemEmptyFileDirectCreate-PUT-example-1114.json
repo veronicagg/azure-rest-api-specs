@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "removeAclFilePath": "SDKTestFolder01%2FSDKTestFile01.txt6149",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "op": "CREATE",
+    "write": "true"
+  },
+  "responses": {
+    "201": {
+      "body": ""
+    }
+  }
+}

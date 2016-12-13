@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc19657",
+    "api-version": "2016-03-01",
+    "$filter": "state%20eq%20Enabled",
+    "$top": "5"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc19657/jobs/j18170",
+            "type": "Microsoft.Scheduler/jobCollections/jobs",
+            "name": "jc19657/j18170",
+            "properties": {
+              "startTime": "2015-07-13T00:00:00Z",
+              "action": {
+                "request": {
+                  "uri": "http://www.bing.com/",
+                  "method": "GET"
+                },
+                "type": "Http"
+              },
+              "state": "enabled",
+              "status": {
+                "nextExecutionTime": "2016-03-30T20:40:55.469507Z",
+                "executionCount": 0,
+                "failureCount": 0,
+                "faultedCount": 0
+              }
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "api-version": "2016-02-03"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "keyName": "iothubowner",
+            "primaryKey": "jQHzU12xewVBVQhUduIbKiZGJs4/XcT8QF1wcuG0H4I=",
+            "secondaryKey": "okRuLJHoS0QEaos9WFi/7uHfCxJP8To/qr4HUzKlPOU=",
+            "rights": "RegistryWrite, ServiceConnect, DeviceConnect"
+          },
+          {
+            "keyName": "service",
+            "primaryKey": "gsFmvSzvzI6kgUakUE4fq0rw8CqZGu8b+ltdMzehSqM=",
+            "secondaryKey": "8U/pIQP2y5V4o6fY93a7W4jz/cX2jTUmdjovCGXbJ98=",
+            "rights": "ServiceConnect"
+          },
+          {
+            "keyName": "device",
+            "primaryKey": "uc7u1WHjzyrH58yGzWR0C9/Qpcl7DoAq0AMsgMc6Og8=",
+            "secondaryKey": "FWLTgx43VQaq7Vy4VOu8tsT5k2t3K3p7bEuQiBIMukE=",
+            "rights": "DeviceConnect"
+          },
+          {
+            "keyName": "registryRead",
+            "primaryKey": "+IJNNQa3ISP6vjc7/9FxMvZ+1QYhmr8PpWRdE74nFPc=",
+            "secondaryKey": "I9q2NA/UCAYlJEjwSkCsQw91NfZKXVhk4XKwB4cKTEk=",
+            "rights": "RegistryRead"
+          },
+          {
+            "keyName": "registryReadWrite",
+            "primaryKey": "Aiupv27L5ncJVLeksaXv06R2jygOIE/8nQkcOTSqfcQ=",
+            "secondaryKey": "XJ0zP/mz8vLMyPNucl183rsgGg7ZRqxnZeKcCaDm3HU=",
+            "rights": "RegistryWrite"
+          }
+        ]
+      }
+    }
+  }
+}

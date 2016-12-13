@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8624",
+    "profileName": "profile4641",
+    "endpointName": "fakeEndpoint",
+    "api-version": "2016-10-02",
+    "contentFilePaths": {
+      "contentPaths": [
+        "/movies/amazing.mp4",
+        "/pictures/pic1.jpg"
+      ]
+    }
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.Cdn/profiles/profile4641/endpoints/fakeEndpoint' under resource group 'cdnResourceGroup8624' was not found."
+        }
+      }
+    }
+  }
+}

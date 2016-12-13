@@ -1,0 +1,341 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asdfsdfsdf/providers/Microsoft.ServiceBus/namespaces/rrama-testns123",
+            "name": "rrama-testns123",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:rrama-testns123",
+              "status": "Active",
+              "createdAt": "2016-07-07T20:56:12.91Z",
+              "serviceBusEndpoint": "https://rrama-testns123.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-07T20:56:16.25Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/Default-ServiceBus-EastAsia/providers/Microsoft.ServiceBus/namespaces/testadmineasasia",
+            "name": "testadmineasasia",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "East Asia",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Premium",
+              "tier": "Premium",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:testadmineasasia",
+              "status": "Active",
+              "createdAt": "2015-11-07T00:16:43.297Z",
+              "serviceBusEndpoint": "https://testadmineasasia.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2015-11-07T00:19:11.06Z",
+              "namespaceType": "Messaging",
+              "messagingSku": 3
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asdfsdfsdf/providers/Microsoft.ServiceBus/namespaces/booyeahns",
+            "name": "booyeahns",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:booyeahns",
+              "status": "Active",
+              "createdAt": "2016-08-02T19:28:09.797Z",
+              "serviceBusEndpoint": "https://booyeahns.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-08-02T19:28:22.96Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/cloudtesthost/providers/Microsoft.ServiceBus/namespaces/rrama-basicns",
+            "name": "rrama-basicns",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Basic",
+              "tier": "Basic"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:rrama-basicns",
+              "status": "Active",
+              "createdAt": "2016-07-08T01:39:35.84Z",
+              "serviceBusEndpoint": "https://rrama-basicns.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-08T01:39:38.887Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 1
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/Default-ServiceBus-EastUS2/providers/Microsoft.ServiceBus/namespaces/ephstress",
+            "name": "ephstress",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "East US 2",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:ephstress",
+              "status": "Active",
+              "createdAt": "2015-10-09T20:02:24.58Z",
+              "serviceBusEndpoint": "https://ephstress.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2015-10-09T20:02:27.243Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asdfsdfsdf/providers/Microsoft.ServiceBus/namespaces/rrama-testskuchange",
+            "name": "rrama-testskuchange",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:rrama-testskuchange",
+              "status": "Active",
+              "createdAt": "2016-07-26T21:16:07.733Z",
+              "serviceBusEndpoint": "https://rrama-testskuchange.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-26T21:16:39.773Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/rrama-7-6-rg/providers/Microsoft.ServiceBus/namespaces/rrama-portalns",
+            "name": "rrama-portalns",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Premium",
+              "tier": "Premium",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:rrama-portalns",
+              "status": "Active",
+              "createdAt": "2016-07-06T22:15:11.013Z",
+              "serviceBusEndpoint": "https://rrama-portalns.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-06T22:16:23.313Z",
+              "namespaceType": "Messaging",
+              "messagingSku": 3
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/sdfasdfsad/providers/Microsoft.ServiceBus/namespaces/sasdfsadf",
+            "name": "sasdfsadf",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sasdfsadf",
+              "status": "Active",
+              "createdAt": "2016-07-08T00:55:44.147Z",
+              "serviceBusEndpoint": "https://sasdfsadf.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-08T00:55:47.31Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.ServiceBus/namespaces/rrama-standard-0721",
+            "name": "rrama-standard-0721",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:rrama-standard-0721",
+              "status": "Active",
+              "createdAt": "2016-07-21T22:39:30.933Z",
+              "serviceBusEndpoint": "https://rrama-standard-0721.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-21T22:39:42.737Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asdfsdfsdf/providers/Microsoft.ServiceBus/namespaces/asdfsadfasdfsaf",
+            "name": "asdfsadfasdfsaf",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:asdfsadfasdfsaf",
+              "status": "Active",
+              "createdAt": "2016-07-06T22:47:29.363Z",
+              "serviceBusEndpoint": "https://asdfsadfasdfsaf.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-07-06T22:47:32.273Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/Default-ServiceBus-NorthEurope/providers/Microsoft.ServiceBus/namespaces/cloudtesthost",
+            "name": "cloudtesthost",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "North Europe",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Basic",
+              "tier": "Basic"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:cloudtesthost",
+              "status": "Active",
+              "createdAt": "2015-07-06T18:18:07.06Z",
+              "serviceBusEndpoint": "https://cloudtesthost.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2015-07-06T18:18:13.773Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 1
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/Default-ServiceBus-WestUS/providers/Microsoft.ServiceBus/namespaces/testnamespacecreation",
+            "name": "testnamespacecreation",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "West US",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Premium",
+              "tier": "Premium",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:testnamespacecreation",
+              "status": "Active",
+              "createdAt": "2015-11-05T18:33:53.653Z",
+              "serviceBusEndpoint": "https://testnamespacecreation.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2015-11-05T18:35:58.863Z",
+              "namespaceType": "Messaging",
+              "messagingSku": 3
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-3746",
+            "name": "sdk-Namespace-3746",
+            "type": "Microsoft.ServiceBus/namespaces",
+            "location": "Australia East",
+            "kind": "Messaging",
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard",
+              "capacity": 1
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-3746",
+              "status": "Active",
+              "createdAt": "2016-09-13T20:46:49.487Z",
+              "serviceBusEndpoint": "https://sdk-Namespace-3746.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "updatedAt": "2016-09-13T20:47:13.873Z",
+              "eventHubEnabled": true,
+              "namespaceType": "Messaging",
+              "messagingSku": 2
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

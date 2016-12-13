@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "api-version": "2016-03-01",
+    "parameters": {
+      "name": "HydraNH-Namespace5487",
+      "location": "South Central US"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "isAvailiable": false,
+        "id": "/subscriptions/111c36dc-4047-4c69-acd5-301072ff1fc2/providers/Microsoft.NotificationHubs/checkNamespaceAvailability",
+        "name": "HydraNH-Namespace5487",
+        "type": "Microsoft.NotificationHubs/namespaces/checkNamespaceAvailability",
+        "location": null,
+        "tags": null,
+        "properties": false
+      }
+    }
+  }
+}

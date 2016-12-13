@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "redisCacheRG8181",
+    "name": "sunnyprimary9910",
+    "api-version": "2016-04-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/redisCacheRG8181/providers/Microsoft.Cache/Redis/sunnyprimary9910",
+        "location": "West US",
+        "name": "sunnyprimary9910",
+        "type": "Microsoft.Cache/Redis",
+        "tags": {},
+        "properties": {
+          "provisioningState": "Creating",
+          "redisVersion": "3.0",
+          "sku": {
+            "name": "Premium",
+            "family": "P",
+            "capacity": 1
+          },
+          "enableNonSslPort": false,
+          "redisConfiguration": {
+            "maxclients": "7500",
+            "maxmemory-reserved": "200",
+            "maxmemory-delta": "200"
+          },
+          "accessKeys": null,
+          "hostName": "sunnyprimary9910.redis.cache.windows.net",
+          "port": 6379,
+          "sslPort": 6380
+        }
+      }
+    }
+  }
+}

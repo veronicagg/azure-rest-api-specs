@@ -1,0 +1,47 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19536",
+    "accountName": "testaba18483secondacct",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "defaultDataLakeStoreAccount": "testdatalake18942",
+          "dataLakeStoreAccounts": [
+            {
+              "properties": {
+                "suffix": "azuredatalakestore.net"
+              },
+              "name": "testdatalake18942"
+            }
+          ],
+          "storageAccounts": [],
+          "maxDegreeOfParallelism": 120,
+          "maxJobCount": 10,
+          "systemMaxDegreeOfParallelism": 120,
+          "systemMaxJobCount": 20,
+          "queryStoreRetention": 30,
+          "hiveMetastores": [],
+          "provisioningState": "Succeeded",
+          "state": "Active",
+          "endpoint": "testaba18483secondacct.azuredatalakeanalytics.net",
+          "accountId": "575e9731-9607-42c0-8c87-11c68cc19ae6",
+          "creationTime": "2016-11-08T04:05:47.1668081Z",
+          "lastModifiedTime": "2016-11-08T04:05:47.1668081Z"
+        },
+        "location": "East US 2",
+        "tags": {
+          "updatedKey": "updatedValue"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483secondacct",
+        "name": "testaba18483secondacct",
+        "type": "Microsoft.DataLakeAnalytics/accounts"
+      }
+    }
+  }
+}

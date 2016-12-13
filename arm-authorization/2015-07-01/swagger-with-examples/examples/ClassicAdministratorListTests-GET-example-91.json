@@ -1,0 +1,113 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2015-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "emailAddress": "test2@rbacCliTest.onmicrosoft.com",
+              "role": "ServiceAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10030000930A2D88",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10030000930A2D88"
+          },
+          {
+            "properties": {
+              "emailAddress": "test1@rbacCliTest.onmicrosoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10033FFF930A05B2",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10033FFF930A05B2"
+          },
+          {
+            "properties": {
+              "emailAddress": "adrumea@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10030000803CDC0B",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10030000803CDC0B"
+          },
+          {
+            "properties": {
+              "emailAddress": "shuagarw@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10033FFF8BEAB769",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10033FFF8BEAB769"
+          },
+          {
+            "properties": {
+              "emailAddress": "stefmil@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/1003BFFD801C213F",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "1003BFFD801C213F"
+          },
+          {
+            "properties": {
+              "emailAddress": "rakashya@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10033FFF8068C995",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10033FFF8068C995"
+          },
+          {
+            "properties": {
+              "emailAddress": "nbaliga@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10037FFE801B28A0",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10037FFE801B28A0"
+          },
+          {
+            "properties": {
+              "emailAddress": "mkayes@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10037FFE801BFC91",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10037FFE801BFC91"
+          },
+          {
+            "properties": {
+              "emailAddress": "tengizk@microsoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/10033FFF91C82A3C",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "10033FFF91C82A3C"
+          },
+          {
+            "properties": {
+              "emailAddress": "admin@rbacclitest.onmicrosoft.com",
+              "role": "CoAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/1003BFFD94EF058D",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "1003BFFD94EF058D"
+          },
+          {
+            "properties": {
+              "emailAddress": "test2@rbacCliTest.onmicrosoft.com",
+              "role": "AccountAdministrator"
+            },
+            "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/classicAdministrators/1153765932003896712",
+            "type": "Microsoft.Authorization/classicAdministrators",
+            "name": "1153765932003896712"
+          }
+        ]
+      }
+    }
+  }
+}

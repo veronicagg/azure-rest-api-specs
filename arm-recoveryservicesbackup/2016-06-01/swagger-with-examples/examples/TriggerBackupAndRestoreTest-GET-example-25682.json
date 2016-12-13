@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "jobName": "75734041-a36a-4195-bed3-4d17da8130d2",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/Subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesBackupTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault/backupJobs/75734041-a36a-4195-bed3-4d17da8130d2",
+        "name": "75734041-a36a-4195-bed3-4d17da8130d2",
+        "type": "Microsoft.RecoveryServices/vaults/backupJobs",
+        "properties": {
+          "jobType": "AzureIaaSVMJob",
+          "duration": "00:11:59.8595073",
+          "actionsInfo": [
+            1
+          ],
+          "virtualMachineVersion": "Compute",
+          "extendedInfo": {
+            "tasksList": [
+              {
+                "taskId": "Take Snapshot",
+                "duration": "00:00:00",
+                "status": "Completed"
+              },
+              {
+                "taskId": "Transfer data to vault",
+                "duration": "00:00:00",
+                "status": "InProgress"
+              }
+            ],
+            "propertyBag": {
+              "VM Name": "pstestv2vm1"
+            }
+          },
+          "entityFriendlyName": "pstestv2vm1",
+          "backupManagementType": "AzureIaasVM",
+          "operation": "Backup",
+          "status": "InProgress",
+          "startTime": "2016-10-10T11:55:48.5250362Z",
+          "activityId": "f62ffdc3-a30a-414c-aa63-77317d8e950e"
+        }
+      }
+    }
+  }
+}

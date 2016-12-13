@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "objectId": "867463be-7738-4f4c-8f4a-bd1010964604",
+    "api-version": "1.6",
+    "parameters": {
+      "securityEnabledOnly": false
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#Collection(Edm.String)",
+        "value": [
+          "8b192ec7-2fed-4aa6-8978-ffaaed1d3348"
+        ]
+      }
+    }
+  }
+}

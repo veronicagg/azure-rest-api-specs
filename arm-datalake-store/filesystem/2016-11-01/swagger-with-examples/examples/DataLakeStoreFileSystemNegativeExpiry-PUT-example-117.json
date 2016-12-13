@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "filePath": "SDKTestFolder01%2FSDKTestFile01.txt3032",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "SETEXPIRY",
+    "write": "true",
+    "expiryOption": "Absolute",
+    "expireTime": "1478817979000"
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "RemoteException": {
+          "exception": "IllegalArgumentException",
+          "message": "Parameter expireTime is Invaild, Reason Invalid expireTime, PathAndQuery /WebHdfsExt/SDKTestFolder01/SDKTestFile01.txt3032?expiryOption=Absolute&expireTime=1478817979000&op=SETEXPIRY&api-version=2016-11-01, Method PUT [][2016-11-10T14:48:19.6851126-08:00]",
+          "javaClassName": "java.lang.IllegalArgumentException"
+        }
+      }
+    }
+  }
+}

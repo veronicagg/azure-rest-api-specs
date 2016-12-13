@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg2628",
+    "name": "csmws985",
+    "api-version": "2015-08-01",
+    "siteSourceControl": {
+      "properties": {
+        "repoUrl": "https://github.com/amitaptest/HelloKudu"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "Code": "BadRequest",
+        "Message": "Repository 'UpdateSiteSourceControl' operation failed with Microsoft.Web.Hosting.SourceControls.OAuthException: GitHub GetRepository: Bad credentials\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<ProcessResponse>d__99`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<GetRepository>d__19.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.Administration.GitHubSiteRepositoryProvider.<UpdateSiteSourceControl>d__6.MoveNext().",
+        "Target": null,
+        "Details": [
+          {
+            "Message": "Repository 'UpdateSiteSourceControl' operation failed with Microsoft.Web.Hosting.SourceControls.OAuthException: GitHub GetRepository: Bad credentials\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<ProcessResponse>d__99`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<GetRepository>d__19.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.Administration.GitHubSiteRepositoryProvider.<UpdateSiteSourceControl>d__6.MoveNext()."
+          },
+          {
+            "Code": "BadRequest"
+          },
+          {
+            "ErrorEntity": {
+              "Code": "BadRequest",
+              "Message": "Repository 'UpdateSiteSourceControl' operation failed with Microsoft.Web.Hosting.SourceControls.OAuthException: GitHub GetRepository: Bad credentials\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<ProcessResponse>d__99`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<GetRepository>d__19.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.Administration.GitHubSiteRepositoryProvider.<UpdateSiteSourceControl>d__6.MoveNext().",
+              "ExtendedCode": "05007",
+              "MessageTemplate": "Repository '{0}' operation failed with {1}.",
+              "Parameters": [
+                "UpdateSiteSourceControl",
+                "Microsoft.Web.Hosting.SourceControls.OAuthException: GitHub GetRepository: Bad credentials\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<ProcessResponse>d__99`1.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.SourceControls.GitHubProxy.<GetRepository>d__19.MoveNext()\r\n--- End of stack trace from previous location where exception was thrown ---\r\n   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)\r\n   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)\r\n   at Microsoft.Web.Hosting.Administration.GitHubSiteRepositoryProvider.<UpdateSiteSourceControl>d__6.MoveNext()"
+              ],
+              "InnerErrors": null
+            }
+          }
+        ],
+        "Innererror": null
+      }
+    }
+  }
+}

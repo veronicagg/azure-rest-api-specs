@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "resourceGroupName": "crptestar7207",
+    "name": "asdefaultvalues5367",
+    "api-version": "2016-03-30",
+    "parameters": {
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "platformUpdateDomainCount": 5,
+          "platformFaultDomainCount": 3
+        },
+        "id": "/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/crptestar7207/providers/Microsoft.Compute/availabilitySets/asdefaultvalues5367",
+        "name": "asdefaultvalues5367",
+        "type": "Microsoft.Compute/availabilitySets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

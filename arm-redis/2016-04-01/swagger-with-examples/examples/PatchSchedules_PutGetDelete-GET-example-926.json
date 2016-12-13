@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "redisCacheRGsunnyjapan7857",
+    "name": "sunny-scheduling-dv23348",
+    "api-version": "2016-04-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/redisCacheRGsunnyjapan7857/providers/Microsoft.Cache/Redis/sunny-scheduling-dv23348/patchSchedules/default",
+        "location": "Japan West",
+        "name": "sunny-scheduling-dv23348/default",
+        "type": "Microsoft.Cache/Redis/PatchSchedules",
+        "properties": {
+          "scheduleEntries": [
+            {
+              "dayOfWeek": "Monday",
+              "startHourUtc": 10,
+              "maintenanceWindow": "PT10H"
+            },
+            {
+              "dayOfWeek": "Tuesday",
+              "startHourUtc": 11,
+              "maintenanceWindow": "PT11H"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "a064e0b9-e6c9-4a0d-b993-22efebefe2af",
+    "resourceGroupName": "res2193",
+    "accountName": "csa5836",
+    "api-version": "2016-02-01-preview",
+    "parameters": {
+      "sku": {
+        "name": "S2"
+      },
+      "kind": "Recommendations",
+      "location": "westus",
+      "properties": {}
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/a064e0b9-e6c9-4a0d-b993-22efebefe2af/resourceGroups/res2193/providers/Microsoft.CognitiveServices/accounts/csa5836",
+        "name": "csa5836",
+        "type": "Microsoft.CognitiveServices/accounts",
+        "location": "westus",
+        "sku": {
+          "name": "S2"
+        },
+        "kind": "Recommendations",
+        "etag": "W/\"datetime'2016-05-23T17%3A46%3A57.0135984Z'\"",
+        "properties": {
+          "endpoint": "https://westus.api.cognitive.microsoft.com/recommendations/v4.0",
+          "provisioningState": "Succeeded"
+        }
+      }
+    }
+  }
+}

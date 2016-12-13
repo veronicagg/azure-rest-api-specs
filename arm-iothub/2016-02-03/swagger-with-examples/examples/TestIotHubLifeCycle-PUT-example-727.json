@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "eventHubEndpointName": "events",
+    "name": "testConsumerGroup",
+    "api-version": "2016-02-03"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "tags": null,
+        "id": "/subscriptions/91d12660-3dec-467a-be2a-213b5544ddc0/resourceGroups/DotNetHubRG/providers/Microsoft.Devices/IotHubs/DotNetHub",
+        "name": "testConsumerGroup"
+      }
+    }
+  }
+}

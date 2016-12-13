@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-9854",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-9854",
+        "name": "sdk-Namespace-9854",
+        "type": "Microsoft.ServiceBus/namespaces",
+        "location": "Australia East",
+        "kind": "Messaging",
+        "sku": {
+          "name": "Standard",
+          "tier": "Standard",
+          "capacity": 1
+        },
+        "tags": {},
+        "properties": {
+          "provisioningState": "Succeeded",
+          "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-9854",
+          "status": "Active",
+          "createdAt": "2016-09-13T20:50:53.433Z",
+          "serviceBusEndpoint": "https://sdk-Namespace-9854.servicebus.windows.net:443/",
+          "enabled": true,
+          "critical": false,
+          "updatedAt": "2016-09-13T20:51:17.713Z",
+          "eventHubEnabled": true,
+          "namespaceType": "Messaging",
+          "messagingSku": 2
+        }
+      }
+    }
+  }
+}

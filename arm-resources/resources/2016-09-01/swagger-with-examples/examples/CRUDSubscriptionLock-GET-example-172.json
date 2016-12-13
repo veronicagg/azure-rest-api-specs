@@ -1,0 +1,93 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2015-01-01",
+    "$filter": ""
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/providers/Microsoft.Authorization/locks/mylock1730",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock1730"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "Optional text notes."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/providers/Microsoft.Authorization/locks/serverlock",
+            "type": "Microsoft.Authorization/locks",
+            "name": "serverlock"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourcegroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/mylock2461",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock2461"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourcegroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/mylock8361",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock8361"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "Optional text notes."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/newlock",
+            "type": "Microsoft.Authorization/locks",
+            "name": "newlock"
+          },
+          {
+            "properties": {
+              "level": "ReadOnly",
+              "notes": "Optional text notes."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/myrg3/providers/Microsoft.Authorization/locks/rglock3",
+            "type": "Microsoft.Authorization/locks",
+            "name": "rglock3"
+          },
+          {
+            "properties": {
+              "level": "ReadOnly"
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/testResourceGroup/providers/Providers.Test/statefulResources/statefulResource1/nestedResources/nestedResource1/providers/Microsoft.Authorization/locks/testLock1",
+            "type": "Microsoft.Authorization/locks",
+            "name": "testLock1"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete"
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/testResourceGroup/providers/Providers.Test/statefulResources/statefulResource1/nestedResources/nestedResource1/providers/Microsoft.Authorization/locks/testLock2",
+            "type": "Microsoft.Authorization/locks",
+            "name": "testLock2"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete"
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/testResourceGroup/providers/Providers.Test/statefulResources/statefulResource1/nestedResources/nestedResource1/providers/Microsoft.Authorization/locks/testLock3",
+            "type": "Microsoft.Authorization/locks",
+            "name": "testLock3"
+          }
+        ]
+      }
+    }
+  }
+}

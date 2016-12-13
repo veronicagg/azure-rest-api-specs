@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg3523",
+    "virtualNetworkName": "azsmnet7612",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet7612",
+        "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/virtualNetworks/azsmnet7612",
+        "etag": "W/\"f91b1c8b-6f23-48c6-9fa4-46fd82c4a248\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "56d8946b-c169-4343-98e2-3fd45b75a21d",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet1289",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/virtualNetworks/azsmnet7612/subnets/azsmnet1289",
+              "etag": "W/\"f91b1c8b-6f23-48c6-9fa4-46fd82c4a248\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

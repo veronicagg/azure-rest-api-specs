@@ -1,0 +1,147 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "csmrg5829",
+    "loadBalancerName": "azsmnet5114",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet5114",
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114",
+        "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+        "type": "Microsoft.Network/loadBalancers",
+        "location": "canadaeast",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "d2eed458-fb48-4475-9785-814c0c9679fa",
+          "frontendIPConfigurations": [
+            {
+              "name": "azsmnet3535",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/frontendIPConfigurations/azsmnet3535",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.38",
+                "privateIPAllocationMethod": "Static",
+                "subnet": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/virtualNetworks/azsmnet5681/subnets/azsmnet7499"
+                },
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/loadBalancingRules/azsmnet9903"
+                  }
+                ],
+                "inboundNatRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/inboundNatRules/azsmnet8939"
+                  },
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/inboundNatRules/azsmnet4305"
+                  }
+                ]
+              }
+            }
+          ],
+          "backendAddressPools": [
+            {
+              "name": "azsmnet9482",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/backendAddressPools/azsmnet9482",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/loadBalancingRules/azsmnet9903"
+                  }
+                ]
+              }
+            }
+          ],
+          "loadBalancingRules": [
+            {
+              "name": "azsmnet9903",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/loadBalancingRules/azsmnet9903",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/frontendIPConfigurations/azsmnet3535"
+                },
+                "frontendPort": 80,
+                "backendPort": 80,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 4,
+                "protocol": "Tcp",
+                "loadDistribution": "SourceIPProtocol",
+                "backendAddressPool": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/backendAddressPools/azsmnet9482"
+                },
+                "probe": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/probes/azsmnet2798"
+                }
+              }
+            }
+          ],
+          "probes": [
+            {
+              "name": "azsmnet2798",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/probes/azsmnet2798",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "protocol": "Http",
+                "port": 80,
+                "requestPath": "healthcheck.aspx",
+                "intervalInSeconds": 10,
+                "numberOfProbes": 2,
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/loadBalancingRules/azsmnet9903"
+                  }
+                ]
+              }
+            }
+          ],
+          "inboundNatRules": [
+            {
+              "name": "azsmnet8939",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/inboundNatRules/azsmnet8939",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/frontendIPConfigurations/azsmnet3535"
+                },
+                "frontendPort": 3389,
+                "backendPort": 3389,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 4,
+                "protocol": "Tcp"
+              }
+            },
+            {
+              "name": "azsmnet4305",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/inboundNatRules/azsmnet4305",
+              "etag": "W/\"dde6ca00-b4f3-4ed9-83e3-68a4eb4f8a09\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg5829/providers/Microsoft.Network/loadBalancers/azsmnet5114/frontendIPConfigurations/azsmnet3535"
+                },
+                "frontendPort": 3390,
+                "backendPort": 3389,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 4,
+                "protocol": "Tcp"
+              }
+            }
+          ],
+          "outboundNatRules": [],
+          "inboundNatPools": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "redisCacheRGsunnyjapan7857",
+    "name": "sunny-scheduling-dv23348",
+    "api-version": "2016-04-01"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "There are no patch schedules found for redis cache 'sunny-scheduling-dv23348'.\r\nRequestID=1f486726-9709-449b-9d13-789214a2aa1a",
+          "target": null
+        }
+      }
+    }
+  }
+}

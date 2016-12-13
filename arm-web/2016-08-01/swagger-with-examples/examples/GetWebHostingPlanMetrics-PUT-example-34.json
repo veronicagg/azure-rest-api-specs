@@ -1,0 +1,115 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg235",
+    "name": "csmws799",
+    "api-version": "2015-08-01",
+    "siteEnvelope": {
+      "location": "West US",
+      "tags": {
+        "tag1": "value1",
+        "tag2": ""
+      },
+      "properties": {
+        "name": "csmws799",
+        "serverFarmId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourcegroups/csmrg235/providers/Microsoft.Web/serverfarms/csmsf1227"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg235/providers/Microsoft.Web/sites/csmws799",
+        "name": "csmws799",
+        "type": "Microsoft.Web/sites",
+        "location": "West US",
+        "tags": {
+          "tag1": "value1",
+          "tag2": ""
+        },
+        "properties": {
+          "name": "csmws799",
+          "state": "Running",
+          "hostNames": [
+            "csmws799.waws-ppedf.windows-int.net"
+          ],
+          "webSpace": "csmrg235-WestUSwebspace",
+          "selfLink": "https://waws-ppedf-bay-001.api.admin-waws-ppedf.windows-int.net:454/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/webspaces/csmrg235-WestUSwebspace/sites/csmws799",
+          "repositorySiteName": "csmws799",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmws799.scm.waws-ppedf.windows-int.net",
+            "csmws799.waws-ppedf.windows-int.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmws799.scm.waws-ppedf.windows-int.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 1
+            },
+            {
+              "name": "csmws799.waws-ppedf.windows-int.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 0
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": null,
+          "serverFarmId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg235/providers/Microsoft.Web/serverfarms/csmsf1227",
+          "lastModifiedTimeUtc": "2015-12-11T01:52:43.273",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmws799",
+          "trafficManagerHostNames": null,
+          "sku": "Standard",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false,
+          "targetSwapSlot": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "microService": "WebSites",
+          "gatewaySiteName": null,
+          "clientAffinityEnabled": true,
+          "clientCertEnabled": false,
+          "hostNamesDisabled": false,
+          "domainVerificationIdentifiers": null,
+          "kind": null,
+          "outboundIpAddresses": "104.40.21.237,104.40.20.76,104.40.19.34,104.40.22.12",
+          "cloningInfo": null,
+          "hostingEnvironmentId": null,
+          "tags": {
+            "tag1": "value1",
+            "tag2": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "scope": "subscriptions",
+    "roleAssignmentName": "roleAssignments",
+    "api-version": "2015-07-01",
+    "parameters": {
+      "properties": {
+        "roleDefinitionId": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772",
+        "principalId": "18d9b77e-8e3f-4eab-b2f5-63ee5534671a"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "roleDefinitionId": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772",
+          "principalId": "18d9b77e-8e3f-4eab-b2f5-63ee5534671a",
+          "scope": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f",
+          "createdOn": "2015-11-30T06:56:31.5520399Z",
+          "updatedOn": "2015-11-30T06:56:31.5520399Z",
+          "createdBy": null,
+          "updatedBy": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0"
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleAssignments/4e39b947-e2e9-4247-b9c4-b68ae52fe2ef",
+        "type": "Microsoft.Authorization/roleAssignments",
+        "name": "4e39b947-e2e9-4247-b9c4-b68ae52fe2ef"
+      }
+    }
+  }
+}

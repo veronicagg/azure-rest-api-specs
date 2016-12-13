@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg2790",
+    "virtualNetworkName": "azsmnet4135",
+    "virtualNetworkPeeringName": "azsmnet3453",
+    "api-version": "2016-09-01",
+    "VirtualNetworkPeeringParameters": {
+      "properties": {
+        "allowVirtualNetworkAccess": false,
+        "allowForwardedTraffic": true,
+        "remoteVirtualNetwork": {
+          "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet6391"
+        }
+      },
+      "name": "azsmnet3453"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet3453",
+        "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet4135/virtualNetworkPeerings/azsmnet3453",
+        "etag": "W/\"ee6ca82f-23d9-427d-9300-0751a7c4067c\"",
+        "properties": {
+          "provisioningState": "Updating",
+          "peeringState": "Initiated",
+          "remoteVirtualNetwork": {
+            "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet6391"
+          },
+          "allowVirtualNetworkAccess": false,
+          "allowForwardedTraffic": true,
+          "allowGatewayTransit": false,
+          "useRemoteGateways": false,
+          "remoteAddressSpace": {
+            "addressPrefixes": [
+              "10.1.0.0/16"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

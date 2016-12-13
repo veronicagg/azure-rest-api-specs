@@ -1,0 +1,106 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2014-04-01",
+    "parameters": {
+      "properties": {
+        "name": "csmr405",
+        "siteMode": "Limited",
+        "computeMode": "Shared",
+        "sku": "Free",
+        "workerSize": 0
+      },
+      "location": "westus",
+      "tags": {}
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/csmrg7222/providers/Microsoft.Web/sites/csmr405",
+        "name": "csmr405",
+        "type": "Microsoft.Web/sites",
+        "kind": null,
+        "location": "westus",
+        "tags": {},
+        "plan": null,
+        "properties": {
+          "name": "csmr405",
+          "state": "Running",
+          "hostNames": [
+            "csmr405.azurewebsites.net"
+          ],
+          "webSpace": "csmrg7222-WestUSwebspace",
+          "selfLink": "https://waws-prod-bay-031.api.azurewebsites.windows.net:454/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/webspaces/csmrg7222-WestUSwebspace/sites/csmr405",
+          "repositorySiteName": "csmr405",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmr405.azurewebsites.net",
+            "csmr405.scm.azurewebsites.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmr405.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 0
+            },
+            {
+              "name": "csmr405.scm.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 1
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": "Default1",
+          "serverFarmId": null,
+          "lastModifiedTimeUtc": "2015-09-02T22:06:17.21",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmr405",
+          "trafficManagerHostNames": null,
+          "sku": "Free",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false,
+          "targetSwapSlot": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "microService": "WebSites",
+          "gatewaySiteName": null,
+          "clientAffinityEnabled": true,
+          "clientCertEnabled": false,
+          "kind": null,
+          "outboundIpAddresses": "104.40.86.151,104.40.89.251,104.40.90.248,104.40.87.14",
+          "cloningInfo": null,
+          "hostingEnvironmentId": null
+        }
+      }
+    }
+  }
+}

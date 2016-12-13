@@ -1,0 +1,18 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2015-04-08",
+    "subscriptionId": "subcriptionID"
+  },
+  "responses":{
+    "200":{ 
+      "body": {
+        "primaryReadonlyMasterKey": "primary read-only key value",
+        "secondaryReadonlyMasterKey": "secondary read-only key value"
+        }
+    }
+  }
+}
+
+

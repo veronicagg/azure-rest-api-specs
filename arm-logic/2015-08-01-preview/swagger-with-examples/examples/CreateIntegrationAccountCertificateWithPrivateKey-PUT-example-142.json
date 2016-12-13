@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount6160",
+    "certificateName": "IntegrationAccountCertificate1568",
+    "api-version": "2015-08-01-preview",
+    "certificate": {
+      "properties": {
+        "key": {
+          "keyVault": {
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.keyvault/vaults/IntegrationAccountVault"
+          },
+          "keyName": "PRIVATEKEY",
+          "keyVersion": "a71cf67368fc473f8d2a40cd8804ac85"
+        }
+      },
+      "name": "IntegrationAccountCertificate1568",
+      "location": "brazilsouth"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "key": {
+            "keyVault": {
+              "name": "IntegrationAccountVault",
+              "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.keyvault/vaults/IntegrationAccountVault",
+              "type": "Microsoft.KeyVault/vaults"
+            },
+            "keyName": "PRIVATEKEY",
+            "keyVersion": "a71cf67368fc473f8d2a40cd8804ac85"
+          },
+          "createdTime": "2016-07-20T17:21:10.9725323Z",
+          "changedTime": "2016-07-20T17:21:10.9733575Z"
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount6160/certificates/IntegrationAccountCertificate1568",
+        "name": "IntegrationAccountCertificate1568",
+        "type": "Microsoft.Logic/integrationAccounts/certificates"
+      }
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc17164",
+    "jobName": "j14795",
+    "api-version": "2016-03-01",
+    "job": {
+      "properties": {
+        "startTime": "2015-07-13T00:00:00Z",
+        "action": {
+          "type": "StorageQueue",
+          "queueMessage": {
+            "storageAccount": "schedulersdktest",
+            "queueName": "queue1",
+            "sasToken": "ThIsiSmYtOkeNdoyOusEe",
+            "message": "some message!"
+          },
+          "retryPolicy": {
+            "retryType": "Fixed",
+            "retryInterval": "00:01:00",
+            "retryCount": 2
+          },
+          "errorAction": {
+            "type": "Http",
+            "request": {
+              "uri": "http://www.bing.com/",
+              "method": "GET"
+            }
+          }
+        },
+        "recurrence": {
+          "frequency": "Week",
+          "interval": 1,
+          "count": 10000,
+          "endTime": "2020-10-10T10:10:10Z"
+        },
+        "state": "Enabled"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc17164/jobs/j14795",
+        "type": "Microsoft.Scheduler/jobCollections/jobs",
+        "name": "jc17164/j14795",
+        "properties": {
+          "startTime": "2015-07-13T00:00:00Z",
+          "action": {
+            "queueMessage": {
+              "storageAccount": "schedulersdktest",
+              "queueName": "queue1",
+              "message": "some message!"
+            },
+            "type": "StorageQueue",
+            "retryPolicy": {
+              "retryType": "fixed",
+              "retryInterval": "00:01:00",
+              "retryCount": 2
+            },
+            "errorAction": {
+              "request": {
+                "uri": "http://www.bing.com/",
+                "method": "GET"
+              },
+              "type": "Http"
+            }
+          },
+          "recurrence": {
+            "frequency": "week",
+            "count": 10000,
+            "endTime": "2020-10-10T10:10:10Z",
+            "interval": 1
+          },
+          "state": "enabled",
+          "status": {
+            "nextExecutionTime": "2016-04-04T00:00:00Z",
+            "executionCount": 0,
+            "failureCount": 0,
+            "faultedCount": 0
+          }
+        }
+      }
+    }
+  }
+}

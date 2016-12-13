@@ -1,0 +1,42 @@
+{
+  "parameters": {
+    "scope": "",
+    "roleDefinitionId": "Microsoft.Authorization",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Data Factory Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage data factories, but not access to them.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.DataFactory/dataFactories/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:21.529493Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/673868aa-7521-48a0-acc6-0f60742d39f5",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "673868aa-7521-48a0-acc6-0f60742d39f5"
+      }
+    }
+  }
+}

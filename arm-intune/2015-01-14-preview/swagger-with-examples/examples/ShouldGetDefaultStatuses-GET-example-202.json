@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/providers/Microsoft.Intune/locations/fef.msua06/statuses/default",
+        "name": "default",
+        "type": "Microsoft.Intune/locations/statuses",
+        "properties": {
+          "deployedPolicies": 0,
+          "status": "complete",
+          "flaggedUsers": 0,
+          "policyAppliedUsers": 0,
+          "enrolledUsers": 0,
+          "wipePendingApps": 0,
+          "wipeFailedApps": 0,
+          "wipeSucceededApps": 0,
+          "lastModifiedTime": "2015-12-02T23:50:33.2111294"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1241 @@
+{
+  "parameters": {
+    "subscriptionId": "e48bff2b-f633-4bd6-857a-ff243767676e",
+    "api-version": "2016-05-16"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/gaea643b69",
+            "name": "gaea643b69",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Provisioning",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/gaea643b69"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/azsdktest",
+            "name": "azsdktest",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "updated1": "value1"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/azsdktest"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/azsdktest2",
+            "name": "azsdktest2",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "key1": "value1",
+              "key2": "value2"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/azsdktest2"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/sdktest1",
+            "name": "sdktest1",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "key1": "value1",
+              "key2": "value2"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/sdktest1"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/a97592aee4",
+            "name": "a97592aee4",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/a97592aee4"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/b1dadea59e",
+            "name": "b1dadea59e",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/b1dadea59e"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/b38258bb2e",
+            "name": "b38258bb2e",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/b38258bb2e"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/testRGA/providers/Microsoft.AnalysisServices/servers/b3f9f171c3",
+            "name": "b3f9f171c3",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/b3f9f171c3"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/b9190bdad1",
+            "name": "b9190bdad1",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/b9190bdad1"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/c0e2889e1b",
+            "name": "c0e2889e1b",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/c0e2889e1b"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/c7b317afe2",
+            "name": "c7b317afe2",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/c7b317afe2"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/cf35869c6c",
+            "name": "cf35869c6c",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/cf35869c6c"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/cf5a486822",
+            "name": "cf5a486822",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/cf5a486822"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/d12ccf05c0",
+            "name": "d12ccf05c0",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/d12ccf05c0"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/d1aec3931d",
+            "name": "d1aec3931d",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/d1aec3931d"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/d65bf68dc7",
+            "name": "d65bf68dc7",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/d65bf68dc7"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/d84b67d379",
+            "name": "d84b67d379",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/d84b67d379"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/dd9556c8bf",
+            "name": "dd9556c8bf",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/dd9556c8bf"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ec7b3fbbf1",
+            "name": "ec7b3fbbf1",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ec7b3fbbf1"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ef96568a75",
+            "name": "ef96568a75",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ef96568a75"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/f1cec7c408",
+            "name": "f1cec7c408",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/f1cec7c408"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/f97d96baf3",
+            "name": "f97d96baf3",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/f97d96baf3"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/g0fa3272e1",
+            "name": "g0fa3272e1",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/g0fa3272e1"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/h55cafb9da",
+            "name": "h55cafb9da",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/h55cafb9da"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/h5a14f652b",
+            "name": "h5a14f652b",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/h5a14f652b"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/he651872b9",
+            "name": "he651872b9",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/he651872b9"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/i4ca5c60d6",
+            "name": "i4ca5c60d6",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/i4ca5c60d6"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/i4e6f99390",
+            "name": "i4e6f99390",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/i4e6f99390"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/i549f91285",
+            "name": "i549f91285",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/i549f91285"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/j190737b55",
+            "name": "j190737b55",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/j190737b55"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/j5d197a67e",
+            "name": "j5d197a67e",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/j5d197a67e"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/j67f0599dd",
+            "name": "j67f0599dd",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/j67f0599dd"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/j7115ef794",
+            "name": "j7115ef794",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/j7115ef794"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/j7ad04cdd6",
+            "name": "j7ad04cdd6",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/j7ad04cdd6"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/jc7675b84b",
+            "name": "jc7675b84b",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/jc7675b84b"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/jeea85e8ce",
+            "name": "jeea85e8ce",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/jeea85e8ce"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/k1f75ecdf2",
+            "name": "k1f75ecdf2",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/k1f75ecdf2"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/k42217d4c7",
+            "name": "k42217d4c7",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/k42217d4c7"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ka41dd7bf0",
+            "name": "ka41dd7bf0",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ka41dd7bf0"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/l6e1af42d5",
+            "name": "l6e1af42d5",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/l6e1af42d5"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ma0341c89a",
+            "name": "ma0341c89a",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ma0341c89a"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/n55a38a544",
+            "name": "n55a38a544",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/n55a38a544"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ne27fa57ad",
+            "name": "ne27fa57ad",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ne27fa57ad"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/o294986925",
+            "name": "o294986925",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/o294986925"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/o3a0c05a63",
+            "name": "o3a0c05a63",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/o3a0c05a63"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/o92a8e9f92",
+            "name": "o92a8e9f92",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/o92a8e9f92"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/p07db7479b",
+            "name": "p07db7479b",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/p07db7479b"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/pe3558a074",
+            "name": "pe3558a074",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/pe3558a074"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/r1df3077b0",
+            "name": "r1df3077b0",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/r1df3077b0"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/r637fdf5b6",
+            "name": "r637fdf5b6",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/r637fdf5b6"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/r71a71aa53",
+            "name": "r71a71aa53",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/r71a71aa53"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/s3dae3d0ca",
+            "name": "s3dae3d0ca",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/s3dae3d0ca"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/testrg/providers/Microsoft.AnalysisServices/servers/server123",
+            "name": "server123",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "key1": "value1",
+              "key2": "value2"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/server123"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/sf43235ca3",
+            "name": "sf43235ca3",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/sf43235ca3"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/t4c0846285",
+            "name": "t4c0846285",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/t4c0846285"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/tc7246b33e",
+            "name": "tc7246b33e",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/tc7246b33e"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/testRGA/providers/Microsoft.AnalysisServices/servers/u133f2b64b",
+            "name": "u133f2b64b",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/u133f2b64b"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/u16ffd5eb4",
+            "name": "u16ffd5eb4",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "D1",
+              "tier": "Development"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/u16ffd5eb4"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/u22be98c59",
+            "name": "u22be98c59",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/u22be98c59"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/u3cbbadfa5",
+            "name": "u3cbbadfa5",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/u3cbbadfa5"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/ud4d5ea4ff",
+            "name": "ud4d5ea4ff",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/ud4d5ea4ff"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/va03557940",
+            "name": "va03557940",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S4",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/va03557940"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/vade60d396",
+            "name": "vade60d396",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/vade60d396"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/vd51756c29",
+            "name": "vd51756c29",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/vd51756c29"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/vdbbbbb205",
+            "name": "vdbbbbb205",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/vdbbbbb205"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/w0f6e10d7d",
+            "name": "w0f6e10d7d",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/w0f6e10d7d"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/w45879fa60",
+            "name": "w45879fa60",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/w45879fa60"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/y496e246b1",
+            "name": "y496e246b1",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/y496e246b1"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/yd31c817e6",
+            "name": "yd31c817e6",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/yd31c817e6"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/z2f1f7fd67",
+            "name": "z2f1f7fd67",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/z2f1f7fd67"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/z8ad14feee",
+            "name": "z8ad14feee",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/z8ad14feee"
+            }
+          },
+          {
+            "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/zf30a404a7",
+            "name": "zf30a404a7",
+            "type": "Microsoft.AnalysisServices/servers",
+            "location": "West US",
+            "sku": {
+              "name": "S2",
+              "tier": "Standard"
+            },
+            "tags": {
+              "testKey": "testValue"
+            },
+            "properties": {
+              "provisioningState": "Failed",
+              "serverFullName": "asazure://aspaaswestusloop1.asazure-int.windows.net/zf30a404a7"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

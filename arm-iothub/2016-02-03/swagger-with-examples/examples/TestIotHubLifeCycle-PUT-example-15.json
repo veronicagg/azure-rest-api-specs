@@ -1,0 +1,200 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "api-version": "2016-02-03",
+    "iotHubDescription": {
+      "subscriptionid": "91d12660-3dec-467a-be2a-213b5544ddc0",
+      "resourcegroup": "DotNetHubRG",
+      "etag": "AAAAAABJmdg=",
+      "properties": {
+        "hostName": "DotNetHub.azure-devices.net",
+        "eventHubEndpoints": {
+          "events": {
+            "retentionTimeInDays": 1,
+            "partitionCount": 4,
+            "partitionIds": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "path": "DotNetHub",
+            "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+          },
+          "operationsMonitoringEvents": {
+            "retentionTimeInDays": 1,
+            "partitionCount": 4,
+            "partitionIds": [
+              "0",
+              "1",
+              "2",
+              "3"
+            ],
+            "path": "DotNetHub-operationMonitoring",
+            "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+          }
+        },
+        "storageEndpoints": {
+          "$default": {
+            "sasTtlAsIso8601": "PT1H",
+            "connectionString": "",
+            "containerName": ""
+          }
+        },
+        "messagingEndpoints": {
+          "fileNotifications": {
+            "lockDurationAsIso8601": "PT1M",
+            "ttlAsIso8601": "PT1H",
+            "maxDeliveryCount": 10
+          }
+        },
+        "enableFileUploadNotifications": false,
+        "cloudToDevice": {
+          "maxDeliveryCount": 10,
+          "defaultTtlAsIso8601": "PT1H",
+          "feedback": {
+            "lockDurationAsIso8601": "PT1M",
+            "ttlAsIso8601": "PT1H",
+            "maxDeliveryCount": 10
+          }
+        },
+        "operationsMonitoringProperties": {
+          "events": {
+            "None": "None",
+            "Connections": "None",
+            "DeviceTelemetry": "None",
+            "C2DCommands": "None",
+            "DeviceIdentityOperations": "None",
+            "FileUploadOperations": "None"
+          }
+        },
+        "features": "None"
+      },
+      "sku": {
+        "name": "S1",
+        "capacity": 2
+      },
+      "location": "WestUS",
+      "tags": {}
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/91d12660-3dec-467a-be2a-213b5544ddc0/resourceGroups/DotNetHubRG/providers/Microsoft.Devices/IotHubs/DotNetHub",
+        "name": "DotNetHub",
+        "type": "Microsoft.Devices/IotHubs",
+        "location": "WestUS",
+        "tags": {},
+        "subscriptionid": "91d12660-3dec-467a-be2a-213b5544ddc0",
+        "resourcegroup": "DotNetHubRG",
+        "etag": "AAAAAABJmdg=",
+        "properties": {
+          "provisioningState": "Accepted",
+          "authorizationPolicies": [
+            {
+              "keyName": "iothubowner",
+              "primaryKey": "jQHzU12xewVBVQhUduIbKiZGJs4/XcT8QF1wcuG0H4I=",
+              "secondaryKey": "okRuLJHoS0QEaos9WFi/7uHfCxJP8To/qr4HUzKlPOU=",
+              "rights": "RegistryWrite, ServiceConnect, DeviceConnect"
+            },
+            {
+              "keyName": "service",
+              "primaryKey": "gsFmvSzvzI6kgUakUE4fq0rw8CqZGu8b+ltdMzehSqM=",
+              "secondaryKey": "8U/pIQP2y5V4o6fY93a7W4jz/cX2jTUmdjovCGXbJ98=",
+              "rights": "ServiceConnect"
+            },
+            {
+              "keyName": "device",
+              "primaryKey": "uc7u1WHjzyrH58yGzWR0C9/Qpcl7DoAq0AMsgMc6Og8=",
+              "secondaryKey": "FWLTgx43VQaq7Vy4VOu8tsT5k2t3K3p7bEuQiBIMukE=",
+              "rights": "DeviceConnect"
+            },
+            {
+              "keyName": "registryRead",
+              "primaryKey": "+IJNNQa3ISP6vjc7/9FxMvZ+1QYhmr8PpWRdE74nFPc=",
+              "secondaryKey": "I9q2NA/UCAYlJEjwSkCsQw91NfZKXVhk4XKwB4cKTEk=",
+              "rights": "RegistryRead"
+            },
+            {
+              "keyName": "registryReadWrite",
+              "primaryKey": "Aiupv27L5ncJVLeksaXv06R2jygOIE/8nQkcOTSqfcQ=",
+              "secondaryKey": "XJ0zP/mz8vLMyPNucl183rsgGg7ZRqxnZeKcCaDm3HU=",
+              "rights": "RegistryWrite"
+            }
+          ],
+          "hostName": "DotNetHub.azure-devices.net",
+          "eventHubEndpoints": {
+            "events": {
+              "retentionTimeInDays": 1,
+              "partitionCount": 4,
+              "partitionIds": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "path": "DotNetHub",
+              "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+            },
+            "operationsMonitoringEvents": {
+              "retentionTimeInDays": 1,
+              "partitionCount": 4,
+              "partitionIds": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "path": "DotNetHub-operationMonitoring",
+              "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+            }
+          },
+          "storageEndpoints": {
+            "$default": {
+              "sasTtlAsIso8601": "PT1H",
+              "connectionString": "",
+              "containerName": ""
+            }
+          },
+          "messagingEndpoints": {
+            "fileNotifications": {
+              "lockDurationAsIso8601": "PT1M",
+              "ttlAsIso8601": "PT1H",
+              "maxDeliveryCount": 10
+            }
+          },
+          "enableFileUploadNotifications": false,
+          "cloudToDevice": {
+            "maxDeliveryCount": 10,
+            "defaultTtlAsIso8601": "PT1H",
+            "feedback": {
+              "lockDurationAsIso8601": "PT1M",
+              "ttlAsIso8601": "PT1H",
+              "maxDeliveryCount": 10
+            }
+          },
+          "operationsMonitoringProperties": {
+            "events": {
+              "None": "None",
+              "Connections": "None",
+              "DeviceTelemetry": "None",
+              "C2DCommands": "None",
+              "DeviceIdentityOperations": "None",
+              "FileUploadOperations": "None"
+            }
+          },
+          "features": "None",
+          "generationNumber": 0
+        },
+        "sku": {
+          "name": "S1",
+          "tier": "Standard",
+          "capacity": 2
+        }
+      }
+    }
+  }
+}

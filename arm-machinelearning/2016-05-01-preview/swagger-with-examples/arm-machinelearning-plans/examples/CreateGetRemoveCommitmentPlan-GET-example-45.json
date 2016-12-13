@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "subscriptionId": "80c77c76-74ba-4c8c-8229-4c3b2957990c",
+    "resourceGroupName": "amlrg1855",
+    "commitmentPlanName": "amlcp4285",
+    "api-version": "2016-05-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "etag": "0000a435-0000-0000-0000-57d9e43e0000",
+        "id": "/subscriptions/80c77c76-74ba-4c8c-8229-4c3b2957990c/resourceGroups/amlrg1855/providers/Microsoft.MachineLearning/commitmentPlans/amlcp4285",
+        "location": "South Central US",
+        "name": "amlcp4285",
+        "properties": {
+          "chargeForOverage": true,
+          "chargeForPlan": true,
+          "creationDate": "2016-09-14T23:58:50.1923902Z",
+          "includedQuantities": {
+            "machineLearningWebServiceComputeHours": {
+              "allowance": 25,
+              "amount": 25,
+              "includedQuantityMeter": "29187de1-b4a1-4503-a6f6-078271b3fc9d",
+              "overageMeter": "842f92f7-a46b-4522-ac62-8134271dc591"
+            },
+            "machineLearningWebServiceTransactions": {
+              "allowance": 100000,
+              "amount": 100000,
+              "includedQuantityMeter": "303743b6-4cd0-44df-8ec2-a93c8f14943b",
+              "overageMeter": "c906e161-98b8-41b1-81e2-b59e0b263740"
+            }
+          },
+          "maxAssociationLimit": 10000,
+          "maxCapacityLimit": 10,
+          "minCapacityLimit": 1,
+          "planMeter": "4a5a4b83-6216-47c5-b3db-fe430fa6e2c3",
+          "refillFrequencyInDays": 30,
+          "suspendPlanOnOverage": false
+        },
+        "sku": {
+          "capacity": 1,
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "tags": {},
+        "type": "Microsoft.MachineLearning/commitmentPlans"
+      }
+    }
+  }
+}

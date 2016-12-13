@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "subscriptionId": "f98da156-d5e6-44a1-99d8-1b6fd3f764ff",
+    "resourceGroupName": "csmrg5498",
+    "localNetworkGatewayName": "azsmnet8914",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "tags": {
+        "test": "value"
+      },
+      "properties": {
+        "localNetworkAddressSpace": {
+          "addressPrefixes": [
+            "192.168.0.0/16"
+          ]
+        },
+        "gatewayIpAddress": "192.168.3.4",
+        "bgpSettings": {
+          "asn": 1234,
+          "bgpPeeringAddress": "192.168.0.1",
+          "peerWeight": 3
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet8914",
+        "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/localNetworkGateways/azsmnet8914",
+        "etag": "W/\"cc0ddc26-ba1d-46c0-9e20-0a85d0ea37c7\"",
+        "type": "Microsoft.Network/localNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "test": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "ba330a4b-c210-44c5-97af-d1e51b107ff8",
+          "localNetworkAddressSpace": {
+            "addressPrefixes": [
+              "192.168.0.0/16"
+            ]
+          },
+          "gatewayIpAddress": "192.168.3.4",
+          "bgpSettings": {
+            "asn": 1234,
+            "bgpPeeringAddress": "192.168.0.1",
+            "peerWeight": 3
+          }
+        }
+      }
+    }
+  }
+}

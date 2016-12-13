@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg18565",
+    "accountName": "testdatalake14064",
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "firewallState": "Disabled",
+          "firewallRules": [],
+          "trustedIdProviderState": "Disabled",
+          "trustedIdProviders": [],
+          "encryptionState": "Enabled",
+          "encryptionConfig": {
+            "type": "ServiceManaged"
+          },
+          "provisioningState": "Succeeded",
+          "state": "Active",
+          "endpoint": "testdatalake14064.azuredatalakestore.net",
+          "accountId": "7a9d92d8-67bf-4276-b1a9-b783fd392b77",
+          "creationTime": "2016-11-11T01:00:13.5432859Z",
+          "lastModifiedTime": "2016-11-11T01:00:13.5432859Z"
+        },
+        "location": "East US 2",
+        "tags": {
+          "testkey": "testvalue"
+        },
+        "identity": {
+          "type": "SystemAssigned",
+          "principalId": "f9fd4915-efab-475c-9f15-22c9c641e305",
+          "tenantId": "6e606ece-3a5a-4674-a654-d6b02bc5a51b"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg18565/providers/Microsoft.DataLakeStore/accounts/testdatalake14064",
+        "name": "testdatalake14064",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "parameters": {
+    "tenantID": "rbacclitest.onmicrosoft.com",
+    "api-version": "1.6",
+    "parameters": {
+      "accountEnabled": true,
+      "displayName": "aduser9162",
+      "passwordProfile": {
+        "password": "Test12345",
+        "forceChangePasswordNextLogin": false
+      },
+      "userPrincipalName": "aduser9162@rbacclitest.onmicrosoft.com",
+      "mailNickname": "aduser9162test"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/rbacclitest.onmicrosoft.com/$metadata#directoryObjects/Microsoft.DirectoryServices.User/@Element",
+        "odata.type": "Microsoft.DirectoryServices.User",
+        "objectType": "User",
+        "objectId": "9db03b56-b746-4a01-a9ab-ce47ddab212f",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "signInNames": [],
+        "assignedLicenses": [],
+        "assignedPlans": [],
+        "city": null,
+        "companyName": null,
+        "country": null,
+        "creationType": null,
+        "department": null,
+        "dirSyncEnabled": null,
+        "displayName": "aduser9162",
+        "facsimileTelephoneNumber": null,
+        "givenName": null,
+        "immutableId": null,
+        "isCompromised": null,
+        "jobTitle": null,
+        "lastDirSyncTime": null,
+        "mail": null,
+        "mailNickname": "aduser9162test",
+        "mobile": null,
+        "onPremisesSecurityIdentifier": null,
+        "otherMails": [],
+        "passwordPolicies": null,
+        "passwordProfile": null,
+        "physicalDeliveryOfficeName": null,
+        "postalCode": null,
+        "preferredLanguage": null,
+        "provisionedPlans": [],
+        "provisioningErrors": [],
+        "proxyAddresses": [],
+        "refreshTokensValidFromDateTime": "2016-07-19T20:23:54.826497Z",
+        "sipProxyAddress": null,
+        "state": null,
+        "streetAddress": null,
+        "surname": null,
+        "telephoneNumber": null,
+        "usageLocation": null,
+        "userPrincipalName": "aduser9162@rbacclitest.onmicrosoft.com",
+        "userType": "Member"
+      }
+    }
+  }
+}

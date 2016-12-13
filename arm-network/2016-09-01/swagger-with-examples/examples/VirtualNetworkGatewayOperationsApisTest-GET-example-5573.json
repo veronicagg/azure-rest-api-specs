@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg8311",
+    "virtualNetworkGatewayName": "azsmnet9512",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet9512",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg8311/providers/Microsoft.Network/virtualNetworkGateways/azsmnet9512",
+        "etag": "W/\"cf57b510-1654-4a63-8f56-2796ee25b47b\"",
+        "type": "Microsoft.Network/virtualNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "f64a0bc5-ce07-40d6-b0cf-0f0d2f82dfd4",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet5399",
+              "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg8311/providers/Microsoft.Network/virtualNetworkGateways/azsmnet9512/ipConfigurations/azsmnet5399",
+              "etag": "W/\"cf57b510-1654-4a63-8f56-2796ee25b47b\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg8311/providers/Microsoft.Network/publicIPAddresses/azsmnet239"
+                },
+                "subnet": {
+                  "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg8311/providers/Microsoft.Network/virtualNetworks/azsmnet4777/subnets/GatewaySubnet"
+                }
+              }
+            }
+          ],
+          "sku": {
+            "name": "Standard",
+            "tier": "Standard",
+            "capacity": 0
+          },
+          "gatewayType": "Vpn",
+          "vpnType": "RouteBased",
+          "enableBgp": false
+        }
+      }
+    }
+  }
+}

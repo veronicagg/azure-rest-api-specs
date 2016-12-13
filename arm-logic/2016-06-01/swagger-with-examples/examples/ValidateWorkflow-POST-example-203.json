@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "location": "westus",
+    "workflowName": "logicwf5425",
+    "api-version": "2016-06-01",
+    "workflow": {
+      "properties": {
+        "sku": {
+          "name": "Standard",
+          "plan": {
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan"
+          }
+        },
+        "definition": "invalid definition"
+      },
+      "location": "westus"
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidRequestContent",
+          "message": "The request content is not valid and could not be deserialized: 'Error converting value \"invalid definition\" to type 'Microsoft.Azure.Flow.Templates.Schema.FlowTemplate'. Path 'properties.definition', line 9, position 38.'."
+        }
+      }
+    }
+  }
+}

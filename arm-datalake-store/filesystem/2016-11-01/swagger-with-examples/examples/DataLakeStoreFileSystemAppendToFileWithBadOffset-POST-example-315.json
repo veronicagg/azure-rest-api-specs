@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "destinationPath": "SDKTestFolder01%2FSDKTestFile01.txt7854",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "APPEND",
+    "write": "true",
+    "offset": "0",
+    "append": "true"
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "RemoteException": {
+          "exception": "BadOffsetException",
+          "message": "FsAppendStream failed with error 0x83090015 (Bad request. Invalid offset.). [4232124d-1de6-406e-9821-c97dd639b39c][2016-11-10T14:58:51.4216675-08:00]",
+          "javaClassName": "org.apache.hadoop.fs.adl.BadOffsetException"
+        }
+      }
+    }
+  }
+}

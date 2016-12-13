@@ -1,0 +1,77 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6",
+    "$filter": "startswith(displayName,'adApplication1784')"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.Application",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.Application",
+            "objectType": "Application",
+            "objectId": "400de24c-b7e8-450d-9fe9-31b826bf4ee2",
+            "deletionTimestamp": null,
+            "addIns": [],
+            "appId": "7680d93a-b032-4c86-8c9a-615b7481773a",
+            "appRoles": [],
+            "availableToOtherTenants": false,
+            "displayName": "adApplication1784",
+            "errorUrl": null,
+            "groupMembershipClaims": null,
+            "homepage": "http://adApplication1784/home",
+            "identifierUris": [
+              "http://adApplication1784/home"
+            ],
+            "keyCredentials": [
+              {
+                "customKeyIdentifier": null,
+                "endDate": "2017-08-03T16:58:57.0063246Z",
+                "keyId": "10827642-0938-4a85-890e-2f71e507b52e",
+                "startDate": "2016-08-03T16:58:57.0063246Z",
+                "type": "AsymmetricX509Cert",
+                "usage": "Verify",
+                "value": null
+              }
+            ],
+            "knownClientApplications": [],
+            "logoutUrl": null,
+            "oauth2AllowImplicitFlow": false,
+            "oauth2AllowUrlPathMatching": false,
+            "oauth2Permissions": [
+              {
+                "adminConsentDescription": "Allow the application to access adApplication1784 on behalf of the signed-in user.",
+                "adminConsentDisplayName": "Access adApplication1784",
+                "id": "ba927ed1-03d3-46fc-92ea-026adf0b3cb7",
+                "isEnabled": true,
+                "type": "User",
+                "userConsentDescription": "Allow the application to access adApplication1784 on your behalf.",
+                "userConsentDisplayName": "Access adApplication1784",
+                "value": "user_impersonation"
+              }
+            ],
+            "oauth2RequirePostResponse": false,
+            "passwordCredentials": [
+              {
+                "customKeyIdentifier": null,
+                "endDate": "2017-08-03T16:58:57.0063246Z",
+                "keyId": "264bccb5-8417-4be5-bf2a-7bfb93dad5b5",
+                "startDate": "2016-08-03T16:58:57.0063246Z",
+                "value": null
+              }
+            ],
+            "publicClient": null,
+            "recordConsentConditions": null,
+            "replyUrls": [
+              "http://adApplication1784/home"
+            ],
+            "requiredResourceAccess": [],
+            "samlMetadataUrl": null
+          }
+        ]
+      }
+    }
+  }
+}

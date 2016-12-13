@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "redisCacheRG5319",
+    "name": "RCName6405",
+    "api-version": "2016-04-01",
+    "parameters": {
+      "properties": {
+        "redisConfiguration": {
+          "maxmemory-policy": "allkeys-lru"
+        },
+        "enableNonSslPort": true,
+        "sku": {
+          "name": "Basic",
+          "family": "C",
+          "capacity": 0
+        }
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/redisCacheRG5319/providers/Microsoft.Cache/Redis/RCName6405",
+        "location": "North Central US",
+        "name": "RCName6405",
+        "type": "Microsoft.Cache/Redis",
+        "tags": {},
+        "properties": {
+          "provisioningState": "Succeeded",
+          "redisVersion": "3.0",
+          "sku": {
+            "name": "Basic",
+            "family": "C",
+            "capacity": 0
+          },
+          "enableNonSslPort": true,
+          "redisConfiguration": {
+            "maxclients": "256",
+            "maxmemory-reserved": "2",
+            "maxmemory-policy": "allkeys-lru",
+            "maxmemory-delta": "2"
+          },
+          "accessKeys": null,
+          "hostName": "RCName6405.redis.cache.windows.net",
+          "port": 6379,
+          "sslPort": 6380
+        }
+      }
+    }
+  }
+}

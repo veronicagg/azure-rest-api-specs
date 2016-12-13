@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "aclFilePath": "nonexistentfile",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "GETFILESTATUS"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /nonexistentfile [58fbf437-0808-4497-a191-e5bb57360958][2016-11-10T15:00:51.6144321-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

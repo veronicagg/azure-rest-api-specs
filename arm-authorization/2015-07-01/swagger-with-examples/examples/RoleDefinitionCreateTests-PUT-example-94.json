@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "roleAssignmentId": "",
+    "api-version": "2015-07-01",
+    "parameters": {
+      "name": "00000000-0000-0000-0000-000000000000",
+      "properties": {
+        "roleName": "",
+        "description": "New Test Custom Role",
+        "permissions": [
+          {
+            "actions": [
+              "Microsoft.Authorization/*/Read"
+            ]
+          }
+        ],
+        "assignableScopes": [
+          "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/resourceGroups/newtestrg"
+        ]
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "RoleDefinitionNameNullOrEmpty",
+          "message": "A role definition must have a non-empty, unique name."
+        }
+      }
+    }
+  }
+}

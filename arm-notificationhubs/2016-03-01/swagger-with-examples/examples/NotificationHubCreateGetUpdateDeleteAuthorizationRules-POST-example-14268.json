@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH4217",
+    "namespaceName": "HydraNH-Namespace927",
+    "notificationHubName": "HydraNH-NotificationHub3052",
+    "authorizationRuleName": "HydraNH-Authrules3446",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "primaryConnectionString": "Endpoint=sb://hydranh-namespace927.servicebus.windows.net/;SharedAccessKeyName=HydraNH-Authrules3446;SharedAccessKey=UHKbiLfSjY9LvZs3YztStLDcfk+gxrxKK1XYLVEmllk=",
+        "secondaryConnectionString": "Endpoint=sb://hydranh-namespace927.servicebus.windows.net/;SharedAccessKeyName=HydraNH-Authrules3446;SharedAccessKey=H5mrHjfxiPvM0pu5lUgmRdMVTgmqQUpIroJPHoqO3d0=",
+        "primaryKey": "UHKbiLfSjY9LvZs3YztStLDcfk+gxrxKK1XYLVEmllk=",
+        "secondaryKey": "H5mrHjfxiPvM0pu5lUgmRdMVTgmqQUpIroJPHoqO3d0=",
+        "keyName": "HydraNH-Authrules3446"
+      }
+    }
+  }
+}

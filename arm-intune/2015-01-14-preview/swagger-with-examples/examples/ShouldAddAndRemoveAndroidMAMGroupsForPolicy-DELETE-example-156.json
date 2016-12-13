@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "75a94659-9d84-4652-b61f-412a5ab0e9a9",
+    "groupId": "43f17d38-5b3e-4f21-8867-ad5afccb0ea1",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesTestRg",
+    "vaultName": "SDKTestRsVault2",
+    "api-version": "2016-06-01",
+    "vault": {
+      "properties": {},
+      "location": "westus",
+      "sku": {
+        "name": "Standard"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "location": "westus",
+        "name": "SDKTestRsVault2",
+        "etag": "W/\"datetime'2016-09-26T21%3A10%3A50.9428734Z'\"",
+        "properties": {
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault2",
+        "type": "Microsoft.RecoveryServices/vaults",
+        "sku": {
+          "name": "Standard"
+        }
+      }
+    }
+  }
+}

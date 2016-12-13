@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet7959",
+    "api-version": "2015-08-19"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/b80cf239-2c72-47ab-b309-b26aec4656b1/resourceGroups/azsmnet7959/providers/Microsoft.Search/searchServices/azs-3464",
+            "name": "azs-3464",
+            "type": "Microsoft.Search/searchServices",
+            "location": "West US",
+            "properties": {
+              "replicaCount": 1,
+              "partitionCount": 1,
+              "status": "running",
+              "statusDetails": null,
+              "provisioningState": "succeeded",
+              "hostingMode": "Default",
+              "ETag": "W/\"datetime'2016-10-20T02%3A29%3A48.362785Z'\""
+            },
+            "sku": {
+              "name": "free"
+            }
+          },
+          {
+            "id": "/subscriptions/b80cf239-2c72-47ab-b309-b26aec4656b1/resourceGroups/azsmnet7959/providers/Microsoft.Search/searchServices/azs-9431",
+            "name": "azs-9431",
+            "type": "Microsoft.Search/searchServices",
+            "location": "West US",
+            "properties": {
+              "replicaCount": 1,
+              "partitionCount": 1,
+              "status": "running",
+              "statusDetails": null,
+              "provisioningState": "succeeded",
+              "hostingMode": "Default",
+              "ETag": "W/\"datetime'2016-10-20T02%3A29%3A54.6409903Z'\""
+            },
+            "sku": {
+              "name": "free"
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

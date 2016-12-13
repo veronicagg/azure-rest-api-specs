@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-2042",
+    "authorizationRuleName": "sdk-Authrules-4758",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-2042/AuthorizationRules/sdk-Authrules-4758",
+        "name": "sdk-Authrules-4758",
+        "type": "Microsoft.EventHub/AuthorizationRules",
+        "location": null,
+        "tags": null,
+        "properties": {
+          "rights": [
+            "Listen",
+            "Send"
+          ]
+        }
+      }
+    }
+  }
+}

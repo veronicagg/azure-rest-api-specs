@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "subscriptionId": "3d1cd7a8-b035-4563-9288-dbe706cd672e",
+    "resourceGroupName": "rg4328",
+    "workspaceCollectionName": "wc6208",
+    "api-version": "2016-01-29"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "key1": "dDmDsHxKWBirdOTeoF6936iWYOBoErh2KZC5tgUb2VIkLBuF4lpWoo0oCMh7ETLHiTi0z0NeMw/f3NnDo0swJg==",
+        "key2": "gEyQWCh34hQVlmZP/zjDs3KMk5IXbzM0OYam3VpKiDb6e0V6XViQ1ni26jl1WWkWvIa+20cc4YxCo2oou1xSug=="
+      }
+    }
+  }
+}

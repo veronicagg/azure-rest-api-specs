@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "nodeName": "rameshr12",
+    "session": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+    "api-version": "2016-07-01-preview",
+    "SessionParameters": {
+      "properties": {
+        "userName": "rsmtuser",
+        "password": "Rsmt!1234"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/nodes/rameshr12/sessions/80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+        "name": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+        "type": "microsoft.servermanagement/nodes/sessions",
+        "properties": {
+          "retentionPeriod": "session",
+          "created": "2016-10-21T20:49:49.9711223Z",
+          "updated": "2016-10-21T20:49:49.9711223Z"
+        }
+      }
+    }
+  }
+}

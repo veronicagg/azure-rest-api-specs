@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "resourceGroupName": "crptestar7207",
+    "name": "invalidfdud3447",
+    "api-version": "2016-03-30",
+    "parameters": {
+      "properties": {
+        "platformFaultDomainCount": 0
+      },
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidParameter",
+          "target": "platformFaultDomainCount",
+          "message": "The specified fault domain count 0 must fall in the range 1 to 3."
+        }
+      }
+    }
+  }
+}

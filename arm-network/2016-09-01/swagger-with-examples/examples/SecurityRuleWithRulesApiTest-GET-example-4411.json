@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg6544",
+    "networkSecurityGroupName": "azsmnet9837",
+    "securityRuleName": "azsmnet816",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet816",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6544/providers/Microsoft.Network/networkSecurityGroups/azsmnet9837/securityRules/azsmnet816",
+        "etag": "W/\"bd9b1b21-ecd6-4fe9-8fdd-2610e083c682\"",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "description": "Test outbound security rule",
+          "protocol": "Udp",
+          "sourcePortRange": "656",
+          "destinationPortRange": "123-3500",
+          "sourceAddressPrefix": "*",
+          "destinationAddressPrefix": "*",
+          "access": "Deny",
+          "priority": 501,
+          "direction": "Outbound"
+        }
+      }
+    }
+  }
+}

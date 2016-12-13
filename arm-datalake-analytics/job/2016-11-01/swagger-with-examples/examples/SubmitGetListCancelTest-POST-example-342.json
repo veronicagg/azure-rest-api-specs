@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "name": "azure sdk data lake analytics job",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "DROP DATABASE IF EXIST FOO; CREATE DATABASE FOO;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "ec118e58-4f2f-43e1-a447-51607ef60932",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+        "degreeOfParallelism": 0,
+        "priority": 0,
+        "submitTime": "0001-01-01T00:00:00-08:00",
+        "state": "Ended",
+        "result": "Failed",
+        "properties": {
+          "resources": [],
+          "runtimeVersion": "",
+          "script": "DROP DATABASE IF EXIST FOO; CREATE DATABASE FOO;",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "PT0S",
+          "totalPausedTime": "PT0S",
+          "totalQueuedTime": "PT0S",
+          "totalRunningTime": "PT0S",
+          "diagnostics": [
+            {
+              "severity": "Error",
+              "lineNumber": 1,
+              "columnNumber": 18,
+              "start": 17,
+              "end": 22,
+              "message": "E_CSC_USER_SYNTAXERROR: syntax error. Expected one of: EXISTS"
+            }
+          ],
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

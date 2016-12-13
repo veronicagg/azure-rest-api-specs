@@ -1,0 +1,114 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc17896",
+    "jobName": "j16654",
+    "api-version": "2016-03-01",
+    "job": {
+      "properties": {
+        "startTime": "2015-07-13T00:00:00Z",
+        "action": {
+          "type": "Http",
+          "request": {
+            "uri": "http://www.bing.com/",
+            "method": "GET"
+          },
+          "retryPolicy": {
+            "retryType": "None"
+          },
+          "errorAction": {
+            "type": "StorageQueue",
+            "queueMessage": {
+              "storageAccount": "schedulersdktest",
+              "queueName": "queue1",
+              "sasToken": "ThIsiSmYtOkeNdoyOusEe",
+              "message": "some message!"
+            }
+          }
+        },
+        "recurrence": {
+          "frequency": "Day",
+          "count": 100,
+          "endTime": "2020-10-10T10:10:10Z",
+          "schedule": {
+            "hours": [
+              5,
+              10,
+              15,
+              20
+            ],
+            "minutes": [
+              0,
+              10,
+              20,
+              30,
+              40,
+              50
+            ]
+          }
+        },
+        "state": "Enabled"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc17896/jobs/j16654",
+        "type": "Microsoft.Scheduler/jobCollections/jobs",
+        "name": "jc17896/j16654",
+        "properties": {
+          "startTime": "2015-07-13T00:00:00Z",
+          "action": {
+            "request": {
+              "uri": "http://www.bing.com/",
+              "method": "GET"
+            },
+            "type": "Http",
+            "retryPolicy": {
+              "retryType": "none"
+            },
+            "errorAction": {
+              "queueMessage": {
+                "storageAccount": "schedulersdktest",
+                "queueName": "queue1",
+                "message": "some message!"
+              },
+              "type": "StorageQueue"
+            }
+          },
+          "recurrence": {
+            "frequency": "day",
+            "count": 100,
+            "endTime": "2020-10-10T10:10:10Z",
+            "interval": 1,
+            "schedule": {
+              "minutes": [
+                0,
+                10,
+                20,
+                30,
+                40,
+                50
+              ],
+              "hours": [
+                5,
+                10,
+                15,
+                20
+              ]
+            }
+          },
+          "state": "enabled",
+          "status": {
+            "nextExecutionTime": "2016-03-30T20:00:00Z",
+            "executionCount": 0,
+            "failureCount": 0,
+            "faultedCount": 0
+          }
+        }
+      }
+    }
+  }
+}

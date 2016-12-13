@@ -1,0 +1,77 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "crptestar6488",
+    "vmName": "vm4007",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "vmId": "6d8cb792-99cd-487c-8e43-eb71a9917399",
+          "availabilitySet": {
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/crptestar6488/providers/Microsoft.Compute/availabilitySets/AS5398"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A4"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar2520.blob.core.windows.net/crptestar8784/oscrptestar6293.vhd"
+              },
+              "caching": "None"
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "properties": {
+                  "primary": false
+                },
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/crptestar6488/providers/Microsoft.Network/networkInterfaces/674"
+              },
+              {
+                "properties": {
+                  "primary": true
+                },
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/crptestar6488/providers/Microsoft.Network/networkInterfaces/5085"
+              }
+            ]
+          },
+          "provisioningState": "Succeeded"
+        },
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/crptestar6488/providers/Microsoft.Compute/virtualMachines/vm4007",
+        "name": "vm4007",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

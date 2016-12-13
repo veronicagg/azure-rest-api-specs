@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "getFilePath": "SDKTestFolder01503%2FSDKTestConcatFile01.txt",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true",
+    "sources": "SDKTestFolder01%2FSDKTestFile01.txt2111%2CSDKTestFolder01%2FSDKTestFile01.txt5803"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatus": {
+          "length": 84,
+          "pathSuffix": "",
+          "type": "FILE",
+          "blockSize": 268435456,
+          "accessTime": 1478818050759,
+          "modificationTime": 1478818050806,
+          "replication": 1,
+          "permission": "770",
+          "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "group": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "expirationTime": 0
+        }
+      }
+    }
+  }
+}

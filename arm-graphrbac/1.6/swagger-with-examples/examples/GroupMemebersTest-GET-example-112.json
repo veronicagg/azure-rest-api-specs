@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "objectId": "19848de6-d9f0-47ae-b829-33a7d17d89f6",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.User",
+            "objectType": "User",
+            "objectId": "5fed3249-8008-4289-b989-5eab913affa8",
+            "deletionTimestamp": null,
+            "accountEnabled": true,
+            "signInNames": [],
+            "assignedLicenses": [],
+            "assignedPlans": [],
+            "city": null,
+            "companyName": null,
+            "country": null,
+            "creationType": null,
+            "department": null,
+            "dirSyncEnabled": null,
+            "displayName": "admin",
+            "facsimileTelephoneNumber": null,
+            "givenName": "admin",
+            "immutableId": null,
+            "isCompromised": null,
+            "jobTitle": null,
+            "lastDirSyncTime": null,
+            "mail": null,
+            "mailNickname": "admin",
+            "mobile": null,
+            "onPremisesSecurityIdentifier": null,
+            "otherMails": [
+              "authzeng@microsoft.com"
+            ],
+            "passwordPolicies": "None",
+            "passwordProfile": null,
+            "physicalDeliveryOfficeName": null,
+            "postalCode": null,
+            "preferredLanguage": "en-US",
+            "provisionedPlans": [],
+            "provisioningErrors": [],
+            "proxyAddresses": [],
+            "refreshTokensValidFromDateTime": "2016-02-18T18:27:55Z",
+            "sipProxyAddress": null,
+            "state": null,
+            "streetAddress": null,
+            "surname": null,
+            "telephoneNumber": null,
+            "usageLocation": null,
+            "userPrincipalName": "admin@rbacCliTest.onmicrosoft.com",
+            "userType": "Member"
+          }
+        ]
+      }
+    }
+  }
+}

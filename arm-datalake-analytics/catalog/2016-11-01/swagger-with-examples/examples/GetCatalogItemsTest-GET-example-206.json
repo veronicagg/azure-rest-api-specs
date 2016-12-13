@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "databaseName": "testdb12673",
+    "schemaName": "dbo",
+    "tableValuedFunctionName": "testtvf150",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testadlac16849.azuredatalakeanalytics.net/sqlip/$metadata#tablevaluedfunctions/$entity",
+        "computeAccountName": "testadlac16849",
+        "databaseName": "testdb12673",
+        "schemaName": "dbo",
+        "tvfName": "testtvf150",
+        "definition": "//create table weblogs on space-delimited website log data\nCREATE FUNCTION testdb12673.dbo.testtvf150()\nRETURNS @result TABLE\n(\n    s_date DateTime,\n    s_time string,\n    s_sitename string,\n    cs_method string, \n    cs_uristem string,\n    cs_uriquery string,\n    s_port int,\n    cs_username string, \n    c_ip string,\n    cs_useragent string,\n    cs_cookie string,\n    cs_referer string, \n    cs_host string,\n    sc_status int,\n    sc_substatus int,\n    sc_win32status int, \n    sc_bytes int,\n    cs_bytes int,\n    s_timetaken int\n)\nAS\nBEGIN\n\n    @result = EXTRACT\n        s_date DateTime,\n        s_time string,\n        s_sitename string,\n        cs_method string,\n        cs_uristem string,\n        cs_uriquery string,\n        s_port int,\n        cs_username string,\n        c_ip string,\n        cs_useragent string,\n        cs_cookie string,\n        cs_referer string,\n        cs_host string,\n        sc_status int,\n        sc_substatus int,\n        sc_win32status int,\n        sc_bytes int,\n        cs_bytes int,\n        s_timetaken int\n    FROM @\"/Samples/Data/WebLog.log\"\n    USING Extractors.Text(delimiter:' ');\n\nRETURN;\nEND;",
+        "version": "bebdce34-5c01-4aa8-99cb-7f85d2840a4b"
+      }
+    }
+  }
+}

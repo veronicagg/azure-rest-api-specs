@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8219",
+    "publicIpAddressName": "azsmnet2982",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

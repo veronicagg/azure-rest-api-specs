@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "applicationObjectId": "400de24c-b7e8-450d-9fe9-31b826bf4ee2",
+    "api-version": "1.6",
+    "$filter": "identifierUris/any(c:%20c%20eq%20'http:%2F%2FadApplication1784%2Fhome')",
+    "parameters": {
+      "displayName": "adApplication1784Updated",
+      "identifierUris": [
+        "http://adApplication1784/homeUpdated"
+      ]
+    }
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

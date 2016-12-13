@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "35b78ae3-cd74-4025-9a30-acecf01af125",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/iosPolicies/35b78ae3-cd74-4025-9a30-acecf01af125/groups/43f17d38-5b3e-4f21-8867-ad5afccb0ea1",
+            "name": "43f17d38-5b3e-4f21-8867-ad5afccb0ea1",
+            "type": "Microsoft.Intune/locations/iosPolicies/groups",
+            "properties": {
+              "friendlyName": "AzureCLIGroup1"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

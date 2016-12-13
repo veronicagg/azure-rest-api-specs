@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8419",
+    "profileName": "profile4423",
+    "endpointName": "endpoint-f3757d2a3e10",
+    "customDomainName": "customDomain690",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "NotFound",
+          "message": "The requested resource was not found."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup83",
+    "profileName": "profile4269",
+    "endpointName": "endpoint805",
+    "api-version": "2016-10-02",
+    "endpointUpdateProperties": {
+      "properties": {
+        "originHostHeader": "www.bing.com",
+        "originPath": "\\&123invalid_path/.",
+        "isHttpAllowed": false
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "BadRequest",
+          "message": "Property 'Endpoint.OriginPath' cannot be set to '\\&123invalid_path/.'. "
+        }
+      }
+    }
+  }
+}

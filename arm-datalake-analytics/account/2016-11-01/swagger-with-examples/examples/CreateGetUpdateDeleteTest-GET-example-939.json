@@ -1,0 +1,97 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "state": "Active",
+              "endpoint": "adlapysample01.azuredatalakeanalytics.net",
+              "accountId": "3d01b8f3-98a6-4412-8490-257bdc6e1cff",
+              "creationTime": "2016-09-07T18:14:49.4919192Z",
+              "lastModifiedTime": "2016-09-07T18:14:49.4919192Z"
+            },
+            "location": "eastus2",
+            "tags": null,
+            "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/adlpysamplerg01/providers/Microsoft.DataLakeAnalytics/accounts/adlapysample01",
+            "name": "adlapysample01",
+            "type": "Microsoft.DataLakeAnalytics/accounts"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "state": "Active",
+              "endpoint": "testaba18483.azuredatalakeanalytics.net",
+              "accountId": "7db18143-e33d-45a0-87b2-356396234446",
+              "creationTime": "2016-11-08T04:05:13.3073786Z",
+              "lastModifiedTime": "2016-11-08T04:05:42.8264218Z"
+            },
+            "location": "East US 2",
+            "tags": {
+              "updatedKey": "updatedValue"
+            },
+            "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483",
+            "name": "testaba18483",
+            "type": "Microsoft.DataLakeAnalytics/accounts"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "state": "Active",
+              "endpoint": "testaba18483secondacct.azuredatalakeanalytics.net",
+              "accountId": "575e9731-9607-42c0-8c87-11c68cc19ae6",
+              "creationTime": "2016-11-08T04:05:47.1668081Z",
+              "lastModifiedTime": "2016-11-08T04:05:47.1668081Z"
+            },
+            "location": "East US 2",
+            "tags": {
+              "updatedKey": "updatedValue"
+            },
+            "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483secondacct",
+            "name": "testaba18483secondacct",
+            "type": "Microsoft.DataLakeAnalytics/accounts"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "state": "Active",
+              "endpoint": "pyarmadlacd761330.azuredatalakeanalytics.net",
+              "accountId": "d2aea5ce-8b0c-4d73-b432-26102ac7341e",
+              "creationTime": "2016-10-24T19:12:43.6985877Z",
+              "lastModifiedTime": "2016-10-24T19:13:29.5041231Z"
+            },
+            "location": "East US 2",
+            "tags": {
+              "tag2": "value2"
+            },
+            "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/test_mgmt_datalake_analytics_test_adla_accountscd761330/providers/Microsoft.DataLakeAnalytics/accounts/pyarmadlacd761330",
+            "name": "pyarmadlacd761330",
+            "type": "Microsoft.DataLakeAnalytics/accounts"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "state": "Active",
+              "endpoint": "pyarmadla25e621603.azuredatalakeanalytics.net",
+              "accountId": "40d9edb4-f580-47b6-82db-e2dcaa2bd7ec",
+              "creationTime": "2016-10-24T20:21:42.387495Z",
+              "lastModifiedTime": "2016-10-24T20:21:42.387495Z"
+            },
+            "location": "East US 2",
+            "tags": null,
+            "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/test_mgmt_datalake_analytics_test_adla_catalog_secrets5e621603/providers/Microsoft.DataLakeAnalytics/accounts/pyarmadla25e621603",
+            "name": "pyarmadla25e621603",
+            "type": "Microsoft.DataLakeAnalytics/accounts"
+          }
+        ]
+      }
+    }
+  }
+}

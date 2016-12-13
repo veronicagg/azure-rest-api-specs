@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg4490",
+    "localNetworkGatewayName": "azsmnet9140",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet9140",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/localNetworkGateways/azsmnet9140",
+        "etag": "W/\"4ab7c1aa-4feb-4aea-8359-f841f6196a5d\"",
+        "type": "Microsoft.Network/localNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "test": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "65b63583-7d30-4f32-acad-93ec0d844814",
+          "localNetworkAddressSpace": {
+            "addressPrefixes": [
+              "192.168.0.0/16"
+            ]
+          },
+          "gatewayIpAddress": "192.168.3.4"
+        }
+      }
+    }
+  }
+}

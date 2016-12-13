@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet3571",
+    "searchServiceName": "azs-4972",
+    "key": "6381C73727213541DB269BA3F8814F37",
+    "api-version": "2015-08-19"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "Unknown",
+          "message": "This API key does not exist for service 'azs-4972'. RequestId: fc746ec3-fe47-4c12-b98c-e327cbed5518",
+          "target": null,
+          "details": null
+        }
+      }
+    }
+  }
+}

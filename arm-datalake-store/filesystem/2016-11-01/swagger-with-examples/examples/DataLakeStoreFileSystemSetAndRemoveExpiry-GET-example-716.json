@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "getFilePath": "SDKTestFolder01%2FSDKTestFile01.txt3258",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "MSGETFILESTATUS",
+    "write": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatus": {
+          "length": 0,
+          "pathSuffix": "",
+          "type": "FILE",
+          "blockSize": 268435456,
+          "accessTime": 1478817540762,
+          "modificationTime": 1478817540762,
+          "replication": 1,
+          "permission": "770",
+          "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "group": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "expirationTime": 1478817660000
+        }
+      }
+    }
+  }
+}

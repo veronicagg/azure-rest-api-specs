@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8122",
+    "networkInterfaceName": "azsmnet2520",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "East US",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "azsmnet1712",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "primary": true,
+              "subnet": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet8249"
+              }
+            }
+          },
+          {
+            "name": "azsmnet2440",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "primary": false,
+              "subnet": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet2177"
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "IpConfigurationsOnSameNicCannotUseDifferentSubnets",
+          "message": "IPConfigurations on a Nic /subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/networkInterfaces/azsmnet2520 cannot belong to different subnets. Subnets referred: /subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet8249;/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet2177",
+          "details": []
+        }
+      }
+    }
+  }
+}

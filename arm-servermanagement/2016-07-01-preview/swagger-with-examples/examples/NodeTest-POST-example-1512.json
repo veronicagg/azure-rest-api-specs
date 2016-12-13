@@ -1,0 +1,81 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "nodeName": "rameshr12",
+    "session": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+    "pssession": "4108dd13-fafb-4b45-93ea-14db87dec00b",
+    "api-version": "2016-07-01-preview",
+    "PowerShellTabCompletionParamters": {
+      "command": "dir c:\\"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "results": [
+          "dir 'C:\\$Recycle.Bin'",
+          "dir 'C:\\$SysReset'",
+          "dir C:\\ActivePython27",
+          "dir C:\\ant",
+          "dir C:\\azuretemp",
+          "dir C:\\backup",
+          "dir C:\\BOOTNXT",
+          "dir C:\\certs",
+          "dir C:\\Chocolatey",
+          "dir C:\\client_windows_skypetouch",
+          "dir C:\\Config.Msi",
+          "dir C:\\cygwin",
+          "dir C:\\cygwin64",
+          "dir C:\\Data",
+          "dir C:\\Debuggers",
+          "dir 'C:\\Documents and Settings'",
+          "dir C:\\EFI",
+          "dir C:\\git-play",
+          "dir C:\\hiberfil.sys",
+          "dir C:\\hp",
+          "dir C:\\inetpub",
+          "dir C:\\Intel",
+          "dir C:\\ManagementTools",
+          "dir C:\\MDS",
+          "dir C:\\mdsdata",
+          "dir C:\\nltk_data",
+          "dir C:\\node",
+          "dir C:\\OS",
+          "dir C:\\pagefile.sys",
+          "dir C:\\Perf",
+          "dir C:\\PerfLogs",
+          "dir 'C:\\Program Files'",
+          "dir 'C:\\Program Files (x86)'",
+          "dir C:\\ProgramData",
+          "dir C:\\projects",
+          "dir C:\\public",
+          "dir C:\\Python27",
+          "dir C:\\Recovery",
+          "dir C:\\SAF",
+          "dir C:\\samples",
+          "dir C:\\src",
+          "dir C:\\stager",
+          "dir C:\\StashClient",
+          "dir C:\\StashClient.zip",
+          "dir C:\\swapfile.sys",
+          "dir C:\\SWSETUP",
+          "dir 'C:\\System Volume Information'",
+          "dir C:\\SYSTEM.SAV",
+          "dir C:\\Tcl",
+          "dir C:\\temp",
+          "dir C:\\temp2",
+          "dir C:\\test",
+          "dir C:\\Thumbs.db",
+          "dir C:\\tools",
+          "dir C:\\TraceDJPP",
+          "dir C:\\Users",
+          "dir C:\\video",
+          "dir C:\\VisionDiagnostics",
+          "dir C:\\W530_Drivers",
+          "dir C:\\Windows"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1807 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "DataLakeStoreAccountManagementClient",
+    "description": "Creates an Azure Data Lake Store account management client.",
+    "version": "2016-11-01",
+    "x-ms-code-generation-settings": {
+      "internalConstructors": true
+    }
+  },
+  "host": "management.azure.com",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "security": [
+    {
+      "azure_auth": [
+        "user_impersonation"
+      ]
+    }
+  ],
+  "securityDefinitions": {
+    "azure_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "flow": "implicit",
+      "description": "Azure Active Directory OAuth2 Flow",
+      "scopes": {
+        "user_impersonation": "impersonate your user account"
+      }
+    }
+  },
+  "paths": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules/{firewallRuleName}": {
+      "put": {
+        "tags": [
+          "FirewallRules"
+        ],
+        "operationId": "FirewallRules_CreateOrUpdate",
+        "description": "Creates or updates the specified firewall rule. During update, the firewall rule with the specified name will be replaced with this new firewall rule.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to which to add the firewall rule."
+          },
+          {
+            "name": "firewallRuleName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the firewall rule to create or update."
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/FirewallRule"
+            },
+            "description": "Parameters supplied to create or update the firewall rule."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully created or updated the specified firewall rule",
+            "schema": {
+              "$ref": "#/definitions/FirewallRule"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestPUT119": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-PUT-example-119.json"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FirewallRules"
+        ],
+        "operationId": "FirewallRules_Delete",
+        "description": "Deletes the specified firewall rule from the specified Data Lake Store account",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to delete the firewall rule."
+          },
+          {
+            "name": "firewallRuleName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the firewall rule to delete."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted the specified firewall rule"
+          },
+          "204": {
+            "description": "The specified firewall rule does not exist or was already deleted."
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestDELETE120": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-DELETE-example-120.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "FirewallRules"
+        ],
+        "operationId": "FirewallRules_Get",
+        "description": "Gets the specified Data Lake Store firewall rule.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to get the firewall rule."
+          },
+          {
+            "name": "firewallRuleName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the firewall rule to retrieve."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the list of firewall rules.",
+            "schema": {
+              "$ref": "#/definitions/FirewallRule"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestGET117": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-117.json"
+          },
+          "FirewallAndTrustedProviderTestGET118": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-118.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/firewallRules": {
+      "get": {
+        "tags": [
+          "FirewallRules"
+        ],
+        "operationId": "FirewallRules_ListByAccount",
+        "description": "Lists the Data Lake Store firewall rules within the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to get the firewall rules."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully created the firewall rule.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreFirewallRuleListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/trustedIdProviders/{trustedIdProviderName}": {
+      "put": {
+        "tags": [
+          "TrustedIdProviders"
+        ],
+        "operationId": "TrustedIdProviders_CreateOrUpdate",
+        "description": "Creates or updates the specified trusted identity provider. During update, the trusted identity provider with the specified name will be replaced with this new provider",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to which to add the trusted identity provider."
+          },
+          {
+            "name": "trustedIdProviderName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the trusted identity provider. This is used for differentiation of providers in the account."
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/TrustedIdProvider"
+            },
+            "description": "Parameters supplied to create the create the trusted identity provider."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully added the trusted identity provider.",
+            "schema": {
+              "$ref": "#/definitions/TrustedIdProvider"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestPUT323": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-PUT-example-323.json"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "TrustedIdProviders"
+        ],
+        "operationId": "TrustedIdProviders_Delete",
+        "description": "Deletes the specified trusted identity provider from the specified Data Lake Store account",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to delete the trusted identity provider."
+          },
+          {
+            "name": "trustedIdProviderName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the trusted identity provider to delete."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted the specified trusted identity provider details."
+          },
+          "204": {
+            "description": "The specified trusted identity provider was not found."
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestDELETE324": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-DELETE-example-324.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "TrustedIdProviders"
+        ],
+        "operationId": "TrustedIdProviders_Get",
+        "description": "Gets the specified Data Lake Store trusted identity provider.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to get the trusted identity provider."
+          },
+          {
+            "name": "trustedIdProviderName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the trusted identity provider to retrieve."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved details of the specified trusted identity provider.",
+            "schema": {
+              "$ref": "#/definitions/TrustedIdProvider"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "FirewallAndTrustedProviderTestGET321": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-321.json"
+          },
+          "FirewallAndTrustedProviderTestGET322": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-322.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/trustedIdProviders": {
+      "get": {
+        "tags": [
+          "TrustedIdProviders"
+        ],
+        "operationId": "TrustedIdProviders_ListByAccount",
+        "description": "Lists the Data Lake Store trusted identity providers within the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account from which to get the trusted identity providers."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the list of trusted identity providers.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreTrustedIdProviderListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{name}": {
+      "put": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_Create",
+        "description": "Creates the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to create."
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            },
+            "description": "Parameters supplied to create the Data Lake Store account."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully created the account.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            }
+          },
+          "201": {
+            "description": "Successfully initiated creation of the account.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            }
+          }
+        },
+        "x-ms-long-running-operation": true,
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestPUT511": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-PUT-example-511.json"
+          },
+          "CreateGetUpdateDeleteTestPUT513": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-PUT-example-513.json"
+          },
+          "CreateGetUpdateDeleteTestPUT521": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-PUT-example-521.json"
+          },
+          "FirewallAndTrustedProviderTestPUT511": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-PUT-example-511.json"
+          },
+          "FirewallAndTrustedProviderTestPUT513": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-PUT-example-513.json"
+          },
+          "DataLakeStoreFileSystemAppendToFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithBadOffsetPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithBadOffset-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithOffsetPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithOffset-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemConcatenateFilesPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcatenateFiles-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendCreateFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendCreateFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendToFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendToFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemDeleteFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemDeleteFolderPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFolder-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemDirectAppendToFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemDirectAppendToFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileCreatePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileCreate-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileDirectCreatePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileDirectCreate-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemFileAlreadyExistsPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileAlreadyExists-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemFileCreateWithContentsPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileCreateWithContents-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemFileDirectCreateWithContentsPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileDirectCreateWithContents-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemFolderCreatePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemFolderCreate-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemGetAclPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAcl-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemGetAndSetAclPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAndSetAcl-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemGetNonExistentFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetNonExistentFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemListFolderContentsPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemListFolderContents-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemMoveFileAndFolderPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemMoveFileAndFolder-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemMsConcatDeleteDirPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatDeleteDir-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemMsConcatenateFilesPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatenateFiles-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemNegativeConcurrentAppendPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeConcurrentAppend-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemNegativeExpiryPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeExpiry-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemSetAclPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAcl-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemSetAndRemoveExpiryPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAndRemoveExpiry-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemSetDeleteAclEntryPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetDeleteAclEntry-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemSetFilePropertiesPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetFileProperties-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemTestFilePUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemTestFile-PUT-example-511.json"
+          },
+          "DataLakeStoreFileSystemValidateDefaultTimeoutPUT511": {
+            "$ref": "../examples/DataLakeStoreFileSystemValidateDefaultTimeout-PUT-example-511.json"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_Update",
+        "description": "Updates the specified Data Lake Store account information.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to update."
+          },
+          {
+            "name": "parameters",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccountUpdateParameters"
+            },
+            "description": "Parameters supplied to update the Data Lake Store account."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully updated the account details.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            }
+          },
+          "201": {
+            "description": "Successfully initiated the update of the account details.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            }
+          }
+        },
+        "x-ms-long-running-operation": true,
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestPATCH520": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-PATCH-example-520.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}": {
+      "delete": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_Delete",
+        "description": "Deletes the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to delete."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted the specified account."
+          },
+          "202": {
+            "description": "Successfully initiated the deletion of the specified account."
+          },
+          "204": {
+            "description": "The specified account was not found."
+          }
+        },
+        "x-ms-long-running-operation": true,
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestDELETE626": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-DELETE-example-626.json"
+          },
+          "CreateGetUpdateDeleteTestDELETE627": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-DELETE-example-627.json"
+          },
+          "CreateGetUpdateDeleteTestDELETE628": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-DELETE-example-628.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_Get",
+        "description": "Gets the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to retrieve."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved details of the specified account.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccount"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestGET68": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-68.json"
+          },
+          "CreateGetUpdateDeleteTestGET69": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-69.json"
+          },
+          "CreateGetUpdateDeleteTestGET610": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-610.json"
+          },
+          "CreateGetUpdateDeleteTestGET615": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-615.json"
+          },
+          "CreateGetUpdateDeleteTestGET616": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-616.json"
+          },
+          "CreateGetUpdateDeleteTestGET617": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-617.json"
+          },
+          "CreateGetUpdateDeleteTestGET618": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-618.json"
+          },
+          "CreateGetUpdateDeleteTestGET619": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-619.json"
+          },
+          "CreateGetUpdateDeleteTestGET623": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-623.json"
+          },
+          "FirewallAndTrustedProviderTestGET68": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-68.json"
+          },
+          "FirewallAndTrustedProviderTestGET69": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-69.json"
+          },
+          "FirewallAndTrustedProviderTestGET610": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-610.json"
+          },
+          "FirewallAndTrustedProviderTestGET615": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-615.json"
+          },
+          "FirewallAndTrustedProviderTestGET616": {
+            "$ref": "../examples/FirewallAndTrustedProviderTest-GET-example-616.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithBadOffsetGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithBadOffset-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithBadOffsetGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithBadOffset-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithBadOffsetGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithBadOffset-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithOffsetGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithOffset-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithOffsetGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithOffset-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemAppendToFileWithOffsetGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemAppendToFileWithOffset-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemConcatenateFilesGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcatenateFiles-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemConcatenateFilesGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcatenateFiles-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemConcatenateFilesGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcatenateFiles-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendCreateFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendCreateFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendCreateFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendCreateFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendCreateFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendCreateFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendToFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendToFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendToFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendToFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemConcurrentAppendToFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemConcurrentAppendToFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemDeleteFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemDeleteFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemDeleteFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemDeleteFolderGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFolder-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemDeleteFolderGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFolder-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemDeleteFolderGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemDeleteFolder-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemDirectAppendToFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemDirectAppendToFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemDirectAppendToFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemDirectAppendToFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemDirectAppendToFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemDirectAppendToFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileCreateGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileCreate-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileCreateGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileCreate-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileCreateGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileCreate-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileDirectCreateGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileDirectCreate-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileDirectCreateGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileDirectCreate-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemEmptyFileDirectCreateGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemEmptyFileDirectCreate-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemFileAlreadyExistsGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileAlreadyExists-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemFileAlreadyExistsGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileAlreadyExists-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemFileAlreadyExistsGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileAlreadyExists-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemFileCreateWithContentsGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileCreateWithContents-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemFileCreateWithContentsGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileCreateWithContents-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemFileCreateWithContentsGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileCreateWithContents-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemFileDirectCreateWithContentsGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileDirectCreateWithContents-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemFileDirectCreateWithContentsGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileDirectCreateWithContents-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemFileDirectCreateWithContentsGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemFileDirectCreateWithContents-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemFolderCreateGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemFolderCreate-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemFolderCreateGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemFolderCreate-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemFolderCreateGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemFolderCreate-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemGetAclGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAcl-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemGetAclGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAcl-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemGetAclGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAcl-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemGetAndSetAclGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAndSetAcl-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemGetAndSetAclGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAndSetAcl-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemGetAndSetAclGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetAndSetAcl-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemGetNonExistentFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetNonExistentFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemGetNonExistentFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetNonExistentFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemGetNonExistentFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemGetNonExistentFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemListFolderContentsGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemListFolderContents-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemListFolderContentsGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemListFolderContents-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemListFolderContentsGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemListFolderContents-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemMoveFileAndFolderGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemMoveFileAndFolder-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemMoveFileAndFolderGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemMoveFileAndFolder-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemMoveFileAndFolderGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemMoveFileAndFolder-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemMsConcatDeleteDirGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatDeleteDir-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemMsConcatDeleteDirGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatDeleteDir-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemMsConcatDeleteDirGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatDeleteDir-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemMsConcatenateFilesGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatenateFiles-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemMsConcatenateFilesGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatenateFiles-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemMsConcatenateFilesGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemMsConcatenateFiles-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemNegativeConcurrentAppendGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeConcurrentAppend-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemNegativeConcurrentAppendGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeConcurrentAppend-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemNegativeConcurrentAppendGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeConcurrentAppend-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemNegativeExpiryGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeExpiry-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemNegativeExpiryGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeExpiry-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemNegativeExpiryGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemNegativeExpiry-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemSetAclGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAcl-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemSetAclGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAcl-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemSetAclGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAcl-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemSetAndRemoveExpiryGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAndRemoveExpiry-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemSetAndRemoveExpiryGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAndRemoveExpiry-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemSetAndRemoveExpiryGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetAndRemoveExpiry-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemSetDeleteAclEntryGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetDeleteAclEntry-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemSetDeleteAclEntryGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetDeleteAclEntry-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemSetDeleteAclEntryGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetDeleteAclEntry-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemSetFilePropertiesGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetFileProperties-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemSetFilePropertiesGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetFileProperties-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemSetFilePropertiesGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemSetFileProperties-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemTestFileGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemTestFile-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemTestFileGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemTestFile-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemTestFileGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemTestFile-GET-example-610.json"
+          },
+          "DataLakeStoreFileSystemValidateDefaultTimeoutGET68": {
+            "$ref": "../examples/DataLakeStoreFileSystemValidateDefaultTimeout-GET-example-68.json"
+          },
+          "DataLakeStoreFileSystemValidateDefaultTimeoutGET69": {
+            "$ref": "../examples/DataLakeStoreFileSystemValidateDefaultTimeout-GET-example-69.json"
+          },
+          "DataLakeStoreFileSystemValidateDefaultTimeoutGET610": {
+            "$ref": "../examples/DataLakeStoreFileSystemValidateDefaultTimeout-GET-example-610.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts/{accountName}/enableKeyVault": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_EnableKeyVault",
+        "description": "Attempts to enable a user managed key vault for encryption of the specified Data Lake Store account.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account."
+          },
+          {
+            "name": "accountName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Data Lake Store account to attempt to enable the Key Vault for."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully enabled the user-managed Key Vault settings used for encrypting this Data Lake Store account."
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DataLakeStore/accounts": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_ListByResourceGroup",
+        "description": "Lists the Data Lake Store accounts within a specific resource group. The response includes a link to the next page of results, if any.",
+        "parameters": [
+          {
+            "name": "resourceGroupName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure resource group that contains the Data Lake Store account(s)."
+          },
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OData filter. Optional."
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 1,
+            "description": "The number of items to return. Optional."
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 1,
+            "description": "The number of items to skip over before returning elements. Optional."
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional."
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OrderBy clause. One or more comma-separated expressions with an optional \"asc\" (the default) or \"desc\" depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional."
+          },
+          {
+            "name": "$count",
+            "in": "query",
+            "required": false,
+            "type": "boolean",
+            "description": "A Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the list of accounts in the specified resource group.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccountListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/DataLakeStoreAccount",
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestGET825": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-825.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.DataLakeStore/accounts": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "operationId": "Account_List",
+        "description": "Lists the Data Lake Store accounts within the subscription. The response includes a link to the next page of results, if any.",
+        "parameters": [
+          {
+            "name": "$filter",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OData filter. Optional."
+          },
+          {
+            "name": "$top",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 1,
+            "description": "The number of items to return. Optional."
+          },
+          {
+            "name": "$skip",
+            "in": "query",
+            "required": false,
+            "type": "integer",
+            "format": "int32",
+            "minimum": 1,
+            "description": "The number of items to skip over before returning elements. Optional."
+          },
+          {
+            "name": "$select",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional."
+          },
+          {
+            "name": "$orderby",
+            "in": "query",
+            "required": false,
+            "type": "string",
+            "description": "OrderBy clause. One or more comma-separated expressions with an optional \"asc\" (the default) or \"desc\" depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional."
+          },
+          {
+            "name": "$count",
+            "in": "query",
+            "required": false,
+            "type": "boolean",
+            "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional."
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved the list of accounts.",
+            "schema": {
+              "$ref": "#/definitions/DataLakeStoreAccountListResult"
+            }
+          }
+        },
+        "x-ms-pageable": {
+          "nextLinkName": "nextLink"
+        },
+        "x-ms-odata": "#/definitions/DataLakeStoreAccount",
+        "x-ms-examples": {
+          "CreateGetUpdateDeleteTestGET924": {
+            "$ref": "../examples/CreateGetUpdateDeleteTest-GET-example-924.json"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "FirewallRuleProperties": {
+      "required": [
+        "startIpAddress",
+        "endIpAddress"
+      ],
+      "properties": {
+        "startIpAddress": {
+          "type": "string",
+          "description": "the start IP address for the firewall rule."
+        },
+        "endIpAddress": {
+          "type": "string",
+          "description": "the end IP address for the firewall rule."
+        }
+      },
+      "description": "Data Lake Store firewall rule properties information"
+    },
+    "FirewallRule": {
+      "required": [
+        "properties"
+      ],
+      "allOf": [
+        {
+          "$ref": "#/definitions/SubResource"
+        }
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/FirewallRuleProperties",
+          "description": "the properties of the firewall rule.",
+          "x-ms-client-flatten": true
+        }
+      },
+      "description": "Data Lake Store firewall rule information"
+    },
+    "TrustedIdProviderProperties": {
+      "required": [
+        "idProvider"
+      ],
+      "properties": {
+        "idProvider": {
+          "type": "string",
+          "description": "The URL of this trusted identity provider"
+        }
+      },
+      "description": "Data Lake Store trusted identity provider properties information"
+    },
+    "TrustedIdProvider": {
+      "required": [
+        "properties"
+      ],
+      "allOf": [
+        {
+          "$ref": "#/definitions/SubResource"
+        }
+      ],
+      "properties": {
+        "properties": {
+          "$ref": "#/definitions/TrustedIdProviderProperties",
+          "description": "the properties of the trusted identity provider.",
+          "x-ms-client-flatten": true
+        }
+      },
+      "description": "Data Lake Store firewall rule information"
+    },
+    "DataLakeStoreTrustedIdProviderListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "readOnly": true,
+          "items": {
+            "$ref": "#/definitions/TrustedIdProvider"
+          },
+          "description": "the results of the list operation"
+        },
+        "nextLink": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the link (url) to the next page of results."
+        }
+      },
+      "description": "Data Lake Store trusted identity provider list information."
+    },
+    "DataLakeStoreFirewallRuleListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "readOnly": true,
+          "items": {
+            "$ref": "#/definitions/FirewallRule"
+          },
+          "description": "the results of the list operation"
+        },
+        "nextLink": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the link (url) to the next page of results."
+        }
+      },
+      "description": "Data Lake Store firewall rule list information."
+    },
+    "EncryptionIdentity": {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of encryption being used. Currently the only supported type is 'SystemAssigned'.",
+          "enum": [
+            "SystemAssigned"
+          ],
+          "x-ms-enum": {
+            "name": "EncryptionIdentityType",
+            "modelAsString": false
+          }
+        },
+        "principalId": {
+          "type": "string",
+          "format": "uuid",
+          "readOnly": true,
+          "description": "The principal identifier associated with the encryption."
+        },
+        "tenantId": {
+          "type": "string",
+          "format": "uuid",
+          "readOnly": true,
+          "description": "The tenant identifier associated with the encryption."
+        }
+      },
+      "description": "The encryption identity properties."
+    },
+    "EncryptionConfig": {
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "description": "The type of encryption configuration being used. Currently the only supported types are 'UserManaged' and 'ServiceManaged'.",
+          "enum": [
+            "UserManaged",
+            "ServiceManaged"
+          ],
+          "x-ms-enum": {
+            "name": "EncryptionConfigType",
+            "modelAsString": false
+          }
+        },
+        "keyVaultMetaInfo": {
+          "$ref": "#/definitions/KeyVaultMetaInfo",
+          "description": "The Key vault information for connecting to user managed encryption keys."
+        }
+      },
+      "description": "The encryption configuration for the account."
+    },
+    "KeyVaultMetaInfo": {
+      "required": [
+        "keyVaultResourceId",
+        "encryptionKeyName",
+        "encryptionKeyVersion"
+      ],
+      "properties": {
+        "keyVaultResourceId": {
+          "type": "string",
+          "description": "The resource identifier for the user managed Key Vault being used to encrypt."
+        },
+        "encryptionKeyName": {
+          "type": "string",
+          "description": "The name of the user managed encryption key."
+        },
+        "encryptionKeyVersion": {
+          "type": "string",
+          "description": "The version of the user managed encryption key."
+        }
+      },
+      "description": "Metadata information used by account encryption."
+    },
+    "DataLakeStoreAccountProperties": {
+      "properties": {
+        "provisioningState": {
+          "readOnly": true,
+          "type": "string",
+          "description": "the status of the Data Lake Store account while being provisioned.",
+          "enum": [
+            "Failed",
+            "Creating",
+            "Running",
+            "Succeeded",
+            "Patching",
+            "Suspending",
+            "Resuming",
+            "Deleting",
+            "Deleted"
+          ],
+          "x-ms-enum": {
+            "name": "DataLakeStoreAccountStatus",
+            "modelAsString": false
+          }
+        },
+        "state": {
+          "readOnly": true,
+          "type": "string",
+          "description": "the status of the Data Lake Store account after provisioning has completed.",
+          "enum": [
+            "Active",
+            "Suspended"
+          ],
+          "x-ms-enum": {
+            "name": "DataLakeStoreAccountState",
+            "modelAsString": false
+          }
+        },
+        "creationTime": {
+          "type": "string",
+          "readOnly": true,
+          "format": "date-time",
+          "description": "the account creation time."
+        },
+        "encryptionState": {
+          "type": "string",
+          "description": "The current state of encryption for this Data Lake store account.",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "x-ms-enum": {
+            "name": "EncryptionState",
+            "modelAsString": false
+          }
+        },
+        "encryptionProvisioningState": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The current state of encryption provisioning for this Data Lake store account.",
+          "enum": [
+            "Creating",
+            "Succeeded"
+          ],
+          "x-ms-enum": {
+            "name": "EncryptionProvisioningState",
+            "modelAsString": false
+          }
+        },
+        "encryptionConfig": {
+          "$ref": "#/definitions/EncryptionConfig",
+          "description": "The Key vault encryption configuration."
+        },
+        "firewallState": {
+          "type": "string",
+          "description": "The current state of the IP address firewall for this Data Lake store account.",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "x-ms-enum": {
+            "name": "FirewallState",
+            "modelAsString": false
+          }
+        },
+        "firewallRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FirewallRule"
+          },
+          "description": "The list of firewall rules associated with this Data Lake store account."
+        },
+        "trustedIdProviderState": {
+          "type": "string",
+          "description": "The current state of the trusted identity provider feature for this Data Lake store account.",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "x-ms-enum": {
+            "name": "TrustedIdProviderState",
+            "modelAsString": false
+          }
+        },
+        "trustedIdProviders": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TrustedIdProvider"
+          },
+          "description": "The list of trusted identity providers associated with this Data Lake store account."
+        },
+        "lastModifiedTime": {
+          "type": "string",
+          "readOnly": true,
+          "format": "date-time",
+          "description": "the account last modified time."
+        },
+        "endpoint": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the gateway host."
+        },
+        "defaultGroup": {
+          "type": "string",
+          "description": "the default owner group for all new folders and files created in the Data Lake Store account."
+        }
+      },
+      "description": "Data Lake Store account properties information"
+    },
+    "UpdateDataLakeStoreAccountProperties": {
+      "properties": {
+        "firewallState": {
+          "type": "string",
+          "description": "The current state of the IP address firewall for this Data Lake store account. Disabling the firewall does not remove existing rules, they will just be ignored until the firewall is re-enabled.",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "x-ms-enum": {
+            "name": "FirewallState",
+            "modelAsString": false
+          }
+        },
+        "trustedIdProviderState": {
+          "type": "string",
+          "description": "The current state of the trusted identity provider feature for this Data Lake store account. Disabling trusted identity provider functionality does not remove the providers, they will just be ignored until this feature is re-enabled.",
+          "enum": [
+            "Enabled",
+            "Disabled"
+          ],
+          "x-ms-enum": {
+            "name": "TrustedIdProviderState",
+            "modelAsString": false
+          }
+        },
+        "defaultGroup": {
+          "type": "string",
+          "description": "the default owner group for all new folders and files created in the Data Lake Store account."
+        }
+      },
+      "description": "Data Lake Store account properties information to be updated."
+    },
+    "DataLakeStoreAccountUpdateParameters": {
+      "properties": {
+        "tags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Resource tags"
+        },
+        "properties": {
+          "$ref": "#/definitions/UpdateDataLakeStoreAccountProperties",
+          "description": "the Data Lake Store account properties to update.",
+          "x-ms-client-flatten": true
+        }
+      },
+      "description": "Data Lake Store account information to update"
+    },
+    "DataLakeStoreAccount": {
+      "allOf": [
+        {
+          "$ref": "#/definitions/Resource"
+        }
+      ],
+      "properties": {
+        "identity": {
+          "$ref": "#/definitions/EncryptionIdentity",
+          "description": "The Key vault encryption identity, if any."
+        },
+        "properties": {
+          "$ref": "#/definitions/DataLakeStoreAccountProperties",
+          "description": "the Data Lake Store account properties.",
+          "x-ms-client-flatten": true
+        }
+      },
+      "description": "Data Lake Store account information"
+    },
+    "DataLakeStoreAccountListResult": {
+      "properties": {
+        "value": {
+          "type": "array",
+          "readOnly": true,
+          "items": {
+            "$ref": "#/definitions/DataLakeStoreAccount"
+          },
+          "description": "the results of the list operation"
+        },
+        "nextLink": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the link (url) to the next page of results."
+        }
+      },
+      "description": "Data Lake Store account list information response."
+    },
+    "ErrorDetails": {
+      "properties": {
+        "code": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the HTTP status code or error code associated with this error"
+        },
+        "message": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the error message localized based on Accept-Language"
+        },
+        "target": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the target of the particular error (for example, the name of the property in error)."
+        }
+      },
+      "description": "Data Lake Store error details information"
+    },
+    "InnerError": {
+      "properties": {
+        "trace": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the stack trace for the error"
+        },
+        "context": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the context for the error message"
+        }
+      },
+      "description": "Data Lake Store inner error information"
+    },
+    "Error": {
+      "properties": {
+        "code": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the HTTP status code or error code associated with this error"
+        },
+        "message": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the error message to display."
+        },
+        "target": {
+          "type": "string",
+          "readOnly": true,
+          "description": "the target of the error."
+        },
+        "details": {
+          "type": "array",
+          "readOnly": true,
+          "items": {
+            "$ref": "#/definitions/ErrorDetails"
+          },
+          "description": "the list of error details"
+        },
+        "innerError": {
+          "$ref": "#/definitions/InnerError",
+          "readOnly": true,
+          "description": "the inner exceptions or errors, if any"
+        }
+      },
+      "description": "Data Lake Store error information"
+    },
+    "Resource": {
+      "description": "The Resource model definition.",
+      "properties": {
+        "id": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Resource Id"
+        },
+        "name": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Resource name"
+        },
+        "type": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Resource type"
+        },
+        "location": {
+          "type": "string",
+          "description": "Resource location"
+        },
+        "tags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Resource tags"
+        }
+      },
+      "required": [
+        "location"
+      ],
+      "x-ms-azure-resource": true
+    },
+    "SubResource": {
+      "description": "The Resource model definition for a nested resource.",
+      "properties": {
+        "id": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Resource Id"
+        },
+        "name": {
+          "type": "string",
+          "description": "Resource name"
+        },
+        "type": {
+          "readOnly": true,
+          "type": "string",
+          "description": "Resource type"
+        }
+      },
+      "x-ms-azure-resource": true
+    }
+  },
+  "parameters": {
+    "SubscriptionIdParameter": {
+      "name": "subscriptionId",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
+    },
+    "ApiVersionParameter": {
+      "name": "api-version",
+      "in": "query",
+      "required": true,
+      "type": "string",
+      "description": "Client Api Version."
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar23891",
+    "vmScaleSetName": "vmss1096",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "sku": {
+          "name": "Standard_A0",
+          "tier": "Standard",
+          "capacity": 2
+        },
+        "properties": {
+          "upgradePolicy": {
+            "mode": "Automatic"
+          },
+          "virtualMachineProfile": {
+            "osProfile": {
+              "computerNamePrefix": "test",
+              "adminUsername": "Foo12",
+              "customData": "Q3VzdG9tIGRhdGE=",
+              "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+              },
+              "secrets": []
+            },
+            "storageProfile": {
+              "osDisk": {
+                "vhdContainers": [
+                  "https://crptestar3251.blob.core.windows.net/crptestar6876"
+                ],
+                "name": "test",
+                "createOption": "FromImage",
+                "caching": "None"
+              },
+              "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2012-R2-Datacenter",
+                "version": "4.0.20151120"
+              }
+            },
+            "networkProfile": {
+              "networkInterfaceConfigurations": [
+                {
+                  "name": "vmsstestnetconfig6918",
+                  "properties": {
+                    "primary": true,
+                    "ipConfigurations": [
+                      {
+                        "name": "vmsstestnetconfig6954",
+                        "properties": {
+                          "subnet": {
+                            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar23891/providers/Microsoft.Network/virtualNetworks/vn4607/subnets/sn26563"
+                          },
+                          "applicationGatewayBackendAddressPools": [
+                            {
+                              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar23891/providers/Microsoft.Network/applicationGateways/gw4674/backendAddressPools/pool9589"
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "provisioningState": "Succeeded",
+          "overprovision": false
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar23891/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1096",
+        "name": "vmss1096",
+        "type": "Microsoft.Compute/virtualMachineScaleSets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

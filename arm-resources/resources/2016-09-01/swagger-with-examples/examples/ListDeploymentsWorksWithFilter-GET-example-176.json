@@ -1,0 +1,117 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg4072/deployments/csmd4448",
+        "name": "csmd4448",
+        "properties": {
+          "templateLink": {
+            "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "siteName": {
+              "type": "String",
+              "value": "csmr6550"
+            },
+            "hostingPlanName": {
+              "type": "String",
+              "value": "someplan"
+            },
+            "siteLocation": {
+              "type": "String",
+              "value": "westus"
+            },
+            "sku": {
+              "type": "String",
+              "value": "Standard"
+            },
+            "workerSize": {
+              "type": "String",
+              "value": "0"
+            },
+            "repoURL": {
+              "type": "String",
+              "value": "https://github.com/devigned/az-roadshow-oss.git"
+            },
+            "branch": {
+              "type": "String",
+              "value": "master"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Succeeded",
+          "timestamp": "2015-12-04T00:26:23.4048894Z",
+          "duration": "PT56.7723693S",
+          "correlationId": "d5288de9-bfa8-44ee-b99f-2083fd9224c6",
+          "providers": [
+            {
+              "namespace": "Microsoft.Web",
+              "resourceTypes": [
+                {
+                  "resourceType": "serverfarms",
+                  "locations": [
+                    "westus"
+                  ]
+                },
+                {
+                  "resourceType": "sites",
+                  "locations": [
+                    "westus"
+                  ]
+                },
+                {
+                  "resourceType": "sites/sourcecontrols",
+                  "locations": [
+                    null
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg4072/providers/Microsoft.Web/serverfarms/someplan",
+                  "resourceType": "Microsoft.Web/serverfarms",
+                  "resourceName": "someplan"
+                }
+              ],
+              "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg4072/providers/Microsoft.Web/sites/csmr6550",
+              "resourceType": "Microsoft.Web/sites",
+              "resourceName": "csmr6550"
+            },
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg4072/providers/Microsoft.Web/Sites/csmr6550",
+                  "resourceType": "Microsoft.Web/Sites",
+                  "resourceName": "csmr6550"
+                }
+              ],
+              "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg4072/providers/Microsoft.Web/sites/csmr6550/sourcecontrols/web",
+              "resourceType": "Microsoft.Web/sites/sourcecontrols",
+              "resourceName": "csmr6550/web"
+            }
+          ],
+          "outputResources": [
+            {
+              "id": "Microsoft.Web/serverfarms/someplan"
+            },
+            {
+              "id": "Microsoft.Web/sites/csmr6550"
+            },
+            {
+              "id": "Microsoft.Web/sites/csmr6550/sourcecontrols/web"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

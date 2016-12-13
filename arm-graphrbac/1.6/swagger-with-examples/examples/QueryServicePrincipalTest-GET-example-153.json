@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "objectId": "0a2376cb-7d34-4b1d-85e1-53f6bd55fce0",
+    "api-version": "1.6",
+    "$filter": "servicePrincipalNames/any(c:%20c%20eq%20'93625bc8-bfe2-437a-97e0-3d0060024faa')"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.ServicePrincipal/@Element",
+        "odata.type": "Microsoft.DirectoryServices.ServicePrincipal",
+        "objectType": "ServicePrincipal",
+        "objectId": "0a2376cb-7d34-4b1d-85e1-53f6bd55fce0",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "addIns": [],
+        "alternativeNames": [],
+        "appDisplayName": "Microsoft password reset service",
+        "appId": "93625bc8-bfe2-437a-97e0-3d0060024faa",
+        "appOwnerTenantId": null,
+        "appRoleAssignmentRequired": false,
+        "appRoles": [],
+        "displayName": "SelfServicePasswordReset",
+        "errorUrl": null,
+        "homepage": null,
+        "keyCredentials": [],
+        "logoutUrl": null,
+        "oauth2Permissions": [],
+        "passwordCredentials": [],
+        "preferredTokenSigningKeyThumbprint": null,
+        "publisherName": null,
+        "replyUrls": [],
+        "samlMetadataUrl": null,
+        "servicePrincipalNames": [
+          "93625bc8-bfe2-437a-97e0-3d0060024faa",
+          "SelfServicePasswordReset"
+        ],
+        "servicePrincipalType": "Application",
+        "tags": []
+      }
+    }
+  }
+}

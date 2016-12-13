@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "subscriptionId": "c1fd1678-d0fe-4253-a15f-a03eee323432",
+    "resourceGroupName": "csmrg3365",
+    "virtualNetworkName": "azsmnet1390",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "properties": {
+              "addressPrefix": "10.0.1.0/24"
+            },
+            "name": "azsmnet3416"
+          }
+        ]
+      },
+      "location": "East US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet1390",
+        "id": "/subscriptions/c1fd1678-d0fe-4253-a15f-a03eee323432/resourceGroups/csmrg3365/providers/Microsoft.Network/virtualNetworks/azsmnet1390",
+        "etag": "W/\"1527c8a3-5a94-4f60-b66b-983b49f8ce77\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "f8263914-75c8-4d4a-a12d-8c65ae1550fa",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet3416",
+              "id": "/subscriptions/c1fd1678-d0fe-4253-a15f-a03eee323432/resourceGroups/csmrg3365/providers/Microsoft.Network/virtualNetworks/azsmnet1390/subnets/azsmnet3416",
+              "etag": "W/\"1527c8a3-5a94-4f60-b66b-983b49f8ce77\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.1.0/24"
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

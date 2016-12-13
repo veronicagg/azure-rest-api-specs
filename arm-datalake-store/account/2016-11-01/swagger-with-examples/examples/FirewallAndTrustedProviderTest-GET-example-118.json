@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg1727",
+    "accountName": "adlsacct9646",
+    "firewallRuleName": "firerule11739",
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "Firewall Rule does not exist."
+        }
+      }
+    }
+  }
+}

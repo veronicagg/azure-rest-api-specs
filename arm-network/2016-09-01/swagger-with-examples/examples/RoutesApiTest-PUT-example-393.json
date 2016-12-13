@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg4808",
+    "routeTableName": "azsmnet8176",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "routes": [
+          {
+            "properties": {
+              "addressPrefix": "192.168.1.0/24",
+              "nextHopType": "VirtualAppliance",
+              "nextHopIpAddress": "23.108.1.1"
+            },
+            "name": "azsmnet8055"
+          }
+        ]
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet8176",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4808/providers/Microsoft.Network/routeTables/azsmnet8176",
+        "etag": "W/\"5a033ba1-c213-4cdc-9137-9fb052ed9c56\"",
+        "type": "Microsoft.Network/routeTables",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "98102090-afe0-4291-a953-7807c23b84b0",
+          "routes": [
+            {
+              "name": "azsmnet8055",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4808/providers/Microsoft.Network/routeTables/azsmnet8176/routes/azsmnet8055",
+              "etag": "W/\"5a033ba1-c213-4cdc-9137-9fb052ed9c56\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "192.168.1.0/24",
+                "nextHopType": "VirtualAppliance",
+                "nextHopIpAddress": "23.108.1.1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

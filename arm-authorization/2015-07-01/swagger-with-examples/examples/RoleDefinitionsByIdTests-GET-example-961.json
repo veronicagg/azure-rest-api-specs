@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "roleAssignmentId": "",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "User Access Administrator",
+          "type": "BuiltInRole",
+          "description": "Lets you manage user access to Azure resources.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "*/read",
+                "Microsoft.Authorization/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:53.0716401Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9"
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup83",
+    "profileName": "profile4269",
+    "endpointName": "endpoint7038",
+    "api-version": "2016-10-02",
+    "endpoint": {
+      "properties": {
+        "isHttpAllowed": true,
+        "isHttpsAllowed": true,
+        "origins": [
+          {
+            "name": "origin1",
+            "properties": {
+              "hostName": "host1.hello.com"
+            }
+          }
+        ]
+      },
+      "location": "WestUs"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "endpoint7038",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup83/providers/Microsoft.Cdn/profiles/profile4269/endpoints/endpoint7038",
+        "type": "Microsoft.Cdn/profiles/endpoints",
+        "tags": {},
+        "location": "WestUs",
+        "properties": {
+          "hostName": "endpoint7038.azureedge.net",
+          "originHostHeader": null,
+          "provisioningState": "Creating",
+          "resourceState": "Creating",
+          "isHttpAllowed": true,
+          "isHttpsAllowed": true,
+          "queryStringCachingBehavior": "IgnoreQueryString",
+          "originPath": null,
+          "origins": [
+            {
+              "name": "origin1",
+              "properties": {
+                "hostName": "host1.hello.com",
+                "httpPort": null,
+                "httpsPort": null
+              }
+            }
+          ],
+          "customDomains": [],
+          "contentTypesToCompress": [],
+          "isCompressionEnabled": false,
+          "optimizationType": null,
+          "geoFilters": []
+        }
+      }
+    }
+  }
+}

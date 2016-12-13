@@ -1,0 +1,90 @@
+{
+  "parameters": {
+    "subscriptionId": "279b0675-cf67-467f-98f0-67ae31eb540f",
+    "resourceGroupName": "csmrg17",
+    "name": "csmws5641",
+    "api-version": "2014-04-01",
+    "siteEnvelope": {
+      "properties": {
+        "ServerFarm": "csmsf385"
+      },
+      "name": "csmws5641",
+      "location": "West US",
+      "tags": {}
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/279b0675-cf67-467f-98f0-67ae31eb540f/resourceGroups/csmrg17/providers/Microsoft.Web/sites/csmws5641",
+        "name": "csmws5641",
+        "type": "Microsoft.Web/sites",
+        "location": "West US",
+        "tags": {},
+        "properties": {
+          "name": "csmws5641",
+          "state": "Running",
+          "hostNames": [
+            "csmws5641.azurewebsites.net"
+          ],
+          "webSpace": "csmrg17-WestUSwebspace",
+          "selfLink": "https://waws-prod-bay-011.api.azurewebsites.windows.net:454/subscriptions/279b0675-cf67-467f-98f0-67ae31eb540f/webspaces/csmrg17-WestUSwebspace/sites/csmws5641",
+          "repositorySiteName": "csmws5641",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmws5641.azurewebsites.net",
+            "csmws5641.scm.azurewebsites.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmws5641.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0
+            },
+            {
+              "name": "csmws5641.scm.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": "csmsf385",
+          "webHostingPlan": "csmsf385",
+          "lastModifiedTimeUtc": "2014-09-19T22:08:57.893",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmws5641",
+          "trafficManagerHostNames": null,
+          "sku": "Free",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false
+        }
+      }
+    }
+  }
+}

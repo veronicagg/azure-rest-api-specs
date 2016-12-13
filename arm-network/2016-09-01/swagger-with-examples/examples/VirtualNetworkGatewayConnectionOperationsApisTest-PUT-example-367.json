@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg7047",
+    "publicIpAddressName": "azsmnet7350",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "dnsSettings": {
+          "domainNameLabel": "azsmnet6654"
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet7350",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/publicIPAddresses/azsmnet7350",
+        "etag": "W/\"9145d7d4-dcce-4c95-8faa-c62218112195\"",
+        "type": "Microsoft.Network/publicIPAddresses",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "49e34044-6f49-4fd8-9611-93219a080509",
+          "publicIPAllocationMethod": "Dynamic",
+          "idleTimeoutInMinutes": 4,
+          "dnsSettings": {
+            "domainNameLabel": "azsmnet6654",
+            "fqdn": "azsmnet6654.westus.validation.cloudapp.azure.com"
+          }
+        }
+      }
+    }
+  }
+}

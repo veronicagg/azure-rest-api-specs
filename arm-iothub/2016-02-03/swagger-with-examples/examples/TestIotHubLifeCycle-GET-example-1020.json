@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "api-version": "2016-02-03"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "Name": "TotalMessages",
+            "CurrentValue": 0,
+            "MaxValue": 400000
+          },
+          {
+            "Name": "TotalDeviceCount",
+            "CurrentValue": 0,
+            "MaxValue": 500000
+          }
+        ]
+      }
+    }
+  }
+}

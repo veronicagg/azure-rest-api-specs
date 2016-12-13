@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount2801",
+    "mapName": "IntegrationAccountMap6053",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

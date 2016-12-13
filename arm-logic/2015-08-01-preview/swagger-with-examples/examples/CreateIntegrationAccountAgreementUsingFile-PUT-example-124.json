@@ -1,0 +1,409 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount2268",
+    "agreementName": "IntegrationAccountAgreement3189",
+    "api-version": "2015-08-01-preview",
+    "agreement": {
+      "properties": {
+        "metadata": "IntegrationAccountAgreement3189",
+        "agreementType": "X12",
+        "hostPartner": "HostPartner",
+        "guestPartner": "GuestPartner",
+        "hostIdentity": {
+          "Qualifier": "ZZ",
+          "Value": "ZZ"
+        },
+        "guestIdentity": {
+          "Qualifier": "AA",
+          "Value": "AA"
+        },
+        "content": {
+          "X12": {
+            "receiveAgreement": {
+              "senderBusinessIdentity": {
+                "Qualifier": "AA",
+                "Value": "AA"
+              },
+              "receiverBusinessIdentity": {
+                "Qualifier": "ZZ",
+                "Value": "ZZ"
+              },
+              "protocolSettings": {
+                "validationSettings": {
+                  "validateCharacterSet": true,
+                  "checkDuplicateInterchangeControlNumber": false,
+                  "interchangeControlNumberValidityDays": 30,
+                  "checkDuplicateGroupControlNumber": false,
+                  "checkDuplicateTransactionSetControlNumber": false,
+                  "validateEDITypes": true,
+                  "validateXSDTypes": false,
+                  "allowLeadingAndTrailingSpacesAndZeroes": false,
+                  "trimLeadingAndTrailingSpacesAndZeroes": false,
+                  "trailingSeparatorPolicy": "NotAllowed"
+                },
+                "framingSettings": {
+                  "dataElementSeparator": 42,
+                  "componentSeparator": 58,
+                  "replaceSeparatorsInPayload": false,
+                  "replaceCharacter": 36,
+                  "segmentTerminator": 126,
+                  "characterSet": "UTF8",
+                  "segmentTerminatorSuffix": "None"
+                },
+                "envelopeSettings": {
+                  "controlStandardsId": 85,
+                  "useControlStandardsIdAsRepetitionCharacter": false,
+                  "senderApplicationId": "BTS-SENDER",
+                  "receiverApplicationId": "RECEIVE-APP",
+                  "controlVersionNumber": "00401",
+                  "interchangeControlNumberLowerBound": 1,
+                  "interchangeControlNumberUpperBound": 999999999,
+                  "rolloverInterchangeControlNumber": true,
+                  "enableDefaultGroupHeaders": true,
+                  "groupControlNumberLowerBound": 1,
+                  "groupControlNumberUpperBound": 999999999,
+                  "rolloverGroupControlNumber": true,
+                  "groupHeaderAgencyCode": "T",
+                  "groupHeaderVersion": "00401",
+                  "transactionSetControlNumberLowerBound": 1,
+                  "transactionSetControlNumberUpperBound": 999999999,
+                  "rolloverTransactionSetControlNumber": true,
+                  "overwriteExistingTransactionSetControlNumber": true,
+                  "groupHeaderDateFormat": "CCYYMMDD",
+                  "groupHeaderTimeFormat": "HHMM",
+                  "usageIndicator": "Test"
+                },
+                "acknowledgementSettings": {
+                  "needTechnicalAcknowledgement": false,
+                  "batchTechnicalAcknowledgements": true,
+                  "needFunctionalAcknowledgement": false,
+                  "batchFunctionalAcknowledgements": true,
+                  "needImplementationAcknowledgement": false,
+                  "batchImplementationAcknowledgements": false,
+                  "needLoopForValidMessages": false,
+                  "sendSynchronousAcknowledgement": true,
+                  "acknowledgementControlNumberLowerBound": 1,
+                  "acknowledgementControlNumberUpperBound": 999999999,
+                  "rolloverAcknowledgementControlNumber": true
+                },
+                "messageFilter": {
+                  "messageFilterType": "Exclude"
+                },
+                "securitySettings": {
+                  "authorizationQualifier": "00",
+                  "securityQualifier": "00"
+                },
+                "processingSettings": {
+                  "maskSecurityInfo": true,
+                  "convertImpliedDecimal": true,
+                  "preserveInterchange": true,
+                  "suspendInterchangeOnError": true,
+                  "createEmptyXmlTagsForTrailingSeparators": true,
+                  "useDotAsDecimalSeparator": true
+                },
+                "schemaReferences": []
+              }
+            },
+            "sendAgreement": {
+              "senderBusinessIdentity": {
+                "Qualifier": "ZZ",
+                "Value": "ZZ"
+              },
+              "receiverBusinessIdentity": {
+                "Qualifier": "AA",
+                "Value": "AA"
+              },
+              "protocolSettings": {
+                "validationSettings": {
+                  "validateCharacterSet": true,
+                  "checkDuplicateInterchangeControlNumber": false,
+                  "interchangeControlNumberValidityDays": 30,
+                  "checkDuplicateGroupControlNumber": false,
+                  "checkDuplicateTransactionSetControlNumber": false,
+                  "validateEDITypes": true,
+                  "validateXSDTypes": false,
+                  "allowLeadingAndTrailingSpacesAndZeroes": false,
+                  "trimLeadingAndTrailingSpacesAndZeroes": false,
+                  "trailingSeparatorPolicy": "NotAllowed"
+                },
+                "framingSettings": {
+                  "dataElementSeparator": 42,
+                  "componentSeparator": 58,
+                  "replaceSeparatorsInPayload": false,
+                  "replaceCharacter": 36,
+                  "segmentTerminator": 126,
+                  "characterSet": "UTF8",
+                  "segmentTerminatorSuffix": "None"
+                },
+                "envelopeSettings": {
+                  "controlStandardsId": 100,
+                  "useControlStandardsIdAsRepetitionCharacter": true,
+                  "senderApplicationId": "100",
+                  "receiverApplicationId": "100",
+                  "controlVersionNumber": "0.0",
+                  "interchangeControlNumberLowerBound": 1,
+                  "interchangeControlNumberUpperBound": 999999999,
+                  "rolloverInterchangeControlNumber": true,
+                  "enableDefaultGroupHeaders": true,
+                  "functionalGroupId": "1",
+                  "groupControlNumberLowerBound": 1,
+                  "groupControlNumberUpperBound": 999999999,
+                  "rolloverGroupControlNumber": true,
+                  "groupHeaderAgencyCode": "T",
+                  "groupHeaderVersion": "0.0",
+                  "transactionSetControlNumberLowerBound": 1,
+                  "transactionSetControlNumberUpperBound": 999999999,
+                  "rolloverTransactionSetControlNumber": true,
+                  "transactionSetControlNumberPrefix": "",
+                  "transactionSetControlNumberSuffix": "",
+                  "overwriteExistingTransactionSetControlNumber": true,
+                  "groupHeaderDateFormat": "CCYYMMDD",
+                  "groupHeaderTimeFormat": "HHMM",
+                  "usageIndicator": "Information"
+                },
+                "acknowledgementSettings": {
+                  "needTechnicalAcknowledgement": false,
+                  "batchTechnicalAcknowledgements": true,
+                  "needFunctionalAcknowledgement": false,
+                  "batchFunctionalAcknowledgements": true,
+                  "needImplementationAcknowledgement": false,
+                  "batchImplementationAcknowledgements": false,
+                  "needLoopForValidMessages": false,
+                  "sendSynchronousAcknowledgement": true,
+                  "acknowledgementControlNumberLowerBound": 1,
+                  "acknowledgementControlNumberUpperBound": 999999999,
+                  "rolloverAcknowledgementControlNumber": true
+                },
+                "messageFilter": {
+                  "messageFilterType": "Exclude"
+                },
+                "securitySettings": {
+                  "authorizationQualifier": "00",
+                  "securityQualifier": "00"
+                },
+                "processingSettings": {
+                  "maskSecurityInfo": true,
+                  "convertImpliedDecimal": true,
+                  "preserveInterchange": true,
+                  "suspendInterchangeOnError": true,
+                  "createEmptyXmlTagsForTrailingSeparators": true,
+                  "useDotAsDecimalSeparator": true
+                },
+                "schemaReferences": []
+              }
+            }
+          }
+        }
+      },
+      "name": "IntegrationAccountAgreement3189",
+      "location": "westus",
+      "tags": {
+        "IntegrationAccountAgreement": "IntegrationAccountAgreement3189"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "hostPartner": "HostPartner",
+          "guestPartner": "GuestPartner",
+          "hostIdentity": {
+            "qualifier": "ZZ",
+            "value": "ZZ"
+          },
+          "guestIdentity": {
+            "qualifier": "AA",
+            "value": "AA"
+          },
+          "agreementType": "X12",
+          "content": {
+            "x12": {
+              "receiveAgreement": {
+                "protocolSettings": {
+                  "validationSettings": {
+                    "validateCharacterSet": true,
+                    "checkDuplicateInterchangeControlNumber": false,
+                    "interchangeControlNumberValidityDays": 30,
+                    "checkDuplicateGroupControlNumber": false,
+                    "checkDuplicateTransactionSetControlNumber": false,
+                    "validateEDITypes": true,
+                    "validateXSDTypes": false,
+                    "allowLeadingAndTrailingSpacesAndZeroes": false,
+                    "trimLeadingAndTrailingSpacesAndZeroes": false,
+                    "trailingSeparatorPolicy": "NotAllowed"
+                  },
+                  "framingSettings": {
+                    "dataElementSeparator": 42,
+                    "componentSeparator": 58,
+                    "replaceSeparatorsInPayload": false,
+                    "replaceCharacter": 36,
+                    "segmentTerminator": 126,
+                    "characterSet": "UTF8",
+                    "segmentTerminatorSuffix": "None"
+                  },
+                  "envelopeSettings": {
+                    "controlStandardsId": 85,
+                    "useControlStandardsIdAsRepetitionCharacter": false,
+                    "senderApplicationId": "BTS-SENDER",
+                    "receiverApplicationId": "RECEIVE-APP",
+                    "controlVersionNumber": "00401",
+                    "interchangeControlNumberLowerBound": 1,
+                    "interchangeControlNumberUpperBound": 999999999,
+                    "rolloverInterchangeControlNumber": true,
+                    "enableDefaultGroupHeaders": true,
+                    "groupControlNumberLowerBound": 1,
+                    "groupControlNumberUpperBound": 999999999,
+                    "rolloverGroupControlNumber": true,
+                    "groupHeaderAgencyCode": "T",
+                    "groupHeaderVersion": "00401",
+                    "transactionSetControlNumberLowerBound": 1,
+                    "transactionSetControlNumberUpperBound": 999999999,
+                    "rolloverTransactionSetControlNumber": true,
+                    "overwriteExistingTransactionSetControlNumber": true,
+                    "groupHeaderDateFormat": "CCYYMMDD",
+                    "groupHeaderTimeFormat": "HHMM",
+                    "usageIndicator": "Test"
+                  },
+                  "acknowledgementSettings": {
+                    "needTechnicalAcknowledgement": false,
+                    "batchTechnicalAcknowledgements": true,
+                    "needFunctionalAcknowledgement": false,
+                    "batchFunctionalAcknowledgements": true,
+                    "needImplementationAcknowledgement": false,
+                    "batchImplementationAcknowledgements": false,
+                    "needLoopForValidMessages": false,
+                    "sendSynchronousAcknowledgement": true,
+                    "acknowledgementControlNumberLowerBound": 1,
+                    "acknowledgementControlNumberUpperBound": 999999999,
+                    "rolloverAcknowledgementControlNumber": true
+                  },
+                  "messageFilter": {
+                    "messageFilterType": "Exclude"
+                  },
+                  "securitySettings": {
+                    "authorizationQualifier": "00",
+                    "securityQualifier": "00"
+                  },
+                  "processingSettings": {
+                    "maskSecurityInfo": true,
+                    "convertImpliedDecimal": true,
+                    "preserveInterchange": true,
+                    "suspendInterchangeOnError": true,
+                    "createEmptyXmlTagsForTrailingSeparators": true,
+                    "useDotAsDecimalSeparator": true
+                  },
+                  "schemaReferences": []
+                },
+                "senderBusinessIdentity": {
+                  "qualifier": "AA",
+                  "value": "AA"
+                },
+                "receiverBusinessIdentity": {
+                  "qualifier": "ZZ",
+                  "value": "ZZ"
+                }
+              },
+              "sendAgreement": {
+                "protocolSettings": {
+                  "validationSettings": {
+                    "validateCharacterSet": true,
+                    "checkDuplicateInterchangeControlNumber": false,
+                    "interchangeControlNumberValidityDays": 30,
+                    "checkDuplicateGroupControlNumber": false,
+                    "checkDuplicateTransactionSetControlNumber": false,
+                    "validateEDITypes": true,
+                    "validateXSDTypes": false,
+                    "allowLeadingAndTrailingSpacesAndZeroes": false,
+                    "trimLeadingAndTrailingSpacesAndZeroes": false,
+                    "trailingSeparatorPolicy": "NotAllowed"
+                  },
+                  "framingSettings": {
+                    "dataElementSeparator": 42,
+                    "componentSeparator": 58,
+                    "replaceSeparatorsInPayload": false,
+                    "replaceCharacter": 36,
+                    "segmentTerminator": 126,
+                    "characterSet": "UTF8",
+                    "segmentTerminatorSuffix": "None"
+                  },
+                  "envelopeSettings": {
+                    "controlStandardsId": 100,
+                    "useControlStandardsIdAsRepetitionCharacter": true,
+                    "senderApplicationId": "100",
+                    "receiverApplicationId": "100",
+                    "controlVersionNumber": "0.0",
+                    "interchangeControlNumberLowerBound": 1,
+                    "interchangeControlNumberUpperBound": 999999999,
+                    "rolloverInterchangeControlNumber": true,
+                    "enableDefaultGroupHeaders": true,
+                    "functionalGroupId": "1",
+                    "groupControlNumberLowerBound": 1,
+                    "groupControlNumberUpperBound": 999999999,
+                    "rolloverGroupControlNumber": true,
+                    "groupHeaderAgencyCode": "T",
+                    "groupHeaderVersion": "0.0",
+                    "transactionSetControlNumberLowerBound": 1,
+                    "transactionSetControlNumberUpperBound": 999999999,
+                    "rolloverTransactionSetControlNumber": true,
+                    "transactionSetControlNumberPrefix": "",
+                    "transactionSetControlNumberSuffix": "",
+                    "overwriteExistingTransactionSetControlNumber": true,
+                    "groupHeaderDateFormat": "CCYYMMDD",
+                    "groupHeaderTimeFormat": "HHMM",
+                    "usageIndicator": "Information"
+                  },
+                  "acknowledgementSettings": {
+                    "needTechnicalAcknowledgement": false,
+                    "batchTechnicalAcknowledgements": true,
+                    "needFunctionalAcknowledgement": false,
+                    "batchFunctionalAcknowledgements": true,
+                    "needImplementationAcknowledgement": false,
+                    "batchImplementationAcknowledgements": false,
+                    "needLoopForValidMessages": false,
+                    "sendSynchronousAcknowledgement": true,
+                    "acknowledgementControlNumberLowerBound": 1,
+                    "acknowledgementControlNumberUpperBound": 999999999,
+                    "rolloverAcknowledgementControlNumber": true
+                  },
+                  "messageFilter": {
+                    "messageFilterType": "Exclude"
+                  },
+                  "securitySettings": {
+                    "authorizationQualifier": "00",
+                    "securityQualifier": "00"
+                  },
+                  "processingSettings": {
+                    "maskSecurityInfo": true,
+                    "convertImpliedDecimal": true,
+                    "preserveInterchange": true,
+                    "suspendInterchangeOnError": true,
+                    "createEmptyXmlTagsForTrailingSeparators": true,
+                    "useDotAsDecimalSeparator": true
+                  },
+                  "schemaReferences": []
+                },
+                "senderBusinessIdentity": {
+                  "qualifier": "ZZ",
+                  "value": "ZZ"
+                },
+                "receiverBusinessIdentity": {
+                  "qualifier": "AA",
+                  "value": "AA"
+                }
+              }
+            }
+          },
+          "createdTime": "2016-07-20T17:21:22.8861065Z",
+          "changedTime": "2016-07-20T17:21:22.8865281Z",
+          "metadata": "IntegrationAccountAgreement3189"
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount2268/agreements/IntegrationAccountAgreement3189",
+        "name": "IntegrationAccountAgreement3189",
+        "type": "Microsoft.Logic/integrationAccounts/agreements"
+      }
+    }
+  }
+}

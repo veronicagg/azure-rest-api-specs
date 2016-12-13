@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH7931",
+    "namespaceName": "HydraNH-Namespace1129",
+    "notificationHubName": "HydraNH-NotificationHub9008azsmnet7002",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg6085",
+    "virtualNetworkName": "azsmnet2053",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            },
+            "name": "azsmnet2837"
+          }
+        ]
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet2053",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6085/providers/Microsoft.Network/virtualNetworks/azsmnet2053",
+        "etag": "W/\"578bdaec-a83b-49ea-b3f3-6d8c10f152cf\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "b06aa8b1-e830-4ce3-b39a-5cb2cb13c35d",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet2837",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6085/providers/Microsoft.Network/virtualNetworks/azsmnet2053/subnets/azsmnet2837",
+              "etag": "W/\"578bdaec-a83b-49ea-b3f3-6d8c10f152cf\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

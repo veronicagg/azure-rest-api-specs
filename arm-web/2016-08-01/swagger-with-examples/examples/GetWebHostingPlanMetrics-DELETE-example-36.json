@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg235",
+    "name": "csmws799",
+    "api-version": "2015-08-01",
+    "details": "true",
+    "$filter": "%28name.value%20eq%20%27BytesReceived%27%20or%20name.value%20eq%20%27BytesSent%27%20or%20name.value%20eq%20%27CpuPercentage%27%20or%20name.value%20eq%20%27DiskQueueLength%27%20or%20name.value%20eq%20%27HttpQueueLength%27%20or%20name.value%20eq%20%27MemoryPercentage%27%29%20and%20startTime%20eq%202015-12-10T01%3A52%3A42Z%20and%20endTime%20eq%202015-12-11T01%3A52%3A42Z%20and%20timeGrain%20eq%20duration%27PT1H%27",
+    "deleteEmptyServerFarm": "True",
+    "deleteAllSlots": "True"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

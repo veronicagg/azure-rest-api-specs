@@ -1,0 +1,81 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6",
+    "parameters": {
+      "availableToOtherTenants": false,
+      "displayName": "adApplication9653",
+      "homepage": "http://adApplication9653/home",
+      "identifierUris": [
+        "http://adApplication9653/home"
+      ],
+      "replyUrls": [
+        "http://adApplication9653/home"
+      ],
+      "passwordCredentials": [
+        {
+          "startDate": "2016-08-03T16:58:54.0299251Z",
+          "endDate": "2017-08-03T16:58:54.0299251Z",
+          "keyId": "4588693c-36e6-4a9d-a3ce-5a767227eb02",
+          "value": "AQIDBAUGBwgJCgECAwQFBgcICQoBAgMEBQYHCAkKAQI="
+        }
+      ]
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.Application/@Element",
+        "odata.type": "Microsoft.DirectoryServices.Application",
+        "objectType": "Application",
+        "objectId": "d825c1ad-2086-4ca3-a87e-4a91f220b90f",
+        "deletionTimestamp": null,
+        "addIns": [],
+        "appId": "9cb5327b-8a85-45bf-98e6-32d3805793ee",
+        "appRoles": [],
+        "availableToOtherTenants": false,
+        "displayName": "adApplication9653",
+        "errorUrl": null,
+        "groupMembershipClaims": null,
+        "homepage": "http://adApplication9653/home",
+        "identifierUris": [
+          "http://adApplication9653/home"
+        ],
+        "keyCredentials": [],
+        "knownClientApplications": [],
+        "logoutUrl": null,
+        "oauth2AllowImplicitFlow": false,
+        "oauth2AllowUrlPathMatching": false,
+        "oauth2Permissions": [
+          {
+            "adminConsentDescription": "Allow the application to access adApplication9653 on behalf of the signed-in user.",
+            "adminConsentDisplayName": "Access adApplication9653",
+            "id": "512b592b-fe98-4633-8273-a115b6c1820b",
+            "isEnabled": true,
+            "type": "User",
+            "userConsentDescription": "Allow the application to access adApplication9653 on your behalf.",
+            "userConsentDisplayName": "Access adApplication9653",
+            "value": "user_impersonation"
+          }
+        ],
+        "oauth2RequirePostResponse": false,
+        "passwordCredentials": [
+          {
+            "customKeyIdentifier": null,
+            "endDate": "2017-08-03T16:58:54.0299251Z",
+            "keyId": "4588693c-36e6-4a9d-a3ce-5a767227eb02",
+            "startDate": "2016-08-03T16:58:54.0299251Z",
+            "value": null
+          }
+        ],
+        "publicClient": null,
+        "recordConsentConditions": null,
+        "replyUrls": [
+          "http://adApplication9653/home"
+        ],
+        "requiredResourceAccess": [],
+        "samlMetadataUrl": null
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "sdk-test",
+    "jobName": "http_job",
+    "$filter": "status%20eq%20Failed",
+    "api-version": "2016-03-01",
+    "$top": "5",
+    "$skip": "5"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test/jobs/http_job/history/02519429307097349381:09223372036854580584",
+            "type": "Microsoft.Scheduler/jobCollections/jobs/history",
+            "name": "sdk-test/http_job/02519429307097349381:09223372036854580584",
+            "properties": {
+              "startTime": "2016-03-30T20:34:50.2650618Z",
+              "endTime": "2016-03-30T20:34:50.3746089Z",
+              "expectedExecutionTime": "2016-03-30T20:34:49.7360002Z",
+              "message": "Http Action - Response from host 'www.bing.com': 'OK' Response Headers: Vary: Accept-Encoding\r\nCache-Control: max-age=0, private\r\nP3P: CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"\r\nSet-Cookie: SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 30-Mar-2018 20:34:50 GMT; path=/, SRCHUID=V=2&GUID=5608C84AD06C462A9F8BB3A16DC09D5F; expires=Fri, 30-Mar-2018 20:34:50 GMT; path=/, SRCHUSR=DOB=20160330; domain=.bing.com; expires=Fri, 30-Mar-2018 20:34:50 GMT; path=/, _SS=SID=19DCA8E7EA5C6B881C79A00FEB776A0C; domain=.bing.com; path=/, _EDGE_S=F=1&SID=19DCA8E7EA5C6B881C79A00FEB776A0C; path=/; httponly; domain=bing.com, _EDGE_V=1; path=/; httponly; expires=Fri, 30-Mar-2018 20:34:50 GMT; domain=bing.com, MUID=0679B47DFB7467B71FBFBC95FA5F668E; path=/; expires=Fri, 30-Mar-2018 20:34:50 GMT; domain=bing.com, MUIDB=0679B47DFB7467B71FBFBC95FA5F668E; path=/; httponly; expires=Fri, 30-Mar-2018 20:34:50 GMT\r\nServer: Microsoft-IIS/8.5\r\nX-MSEdge-Ref: Ref A: 80228CF46B14463E84E560FB7A13D5F7 Ref B: 1D66AD8E2B036D691480F0599760CA17 Ref C: Wed Mar 30 13:34:50 2016 PST\r\nDate: Wed, 30 Mar 2016 20:34:49 GMT\r\n Body: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><script type=\"text/javascript\">//<![CDATA[  si_ST=new Date;  //]]></script><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><script type=\"text/javascript\">//<![CDATA[ _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"14\",IG:\"E43C3D4320CF41C89715DE00AE17193E\",EventID:\"80228CF46B14463E84E560FB7A13D5F7\",MN:\"SERP\",V:\"homepage\",P:\"SERP\",DA:\"Ch1\",CID:\"0679B47DFB7467B71FBFBC95FA5F668E\",SUIH:\"ysmNmHRXYM5KrkM0nVm9Tw\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID;curUrl=\"http:\\/\\/www.bing.com\\/\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;}; //]]></script><style type=\"text/css\">html{overflow:auto}a,body{font-family:\"Segoe UI\",Segoe,Tahoma,Arial,Verdana,sans-serif;font-size:small;text-decorat",
+              "retryCount": 0,
+              "repeatCount": 130,
+              "actionName": "MainAction"
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test/jobs/http_job/history/02519429307702639997:09223372036854580583",
+            "type": "Microsoft.Scheduler/jobCollections/jobs/history",
+            "name": "sdk-test/http_job/02519429307702639997:09223372036854580583",
+            "properties": {
+              "startTime": "2016-03-30T20:33:49.7360002Z",
+              "endTime": "2016-03-30T20:33:49.8939091Z",
+              "expectedExecutionTime": "2016-03-30T20:33:49.3764723Z",
+              "message": "Http Action - Response from host 'www.bing.com': 'OK' Response Headers: Vary: Accept-Encoding\r\nCache-Control: max-age=0, private\r\nP3P: CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"\r\nSet-Cookie: SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 30-Mar-2018 20:33:49 GMT; path=/, SRCHUID=V=2&GUID=7E46B663C5D24AF48FCC1392BFBA75F0; expires=Fri, 30-Mar-2018 20:33:49 GMT; path=/, SRCHUSR=DOB=20160330; domain=.bing.com; expires=Fri, 30-Mar-2018 20:33:49 GMT; path=/, _SS=SID=37360C9ACCE6690E25B00472CDCD68FF; domain=.bing.com; path=/, _EDGE_S=F=1&SID=37360C9ACCE6690E25B00472CDCD68FF; path=/; httponly; domain=bing.com, _EDGE_V=1; path=/; httponly; expires=Fri, 30-Mar-2018 20:33:49 GMT; domain=bing.com, MUID=28B4CCED35E96D260CA8C40534C26C85; path=/; expires=Fri, 30-Mar-2018 20:33:49 GMT; domain=bing.com, MUIDB=28B4CCED35E96D260CA8C40534C26C85; path=/; httponly; expires=Fri, 30-Mar-2018 20:33:49 GMT\r\nServer: Microsoft-IIS/8.5\r\nX-MSEdge-Ref: Ref A: 5E13CF1144AC464094AEAD3F137A520A Ref B: 1D37915DDE08B18DADBEAD57218730DD Ref C: Wed Mar 30 13:33:49 2016 PST\r\nDate: Wed, 30 Mar 2016 20:33:49 GMT\r\n Body: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><script type=\"text/javascript\">//<![CDATA[  si_ST=new Date;  //]]></script><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><script type=\"text/javascript\">//<![CDATA[ _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"14\",IG:\"E08598C850294377B885D30C9405785F\",EventID:\"5E13CF1144AC464094AEAD3F137A520A\",MN:\"SERP\",V:\"homepage\",P:\"SERP\",DA:\"Ch1\",CID:\"28B4CCED35E96D260CA8C40534C26C85\",SUIH:\"hdlaB73453inAv7bUOAHNA\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID;curUrl=\"http:\\/\\/www.bing.com\\/\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;}; //]]></script><style type=\"text/css\">html{overflow:auto}a,body{font-family:\"Segoe UI\",Segoe,Tahoma,Arial,Verdana,sans-serif;font-size:small;text-decorat",
+              "retryCount": 0,
+              "repeatCount": 129,
+              "actionName": "MainAction"
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test/jobs/http_job/history/02519429308306235276:09223372036854580582",
+            "type": "Microsoft.Scheduler/jobCollections/jobs/history",
+            "name": "sdk-test/http_job/02519429308306235276:09223372036854580582",
+            "properties": {
+              "startTime": "2016-03-30T20:32:49.3764723Z",
+              "endTime": "2016-03-30T20:32:49.4702234Z",
+              "expectedExecutionTime": "2016-03-30T20:32:48.8799937Z",
+              "message": "Http Action - Response from host 'www.bing.com': 'OK' Response Headers: Vary: Accept-Encoding\r\nCache-Control: max-age=0, private\r\nP3P: CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"\r\nSet-Cookie: SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 30-Mar-2018 20:32:49 GMT; path=/, SRCHUID=V=2&GUID=E8B2F2ED33184CA39504E86428062B6E; expires=Fri, 30-Mar-2018 20:32:49 GMT; path=/, SRCHUSR=DOB=20160330; domain=.bing.com; expires=Fri, 30-Mar-2018 20:32:49 GMT; path=/, _SS=SID=0767B86905396BA91433B08104126ACC; domain=.bing.com; path=/, _EDGE_S=F=1&SID=0767B86905396BA91433B08104126ACC; path=/; httponly; domain=bing.com, _EDGE_V=1; path=/; httponly; expires=Fri, 30-Mar-2018 20:32:49 GMT; domain=bing.com, MUID=213B23DC92C8698321982B3493E368E2; path=/; expires=Fri, 30-Mar-2018 20:32:49 GMT; domain=bing.com, MUIDB=213B23DC92C8698321982B3493E368E2; path=/; httponly; expires=Fri, 30-Mar-2018 20:32:49 GMT\r\nServer: Microsoft-IIS/8.5\r\nX-MSEdge-Ref: Ref A: E4696DDF8A9040BA956627DB03245174 Ref B: 32338656E46A41BB78056D658B960C0A Ref C: Wed Mar 30 13:32:49 2016 PST\r\nDate: Wed, 30 Mar 2016 20:32:49 GMT\r\n Body: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><script type=\"text/javascript\">//<![CDATA[  si_ST=new Date;  //]]></script><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><script type=\"text/javascript\">//<![CDATA[ _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"14\",IG:\"01073A8005884EBE888CFAD9EC371E79\",EventID:\"E4696DDF8A9040BA956627DB03245174\",MN:\"SERP\",V:\"homepage\",P:\"SERP\",DA:\"Ch1\",CID:\"213B23DC92C8698321982B3493E368E2\",SUIH:\"d1OBeNWJMJOX0nZN6eu_ag\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID;curUrl=\"http:\\/\\/www.bing.com\\/\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;}; //]]></script><style type=\"text/css\">html{overflow:auto}a,body{font-family:\"Segoe UI\",Segoe,Tahoma,Arial,Verdana,sans-serif;font-size:small;text-decorat",
+              "retryCount": 0,
+              "repeatCount": 128,
+              "actionName": "MainAction"
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test/jobs/http_job/history/02519429308911200062:09223372036854580581",
+            "type": "Microsoft.Scheduler/jobCollections/jobs/history",
+            "name": "sdk-test/http_job/02519429308911200062:09223372036854580581",
+            "properties": {
+              "startTime": "2016-03-30T20:31:48.8799937Z",
+              "endTime": "2016-03-30T20:31:48.9737434Z",
+              "expectedExecutionTime": "2016-03-30T20:31:48.3482153Z",
+              "message": "Http Action - Response from host 'www.bing.com': 'OK' Response Headers: Vary: Accept-Encoding\r\nCache-Control: max-age=0, private\r\nP3P: CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"\r\nSet-Cookie: SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 30-Mar-2018 20:31:48 GMT; path=/, SRCHUID=V=2&GUID=C1212670CCEF4321BFB23445C4498CE8; expires=Fri, 30-Mar-2018 20:31:48 GMT; path=/, SRCHUSR=DOB=20160330; domain=.bing.com; expires=Fri, 30-Mar-2018 20:31:48 GMT; path=/, _SS=SID=3015BA567C9066B22BD1B2BE7DBB67C7; domain=.bing.com; path=/, _EDGE_S=F=1&SID=3015BA567C9066B22BD1B2BE7DBB67C7; path=/; httponly; domain=bing.com, _EDGE_V=1; path=/; httponly; expires=Fri, 30-Mar-2018 20:31:48 GMT; domain=bing.com, MUID=3ABDBBCBDA376E432326B323DB1C6F53; path=/; expires=Fri, 30-Mar-2018 20:31:48 GMT; domain=bing.com, MUIDB=3ABDBBCBDA376E432326B323DB1C6F53; path=/; httponly; expires=Fri, 30-Mar-2018 20:31:48 GMT\r\nServer: Microsoft-IIS/8.5\r\nX-MSEdge-Ref: Ref A: ACAE4679BC264B01B6E91BDA21B1B8BD Ref B: DE3EACDD74A24A0161F0DEB2C1D6CE05 Ref C: Wed Mar 30 13:31:48 2016 PST\r\nDate: Wed, 30 Mar 2016 20:31:48 GMT\r\n Body: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><script type=\"text/javascript\">//<![CDATA[  si_ST=new Date;  //]]></script><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><script type=\"text/javascript\">//<![CDATA[ _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"14\",IG:\"7B875B43CAE4476DAE94E62888611542\",EventID:\"ACAE4679BC264B01B6E91BDA21B1B8BD\",MN:\"SERP\",V:\"homepage\",P:\"SERP\",DA:\"Ch1\",CID:\"3ABDBBCBDA376E432326B323DB1C6F53\",SUIH:\"f9qHKBwAxSjU9yDSXDadGQ\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID;curUrl=\"http:\\/\\/www.bing.com\\/\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;}; //]]></script><style type=\"text/css\">html{overflow:auto}a,body{font-family:\"Segoe UI\",Segoe,Tahoma,Arial,Verdana,sans-serif;font-size:small;text-decorat",
+              "retryCount": 0,
+              "repeatCount": 127,
+              "actionName": "MainAction"
+            }
+          },
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/sdk-test/jobs/http_job/history/02519429309516517846:09223372036854580580",
+            "type": "Microsoft.Scheduler/jobCollections/jobs/history",
+            "name": "sdk-test/http_job/02519429309516517846:09223372036854580580",
+            "properties": {
+              "startTime": "2016-03-30T20:30:48.3482153Z",
+              "endTime": "2016-03-30T20:30:48.4888049Z",
+              "expectedExecutionTime": "2016-03-30T20:30:47.7442709Z",
+              "message": "Http Action - Response from host 'www.bing.com': 'OK' Response Headers: Vary: Accept-Encoding\r\nCache-Control: max-age=0, private\r\nP3P: CP=\"NON UNI COM NAV STA LOC CURa DEVa PSAa PSDa OUR IND\"\r\nSet-Cookie: SRCHD=AF=NOFORM; domain=.bing.com; expires=Fri, 30-Mar-2018 20:30:48 GMT; path=/, SRCHUID=V=2&GUID=62B22C47B9D24EEBAEE8CC978B3971BC; expires=Fri, 30-Mar-2018 20:30:48 GMT; path=/, SRCHUSR=DOB=20160330; domain=.bing.com; expires=Fri, 30-Mar-2018 20:30:48 GMT; path=/, _SS=SID=090C58B9C446614C08375051C56D607A; domain=.bing.com; path=/, _EDGE_S=F=1&SID=090C58B9C446614C08375051C56D607A; path=/; httponly; domain=bing.com, _EDGE_V=1; path=/; httponly; expires=Fri, 30-Mar-2018 20:30:48 GMT; domain=bing.com, MUID=20FCC3F3C784617336E8CB1BC6AF604B; path=/; expires=Fri, 30-Mar-2018 20:30:48 GMT; domain=bing.com, MUIDB=20FCC3F3C784617336E8CB1BC6AF604B; path=/; httponly; expires=Fri, 30-Mar-2018 20:30:48 GMT\r\nServer: Microsoft-IIS/8.5\r\nX-MSEdge-Ref: Ref A: F1FBA125DCEF4F7BAF13F91D37DF5E1D Ref B: B6101C7AC20817F9DE48A7CB1DB33508 Ref C: Wed Mar 30 13:30:48 2016 PST\r\nDate: Wed, 30 Mar 2016 20:30:47 GMT\r\n Body: <!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\"><html lang=\"en\" xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\"><script type=\"text/javascript\">//<![CDATA[  si_ST=new Date;  //]]></script><head><meta content=\"text/html; charset=utf-8\" http-equiv=\"content-type\"/><script type=\"text/javascript\">//<![CDATA[ _G={ST:(si_ST?si_ST:new Date),Mkt:\"en-US\",RTL:false,Ver:\"14\",IG:\"AE58F69F37AC49288F0C2C43DAFF0DAC\",EventID:\"F1FBA125DCEF4F7BAF13F91D37DF5E1D\",MN:\"SERP\",V:\"homepage\",P:\"SERP\",DA:\"Ch1\",CID:\"20FCC3F3C784617336E8CB1BC6AF604B\",SUIH:\"w4UFfk53pKmbBS7FR8nwCg\",gpUrl:\"\\/fd\\/ls\\/GLinkPing.aspx?\"};_G.lsUrl=\"/fd/ls/l?IG=\"+_G.IG+\"&CID=\"+_G.CID;curUrl=\"http:\\/\\/www.bing.com\\/\";function si_T(a){if(document.images){_G.GPImg=new Image;_G.GPImg.src=_G.gpUrl+'IG='+_G.IG+'&CID='+_G.CID+'&'+a;}return true;}; //]]></script><style type=\"text/css\">html{overflow:auto}a,body{font-family:\"Segoe UI\",Segoe,Tahoma,Arial,Verdana,sans-serif;font-size:small;text-decorat",
+              "retryCount": 0,
+              "repeatCount": 126,
+              "actionName": "MainAction"
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

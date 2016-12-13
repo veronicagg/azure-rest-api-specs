@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01%2FmsconcatFolder%2FSDKTestFile01.txt6286",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /SDKTestFolder01/msconcatFolder/SDKTestFile01.txt6286 [90d044a2-0841-4eb1-9a9d-2fd8c66b49e2][2016-11-10T14:37:40.6018309-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

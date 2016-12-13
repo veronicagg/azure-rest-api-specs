@@ -1,0 +1,65 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg5302",
+    "name": "csmsf1055",
+    "api-version": "2015-08-01",
+    "appServicePlan": {
+      "sku": {
+        "name": "D1",
+        "tier": "Shared",
+        "capacity": 1
+      },
+      "location": "West US",
+      "properties": {
+        "name": "csmsf1055"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg5302/providers/Microsoft.Web/serverfarms/csmsf1055",
+        "name": "csmsf1055",
+        "type": "Microsoft.Web/serverfarms",
+        "location": "West US",
+        "tags": null,
+        "properties": {
+          "serverFarmId": 0,
+          "name": "csmsf1055",
+          "workerSize": 0,
+          "workerSizeId": 0,
+          "numberOfWorkers": 0,
+          "currentWorkerSize": 0,
+          "currentWorkerSizeId": 0,
+          "currentNumberOfWorkers": 0,
+          "status": 0,
+          "webSpace": "csmrg5302-WestUSwebspace",
+          "subscription": "3312c132-fc40-493f-9c97-82d80256a313",
+          "adminSiteName": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "maximumNumberOfWorkers": 1,
+          "planName": "VirtualDedicatedPlan",
+          "adminRuntimeSiteName": null,
+          "computeMode": 0,
+          "siteMode": null,
+          "geoRegion": "West US",
+          "perSiteScaling": false,
+          "numberOfSites": 0,
+          "hostingEnvironmentId": null,
+          "tags": null,
+          "kind": null,
+          "resourceGroup": "csmrg5302"
+        },
+        "sku": {
+          "name": "D1",
+          "tier": "Shared",
+          "size": "D1",
+          "family": "D",
+          "capacity": 0
+        }
+      }
+    }
+  }
+}

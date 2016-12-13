@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg2569",
+    "publicIpAddressName": "azsmnet3708",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West Europe",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "dnsSettings": {
+          "domainNameLabel": "azsmnet5051"
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet3708",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/publicIPAddresses/azsmnet3708",
+        "etag": "W/\"cb52ebde-d59c-40c2-b0c9-3caea897e634\"",
+        "type": "Microsoft.Network/publicIPAddresses",
+        "location": "westeurope",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "491c1ac1-5c28-4264-aa2d-af3614bca972",
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Dynamic",
+          "idleTimeoutInMinutes": 4,
+          "dnsSettings": {
+            "domainNameLabel": "azsmnet5051",
+            "fqdn": "azsmnet5051.westeurope.cloudapp.azure.com"
+          }
+        }
+      }
+    }
+  }
+}

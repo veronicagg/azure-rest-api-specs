@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "jobName": "04217629-20c0-4e31-b237-d80e9c527eba",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/Subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesBackupTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault/backupJobs/04217629-20c0-4e31-b237-d80e9c527eba",
+        "name": "04217629-20c0-4e31-b237-d80e9c527eba",
+        "type": "Microsoft.RecoveryServices/vaults/backupJobs",
+        "properties": {
+          "jobType": "AzureIaaSVMJob",
+          "duration": "00:00:50.9830717",
+          "virtualMachineVersion": "Compute",
+          "extendedInfo": {
+            "tasksList": [],
+            "propertyBag": {
+              "VM Name": "pstestv2vm1",
+              "Number of Recovery Points": "1"
+            }
+          },
+          "entityFriendlyName": "pstestv2vm1",
+          "backupManagementType": "AzureIaasVM",
+          "operation": "DeleteBackupData",
+          "status": "Completed",
+          "startTime": "2016-10-10T12:45:02.5846525Z",
+          "endTime": "2016-10-10T12:45:53.5677242Z",
+          "activityId": "3dd33253-e22f-4fd0-8eb8-69e18b3aaebf"
+        }
+      }
+    }
+  }
+}

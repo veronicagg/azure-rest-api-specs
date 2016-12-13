@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "workflowName": "logicwf8413",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

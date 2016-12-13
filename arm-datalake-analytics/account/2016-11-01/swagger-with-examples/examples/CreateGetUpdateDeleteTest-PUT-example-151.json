@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19536",
+    "accountName": "testaba18483",
+    "storageAccountName": "testazureblob12834",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "accessKey": "3gWShv36b6IZkRQvRk0N6ZTX40c0mtDEXta2HxkVRpAHwRm+GCWFBLSb2EmqiGBFo0Jw0BWdktLD1P2rGJSjXQ==",
+        "suffix": "core.windows.net"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "suffix": "core.windows.net"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483/storageAccounts/testazureblob12834",
+        "name": "testazureblob12834",
+        "type": "Microsoft.DataLakeAnalytics/accounts/storageAccounts"
+      }
+    }
+  }
+}

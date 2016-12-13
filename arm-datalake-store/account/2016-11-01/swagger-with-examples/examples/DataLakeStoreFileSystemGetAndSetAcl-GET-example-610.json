@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg17246",
+    "accountName": "testadlfs16218",
+    "api-version": "2016-11-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "firewallState": "Disabled",
+          "firewallRules": [],
+          "trustedIdProviderState": "Disabled",
+          "trustedIdProviders": [],
+          "encryptionState": "Enabled",
+          "encryptionConfig": {
+            "type": "ServiceManaged"
+          },
+          "provisioningState": "Succeeded",
+          "state": "Active",
+          "endpoint": "testadlfs16218.azuredatalakestore.net",
+          "accountId": "764390ad-46dc-42c6-9776-87894da9d48c",
+          "creationTime": "2016-11-10T22:57:41.0613208Z",
+          "lastModifiedTime": "2016-11-10T22:57:41.0613208Z"
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg17246/providers/Microsoft.DataLakeStore/accounts/testadlfs16218",
+        "name": "testadlfs16218",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

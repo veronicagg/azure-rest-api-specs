@@ -1,0 +1,98 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar7432",
+    "vmScaleSetName": "vmss397",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "sku": {
+          "name": "Standard_A0",
+          "tier": "Standard",
+          "capacity": 2
+        },
+        "properties": {
+          "upgradePolicy": {
+            "mode": "Automatic"
+          },
+          "virtualMachineProfile": {
+            "osProfile": {
+              "computerNamePrefix": "test",
+              "adminUsername": "Foo12",
+              "customData": "Q3VzdG9tIGRhdGE=",
+              "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+              },
+              "secrets": []
+            },
+            "storageProfile": {
+              "osDisk": {
+                "vhdContainers": [
+                  "https://crptestar2309.blob.core.windows.net/crptestar6785"
+                ],
+                "name": "test",
+                "createOption": "FromImage",
+                "caching": "None"
+              },
+              "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2012-R2-Datacenter",
+                "version": "4.0.20151120"
+              }
+            },
+            "networkProfile": {
+              "networkInterfaceConfigurations": [
+                {
+                  "name": "vmsstestnetconfig4624",
+                  "properties": {
+                    "primary": true,
+                    "ipConfigurations": [
+                      {
+                        "name": "vmsstestnetconfig4633",
+                        "properties": {
+                          "subnet": {
+                            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar7432/providers/Microsoft.Network/virtualNetworks/vn3361/subnets/sn7797"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "extensionProfile": {
+              "extensions": [
+                {
+                  "properties": {
+                    "publisher": "Microsoft.Compute",
+                    "type": "VMAccessAgent",
+                    "typeHandlerVersion": "2.0",
+                    "autoUpgradeMinorVersion": true,
+                    "settings": "{}"
+                  },
+                  "name": "vmssext01"
+                }
+              ]
+            }
+          },
+          "provisioningState": "Succeeded",
+          "overprovision": true
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar7432/providers/Microsoft.Compute/virtualMachineScaleSets/vmss397",
+        "name": "vmss397",
+        "type": "Microsoft.Compute/virtualMachineScaleSets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

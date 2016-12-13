@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "resourceId": "tenants",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/tenants/dbe499da-a935-4b9f-b4e2-5377e76aaeef",
+            "tenantId": "dbe499da-a935-4b9f-b4e2-5377e76aaeef"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "template": {
+          "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {
+            "storageAccountName": {
+              "type": "string"
+            }
+          },
+          "resources": [
+            {
+              "type": "Microsoft.Storage/storageAccounts",
+              "name": "[parameters('storageAccountName')]",
+              "apiVersion": "2015-06-15",
+              "location": "[resourceGroup().location]",
+              "properties": {
+                "accountType": "Standard_LRS"
+              }
+            }
+          ],
+          "outputs": {}
+        },
+        "parameters": {
+          "storageAccountName": {
+            "value": "tianotest102"
+          }
+        },
+        "mode": "Incremental"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg502/providers/Microsoft.Resources/deployments/csmd2617",
+        "name": "csmd2617",
+        "properties": {
+          "parameters": {
+            "storageAccountName": {
+              "type": "String",
+              "value": "tianotest102"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Accepted",
+          "timestamp": "2016-07-26T01:39:20.7188622Z",
+          "duration": "PT1.4319186S",
+          "correlationId": "86ef52de-2adf-4da7-8377-68034c2d12ab",
+          "providers": [
+            {
+              "namespace": "Microsoft.Storage",
+              "resourceTypes": [
+                {
+                  "resourceType": "storageAccounts",
+                  "locations": [
+                    "westeurope"
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg7767",
+    "name": "csmws472",
+    "api-version": "2015-08-01",
+    "siteEnvelope": {
+      "location": "West US",
+      "properties": {
+        "cloningInfo": {
+          "sourceWebAppId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourcegroups/csmrg7767/providers/Microsoft.Web/sites/csmws5376"
+        }
+      }
+    }
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

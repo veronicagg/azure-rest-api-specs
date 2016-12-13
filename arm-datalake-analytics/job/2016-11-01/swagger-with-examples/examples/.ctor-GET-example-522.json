@@ -1,0 +1,312 @@
+{
+  "parameters": {
+    "jobIdentity": "d6b37a2c-e75d-468a-83d9-6a9856eb20d7",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "d6b37a2c-e75d-468a-83d9-6a9856eb20d7",
+        "name": "testjob17297",
+        "type": "USql",
+        "submitter": "begoldsm@microsoft.com",
+        "account": null,
+        "degreeOfParallelism": 2,
+        "priority": 0,
+        "submitTime": "Fri, 20 Nov 2015 22:19:19 GMT",
+        "startTime": null,
+        "endTime": null,
+        "state": "Starting",
+        "result": "Succeeded",
+        "errorMessage": null,
+        "storageAccounts": null,
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:19 GMT",
+            "requestedByUser": null,
+            "details": "userName:begoldsm@microsoft.com;submitMachine:N/A"
+          },
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:22 GMT",
+            "requestedByUser": null,
+            "details": "CcsAttempts:1;Status:Dispatched"
+          },
+          {
+            "newState": "Queued",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:38 GMT",
+            "requestedByUser": null,
+            "details": null
+          },
+          {
+            "newState": "Scheduling",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:40 GMT",
+            "requestedByUser": null,
+            "details": "rootProcessId:59c0ab96-e2b8-4a6b-af31-a8d02b7252ef"
+          },
+          {
+            "newState": "Starting",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:40 GMT",
+            "requestedByUser": null,
+            "details": "rootProcessNode:;runtimeVersion:kobo_vnext_4463905_21921f_restart"
+          }
+        ],
+        "properties": {
+          "owner": "begoldsm@microsoft.com",
+          "resources": [
+            {
+              "name": "__ScopeCodeGen__.dll",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.pdb",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.pdb",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "ScopeVertexDef.xml",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/ScopeVertexDef.xml",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.dll.cs",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.dll.cs",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll.cpp",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.dll.cpp",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOutput__.txt",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenCompileOutput__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOptions__.txt",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenCompileOptions__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.cppresources",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.cppresources",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__Ast__.bin",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__Ast__.bin",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "Profile",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/profile",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeRuntimeStatistics__.xml",
+              "resourcePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeRuntimeStatistics__.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "microsoft.cosmos.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.analytics.common.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.analytics.common.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.scope.interfaces.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.scope.interfaces.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.analytics.interfaces.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.analytics.interfaces.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.analytics.types.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.analytics.types.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "scopeengine.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/scopeengine.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "scopeenginemanaged.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/scopeenginemanaged.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "scoperuntimelib.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/scoperuntimelib.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.georep.manager.contract.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.georep.manager.contract.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.native.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.native.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.frontend.internal.client.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.frontend.internal.client.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.frontend.contract.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.frontend.contract.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.frontend.common.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.frontend.common.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.frontend.namespace.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.frontend.namespace.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.frontend.globalnamespace.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.frontend.globalnamespace.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.cosmos.async.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.cosmos.async.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "microsoft.search.autopilot.dll",
+              "resourcePath": "mafs://accounts/konasystem/fs/kobo01-prod-bn2/system/runtimes/kobo_vnext_4463905_21921f_restart/microsoft.search.autopilot.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.dll",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.pdb",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.pdb",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "ScopeVertexDef.xml",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/ScopeVertexDef.xml",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.dll.cs",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGen__.dll.cs",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll.cpp",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.dll.cpp",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOutput__.txt",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenCompileOutput__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOptions__.txt",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenCompileOptions__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.cppresources",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeCodeGenEngine__.cppresources",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "ScopeInternalStatistics.xml",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/ScopeInternalStatistics.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeDiagnosisInfo__.xml",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__ScopeDiagnosisInfo__.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "ScopeCompilerTrace.log",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/ScopeCompilerTrace.log",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__Ast__.bin",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__Ast__.bin",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__SystemInternalInfo__.xml",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/__SystemInternalInfo__.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "Profile_System",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/profile_system",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "InternalDebugInfo",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/InternalDebugInfo",
+              "type": "StatisticsResource"
+            }
+          ],
+          "runtimeVersion": "kobo_vnext_4463905_21921f_restart",
+          "rootProcessNodeId": "59c0ab96-e2b8-4a6b-af31-a8d02b7252ef",
+          "script": "\nDROP DATABASE IF EXISTS testdb12673; CREATE DATABASE testdb12673; \n//Create Table\nCREATE TABLE testdb12673.dbo.testtbl19839\n(\n        //Define schema of table\n        UserId          int, \n        Start           DateTime, \n        Region          string, \n        Query           string, \n        Duration        int, \n        Urls            string, \n        ClickedUrls     string,\n    INDEX idx1 //Name of index\n    CLUSTERED (Region ASC) //Column to cluster by\n    PARTITIONED BY HASH (Region) //Column to partition by\n);\nDROP FUNCTION IF EXISTS testdb12673.dbo.testtvf150;\n\n//create table weblogs on space-delimited website log data\nCREATE FUNCTION testdb12673.dbo.testtvf150()\nRETURNS @result TABLE\n(\n    s_date DateTime,\n    s_time string,\n    s_sitename string,\n    cs_method string, \n    cs_uristem string,\n    cs_uriquery string,\n    s_port int,\n    cs_username string, \n    c_ip string,\n    cs_useragent string,\n    cs_cookie string,\n    cs_referer string, \n    cs_host string,\n    sc_status int,\n    sc_substatus int,\n    sc_win32status int, \n    sc_bytes int,\n    cs_bytes int,\n    s_timetaken int\n)\nAS\nBEGIN\n\n    @result = EXTRACT\n        s_date DateTime,\n        s_time string,\n        s_sitename string,\n        cs_method string,\n        cs_uristem string,\n        cs_uriquery string,\n        s_port int,\n        cs_username string,\n        c_ip string,\n        cs_useragent string,\n        cs_cookie string,\n        cs_referer string,\n        cs_host string,\n        sc_status int,\n        sc_substatus int,\n        sc_win32status int,\n        sc_bytes int,\n        cs_bytes int,\n        s_timetaken int\n    FROM @\"/Samples/Data/WebLog.log\"\n    USING Extractors.Text(delimiter:' ');\n\nRETURN;\nEND;\nCREATE VIEW testdb12673.dbo.testview11914 \nAS \n    SELECT * FROM \n    (\n        VALUES(1,2),(2,4)\n    ) \nAS \nT(a, b);\nCREATE PROCEDURE testdb12673.dbo.testproc15434()\nAS BEGIN\n  CREATE VIEW testdb12673.dbo.testview11914 \n  AS \n    SELECT * FROM \n    (\n        VALUES(1,2),(2,4)\n    ) \n  AS \n  T(a, b);\nEND;",
+          "algebraFilePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/algebra.xml",
+          "yarnApplicationId": 3562,
+          "yarnApplicationTimeStamp": 1447901346031,
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "00:00:18.5314244",
+          "totalPausedTime": "00:00:00",
+          "totalQueuedTime": "00:00:02.3437709",
+          "totalRunningTime": "00:00:00",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

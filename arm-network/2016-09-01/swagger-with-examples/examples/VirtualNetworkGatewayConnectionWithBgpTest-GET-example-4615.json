@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "f98da156-d5e6-44a1-99d8-1b6fd3f764ff",
+    "resourceGroupName": "csmrg5498",
+    "virtualNetworkName": "azsmnet6477",
+    "subnetName": "GatewaySubnet",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "GatewaySubnet",
+        "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworks/azsmnet6477/subnets/GatewaySubnet",
+        "etag": "W/\"aa718e9f-e574-4dc5-943f-c982d0a43b14\"",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "addressPrefix": "10.0.0.0/24"
+        }
+      }
+    }
+  }
+}

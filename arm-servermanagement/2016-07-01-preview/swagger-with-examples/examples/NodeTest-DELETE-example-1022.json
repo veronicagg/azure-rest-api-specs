@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "nodeName": "rameshr12",
+    "session": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+    "api-version": "2016-07-01-preview",
+    "$expand": "output"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

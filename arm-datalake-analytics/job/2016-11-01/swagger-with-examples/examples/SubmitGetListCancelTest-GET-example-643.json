@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "$select": "jobId"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "jobId": "294a6ffb-de4e-4c91-9f0b-c80b7c499817"
+          },
+          {
+            "jobId": "32d3a192-9c60-437c-b487-d972d5180290"
+          }
+        ]
+      }
+    }
+  }
+}

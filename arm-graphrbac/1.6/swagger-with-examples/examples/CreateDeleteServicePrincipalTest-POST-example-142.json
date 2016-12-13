@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6",
+    "parameters": {
+      "appId": "9cb5327b-8a85-45bf-98e6-32d3805793ee",
+      "accountEnabled": true
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.ServicePrincipal/@Element",
+        "odata.type": "Microsoft.DirectoryServices.ServicePrincipal",
+        "objectType": "ServicePrincipal",
+        "objectId": "78ce0395-9714-42f0-9185-82161346042d",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "addIns": [],
+        "alternativeNames": [],
+        "appDisplayName": "adApplication9653",
+        "appId": "9cb5327b-8a85-45bf-98e6-32d3805793ee",
+        "appOwnerTenantId": "1273adef-00a3-4086-a51a-dbcce1857d36",
+        "appRoleAssignmentRequired": false,
+        "appRoles": [],
+        "displayName": "adApplication9653",
+        "errorUrl": null,
+        "homepage": "http://adApplication9653/home",
+        "keyCredentials": [],
+        "logoutUrl": null,
+        "oauth2Permissions": [
+          {
+            "adminConsentDescription": "Allow the application to access adApplication9653 on behalf of the signed-in user.",
+            "adminConsentDisplayName": "Access adApplication9653",
+            "id": "512b592b-fe98-4633-8273-a115b6c1820b",
+            "isEnabled": true,
+            "type": "User",
+            "userConsentDescription": "Allow the application to access adApplication9653 on your behalf.",
+            "userConsentDisplayName": "Access adApplication9653",
+            "value": "user_impersonation"
+          }
+        ],
+        "passwordCredentials": [],
+        "preferredTokenSigningKeyThumbprint": null,
+        "publisherName": "rbacCliTestDirectory",
+        "replyUrls": [
+          "http://adApplication9653/home"
+        ],
+        "samlMetadataUrl": null,
+        "servicePrincipalNames": [
+          "9cb5327b-8a85-45bf-98e6-32d3805793ee",
+          "http://adApplication9653/home"
+        ],
+        "servicePrincipalType": "Application",
+        "tags": []
+      }
+    }
+  }
+}

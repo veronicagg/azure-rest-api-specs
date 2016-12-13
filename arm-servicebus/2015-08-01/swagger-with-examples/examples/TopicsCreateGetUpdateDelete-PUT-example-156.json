@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6486",
+    "topicName": "sdk-Topics-4852",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "location": "Australia East",
+      "properties": {
+        "enableExpress": true,
+        "isAnonymousAccessible": true
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-6486/topics/sdk-Topics-4852",
+        "name": "sdk-Topics-4852",
+        "type": "Microsoft.ServiceBus/Topic",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "maxSizeInMegabytes": 1024,
+          "isAnonymousAccessible": true,
+          "enableExpress": true
+        }
+      }
+    }
+  }
+}

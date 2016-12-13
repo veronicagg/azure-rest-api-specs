@@ -1,0 +1,134 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc18197",
+    "jobName": "j12662",
+    "api-version": "2016-03-01",
+    "job": {
+      "properties": {
+        "startTime": "2015-07-13T00:00:00Z",
+        "action": {
+          "type": "ServiceBusTopic",
+          "serviceBusTopicMessage": {
+            "topicPath": "scheduler-sdk-topic",
+            "authentication": {
+              "sasKey": "rdF1YYZG4VJlOesAjSkF5nZZD0FtqYT8+3lhzNDqtx4=",
+              "sasKeyName": "RootManageSharedAccessKey",
+              "type": "SharedAccessKey"
+            },
+            "brokeredMessageProperties": {
+              "contentType": "Application/Json"
+            },
+            "customMessageProperties": {
+              "customMessagePropertyName": "customMessagePropertyValue"
+            },
+            "message": "Some Message!",
+            "namespace": "scheduler-sdk-ns",
+            "transportType": "NetMessaging"
+          },
+          "retryPolicy": {
+            "retryType": "Fixed",
+            "retryInterval": "00:01:00",
+            "retryCount": 2
+          },
+          "errorAction": {
+            "type": "ServiceBusQueue",
+            "serviceBusQueueMessage": {
+              "queueName": "scheduler-sdk-queue",
+              "authentication": {
+                "sasKey": "rdF1YYZG4VJlOesAjSkF5nZZD0FtqYT8+3lhzNDqtx4=",
+                "sasKeyName": "RootManageSharedAccessKey",
+                "type": "SharedAccessKey"
+              },
+              "brokeredMessageProperties": {
+                "contentType": "Application/Json"
+              },
+              "customMessageProperties": {
+                "customMessagePropertyName": "customMessagePropertyValue"
+              },
+              "message": "Some Message!",
+              "namespace": "scheduler-sdk-ns",
+              "transportType": "NetMessaging"
+            }
+          }
+        },
+        "recurrence": {
+          "frequency": "Week",
+          "interval": 1,
+          "count": 10000,
+          "endTime": "2020-10-10T10:10:10Z"
+        },
+        "state": "Enabled"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc18197/jobs/j12662",
+        "type": "Microsoft.Scheduler/jobCollections/jobs",
+        "name": "jc18197/j12662",
+        "properties": {
+          "startTime": "2015-07-13T00:00:00Z",
+          "action": {
+            "serviceBusTopicMessage": {
+              "topicPath": "scheduler-sdk-topic",
+              "namespace": "scheduler-sdk-ns",
+              "transportType": "netMessaging",
+              "authentication": {
+                "sasKeyName": "RootManageSharedAccessKey",
+                "type": "sharedAccessKey"
+              },
+              "message": "Some Message!",
+              "brokeredMessageProperties": {
+                "contentType": "Application/Json"
+              },
+              "customMessageProperties": {
+                "customMessagePropertyName": "customMessagePropertyValue"
+              }
+            },
+            "type": "ServiceBusTopic",
+            "retryPolicy": {
+              "retryType": "fixed",
+              "retryInterval": "00:01:00",
+              "retryCount": 2
+            },
+            "errorAction": {
+              "serviceBusQueueMessage": {
+                "queueName": "scheduler-sdk-queue",
+                "namespace": "scheduler-sdk-ns",
+                "transportType": "netMessaging",
+                "authentication": {
+                  "sasKeyName": "RootManageSharedAccessKey",
+                  "type": "sharedAccessKey"
+                },
+                "message": "Some Message!",
+                "brokeredMessageProperties": {
+                  "contentType": "Application/Json"
+                },
+                "customMessageProperties": {
+                  "customMessagePropertyName": "customMessagePropertyValue"
+                }
+              },
+              "type": "ServiceBusQueue"
+            }
+          },
+          "recurrence": {
+            "frequency": "week",
+            "count": 10000,
+            "endTime": "2020-10-10T10:10:10Z",
+            "interval": 1
+          },
+          "state": "enabled",
+          "status": {
+            "nextExecutionTime": "2016-04-04T00:00:00Z",
+            "executionCount": 0,
+            "failureCount": 0,
+            "faultedCount": 0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "dad13bc8-0b39-493b-984f-ef9b0ebf8fc7",
+    "appName": "com.microsoft.skydrive.IOS",
+    "api-version": "2015-01-14-preview",
+    "$filter": "platform%20eq%20'ios'",
+    "parameters": {
+      "properties": {
+        "url": "https://management.azure.com/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.skydrive.IOS"
+      }
+    }
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

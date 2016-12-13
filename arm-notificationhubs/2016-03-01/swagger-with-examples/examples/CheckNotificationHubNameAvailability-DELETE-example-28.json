@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH3343",
+    "namespaceName": "HydraNH-Namespace7522",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

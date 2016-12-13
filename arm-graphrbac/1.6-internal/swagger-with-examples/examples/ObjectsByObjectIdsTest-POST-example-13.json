@@ -1,0 +1,53 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6-internal",
+    "parameters": {
+      "objectIds": [
+        "19848de6-d9f0-47ae-b829-33a7d17d89f6",
+        "cdf8528e-d940-48b2-aec8-f8737a6ec387",
+        "2f8c5f43-d769-45d2-833a-b46a412469be"
+      ],
+      "types": [
+        "StubDirectoryObject"
+      ],
+      "includeDirectoryObjectReferences": false
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.StubDirectoryObject",
+            "objectType": "Group",
+            "objectId": "2f8c5f43-d769-45d2-833a-b46a412469be",
+            "deletionTimestamp": null,
+            "displayName": "RichardTestGroup",
+            "mail": null,
+            "userPrincipalName": null
+          },
+          {
+            "odata.type": "Microsoft.DirectoryServices.StubDirectoryObject",
+            "objectType": "User",
+            "objectId": "cdf8528e-d940-48b2-aec8-f8737a6ec387",
+            "deletionTimestamp": null,
+            "displayName": "Adrian Drumea",
+            "mail": null,
+            "userPrincipalName": "adrumea_microsoft.com#EXT#@rbacCliTest.onmicrosoft.com"
+          },
+          {
+            "odata.type": "Microsoft.DirectoryServices.StubDirectoryObject",
+            "objectType": "Group",
+            "objectId": "19848de6-d9f0-47ae-b829-33a7d17d89f6",
+            "deletionTimestamp": null,
+            "displayName": "testGroup9",
+            "mail": null,
+            "userPrincipalName": null
+          }
+        ]
+      }
+    }
+  }
+}

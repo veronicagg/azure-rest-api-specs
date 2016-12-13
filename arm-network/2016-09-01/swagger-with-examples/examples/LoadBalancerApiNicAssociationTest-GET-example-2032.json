@@ -1,0 +1,160 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "csmrg25",
+    "loadBalancerName": "azsmnet3522",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet3522",
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522",
+        "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+        "type": "Microsoft.Network/loadBalancers",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "350ca240-548d-42e3-b2dc-a15b8da28a37",
+          "frontendIPConfigurations": [
+            {
+              "name": "azsmnet9647",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/frontendIPConfigurations/azsmnet9647",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/publicIPAddresses/azsmnet4721"
+                },
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/loadBalancingRules/azsmnet1645"
+                  }
+                ],
+                "inboundNatRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/inboundNatRules/azsmnet5822"
+                  },
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/inboundNatRules/azsmnet5381"
+                  }
+                ]
+              }
+            }
+          ],
+          "backendAddressPools": [
+            {
+              "name": "azsmnet3325",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/backendAddressPools/azsmnet3325",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "backendIPConfigurations": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/networkInterfaces/azsmnet5338/ipConfigurations/ipconfig"
+                  },
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/networkInterfaces/azsmnet5719/ipConfigurations/ipconfig"
+                  }
+                ],
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/loadBalancingRules/azsmnet1645"
+                  }
+                ]
+              }
+            }
+          ],
+          "loadBalancingRules": [
+            {
+              "name": "azsmnet1645",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/loadBalancingRules/azsmnet1645",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/frontendIPConfigurations/azsmnet9647"
+                },
+                "frontendPort": 80,
+                "backendPort": 80,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 15,
+                "protocol": "Tcp",
+                "loadDistribution": "Default",
+                "backendAddressPool": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/backendAddressPools/azsmnet3325"
+                },
+                "probe": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/probes/azsmnet9912"
+                }
+              }
+            }
+          ],
+          "probes": [
+            {
+              "name": "azsmnet9912",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/probes/azsmnet9912",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "protocol": "Http",
+                "port": 80,
+                "requestPath": "healthcheck.aspx",
+                "intervalInSeconds": 10,
+                "numberOfProbes": 2,
+                "loadBalancingRules": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/loadBalancingRules/azsmnet1645"
+                  }
+                ]
+              }
+            }
+          ],
+          "inboundNatRules": [
+            {
+              "name": "azsmnet5822",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/inboundNatRules/azsmnet5822",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/frontendIPConfigurations/azsmnet9647"
+                },
+                "frontendPort": 3389,
+                "backendPort": 3389,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 15,
+                "protocol": "Tcp",
+                "backendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/networkInterfaces/azsmnet5338/ipConfigurations/ipconfig"
+                }
+              }
+            },
+            {
+              "name": "azsmnet5381",
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/inboundNatRules/azsmnet5381",
+              "etag": "W/\"eb4591c3-ba89-4b01-a0fa-a92e6d28b867\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/loadBalancers/azsmnet3522/frontendIPConfigurations/azsmnet9647"
+                },
+                "frontendPort": 3390,
+                "backendPort": 3389,
+                "enableFloatingIP": false,
+                "idleTimeoutInMinutes": 15,
+                "protocol": "Tcp",
+                "backendIPConfiguration": {
+                  "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg25/providers/Microsoft.Network/networkInterfaces/azsmnet3894/ipConfigurations/ipconfig"
+                }
+              }
+            }
+          ],
+          "outboundNatRules": [],
+          "inboundNatPools": []
+        }
+      }
+    }
+  }
+}

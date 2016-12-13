@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH6574",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/111c36dc-4047-4c69-acd5-301072ff1fc2/resourceGroups/TestRg-NH6574/providers/Microsoft.NotificationHubs/namespaces/HydraNH-Namespace7572",
+            "name": "HydraNH-Namespace7572",
+            "type": "Microsoft.NotificationHubs/namespaces",
+            "location": "South Central US",
+            "kind": "NotificationHub",
+            "sku": {
+              "name": "Standard"
+            },
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "metricId": null,
+              "status": "Active",
+              "createdAt": "2016-09-22T22:32:32.097Z",
+              "serviceBusEndpoint": "https://HydraNH-Namespace7572.servicebus.windows.net:443/",
+              "enabled": true,
+              "critical": false,
+              "scaleUnit": "SN1-001",
+              "dataCenter": "SN1",
+              "updatedAt": "2016-09-22T22:32:55.47Z",
+              "namespaceType": "NotificationHub"
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

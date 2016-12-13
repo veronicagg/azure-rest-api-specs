@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg6711",
+    "name": "cswhp4715",
+    "api-version": "2015-08-01",
+    "deleteMetrics": "True",
+    "deleteAllSlots": "True"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

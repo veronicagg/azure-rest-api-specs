@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg12654",
+    "accountName": "testadlfs1908",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "firewallState": "Disabled",
+          "firewallRules": [],
+          "provisioningState": "Succeeded",
+          "state": "Active",
+          "endpoint": "testadlfs1908.azuredatalakestore.net",
+          "creationTime": "2016-01-07T01:20:15.7135582Z",
+          "lastModifiedTime": "2016-01-07T01:20:15.7135582Z"
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg12654/providers/Microsoft.DataLakeStore/accounts/testadlfs1908",
+        "name": "testadlfs1908",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

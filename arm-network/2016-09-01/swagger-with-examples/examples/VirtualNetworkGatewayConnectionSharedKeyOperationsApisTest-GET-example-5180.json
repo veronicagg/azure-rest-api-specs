@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg4490",
+    "virtualNetworkGatewayConnectionName": "azsmnet209",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet209",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/connections/azsmnet209",
+        "etag": "W/\"42ac8c33-84e2-4be5-a804-7702d45a7f78\"",
+        "type": "Microsoft.Network/connections",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "39016de6-6554-4ad5-9df1-fec3546c0736",
+          "virtualNetworkGateway1": {
+            "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworkGateways/azsmnet7390"
+          },
+          "localNetworkGateway2": {
+            "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/localNetworkGateways/azsmnet9140"
+          },
+          "connectionType": "IPsec",
+          "routingWeight": 3,
+          "sharedKey": "abc",
+          "connectionStatus": "NotConnected",
+          "ingressBytesTransferred": 0,
+          "egressBytesTransferred": 0
+        }
+      }
+    }
+  }
+}

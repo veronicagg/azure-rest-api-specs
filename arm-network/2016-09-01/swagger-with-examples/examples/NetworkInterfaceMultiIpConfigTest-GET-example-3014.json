@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8219",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "azsmnet6771",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/networkInterfaces/azsmnet6771",
+            "etag": "W/\"00c6388f-d48e-4cbb-aeb8-6a5cc895146e\"",
+            "type": "Microsoft.Network/networkInterfaces",
+            "location": "eastus",
+            "tags": {
+              "key": "value"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "16b7b059-31dd-4bbb-b060-9a3c087fc0b7",
+              "ipConfigurations": [
+                {
+                  "name": "azsmnet3794",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/networkInterfaces/azsmnet6771/ipConfigurations/azsmnet3794",
+                  "etag": "W/\"00c6388f-d48e-4cbb-aeb8-6a5cc895146e\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/publicIPAddresses/azsmnet2982"
+                    },
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/virtualNetworks/azsmnet3994/subnets/azsmnet3029"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                  }
+                },
+                {
+                  "name": "azsmnet8440",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/networkInterfaces/azsmnet6771/ipConfigurations/azsmnet8440",
+                  "etag": "W/\"00c6388f-d48e-4cbb-aeb8-6a5cc895146e\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.5",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/virtualNetworks/azsmnet3994/subnets/azsmnet3029"
+                    },
+                    "primary": false,
+                    "privateIPAddressVersion": "IPv4"
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": [],
+                "internalDomainNameSuffix": "np0mbw1de2dudoifpkliuvmt0b.bx.internal.cloudapp.net"
+              },
+              "enableIPForwarding": false
+            }
+          }
+        ]
+      }
+    }
+  }
+}

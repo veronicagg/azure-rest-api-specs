@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "destinationPath": "SDKTestFolder01%2FSDKTestFile01.txt2757",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "APPEND",
+    "write": "true",
+    "offset": "42",
+    "append": "true"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

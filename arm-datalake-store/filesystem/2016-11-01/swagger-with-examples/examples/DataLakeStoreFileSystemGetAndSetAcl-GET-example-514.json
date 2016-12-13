@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "listFilePath": "%2F",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETACLSTATUS"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "AclStatus": {
+          "entries": [
+            "user::rwx",
+            "group::rwx",
+            "other::rwx"
+          ],
+          "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "group": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "permission": "777",
+          "stickyBit": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8624",
+    "profileName": "profile4641",
+    "endpointName": "endpoint8921",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "endpoint8921",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup8624/providers/Microsoft.Cdn/profiles/profile4641/endpoints/endpoint8921",
+        "type": "Microsoft.Cdn/profiles/endpoints",
+        "tags": {
+          "kay1": "value1"
+        },
+        "location": "WestUs",
+        "properties": {
+          "hostName": "endpoint8921.azureedge.net",
+          "originHostHeader": "www.bing.com",
+          "provisioningState": "Succeeded",
+          "resourceState": "Stopped",
+          "isHttpAllowed": true,
+          "isHttpsAllowed": true,
+          "queryStringCachingBehavior": "IgnoreQueryString",
+          "originPath": "/photos",
+          "origins": [
+            {
+              "name": "origin7255",
+              "properties": {
+                "hostName": "custom.hello.com",
+                "httpPort": null,
+                "httpsPort": null
+              }
+            }
+          ],
+          "customDomains": [],
+          "contentTypesToCompress": [
+            "text/html",
+            "text/css"
+          ],
+          "isCompressionEnabled": true,
+          "optimizationType": null,
+          "geoFilters": []
+        }
+      }
+    }
+  }
+}

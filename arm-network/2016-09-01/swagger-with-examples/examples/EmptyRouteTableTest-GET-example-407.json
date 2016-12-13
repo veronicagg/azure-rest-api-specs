@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg6085",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "azsmnet7852",
+            "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6085/providers/Microsoft.Network/routeTables/azsmnet7852",
+            "etag": "W/\"e0b65505-2df6-4db6-bea7-7b6d5db7826d\"",
+            "type": "Microsoft.Network/routeTables",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "fbcd53a2-d5bd-4f25-8a23-826a46d68ef1",
+              "routes": []
+            }
+          }
+        ]
+      }
+    }
+  }
+}

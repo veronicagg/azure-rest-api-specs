@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg4808",
+    "routeTableName": "azsmnet8176",
+    "routeName": "azsmnet7452",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

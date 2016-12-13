@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "80c77c76-74ba-4c8c-8229-4c3b2957990c",
+    "resourceGroupName": "amlrg8762",
+    "webServiceName": "amlws2047",
+    "api-version": "2016-05-01-preview",
+    "monitor": "true"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg8728",
+    "routeTableName": "azsmnet6082",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet6082",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg8728/providers/Microsoft.Network/routeTables/azsmnet6082",
+        "etag": "W/\"c9fdeab8-48f9-4c38-92b0-49b62d549d9b\"",
+        "type": "Microsoft.Network/routeTables",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "c7ba4e61-73b0-46f0-b8d9-2f820ecfeff4",
+          "routes": [
+            {
+              "name": "azsmnet9901",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg8728/providers/Microsoft.Network/routeTables/azsmnet6082/routes/azsmnet9901",
+              "etag": "W/\"c9fdeab8-48f9-4c38-92b0-49b62d549d9b\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.1.0/24",
+                "nextHopType": "VirtualAppliance",
+                "nextHopIpAddress": "23.108.1.1"
+              }
+            },
+            {
+              "name": "azsmnet640",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg8728/providers/Microsoft.Network/routeTables/azsmnet6082/routes/azsmnet640",
+              "etag": "W/\"c9fdeab8-48f9-4c38-92b0-49b62d549d9b\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.1.0/24",
+                "nextHopType": "VnetLocal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

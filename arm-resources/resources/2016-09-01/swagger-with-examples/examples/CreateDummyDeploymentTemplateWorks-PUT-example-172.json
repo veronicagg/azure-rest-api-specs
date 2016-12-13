@@ -1,0 +1,110 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview",
+    "parameters": {
+      "properties": {
+        "templateLink": {
+          "uri": "https://testtemplates.blob.core.windows.net/templates/dummytemplate.js"
+        },
+        "parameters": {
+          "string": {
+            "value": "myvalue"
+          },
+          "securestring": {
+            "value": "myvalue"
+          },
+          "int": {
+            "value": 42
+          },
+          "bool": {
+            "value": true
+          }
+        },
+        "mode": "Incremental"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg8214/deployments/csmd6558",
+        "name": "csmd6558",
+        "properties": {
+          "templateLink": {
+            "uri": "https://testtemplates.blob.core.windows.net/templates/dummytemplate.js",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "string": {
+              "type": "String",
+              "value": "myvalue"
+            },
+            "securestring": {
+              "type": "SecureString"
+            },
+            "int": {
+              "type": "Int",
+              "value": 42
+            },
+            "bool": {
+              "type": "Bool",
+              "value": true
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Accepted",
+          "timestamp": "2015-12-04T00:24:48.5196125Z",
+          "duration": "PT1.3278854S",
+          "correlationId": "77809f02-a2c8-4d42-9bf3-9a16d23507bf",
+          "providers": [
+            {
+              "namespace": "ResourceProviderTestHost",
+              "resourceTypes": [
+                {
+                  "resourceType": "TestResourceType",
+                  "locations": [
+                    null,
+                    "devfabric"
+                  ]
+                },
+                {
+                  "resourceType": "TestResourceType/TestResourceTypeNestedOne",
+                  "locations": [
+                    null
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg8214/providers/ResourceProviderTestHost/TestResourceType/resource1",
+                  "resourceType": "ResourceProviderTestHost/TestResourceType",
+                  "resourceName": "resource1"
+                }
+              ],
+              "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg8214/providers/ResourceProviderTestHost/TestResourceType/resource1/TestResourceTypeNestedOne/nestedresource1",
+              "resourceType": "ResourceProviderTestHost/TestResourceType/TestResourceTypeNestedOne",
+              "resourceName": "resource1/nestedresource1"
+            },
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg8214/providers/ResourceProviderTestHost/TestResourceType/resource1",
+                  "resourceType": "ResourceProviderTestHost/TestResourceType",
+                  "resourceName": "resource1"
+                }
+              ],
+              "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg8214/providers/ResourceProviderTestHost/TestResourceType/resource2",
+              "resourceType": "ResourceProviderTestHost/TestResourceType",
+              "resourceName": "resource2"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg7727",
+    "networkInterfaceName": "azsmnet4682",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "ipConfigurations": [
+          {
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7727/providers/Microsoft.Network/virtualNetworks/azsmnet8418/subnets/azsmnet6595"
+              }
+            },
+            "name": "azsmnet8404"
+          }
+        ],
+        "enableIPForwarding": false
+      },
+      "location": "West US",
+      "tags": {
+        "key": "value"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet4682",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7727/providers/Microsoft.Network/networkInterfaces/azsmnet4682",
+        "etag": "W/\"e11d6788-0f5a-4474-b07e-160df313fe1a\"",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "7d6b5cca-b79f-4864-9ef4-c15a17a31419",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet8404",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7727/providers/Microsoft.Network/networkInterfaces/azsmnet4682/ipConfigurations/azsmnet8404",
+              "etag": "W/\"e11d6788-0f5a-4474-b07e-160df313fe1a\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.4",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7727/providers/Microsoft.Network/virtualNetworks/azsmnet8418/subnets/azsmnet6595"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "vlmtkxhqcrjuppuzwmwcy12tbb.dx.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

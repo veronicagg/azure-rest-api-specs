@@ -1,0 +1,93 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg2569",
+    "networkInterfaceName": "dualstacknic353",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West Europe",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "ipv4ipconfig792",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/virtualNetworks/azsmnet5425/subnets/azsmnet9491"
+              },
+              "publicIPAddress": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/publicIPAddresses/azsmnet3708"
+              }
+            }
+          },
+          {
+            "name": "ipv6ipconfig4450",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "privateIPAddressVersion": "IPv6",
+              "primary": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "dualstacknic353",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353",
+        "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+        "type": "Microsoft.Network/networkInterfaces",
+        "location": "westeurope",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "046a2049-fc8f-4902-bab3-1fa4148d6845",
+          "ipConfigurations": [
+            {
+              "name": "ipv4ipconfig792",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353/ipConfigurations/ipv4ipconfig792",
+              "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.4",
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/publicIPAddresses/azsmnet3708"
+                },
+                "subnet": {
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/virtualNetworks/azsmnet5425/subnets/azsmnet9491"
+                },
+                "primary": false,
+                "privateIPAddressVersion": "IPv4"
+              }
+            },
+            {
+              "name": "ipv6ipconfig4450",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353/ipConfigurations/ipv6ipconfig4450",
+              "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAllocationMethod": "Dynamic",
+                "primary": true,
+                "privateIPAddressVersion": "IPv6"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "eryjmui34cbu5omlmobeil1w1g.ax.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar4034",
+    "vmName": "vm2186",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "plan": {
+        "name": "sandbox_single-node",
+        "publisher": "datastax",
+        "product": "datastax-enterprise-non-production-use-only"
+      },
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_A0"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "datastax",
+            "offer": "datastax-enterprise-non-production-use-only",
+            "sku": "sandbox_single-node",
+            "version": "1.0.0"
+          },
+          "osDisk": {
+            "name": "test",
+            "vhd": {
+              "uri": "https://crptestar5083.blob.core.windows.net/crptestar5855/oscrptestar2130.vhd"
+            },
+            "caching": "None",
+            "createOption": "fromImage"
+          }
+        },
+        "osProfile": {
+          "computerName": "test",
+          "adminUsername": "Foo12",
+          "adminPassword": "BaR@123crptestar4034"
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar4034/providers/Microsoft.Network/networkInterfaces/nic4911"
+            }
+          ]
+        },
+        "availabilitySet": {
+          "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar4034/providers/Microsoft.Compute/availabilitySets/as2250"
+        }
+      },
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "ResourcePurchaseValidationFailed",
+          "message": "User failed validation to purchase resources. Error message: 'Offer with PublisherId: datastax and OfferId: datastax-enterprise-non-production-use-only not found in Azure Data Market. If this offer has been created recently, please allow upto 30 minutes for this offer to be available for Purchase.'"
+        }
+      }
+    }
+  }
+}

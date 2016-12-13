@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "filePath": "SDKTestFolder01%2FSDKTestFile01.txt3258",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "SETEXPIRY",
+    "write": "true",
+    "expiryOption": "RelativeToNow",
+    "expireTime": "120000"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

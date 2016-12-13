@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6099",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "location": "Australia East",
+      "sku": {
+        "name": "Standard",
+        "tier": "Standard"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-6099",
+        "name": "sdk-Namespace-6099",
+        "type": "Microsoft.EventHub/namespaces",
+        "location": "Australia East",
+        "kind": "EventHub",
+        "sku": {
+          "name": "Standard",
+          "tier": "Standard",
+          "capacity": 1
+        },
+        "tags": {},
+        "properties": {
+          "provisioningState": "Unknown",
+          "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-6099",
+          "enabled": false,
+          "namespaceType": "EventHub",
+          "messagingSku": 2
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup5114",
+    "profileName": "profile7153",
+    "api-version": "2016-10-02",
+    "profile": {
+      "sku": {
+        "name": "Standard_Verizon"
+      },
+      "location": "WestUs",
+      "tags": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "profile7153",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup5114/providers/Microsoft.Cdn/profiles/profile7153",
+        "type": "Microsoft.Cdn/profiles",
+        "tags": {
+          "key1": "value1",
+          "key2": "value2"
+        },
+        "location": "WestUs",
+        "sku": {
+          "name": "Standard_Verizon"
+        },
+        "properties": {
+          "provisioningState": "Creating",
+          "resourceState": "Creating"
+        }
+      }
+    }
+  }
+}

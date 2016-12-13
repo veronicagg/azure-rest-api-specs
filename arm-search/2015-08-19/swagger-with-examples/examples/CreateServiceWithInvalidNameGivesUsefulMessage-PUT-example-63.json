@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet9087",
+    "searchServiceName": "----badname",
+    "api-version": "2015-08-19",
+    "service": {
+      "properties": {
+        "replicaCount": 1,
+        "partitionCount": 1
+      },
+      "sku": {
+        "name": "free"
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidServiceName",
+          "message": "Service name '----badname' is invalid: Service name must only contain lowercase letters, digits or dashes, cannot start or end with or contain consecutive dashes and is limited to 60 characters.",
+          "target": null,
+          "details": null
+        }
+      }
+    }
+  }
+}

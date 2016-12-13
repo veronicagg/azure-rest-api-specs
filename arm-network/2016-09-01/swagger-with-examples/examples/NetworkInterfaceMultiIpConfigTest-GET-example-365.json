@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8219",
+    "publicIpAddressName": "azsmnet2982",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet2982",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8219/providers/Microsoft.Network/publicIPAddresses/azsmnet2982",
+        "etag": "W/\"792544b7-9ccc-4263-8121-b3db30c6e24e\"",
+        "type": "Microsoft.Network/publicIPAddresses",
+        "location": "eastus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "13b31053-93fa-48fe-8a9a-65b6212644c7",
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Dynamic",
+          "idleTimeoutInMinutes": 4,
+          "dnsSettings": {
+            "domainNameLabel": "azsmnet9820",
+            "fqdn": "azsmnet9820.eastus.cloudapp.azure.com"
+          }
+        }
+      }
+    }
+  }
+}

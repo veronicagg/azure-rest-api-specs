@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg2569",
+    "virtualNetworkName": "azsmnet5425",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West Europe",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "azsmnet9491",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet5425",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/virtualNetworks/azsmnet5425",
+        "etag": "W/\"62cd09ce-ccf3-47b2-8530-e789a882a69e\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "westeurope",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "51967024-f01d-4f83-b98b-6382442f76de",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet9491",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/virtualNetworks/azsmnet5425/subnets/azsmnet9491",
+              "etag": "W/\"62cd09ce-ccf3-47b2-8530-e789a882a69e\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

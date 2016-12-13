@@ -1,0 +1,75 @@
+{
+  "parameters": {
+    "subscriptionId": "015b5c33-7725-4fc2-9c81-c9b07de44668",
+    "resourceGroupName": "pslibtest5799",
+    "vmName": "vm2026",
+    "api-version": "2015-05-01-preview",
+    "monitor": "true",
+    "parameters": {
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_A0"
+        },
+        "storageProfile": {
+          "sourceImage": {
+            "id": "/015b5c33-7725-4fc2-9c81-c9b07de44668/services/images/a699494373c04fc0bc8f2bb1389d6106__Windows-Server-2012-Datacenter-201503.01-en.us-127GB.vhd"
+          },
+          "osDisk": {
+            "name": "test",
+            "vhd": {
+              "uri": "https://pslibtest1380.blob.core.windows.net/pslibtest1247/ospslibtest7327.vhd"
+            },
+            "caching": "None",
+            "createOption": "fromImage"
+          }
+        },
+        "osProfile": {
+          "computerName": "test",
+          "adminUsername": "Foo12",
+          "adminPassword": "BaR@123pslibtest5799",
+          "secrets": [
+            {
+              "sourceVault": {
+                "id": "/subscriptions/05cacd0c-6f9b-492e-b673-d8be41a7644f/resourceGroups/RgTest1/providers/Microsoft.KeyVault/vaults/TestVault123"
+              },
+              "vaultCertificates": [
+                {
+                  "certificateUrl": "https://testvault123.vault.azure.net/secrets/Test1/514ceb769c984379a7e0230bdd703272",
+                  "certificateStore": "MY"
+                }
+              ]
+            }
+          ]
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "properties": {},
+              "id": "/subscriptions/015b5c33-7725-4fc2-9c81-c9b07de44668/resourceGroups/pslibtest5799/providers/Microsoft.Network/networkInterfaces/azsmnet6511"
+            }
+          ]
+        },
+        "availabilitySet": {
+          "id": "/subscriptions/015b5c33-7725-4fc2-9c81-c9b07de44668/resourceGroups/pslibtest5799/providers/Microsoft.Compute/availabilitySets/as676"
+        }
+      },
+      "name": "vm2026",
+      "type": "Microsoft.Compute/virtualMachines",
+      "location": "EastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "403": {
+      "body": {
+        "error": {
+          "code": "LinkedAuthorizationFailed",
+          "message": "The client has permission to perform action 'Microsoft.Compute/virtualMachines/write' on scope '/subscriptions/015b5c33-7725-4fc2-9c81-c9b07de44668/resourceGroups/pslibtest5799/providers/Microsoft.Compute/virtualMachines/vm2026'; however, it does not have permission to perform action 'Microsoft.KeyVault/vaults/deploy/action' on the linked scope '/subscriptions/05cacd0c-6f9b-492e-b673-d8be41a7644f/resourceGroups/RgTest1/providers/Microsoft.KeyVault/vaults/TestVault123'."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01",
+    "$filter": "resourceType%20eq%20'Microsoft.Web%2Fsites'"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

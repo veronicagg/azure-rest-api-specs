@@ -1,0 +1,482 @@
+{
+  "parameters": {
+    "subscriptionId": "0a4ae132-d38b-487e-9051-a22d852b2834",
+    "resourceGroupName": "csmrg769",
+    "applicationGatewayName": "azsmnet5816",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "sku": {
+          "name": "WAF_Medium",
+          "tier": "WAF",
+          "capacity": 2
+        },
+        "sslPolicy": {
+          "disabledSslProtocols": [
+            "TLSv1_0",
+            "TLSv1_1"
+          ]
+        },
+        "gatewayIPConfigurations": [
+          {
+            "properties": {
+              "subnet": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet6012"
+              }
+            },
+            "name": "azsmnet6005"
+          }
+        ],
+        "authenticationCertificates": [
+          {
+            "properties": {
+              "data": "MIIDTzCCAjegAwIBAgIQj5oTlR6oyJ1NlX9Wb9aFyjANBgkqhkiG9w0BAQsFADAwMS4wLAYDVQQDEyVBcHBsaWNhdGlvbkdhdGV3YXlTc2xDZXJ0LVVuaXRUZXN0LTAxMB4XDTE2MDIxNzA3MDc1M1oXDTM5MTIzMTIzNTk1OVowMDEuMCwGA1UEAxMlQXBwbGljYXRpb25HYXRld2F5U3NsQ2VydC1Vbml0VGVzdC0wMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANOUOFVmm+P4ht/qaiGZaiMzZSXwqGP8W/XWZRfJSc1mS6B4zBm8MtndmO9NbPUeGetk3E4jI0egP7NufuTAtfZY5nG9/gsZh8Hp4o+x+6F1wCUtK5pQ5Fne4Vwg0Q9k1CgUfQfK0zEoanOTEylcyp1nVpoGc3v4FZ9pQr8/xQ7+PSwgNpmGpU1gmgorDlXIO8jiKb+WfSoPAhHcavoPFg6DeGv30AK2m8ULFezOqbprrozRxXaKzt8fBaDSP1XMakFaO6ffZU4uNgrehW4zMnpdgAjT5koymDKGAfl/7+5QpLxSKc2478J+PvTwy/rfWKJLbEImoM7WE3imWgrHUNMCAwEAAaNlMGMwYQYDVR0BBFowWIAQxDXqD2PYxSlriJ6HuzZ+b6EyMDAxLjAsBgNVBAMTJUFwcGxpY2F0aW9uR2F0ZXdheVNzbENlcnQtVW5pdFRlc3QtMDGCEI+aE5UeqMidTZV/Vm/WhcowDQYJKoZIhvcNAQELBQADggEBADSC6PHkVYmoVOyyW2g7q3GG3MmXa43/HQNTM+pT3HENAlhGg8T9EFrOQ/0QAoEQbrtsP8Isj5u2Bd4MOlYA180ExyfL/NFb7QpXq/pRLbePMQAQicdSvk/9RyrNRBfNjT2KNlBp3RZtCkJjQWlc5ylWydPy4JPUZxit/5ygCRT+cmN1ioF469Ki8hzBlKmrDg8jkFUwFyD7B0fEfPP0gSZI3F6HqgCK2hzBTjujZjddZyn2XxXlxLu57C83CNPP8fbsGW2CwolgmYvt+dJsdDnT7VKX5RS4cOPp/JGG7QdhzqVBoK0vZP6gHEAOPoqBVUWf8SmlVuAVGmDl8EjLnK8="
+            },
+            "name": "azsmnet1422"
+          }
+        ],
+        "frontendIPConfigurations": [
+          {
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet6012"
+              }
+            },
+            "name": "azsmnet1400"
+          }
+        ],
+        "frontendPorts": [
+          {
+            "properties": {
+              "port": 80
+            },
+            "name": "azsmnet8510"
+          },
+          {
+            "properties": {
+              "port": 88
+            },
+            "name": "azsmnet667"
+          }
+        ],
+        "probes": [
+          {
+            "properties": {
+              "protocol": "Http",
+              "host": "probe.com",
+              "path": "/path/path.htm",
+              "interval": 17,
+              "timeout": 17,
+              "unhealthyThreshold": 5
+            },
+            "name": "azsmnet9977"
+          }
+        ],
+        "backendAddressPools": [
+          {
+            "properties": {
+              "backendAddresses": [
+                {
+                  "ipAddress": "104.42.6.202"
+                },
+                {
+                  "ipAddress": "23.99.1.115"
+                }
+              ]
+            },
+            "name": "azsmnet3426"
+          },
+          {
+            "name": "azsmnet9377"
+          }
+        ],
+        "backendHttpSettingsCollection": [
+          {
+            "properties": {
+              "port": 80,
+              "protocol": "Http",
+              "cookieBasedAffinity": "Disabled",
+              "requestTimeout": 69,
+              "probe": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/probes/azsmnet9977"
+              }
+            },
+            "name": "azsmnet9782"
+          },
+          {
+            "properties": {
+              "port": 443,
+              "protocol": "Https",
+              "cookieBasedAffinity": "Enabled",
+              "authenticationCertificates": [
+                {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/authenticationCertificates/azsmnet1422"
+                }
+              ]
+            },
+            "name": "azsmnet5127"
+          }
+        ],
+        "httpListeners": [
+          {
+            "properties": {
+              "frontendIPConfiguration": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendIPConfigurations/azsmnet1400"
+              },
+              "frontendPort": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet8510"
+              },
+              "protocol": "Http"
+            },
+            "name": "azsmnet5077"
+          },
+          {
+            "properties": {
+              "frontendIPConfiguration": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendIPConfigurations/azsmnet1400"
+              },
+              "frontendPort": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet667"
+              },
+              "protocol": "Http"
+            },
+            "name": "azsmnet7866"
+          }
+        ],
+        "requestRoutingRules": [
+          {
+            "properties": {
+              "ruleType": "Basic",
+              "backendAddressPool": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet3426"
+              },
+              "backendHttpSettings": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet9782"
+              },
+              "httpListener": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet5077"
+              }
+            },
+            "name": "azsmnet6462"
+          },
+          {
+            "properties": {
+              "ruleType": "Basic",
+              "backendAddressPool": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet3426"
+              },
+              "backendHttpSettings": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet5127"
+              },
+              "httpListener": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet7866"
+              }
+            },
+            "name": "azsmnet9951"
+          }
+        ],
+        "webApplicationFirewallConfiguration": {
+          "enabled": true,
+          "firewallMode": "Prevention"
+        }
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet5816",
+        "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816",
+        "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+        "type": "Microsoft.Network/applicationGateways",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "b2f17f49-1c3a-4a0f-83f4-4baeaeb4d471",
+          "sku": {
+            "name": "WAF_Medium",
+            "tier": "WAF",
+            "capacity": 2
+          },
+          "gatewayIPConfigurations": [
+            {
+              "name": "azsmnet6005",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/gatewayIPConfigurations/azsmnet6005",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "subnet": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet6012"
+                }
+              }
+            }
+          ],
+          "sslCertificates": [],
+          "authenticationCertificates": [
+            {
+              "name": "azsmnet1422",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/authenticationCertificates/azsmnet1422",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "data": "MIIDTzCCAjegAwIBAgIQj5oTlR6oyJ1NlX9Wb9aFyjANBgkqhkiG9w0BAQsFADAwMS4wLAYDVQQDEyVBcHBsaWNhdGlvbkdhdGV3YXlTc2xDZXJ0LVVuaXRUZXN0LTAxMB4XDTE2MDIxNzA3MDc1M1oXDTM5MTIzMTIzNTk1OVowMDEuMCwGA1UEAxMlQXBwbGljYXRpb25HYXRld2F5U3NsQ2VydC1Vbml0VGVzdC0wMTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANOUOFVmm+P4ht/qaiGZaiMzZSXwqGP8W/XWZRfJSc1mS6B4zBm8MtndmO9NbPUeGetk3E4jI0egP7NufuTAtfZY5nG9/gsZh8Hp4o+x+6F1wCUtK5pQ5Fne4Vwg0Q9k1CgUfQfK0zEoanOTEylcyp1nVpoGc3v4FZ9pQr8/xQ7+PSwgNpmGpU1gmgorDlXIO8jiKb+WfSoPAhHcavoPFg6DeGv30AK2m8ULFezOqbprrozRxXaKzt8fBaDSP1XMakFaO6ffZU4uNgrehW4zMnpdgAjT5koymDKGAfl/7+5QpLxSKc2478J+PvTwy/rfWKJLbEImoM7WE3imWgrHUNMCAwEAAaNlMGMwYQYDVR0BBFowWIAQxDXqD2PYxSlriJ6HuzZ+b6EyMDAxLjAsBgNVBAMTJUFwcGxpY2F0aW9uR2F0ZXdheVNzbENlcnQtVW5pdFRlc3QtMDGCEI+aE5UeqMidTZV/Vm/WhcowDQYJKoZIhvcNAQELBQADggEBADSC6PHkVYmoVOyyW2g7q3GG3MmXa43/HQNTM+pT3HENAlhGg8T9EFrOQ/0QAoEQbrtsP8Isj5u2Bd4MOlYA180ExyfL/NFb7QpXq/pRLbePMQAQicdSvk/9RyrNRBfNjT2KNlBp3RZtCkJjQWlc5ylWydPy4JPUZxit/5ygCRT+cmN1ioF469Ki8hzBlKmrDg8jkFUwFyD7B0fEfPP0gSZI3F6HqgCK2hzBTjujZjddZyn2XxXlxLu57C83CNPP8fbsGW2CwolgmYvt+dJsdDnT7VKX5RS4cOPp/JGG7QdhzqVBoK0vZP6gHEAOPoqBVUWf8SmlVuAVGmDl8EjLnK8=",
+                "backendHttpSettings": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet5127"
+                  }
+                ]
+              }
+            }
+          ],
+          "frontendIPConfigurations": [
+            {
+              "name": "azsmnet1400",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendIPConfigurations/azsmnet1400",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet6012"
+                },
+                "httpListeners": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet5077"
+                  },
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet7866"
+                  }
+                ]
+              }
+            }
+          ],
+          "frontendPorts": [
+            {
+              "name": "azsmnet8510",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet8510",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "port": 80,
+                "httpListeners": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet5077"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "azsmnet667",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet667",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "port": 88,
+                "httpListeners": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet7866"
+                  }
+                ]
+              }
+            }
+          ],
+          "backendAddressPools": [
+            {
+              "name": "azsmnet3426",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet3426",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "backendAddresses": [
+                  {
+                    "ipAddress": "104.42.6.202"
+                  },
+                  {
+                    "ipAddress": "23.99.1.115"
+                  }
+                ],
+                "requestRoutingRules": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet6462"
+                  },
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet9951"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "azsmnet9377",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet9377",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "backendAddresses": []
+              }
+            }
+          ],
+          "backendHttpSettingsCollection": [
+            {
+              "name": "azsmnet9782",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet9782",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "port": 80,
+                "protocol": "Http",
+                "cookieBasedAffinity": "Disabled",
+                "requestTimeout": 69,
+                "probe": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/probes/azsmnet9977"
+                },
+                "requestRoutingRules": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet6462"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "azsmnet5127",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet5127",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "port": 443,
+                "protocol": "Https",
+                "cookieBasedAffinity": "Enabled",
+                "requestTimeout": 30,
+                "authenticationCertificates": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/authenticationCertificates/azsmnet1422"
+                  }
+                ],
+                "requestRoutingRules": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet9951"
+                  }
+                ]
+              }
+            }
+          ],
+          "httpListeners": [
+            {
+              "name": "azsmnet5077",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet5077",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendIPConfigurations/azsmnet1400"
+                },
+                "frontendPort": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet8510"
+                },
+                "protocol": "Http",
+                "requireServerNameIndication": false,
+                "requestRoutingRules": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet6462"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "azsmnet7866",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet7866",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "frontendIPConfiguration": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendIPConfigurations/azsmnet1400"
+                },
+                "frontendPort": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/frontendPorts/azsmnet667"
+                },
+                "protocol": "Http",
+                "requireServerNameIndication": false,
+                "requestRoutingRules": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet9951"
+                  }
+                ]
+              }
+            }
+          ],
+          "urlPathMaps": [],
+          "requestRoutingRules": [
+            {
+              "name": "azsmnet6462",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet6462",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "ruleType": "Basic",
+                "httpListener": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet5077"
+                },
+                "backendAddressPool": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet3426"
+                },
+                "backendHttpSettings": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet9782"
+                }
+              }
+            },
+            {
+              "name": "azsmnet9951",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/requestRoutingRules/azsmnet9951",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "ruleType": "Basic",
+                "httpListener": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/httpListeners/azsmnet7866"
+                },
+                "backendAddressPool": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendAddressPools/azsmnet3426"
+                },
+                "backendHttpSettings": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet5127"
+                }
+              }
+            }
+          ],
+          "probes": [
+            {
+              "name": "azsmnet9977",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/probes/azsmnet9977",
+              "etag": "W/\"41d3d182-d7ad-45e6-a566-fa2b1f58c210\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "protocol": "Http",
+                "host": "probe.com",
+                "path": "/path/path.htm",
+                "interval": 17,
+                "timeout": 17,
+                "unhealthyThreshold": 5,
+                "backendHttpSettings": [
+                  {
+                    "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/applicationGateways/azsmnet5816/backendHttpSettingsCollection/azsmnet9782"
+                  }
+                ]
+              }
+            }
+          ],
+          "sslPolicy": {
+            "disabledSslProtocols": [
+              "TLSv1_0",
+              "TLSv1_1"
+            ]
+          },
+          "webApplicationFirewallConfiguration": {
+            "enabled": true,
+            "firewallMode": "Prevention"
+          }
+        }
+      }
+    }
+  }
+}

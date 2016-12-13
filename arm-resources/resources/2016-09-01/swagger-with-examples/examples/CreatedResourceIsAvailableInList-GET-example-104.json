@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceGroupName": "csmrg1412",
+    "api-version": "2016-09-01",
+    "$top": "10"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg1412/providers/Microsoft.Web/sites/csmr5771",
+            "name": "csmr5771",
+            "type": "Microsoft.Web/sites",
+            "location": "westus"
+          }
+        ]
+      }
+    }
+  }
+}

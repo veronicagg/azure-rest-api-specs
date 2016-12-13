@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "scope": "",
+    "roleDefinitionId": "Microsoft.Authorization",
+    "api-version": "2015-07-01",
+    "roleDefinition": {
+      "name": "00000000-0000-0000-0000-000000000000",
+      "properties": {
+        "roleName": "NewRoleName_2b744e95-362a-486e-86a3-83b675ef380c",
+        "description": "New Test Custom Role",
+        "permissions": [
+          {
+            "actions": [
+              "Microsoft.Authorization/*/Read"
+            ]
+          }
+        ],
+        "assignableScopes": [
+          "Invalid_Scope"
+        ]
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "LinkedInvalidPropertyId",
+          "message": "Property id 'Invalid_Scope' at path 'properties.assignableScopes[0]' is invalid. Expect fully qualified resource Id that start with '/subscriptions/{subscriptionId}'."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "c1fd1678-d0fe-4253-a15f-a03eee323432",
+    "resourceGroupName": "csmrg3365",
+    "networkInterfaceName": "azsmnet6929",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet6929",
+        "id": "/subscriptions/c1fd1678-d0fe-4253-a15f-a03eee323432/resourceGroups/csmrg3365/providers/Microsoft.Network/networkInterfaces/azsmnet6929",
+        "etag": "W/\"f7ed2742-646c-4855-b16c-fb3477438005\"",
+        "location": "eastus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "a56bf16a-40b1-4a11-acac-8286ce2f97b2",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet4903",
+              "id": "/subscriptions/c1fd1678-d0fe-4253-a15f-a03eee323432/resourceGroups/csmrg3365/providers/Microsoft.Network/networkInterfaces/azsmnet6929/ipConfigurations/azsmnet4903",
+              "etag": "W/\"f7ed2742-646c-4855-b16c-fb3477438005\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.1.9",
+                "privateIPAllocationMethod": "Static",
+                "subnet": {
+                  "id": "/subscriptions/c1fd1678-d0fe-4253-a15f-a03eee323432/resourceGroups/csmrg3365/providers/Microsoft.Network/virtualNetworks/azsmnet1390/subnets/azsmnet3416"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "cq2sn4giovfe1ijnrrs02fkq5c.bx.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

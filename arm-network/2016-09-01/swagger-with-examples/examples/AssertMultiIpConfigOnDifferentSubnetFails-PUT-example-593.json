@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8122",
+    "virtualNetworkName": "azsmnet7657",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "East US",
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "subnets": [
+          {
+            "name": "azsmnet8249",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          },
+          {
+            "name": "azsmnet2177",
+            "properties": {
+              "addressPrefix": "10.0.1.0/24"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet7657",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657",
+        "etag": "W/\"266fc05e-7730-4cda-a39f-76475afbd9c2\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "f4b345b2-dcb9-41bf-a7fd-a15e4b40e8bc",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet8249",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet8249",
+              "etag": "W/\"266fc05e-7730-4cda-a39f-76475afbd9c2\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            },
+            {
+              "name": "azsmnet2177",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8122/providers/Microsoft.Network/virtualNetworks/azsmnet7657/subnets/azsmnet2177",
+              "etag": "W/\"266fc05e-7730-4cda-a39f-76475afbd9c2\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.1.0/24"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

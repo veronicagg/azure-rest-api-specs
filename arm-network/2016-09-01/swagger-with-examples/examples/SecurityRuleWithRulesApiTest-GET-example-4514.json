@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg6544",
+    "networkSecurityGroupName": "azsmnet9837",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "azsmnet8397",
+            "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6544/providers/Microsoft.Network/networkSecurityGroups/azsmnet9837/securityRules/azsmnet8397",
+            "etag": "W/\"d248282f-beeb-4f9f-a42f-3f573b1812ad\"",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "description": "Test security rule",
+              "protocol": "Tcp",
+              "sourcePortRange": "655",
+              "destinationPortRange": "123-3500",
+              "sourceAddressPrefix": "*",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 500,
+              "direction": "Inbound"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

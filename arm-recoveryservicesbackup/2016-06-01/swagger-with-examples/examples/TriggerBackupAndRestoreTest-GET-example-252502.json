@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "jobName": "96507382-3ef7-4e68-abe8-d6c3978e4791",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/Subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/RecoveryServicesBackupTestRg/providers/Microsoft.RecoveryServices/vaults/SDKTestRsVault/backupJobs/96507382-3ef7-4e68-abe8-d6c3978e4791",
+        "name": "96507382-3ef7-4e68-abe8-d6c3978e4791",
+        "type": "Microsoft.RecoveryServices/vaults/backupJobs",
+        "properties": {
+          "jobType": "AzureIaaSVMJob",
+          "duration": "00:22:34.8316051",
+          "actionsInfo": [
+            1
+          ],
+          "virtualMachineVersion": "Compute",
+          "extendedInfo": {
+            "tasksList": [],
+            "propertyBag": {
+              "JobType": "Recover disks",
+              "Target Storage Account Name": "pstestrg4762"
+            },
+            "dynamicErrorMessage": ""
+          },
+          "entityFriendlyName": "pstestv2vm1",
+          "backupManagementType": "AzureIaasVM",
+          "operation": "Restore",
+          "status": "InProgress",
+          "startTime": "2016-10-10T12:20:32.1474379Z",
+          "activityId": "2bfd8244-a6c0-438c-be7a-a3c1ad1903e1"
+        }
+      }
+    }
+  }
+}

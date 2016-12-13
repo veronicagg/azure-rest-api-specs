@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "operationId": "119e8e49-fc1b-463a-bc8d-383d4e3c0add",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "119e8e49-fc1b-463a-bc8d-383d4e3c0add",
+        "name": "119e8e49-fc1b-463a-bc8d-383d4e3c0add",
+        "status": "InProgress",
+        "startTime": "2016-10-10T12:45:02.5846525Z",
+        "endTime": "0001-01-01T00:00:00"
+      }
+    }
+  }
+}

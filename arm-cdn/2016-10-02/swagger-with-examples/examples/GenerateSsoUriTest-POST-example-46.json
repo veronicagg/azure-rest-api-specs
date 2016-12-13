@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup2253",
+    "profileName": "profile6930",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "ssoUriValue": "https://cdn.windowsazure.com/account/loginexternal/?token=8bcptKNd7ZhRRFc3uZu0a4rTdU4Ja8s0l47ZG71oE8M%3d&timestamp=2016-11-02T00:29:46.3185234Z&cdnAccountId=41208&userCustomId=SSO-f134e43a-916e-47aa-87a0-f444fd881fbc&restEndpointId=0"
+      }
+    }
+  }
+}

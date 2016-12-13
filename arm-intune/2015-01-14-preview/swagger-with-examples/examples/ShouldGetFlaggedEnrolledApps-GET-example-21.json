@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/providers/Microsoft.Intune/locations/hostName",
+        "type": "Microsoft.Intune/locations",
+        "name": "hostname",
+        "properties": {
+          "hostName": "fef.msua06"
+        }
+      }
+    }
+  }
+}

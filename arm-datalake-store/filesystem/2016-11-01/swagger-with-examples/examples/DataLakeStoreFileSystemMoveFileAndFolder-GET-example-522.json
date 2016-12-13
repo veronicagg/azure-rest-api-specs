@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "listFilePath": "SDKTestFolder017430",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true",
+    "destination": "SDKTestMoveFolder016315"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /SDKTestFolder017430 [8fbec3a0-c073-47df-89d0-479f97d1a568][2016-11-10T15:02:17.6240583-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

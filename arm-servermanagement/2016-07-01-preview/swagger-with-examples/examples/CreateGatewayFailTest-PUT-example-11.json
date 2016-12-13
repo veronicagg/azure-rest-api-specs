@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "mary%20had%20a%20little%20lamb",
+    "gatewayName": "testgateway",
+    "api-version": "2016-07-01-preview",
+    "GatewayParameters": {}
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "LocationRequired",
+          "message": "The location property is required for this definition."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-5672",
+    "topicName": "sdk-Topics-2337",
+    "subscriptionName": "sdk-Subscriptions-5857",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "location": "Australia East",
+      "properties": {
+        "enableBatchedOperations": true
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-5672/topics/sdk-Topics-2337/subscriptions/sdk-Subscriptions-5857",
+        "name": "sdk-Subscriptions-5857",
+        "type": "Microsoft.ServiceBus/TopicSubscriptions",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "lockDuration": "00:01:00",
+          "requiresSession": false,
+          "defaultMessageTimeToLive": "10675199.02:48:05.4775807",
+          "deadLetteringOnMessageExpiration": false,
+          "deadLetteringOnFilterEvaluationExceptions": true,
+          "messageCount": 0,
+          "maxDeliveryCount": 10,
+          "enableBatchedOperations": true,
+          "status": "Active",
+          "createdAt": "2016-09-13T20:54:13.5651143Z",
+          "updatedAt": "2016-09-13T20:54:13.5651143Z",
+          "accessedAt": "0001-01-01T00:00:00",
+          "autoDeleteOnIdle": "10675199.02:48:05.4775807",
+          "entityAvailabilityStatus": "Available"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parameters": {
+    "subscriptionId": "4fbe2810-8ec4-4443-88f4-1d0a6a212d02",
+    "api-version": "2015-11-01",
+    "$top": "2",
+    "$skiptoken": "c2RrdGVzdHZhdWx0OTEyMg",
+    "$filter": "resourceType%20eq%20'Microsoft.KeyVault%2Fvaults'"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/4fbe2810-8ec4-4443-88f4-1d0a6a212d02/resourceGroups/JenkinsTesting/providers/Microsoft.KeyVault/vaults/JenkinsSecrets",
+            "name": "JenkinsSecrets",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "centralus",
+            "tags": {}
+          },
+          {
+            "id": "/subscriptions/4fbe2810-8ec4-4443-88f4-1d0a6a212d02/resourceGroups/KVTestRG7d4685ea/providers/Microsoft.KeyVault/vaults/KVTestVault2f18a602",
+            "name": "KVTestVault2f18a602",
+            "type": "Microsoft.KeyVault/vaults",
+            "location": "centralus",
+            "tags": {}
+          }
+        ],
+        "nextLink": "https://management.azure.com/subscriptions/4fbe2810-8ec4-4443-88f4-1d0a6a212d02/resources?%24filter=resourceType+eq+%27Microsoft.KeyVault%2fvaults%27&%24top=2&api-version=2015-11-01&%24skiptoken=eyJuZXh0UGFydGl0aW9uS2V5IjoiMSE4IVFVWTVNalUtIiwibmV4dFJvd0tleSI6IjEhMTYwIU5FWkNSVEk0TVRBNFJVTTBORFEwTXpnNFJqUXhSREJCTmtFeU1USkVNREpmVkVkT1RDMU5TVU5TVDFOUFJsUTZNa1ZMUlZsV1FWVk1WRG95UmxaQlZVeFVVeTFMVmxSRlUxUldRVlZNVkRnMFFqVTBORUZFTFV0V1ZFVlRWRlpCVlV4VU5UVkRNRVpHUTBFdFFsSkJXa2xNVTA5VlZFZy0ifQ%3d%3d"
+      }
+    }
+  }
+}

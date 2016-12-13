@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "tenantID": "rbacclitest.onmicrosoft.com",
+    "api-version": "1.6",
+    "parameters": {
+      "accountEnabled": true,
+      "displayName": "aduser6895",
+      "passwordProfile": {
+        "password": "Test12345",
+        "forceChangePasswordNextLogin": false
+      },
+      "userPrincipalName": "aduser6895@rbacclitest.onmicrosoft.com",
+      "mailNickname": "aduser6895test"
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "odata.error": {
+          "code": "Request_BadRequest",
+          "message": {
+            "lang": "en",
+            "value": "Another object with the same value for property userPrincipalName already exists."
+          },
+          "values": [
+            {
+              "item": "PropertyName",
+              "value": "userPrincipalName"
+            },
+            {
+              "item": "PropertyErrorCode",
+              "value": "ObjectConflict"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8131",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "csmipv6publicip9872",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8131/providers/Microsoft.Network/publicIPAddresses/csmipv6publicip9872",
+            "etag": "W/\"d4caeead-1943-4473-b3fb-c7e94c0b4d1e\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "eastus",
+            "tags": {
+              "key": "value"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "fa5ad299-beb3-4dfc-b523-387a6dbd6028",
+              "publicIPAddressVersion": "IPv6",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "domainNameLabel": "csmdnslabelpublicip1406",
+                "fqdn": "csmdnslabelpublicip1406.eastus.cloudapp.azure.com"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

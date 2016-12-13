@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "destinationPath": "SDKTestFolder01%2FSDKTestFile01.txt6264",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "APPEND",
+    "write": "true",
+    "append": "true"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

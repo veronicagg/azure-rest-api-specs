@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "subscriptionId": "19feecf7-1262-46ca-81a7-31fb269a6325",
+    "resourceGroupName": "csmrg130",
+    "virtualNetworkName": "azsmnet8233",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            },
+            "name": "GatewaySubnet"
+          }
+        ]
+      },
+      "location": "West US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet8233",
+        "id": "/subscriptions/19feecf7-1262-46ca-81a7-31fb269a6325/resourceGroups/csmrg130/providers/Microsoft.Network/virtualNetworks/azsmnet8233",
+        "etag": "W/\"bca88609-3aaf-4e42-86ef-d02fc44e5937\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "658d0fe7-5a36-4c7c-9724-8f79ddd7b55f",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "GatewaySubnet",
+              "id": "/subscriptions/19feecf7-1262-46ca-81a7-31fb269a6325/resourceGroups/csmrg130/providers/Microsoft.Network/virtualNetworks/azsmnet8233/subnets/GatewaySubnet",
+              "etag": "W/\"bca88609-3aaf-4e42-86ef-d02fc44e5937\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24"
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

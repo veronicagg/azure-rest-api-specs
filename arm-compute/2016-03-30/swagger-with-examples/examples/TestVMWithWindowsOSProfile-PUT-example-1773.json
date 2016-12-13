@@ -1,0 +1,101 @@
+{
+  "parameters": {
+    "subscriptionId": "4d368445-cbb1-42a7-97a6-6850ab99f48e",
+    "resourceGroupName": "pslibtest9279",
+    "vmName": "vm1827",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      },
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_A0"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer",
+            "offer": "WindowsServer",
+            "sku": "2012-R2-Datacenter",
+            "version": "4.0.201505"
+          },
+          "osDisk": {
+            "name": "test",
+            "vhd": {
+              "uri": "https://pslibtest475.blob.core.windows.net/pslibtest1846/ospslibtest7802.vhd"
+            },
+            "caching": "None",
+            "createOption": "fromImage"
+          }
+        },
+        "osProfile": {
+          "computerName": "test",
+          "adminUsername": "Foo12",
+          "adminPassword": "BaR@123pslibtest9279",
+          "customData": "ZWNobyAnSGVsbG8gV29ybGQn",
+          "windowsConfiguration": {
+            "provisionVMAgent": true,
+            "enableAutomaticUpdates": false,
+            "timeZone": "Pacific Standard Time",
+            "additionalUnattendContent": [
+              {
+                "passName": "oobeSystem",
+                "componentName": "Microsoft-Windows-Shell-Setup",
+                "settingName": "AutoLogon",
+                "content": "<AutoLogon><Enabled>true</Enabled><LogonCount>5</LogonCount><Username>Foo12</Username><Password><Value>BaR@123pslibtest9279</Value><PlainText>true</PlainText></Password></AutoLogon>"
+              }
+            ],
+            "winRM": {
+              "listeners": [
+                {
+                  "protocol": "Http"
+                },
+                {
+                  "protocol": "Https",
+                  "certificateUrl": "https://pslibtestkeyvault.vault.azure.net/secrets/WinRM/24c727e7449b47cb9d2f385113f59a63"
+                }
+              ]
+            }
+          },
+          "secrets": [
+            {
+              "sourceVault": {
+                "id": "/subscriptions/ccfebd33-45cd-4e22-9389-98982441aa5d/resourceGroups/pslibtestosprofile/providers/Microsoft.KeyVault/vaults/pslibtestkeyvault"
+              },
+              "vaultCertificates": [
+                {
+                  "certificateUrl": "https://pslibtestkeyvault.vault.azure.net/secrets/WinRM/24c727e7449b47cb9d2f385113f59a63",
+                  "certificateStore": "My"
+                }
+              ]
+            }
+          ]
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "/subscriptions/4d368445-cbb1-42a7-97a6-6850ab99f48e/resourceGroups/pslibtest9279/providers/Microsoft.Network/networkInterfaces/azsmnet504"
+            }
+          ]
+        },
+        "availabilitySet": {
+          "id": "/subscriptions/4d368445-cbb1-42a7-97a6-6850ab99f48e/resourceGroups/pslibtest9279/providers/Microsoft.Compute/availabilitySets/as9002"
+        }
+      }
+    }
+  },
+  "responses": {
+    "403": {
+      "body": {
+        "error": {
+          "code": "LinkedAuthorizationFailed",
+          "message": "The client 'phuang@microsoft.com' with object id 'f6bde659-aae5-4ba4-8da2-8d07610f7210' has permission to perform action 'Microsoft.Compute/virtualMachines/write' on scope '/subscriptions/4d368445-cbb1-42a7-97a6-6850ab99f48e/resourceGroups/pslibtest9279/providers/Microsoft.Compute/virtualMachines/vm1827'; however, it does not have permission to perform action 'Microsoft.KeyVault/vaults/deploy/action' on the linked scope(s) '/subscriptions/ccfebd33-45cd-4e22-9389-98982441aa5d/resourceGroups/pslibtestosprofile/providers/Microsoft.KeyVault/vaults/pslibtestkeyvault'."
+        }
+      }
+    }
+  }
+}

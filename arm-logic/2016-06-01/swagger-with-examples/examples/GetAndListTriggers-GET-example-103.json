@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "workflowName": "logicwf1258",
+    "triggerName": "httpTrigger",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "provisioningState": "Creating",
+          "createdTime": "2016-07-20T17:22:22.1486345Z",
+          "changedTime": "2016-07-20T17:22:22.1489241Z",
+          "state": "Enabled",
+          "workflow": {
+            "name": "logicwf1258/08587325715433987810",
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf1258/versions/08587325715433987810",
+            "type": "Microsoft.Logic/workflows/versions"
+          }
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf1258/triggers/httpTrigger",
+        "name": "httpTrigger",
+        "type": "Microsoft.Logic/workflows/triggers"
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc13202",
+    "api-version": "2016-03-01",
+    "jobCollection": {
+      "name": "jc13202",
+      "location": "South Central US",
+      "tags": {
+        "department": "marketing"
+      },
+      "properties": {
+        "sku": {
+          "name": "P10Premium"
+        },
+        "state": "Enabled",
+        "quota": {
+          "maxJobCount": 50,
+          "maxRecurrence": {
+            "frequency": "Day",
+            "interval": 2
+          }
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc13202",
+        "type": "Microsoft.Scheduler/jobCollections",
+        "name": "jc13202",
+        "location": "South Central US",
+        "tags": {
+          "department": "marketing"
+        },
+        "properties": {
+          "sku": {
+            "name": "P10Premium"
+          },
+          "state": "Enabled",
+          "quota": {
+            "maxJobCount": 50,
+            "maxRecurrence": {
+              "frequency": "day",
+              "interval": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

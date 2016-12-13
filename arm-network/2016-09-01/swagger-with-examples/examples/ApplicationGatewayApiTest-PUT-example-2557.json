@@ -1,0 +1,69 @@
+{
+  "parameters": {
+    "subscriptionId": "0a4ae132-d38b-487e-9051-a22d852b2834",
+    "resourceGroupName": "csmrg769",
+    "networkInterfaceName": "azsmnet3349",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "ipConfigurations": [
+          {
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet3173"
+              }
+            },
+            "name": "ipconfig"
+          }
+        ]
+      },
+      "location": "West US",
+      "tags": {
+        "key": "value"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet3349",
+        "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/networkInterfaces/azsmnet3349",
+        "etag": "W/\"b869e0cc-4c72-42d5-b410-5c47f2715528\"",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "3a998773-c259-4ad8-ab9a-a7bd08531287",
+          "ipConfigurations": [
+            {
+              "name": "ipconfig",
+              "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/networkInterfaces/azsmnet3349/ipConfigurations/ipconfig",
+              "etag": "W/\"b869e0cc-4c72-42d5-b410-5c47f2715528\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.1.5",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/0a4ae132-d38b-487e-9051-a22d852b2834/resourceGroups/csmrg769/providers/Microsoft.Network/virtualNetworks/azsmnet5442/subnets/azsmnet3173"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [],
+            "appliedDnsServers": [],
+            "internalDomainNameSuffix": "z2h4ihzhl1aufnnnkuhewceueh.d--x.internal.cloudapp.net"
+          },
+          "enableAcceleratedNetworking": false,
+          "enableIPForwarding": false
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

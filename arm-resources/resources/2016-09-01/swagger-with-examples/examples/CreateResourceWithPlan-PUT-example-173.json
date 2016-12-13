@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview",
+    "parameters": {
+      "plan": {
+        "name": "Free"
+      },
+      "location": "Canada East",
+      "tags": {
+        "provision_source": "RMS"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "csmr8260",
+        "location": "Canada East",
+        "plan": {
+          "name": "Free"
+        },
+        "properties": {
+          "status": "Started",
+          "hostname": "ca-cdbr-azure-east-a.cloudapp.net",
+          "username": "bdac44e8c052f3",
+          "password": "a01c591d",
+          "name": "csmr8260",
+          "connectionString": "Database=csmr8260;Data Source=ca-cdbr-azure-east-a.cloudapp.net;User Id=bdac44e8c052f3;Password=a01c591d",
+          "connectionUrl": "mysql://bdac44e8c052f3:a01c591d@ca-cdbr-azure-east-a.cloudapp.net/csmr8260"
+        },
+        "tags": {
+          "provision_source": "RMS"
+        },
+        "resourceGroup": "csmrg6499"
+      }
+    }
+  }
+}

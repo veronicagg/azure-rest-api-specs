@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup1552",
+    "profileName": "profile9056",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.Cdn/profiles/profile9056' under resource group 'cdnResourceGroup1552' was not found."
+        }
+      }
+    }
+  }
+}

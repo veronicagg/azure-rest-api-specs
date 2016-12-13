@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg8131",
+    "publicIpAddressName": "csmipv4publicip538",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "East US",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "publicIPAllocationMethod": "Dynamic",
+        "publicIPAddressVersion": "IPv4",
+        "dnsSettings": {
+          "domainNameLabel": "csmdnslabelpublicip1406"
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "csmipv4publicip538",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8131/providers/Microsoft.Network/publicIPAddresses/csmipv4publicip538",
+        "etag": "W/\"5c6afa57-c11d-4f28-ba8d-3bd33513af49\"",
+        "type": "Microsoft.Network/publicIPAddresses",
+        "location": "eastus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "8b1aea3a-31a2-4e5a-93fd-8b87bd439122",
+          "publicIPAddressVersion": "IPv4",
+          "publicIPAllocationMethod": "Dynamic",
+          "idleTimeoutInMinutes": 4,
+          "dnsSettings": {
+            "domainNameLabel": "csmdnslabelpublicip1406",
+            "fqdn": "csmdnslabelpublicip1406.eastus.cloudapp.azure.com"
+          }
+        }
+      }
+    }
+  }
+}

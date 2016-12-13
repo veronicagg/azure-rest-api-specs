@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount4729",
+    "api-version": "2015-08-01-preview",
+    "parameters": {}
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": "https://prod-01.westus.logic.azure.com:443/integrationAccounts/ccda100f95b64cdcb366292e255c59a1?api-version=2015-08-01-preview&sp=%2F%2F%2A&sv=1.0&sig=8Cdv3b_GWHNsf92fe1Yorb_wrkRenOoUajLc7nWhyG0"
+      }
+    }
+  }
+}

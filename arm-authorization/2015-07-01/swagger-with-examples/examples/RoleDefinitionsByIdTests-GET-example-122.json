@@ -1,0 +1,36 @@
+{
+  "parameters": {
+    "scope": "subscriptions",
+    "roleDefinitionId": "roleDefinitions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "nbaliga Contoso On-call",
+          "type": "CustomRole",
+          "description": "Can monitor all resources and restart virtual machines",
+          "assignableScopes": [
+            "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/*"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.ClassicCompute/virtualmachines/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "2015-10-19T22:10:02.4993418Z",
+          "updatedOn": "2015-10-20T00:02:46.9017506Z",
+          "createdBy": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0",
+          "updatedBy": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0"
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/bfd2da93-f3d8-438f-854c-ed20bf819c35",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "bfd2da93-f3d8-438f-854c-ed20bf819c35"
+      }
+    }
+  }
+}

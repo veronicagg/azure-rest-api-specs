@@ -1,0 +1,87 @@
+{
+  "parameters": {
+    "databaseName": "testdb12673",
+    "schemaName": "dbo",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testadlac16849.azuredatalakeanalytics.net/sqlip/$metadata#tables",
+        "value": [
+          {
+            "computeAccountName": "testadlac16849",
+            "databaseName": "testdb12673",
+            "schemaName": "dbo",
+            "tableName": "testtbl19839",
+            "columnList": [
+              {
+                "name": "UserId",
+                "type": "System.Int32"
+              },
+              {
+                "name": "Start",
+                "type": "System.DateTime"
+              },
+              {
+                "name": "Region",
+                "type": "System.String"
+              },
+              {
+                "name": "Query",
+                "type": "System.String"
+              },
+              {
+                "name": "Duration",
+                "type": "System.Int32"
+              },
+              {
+                "name": "Urls",
+                "type": "System.String"
+              },
+              {
+                "name": "ClickedUrls",
+                "type": "System.String"
+              }
+            ],
+            "indexList": [
+              {
+                "name": "idx1",
+                "indexKeys": [
+                  {
+                    "name": "Region",
+                    "descending": false
+                  }
+                ],
+                "columns": [
+                  "Region"
+                ],
+                "distributionInfo": {
+                  "type": 2,
+                  "keys": [
+                    {
+                      "name": "Region",
+                      "descending": false
+                    }
+                  ],
+                  "count": 0,
+                  "dynamicCount": 0
+                },
+                "partitionFunction": "0c260949-7c0a-466f-95e7-505e1c9ff5c6",
+                "partitionKeyList": [],
+                "streamNames": [],
+                "distributionGroups": [],
+                "isColumnstore": false,
+                "indexId": 1,
+                "isUnique": false
+              }
+            ],
+            "partitionKeyList": [],
+            "externalTable": null,
+            "version": "f9585228-86ca-417c-bda4-aafbe1192911"
+          }
+        ]
+      }
+    }
+  }
+}

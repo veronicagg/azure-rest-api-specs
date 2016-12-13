@@ -1,0 +1,3639 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "SearchManagementClient",
+    "description": "Client that can be used to manage Azure Search services and API keys.",
+    "version": "2015-08-19"
+  },
+  "host": "management.azure.com",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [
+    "application/json",
+    "text/json"
+  ],
+  "produces": [
+    "application/json",
+    "text/json"
+  ],
+  "security": [
+    {
+      "azure_auth": [
+        "user_impersonation"
+      ]
+    }
+  ],
+  "securityDefinitions": {
+    "azure_auth": {
+      "type": "oauth2",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize",
+      "flow": "implicit",
+      "description": "Azure Active Directory OAuth2 Flow",
+      "scopes": {
+        "user_impersonation": "impersonate your user account"
+      }
+    }
+  },
+  "paths": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}/listAdminKeys": {
+      "post": {
+        "tags": [
+          "AdminKeys"
+        ],
+        "operationId": "AdminKeys_Get",
+        "description": "Gets the primary and secondary admin API keys for the specified Azure Search service.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The admin keys were successfully retrieved and are in the response. You can use either the primary or secondary key as the value of the 'api-key' parameter in the Azure Search Service REST API or SDK to perform any operations on your Search service, including privileged operations. Privileged operations include managing resources like indexes and data sources as well as uploading, modifying, or deleting data in your indexes.",
+            "schema": {
+              "$ref": "#/definitions/AdminKeyResult"
+            },
+            "examples": {
+              "application/json": {
+                "primaryKey": "<your primary admin API key>",
+                "secondaryKey": "<your secondary admin API key>"
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 404 (Not Found): The subscription, resource group, or Search service could not be found. HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanGetAdminKeysPOST14": {
+            "$ref": "../examples/CanGetAdminKeys-POST-example-14.json"
+          },
+          "CanGetAdminKeysPOST15": {
+            "$ref": "../examples/CanGetAdminKeys-POST-example-15.json"
+          },
+          "CanRegenerateAdminKeysPOST14": {
+            "$ref": "../examples/CanRegenerateAdminKeys-POST-example-14.json"
+          },
+          "CanRegenerateAdminKeysPOST15": {
+            "$ref": "../examples/CanRegenerateAdminKeys-POST-example-15.json"
+          },
+          "CanCreateAndDeleteQueryKeysPOST14": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-POST-example-14.json"
+          },
+          "CanListQueryKeysPOST14": {
+            "$ref": "../examples/CanListQueryKeys-POST-example-14.json"
+          },
+          "DeleteQueryKeyIsIdempotentPOST14": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-POST-example-14.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}/regenerateAdminKey/{keyKind}": {
+      "post": {
+        "tags": [
+          "AdminKeys"
+        ],
+        "operationId": "AdminKeys_Regenerate",
+        "description": "Regenerates either the primary or secondary admin API key. You can only regenerate one key at a time.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "name": "keyKind",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "primary",
+              "secondary"
+            ],
+            "x-ms-enum": {
+              "name": "AdminKeyKind",
+              "modelAsString": false
+            },
+            "description": "Specifies which key to regenerate. Valid values include 'primary' and 'secondary'."
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The specified admin key was successfully regenerated. Both admin keys are included in the response, including the newly-regenerated key.",
+            "schema": {
+              "$ref": "#/definitions/AdminKeyResult"
+            },
+            "examples": {
+              "application/json": {
+                "primaryKey": "<your primary admin API key>",
+                "secondaryKey": "<your secondary admin API key>"
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 404 (Not Found): The subscription, resource group, or Search service could not be found. HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanRegenerateAdminKeysPOST27": {
+            "$ref": "../examples/CanRegenerateAdminKeys-POST-example-27.json"
+          },
+          "CanRegenerateAdminKeysPOST28": {
+            "$ref": "../examples/CanRegenerateAdminKeys-POST-example-28.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}/createQueryKey/{name}": {
+      "post": {
+        "tags": [
+          "QueryKeys"
+        ],
+        "operationId": "QueryKeys_Create",
+        "description": "Generates a new query key for the specified Search service. You can create up to 50 query keys per service.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the new query API key."
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The query key was successfully created and is in the response. You can use the query key as the value of the 'api-key' parameter in the Azure Search Service REST API or SDK to perform read-only operations on your Search indexes such as querying and looking up documents by ID.",
+            "schema": {
+              "$ref": "#/definitions/QueryKey"
+            },
+            "examples": {
+              "application/json": {
+                "name": "Query key for browser-based clients",
+                "key": "<a query API key>"
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 404 (Not Found): The subscription, resource group, or Search service could not be found. HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanCreateAndDeleteQueryKeysPOST39": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-POST-example-39.json"
+          },
+          "DeleteQueryKeyIsIdempotentPOST36": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-POST-example-36.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}/listQueryKeys": {
+      "get": {
+        "tags": [
+          "QueryKeys"
+        ],
+        "x-ms-pageable": {
+          "nextLinkName": null
+        },
+        "operationId": "QueryKeys_ListBySearchService",
+        "description": "Returns the list of query API keys for the given Azure Search service.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "All query keys for the given Search service were successfully retrieved and are in the response. You can use any of the query keys as the value of the 'api-key' parameter in the Azure Search Service REST API or SDK to perform read-only operations on your Search indexes such as querying and looking up documents by ID.",
+            "schema": {
+              "$ref": "#/definitions/ListQueryKeysResult"
+            },
+            "examples": {
+              "application/json": {
+                "value": [
+                  {
+                    "name": "Query key for browser-based clients",
+                    "key": "<a query API key>"
+                  },
+                  {
+                    "name": "Query key for mobile clients",
+                    "key": "<another query API key>"
+                  }
+                ],
+                "nextLink": null
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 404 (Not Found): The subscription, resource group, or Search service could not be found. HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanGetAdminKeysGET46": {
+            "$ref": "../examples/CanGetAdminKeys-GET-example-46.json"
+          },
+          "CanRegenerateAdminKeysGET46": {
+            "$ref": "../examples/CanRegenerateAdminKeys-GET-example-46.json"
+          },
+          "CanCreateAndDeleteQueryKeysGET45": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-GET-example-45.json"
+          },
+          "CanCreateAndDeleteQueryKeysGET46": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-GET-example-46.json"
+          },
+          "CanCreateAndDeleteQueryKeysGET47": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-GET-example-47.json"
+          },
+          "CanCreateAndDeleteQueryKeysGET48": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-GET-example-48.json"
+          },
+          "CanListQueryKeysGET45": {
+            "$ref": "../examples/CanListQueryKeys-GET-example-45.json"
+          },
+          "CanListQueryKeysGET46": {
+            "$ref": "../examples/CanListQueryKeys-GET-example-46.json"
+          },
+          "DeleteQueryKeyIsIdempotentGET45": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-GET-example-45.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}/deleteQueryKey/{key}": {
+      "delete": {
+        "tags": [
+          "QueryKeys"
+        ],
+        "operationId": "QueryKeys_Delete",
+        "description": "Deletes the specified query key. Unlike admin keys, query keys are not regenerated. The process for regenerating a query key is to delete and then recreate it.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "name": "key",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The query key to be deleted. Query keys are identified by value, not by name."
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The query key was successfully deleted."
+          },
+          "204": {
+            "description": "The query key was successfully deleted."
+          },
+          "404": {
+            "description": "The subscription, resource group, Search service, or query key could not be found."
+          },
+          "default": {
+            "description": "HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanCreateAndDeleteQueryKeysDELETE510": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-DELETE-example-510.json"
+          },
+          "DeleteQueryKeyIsIdempotentDELETE57": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-DELETE-example-57.json"
+          },
+          "DeleteQueryKeyIsIdempotentDELETE58": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-DELETE-example-58.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices/{searchServiceName}": {
+      "put": {
+        "tags": [
+          "Services"
+        ],
+        "operationId": "Services_CreateOrUpdate",
+        "description": "Creates or updates a Search service in the given resource group. If the Search service already exists, all properties will be updated with the given values.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "name": "searchServiceName",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "The name of the Azure Search service to create or update. Search service names must only contain lowercase letters, digits or dashes, cannot use dash as the first two or last one characters, cannot contain consecutive dashes, and must be between 2 and 60 characters in length. Search service names must be globally unique since they are part of the service URI (https://<name>.search.windows.net). You cannot change the service name after the service is created."
+          },
+          {
+            "name": "service",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SearchService"
+            },
+            "description": "The definition of the Search service to create or update."
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The existing service definition was successfully updated. If you changed the number of replicas or partitions, the scale operation will happen asynchronously. You can periodically get your service definition and monitor progress via the provisioningState property.",
+            "schema": {
+              "$ref": "#/definitions/SearchService"
+            },
+            "examples": {
+              "application/json": {
+                "id": "/subscriptions/<your subscription ID here>/resourceGroups/Default-ResourceGroup/providers/Microsoft.Search/searchServices/your-service-name-here",
+                "name": "your-service-name-here",
+                "location": "westus",
+                "type": "Microsoft.Search/searchServices",
+                "tags": {
+                  "app-name": "My e-commerce app"
+                },
+                "sku": {
+                  "name": "standard"
+                },
+                "properties": {
+                  "replicaCount": 3,
+                  "partitionCount": 1,
+                  "status": "provisioning",
+                  "statusDetails": "",
+                  "hostingMode": "default",
+                  "provisioningState": "provisioning"
+                }
+              }
+            }
+          },
+          "201": {
+            "description": "If you requested creation of a free Search service, the service is now provisioned and ready to use, subject to DNS propagation delay. For other SKU types, provisioning happens asynchronously. You can periodically get your service definition and monitor progress via the provisioningState property.",
+            "schema": {
+              "$ref": "#/definitions/SearchService"
+            },
+            "examples": {
+              "application/json": {
+                "id": "/subscriptions/<your subscription ID here>/resourceGroups/Default-ResourceGroup/providers/Microsoft.Search/searchServices/your-service-name-here",
+                "name": "your-service-name-here",
+                "location": "westus",
+                "type": "Microsoft.Search/searchServices",
+                "tags": {
+                  "app-name": "My e-commerce app"
+                },
+                "sku": {
+                  "name": "standard"
+                },
+                "properties": {
+                  "replicaCount": 3,
+                  "partitionCount": 1,
+                  "status": "provisioning",
+                  "statusDetails": "",
+                  "hostingMode": "default",
+                  "provisioningState": "provisioning"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 400 (Bad Request): The given service name or service definition is invalid; See the error code and message in the response for details. HTTP 404 (Not Found): The subscription or resource group could not be found. HTTP 409 (Conflict): The specified subscription is disabled.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanGetAdminKeysPUT63": {
+            "$ref": "../examples/CanGetAdminKeys-PUT-example-63.json"
+          },
+          "CanRegenerateAdminKeysPUT63": {
+            "$ref": "../examples/CanRegenerateAdminKeys-PUT-example-63.json"
+          },
+          "CanCreateAndDeleteQueryKeysPUT63": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-PUT-example-63.json"
+          },
+          "CanListQueryKeysPUT63": {
+            "$ref": "../examples/CanListQueryKeys-PUT-example-63.json"
+          },
+          "DeleteQueryKeyIsIdempotentPUT63": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-PUT-example-63.json"
+          },
+          "CanCreateAndDeleteServicePUT63": {
+            "$ref": "../examples/CanCreateAndDeleteService-PUT-example-63.json"
+          },
+          "CanCreateAndGetServicePUT63": {
+            "$ref": "../examples/CanCreateAndGetService-PUT-example-63.json"
+          },
+          "CanCreateBasicServicePUT63": {
+            "$ref": "../examples/CanCreateBasicService-PUT-example-63.json"
+          },
+          "CanCreateStandard2ServicePUT63": {
+            "$ref": "../examples/CanCreateStandard2Service-PUT-example-63.json"
+          },
+          "CanCreateStandard3HighDensityServicePUT63": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-PUT-example-63.json"
+          },
+          "CanCreateStandard3ServicePUT63": {
+            "$ref": "../examples/CanCreateStandard3Service-PUT-example-63.json"
+          },
+          "CanCreateStandardServicePUT63": {
+            "$ref": "../examples/CanCreateStandardService-PUT-example-63.json"
+          },
+          "CanListServicesPUT63": {
+            "$ref": "../examples/CanListServices-PUT-example-63.json"
+          },
+          "CanListServicesPUT64": {
+            "$ref": "../examples/CanListServices-PUT-example-64.json"
+          },
+          "CanScaleServiceUpAndDownPUT63": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-PUT-example-63.json"
+          },
+          "CanScaleServiceUpAndDownPUT64": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-PUT-example-64.json"
+          },
+          "CanScaleServiceUpAndDownPUT65": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-PUT-example-65.json"
+          },
+          "CheckNameAvailabilityFailsOnUsedNamePUT63": {
+            "$ref": "../examples/CheckNameAvailabilityFailsOnUsedName-PUT-example-63.json"
+          },
+          "CreateServiceWithInvalidNameGivesUsefulMessagePUT63": {
+            "$ref": "../examples/CreateServiceWithInvalidNameGivesUsefulMessage-PUT-example-63.json"
+          },
+          "DeleteServiceIsIdempotentPUT63": {
+            "$ref": "../examples/DeleteServiceIsIdempotent-PUT-example-63.json"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Services"
+        ],
+        "operationId": "Services_Get",
+        "description": "Gets the Search service with the given name in the given resource group.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Search service definition was successfully retrieved and is in the response. If you are polling for the completion of a provisioning or scale operation, you can check its status via the provisioningState property.",
+            "schema": {
+              "$ref": "#/definitions/SearchService"
+            },
+            "examples": {
+              "application/json": {
+                "id": "/subscriptions/<your subscription ID here>/resourceGroups/Default-ResourceGroup/providers/Microsoft.Search/searchServices/your-service-name-here",
+                "name": "your-service-name-here",
+                "location": "westus",
+                "type": "Microsoft.Search/searchServices",
+                "tags": {
+                  "app-name": "My e-commerce app"
+                },
+                "sku": {
+                  "name": "standard"
+                },
+                "properties": {
+                  "replicaCount": 3,
+                  "partitionCount": 1,
+                  "status": "running",
+                  "statusDetails": "",
+                  "hostingMode": "default",
+                  "provisioningState": "succeeded"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 404 (Not Found): The subscription, resource group, or Search service name could not be found.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanCreateAndGetServiceGET64": {
+            "$ref": "../examples/CanCreateAndGetService-GET-example-64.json"
+          },
+          "CanCreateBasicServiceGET64": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-64.json"
+          },
+          "CanCreateBasicServiceGET65": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-65.json"
+          },
+          "CanCreateBasicServiceGET66": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-66.json"
+          },
+          "CanCreateBasicServiceGET67": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-67.json"
+          },
+          "CanCreateBasicServiceGET68": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-68.json"
+          },
+          "CanCreateBasicServiceGET69": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-69.json"
+          },
+          "CanCreateBasicServiceGET610": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-610.json"
+          },
+          "CanCreateBasicServiceGET611": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-611.json"
+          },
+          "CanCreateBasicServiceGET612": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-612.json"
+          },
+          "CanCreateBasicServiceGET613": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-613.json"
+          },
+          "CanCreateBasicServiceGET614": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-614.json"
+          },
+          "CanCreateBasicServiceGET615": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-615.json"
+          },
+          "CanCreateBasicServiceGET616": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-616.json"
+          },
+          "CanCreateBasicServiceGET617": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-617.json"
+          },
+          "CanCreateBasicServiceGET618": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-618.json"
+          },
+          "CanCreateBasicServiceGET619": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-619.json"
+          },
+          "CanCreateBasicServiceGET620": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-620.json"
+          },
+          "CanCreateBasicServiceGET621": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-621.json"
+          },
+          "CanCreateBasicServiceGET622": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-622.json"
+          },
+          "CanCreateBasicServiceGET623": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-623.json"
+          },
+          "CanCreateBasicServiceGET624": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-624.json"
+          },
+          "CanCreateBasicServiceGET625": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-625.json"
+          },
+          "CanCreateBasicServiceGET626": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-626.json"
+          },
+          "CanCreateBasicServiceGET627": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-627.json"
+          },
+          "CanCreateBasicServiceGET628": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-628.json"
+          },
+          "CanCreateBasicServiceGET629": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-629.json"
+          },
+          "CanCreateBasicServiceGET630": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-630.json"
+          },
+          "CanCreateBasicServiceGET631": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-631.json"
+          },
+          "CanCreateBasicServiceGET632": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-632.json"
+          },
+          "CanCreateBasicServiceGET633": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-633.json"
+          },
+          "CanCreateBasicServiceGET634": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-634.json"
+          },
+          "CanCreateBasicServiceGET635": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-635.json"
+          },
+          "CanCreateBasicServiceGET636": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-636.json"
+          },
+          "CanCreateBasicServiceGET637": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-637.json"
+          },
+          "CanCreateBasicServiceGET638": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-638.json"
+          },
+          "CanCreateBasicServiceGET639": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-639.json"
+          },
+          "CanCreateBasicServiceGET640": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-640.json"
+          },
+          "CanCreateBasicServiceGET641": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-641.json"
+          },
+          "CanCreateBasicServiceGET642": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-642.json"
+          },
+          "CanCreateBasicServiceGET643": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-643.json"
+          },
+          "CanCreateBasicServiceGET644": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-644.json"
+          },
+          "CanCreateBasicServiceGET645": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-645.json"
+          },
+          "CanCreateBasicServiceGET646": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-646.json"
+          },
+          "CanCreateBasicServiceGET647": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-647.json"
+          },
+          "CanCreateBasicServiceGET648": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-648.json"
+          },
+          "CanCreateBasicServiceGET649": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-649.json"
+          },
+          "CanCreateBasicServiceGET650": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-650.json"
+          },
+          "CanCreateBasicServiceGET651": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-651.json"
+          },
+          "CanCreateBasicServiceGET652": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-652.json"
+          },
+          "CanCreateBasicServiceGET653": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-653.json"
+          },
+          "CanCreateBasicServiceGET654": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-654.json"
+          },
+          "CanCreateBasicServiceGET655": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-655.json"
+          },
+          "CanCreateBasicServiceGET656": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-656.json"
+          },
+          "CanCreateBasicServiceGET657": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-657.json"
+          },
+          "CanCreateBasicServiceGET658": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-658.json"
+          },
+          "CanCreateBasicServiceGET659": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-659.json"
+          },
+          "CanCreateBasicServiceGET660": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-660.json"
+          },
+          "CanCreateBasicServiceGET661": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-661.json"
+          },
+          "CanCreateBasicServiceGET662": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-662.json"
+          },
+          "CanCreateBasicServiceGET663": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-663.json"
+          },
+          "CanCreateBasicServiceGET664": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-664.json"
+          },
+          "CanCreateBasicServiceGET665": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-665.json"
+          },
+          "CanCreateBasicServiceGET666": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-666.json"
+          },
+          "CanCreateBasicServiceGET667": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-667.json"
+          },
+          "CanCreateBasicServiceGET668": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-668.json"
+          },
+          "CanCreateBasicServiceGET669": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-669.json"
+          },
+          "CanCreateBasicServiceGET670": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-670.json"
+          },
+          "CanCreateBasicServiceGET671": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-671.json"
+          },
+          "CanCreateBasicServiceGET672": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-672.json"
+          },
+          "CanCreateBasicServiceGET673": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-673.json"
+          },
+          "CanCreateBasicServiceGET674": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-674.json"
+          },
+          "CanCreateBasicServiceGET675": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-675.json"
+          },
+          "CanCreateBasicServiceGET676": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-676.json"
+          },
+          "CanCreateBasicServiceGET677": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-677.json"
+          },
+          "CanCreateBasicServiceGET678": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-678.json"
+          },
+          "CanCreateBasicServiceGET679": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-679.json"
+          },
+          "CanCreateBasicServiceGET680": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-680.json"
+          },
+          "CanCreateBasicServiceGET681": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-681.json"
+          },
+          "CanCreateBasicServiceGET682": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-682.json"
+          },
+          "CanCreateBasicServiceGET683": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-683.json"
+          },
+          "CanCreateBasicServiceGET684": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-684.json"
+          },
+          "CanCreateBasicServiceGET685": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-685.json"
+          },
+          "CanCreateBasicServiceGET686": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-686.json"
+          },
+          "CanCreateBasicServiceGET687": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-687.json"
+          },
+          "CanCreateBasicServiceGET688": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-688.json"
+          },
+          "CanCreateBasicServiceGET689": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-689.json"
+          },
+          "CanCreateBasicServiceGET690": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-690.json"
+          },
+          "CanCreateBasicServiceGET691": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-691.json"
+          },
+          "CanCreateBasicServiceGET692": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-692.json"
+          },
+          "CanCreateBasicServiceGET693": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-693.json"
+          },
+          "CanCreateBasicServiceGET694": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-694.json"
+          },
+          "CanCreateBasicServiceGET695": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-695.json"
+          },
+          "CanCreateBasicServiceGET696": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-696.json"
+          },
+          "CanCreateBasicServiceGET697": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-697.json"
+          },
+          "CanCreateBasicServiceGET698": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-698.json"
+          },
+          "CanCreateBasicServiceGET699": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-699.json"
+          },
+          "CanCreateBasicServiceGET6100": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6100.json"
+          },
+          "CanCreateBasicServiceGET6101": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6101.json"
+          },
+          "CanCreateBasicServiceGET6102": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6102.json"
+          },
+          "CanCreateBasicServiceGET6103": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6103.json"
+          },
+          "CanCreateBasicServiceGET6104": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6104.json"
+          },
+          "CanCreateBasicServiceGET6105": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6105.json"
+          },
+          "CanCreateBasicServiceGET6106": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6106.json"
+          },
+          "CanCreateBasicServiceGET6107": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6107.json"
+          },
+          "CanCreateBasicServiceGET6108": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6108.json"
+          },
+          "CanCreateBasicServiceGET6109": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6109.json"
+          },
+          "CanCreateBasicServiceGET6110": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6110.json"
+          },
+          "CanCreateBasicServiceGET6111": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6111.json"
+          },
+          "CanCreateBasicServiceGET6112": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6112.json"
+          },
+          "CanCreateBasicServiceGET6113": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6113.json"
+          },
+          "CanCreateBasicServiceGET6114": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6114.json"
+          },
+          "CanCreateBasicServiceGET6115": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6115.json"
+          },
+          "CanCreateBasicServiceGET6116": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6116.json"
+          },
+          "CanCreateBasicServiceGET6117": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6117.json"
+          },
+          "CanCreateBasicServiceGET6118": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6118.json"
+          },
+          "CanCreateBasicServiceGET6119": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6119.json"
+          },
+          "CanCreateBasicServiceGET6120": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6120.json"
+          },
+          "CanCreateBasicServiceGET6121": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6121.json"
+          },
+          "CanCreateBasicServiceGET6122": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6122.json"
+          },
+          "CanCreateBasicServiceGET6123": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6123.json"
+          },
+          "CanCreateBasicServiceGET6124": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6124.json"
+          },
+          "CanCreateBasicServiceGET6125": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6125.json"
+          },
+          "CanCreateBasicServiceGET6126": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6126.json"
+          },
+          "CanCreateBasicServiceGET6127": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6127.json"
+          },
+          "CanCreateBasicServiceGET6128": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6128.json"
+          },
+          "CanCreateBasicServiceGET6129": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6129.json"
+          },
+          "CanCreateBasicServiceGET6130": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6130.json"
+          },
+          "CanCreateBasicServiceGET6131": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6131.json"
+          },
+          "CanCreateBasicServiceGET6132": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6132.json"
+          },
+          "CanCreateBasicServiceGET6133": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6133.json"
+          },
+          "CanCreateBasicServiceGET6134": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6134.json"
+          },
+          "CanCreateBasicServiceGET6135": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6135.json"
+          },
+          "CanCreateBasicServiceGET6136": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6136.json"
+          },
+          "CanCreateBasicServiceGET6137": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6137.json"
+          },
+          "CanCreateBasicServiceGET6138": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6138.json"
+          },
+          "CanCreateBasicServiceGET6139": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6139.json"
+          },
+          "CanCreateBasicServiceGET6140": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6140.json"
+          },
+          "CanCreateBasicServiceGET6141": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6141.json"
+          },
+          "CanCreateBasicServiceGET6142": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6142.json"
+          },
+          "CanCreateBasicServiceGET6143": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6143.json"
+          },
+          "CanCreateBasicServiceGET6144": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6144.json"
+          },
+          "CanCreateBasicServiceGET6145": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6145.json"
+          },
+          "CanCreateBasicServiceGET6146": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6146.json"
+          },
+          "CanCreateBasicServiceGET6147": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6147.json"
+          },
+          "CanCreateBasicServiceGET6148": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6148.json"
+          },
+          "CanCreateBasicServiceGET6149": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6149.json"
+          },
+          "CanCreateBasicServiceGET6150": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6150.json"
+          },
+          "CanCreateBasicServiceGET6151": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6151.json"
+          },
+          "CanCreateBasicServiceGET6152": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6152.json"
+          },
+          "CanCreateBasicServiceGET6153": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6153.json"
+          },
+          "CanCreateBasicServiceGET6154": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6154.json"
+          },
+          "CanCreateBasicServiceGET6155": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6155.json"
+          },
+          "CanCreateBasicServiceGET6156": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6156.json"
+          },
+          "CanCreateBasicServiceGET6157": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6157.json"
+          },
+          "CanCreateBasicServiceGET6158": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6158.json"
+          },
+          "CanCreateBasicServiceGET6159": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6159.json"
+          },
+          "CanCreateBasicServiceGET6160": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6160.json"
+          },
+          "CanCreateBasicServiceGET6161": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6161.json"
+          },
+          "CanCreateBasicServiceGET6162": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6162.json"
+          },
+          "CanCreateBasicServiceGET6163": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6163.json"
+          },
+          "CanCreateBasicServiceGET6164": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6164.json"
+          },
+          "CanCreateBasicServiceGET6165": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6165.json"
+          },
+          "CanCreateBasicServiceGET6166": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6166.json"
+          },
+          "CanCreateBasicServiceGET6167": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6167.json"
+          },
+          "CanCreateBasicServiceGET6168": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6168.json"
+          },
+          "CanCreateBasicServiceGET6169": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6169.json"
+          },
+          "CanCreateBasicServiceGET6170": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6170.json"
+          },
+          "CanCreateBasicServiceGET6171": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6171.json"
+          },
+          "CanCreateBasicServiceGET6172": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6172.json"
+          },
+          "CanCreateBasicServiceGET6173": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6173.json"
+          },
+          "CanCreateBasicServiceGET6174": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6174.json"
+          },
+          "CanCreateBasicServiceGET6175": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6175.json"
+          },
+          "CanCreateBasicServiceGET6176": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6176.json"
+          },
+          "CanCreateBasicServiceGET6177": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6177.json"
+          },
+          "CanCreateBasicServiceGET6178": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6178.json"
+          },
+          "CanCreateBasicServiceGET6179": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6179.json"
+          },
+          "CanCreateBasicServiceGET6180": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6180.json"
+          },
+          "CanCreateBasicServiceGET6181": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6181.json"
+          },
+          "CanCreateBasicServiceGET6182": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6182.json"
+          },
+          "CanCreateBasicServiceGET6183": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6183.json"
+          },
+          "CanCreateBasicServiceGET6184": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6184.json"
+          },
+          "CanCreateBasicServiceGET6185": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6185.json"
+          },
+          "CanCreateBasicServiceGET6186": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6186.json"
+          },
+          "CanCreateBasicServiceGET6187": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6187.json"
+          },
+          "CanCreateBasicServiceGET6188": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6188.json"
+          },
+          "CanCreateBasicServiceGET6189": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6189.json"
+          },
+          "CanCreateBasicServiceGET6190": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6190.json"
+          },
+          "CanCreateBasicServiceGET6191": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6191.json"
+          },
+          "CanCreateBasicServiceGET6192": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6192.json"
+          },
+          "CanCreateBasicServiceGET6193": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6193.json"
+          },
+          "CanCreateBasicServiceGET6194": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6194.json"
+          },
+          "CanCreateBasicServiceGET6195": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6195.json"
+          },
+          "CanCreateBasicServiceGET6196": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6196.json"
+          },
+          "CanCreateBasicServiceGET6197": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6197.json"
+          },
+          "CanCreateBasicServiceGET6198": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6198.json"
+          },
+          "CanCreateBasicServiceGET6199": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6199.json"
+          },
+          "CanCreateBasicServiceGET6200": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6200.json"
+          },
+          "CanCreateBasicServiceGET6201": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6201.json"
+          },
+          "CanCreateBasicServiceGET6202": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6202.json"
+          },
+          "CanCreateBasicServiceGET6203": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6203.json"
+          },
+          "CanCreateBasicServiceGET6204": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6204.json"
+          },
+          "CanCreateBasicServiceGET6205": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6205.json"
+          },
+          "CanCreateBasicServiceGET6206": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6206.json"
+          },
+          "CanCreateBasicServiceGET6207": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6207.json"
+          },
+          "CanCreateBasicServiceGET6208": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6208.json"
+          },
+          "CanCreateBasicServiceGET6209": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6209.json"
+          },
+          "CanCreateBasicServiceGET6210": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6210.json"
+          },
+          "CanCreateBasicServiceGET6211": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6211.json"
+          },
+          "CanCreateBasicServiceGET6212": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6212.json"
+          },
+          "CanCreateBasicServiceGET6213": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6213.json"
+          },
+          "CanCreateBasicServiceGET6214": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6214.json"
+          },
+          "CanCreateBasicServiceGET6215": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6215.json"
+          },
+          "CanCreateBasicServiceGET6216": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6216.json"
+          },
+          "CanCreateBasicServiceGET6217": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6217.json"
+          },
+          "CanCreateBasicServiceGET6218": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6218.json"
+          },
+          "CanCreateBasicServiceGET6219": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6219.json"
+          },
+          "CanCreateBasicServiceGET6220": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6220.json"
+          },
+          "CanCreateBasicServiceGET6221": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6221.json"
+          },
+          "CanCreateBasicServiceGET6222": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6222.json"
+          },
+          "CanCreateBasicServiceGET6223": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6223.json"
+          },
+          "CanCreateBasicServiceGET6224": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6224.json"
+          },
+          "CanCreateBasicServiceGET6225": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6225.json"
+          },
+          "CanCreateBasicServiceGET6226": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6226.json"
+          },
+          "CanCreateBasicServiceGET6227": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6227.json"
+          },
+          "CanCreateBasicServiceGET6228": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6228.json"
+          },
+          "CanCreateBasicServiceGET6229": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6229.json"
+          },
+          "CanCreateBasicServiceGET6230": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6230.json"
+          },
+          "CanCreateBasicServiceGET6231": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6231.json"
+          },
+          "CanCreateBasicServiceGET6232": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6232.json"
+          },
+          "CanCreateBasicServiceGET6233": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6233.json"
+          },
+          "CanCreateBasicServiceGET6234": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6234.json"
+          },
+          "CanCreateBasicServiceGET6235": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6235.json"
+          },
+          "CanCreateBasicServiceGET6236": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6236.json"
+          },
+          "CanCreateBasicServiceGET6237": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6237.json"
+          },
+          "CanCreateBasicServiceGET6238": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6238.json"
+          },
+          "CanCreateBasicServiceGET6239": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6239.json"
+          },
+          "CanCreateBasicServiceGET6240": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6240.json"
+          },
+          "CanCreateBasicServiceGET6241": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6241.json"
+          },
+          "CanCreateBasicServiceGET6242": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6242.json"
+          },
+          "CanCreateBasicServiceGET6243": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6243.json"
+          },
+          "CanCreateBasicServiceGET6244": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6244.json"
+          },
+          "CanCreateBasicServiceGET6245": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6245.json"
+          },
+          "CanCreateBasicServiceGET6246": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6246.json"
+          },
+          "CanCreateBasicServiceGET6247": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6247.json"
+          },
+          "CanCreateBasicServiceGET6248": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6248.json"
+          },
+          "CanCreateBasicServiceGET6249": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6249.json"
+          },
+          "CanCreateBasicServiceGET6250": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6250.json"
+          },
+          "CanCreateBasicServiceGET6251": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6251.json"
+          },
+          "CanCreateBasicServiceGET6252": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6252.json"
+          },
+          "CanCreateBasicServiceGET6253": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6253.json"
+          },
+          "CanCreateBasicServiceGET6254": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6254.json"
+          },
+          "CanCreateBasicServiceGET6255": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6255.json"
+          },
+          "CanCreateBasicServiceGET6256": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6256.json"
+          },
+          "CanCreateBasicServiceGET6257": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6257.json"
+          },
+          "CanCreateBasicServiceGET6258": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6258.json"
+          },
+          "CanCreateBasicServiceGET6259": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6259.json"
+          },
+          "CanCreateBasicServiceGET6260": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6260.json"
+          },
+          "CanCreateBasicServiceGET6261": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6261.json"
+          },
+          "CanCreateBasicServiceGET6262": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6262.json"
+          },
+          "CanCreateBasicServiceGET6263": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6263.json"
+          },
+          "CanCreateBasicServiceGET6264": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6264.json"
+          },
+          "CanCreateBasicServiceGET6265": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6265.json"
+          },
+          "CanCreateBasicServiceGET6266": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6266.json"
+          },
+          "CanCreateBasicServiceGET6267": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6267.json"
+          },
+          "CanCreateBasicServiceGET6268": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6268.json"
+          },
+          "CanCreateBasicServiceGET6269": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6269.json"
+          },
+          "CanCreateBasicServiceGET6270": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6270.json"
+          },
+          "CanCreateBasicServiceGET6271": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6271.json"
+          },
+          "CanCreateBasicServiceGET6272": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6272.json"
+          },
+          "CanCreateBasicServiceGET6273": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6273.json"
+          },
+          "CanCreateBasicServiceGET6274": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6274.json"
+          },
+          "CanCreateBasicServiceGET6275": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6275.json"
+          },
+          "CanCreateBasicServiceGET6276": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6276.json"
+          },
+          "CanCreateBasicServiceGET6277": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6277.json"
+          },
+          "CanCreateBasicServiceGET6278": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6278.json"
+          },
+          "CanCreateBasicServiceGET6279": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6279.json"
+          },
+          "CanCreateBasicServiceGET6280": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6280.json"
+          },
+          "CanCreateBasicServiceGET6281": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6281.json"
+          },
+          "CanCreateBasicServiceGET6282": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6282.json"
+          },
+          "CanCreateBasicServiceGET6283": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6283.json"
+          },
+          "CanCreateBasicServiceGET6284": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6284.json"
+          },
+          "CanCreateBasicServiceGET6285": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6285.json"
+          },
+          "CanCreateBasicServiceGET6286": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6286.json"
+          },
+          "CanCreateBasicServiceGET6287": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6287.json"
+          },
+          "CanCreateBasicServiceGET6288": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6288.json"
+          },
+          "CanCreateBasicServiceGET6289": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6289.json"
+          },
+          "CanCreateBasicServiceGET6290": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6290.json"
+          },
+          "CanCreateBasicServiceGET6291": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6291.json"
+          },
+          "CanCreateBasicServiceGET6292": {
+            "$ref": "../examples/CanCreateBasicService-GET-example-6292.json"
+          },
+          "CanCreateStandard2ServiceGET64": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-64.json"
+          },
+          "CanCreateStandard2ServiceGET65": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-65.json"
+          },
+          "CanCreateStandard2ServiceGET66": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-66.json"
+          },
+          "CanCreateStandard2ServiceGET67": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-67.json"
+          },
+          "CanCreateStandard2ServiceGET68": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-68.json"
+          },
+          "CanCreateStandard2ServiceGET69": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-69.json"
+          },
+          "CanCreateStandard2ServiceGET610": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-610.json"
+          },
+          "CanCreateStandard2ServiceGET611": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-611.json"
+          },
+          "CanCreateStandard2ServiceGET612": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-612.json"
+          },
+          "CanCreateStandard2ServiceGET613": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-613.json"
+          },
+          "CanCreateStandard2ServiceGET614": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-614.json"
+          },
+          "CanCreateStandard2ServiceGET615": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-615.json"
+          },
+          "CanCreateStandard2ServiceGET616": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-616.json"
+          },
+          "CanCreateStandard2ServiceGET617": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-617.json"
+          },
+          "CanCreateStandard2ServiceGET618": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-618.json"
+          },
+          "CanCreateStandard2ServiceGET619": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-619.json"
+          },
+          "CanCreateStandard2ServiceGET620": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-620.json"
+          },
+          "CanCreateStandard2ServiceGET621": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-621.json"
+          },
+          "CanCreateStandard2ServiceGET622": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-622.json"
+          },
+          "CanCreateStandard2ServiceGET623": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-623.json"
+          },
+          "CanCreateStandard2ServiceGET624": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-624.json"
+          },
+          "CanCreateStandard2ServiceGET625": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-625.json"
+          },
+          "CanCreateStandard2ServiceGET626": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-626.json"
+          },
+          "CanCreateStandard2ServiceGET627": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-627.json"
+          },
+          "CanCreateStandard2ServiceGET628": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-628.json"
+          },
+          "CanCreateStandard2ServiceGET629": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-629.json"
+          },
+          "CanCreateStandard2ServiceGET630": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-630.json"
+          },
+          "CanCreateStandard2ServiceGET631": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-631.json"
+          },
+          "CanCreateStandard2ServiceGET632": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-632.json"
+          },
+          "CanCreateStandard2ServiceGET633": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-633.json"
+          },
+          "CanCreateStandard2ServiceGET634": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-634.json"
+          },
+          "CanCreateStandard2ServiceGET635": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-635.json"
+          },
+          "CanCreateStandard2ServiceGET636": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-636.json"
+          },
+          "CanCreateStandard2ServiceGET637": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-637.json"
+          },
+          "CanCreateStandard2ServiceGET638": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-638.json"
+          },
+          "CanCreateStandard2ServiceGET639": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-639.json"
+          },
+          "CanCreateStandard2ServiceGET640": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-640.json"
+          },
+          "CanCreateStandard2ServiceGET641": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-641.json"
+          },
+          "CanCreateStandard2ServiceGET642": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-642.json"
+          },
+          "CanCreateStandard2ServiceGET643": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-643.json"
+          },
+          "CanCreateStandard2ServiceGET644": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-644.json"
+          },
+          "CanCreateStandard2ServiceGET645": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-645.json"
+          },
+          "CanCreateStandard2ServiceGET646": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-646.json"
+          },
+          "CanCreateStandard2ServiceGET647": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-647.json"
+          },
+          "CanCreateStandard2ServiceGET648": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-648.json"
+          },
+          "CanCreateStandard2ServiceGET649": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-649.json"
+          },
+          "CanCreateStandard2ServiceGET650": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-650.json"
+          },
+          "CanCreateStandard2ServiceGET651": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-651.json"
+          },
+          "CanCreateStandard2ServiceGET652": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-652.json"
+          },
+          "CanCreateStandard2ServiceGET653": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-653.json"
+          },
+          "CanCreateStandard2ServiceGET654": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-654.json"
+          },
+          "CanCreateStandard2ServiceGET655": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-655.json"
+          },
+          "CanCreateStandard2ServiceGET656": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-656.json"
+          },
+          "CanCreateStandard2ServiceGET657": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-657.json"
+          },
+          "CanCreateStandard2ServiceGET658": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-658.json"
+          },
+          "CanCreateStandard2ServiceGET659": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-659.json"
+          },
+          "CanCreateStandard2ServiceGET660": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-660.json"
+          },
+          "CanCreateStandard2ServiceGET661": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-661.json"
+          },
+          "CanCreateStandard2ServiceGET662": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-662.json"
+          },
+          "CanCreateStandard2ServiceGET663": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-663.json"
+          },
+          "CanCreateStandard2ServiceGET664": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-664.json"
+          },
+          "CanCreateStandard2ServiceGET665": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-665.json"
+          },
+          "CanCreateStandard2ServiceGET666": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-666.json"
+          },
+          "CanCreateStandard2ServiceGET667": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-667.json"
+          },
+          "CanCreateStandard2ServiceGET668": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-668.json"
+          },
+          "CanCreateStandard2ServiceGET669": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-669.json"
+          },
+          "CanCreateStandard2ServiceGET670": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-670.json"
+          },
+          "CanCreateStandard2ServiceGET671": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-671.json"
+          },
+          "CanCreateStandard2ServiceGET672": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-672.json"
+          },
+          "CanCreateStandard2ServiceGET673": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-673.json"
+          },
+          "CanCreateStandard2ServiceGET674": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-674.json"
+          },
+          "CanCreateStandard2ServiceGET675": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-675.json"
+          },
+          "CanCreateStandard2ServiceGET676": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-676.json"
+          },
+          "CanCreateStandard2ServiceGET677": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-677.json"
+          },
+          "CanCreateStandard2ServiceGET678": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-678.json"
+          },
+          "CanCreateStandard2ServiceGET679": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-679.json"
+          },
+          "CanCreateStandard2ServiceGET680": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-680.json"
+          },
+          "CanCreateStandard2ServiceGET681": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-681.json"
+          },
+          "CanCreateStandard2ServiceGET682": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-682.json"
+          },
+          "CanCreateStandard2ServiceGET683": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-683.json"
+          },
+          "CanCreateStandard2ServiceGET684": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-684.json"
+          },
+          "CanCreateStandard2ServiceGET685": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-685.json"
+          },
+          "CanCreateStandard2ServiceGET686": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-686.json"
+          },
+          "CanCreateStandard2ServiceGET687": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-687.json"
+          },
+          "CanCreateStandard2ServiceGET688": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-688.json"
+          },
+          "CanCreateStandard2ServiceGET689": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-689.json"
+          },
+          "CanCreateStandard2ServiceGET690": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-690.json"
+          },
+          "CanCreateStandard2ServiceGET691": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-691.json"
+          },
+          "CanCreateStandard2ServiceGET692": {
+            "$ref": "../examples/CanCreateStandard2Service-GET-example-692.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET64": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-64.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET65": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-65.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET66": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-66.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET67": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-67.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET68": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-68.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET69": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-69.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET610": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-610.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET611": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-611.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET612": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-612.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET613": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-613.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET614": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-614.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET615": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-615.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET616": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-616.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET617": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-617.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET618": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-618.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET619": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-619.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET620": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-620.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET621": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-621.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET622": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-622.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET623": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-623.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET624": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-624.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET625": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-625.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET626": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-626.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET627": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-627.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET628": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-628.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET629": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-629.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET630": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-630.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET631": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-631.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET632": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-632.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET633": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-633.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET634": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-634.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET635": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-635.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET636": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-636.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET637": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-637.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET638": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-638.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET639": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-639.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET640": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-640.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET641": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-641.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET642": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-642.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET643": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-643.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET644": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-644.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET645": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-645.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET646": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-646.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET647": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-647.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET648": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-648.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET649": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-649.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET650": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-650.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET651": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-651.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET652": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-652.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET653": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-653.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET654": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-654.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET655": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-655.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET656": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-656.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET657": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-657.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET658": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-658.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET659": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-659.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET660": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-660.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET661": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-661.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET662": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-662.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET663": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-663.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET664": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-664.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET665": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-665.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET666": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-666.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET667": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-667.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET668": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-668.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET669": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-669.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET670": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-670.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET671": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-671.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET672": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-672.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET673": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-673.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET674": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-674.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET675": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-675.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET676": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-676.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET677": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-677.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET678": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-678.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET679": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-679.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET680": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-680.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET681": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-681.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET682": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-682.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET683": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-683.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET684": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-684.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET685": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-685.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET686": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-686.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET687": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-687.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET688": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-688.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET689": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-689.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET690": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-690.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET691": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-691.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET692": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-692.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET693": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-693.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET694": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-694.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET695": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-695.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET696": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-696.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET697": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-697.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET698": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-698.json"
+          },
+          "CanCreateStandard3HighDensityServiceGET699": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-GET-example-699.json"
+          },
+          "CanCreateStandard3ServiceGET64": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-64.json"
+          },
+          "CanCreateStandard3ServiceGET65": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-65.json"
+          },
+          "CanCreateStandard3ServiceGET66": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-66.json"
+          },
+          "CanCreateStandard3ServiceGET67": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-67.json"
+          },
+          "CanCreateStandard3ServiceGET68": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-68.json"
+          },
+          "CanCreateStandard3ServiceGET69": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-69.json"
+          },
+          "CanCreateStandard3ServiceGET610": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-610.json"
+          },
+          "CanCreateStandard3ServiceGET611": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-611.json"
+          },
+          "CanCreateStandard3ServiceGET612": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-612.json"
+          },
+          "CanCreateStandard3ServiceGET613": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-613.json"
+          },
+          "CanCreateStandard3ServiceGET614": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-614.json"
+          },
+          "CanCreateStandard3ServiceGET615": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-615.json"
+          },
+          "CanCreateStandard3ServiceGET616": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-616.json"
+          },
+          "CanCreateStandard3ServiceGET617": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-617.json"
+          },
+          "CanCreateStandard3ServiceGET618": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-618.json"
+          },
+          "CanCreateStandard3ServiceGET619": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-619.json"
+          },
+          "CanCreateStandard3ServiceGET620": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-620.json"
+          },
+          "CanCreateStandard3ServiceGET621": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-621.json"
+          },
+          "CanCreateStandard3ServiceGET622": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-622.json"
+          },
+          "CanCreateStandard3ServiceGET623": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-623.json"
+          },
+          "CanCreateStandard3ServiceGET624": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-624.json"
+          },
+          "CanCreateStandard3ServiceGET625": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-625.json"
+          },
+          "CanCreateStandard3ServiceGET626": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-626.json"
+          },
+          "CanCreateStandard3ServiceGET627": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-627.json"
+          },
+          "CanCreateStandard3ServiceGET628": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-628.json"
+          },
+          "CanCreateStandard3ServiceGET629": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-629.json"
+          },
+          "CanCreateStandard3ServiceGET630": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-630.json"
+          },
+          "CanCreateStandard3ServiceGET631": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-631.json"
+          },
+          "CanCreateStandard3ServiceGET632": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-632.json"
+          },
+          "CanCreateStandard3ServiceGET633": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-633.json"
+          },
+          "CanCreateStandard3ServiceGET634": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-634.json"
+          },
+          "CanCreateStandard3ServiceGET635": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-635.json"
+          },
+          "CanCreateStandard3ServiceGET636": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-636.json"
+          },
+          "CanCreateStandard3ServiceGET637": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-637.json"
+          },
+          "CanCreateStandard3ServiceGET638": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-638.json"
+          },
+          "CanCreateStandard3ServiceGET639": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-639.json"
+          },
+          "CanCreateStandard3ServiceGET640": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-640.json"
+          },
+          "CanCreateStandard3ServiceGET641": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-641.json"
+          },
+          "CanCreateStandard3ServiceGET642": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-642.json"
+          },
+          "CanCreateStandard3ServiceGET643": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-643.json"
+          },
+          "CanCreateStandard3ServiceGET644": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-644.json"
+          },
+          "CanCreateStandard3ServiceGET645": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-645.json"
+          },
+          "CanCreateStandard3ServiceGET646": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-646.json"
+          },
+          "CanCreateStandard3ServiceGET647": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-647.json"
+          },
+          "CanCreateStandard3ServiceGET648": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-648.json"
+          },
+          "CanCreateStandard3ServiceGET649": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-649.json"
+          },
+          "CanCreateStandard3ServiceGET650": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-650.json"
+          },
+          "CanCreateStandard3ServiceGET651": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-651.json"
+          },
+          "CanCreateStandard3ServiceGET652": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-652.json"
+          },
+          "CanCreateStandard3ServiceGET653": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-653.json"
+          },
+          "CanCreateStandard3ServiceGET654": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-654.json"
+          },
+          "CanCreateStandard3ServiceGET655": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-655.json"
+          },
+          "CanCreateStandard3ServiceGET656": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-656.json"
+          },
+          "CanCreateStandard3ServiceGET657": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-657.json"
+          },
+          "CanCreateStandard3ServiceGET658": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-658.json"
+          },
+          "CanCreateStandard3ServiceGET659": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-659.json"
+          },
+          "CanCreateStandard3ServiceGET660": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-660.json"
+          },
+          "CanCreateStandard3ServiceGET661": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-661.json"
+          },
+          "CanCreateStandard3ServiceGET662": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-662.json"
+          },
+          "CanCreateStandard3ServiceGET663": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-663.json"
+          },
+          "CanCreateStandard3ServiceGET664": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-664.json"
+          },
+          "CanCreateStandard3ServiceGET665": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-665.json"
+          },
+          "CanCreateStandard3ServiceGET666": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-666.json"
+          },
+          "CanCreateStandard3ServiceGET667": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-667.json"
+          },
+          "CanCreateStandard3ServiceGET668": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-668.json"
+          },
+          "CanCreateStandard3ServiceGET669": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-669.json"
+          },
+          "CanCreateStandard3ServiceGET670": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-670.json"
+          },
+          "CanCreateStandard3ServiceGET671": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-671.json"
+          },
+          "CanCreateStandard3ServiceGET672": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-672.json"
+          },
+          "CanCreateStandard3ServiceGET673": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-673.json"
+          },
+          "CanCreateStandard3ServiceGET674": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-674.json"
+          },
+          "CanCreateStandard3ServiceGET675": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-675.json"
+          },
+          "CanCreateStandard3ServiceGET676": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-676.json"
+          },
+          "CanCreateStandard3ServiceGET677": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-677.json"
+          },
+          "CanCreateStandard3ServiceGET678": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-678.json"
+          },
+          "CanCreateStandard3ServiceGET679": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-679.json"
+          },
+          "CanCreateStandard3ServiceGET680": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-680.json"
+          },
+          "CanCreateStandard3ServiceGET681": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-681.json"
+          },
+          "CanCreateStandard3ServiceGET682": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-682.json"
+          },
+          "CanCreateStandard3ServiceGET683": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-683.json"
+          },
+          "CanCreateStandard3ServiceGET684": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-684.json"
+          },
+          "CanCreateStandard3ServiceGET685": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-685.json"
+          },
+          "CanCreateStandard3ServiceGET686": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-686.json"
+          },
+          "CanCreateStandard3ServiceGET687": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-687.json"
+          },
+          "CanCreateStandard3ServiceGET688": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-688.json"
+          },
+          "CanCreateStandard3ServiceGET689": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-689.json"
+          },
+          "CanCreateStandard3ServiceGET690": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-690.json"
+          },
+          "CanCreateStandard3ServiceGET691": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-691.json"
+          },
+          "CanCreateStandard3ServiceGET692": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-692.json"
+          },
+          "CanCreateStandard3ServiceGET693": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-693.json"
+          },
+          "CanCreateStandard3ServiceGET694": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-694.json"
+          },
+          "CanCreateStandard3ServiceGET695": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-695.json"
+          },
+          "CanCreateStandard3ServiceGET696": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-696.json"
+          },
+          "CanCreateStandard3ServiceGET697": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-697.json"
+          },
+          "CanCreateStandard3ServiceGET698": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-698.json"
+          },
+          "CanCreateStandard3ServiceGET699": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-699.json"
+          },
+          "CanCreateStandard3ServiceGET6100": {
+            "$ref": "../examples/CanCreateStandard3Service-GET-example-6100.json"
+          },
+          "CanScaleServiceUpAndDownGET66": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-66.json"
+          },
+          "CanScaleServiceUpAndDownGET67": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-67.json"
+          },
+          "CanScaleServiceUpAndDownGET68": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-68.json"
+          },
+          "CanScaleServiceUpAndDownGET69": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-69.json"
+          },
+          "CanScaleServiceUpAndDownGET610": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-610.json"
+          },
+          "CanScaleServiceUpAndDownGET611": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-611.json"
+          },
+          "CanScaleServiceUpAndDownGET612": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-612.json"
+          },
+          "CanScaleServiceUpAndDownGET613": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-613.json"
+          },
+          "CanScaleServiceUpAndDownGET614": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-614.json"
+          },
+          "CanScaleServiceUpAndDownGET615": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-615.json"
+          },
+          "CanScaleServiceUpAndDownGET616": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-616.json"
+          },
+          "CanScaleServiceUpAndDownGET617": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-617.json"
+          },
+          "CanScaleServiceUpAndDownGET618": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-618.json"
+          },
+          "CanScaleServiceUpAndDownGET619": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-619.json"
+          },
+          "CanScaleServiceUpAndDownGET620": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-620.json"
+          },
+          "CanScaleServiceUpAndDownGET621": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-621.json"
+          },
+          "CanScaleServiceUpAndDownGET622": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-622.json"
+          },
+          "CanScaleServiceUpAndDownGET623": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-623.json"
+          },
+          "CanScaleServiceUpAndDownGET624": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-624.json"
+          },
+          "CanScaleServiceUpAndDownGET625": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-625.json"
+          },
+          "CanScaleServiceUpAndDownGET626": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-626.json"
+          },
+          "CanScaleServiceUpAndDownGET627": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-627.json"
+          },
+          "CanScaleServiceUpAndDownGET628": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-628.json"
+          },
+          "CanScaleServiceUpAndDownGET629": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-629.json"
+          },
+          "CanScaleServiceUpAndDownGET630": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-630.json"
+          },
+          "CanScaleServiceUpAndDownGET631": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-631.json"
+          },
+          "CanScaleServiceUpAndDownGET632": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-632.json"
+          },
+          "CanScaleServiceUpAndDownGET633": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-633.json"
+          },
+          "CanScaleServiceUpAndDownGET634": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-634.json"
+          },
+          "CanScaleServiceUpAndDownGET635": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-635.json"
+          },
+          "CanScaleServiceUpAndDownGET636": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-636.json"
+          },
+          "CanScaleServiceUpAndDownGET637": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-637.json"
+          },
+          "CanScaleServiceUpAndDownGET638": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-638.json"
+          },
+          "CanScaleServiceUpAndDownGET639": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-639.json"
+          },
+          "CanScaleServiceUpAndDownGET640": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-640.json"
+          },
+          "CanScaleServiceUpAndDownGET641": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-641.json"
+          },
+          "CanScaleServiceUpAndDownGET642": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-642.json"
+          },
+          "CanScaleServiceUpAndDownGET643": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-643.json"
+          },
+          "CanScaleServiceUpAndDownGET644": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-644.json"
+          },
+          "CanScaleServiceUpAndDownGET645": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-645.json"
+          },
+          "CanScaleServiceUpAndDownGET646": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-646.json"
+          },
+          "CanScaleServiceUpAndDownGET647": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-647.json"
+          },
+          "CanScaleServiceUpAndDownGET648": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-648.json"
+          },
+          "CanScaleServiceUpAndDownGET649": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-649.json"
+          },
+          "CanScaleServiceUpAndDownGET650": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-650.json"
+          },
+          "CanScaleServiceUpAndDownGET651": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-651.json"
+          },
+          "CanScaleServiceUpAndDownGET652": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-652.json"
+          },
+          "CanScaleServiceUpAndDownGET653": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-653.json"
+          },
+          "CanScaleServiceUpAndDownGET654": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-654.json"
+          },
+          "CanScaleServiceUpAndDownGET655": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-655.json"
+          },
+          "CanScaleServiceUpAndDownGET656": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-656.json"
+          },
+          "CanScaleServiceUpAndDownGET657": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-657.json"
+          },
+          "CanScaleServiceUpAndDownGET658": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-658.json"
+          },
+          "CanScaleServiceUpAndDownGET659": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-659.json"
+          },
+          "CanScaleServiceUpAndDownGET660": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-660.json"
+          },
+          "CanScaleServiceUpAndDownGET661": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-661.json"
+          },
+          "CanScaleServiceUpAndDownGET662": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-662.json"
+          },
+          "CanScaleServiceUpAndDownGET663": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-663.json"
+          },
+          "CanScaleServiceUpAndDownGET664": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-664.json"
+          },
+          "CanScaleServiceUpAndDownGET665": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-665.json"
+          },
+          "CanScaleServiceUpAndDownGET666": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-666.json"
+          },
+          "CanScaleServiceUpAndDownGET667": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-667.json"
+          },
+          "CanScaleServiceUpAndDownGET668": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-668.json"
+          },
+          "CanScaleServiceUpAndDownGET669": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-669.json"
+          },
+          "CanScaleServiceUpAndDownGET670": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-670.json"
+          },
+          "CanScaleServiceUpAndDownGET671": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-671.json"
+          },
+          "CanScaleServiceUpAndDownGET672": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-672.json"
+          },
+          "CanScaleServiceUpAndDownGET673": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-673.json"
+          },
+          "CanScaleServiceUpAndDownGET674": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-674.json"
+          },
+          "CanScaleServiceUpAndDownGET675": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-675.json"
+          },
+          "CanScaleServiceUpAndDownGET676": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-676.json"
+          },
+          "CanScaleServiceUpAndDownGET677": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-677.json"
+          },
+          "CanScaleServiceUpAndDownGET678": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-678.json"
+          },
+          "CanScaleServiceUpAndDownGET679": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-679.json"
+          },
+          "CanScaleServiceUpAndDownGET680": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-680.json"
+          },
+          "CanScaleServiceUpAndDownGET681": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-681.json"
+          },
+          "CanScaleServiceUpAndDownGET682": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-682.json"
+          },
+          "CanScaleServiceUpAndDownGET683": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-683.json"
+          },
+          "CanScaleServiceUpAndDownGET684": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-684.json"
+          },
+          "CanScaleServiceUpAndDownGET685": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-685.json"
+          },
+          "CanScaleServiceUpAndDownGET686": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-686.json"
+          },
+          "CanScaleServiceUpAndDownGET687": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-687.json"
+          },
+          "CanScaleServiceUpAndDownGET688": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-688.json"
+          },
+          "CanScaleServiceUpAndDownGET689": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-689.json"
+          },
+          "CanScaleServiceUpAndDownGET690": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-690.json"
+          },
+          "CanScaleServiceUpAndDownGET691": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-691.json"
+          },
+          "CanScaleServiceUpAndDownGET692": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-692.json"
+          },
+          "CanScaleServiceUpAndDownGET693": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-693.json"
+          },
+          "CanScaleServiceUpAndDownGET694": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-694.json"
+          },
+          "CanScaleServiceUpAndDownGET695": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-695.json"
+          },
+          "CanScaleServiceUpAndDownGET696": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-696.json"
+          },
+          "CanScaleServiceUpAndDownGET697": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-697.json"
+          },
+          "CanScaleServiceUpAndDownGET698": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-698.json"
+          },
+          "CanScaleServiceUpAndDownGET699": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-699.json"
+          },
+          "CanScaleServiceUpAndDownGET6100": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6100.json"
+          },
+          "CanScaleServiceUpAndDownGET6101": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6101.json"
+          },
+          "CanScaleServiceUpAndDownGET6102": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6102.json"
+          },
+          "CanScaleServiceUpAndDownGET6103": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6103.json"
+          },
+          "CanScaleServiceUpAndDownGET6104": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6104.json"
+          },
+          "CanScaleServiceUpAndDownGET6105": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6105.json"
+          },
+          "CanScaleServiceUpAndDownGET6106": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6106.json"
+          },
+          "CanScaleServiceUpAndDownGET6107": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6107.json"
+          },
+          "CanScaleServiceUpAndDownGET6108": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6108.json"
+          },
+          "CanScaleServiceUpAndDownGET6109": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6109.json"
+          },
+          "CanScaleServiceUpAndDownGET6110": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6110.json"
+          },
+          "CanScaleServiceUpAndDownGET6111": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6111.json"
+          },
+          "CanScaleServiceUpAndDownGET6112": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6112.json"
+          },
+          "CanScaleServiceUpAndDownGET6113": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6113.json"
+          },
+          "CanScaleServiceUpAndDownGET6114": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6114.json"
+          },
+          "CanScaleServiceUpAndDownGET6115": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6115.json"
+          },
+          "CanScaleServiceUpAndDownGET6116": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6116.json"
+          },
+          "CanScaleServiceUpAndDownGET6117": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6117.json"
+          },
+          "CanScaleServiceUpAndDownGET6118": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6118.json"
+          },
+          "CanScaleServiceUpAndDownGET6119": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6119.json"
+          },
+          "CanScaleServiceUpAndDownGET6120": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6120.json"
+          },
+          "CanScaleServiceUpAndDownGET6121": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6121.json"
+          },
+          "CanScaleServiceUpAndDownGET6122": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6122.json"
+          },
+          "CanScaleServiceUpAndDownGET6123": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6123.json"
+          },
+          "CanScaleServiceUpAndDownGET6124": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6124.json"
+          },
+          "CanScaleServiceUpAndDownGET6125": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6125.json"
+          },
+          "CanScaleServiceUpAndDownGET6126": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6126.json"
+          },
+          "CanScaleServiceUpAndDownGET6127": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6127.json"
+          },
+          "CanScaleServiceUpAndDownGET6128": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6128.json"
+          },
+          "CanScaleServiceUpAndDownGET6129": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6129.json"
+          },
+          "CanScaleServiceUpAndDownGET6130": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6130.json"
+          },
+          "CanScaleServiceUpAndDownGET6131": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6131.json"
+          },
+          "CanScaleServiceUpAndDownGET6132": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6132.json"
+          },
+          "CanScaleServiceUpAndDownGET6133": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6133.json"
+          },
+          "CanScaleServiceUpAndDownGET6134": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6134.json"
+          },
+          "CanScaleServiceUpAndDownGET6135": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6135.json"
+          },
+          "CanScaleServiceUpAndDownGET6136": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6136.json"
+          },
+          "CanScaleServiceUpAndDownGET6137": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6137.json"
+          },
+          "CanScaleServiceUpAndDownGET6138": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6138.json"
+          },
+          "CanScaleServiceUpAndDownGET6139": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6139.json"
+          },
+          "CanScaleServiceUpAndDownGET6140": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6140.json"
+          },
+          "CanScaleServiceUpAndDownGET6141": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6141.json"
+          },
+          "CanScaleServiceUpAndDownGET6142": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6142.json"
+          },
+          "CanScaleServiceUpAndDownGET6143": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6143.json"
+          },
+          "CanScaleServiceUpAndDownGET6144": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6144.json"
+          },
+          "CanScaleServiceUpAndDownGET6145": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6145.json"
+          },
+          "CanScaleServiceUpAndDownGET6146": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6146.json"
+          },
+          "CanScaleServiceUpAndDownGET6147": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6147.json"
+          },
+          "CanScaleServiceUpAndDownGET6148": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6148.json"
+          },
+          "CanScaleServiceUpAndDownGET6149": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6149.json"
+          },
+          "CanScaleServiceUpAndDownGET6150": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6150.json"
+          },
+          "CanScaleServiceUpAndDownGET6151": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6151.json"
+          },
+          "CanScaleServiceUpAndDownGET6152": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6152.json"
+          },
+          "CanScaleServiceUpAndDownGET6153": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6153.json"
+          },
+          "CanScaleServiceUpAndDownGET6154": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6154.json"
+          },
+          "CanScaleServiceUpAndDownGET6155": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6155.json"
+          },
+          "CanScaleServiceUpAndDownGET6156": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6156.json"
+          },
+          "CanScaleServiceUpAndDownGET6157": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6157.json"
+          },
+          "CanScaleServiceUpAndDownGET6158": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6158.json"
+          },
+          "CanScaleServiceUpAndDownGET6159": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6159.json"
+          },
+          "CanScaleServiceUpAndDownGET6160": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6160.json"
+          },
+          "CanScaleServiceUpAndDownGET6161": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6161.json"
+          },
+          "CanScaleServiceUpAndDownGET6162": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6162.json"
+          },
+          "CanScaleServiceUpAndDownGET6163": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6163.json"
+          },
+          "CanScaleServiceUpAndDownGET6164": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6164.json"
+          },
+          "CanScaleServiceUpAndDownGET6165": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6165.json"
+          },
+          "CanScaleServiceUpAndDownGET6166": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6166.json"
+          },
+          "CanScaleServiceUpAndDownGET6167": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6167.json"
+          },
+          "CanScaleServiceUpAndDownGET6168": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6168.json"
+          },
+          "CanScaleServiceUpAndDownGET6169": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6169.json"
+          },
+          "CanScaleServiceUpAndDownGET6170": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6170.json"
+          },
+          "CanScaleServiceUpAndDownGET6171": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6171.json"
+          },
+          "CanScaleServiceUpAndDownGET6172": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6172.json"
+          },
+          "CanScaleServiceUpAndDownGET6173": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6173.json"
+          },
+          "CanScaleServiceUpAndDownGET6174": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6174.json"
+          },
+          "CanScaleServiceUpAndDownGET6175": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6175.json"
+          },
+          "CanScaleServiceUpAndDownGET6176": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6176.json"
+          },
+          "CanScaleServiceUpAndDownGET6177": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6177.json"
+          },
+          "CanScaleServiceUpAndDownGET6178": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6178.json"
+          },
+          "CanScaleServiceUpAndDownGET6179": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6179.json"
+          },
+          "CanScaleServiceUpAndDownGET6180": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6180.json"
+          },
+          "CanScaleServiceUpAndDownGET6181": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6181.json"
+          },
+          "CanScaleServiceUpAndDownGET6182": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6182.json"
+          },
+          "CanScaleServiceUpAndDownGET6183": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6183.json"
+          },
+          "CanScaleServiceUpAndDownGET6184": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6184.json"
+          },
+          "CanScaleServiceUpAndDownGET6185": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6185.json"
+          },
+          "CanScaleServiceUpAndDownGET6186": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6186.json"
+          },
+          "CanScaleServiceUpAndDownGET6187": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6187.json"
+          },
+          "CanScaleServiceUpAndDownGET6188": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6188.json"
+          },
+          "CanScaleServiceUpAndDownGET6189": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6189.json"
+          },
+          "CanScaleServiceUpAndDownGET6190": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6190.json"
+          },
+          "CanScaleServiceUpAndDownGET6191": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6191.json"
+          },
+          "CanScaleServiceUpAndDownGET6192": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6192.json"
+          },
+          "CanScaleServiceUpAndDownGET6193": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6193.json"
+          },
+          "CanScaleServiceUpAndDownGET6194": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6194.json"
+          },
+          "CanScaleServiceUpAndDownGET6195": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6195.json"
+          },
+          "CanScaleServiceUpAndDownGET6196": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6196.json"
+          },
+          "CanScaleServiceUpAndDownGET6197": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6197.json"
+          },
+          "CanScaleServiceUpAndDownGET6198": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6198.json"
+          },
+          "CanScaleServiceUpAndDownGET6199": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6199.json"
+          },
+          "CanScaleServiceUpAndDownGET6200": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6200.json"
+          },
+          "CanScaleServiceUpAndDownGET6201": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6201.json"
+          },
+          "CanScaleServiceUpAndDownGET6202": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6202.json"
+          },
+          "CanScaleServiceUpAndDownGET6203": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6203.json"
+          },
+          "CanScaleServiceUpAndDownGET6204": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6204.json"
+          },
+          "CanScaleServiceUpAndDownGET6205": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6205.json"
+          },
+          "CanScaleServiceUpAndDownGET6206": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6206.json"
+          },
+          "CanScaleServiceUpAndDownGET6207": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6207.json"
+          },
+          "CanScaleServiceUpAndDownGET6208": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6208.json"
+          },
+          "CanScaleServiceUpAndDownGET6209": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6209.json"
+          },
+          "CanScaleServiceUpAndDownGET6210": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6210.json"
+          },
+          "CanScaleServiceUpAndDownGET6211": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6211.json"
+          },
+          "CanScaleServiceUpAndDownGET6212": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6212.json"
+          },
+          "CanScaleServiceUpAndDownGET6213": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6213.json"
+          },
+          "CanScaleServiceUpAndDownGET6214": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6214.json"
+          },
+          "CanScaleServiceUpAndDownGET6215": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6215.json"
+          },
+          "CanScaleServiceUpAndDownGET6216": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6216.json"
+          },
+          "CanScaleServiceUpAndDownGET6217": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6217.json"
+          },
+          "CanScaleServiceUpAndDownGET6218": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6218.json"
+          },
+          "CanScaleServiceUpAndDownGET6219": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6219.json"
+          },
+          "CanScaleServiceUpAndDownGET6220": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6220.json"
+          },
+          "CanScaleServiceUpAndDownGET6221": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6221.json"
+          },
+          "CanScaleServiceUpAndDownGET6222": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6222.json"
+          },
+          "CanScaleServiceUpAndDownGET6223": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-GET-example-6223.json"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Services"
+        ],
+        "operationId": "Services_Delete",
+        "description": "Deletes a Search service in the given resource group, along with its associated resources.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/SearchServiceNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The Search service was successfully deleted."
+          },
+          "204": {
+            "description": "The Search service was successfully deleted."
+          },
+          "404": {
+            "description": "The subscription, resource group, or Search service could not be found."
+          },
+          "default": {
+            "description": "An unexpected error occurred during the operation.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanGetAdminKeysDELETE67": {
+            "$ref": "../examples/CanGetAdminKeys-DELETE-example-67.json"
+          },
+          "CanRegenerateAdminKeysDELETE69": {
+            "$ref": "../examples/CanRegenerateAdminKeys-DELETE-example-69.json"
+          },
+          "CanCreateAndDeleteQueryKeysDELETE611": {
+            "$ref": "../examples/CanCreateAndDeleteQueryKeys-DELETE-example-611.json"
+          },
+          "CanListQueryKeysDELETE67": {
+            "$ref": "../examples/CanListQueryKeys-DELETE-example-67.json"
+          },
+          "DeleteQueryKeyIsIdempotentDELETE69": {
+            "$ref": "../examples/DeleteQueryKeyIsIdempotent-DELETE-example-69.json"
+          },
+          "CanCreateAndDeleteServiceDELETE64": {
+            "$ref": "../examples/CanCreateAndDeleteService-DELETE-example-64.json"
+          },
+          "CanCreateBasicServiceDELETE6293": {
+            "$ref": "../examples/CanCreateBasicService-DELETE-example-6293.json"
+          },
+          "CanCreateStandard2ServiceDELETE693": {
+            "$ref": "../examples/CanCreateStandard2Service-DELETE-example-693.json"
+          },
+          "CanCreateStandard3HighDensityServiceDELETE6100": {
+            "$ref": "../examples/CanCreateStandard3HighDensityService-DELETE-example-6100.json"
+          },
+          "CanCreateStandard3ServiceDELETE6101": {
+            "$ref": "../examples/CanCreateStandard3Service-DELETE-example-6101.json"
+          },
+          "CanCreateStandardServiceDELETE64": {
+            "$ref": "../examples/CanCreateStandardService-DELETE-example-64.json"
+          },
+          "CanScaleServiceUpAndDownDELETE6224": {
+            "$ref": "../examples/CanScaleServiceUpAndDown-DELETE-example-6224.json"
+          },
+          "DeleteServiceIsIdempotentDELETE64": {
+            "$ref": "../examples/DeleteServiceIsIdempotent-DELETE-example-64.json"
+          },
+          "DeleteServiceIsIdempotentDELETE65": {
+            "$ref": "../examples/DeleteServiceIsIdempotent-DELETE-example-65.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Search/searchServices": {
+      "get": {
+        "tags": [
+          "Services"
+        ],
+        "x-ms-pageable": {
+          "nextLinkName": null
+        },
+        "operationId": "Services_ListByResourceGroup",
+        "description": "Gets a list of all Search services in the given resource group.",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "parameters": [
+          {
+            "$ref": "#/parameters/ResourceGroupNameParameter"
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The operation succeeded. The response contains the list of all Search service definitions for the given resource group.",
+            "schema": {
+              "$ref": "#/definitions/SearchServiceListResult"
+            },
+            "examples": {
+              "application/json": {
+                "value": [
+                  {
+                    "id": "/subscriptions/<your subscription ID here>/resourceGroups/Default-ResourceGroup/providers/Microsoft.Search/searchServices/your-service-name-here",
+                    "name": "your-service-name-here",
+                    "location": "westus",
+                    "type": "Microsoft.Search/searchServices",
+                    "tags": {
+                      "app-name": "My e-commerce app"
+                    },
+                    "sku": {
+                      "name": "standard"
+                    },
+                    "properties": {
+                      "replicaCount": 3,
+                      "partitionCount": 1,
+                      "status": "running",
+                      "statusDetails": "",
+                      "hostingMode": "default",
+                      "provisioningState": "succeeded"
+                    }
+                  },
+                  {
+                    "id": "/subscriptions/<your subscription ID here>/resourceGroups/Default-ResourceGroup/providers/Microsoft.Search/searchServices/your-second-service-name-here",
+                    "name": "your-second-service-name-here",
+                    "location": "eastus",
+                    "type": "Microsoft.Search/searchServices",
+                    "tags": {
+                      "app-name": "My e-commerce app"
+                    },
+                    "sku": {
+                      "name": "basic"
+                    },
+                    "properties": {
+                      "replicaCount": 1,
+                      "partitionCount": 1,
+                      "status": "running",
+                      "statusDetails": "",
+                      "hostingMode": "default",
+                      "provisioningState": "succeeded"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "default": {
+            "description": "An unexpected error occurred during the operation.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CanCreateAndDeleteServiceGET75": {
+            "$ref": "../examples/CanCreateAndDeleteService-GET-example-75.json"
+          },
+          "CanListServicesGET75": {
+            "$ref": "../examples/CanListServices-GET-example-75.json"
+          },
+          "RequestIdIsReturnedInResponseGET73": {
+            "$ref": "../examples/RequestIdIsReturnedInResponse-GET-example-73.json"
+          }
+        }
+      }
+    },
+    "/subscriptions/{subscriptionId}/providers/Microsoft.Search/checkNameAvailability": {
+      "post": {
+        "tags": [
+          "Services"
+        ],
+        "description": "Checks whether or not the given Search service name is available for use. Search service names must be globally unique since they are part of the service URI (https://<name>.search.windows.net).",
+        "externalDocs": {
+          "url": "https://aka.ms/search-manage"
+        },
+        "operationId": "Services_CheckNameAvailability",
+        "parameters": [
+          {
+            "name": "checkNameAvailabilityInput",
+            "in": "body",
+            "description": "The resource name and type to check.",
+            "x-ms-client-flatten": true,
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CheckNameAvailabilityInput"
+            }
+          },
+          {
+            "$ref": "#/parameters/ClientRequestIdParameter"
+          },
+          {
+            "$ref": "#/parameters/ApiVersionParameter"
+          },
+          {
+            "$ref": "#/parameters/SubscriptionIdParameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The name check completed. The response contains details of whether the name is valid and available. If the name is invalid, the response also contains a message explaining why not.",
+            "schema": {
+              "$ref": "#/definitions/CheckNameAvailabilityOutput"
+            },
+            "examples": {
+              "application/json": {
+                "nameAvailable": false,
+                "reason": "AlreadyExists",
+                "message": ""
+              }
+            }
+          },
+          "default": {
+            "description": "HTTP 400 (Bad Request): The given resource type is not 'searchServices'.",
+            "schema": {
+              "$ref": "#/definitions/CloudError"
+            }
+          }
+        },
+        "x-ms-examples": {
+          "CheckNameAvailabilityFailsOnInvalidNamePOST83": {
+            "$ref": "../examples/CheckNameAvailabilityFailsOnInvalidName-POST-example-83.json"
+          },
+          "CheckNameAvailabilityFailsOnUsedNamePOST84": {
+            "$ref": "../examples/CheckNameAvailabilityFailsOnUsedName-POST-example-84.json"
+          },
+          "CheckNameAvailabilitySucceedsOnNewNamePOST83": {
+            "$ref": "../examples/CheckNameAvailabilitySucceedsOnNewName-POST-example-83.json"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CheckNameAvailabilityInput": {
+      "type": "object",
+      "required": [
+        "name",
+        "type"
+      ],
+      "properties": {
+        "name": {
+          "description": "The Search service name to validate. Search service names must only contain lowercase letters, digits or dashes, cannot use dash as the first two or last one characters, cannot contain consecutive dashes, and must be between 2 and 60 characters in length.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of the resource whose name is to be validated. This value must always be 'searchServices'.",
+          "type": "string",
+          "enum": [
+            "searchServices"
+          ],
+          "x-ms-enum": {
+            "name": "ResourceType",
+            "modelAsString": false
+          }
+        }
+      },
+      "description": "Input of check name availability API.",
+      "example": {
+        "name": "your-service-name-here",
+        "type": "searchServices"
+      }
+    },
+    "CheckNameAvailabilityOutput": {
+      "type": "object",
+      "properties": {
+        "nameAvailable": {
+          "x-ms-client-name": "IsNameAvailable",
+          "description": "A value indicating whether the name is available.",
+          "type": "boolean",
+          "readOnly": true
+        },
+        "reason": {
+          "description": "The reason why the name is not available. 'Invalid' indicates the name provided does not match the naming requirements (incorrect length, unsupported characters, etc.). 'AlreadyExists' indicates that the name is already in use and is therefore unavailable.",
+          "type": "string",
+          "readOnly": true,
+          "enum": [
+            "Invalid",
+            "AlreadyExists"
+          ],
+          "x-ms-enum": {
+            "name": "UnavailableNameReason",
+            "modelAsString": true
+          }
+        },
+        "message": {
+          "description": "A message that explains why the name is invalid and provides resource naming requirements. Available only if 'Invalid' is returned in the 'reason' property.",
+          "type": "string",
+          "readOnly": true
+        }
+      },
+      "description": "Output of check name availability API."
+    },
+    "AdminKeyResult": {
+      "properties": {
+        "primaryKey": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The primary admin API key of the Search service."
+        },
+        "secondaryKey": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The secondary admin API key of the Search service."
+        }
+      },
+      "description": "Response containing the primary and secondary admin API keys for a given Azure Search service."
+    },
+    "QueryKey": {
+      "properties": {
+        "name": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The name of the query API key; may be empty."
+        },
+        "key": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The value of the query API key."
+        }
+      },
+      "description": "Describes an API key for a given Azure Search service that has permissions for query operations only."
+    },
+    "ListQueryKeysResult": {
+      "properties": {
+        "value": {
+          "readOnly": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/QueryKey"
+          },
+          "description": "The query keys for the Azure Search service."
+        }
+      },
+      "description": "Response containing the query API keys for a given Azure Search service.",
+      "x-ms-external": true
+    },
+    "Sku": {
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The SKU of the Search service. Valid values include: 'free': Shared service. 'basic': Dedicated service with up to 3 replicas. 'standard': Dedicated service with up to 12 partitions and 12 replicas. 'standard2': Similar to standard, but with more capacity per search unit. 'standard3': Offers maximum capacity per search unit with up to 12 partitions and 12 replicas (or up to 3 partitions with more indexes if you also set the hostingMode property to 'highDensity').",
+          "enum": [
+            "free",
+            "basic",
+            "standard",
+            "standard2",
+            "standard3"
+          ],
+          "x-ms-enum": {
+            "name": "SkuName",
+            "modelAsString": false
+          }
+        }
+      },
+      "description": "Defines the SKU of an Azure Search Service, which determines price tier and capacity limits.",
+      "externalDocs": {
+        "url": "https://azure.microsoft.com/documentation/articles/search-sku-tier/"
+      }
+    },
+    "SearchService": {
+      "properties": {
+        "properties": {
+          "x-ms-client-flatten": true,
+          "$ref": "#/definitions/SearchServiceProperties",
+          "description": "Properties of the Search service."
+        },
+        "sku": {
+          "$ref": "#/definitions/Sku",
+          "description": "The SKU of the Search Service, which determines price tier and capacity limits.",
+          "externalDocs": {
+            "url": "https://azure.microsoft.com/documentation/articles/search-sku-tier/"
+          }
+        }
+      },
+      "required": [
+        "sku"
+      ],
+      "allOf": [
+        {
+          "$ref": "#/definitions/Resource"
+        }
+      ],
+      "description": "Describes an Azure Search service and its current state.",
+      "example": {
+        "location": "westus",
+        "tags": {
+          "app-name": "My e-commerce app"
+        },
+        "sku": {
+          "name": "standard"
+        },
+        "properties": {
+          "replicaCount": 3,
+          "partitionCount": 1,
+          "hostingMode": "default"
+        }
+      }
+    },
+    "SearchServiceProperties": {
+      "properties": {
+        "replicaCount": {
+          "type": "integer",
+          "format": "int32",
+          "minimum": 1,
+          "maximum": 12,
+          "default": 1,
+          "description": "The number of replicas in the Search service. If specified, it must be a value between 1 and 12 inclusive for standard SKUs or between 1 and 3 inclusive for basic SKU."
+        },
+        "partitionCount": {
+          "type": "integer",
+          "format": "int32",
+          "minimum": 1,
+          "maximum": 12,
+          "default": 1,
+          "description": "The number of partitions in the Search service; if specified, it can be 1, 2, 3, 4, 6, or 12. Values greater than 1 are only valid for standard SKUs. For 'standard3' services with hostingMode set to 'highDensity', the allowed values are between 1 and 3."
+        },
+        "hostingMode": {
+          "type": "string",
+          "default": "default",
+          "description": "Applicable only for the standard3 SKU. You can set this property to enable up to 3 high density partitions that allow up to 1000 indexes, which is much higher than the maximum indexes allowed for any other SKU. For the standard3 SKU, the value is either 'default' or 'highDensity'. For all other SKUs, this value must be 'default'.",
+          "enum": [
+            "default",
+            "highDensity"
+          ],
+          "x-ms-enum": {
+            "name": "HostingMode",
+            "modelAsString": false
+          }
+        },
+        "status": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The status of the Search service. Possible values include: 'running': The Search service is running and no provisioning operations are underway. 'provisioning': The Search service is being provisioned or scaled up or down. 'deleting': The Search service is being deleted. 'degraded': The Search service is degraded. This can occur when the underlying search units are not healthy. The Search service is most likely operational, but performance might be slow and some requests might be dropped. 'disabled': The Search service is disabled. In this state, the service will reject all API requests. 'error': The Search service is in an error state. If your service is in the degraded, disabled, or error states, it means the Azure Search team is actively investigating the underlying issue. Dedicated services in these states are still chargeable based on the number of search units provisioned.",
+          "enum": [
+            "running",
+            "provisioning",
+            "deleting",
+            "degraded",
+            "disabled",
+            "error"
+          ],
+          "x-ms-enum": {
+            "name": "SearchServiceStatus",
+            "modelAsString": false
+          }
+        },
+        "statusDetails": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The details of the Search service status."
+        },
+        "provisioningState": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The state of the last provisioning operation performed on the Search service. Provisioning is an intermediate state that occurs while service capacity is being established. After capacity is set up, provisioningState changes to either 'succeeded' or 'failed'. Client applications can poll provisioning status (the recommended polling interval is from 30 seconds to one minute) by using the Get Search Service operation to see when an operation is completed. If you are using the free service, this value tends to come back as 'succeeded' directly in the call to Create Search service. This is because the free service uses capacity that is already set up.",
+          "enum": [
+            "succeeded",
+            "provisioning",
+            "failed"
+          ],
+          "x-ms-enum": {
+            "name": "ProvisioningState",
+            "modelAsString": false
+          }
+        }
+      },
+      "description": "Properties of the Search service."
+    },
+    "SearchServiceListResult": {
+      "properties": {
+        "value": {
+          "readOnly": true,
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/SearchService"
+          },
+          "description": "The list of Search services."
+        }
+      },
+      "description": "Response containing a list of Azure Search services.",
+      "x-ms-external": true
+    },
+    "Resource": {
+      "properties": {
+        "id": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The ID of the resource. This can be used with the Azure Resource Manager to link resources together.",
+          "externalDocs": {
+            "url": "https://aka.ms/search-linked-resources"
+          }
+        },
+        "name": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The name of the resource.",
+          "externalDocs": {
+            "url": "https://aka.ms/search-naming-rules"
+          }
+        },
+        "type": {
+          "readOnly": true,
+          "type": "string",
+          "description": "The resource type."
+        },
+        "location": {
+          "type": "string",
+          "description": "The geographic location of the resource. This must be one of the supported and registered Azure Geo Regions (for example, West US, East US, Southeast Asia, and so forth).",
+          "externalDocs": {
+            "url": "https://aka.ms/search-rp-info"
+          },
+          "x-ms-mutability": [
+            "create",
+            "read"
+          ]
+        },
+        "tags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Tags to help categorize the resource in the Azure portal."
+        }
+      },
+      "required": [
+        "location"
+      ],
+      "description": "Base type for all Azure resources.",
+      "x-ms-azure-resource": true
+    },
+    "CloudError": {
+      "type": "object",
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/CloudErrorBody"
+        }
+      },
+      "description": "Contains information about an API error.",
+      "x-ms-external": true
+    },
+    "CloudErrorBody": {
+      "type": "object",
+      "description": "Describes a particular API error with an error code and a message.",
+      "properties": {
+        "code": {
+          "type": "string",
+          "description": "An error code that describes the error condition more precisely than an HTTP status code. Can be used to programatically handle specific error cases."
+        },
+        "message": {
+          "type": "string",
+          "description": "A message that describes the error in detail and provides debugging information."
+        },
+        "target": {
+          "type": "string",
+          "description": "The target of the particular error (for example, the name of the property in error)."
+        },
+        "details": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CloudErrorBody"
+          },
+          "description": "Contains nested errors that are related to this error."
+        }
+      },
+      "x-ms-external": true
+    }
+  },
+  "parameters": {
+    "ResourceGroupNameParameter": {
+      "name": "resourceGroupName",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "The name of the resource group within the current subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+      "x-ms-parameter-location": "method"
+    },
+    "SearchServiceNameParameter": {
+      "name": "searchServiceName",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "The name of the Azure Search service associated with the specified resource group.",
+      "x-ms-parameter-location": "method"
+    },
+    "ClientRequestIdParameter": {
+      "name": "x-ms-client-request-id",
+      "x-ms-client-name": "clientRequestId",
+      "in": "header",
+      "required": false,
+      "type": "string",
+      "format": "uuid",
+      "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
+      "x-ms-client-request-id": true,
+      "x-ms-parameter-grouping": {
+        "name": "search-management-request-options"
+      },
+      "x-ms-parameter-location": "method"
+    },
+    "SubscriptionIdParameter": {
+      "name": "subscriptionId",
+      "in": "path",
+      "required": true,
+      "type": "string",
+      "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal."
+    },
+    "ApiVersionParameter": {
+      "name": "api-version",
+      "in": "query",
+      "required": true,
+      "type": "string",
+      "description": "The API version to use for each request. The current version is 2015-08-19."
+    }
+  }
+}

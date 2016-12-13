@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "setOwnerFilePath": "SDKTestFolder01%2FSDKTestFile01.txt4763",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "CREATE",
+    "write": "true"
+  },
+  "responses": {
+    "201": {
+      "body": ""
+    }
+  }
+}

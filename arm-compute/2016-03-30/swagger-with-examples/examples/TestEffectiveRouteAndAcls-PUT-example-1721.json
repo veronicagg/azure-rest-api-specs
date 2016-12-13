@@ -1,0 +1,111 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "crptestar9963",
+    "vmName": "vm712",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_A0"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer",
+            "offer": "WindowsServer",
+            "sku": "2012-R2-Datacenter",
+            "version": "4.0.20151120"
+          },
+          "osDisk": {
+            "name": "test",
+            "vhd": {
+              "uri": "https://crptestar4.blob.core.windows.net/crptestar8315/oscrptestar7969.vhd"
+            },
+            "caching": "None",
+            "createOption": "fromImage"
+          }
+        },
+        "osProfile": {
+          "computerName": "test",
+          "adminUsername": "Foo12",
+          "adminPassword": "BaR@123crptestar9963"
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/crptestar9963/providers/Microsoft.Network/networkInterfaces/nic9595"
+            }
+          ]
+        },
+        "availabilitySet": {
+          "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/crptestar9963/providers/Microsoft.Compute/availabilitySets/as6707"
+        }
+      },
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "vmId": "5b037766-7575-45be-9ce8-fc124324e6ab",
+          "availabilitySet": {
+            "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/crptestar9963/providers/Microsoft.Compute/availabilitySets/AS6707"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A0"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar4.blob.core.windows.net/crptestar8315/oscrptestar7969.vhd"
+              },
+              "caching": "None"
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/crptestar9963/providers/Microsoft.Network/networkInterfaces/nic9595"
+              }
+            ]
+          },
+          "provisioningState": "Creating"
+        },
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/crptestar9963/providers/Microsoft.Compute/virtualMachines/vm712",
+        "name": "vm712",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar7432",
+    "vmScaleSetName": "vmss397",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "virtualMachine": {
+          "statusesSummary": [
+            {
+              "code": "ProvisioningState/succeeded",
+              "count": 2
+            }
+          ]
+        },
+        "extensions": [
+          {
+            "name": "vmssext01",
+            "statusesSummary": [
+              {
+                "code": "ProvisioningState/succeeded",
+                "count": 2
+              }
+            ]
+          }
+        ],
+        "statuses": [
+          {
+            "code": "ProvisioningState/succeeded",
+            "level": "Info",
+            "displayStatus": "Provisioning succeeded",
+            "time": "2016-06-02T11:31:56.4215151-07:00"
+          }
+        ]
+      }
+    }
+  }
+}

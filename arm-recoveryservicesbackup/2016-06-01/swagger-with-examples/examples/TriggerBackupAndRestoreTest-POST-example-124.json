@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "fabricName": "Azure",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

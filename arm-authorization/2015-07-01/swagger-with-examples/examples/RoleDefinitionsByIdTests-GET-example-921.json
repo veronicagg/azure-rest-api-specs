@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "roleAssignmentId": "",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage everything except access to resources.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "*"
+              ],
+              "notActions": [
+                "Microsoft.Authorization/*/Write",
+                "Microsoft.Authorization/*/Delete"
+              ]
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:51.1968921Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "b24988ac-6180-42a0-ab88-20f7382dd24c"
+      }
+    }
+  }
+}

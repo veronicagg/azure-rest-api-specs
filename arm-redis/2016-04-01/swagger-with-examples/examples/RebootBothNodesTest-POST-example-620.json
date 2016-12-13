@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "redisCacheRG8181",
+    "name": "sunnyprimary9910",
+    "api-version": "2016-04-01",
+    "parameters": {
+      "rebootType": "AllNodes"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "Message": "The requested reboot operation for 'AllNodes' has been successfully scheduled and should be executed shortly."
+      }
+    }
+  }
+}

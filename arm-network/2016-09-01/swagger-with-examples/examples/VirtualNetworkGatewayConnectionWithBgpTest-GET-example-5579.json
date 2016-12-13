@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "subscriptionId": "f98da156-d5e6-44a1-99d8-1b6fd3f764ff",
+    "resourceGroupName": "csmrg5498",
+    "virtualNetworkGatewayName": "azsmnet3443",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet3443",
+        "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443",
+        "etag": "W/\"32c67b34-47a9-4785-9eb9-8722485395b5\"",
+        "type": "Microsoft.Network/virtualNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "c71d5327-5c99-4026-ab58-7ffc07376d0e",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet1876",
+              "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443/ipConfigurations/azsmnet1876",
+              "etag": "W/\"32c67b34-47a9-4785-9eb9-8722485395b5\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/publicIPAddresses/azsmnet2128"
+                },
+                "subnet": {
+                  "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworks/azsmnet6477/subnets/GatewaySubnet"
+                }
+              }
+            }
+          ],
+          "sku": {
+            "name": "Standard",
+            "tier": "Standard",
+            "capacity": 0
+          },
+          "gatewayType": "Vpn",
+          "vpnType": "RouteBased",
+          "enableBgp": false,
+          "bgpSettings": {
+            "asn": 1337,
+            "bgpPeeringAddress": "10.0.0.254",
+            "peerWeight": 5
+          }
+        }
+      }
+    }
+  }
+}

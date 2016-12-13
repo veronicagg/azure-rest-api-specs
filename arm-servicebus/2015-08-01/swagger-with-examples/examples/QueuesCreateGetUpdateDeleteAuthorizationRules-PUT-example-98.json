@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-9270",
+    "queueName": "sdk-Queues-6793",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "location": "Australia East"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-9270/queues/sdk-Queues-6793",
+        "name": "sdk-Queues-6793",
+        "type": "Microsoft.ServiceBus/Queues",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "lockDuration": "00:01:00",
+          "maxSizeInMegabytes": 1024,
+          "requiresDuplicateDetection": false,
+          "requiresSession": false,
+          "defaultMessageTimeToLive": "10675199.02:48:05.4775807",
+          "deadLetteringOnMessageExpiration": false,
+          "duplicateDetectionHistoryTimeWindow": "00:10:00",
+          "maxDeliveryCount": 10,
+          "enableBatchedOperations": true,
+          "sizeInBytes": 0,
+          "messageCount": 0,
+          "isAnonymousAccessible": false,
+          "status": "Active",
+          "createdAt": "2016-09-13T20:57:19.413",
+          "updatedAt": "2016-09-13T20:57:19.86",
+          "supportOrdering": true,
+          "autoDeleteOnIdle": "10675199.02:48:05.4775807",
+          "enablePartitioning": false,
+          "entityAvailabilityStatus": "Available",
+          "enableExpress": false
+        }
+      }
+    }
+  }
+}

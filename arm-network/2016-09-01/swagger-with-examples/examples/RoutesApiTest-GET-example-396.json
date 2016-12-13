@@ -1,0 +1,36 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg4808",
+    "routeTableName": "azsmnet8176",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet8176",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4808/providers/Microsoft.Network/routeTables/azsmnet8176",
+        "etag": "W/\"d4b4c8f8-7f5a-4a13-aafb-9e83c7c284dd\"",
+        "type": "Microsoft.Network/routeTables",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "98102090-afe0-4291-a953-7807c23b84b0",
+          "routes": [
+            {
+              "name": "azsmnet8055",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg4808/providers/Microsoft.Network/routeTables/azsmnet8176/routes/azsmnet8055",
+              "etag": "W/\"d4b4c8f8-7f5a-4a13-aafb-9e83c7c284dd\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "192.168.1.0/24",
+                "nextHopType": "VirtualAppliance",
+                "nextHopIpAddress": "23.108.1.1"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

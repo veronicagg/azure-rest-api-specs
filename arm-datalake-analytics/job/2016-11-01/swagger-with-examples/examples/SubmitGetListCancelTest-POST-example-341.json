@@ -1,0 +1,44 @@
+{
+  "parameters": {
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "name": "azure sdk data lake analytics job",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "f9d64a74-f687-4227-bfb6-8552cd27d4d3",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+        "degreeOfParallelism": 0,
+        "priority": 0,
+        "submitTime": "0001-01-01T00:00:00-08:00",
+        "state": "Ended",
+        "result": "Succeeded",
+        "properties": {
+          "resources": [],
+          "runtimeVersion": "kobo_vnext_signed_5177484",
+          "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;",
+          "algebraFilePath": "mafs://accounts/testdatalake12107/fs/system/compilationService/jobs/USql/f9d64a74-f687-4227-bfb6-8552cd27d4d3/2016/11/08/04/16/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "PT0S",
+          "totalPausedTime": "PT0S",
+          "totalQueuedTime": "PT0S",
+          "totalRunningTime": "PT0S",
+          "diagnostics": [],
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

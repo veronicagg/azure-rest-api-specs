@@ -1,0 +1,167 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg3523",
+    "networkSecurityGroupName": "azsmnet6980",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "securityRules": [
+          {
+            "properties": {
+              "description": "Test security rule",
+              "protocol": "Tcp",
+              "sourcePortRange": "655",
+              "destinationPortRange": "123-3500",
+              "sourceAddressPrefix": "*",
+              "destinationAddressPrefix": "*",
+              "access": "Allow",
+              "priority": 500,
+              "direction": "Inbound"
+            },
+            "name": "azsmnet9761"
+          }
+        ]
+      },
+      "location": "East US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet6980",
+        "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980",
+        "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+        "type": "Microsoft.Network/networkSecurityGroups",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "df2612a2-9f2c-4641-ae62-31982ad26eec",
+          "securityRules": [
+            {
+              "name": "azsmnet9761",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/securityRules/azsmnet9761",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Test security rule",
+                "protocol": "Tcp",
+                "sourcePortRange": "655",
+                "destinationPortRange": "123-3500",
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "*",
+                "access": "Allow",
+                "priority": 500,
+                "direction": "Inbound"
+              }
+            }
+          ],
+          "defaultSecurityRules": [
+            {
+              "name": "AllowVnetInBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/AllowVnetInBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Allow inbound traffic from all VMs in VNET",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "VirtualNetwork",
+                "destinationAddressPrefix": "VirtualNetwork",
+                "access": "Allow",
+                "priority": 65000,
+                "direction": "Inbound"
+              }
+            },
+            {
+              "name": "AllowAzureLoadBalancerInBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/AllowAzureLoadBalancerInBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Allow inbound traffic from azure load balancer",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "AzureLoadBalancer",
+                "destinationAddressPrefix": "*",
+                "access": "Allow",
+                "priority": 65001,
+                "direction": "Inbound"
+              }
+            },
+            {
+              "name": "DenyAllInBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/DenyAllInBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Deny all inbound traffic",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "*",
+                "access": "Deny",
+                "priority": 65500,
+                "direction": "Inbound"
+              }
+            },
+            {
+              "name": "AllowVnetOutBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/AllowVnetOutBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Allow outbound traffic from all VMs to all VMs in VNET",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "VirtualNetwork",
+                "destinationAddressPrefix": "VirtualNetwork",
+                "access": "Allow",
+                "priority": 65000,
+                "direction": "Outbound"
+              }
+            },
+            {
+              "name": "AllowInternetOutBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/AllowInternetOutBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Allow outbound traffic from all VMs to Internet",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "Internet",
+                "access": "Allow",
+                "priority": 65001,
+                "direction": "Outbound"
+              }
+            },
+            {
+              "name": "DenyAllOutBound",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg3523/providers/Microsoft.Network/networkSecurityGroups/azsmnet6980/defaultSecurityRules/DenyAllOutBound",
+              "etag": "W/\"3c9de990-9c58-42cb-862d-e9595d97966a\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "description": "Deny all outbound traffic",
+                "protocol": "*",
+                "sourcePortRange": "*",
+                "destinationPortRange": "*",
+                "sourceAddressPrefix": "*",
+                "destinationAddressPrefix": "*",
+                "access": "Deny",
+                "priority": 65500,
+                "direction": "Outbound"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

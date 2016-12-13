@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "csmrg502",
+    "deploymentName": "csmd2617",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/csmrg502/providers/Microsoft.Resources/deployments/csmd2617",
+        "name": "csmd2617",
+        "properties": {
+          "parameters": {
+            "storageAccountName": {
+              "type": "String",
+              "value": "tianotest102"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Succeeded",
+          "timestamp": "2016-07-26T01:40:03.2306241Z",
+          "duration": "PT43.9436805S",
+          "correlationId": "86ef52de-2adf-4da7-8377-68034c2d12ab",
+          "providers": [
+            {
+              "namespace": "Microsoft.Storage",
+              "resourceTypes": [
+                {
+                  "resourceType": "storageAccounts",
+                  "locations": [
+                    "westeurope"
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [],
+          "outputs": {},
+          "outputResources": [
+            {
+              "id": "Microsoft.Storage/storageAccounts/tianotest102"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

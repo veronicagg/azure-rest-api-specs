@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "groupObjectId": "ffc311cf-03cb-424d-90eb-cbe89273e9c6",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

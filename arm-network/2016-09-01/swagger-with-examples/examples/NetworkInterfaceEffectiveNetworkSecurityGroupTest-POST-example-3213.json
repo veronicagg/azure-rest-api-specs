@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg3523",
+    "networkInterfaceName": "azsmnet2464",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "GetEffectiveNetworkSecurityGroupsApiNotAllowed",
+          "message": "Get effective network security groups API not allowed on the subscription, subscription Id 7e6898e7-868d-490f-8f91-0cffa67c48a0 ",
+          "details": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "3c864007-60ff-4448-b16f-08b1b68953ea",
+    "api-version": "2015-01-14-preview",
+    "parameters": {
+      "properties": {
+        "screenCapture": "allow",
+        "fileEncryption": "required",
+        "friendlyName": "IntuneAndroidPolicy9371",
+        "description": "New Android Policy",
+        "appSharingFromLevel": "none",
+        "appSharingToLevel": "none",
+        "authentication": "required",
+        "clipboardSharingLevel": "blocked",
+        "dataBackup": "allow",
+        "fileSharingSaveAs": "allow",
+        "pin": "required",
+        "pinNumRetry": 15,
+        "deviceCompliance": "enable",
+        "managedBrowser": "required",
+        "accessRecheckOfflineTimeout": "PT12H",
+        "accessRecheckOnlineTimeout": "PT30M",
+        "offlineWipeTimeout": "P1D"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/providers/Microsoft.Intune/locations/fef.msua06/androidPolicies/3c864007-60ff-4448-b16f-08b1b68953ea",
+        "name": "3c864007-60ff-4448-b16f-08b1b68953ea",
+        "type": "Microsoft.Intune/locations/androidPolicies",
+        "properties": {
+          "screenCapture": "allow",
+          "fileEncryption": "required",
+          "friendlyName": "IntuneAndroidPolicy9371",
+          "description": "New Android Policy",
+          "accessRecheckOfflineTimeout": "P0DT12H00M",
+          "accessRecheckOnlineTimeout": "P0DT00H30M",
+          "appSharingFromLevel": "none",
+          "appSharingToLevel": "none",
+          "authentication": "required",
+          "clipboardSharingLevel": "blocked",
+          "dataBackup": "allow",
+          "deviceCompliance": "enable",
+          "managedBrowser": "required",
+          "fileSharingSaveAs": "allow",
+          "offlineWipeTimeout": "P1D",
+          "pin": "required",
+          "pinNumRetry": 15,
+          "numOfApps": 0,
+          "groupStatus": "notTargeted",
+          "lastModifiedTime": "2015-12-02T23:51:09.8563164Z"
+        }
+      }
+    }
+  }
+}

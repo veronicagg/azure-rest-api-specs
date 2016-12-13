@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "gatewayName": "test_gateway_175399666",
+    "api-version": "2016-07-01-preview",
+    "GatewayParameters": {
+      "location": "centralus",
+      "properties": {
+        "upgradeMode": "Automatic"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/test_gateway_175399666",
+        "name": "test_gateway_175399666",
+        "type": "microsoft.servermanagement/gateways",
+        "location": "centralus",
+        "etag": "W/\"datetime'2016-10-21T20%3A50%3A51.7524511Z'\"",
+        "properties": {
+          "created": "2016-10-21T20:50:47.5290774Z",
+          "updated": "2016-10-21T20:50:47.5290774Z",
+          "autoUpgrade": "On",
+          "upgradeMode": "Automatic",
+          "desiredVersion": null,
+          "minimumVersion": "1.0.1547.0"
+        }
+      }
+    }
+  }
+}

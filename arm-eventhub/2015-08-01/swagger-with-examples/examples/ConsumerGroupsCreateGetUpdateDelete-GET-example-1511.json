@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6562",
+    "eventHubName": "sdk-EventHub-4600",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-6562/eventhubs/sdk-EventHub-4600/consumergroups/$Default",
+            "name": "$Default",
+            "type": "Microsoft.EventHub/ConsumerGroups",
+            "location": "Australia East",
+            "tags": null,
+            "properties": {
+              "createdAt": "2016-09-01T22:36:32.4084737",
+              "updatedAt": "2016-09-01T22:36:32.4084737"
+            }
+          },
+          {
+            "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-6562/eventhubs/sdk-EventHub-4600/consumergroups/sdk-consumergroup-7518",
+            "name": "sdk-consumergroup-7518",
+            "type": "Microsoft.EventHub/ConsumerGroups",
+            "location": "Australia East",
+            "tags": null,
+            "properties": {
+              "createdAt": "2016-09-01T22:36:41.7622301",
+              "updatedAt": "2016-09-01T22:36:41.7622301"
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

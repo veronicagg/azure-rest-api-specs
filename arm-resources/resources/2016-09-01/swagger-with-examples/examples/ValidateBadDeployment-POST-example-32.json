@@ -1,0 +1,49 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "csmrg7126",
+    "deploymentName": "csmd2622",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "templateLink": {
+          "uri": "https://testtemplates.blob.core.windows.net/templates/bad-website-1.js"
+        },
+        "parameters": {
+          "siteName": {
+            "value": "mctest0101"
+          },
+          "hostingPlanName": {
+            "value": "mctest0101"
+          },
+          "siteMode": {
+            "value": "Limited"
+          },
+          "computeMode": {
+            "value": "Shared"
+          },
+          "siteLocation": {
+            "value": "North Europe"
+          },
+          "sku": {
+            "value": "Free"
+          },
+          "workerSize": {
+            "value": "0"
+          }
+        },
+        "mode": "Incremental"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidTemplate",
+          "message": "Deployment template validation failed: 'The template parameters 'hostingPlanName, siteMode, computeMode, siteLocation, sku, workerSize' in the parameters file are not valid; they are not present in the original template and can therefore not be provided at deployment time. The only supported parameters for this template are 'siteName'. Please see https://aka.ms/arm-deploy/#parameter-file for usage details.'."
+        }
+      }
+    }
+  }
+}

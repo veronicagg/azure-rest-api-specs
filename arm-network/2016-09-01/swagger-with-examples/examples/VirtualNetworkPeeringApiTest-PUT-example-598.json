@@ -1,0 +1,85 @@
+{
+  "parameters": {
+    "subscriptionId": "7e6898e7-868d-490f-8f91-0cffa67c48a0",
+    "resourceGroupName": "csmrg2790",
+    "virtualNetworkName": "azsmnet6391",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.1.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "properties": {
+              "addressPrefix": "10.1.1.0/24"
+            },
+            "name": "azsmnet7919"
+          },
+          {
+            "properties": {
+              "addressPrefix": "10.1.2.0/24"
+            },
+            "name": "azsmnet2000"
+          }
+        ]
+      },
+      "location": "westus"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet6391",
+        "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet6391",
+        "etag": "W/\"192e37bc-e614-41c2-8d52-3f07a7e9520e\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "32466346-b6da-4886-bc3e-b3334571e01d",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.1.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet7919",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet6391/subnets/azsmnet7919",
+              "etag": "W/\"192e37bc-e614-41c2-8d52-3f07a7e9520e\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.1.1.0/24"
+              }
+            },
+            {
+              "name": "azsmnet2000",
+              "id": "/subscriptions/7e6898e7-868d-490f-8f91-0cffa67c48a0/resourceGroups/csmrg2790/providers/Microsoft.Network/virtualNetworks/azsmnet6391/subnets/azsmnet2000",
+              "etag": "W/\"192e37bc-e614-41c2-8d52-3f07a7e9520e\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.1.2.0/24"
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

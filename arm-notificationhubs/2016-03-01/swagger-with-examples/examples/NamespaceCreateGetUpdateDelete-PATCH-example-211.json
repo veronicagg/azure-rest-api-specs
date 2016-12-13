@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH6574",
+    "namespaceName": "HydraNH-Namespace7572",
+    "api-version": "2016-03-01",
+    "parameters": {
+      "tags": {
+        "tag5": "value5",
+        "tag6": "value6"
+      },
+      "sku": {
+        "name": "Basic"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": null,
+        "name": null,
+        "type": null,
+        "location": null,
+        "sku": {
+          "name": "Basic"
+        },
+        "tags": {
+          "tag5": "value5",
+          "tag6": "value6"
+        },
+        "properties": {
+          "provisioningState": null,
+          "metricId": null,
+          "status": "Active",
+          "createdAt": "2016-09-22T22:32:32.097Z",
+          "serviceBusEndpoint": "https://HydraNH-Namespace7572.servicebus.windows.net:443/",
+          "enabled": true,
+          "critical": false,
+          "scaleUnit": "SN1-001",
+          "dataCenter": "SN1",
+          "updatedAt": "2016-09-22T22:33:04.15Z",
+          "namespaceType": "NotificationHub",
+          "messagingSku": 1,
+          "messagingSkuPlan": {
+            "sku": 1,
+            "selectedEventHubUnit": 1
+          }
+        }
+      }
+    }
+  }
+}

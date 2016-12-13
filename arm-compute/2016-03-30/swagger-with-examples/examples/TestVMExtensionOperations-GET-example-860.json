@@ -1,0 +1,48 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar957",
+    "vmName": "vm6746",
+    "vmExtensionName": "vmext01",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$expand": "instanceView"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "publisher": "Microsoft.Compute",
+          "type": "VMAccessAgent",
+          "typeHandlerVersion": "2.0",
+          "autoUpgradeMinorVersion": true,
+          "settings": "{}",
+          "forceUpdateTag": "RerunExtension",
+          "provisioningState": "Succeeded",
+          "instanceView": {
+            "name": "vmext01",
+            "type": "Microsoft.Compute.VMAccessAgent",
+            "typeHandlerVersion": "2.3",
+            "statuses": [
+              {
+                "code": "ProvisioningState/succeeded",
+                "level": "Info",
+                "displayStatus": "Provisioning succeeded",
+                "message": "Loading configuration for extension JsonVMAccessExtension"
+              }
+            ]
+          }
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar957/providers/Microsoft.Compute/virtualMachines/vm6746/extensions/vmext01",
+        "name": "vmext01",
+        "type": "Microsoft.Compute/virtualMachines/extensions",
+        "location": "southeastasia",
+        "tags": {
+          "extensionTag1": "1",
+          "extensionTag2": "2"
+        }
+      }
+    }
+  }
+}

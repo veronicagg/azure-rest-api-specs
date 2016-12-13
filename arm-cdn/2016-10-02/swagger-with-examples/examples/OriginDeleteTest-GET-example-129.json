@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "06adb0b3-baaa-4e5f-9df6-ca770f7902cd",
+    "resourceGroupName": "cdnResourceGroup1971",
+    "profileName": "profile560",
+    "endpointName": "endpoint5398",
+    "api-version": "2016-04-02"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "origin1",
+            "id": "/subscriptions/06adb0b3-baaa-4e5f-9df6-ca770f7902cd/resourcegroups/cdnResourceGroup1971/providers/Microsoft.Cdn/profiles/profile560/endpoints/endpoint5398/origins/origin1",
+            "type": "Microsoft.Cdn/profiles/endpoints/origins",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceState": "Active",
+              "hostName": "host1.hello.com",
+              "httpPort": null,
+              "httpsPort": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

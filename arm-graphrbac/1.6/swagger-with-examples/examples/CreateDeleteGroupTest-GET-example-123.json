@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "objectId": "ffc311cf-03cb-424d-90eb-cbe89273e9c6",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "odata.error": {
+          "code": "Request_ResourceNotFound",
+          "message": {
+            "lang": "en",
+            "value": "Resource 'ffc311cf-03cb-424d-90eb-cbe89273e9c6' does not exist or one of its queried reference-property objects are not present."
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg1727",
+    "accountName": "adlsacct9646",
+    "trustedIdProviderName": "trustedrule19423",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "idProvider": "https://sts.windows.net/b01f8e00-5842-47b1-9feb-6b8d0fb04baf"
+      },
+      "name": "trustedrule19423"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "idProvider": "https://sts.windows.net/b01f8e00-5842-47b1-9feb-6b8d0fb04baf"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg1727/providers/Microsoft.DataLakeStore/accounts/adlsacct9646/trustedIdProviders/trustedrule19423",
+        "name": "trustedrule19423",
+        "type": "Microsoft.DataLakeStore/accounts/trustedIdProviders"
+      }
+    }
+  }
+}

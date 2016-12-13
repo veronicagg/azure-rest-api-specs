@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19289",
+    "name": "testaba21528",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "defaultDataLakeStoreAccount": "testdatalake12107",
+        "dataLakeStoreAccounts": [
+          {
+            "name": "testdatalake12107",
+            "properties": {
+              "suffix": "azuredatalakestore.net"
+            }
+          }
+        ]
+      },
+      "location": "East US 2"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "defaultDataLakeStoreAccount": "testdatalake12107",
+          "dataLakeStoreAccounts": [
+            {
+              "properties": {
+                "suffix": "azuredatalakestore.net"
+              },
+              "name": "testdatalake12107"
+            }
+          ],
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "accountId": "0eeecbcd-8a7f-44ba-8a01-b1f4fda9b883",
+          "creationTime": null,
+          "lastModifiedTime": null
+        },
+        "location": "East US 2",
+        "tags": null,
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19289/providers/Microsoft.DataLakeAnalytics/accounts/testaba21528",
+        "name": "testaba21528",
+        "type": "Microsoft.DataLakeAnalytics/accounts"
+      }
+    }
+  }
+}

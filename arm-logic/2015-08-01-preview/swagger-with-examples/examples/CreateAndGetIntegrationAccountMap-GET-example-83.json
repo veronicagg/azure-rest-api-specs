@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount5084",
+    "mapName": "IntegrationAccountMap3853",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "mapType": "Xslt",
+          "contentLink": {
+            "uri": "https://flowprodcu09by01.blob.core.windows.net/integrationaccountsd34d38dc6d0f4d8da1c8f8554701f5e1/99D1E_XSLT_INTEGRATIONACCOUNTMAP3853-5868BC0103194FCAB12A010F838BAEEC?sv=2014-02-14&sr=b&sig=zJC%2FDDdKtCmIADikZqNT32Q8FXFuEd9dL0smUyjEtS0%3D&se=2016-07-20T21%3A22%3A39Z&sp=r",
+            "contentVersion": "\"0x8D3B0C272EDA59A\"",
+            "contentSize": 3056,
+            "contentHash": {
+              "algorithm": "md5",
+              "value": "A2avz/M0ov2FPI3+Je8vDw=="
+            }
+          },
+          "createdTime": "2016-07-20T17:22:39.7655332Z",
+          "changedTime": "2016-07-20T17:22:39.7662919Z",
+          "metadata": "IntegrationAccountMap3853"
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount5084/maps/IntegrationAccountMap3853",
+        "name": "IntegrationAccountMap3853",
+        "type": "Microsoft.Logic/integrationAccounts/maps"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19536",
+    "accountName": "testaba18483",
+    "dataLakeStoreAccountName": "testdatalake27493",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "suffix": "azuredatalakestore.net"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "suffix": "azuredatalakestore.net"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483/dataLakeStoreAccounts/testdatalake27493",
+        "name": "testdatalake27493",
+        "type": "Microsoft.DataLakeAnalytics/accounts/dataLakeStoreAccounts"
+      }
+    }
+  }
+}

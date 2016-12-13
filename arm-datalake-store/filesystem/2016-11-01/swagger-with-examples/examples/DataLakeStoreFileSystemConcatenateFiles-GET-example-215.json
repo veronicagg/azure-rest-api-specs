@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01%2FSDKTestFile01.txt2111",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /SDKTestFolder01/SDKTestFile01.txt2111 [29c739c8-cfeb-44f9-afff-d43e69f72aca][2016-11-10T14:47:31.1341119-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

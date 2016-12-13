@@ -1,0 +1,141 @@
+{
+  "parameters": {
+    "jobIdentity": "32d3a192-9c60-437c-b487-d972d5180290",
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "32d3a192-9c60-437c-b487-d972d5180290",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+        "degreeOfParallelism": 2,
+        "priority": 1000,
+        "submitTime": "2016-11-07T20:16:13.9670584-08:00",
+        "state": "Starting",
+        "result": "Succeeded",
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "2016-11-07T20:16:13.9670584-08:00",
+            "details": "userName:;submitMachine:N/A"
+          },
+          {
+            "newState": "Compiling",
+            "timeStamp": "2016-11-07T20:16:14.2483283-08:00",
+            "details": "CcsAttempts:1;Status:Dispatched"
+          },
+          {
+            "newState": "Queued",
+            "timeStamp": "2016-11-07T20:16:25.8890794-08:00"
+          },
+          {
+            "newState": "Scheduling",
+            "timeStamp": "2016-11-07T20:16:25.9046848-08:00",
+            "details": "Detail:Dispatching job to cluster.;rootProcessId:cc079c6c-d389-427a-a5d8-b86b77fbbcad"
+          },
+          {
+            "newState": "Starting",
+            "timeStamp": "2016-11-07T20:16:25.9046848-08:00",
+            "details": "runtimeVersion:kobo_vnext_signed_5177484"
+          }
+        ],
+        "properties": {
+          "owner": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+          "resources": [
+            {
+              "name": "__ScopeCodeGen__.dll",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGen__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.pdb",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGen__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenEngine__.dll",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.pdb",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenEngine__.pdb",
+              "type": "VertexResource"
+            },
+            {
+              "name": "ScopeVertexDef.xml",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/ScopeVertexDef.xml",
+              "type": "VertexResource"
+            },
+            {
+              "name": "__ScopeCodeGen__.dll.cs",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGen__.dll.cs",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.dll.cpp",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenEngine__.dll.cpp",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOutput__.txt",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenCompileOutput__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenCompileOptions__.txt",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenCompileOptions__.txt",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeCodeGenEngine__.cppresources",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeCodeGenEngine__.cppresources",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__Ast__.bin",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__Ast__.bin",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__SystemInternalInfo__.xml",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__SystemInternalInfo__.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "query.abr",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/query.abr",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "Profile",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/profile",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeRuntimeStatistics__.xml",
+              "resourcePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/__ScopeRuntimeStatistics__.xml",
+              "type": "StatisticsResource"
+            }
+          ],
+          "runtimeVersion": "kobo_vnext_signed_5177484",
+          "rootProcessNodeId": "cc079c6c-d389-427a-a5d8-b86b77fbbcad",
+          "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;",
+          "algebraFilePath": "adl://testdatalake12107.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/16/32d3a192-9c60-437c-b487-d972d5180290/algebra.xml",
+          "yarnApplicationId": 57768,
+          "yarnApplicationTimeStamp": 1478149020043,
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "PT11.6407511S",
+          "totalPausedTime": "PT0S",
+          "totalQueuedTime": "PT0.0156054S",
+          "totalRunningTime": "PT0S",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

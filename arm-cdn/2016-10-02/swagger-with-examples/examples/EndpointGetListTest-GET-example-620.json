@@ -1,0 +1,45 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup4106",
+    "profileName": "profile8568",
+    "endpointName": "endpoint3702",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "endpoint3702",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup4106/providers/Microsoft.Cdn/profiles/profile8568/endpoints/endpoint3702",
+        "type": "Microsoft.Cdn/profiles/endpoints",
+        "tags": {},
+        "location": "WestUs",
+        "properties": {
+          "hostName": "endpoint3702.azureedge.net",
+          "originHostHeader": null,
+          "provisioningState": "Succeeded",
+          "resourceState": "Deleting",
+          "isHttpAllowed": true,
+          "isHttpsAllowed": true,
+          "queryStringCachingBehavior": "IgnoreQueryString",
+          "originPath": null,
+          "origins": [
+            {
+              "name": "origin1",
+              "properties": {
+                "hostName": "host1.hello.com",
+                "httpPort": null,
+                "httpsPort": null
+              }
+            }
+          ],
+          "customDomains": [],
+          "contentTypesToCompress": [],
+          "isCompressionEnabled": false,
+          "optimizationType": null,
+          "geoFilters": []
+        }
+      }
+    }
+  }
+}

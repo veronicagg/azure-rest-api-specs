@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "3ca49042-782a-4cc9-89b5-ee1b487fe115",
+    "resourceGroupName": "csmrg1696",
+    "api-version": "2014-04-01-preview",
+    "parameters": {
+      "location": "West Europe"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/3ca49042-782a-4cc9-89b5-ee1b487fe115/resourceGroups/csmrg1696",
+        "name": "csmrg1696",
+        "location": "westeurope",
+        "properties": {
+          "provisioningState": "Succeeded"
+        }
+      }
+    }
+  }
+}

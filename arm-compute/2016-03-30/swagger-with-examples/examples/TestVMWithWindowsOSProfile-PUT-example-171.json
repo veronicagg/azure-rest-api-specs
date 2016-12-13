@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "4d368445-cbb1-42a7-97a6-6850ab99f48e",
+    "resourceGroupName": "pslibtest9279",
+    "name": "as9002",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "platformUpdateDomainCount": 5,
+          "platformFaultDomainCount": 3
+        },
+        "id": "/subscriptions/4d368445-cbb1-42a7-97a6-6850ab99f48e/resourceGroups/pslibtest9279/providers/Microsoft.Compute/availabilitySets/as9002",
+        "name": "as9002",
+        "type": "Microsoft.Compute/availabilitySets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "location": "southeastasia",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "unit": "Count",
+            "currentValue": 1,
+            "limit": 2000,
+            "name": {
+              "value": "availabilitySets",
+              "localizedValue": "Availability Sets"
+            }
+          },
+          {
+            "unit": "Count",
+            "currentValue": 1,
+            "limit": 100,
+            "name": {
+              "value": "cores",
+              "localizedValue": "Total Regional Cores"
+            }
+          },
+          {
+            "unit": "Count",
+            "currentValue": 1,
+            "limit": 10000,
+            "name": {
+              "value": "virtualMachines",
+              "localizedValue": "Virtual Machines"
+            }
+          },
+          {
+            "unit": "Count",
+            "currentValue": 0,
+            "limit": 50,
+            "name": {
+              "value": "virtualMachineScaleSets",
+              "localizedValue": "Virtual Machine Scale Sets"
+            }
+          },
+          {
+            "unit": "Count",
+            "currentValue": 1,
+            "limit": 100,
+            "name": {
+              "value": "standardA0_A7Family",
+              "localizedValue": "Standard A0-A7 Family Cores"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

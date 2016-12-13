@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01503",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MKDIRS",
+    "write": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "boolean": true
+      }
+    }
+  }
+}

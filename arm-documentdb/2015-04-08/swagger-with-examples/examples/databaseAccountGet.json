@@ -1,0 +1,70 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2015-04-08",
+    "subscriptionId": "subcriptionID"
+  },
+  "responses":{
+    "200":{ 
+      "body": {
+            "id": "/subscriptions/<subscriptionId>/resourceGroups/<resourceGroupName>/providers/Microsoft.DocumentDB/databaseAccounts/<accountName>",
+            "name": "<accountName>",
+            "location": "West US",
+            "type": "Microsoft.DocumentDB/databaseAccounts",
+            "kind": "GlobalDocumentDB",
+            "tags": {},
+            "properties": {
+                "provisioningState": "Succeeded",
+                "documentEndpoint": "https://<accountName>.documents.azure.com:443/",
+                "databaseAccountOfferType": "Standard",
+                "consistencyPolicy": {
+                    "defaultConsistencyLevel": "Eventual",
+                    "maxIntervalInSeconds": 5,
+                    "maxStalenessPrefix": 100
+                },
+                "writeLocations": [
+                    {
+                        "id": "<accountName>-eastus",
+                        "locationName": "East US",
+                        "documentEndpoint": "https://<accountName>-eastus.documents.azure.com:443/",
+                        "provisioningState": "Succeeded",
+                        "failoverPriority": 0
+                    }
+                ],
+                "readLocations": [
+                    {
+                        "id": "<accountName>-eastus",
+                        "locationName": "East US",
+                        "documentEndpoint": "https://<accountName>-eastus.documents.azure.com:443/",
+                        "provisioningState": "Succeeded",
+                        "failoverPriority": 0
+                    },
+                    {
+                        "id": "<accountName>-westus",
+                        "locationName": "West US",
+                        "documentEndpoint": "https://<accountName>-westus.documents.azure.com:443/",
+                        "provisioningState": "Succeeded",
+                        "failoverPriority": 1
+                    }
+                ],
+                "failoverPolicies": [
+                    {
+                        "id": "<accountName>-eastus",
+                        "locationName": "East US",
+                        "failoverPriority": 0
+                    },
+                    {
+                        "id": "<accountName>-westus",
+                        "locationName": "West US",
+                        "failoverPriority": 1
+                    }
+                ]
+            }
+        }
+    },
+    "404": {}
+  }
+}
+
+

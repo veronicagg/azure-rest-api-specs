@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "directFilePath": "SDKTestFolder016477",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSLISTSTATUS",
+    "syncFlag": "DATA",
+    "write": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatuses": {
+          "FileStatus": [
+            {
+              "length": 0,
+              "pathSuffix": "SDKTestFile01.txt3565",
+              "type": "FILE",
+              "blockSize": 268435456,
+              "accessTime": 1478818770019,
+              "modificationTime": 1478818770019,
+              "replication": 1,
+              "permission": "770",
+              "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+              "group": "2e6c02d2-a364-4530-9137-d17403996cbf",
+              "expirationTime": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

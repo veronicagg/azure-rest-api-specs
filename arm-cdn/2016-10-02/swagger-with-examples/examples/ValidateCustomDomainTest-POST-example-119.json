@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup556",
+    "profileName": "profile69",
+    "endpointName": "endpoint-8e02deffed3c",
+    "api-version": "2016-10-02",
+    "customDomainProperties": {
+      "hostName": "customdomain34.azureedge-test.net"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "customDomainValidated": true,
+        "message": null,
+        "reason": null
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup9856",
+    "profileName": "profile313",
+    "api-version": "2016-10-02",
+    "profileUpdateParameters": {
+      "tags": {
+        "newkey1": "newValue1"
+      }
+    }
+  },
+  "responses": {
+    "202": {
+      "body": {
+        "name": "profile313",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup9856/providers/Microsoft.Cdn/profiles/profile313",
+        "type": "Microsoft.Cdn/profiles",
+        "tags": {
+          "newkey1": "newValue1"
+        },
+        "location": "WestUs",
+        "sku": {
+          "name": "Standard_Akamai"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceState": "Active"
+        }
+      }
+    }
+  }
+}

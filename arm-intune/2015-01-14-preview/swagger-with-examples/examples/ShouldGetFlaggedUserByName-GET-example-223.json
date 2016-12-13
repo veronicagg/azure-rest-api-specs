@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "userName": "d8aeb100-6e17-4cf7-bbda-169000d03c1e",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/providers/Microsoft.Intune/locations/fef.msua06/flaggedUsers/d8aeb100-6e17-4cf7-bbda-169000d03c1e",
+        "name": "d8aeb100-6e17-4cf7-bbda-169000d03c1e",
+        "type": "Microsoft.Intune/locations/flaggedUsers",
+        "properties": {
+          "friendlyName": "Joe Admin",
+          "errorCount": 1
+        }
+      }
+    }
+  }
+}

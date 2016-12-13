@@ -1,0 +1,24 @@
+{
+  "parameters": {
+    "databaseName": "testdb12673",
+    "schemaName": "dbo",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testadlac16849.azuredatalakeanalytics.net/sqlip/$metadata#views",
+        "value": [
+          {
+            "computeAccountName": "testadlac16849",
+            "databaseName": "testdb12673",
+            "schemaName": "dbo",
+            "viewName": "testview11914",
+            "definition": "CREATE VIEW testdb12673.dbo.testview11914 \nAS \n    SELECT * FROM \n    (\n        VALUES(1,2),(2,4)\n    ) \nAS \nT(a, b);",
+            "version": "e6217321-f4bb-44f6-be2b-9e1c665eca4e"
+          }
+        ]
+      }
+    }
+  }
+}

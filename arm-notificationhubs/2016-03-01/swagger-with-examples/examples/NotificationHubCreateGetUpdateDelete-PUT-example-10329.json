@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH7931",
+    "namespaceName": "HydraNH-Namespace1129",
+    "notificationHubName": "HydraNH-NotificationHub9008azsmnet7002",
+    "api-version": "2016-03-01",
+    "parameters": {
+      "properties": {
+        "wnsCredential": {
+          "properties": {
+            "packageSid": "ms-app://s-1-15-2-1817505189-427745171-3213743798-2985869298-800724128-1004923984-4143860699",
+            "secretKey": "w7TBprR-9tJxn9mUOdK4PPHLCAzSYFhp",
+            "windowsLiveEndpoint": "http://pushtestservice.cloudapp.net/LiveID/accesstoken.srf"
+          }
+        }
+      },
+      "location": "South Central US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/111c36dc-4047-4c69-acd5-301072ff1fc2/resourceGroups/TestRg-NH7931/providers/Microsoft.NotificationHubs/namespaces/HydraNH-Namespace1129/notificationHubs/HydraNH-NotificationHub9008azsmnet7002",
+        "name": "HydraNH-NotificationHub9008azsmnet7002",
+        "type": "Microsoft.NotificationHubs/namespaces/notificationHubs",
+        "location": "South Central US",
+        "tags": null,
+        "properties": {
+          "registrationTtl": "10675199.02:48:05.4775807"
+        }
+      }
+    }
+  }
+}

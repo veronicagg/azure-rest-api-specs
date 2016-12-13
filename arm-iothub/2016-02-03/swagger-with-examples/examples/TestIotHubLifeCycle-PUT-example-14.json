@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "api-version": "2016-02-03",
+    "iotHubDescription": {
+      "subscriptionid": "91d12660-3dec-467a-be2a-213b5544ddc0",
+      "resourcegroup": "DotNetHubRG",
+      "sku": {
+        "name": "S1",
+        "capacity": 1
+      },
+      "location": "WestUS"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/91d12660-3dec-467a-be2a-213b5544ddc0/resourceGroups/DotNetHubRG/providers/Microsoft.Devices/IotHubs/DotNetHub",
+        "name": "DotNetHub",
+        "type": "Microsoft.Devices/IotHubs",
+        "location": "WestUS",
+        "tags": {},
+        "subscriptionid": "91d12660-3dec-467a-be2a-213b5544ddc0",
+        "resourcegroup": "DotNetHubRG",
+        "properties": {
+          "state": "Activating",
+          "provisioningState": "Accepted",
+          "enableFileUploadNotifications": false,
+          "cloudToDevice": {
+            "maxDeliveryCount": 10,
+            "defaultTtlAsIso8601": "PT1H",
+            "feedback": {
+              "lockDurationAsIso8601": "PT1M",
+              "ttlAsIso8601": "PT1H",
+              "maxDeliveryCount": 10
+            }
+          },
+          "features": "None",
+          "generationNumber": 0
+        },
+        "sku": {
+          "name": "S1",
+          "tier": "Standard",
+          "capacity": 1
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg7767",
+    "name": "csmws5376",
+    "api-version": "2015-08-01",
+    "siteEnvelope": {
+      "location": "West US",
+      "tags": {
+        "tag1": "value1",
+        "tag2": ""
+      },
+      "properties": {
+        "name": "csmws5376",
+        "serverFarmId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg7767/providers/Microsoft.Web/serverfarms/csmwhp1672"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg7767/providers/Microsoft.Web/sites/csmws5376",
+        "name": "csmws5376",
+        "type": "Microsoft.Web/sites",
+        "location": "West US",
+        "tags": {
+          "tag1": "value1",
+          "tag2": ""
+        },
+        "properties": {
+          "name": "csmws5376",
+          "state": "Running",
+          "hostNames": [
+            "csmws5376.waws-ppedf.windows-int.net"
+          ],
+          "webSpace": "csmrg7767-WestUSwebspace",
+          "selfLink": "https://waws-ppedf-bay-001.api.admin-waws-ppedf.windows-int.net:454/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/webspaces/csmrg7767-WestUSwebspace/sites/csmws5376",
+          "repositorySiteName": "csmws5376",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmws5376.scm.waws-ppedf.windows-int.net",
+            "csmws5376.waws-ppedf.windows-int.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmws5376.scm.waws-ppedf.windows-int.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 1
+            },
+            {
+              "name": "csmws5376.waws-ppedf.windows-int.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 0
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": null,
+          "serverFarmId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg7767/providers/Microsoft.Web/serverfarms/csmwhp1672",
+          "lastModifiedTimeUtc": "2015-12-11T01:54:51.04",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmws5376",
+          "trafficManagerHostNames": null,
+          "sku": "Premium",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false,
+          "targetSwapSlot": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "microService": "WebSites",
+          "gatewaySiteName": null,
+          "clientAffinityEnabled": true,
+          "clientCertEnabled": false,
+          "hostNamesDisabled": false,
+          "domainVerificationIdentifiers": null,
+          "kind": null,
+          "outboundIpAddresses": "104.40.21.237,104.40.20.76,104.40.19.34,104.40.22.12",
+          "cloningInfo": null,
+          "hostingEnvironmentId": null,
+          "tags": {
+            "tag1": "value1",
+            "tag2": ""
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH9059",
+    "namespaceName": "HydraNH-Namespace5578",
+    "authorizationRuleName": "HydraNH-Authrules1398",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/111c36dc-4047-4c69-acd5-301072ff1fc2/resourceGroups/TestRg-NH9059/providers/Microsoft.NotificationHubs/namespaces/HydraNH-Namespace5578/AuthorizationRules/HydraNH-Authrules1398",
+        "name": "HydraNH-Authrules1398",
+        "type": "Microsoft.NotificationHubs/AuthorizationRules",
+        "location": null,
+        "tags": null,
+        "properties": {
+          "rights": [
+            "Listen",
+            "Send"
+          ]
+        }
+      }
+    }
+  }
+}

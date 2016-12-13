@@ -1,0 +1,111 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar3058",
+    "vmName": "vm3604",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$expand": "instanceView"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "vmId": "3668e24e-d374-4c22-a9e6-0d790c09ae6f",
+          "availabilitySet": {
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3058/providers/Microsoft.Compute/availabilitySets/AS3088"
+          },
+          "hardwareProfile": {
+            "vmSize": "Standard_A0"
+          },
+          "storageProfile": {
+            "imageReference": {
+              "publisher": "MicrosoftWindowsServer",
+              "offer": "WindowsServer",
+              "sku": "2012-R2-Datacenter",
+              "version": "4.0.20151120"
+            },
+            "osDisk": {
+              "osType": "Windows",
+              "name": "test",
+              "createOption": "FromImage",
+              "vhd": {
+                "uri": "https://crptestar5209.blob.core.windows.net/crptestar6717/oscrptestar32.vhd"
+              },
+              "caching": "None"
+            },
+            "dataDisks": []
+          },
+          "osProfile": {
+            "computerName": "test",
+            "adminUsername": "Foo12",
+            "windowsConfiguration": {
+              "provisionVMAgent": true,
+              "enableAutomaticUpdates": true
+            },
+            "secrets": []
+          },
+          "networkProfile": {
+            "networkInterfaces": [
+              {
+                "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3058/providers/Microsoft.Network/networkInterfaces/nic4809"
+              }
+            ]
+          },
+          "provisioningState": "Succeeded",
+          "instanceView": {
+            "platformUpdateDomain": 0,
+            "platformFaultDomain": 0,
+            "vmAgent": {
+              "vmAgentVersion": "Unknown",
+              "statuses": [
+                {
+                  "code": "ProvisioningState/Unavailable",
+                  "level": "Warning",
+                  "displayStatus": "Not Ready",
+                  "message": "VM status blob is found but not yet populated.",
+                  "time": "2016-06-02T13:30:45-07:00"
+                }
+              ]
+            },
+            "disks": [
+              {
+                "name": "test",
+                "statuses": [
+                  {
+                    "code": "ProvisioningState/succeeded",
+                    "level": "Info",
+                    "displayStatus": "Provisioning succeeded",
+                    "time": "2016-06-02T13:20:36.5455634-07:00"
+                  }
+                ]
+              }
+            ],
+            "statuses": [
+              {
+                "code": "ProvisioningState/succeeded",
+                "level": "Info",
+                "displayStatus": "Provisioning succeeded",
+                "time": "2016-06-02T13:30:20.7955651-07:00"
+              },
+              {
+                "code": "PowerState/running",
+                "level": "Info",
+                "displayStatus": "VM running"
+              }
+            ]
+          }
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar3058/providers/Microsoft.Compute/virtualMachines/vm3604",
+        "name": "vm3604",
+        "type": "Microsoft.Compute/virtualMachines",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

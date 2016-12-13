@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg2944",
+    "virtualNetworkName": "azsmnet2507",
+    "subnetName": "azsmnet4813",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet4813",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg2944/providers/Microsoft.Network/virtualNetworks/azsmnet2507/subnets/azsmnet4813",
+        "etag": "W/\"67da9dc4-5a50-4185-aeba-c7ecbaa311fd\"",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "addressPrefix": "10.0.0.0/24"
+        }
+      }
+    }
+  }
+}

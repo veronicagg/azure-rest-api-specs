@@ -1,0 +1,81 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg7047",
+    "virtualNetworkGatewayName": "azsmnet4830",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "tags": {
+        "key": "value"
+      },
+      "properties": {
+        "ipConfigurations": [
+          {
+            "name": "azsmnet6576",
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "subnet": {
+                "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/virtualNetworks/azsmnet8152/subnets/GatewaySubnet"
+              },
+              "publicIPAddress": {
+                "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/publicIPAddresses/azsmnet7350"
+              }
+            }
+          }
+        ],
+        "gatewayType": "Vpn",
+        "vpnType": "RouteBased",
+        "enableBgp": false,
+        "gatewayDefaultSite": {
+          "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/localNetworkGateways/azsmnet3822"
+        }
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet4830",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/virtualNetworkGateways/azsmnet4830",
+        "etag": "W/\"c9b6159c-19cd-4509-8ef7-d5d50d5d4fdb\"",
+        "type": "Microsoft.Network/virtualNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "5d2295b2-4708-43ff-bf9d-4a2ac1dfe04c",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet6576",
+              "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/virtualNetworkGateways/azsmnet4830/ipConfigurations/azsmnet6576",
+              "etag": "W/\"c9b6159c-19cd-4509-8ef7-d5d50d5d4fdb\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "privateIPAllocationMethod": "Dynamic",
+                "publicIPAddress": {
+                  "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/publicIPAddresses/azsmnet7350"
+                },
+                "subnet": {
+                  "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/virtualNetworks/azsmnet8152/subnets/GatewaySubnet"
+                }
+              }
+            }
+          ],
+          "gatewayType": "Vpn",
+          "vpnType": "RouteBased",
+          "enableBgp": false,
+          "vpnClientConfiguration": {
+            "vpnClientRootCertificates": [],
+            "vpnClientRevokedCertificates": []
+          },
+          "gatewayDefaultSite": {
+            "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg7047/providers/Microsoft.Network/localNetworkGateways/azsmnet3822"
+          }
+        }
+      }
+    }
+  }
+}

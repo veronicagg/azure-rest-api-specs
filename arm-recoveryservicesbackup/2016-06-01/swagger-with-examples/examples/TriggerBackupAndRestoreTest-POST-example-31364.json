@@ -1,0 +1,28 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "fabricName": "Azure",
+    "containerName": "IaasVMContainer%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "protectedItemName": "VM%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "recoveryPointId": "163379109819076",
+    "api-version": "2016-06-01",
+    "resourceRestoreRequest": {
+      "properties": {
+        "objectType": "IaasVMRestoreRequest",
+        "recoveryPointId": "163379109819076",
+        "recoveryType": "RestoreDisks",
+        "sourceResourceId": "/subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/pstestrg/providers/Microsoft.Compute/virtualMachines/pstestv2vm1",
+        "storageAccountId": "/subscriptions/f7424430-103b-4ba3-bd9e-b6f0986f848a/resourceGroups/pstestrg/providers/Microsoft.Storage/storageAccounts/pstestrg4762",
+        "region": "westus",
+        "createNewCloudService": false
+      }
+    }
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

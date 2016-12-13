@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "location": "SoutheastAsia",
+    "publisherName": "MicrosoftWindowsServer",
+    "offer": "WindowsServer",
+    "skus": "2012-R2-Datacenter",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$top": "1"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "southeastasia",
+          "name": "4.0.20151120",
+          "id": "/Subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2012-R2-Datacenter/Versions/4.0.20151120"
+        }
+      ]
+    }
+  }
+}

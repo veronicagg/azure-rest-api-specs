@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH9059",
+    "namespaceName": "HydraNH-Namespace5578",
+    "authorizationRuleName": "HydraNH-Authrules1398",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "primaryConnectionString": "Endpoint=sb://hydranh-namespace5578.servicebus.windows.net/;SharedAccessKeyName=HydraNH-Authrules1398;SharedAccessKey=mlz2EJ+oabcJCoZMqlVOY3gKo6XG/xAtLvzmHZjgGWs=",
+        "secondaryConnectionString": "Endpoint=sb://hydranh-namespace5578.servicebus.windows.net/;SharedAccessKeyName=HydraNH-Authrules1398;SharedAccessKey=MCyl5lTKz7V5x7a/7uds0kpr26LHSDNaMpAR0IxIbVo=",
+        "primaryKey": "mlz2EJ+oabcJCoZMqlVOY3gKo6XG/xAtLvzmHZjgGWs=",
+        "secondaryKey": "MCyl5lTKz7V5x7a/7uds0kpr26LHSDNaMpAR0IxIbVo=",
+        "keyName": "HydraNH-Authrules1398"
+      }
+    }
+  }
+}

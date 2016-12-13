@@ -1,0 +1,94 @@
+{
+  "parameters": {
+    "subscriptionId": "91d12660-3dec-467a-be2a-213b5544ddc0",
+    "resourceGroupName": "DotNetHubRG",
+    "resourceName": "DotNetHub",
+    "api-version": "2016-02-03"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/91d12660-3dec-467a-be2a-213b5544ddc0/resourceGroups/DotNetHubRG/providers/Microsoft.Devices/IotHubs/DotNetHub",
+        "name": "DotNetHub",
+        "type": "Microsoft.Devices/IotHubs",
+        "location": "WestUS",
+        "tags": {},
+        "subscriptionid": "91d12660-3dec-467a-be2a-213b5544ddc0",
+        "resourcegroup": "DotNetHubRG",
+        "etag": "AAAAAABJmdg=",
+        "properties": {
+          "state": "Active",
+          "provisioningState": "Succeeded",
+          "hostName": "DotNetHub.azure-devices.net",
+          "eventHubEndpoints": {
+            "events": {
+              "retentionTimeInDays": 1,
+              "partitionCount": 4,
+              "partitionIds": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "path": "DotNetHub",
+              "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+            },
+            "operationsMonitoringEvents": {
+              "retentionTimeInDays": 1,
+              "partitionCount": 4,
+              "partitionIds": [
+                "0",
+                "1",
+                "2",
+                "3"
+              ],
+              "path": "DotNetHub-operationMonitoring",
+              "endpoint": "sb://iothub-ns-dotnethub-55303-e8145e21c1.servicebus.windows.net/"
+            }
+          },
+          "storageEndpoints": {
+            "$default": {
+              "sasTtlAsIso8601": "PT1H",
+              "connectionString": "",
+              "containerName": ""
+            }
+          },
+          "messagingEndpoints": {
+            "fileNotifications": {
+              "lockDurationAsIso8601": "PT1M",
+              "ttlAsIso8601": "PT1H",
+              "maxDeliveryCount": 10
+            }
+          },
+          "enableFileUploadNotifications": false,
+          "cloudToDevice": {
+            "maxDeliveryCount": 10,
+            "defaultTtlAsIso8601": "PT1H",
+            "feedback": {
+              "lockDurationAsIso8601": "PT1M",
+              "ttlAsIso8601": "PT1H",
+              "maxDeliveryCount": 10
+            }
+          },
+          "operationsMonitoringProperties": {
+            "events": {
+              "None": "None",
+              "Connections": "None",
+              "DeviceTelemetry": "None",
+              "C2DCommands": "None",
+              "DeviceIdentityOperations": "None",
+              "FileUploadOperations": "None"
+            }
+          },
+          "features": "None",
+          "generationNumber": 0
+        },
+        "sku": {
+          "name": "S1",
+          "tier": "Standard",
+          "capacity": 1
+        }
+      }
+    }
+  }
+}

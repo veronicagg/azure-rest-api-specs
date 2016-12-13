@@ -1,0 +1,175 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg235",
+    "name": "csmsf1227",
+    "api-version": "2015-08-01",
+    "details": "true",
+    "$filter": "%28name.value%20eq%20%27BytesReceived%27%20or%20name.value%20eq%20%27BytesSent%27%20or%20name.value%20eq%20%27CpuPercentage%27%20or%20name.value%20eq%20%27DiskQueueLength%27%20or%20name.value%20eq%20%27HttpQueueLength%27%20or%20name.value%20eq%20%27MemoryPercentage%27%29%20and%20startTime%20eq%202015-12-10T01%3A52%3A42Z%20and%20endTime%20eq%202015-12-11T01%3A52%3A42Z%20and%20timeGrain%20eq%20duration%27PT1H%27"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg235/providers/Microsoft.Web/serverfarms/csmsf1227/metrics",
+        "value": [
+          {
+            "name": {
+              "value": "MemoryPercentage",
+              "localizedValue": "Memory Percentage"
+            },
+            "unit": "Percent",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "MemoryPercentage",
+              "localizedValue": "Memory Percentage"
+            },
+            "unit": "Percent",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "HttpQueueLength",
+              "localizedValue": "Http Queue Length"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "HttpQueueLength",
+              "localizedValue": "Http Queue Length"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "DiskQueueLength",
+              "localizedValue": "Disk Queue Length"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "DiskQueueLength",
+              "localizedValue": "Disk Queue Length"
+            },
+            "unit": "Count",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "CpuPercentage",
+              "localizedValue": "CPU Percentage"
+            },
+            "unit": "Percent",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "CpuPercentage",
+              "localizedValue": "CPU Percentage"
+            },
+            "unit": "Percent",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "BytesSent",
+              "localizedValue": "Data Out"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "BytesSent",
+              "localizedValue": "Data Out"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "BytesReceived",
+              "localizedValue": "Data In"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          },
+          {
+            "name": {
+              "value": "BytesReceived",
+              "localizedValue": "Data In"
+            },
+            "unit": "Bytes",
+            "timeGrain": "PT1H",
+            "startTime": "2015-12-10T01:00:00Z",
+            "endTime": "2015-12-11T01:52:42Z",
+            "metricValues": [],
+            "resourceId": null,
+            "properties": []
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/operationResults/b2a254ae-ca91-4086-b6cd-575e5dbc6698",
+            "name": "b2a254ae-ca91-4086-b6cd-575e5dbc6698",
+            "type": "Microsoft.Intune/locations/operationResults",
+            "properties": {
+              "friendlyName": "Wipe",
+              "category": "ApplicationManagement",
+              "lastModifiedTime": "2015-12-03T00:15:48.4394665",
+              "state": "pending",
+              "operationMetadata": [
+                {
+                  "name": "app",
+                  "value": "Word"
+                },
+                {
+                  "name": "userId",
+                  "value": "d8aeb100-6e17-4cf7-bbda-169000d03c1e"
+                },
+                {
+                  "name": "userName",
+                  "value": "Joe Admin"
+                },
+                {
+                  "name": "deviceType",
+                  "value": "iPad"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

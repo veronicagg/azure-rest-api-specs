@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "tagName": "csmtg9923",
+    "tagValue": "csmtgv1292",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "SubscriptionTagNameNotFound",
+          "message": "Subscription tag name 'csmtg9923' could not be found."
+        }
+      }
+    }
+  }
+}

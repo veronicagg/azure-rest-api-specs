@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6099",
+    "eventHubName": "sdk-EventHub-5084",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

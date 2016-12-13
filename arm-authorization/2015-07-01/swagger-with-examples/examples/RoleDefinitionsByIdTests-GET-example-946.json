@@ -1,0 +1,51 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "SQL Security Manager",
+          "type": "BuiltInRole",
+          "description": "Lets you manage the security-related policies of SQL servers and databases, but not access to them.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Sql/servers/read",
+                "Microsoft.Sql/servers/auditingPolicies/*",
+                "Microsoft.Sql/servers/databases/read",
+                "Microsoft.Sql/servers/databases/auditingPolicies/*",
+                "Microsoft.Sql/servers/databases/connectionPolicies/*",
+                "Microsoft.Sql/servers/databases/dataMaskingPolicies/*",
+                "Microsoft.Sql/servers/databases/securityMetrics/*",
+                "Microsoft.Sql/servers/databases/securityAlertPolicies/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*",
+                "Microsoft.Sql/servers/databases/schemas/read",
+                "Microsoft.Sql/servers/databases/schemas/tables/read",
+                "Microsoft.Sql/servers/databases/schemas/tables/columns/read"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "0001-01-01T08:00:00Z",
+          "updatedOn": "2015-11-11T22:09:42.744926Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "056cd41c-7e88-42e1-933e-88ba6a50c9c3"
+      }
+    }
+  }
+}

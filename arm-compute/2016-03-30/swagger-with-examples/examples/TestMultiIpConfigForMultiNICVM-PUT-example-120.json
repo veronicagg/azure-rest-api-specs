@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "crptestar6488",
+    "name": "as5398",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "platformUpdateDomainCount": 5,
+          "platformFaultDomainCount": 3
+        },
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/crptestar6488/providers/Microsoft.Compute/availabilitySets/as5398",
+        "name": "as5398",
+        "type": "Microsoft.Compute/availabilitySets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

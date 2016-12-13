@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet8621",
+    "searchServiceName": "azs-5138",
+    "api-version": "2015-08-19"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

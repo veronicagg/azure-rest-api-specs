@@ -1,0 +1,79 @@
+{
+  "parameters": {
+    "subscriptionId": "80c77c76-74ba-4c8c-8229-4c3b2957990c",
+    "resourceGroupName": "amlrg353",
+    "api-version": "2016-05-01-preview",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/80c77c76-74ba-4c8c-8229-4c3b2957990c/resourceGroups/amlrg353/providers/Microsoft.MachineLearning/webServices/amlws2371",
+            "name": "amlws2371",
+            "type": "Microsoft.MachineLearning/webServices",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdOn": "2016-05-18T01:14:40.1965104Z",
+              "modifiedOn": "2016-05-18T01:14:50.4134101Z",
+              "title": "ServiceTitle",
+              "description": "This is some service description",
+              "swaggerLocation": "https://ussouthcentral.services.azureml.net/subscriptions/80c77c7674ba4c8c82294c3b2957990c/services/646597da03b94cbc82d6157ec122f123/swagger.json",
+              "readOnly": false,
+              "storageAccount": {
+                "name": "amlstor6957"
+              },
+              "packageType": "Graph",
+              "exposeSampleData": true
+            }
+          },
+          {
+            "id": "/subscriptions/80c77c76-74ba-4c8c-8229-4c3b2957990c/resourceGroups/amlrg353/providers/Microsoft.MachineLearning/webServices/amlws5823",
+            "name": "amlws5823",
+            "type": "Microsoft.MachineLearning/webServices",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdOn": "2016-05-18T01:15:15.0624739Z",
+              "modifiedOn": "2016-05-18T01:15:26.7025838Z",
+              "title": "ServiceTitle",
+              "description": "This is some service description",
+              "swaggerLocation": "https://ussouthcentral.services.azureml.net/subscriptions/80c77c7674ba4c8c82294c3b2957990c/services/536534b57c2f4edaa708d5e34bcf66b4/swagger.json",
+              "readOnly": false,
+              "storageAccount": {
+                "name": "amlstor6957"
+              },
+              "packageType": "Graph",
+              "exposeSampleData": true
+            }
+          },
+          {
+            "id": "/subscriptions/80c77c76-74ba-4c8c-8229-4c3b2957990c/resourceGroups/amlrg353/providers/Microsoft.MachineLearning/webServices/amlws6378",
+            "name": "amlws6378",
+            "type": "Microsoft.MachineLearning/webServices",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdOn": "2016-05-18T01:14:52.8413554Z",
+              "modifiedOn": "2016-05-18T01:15:09.1947689Z",
+              "title": "ServiceTitle",
+              "description": "This is some service description",
+              "swaggerLocation": "https://ussouthcentral.services.azureml.net/subscriptions/80c77c7674ba4c8c82294c3b2957990c/services/f87ade0a66074ff1b8e1d618c67a5fcc/swagger.json",
+              "readOnly": false,
+              "storageAccount": {
+                "name": "amlstor6957"
+              },
+              "packageType": "Graph",
+              "exposeSampleData": true
+            }
+          }
+        ]
+      }
+    }
+  }
+}

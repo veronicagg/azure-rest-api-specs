@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "subscriptionId": "a064e0b9-e6c9-4a0d-b993-22efebefe2af",
+    "resourceGroupName": "res2193",
+    "accountName": "csa5836",
+    "api-version": "2016-02-01-preview",
+    "body": {
+      "sku": {
+        "name": "S0"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidSkuId",
+          "message": "The SKU name 'S0' in API set 'Recommendations' is invalid."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup7521",
+    "profileName": "profile403",
+    "endpointName": "endpoint7869",
+    "api-version": "2016-10-02",
+    "endpoint": {
+      "properties": {
+        "originHostHeader": "www.bing.com",
+        "originPath": "/photos",
+        "contentTypesToCompress": [
+          "text/html",
+          "application/octet-stream"
+        ],
+        "isCompressionEnabled": true,
+        "isHttpAllowed": true,
+        "isHttpsAllowed": true,
+        "queryStringCachingBehavior": "BypassCaching",
+        "geoFilters": [
+          {
+            "relativePath": "/mycar",
+            "action": "Block",
+            "countryCodes": [
+              "AT"
+            ]
+          }
+        ],
+        "origins": [
+          {
+            "name": "origin1",
+            "properties": {
+              "hostName": "host1.hello.com"
+            }
+          }
+        ]
+      },
+      "location": "WestUs",
+      "tags": {
+        "kay1": "value1"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "endpoint7869",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup7521/providers/Microsoft.Cdn/profiles/profile403/endpoints/endpoint7869",
+        "type": "Microsoft.Cdn/profiles/endpoints",
+        "tags": {
+          "kay1": "value1"
+        },
+        "location": "WestUs",
+        "properties": {
+          "hostName": "endpoint7869.azureedge.net",
+          "originHostHeader": "www.bing.com",
+          "provisioningState": "Creating",
+          "resourceState": "Creating",
+          "isHttpAllowed": true,
+          "isHttpsAllowed": true,
+          "queryStringCachingBehavior": "BypassCaching",
+          "originPath": "/photos",
+          "origins": [
+            {
+              "name": "origin1",
+              "properties": {
+                "hostName": "host1.hello.com",
+                "httpPort": null,
+                "httpsPort": null
+              }
+            }
+          ],
+          "customDomains": [],
+          "contentTypesToCompress": [
+            "text/html",
+            "application/octet-stream"
+          ],
+          "isCompressionEnabled": true,
+          "optimizationType": null,
+          "geoFilters": [
+            {
+              "relativePath": "/mycar",
+              "action": "Block",
+              "countryCodes": [
+                "AT"
+              ]
+            }
+          ]
+        }
+      }
+    }
+  }
+}

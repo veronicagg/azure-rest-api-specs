@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup556",
+    "profileName": "profile69",
+    "endpointName": "endpoint-8e02deffed3c",
+    "api-version": "2016-10-02",
+    "customDomainProperties": {
+      "hostName": "invalid\\custom/domain"
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "BadRequest",
+          "message": "HostName \"invalid\\custom/domain\" is invalid. It must be a valid domain name, IP version 4, or IP version 6."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19536",
+    "name": "testaba18483secondacct",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "defaultDataLakeStoreAccount": "testdatalake18942",
+        "maxDegreeOfParallelism": 120,
+        "queryStoreRetention": 30,
+        "maxJobCount": 10,
+        "dataLakeStoreAccounts": [
+          {
+            "name": "testdatalake18942",
+            "properties": {
+              "suffix": "azuredatalakestore.net"
+            }
+          }
+        ],
+        "storageAccounts": []
+      },
+      "location": "East US 2",
+      "tags": {
+        "updatedKey": "updatedValue"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "defaultDataLakeStoreAccount": "testdatalake18942",
+          "dataLakeStoreAccounts": [
+            {
+              "properties": {
+                "suffix": "azuredatalakestore.net"
+              },
+              "name": "testdatalake18942"
+            }
+          ],
+          "storageAccounts": [],
+          "maxDegreeOfParallelism": 120,
+          "maxJobCount": 10,
+          "queryStoreRetention": 30,
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "accountId": "575e9731-9607-42c0-8c87-11c68cc19ae6",
+          "creationTime": null,
+          "lastModifiedTime": null
+        },
+        "location": "East US 2",
+        "tags": {
+          "updatedKey": "updatedValue"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/rgaba19536/providers/Microsoft.DataLakeAnalytics/accounts/testaba18483secondacct",
+        "name": "testaba18483secondacct",
+        "type": "Microsoft.DataLakeAnalytics/accounts"
+      }
+    }
+  }
+}

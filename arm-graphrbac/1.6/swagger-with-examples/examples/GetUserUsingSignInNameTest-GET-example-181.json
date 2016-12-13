@@ -1,0 +1,67 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "$filter": "userPrincipalName%20eq%20'auxtm596_live.com%23EXT%23%40rbacclitest.onmicrosoft.com'",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.User",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.User",
+            "objectType": "User",
+            "objectId": "110ccbe1-cf56-46f4-9b4f-2a27f858ca8d",
+            "deletionTimestamp": null,
+            "accountEnabled": true,
+            "signInNames": [],
+            "assignedLicenses": [],
+            "assignedPlans": [],
+            "city": null,
+            "companyName": null,
+            "country": null,
+            "creationType": null,
+            "department": null,
+            "dirSyncEnabled": null,
+            "displayName": "auxtm",
+            "facsimileTelephoneNumber": null,
+            "givenName": "auxtm",
+            "immutableId": null,
+            "isCompromised": null,
+            "jobTitle": null,
+            "lastDirSyncTime": null,
+            "mail": null,
+            "mailNickname": "auxtm596_live.com#EXT#",
+            "mobile": null,
+            "onPremisesSecurityIdentifier": null,
+            "otherMails": [
+              "auxtm596@live.com"
+            ],
+            "passwordPolicies": "None",
+            "passwordProfile": {
+              "password": null,
+              "forceChangePasswordNextLogin": true,
+              "enforceChangePasswordPolicy": false
+            },
+            "physicalDeliveryOfficeName": null,
+            "postalCode": null,
+            "preferredLanguage": null,
+            "provisionedPlans": [],
+            "provisioningErrors": [],
+            "proxyAddresses": [],
+            "refreshTokensValidFromDateTime": "2015-09-17T19:49:10Z",
+            "sipProxyAddress": null,
+            "state": null,
+            "streetAddress": null,
+            "surname": "auxtm",
+            "telephoneNumber": null,
+            "usageLocation": null,
+            "userPrincipalName": "auxtm596_live.com#EXT#@rbacCliTest.onmicrosoft.com",
+            "userType": "Member"
+          }
+        ]
+      }
+    }
+  }
+}

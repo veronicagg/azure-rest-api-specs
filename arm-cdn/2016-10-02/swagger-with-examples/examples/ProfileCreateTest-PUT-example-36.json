@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup5114",
+    "profileName": "profile5104",
+    "api-version": "2016-10-02",
+    "profile": {
+      "sku": {
+        "name": "Premium_Verizon"
+      },
+      "location": "EastUs",
+      "tags": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "profile5104",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup5114/providers/Microsoft.Cdn/profiles/profile5104",
+        "type": "Microsoft.Cdn/profiles",
+        "tags": {
+          "key1": "value1",
+          "key2": "value2"
+        },
+        "location": "EastUs",
+        "sku": {
+          "name": "Premium_Verizon"
+        },
+        "properties": {
+          "provisioningState": "Creating",
+          "resourceState": "Creating"
+        }
+      }
+    }
+  }
+}

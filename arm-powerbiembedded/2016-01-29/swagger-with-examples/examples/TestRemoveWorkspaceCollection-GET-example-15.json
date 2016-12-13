@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "subscriptionId": "3d1cd7a8-b035-4563-9288-dbe706cd672e",
+    "resourceGroupName": "rg3563",
+    "workspaceCollectionName": "wc6296",
+    "api-version": "2016-01-29"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.PowerBI/workspaceCollections/wc6296' under resource group 'rg3563' was not found."
+        }
+      }
+    }
+  }
+}

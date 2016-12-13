@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "listFilePath": "SDKTestFolder014862",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatus": {
+          "length": 0,
+          "pathSuffix": "",
+          "type": "DIRECTORY",
+          "blockSize": 0,
+          "accessTime": 1478817414497,
+          "modificationTime": 1478817414497,
+          "replication": 0,
+          "permission": "770",
+          "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "group": "2e6c02d2-a364-4530-9137-d17403996cbf"
+        }
+      }
+    }
+  }
+}

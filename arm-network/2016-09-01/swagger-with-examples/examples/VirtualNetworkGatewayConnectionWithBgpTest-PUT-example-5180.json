@@ -1,0 +1,109 @@
+{
+  "parameters": {
+    "subscriptionId": "f98da156-d5e6-44a1-99d8-1b6fd3f764ff",
+    "resourceGroupName": "csmrg5498",
+    "virtualNetworkGatewayConnectionName": "azsmnet7021",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "properties": {
+        "virtualNetworkGateway1": {
+          "etag": "W/\"32c67b34-47a9-4785-9eb9-8722485395b5\"",
+          "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443",
+          "location": "westus",
+          "tags": {
+            "key": "value"
+          },
+          "properties": {
+            "ipConfigurations": [
+              {
+                "name": "azsmnet1876",
+                "etag": "W/\"32c67b34-47a9-4785-9eb9-8722485395b5\"",
+                "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443/ipConfigurations/azsmnet1876",
+                "properties": {
+                  "privateIPAllocationMethod": "Dynamic",
+                  "subnet": {
+                    "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworks/azsmnet6477/subnets/GatewaySubnet"
+                  },
+                  "publicIPAddress": {
+                    "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/publicIPAddresses/azsmnet2128"
+                  },
+                  "provisioningState": "Succeeded"
+                }
+              }
+            ],
+            "gatewayType": "Vpn",
+            "vpnType": "RouteBased",
+            "enableBgp": false,
+            "sku": {
+              "name": "Standard",
+              "tier": "Standard",
+              "capacity": 0
+            },
+            "bgpSettings": {
+              "asn": 1337,
+              "bgpPeeringAddress": "10.0.0.254",
+              "peerWeight": 5
+            },
+            "resourceGuid": "c71d5327-5c99-4026-ab58-7ffc07376d0e",
+            "provisioningState": "Succeeded"
+          }
+        },
+        "localNetworkGateway2": {
+          "etag": "W/\"63abf0e6-b040-4de6-a636-cbd4774187c7\"",
+          "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/localNetworkGateways/azsmnet8914",
+          "location": "westus",
+          "tags": {
+            "test": "value"
+          },
+          "properties": {
+            "localNetworkAddressSpace": {
+              "addressPrefixes": [
+                "192.168.0.0/16"
+              ]
+            },
+            "gatewayIpAddress": "192.168.3.4",
+            "bgpSettings": {
+              "asn": 1234,
+              "bgpPeeringAddress": "192.168.0.1",
+              "peerWeight": 3
+            },
+            "resourceGuid": "ba330a4b-c210-44c5-97af-d1e51b107ff8",
+            "provisioningState": "Succeeded"
+          }
+        },
+        "connectionType": "IPsec",
+        "routingWeight": 3,
+        "sharedKey": "abc",
+        "enableBgp": true
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet7021",
+        "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/connections/azsmnet7021",
+        "etag": "W/\"229b2ade-87f4-48b8-a388-470243672d5e\"",
+        "type": "Microsoft.Network/connections",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "9a55fa97-924c-4096-a09e-8043c3cd8586",
+          "virtualNetworkGateway1": {
+            "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443"
+          },
+          "localNetworkGateway2": {
+            "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/localNetworkGateways/azsmnet8914"
+          },
+          "connectionType": "IPsec",
+          "routingWeight": 3,
+          "sharedKey": "3082019006092A864886F70D010703A08201813082017D0201003182014930820145020100302D3019311730150603550403130E6E72702D656E6372797074696F6E02106ADF7025F47F9CBC4729475EED800BDF300D06092A864886F70D01010105000482010001D76D9F13B4E3DDE4FBCC570EB5A768D9C636B76ADB35FCA9786204E199715483F375C93B963D542C036DBD36098728D4678C739AA7704C76BED2EF2068BD7E2501AAC712F49BAD1FEE73769AE417206D5F54F0F2C99D063E1BD2E6EE273A3D8D665913EFD74CC95FCACCB71FFB08CDABD4438B5362F9ADBB43588E8C1020294C465747E70BB6931257D333E8CFD7BF562FCEB58E65BF2FA155545EF52C8854DD4B382E123D24B1694761AA559B70CB860126FE4DA120E7BD0E8C8EE62A2E5797F2353CC31D0486839B1A53E96C4F8F8B5D2DAF1AA399A80214885E3B75338067357C64E4DC85C747BA3D0D24EA90CAB414F8707E6BE685DDCAB35BB9FCB7E7302B06092A864886F70D010701301406082A864886F70D030704089EA537C34506580D800895462D3468303428",
+          "enableBgp": true,
+          "ingressBytesTransferred": 0,
+          "egressBytesTransferred": 0
+        }
+      }
+    }
+  }
+}

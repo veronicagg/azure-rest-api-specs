@@ -1,0 +1,20 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "actions": [
+              "*"
+            ],
+            "notActions": []
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "upnOrObjectId": "cdf8528e-d940-48b2-aec8-f8737a6ec387",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.User/@Element",
+        "odata.type": "Microsoft.DirectoryServices.User",
+        "objectType": "User",
+        "objectId": "cdf8528e-d940-48b2-aec8-f8737a6ec387",
+        "deletionTimestamp": null,
+        "accountEnabled": true,
+        "signInNames": [],
+        "assignedLicenses": [],
+        "assignedPlans": [],
+        "city": null,
+        "companyName": null,
+        "country": null,
+        "creationType": null,
+        "department": "Identity Core Engineering",
+        "dirSyncEnabled": null,
+        "displayName": "Adrian Drumea",
+        "facsimileTelephoneNumber": null,
+        "givenName": "Adrian",
+        "immutableId": null,
+        "isCompromised": null,
+        "jobTitle": "PRINCIPAL SOFTWARE ENG MGR",
+        "lastDirSyncTime": null,
+        "mail": null,
+        "mailNickname": "adrumea_microsoft.com#EXT#",
+        "mobile": null,
+        "onPremisesSecurityIdentifier": null,
+        "otherMails": [
+          "adrumea@microsoft.com"
+        ],
+        "passwordPolicies": "None",
+        "passwordProfile": {
+          "password": null,
+          "forceChangePasswordNextLogin": true,
+          "enforceChangePasswordPolicy": false
+        },
+        "physicalDeliveryOfficeName": "2/1080",
+        "postalCode": null,
+        "preferredLanguage": null,
+        "provisionedPlans": [],
+        "provisioningErrors": [],
+        "proxyAddresses": [],
+        "refreshTokensValidFromDateTime": "2015-08-24T18:45:03Z",
+        "sipProxyAddress": null,
+        "state": null,
+        "streetAddress": null,
+        "surname": "Drumea",
+        "telephoneNumber": "+1 (425) 7074182 X74182",
+        "usageLocation": "US",
+        "userPrincipalName": "adrumea_microsoft.com#EXT#@rbacCliTest.onmicrosoft.com",
+        "userType": "Member"
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "subscriptionId": "80c77c76-74ba-4c8c-8229-4c3b2957990c",
+    "resourceGroupName": "amlrg8423",
+    "webServiceName": "amlws552",
+    "api-version": "2016-05-01-preview",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "primary": "S8ayf24PAsbQqy8Nm67uGf3MbOeorYKPY8QfXen2+JsBZV5Q0NFfk9tgC7mjJ3aCsUPY8yKCFVcI/sCcOlmkKw==",
+        "secondary": "S8ayf24PAsbQqy8Nm67uGf3MbOeorYKPY8QfXen2+JsBZV5Q0NFfk9tgC7mjJ3aCsUPY8yKCFVcI/sCcOlmooo=="
+      }
+    }
+  }
+}

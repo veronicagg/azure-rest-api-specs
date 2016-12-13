@@ -1,0 +1,124 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "api-version": "2015-08-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount1096",
+            "name": "IntegrationAccount1096",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount1542",
+            "name": "IntegrationAccount1542",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount1997",
+            "name": "IntegrationAccount1997",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount3062",
+            "name": "IntegrationAccount3062",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount3143",
+            "name": "IntegrationAccount3143",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount3219",
+            "name": "IntegrationAccount3219",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount375",
+            "name": "IntegrationAccount375",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount7285",
+            "name": "IntegrationAccount7285",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount7803",
+            "name": "IntegrationAccount7803",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount8038",
+            "name": "IntegrationAccount8038",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          },
+          {
+            "properties": {},
+            "sku": {
+              "name": "Standard"
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount9281",
+            "name": "IntegrationAccount9281",
+            "type": "Microsoft.Logic/integrationAccounts",
+            "location": "westus"
+          }
+        ]
+      }
+    }
+  }
+}

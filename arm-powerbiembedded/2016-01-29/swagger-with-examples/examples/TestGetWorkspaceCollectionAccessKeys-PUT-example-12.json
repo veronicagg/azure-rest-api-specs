@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "3d1cd7a8-b035-4563-9288-dbe706cd672e",
+    "resourceGroupName": "rg1663",
+    "workspaceCollectionName": "wc8800",
+    "api-version": "2016-01-29",
+    "body": {
+      "location": "WestUS",
+      "sku": {
+        "name": "S1",
+        "tier": "Standard"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg1663/providers/Microsoft.PowerBI/workspaceCollections/wc8800",
+        "name": "wc8800",
+        "type": "Microsoft.PowerBI/workspaceCollections",
+        "location": "West US",
+        "tags": {},
+        "properties": {
+          "provisioningState": "Succeeded",
+          "createdDate": "2016-06-17T19:45:23.3428477Z",
+          "status": "Active"
+        },
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        }
+      }
+    }
+  }
+}

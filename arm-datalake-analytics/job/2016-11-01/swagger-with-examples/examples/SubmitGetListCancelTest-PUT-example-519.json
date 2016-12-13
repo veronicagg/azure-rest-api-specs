@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "jobIdentity": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "parameters": {
+      "jobId": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+      "name": "azure sdk data lake analytics job",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "begoldsm@microsoft.com",
+        "account": null,
+        "degreeOfParallelism": 2,
+        "priority": 0,
+        "submitTime": "Fri, 20 Nov 2015 22:26:32 GMT",
+        "startTime": null,
+        "endTime": null,
+        "state": "Compiling",
+        "result": "Succeeded",
+        "errorMessage": null,
+        "storageAccounts": null,
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:26:32 GMT",
+            "requestedByUser": null,
+            "details": "userName:begoldsm@microsoft.com;submitMachine:N/A"
+          }
+        ],
+        "properties": {
+          "owner": "begoldsm@microsoft.com",
+          "runtimeVersion": "default",
+          "rootProcessNodeId": "00000000-0000-0000-0000-000000000000",
+          "algebraFilePath": "adl://testdatalake12761.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "00:00:00",
+          "totalPausedTime": "00:00:00",
+          "totalQueuedTime": "00:00:00",
+          "totalRunningTime": "00:00:00",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

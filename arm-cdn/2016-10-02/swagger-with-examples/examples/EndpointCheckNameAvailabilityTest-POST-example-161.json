@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "api-version": "2016-10-02",
+    "checkNameAvailabilityInput": {
+      "name": "endpoint-unique7032",
+      "type": "Microsoft.Cdn/Profiles/Endpoints"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "NameAvailable": true,
+        "Reason": null,
+        "Message": null
+      }
+    }
+  }
+}

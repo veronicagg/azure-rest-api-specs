@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "location": "SoutheastAsia",
+    "publisherName": "MicrosoftWindowsServer",
+    "offer": "WindowsServer",
+    "api-version": "2016-03-30"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "southeastasia",
+          "name": "2008-R2-SP1",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2008-R2-SP1"
+        },
+        {
+          "location": "southeastasia",
+          "name": "2012-Datacenter",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2012-Datacenter"
+        },
+        {
+          "location": "southeastasia",
+          "name": "2012-R2-Datacenter",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2012-R2-Datacenter"
+        },
+        {
+          "location": "southeastasia",
+          "name": "2016-Nano-Docker-Test",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2016-Nano-Docker-Test"
+        },
+        {
+          "location": "southeastasia",
+          "name": "2016-Nano-Server-Technical-Preview",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2016-Nano-Server-Technical-Preview"
+        },
+        {
+          "location": "southeastasia",
+          "name": "2016-Technical-Preview-with-Containers",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/2016-Technical-Preview-with-Containers"
+        },
+        {
+          "location": "southeastasia",
+          "name": "Windows-Server-Technical-Preview",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/southeastasia/Publishers/MicrosoftWindowsServer/ArtifactTypes/VMImage/Offers/WindowsServer/Skus/Windows-Server-Technical-Preview"
+        }
+      ]
+    }
+  }
+}

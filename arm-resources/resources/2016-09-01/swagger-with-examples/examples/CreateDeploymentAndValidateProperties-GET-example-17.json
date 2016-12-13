@@ -1,0 +1,115 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceGroupName": "csmrg4369",
+    "deploymentName": "csmd4842",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg4369/providers/Microsoft.Resources/deployments/csmd4842",
+        "name": "csmd4842",
+        "properties": {
+          "templateLink": {
+            "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "siteName": {
+              "type": "String",
+              "value": "csmr4633"
+            },
+            "hostingPlanName": {
+              "type": "String",
+              "value": "someplan"
+            },
+            "sku": {
+              "type": "String",
+              "value": "F1"
+            },
+            "workerSize": {
+              "type": "String",
+              "value": "0"
+            },
+            "repoURL": {
+              "type": "String",
+              "value": "https://github.com/devigned/az-roadshow-oss.git"
+            },
+            "branch": {
+              "type": "String",
+              "value": "master"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Succeeded",
+          "timestamp": "2016-07-27T00:31:49.8410551Z",
+          "duration": "PT1M9.3097747S",
+          "correlationId": "ee49ae7a-6c53-4f35-a565-118a0fd51e67",
+          "providers": [
+            {
+              "namespace": "Microsoft.Web",
+              "resourceTypes": [
+                {
+                  "resourceType": "serverfarms",
+                  "locations": [
+                    "westeurope"
+                  ]
+                },
+                {
+                  "resourceType": "sites",
+                  "locations": [
+                    "westeurope"
+                  ]
+                },
+                {
+                  "resourceType": "sites/sourcecontrols",
+                  "locations": [
+                    null
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg4369/providers/Microsoft.Web/serverfarms/someplan",
+                  "resourceType": "Microsoft.Web/serverfarms",
+                  "resourceName": "someplan"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg4369/providers/Microsoft.Web/sites/csmr4633",
+              "resourceType": "Microsoft.Web/sites",
+              "resourceName": "csmr4633"
+            },
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg4369/providers/Microsoft.Web/Sites/csmr4633",
+                  "resourceType": "Microsoft.Web/Sites",
+                  "resourceName": "csmr4633"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg4369/providers/Microsoft.Web/sites/csmr4633/sourcecontrols/web",
+              "resourceType": "Microsoft.Web/sites/sourcecontrols",
+              "resourceName": "csmr4633/web"
+            }
+          ],
+          "outputResources": [
+            {
+              "id": "Microsoft.Web/serverfarms/someplan"
+            },
+            {
+              "id": "Microsoft.Web/sites/csmr4633"
+            },
+            {
+              "id": "Microsoft.Web/sites/csmr4633/sourcecontrols/web"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

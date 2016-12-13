@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "location": "westus",
+    "publisherName": "Microsoft.Compute",
+    "type": "VMAccessAgent",
+    "api-version": "2016-03-30",
+    "$filter": "startswith(name,'2.0')"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "westus",
+          "name": "2.0",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/VMAccessAgent/Versions/2.0"
+        },
+        {
+          "location": "westus",
+          "name": "2.0.1",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/VMAccessAgent/Versions/2.0.1"
+        },
+        {
+          "location": "westus",
+          "name": "2.0.2",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/VMAccessAgent/Versions/2.0.2"
+        }
+      ]
+    }
+  }
+}

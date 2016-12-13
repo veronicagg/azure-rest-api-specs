@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "4c552dc7-a66c-4fb3-a3ee-0941f36833f6",
+    "resourceGroupName": "rg225",
+    "mediaServiceName": "media5035",
+    "api-version": "2015-10-01",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

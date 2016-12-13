@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup8419",
+    "profileName": "profile4423",
+    "endpointName": "endpoint-f3757d2a3e10",
+    "customDomainName": "customDomain690",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "customDomain690",
+        "id": "/subscriptions/8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4/resourcegroups/cdnResourceGroup8419/providers/Microsoft.Cdn/profiles/profile4423/endpoints/endpoint-f3757d2a3e10/customdomains/customDomain690",
+        "type": "Microsoft.Cdn/profiles/endpoints/customdomains",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceState": "Active",
+          "hostName": "sdk-1-f3757d2a3e10.azureedge-test.net",
+          "customHttpsProvisioningState": "Disabled",
+          "validationData": null
+        }
+      }
+    }
+  }
+}

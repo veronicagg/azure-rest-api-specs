@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6099",
+    "eventHubName": "sdk-EventHub-5084",
+    "authorizationRuleName": "sdk-Authrules-8822",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-6099/eventhubs/sdk-EventHub-5084/authorizationRules/sdk-Authrules-8822",
+        "name": "sdk-Authrules-8822",
+        "type": "Microsoft.EventHub/AuthorizationRules",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "rights": [
+            "Listen",
+            "Send"
+          ]
+        }
+      }
+    }
+  }
+}

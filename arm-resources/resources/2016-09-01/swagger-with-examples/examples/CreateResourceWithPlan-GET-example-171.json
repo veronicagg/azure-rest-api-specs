@@ -1,0 +1,65 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/providers/SuccessBricks.ClearDB",
+        "namespace": "SuccessBricks.ClearDB",
+        "resourceTypes": [
+          {
+            "resourceType": "databases",
+            "locations": [
+              "Brazil South",
+              "Central US",
+              "East Asia",
+              "East US",
+              "East US 2",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "North Europe",
+              "Southeast Asia",
+              "West Europe",
+              "West US",
+              "South Central US",
+              "Canada Central",
+              "Canada East"
+            ],
+            "apiVersions": [
+              "2014-04-01"
+            ],
+            "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+          },
+          {
+            "resourceType": "clusters",
+            "locations": [
+              "Brazil South",
+              "Central US",
+              "East Asia",
+              "East US",
+              "East US 2",
+              "Japan East",
+              "Japan West",
+              "North Central US",
+              "North Europe",
+              "Southeast Asia",
+              "West Europe",
+              "West US",
+              "South Central US",
+              "Canada Central",
+              "Canada East"
+            ],
+            "apiVersions": [
+              "2014-04-01"
+            ],
+            "capabilities": "CrossResourceGroupResourceMove, CrossSubscriptionResourceMove"
+          }
+        ],
+        "registrationState": "Registered"
+      }
+    }
+  }
+}

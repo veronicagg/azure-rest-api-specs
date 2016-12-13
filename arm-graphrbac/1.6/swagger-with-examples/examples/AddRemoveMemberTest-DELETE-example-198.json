@@ -1,0 +1,12 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "upnOrObjectId": "867463be-7738-4f4c-8f4a-bd1010964604",
+    "api-version": "1.6"
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

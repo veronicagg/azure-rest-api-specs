@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-6998",
+    "eventHubName": "sdk-EventHub-202",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.EventHub/namespaces/sdk-Namespace-6998/eventhubs/sdk-EventHub-202",
+        "name": "sdk-EventHub-202",
+        "type": "Microsoft.EventHub/EventHubs",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "messageRetentionInDays": 7,
+          "status": "Active",
+          "createdAt": "2016-09-01T22:38:34.887",
+          "updatedAt": "2016-09-01T22:38:46.74",
+          "partitionCount": 4,
+          "partitionIds": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ]
+        }
+      }
+    }
+  }
+}

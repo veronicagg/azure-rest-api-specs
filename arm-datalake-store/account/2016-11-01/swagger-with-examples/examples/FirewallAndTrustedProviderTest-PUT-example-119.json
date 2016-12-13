@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg1727",
+    "accountName": "adlsacct9646",
+    "firewallRuleName": "firerule11739",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "properties": {
+        "startIpAddress": "192.168.0.0",
+        "endIpAddress": "192.168.0.1"
+      },
+      "name": "firerule11739"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "startIpAddress": "192.168.0.0",
+          "endIpAddress": "192.168.0.1"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg1727/providers/Microsoft.DataLakeStore/accounts/adlsacct9646/firewallRules/firerule11739",
+        "name": "firerule11739",
+        "type": "Microsoft.DataLakeStore/accounts/firewallRules"
+      }
+    }
+  }
+}

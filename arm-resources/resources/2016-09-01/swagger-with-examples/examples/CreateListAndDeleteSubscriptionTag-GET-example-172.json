@@ -1,0 +1,41 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/provision_source",
+            "tagName": "provision_source",
+            "count": {
+              "type": "Total",
+              "value": 1
+            },
+            "values": [
+              {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/provision_source/tagValues/RMS",
+                "tagValue": "RMS",
+                "count": {
+                  "type": "Total",
+                  "value": 1
+                }
+              }
+            ]
+          },
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/csmtg4645",
+            "tagName": "csmtg4645",
+            "count": {
+              "type": "Total",
+              "value": 0
+            },
+            "values": []
+          }
+        ]
+      }
+    }
+  }
+}

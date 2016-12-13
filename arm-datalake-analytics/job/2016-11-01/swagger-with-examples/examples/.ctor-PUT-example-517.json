@@ -1,0 +1,58 @@
+{
+  "parameters": {
+    "jobIdentity": "d6b37a2c-e75d-468a-83d9-6a9856eb20d7",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "parameters": {
+      "jobId": "d6b37a2c-e75d-468a-83d9-6a9856eb20d7",
+      "name": "testjob17297",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "\r\nDROP DATABASE IF EXISTS testdb12673; CREATE DATABASE testdb12673; \r\n//Create Table\r\nCREATE TABLE testdb12673.dbo.testtbl19839\r\n(\r\n        //Define schema of table\r\n        UserId          int, \r\n        Start           DateTime, \r\n        Region          string, \r\n        Query           string, \r\n        Duration        int, \r\n        Urls            string, \r\n        ClickedUrls     string,\r\n    INDEX idx1 //Name of index\r\n    CLUSTERED (Region ASC) //Column to cluster by\r\n    PARTITIONED BY HASH (Region) //Column to partition by\r\n);\r\nDROP FUNCTION IF EXISTS testdb12673.dbo.testtvf150;\r\n\r\n//create table weblogs on space-delimited website log data\r\nCREATE FUNCTION testdb12673.dbo.testtvf150()\r\nRETURNS @result TABLE\r\n(\r\n    s_date DateTime,\r\n    s_time string,\r\n    s_sitename string,\r\n    cs_method string, \r\n    cs_uristem string,\r\n    cs_uriquery string,\r\n    s_port int,\r\n    cs_username string, \r\n    c_ip string,\r\n    cs_useragent string,\r\n    cs_cookie string,\r\n    cs_referer string, \r\n    cs_host string,\r\n    sc_status int,\r\n    sc_substatus int,\r\n    sc_win32status int, \r\n    sc_bytes int,\r\n    cs_bytes int,\r\n    s_timetaken int\r\n)\r\nAS\r\nBEGIN\r\n\r\n    @result = EXTRACT\r\n        s_date DateTime,\r\n        s_time string,\r\n        s_sitename string,\r\n        cs_method string,\r\n        cs_uristem string,\r\n        cs_uriquery string,\r\n        s_port int,\r\n        cs_username string,\r\n        c_ip string,\r\n        cs_useragent string,\r\n        cs_cookie string,\r\n        cs_referer string,\r\n        cs_host string,\r\n        sc_status int,\r\n        sc_substatus int,\r\n        sc_win32status int,\r\n        sc_bytes int,\r\n        cs_bytes int,\r\n        s_timetaken int\r\n    FROM @\"/Samples/Data/WebLog.log\"\r\n    USING Extractors.Text(delimiter:' ');\r\n\r\nRETURN;\r\nEND;\r\nCREATE VIEW testdb12673.dbo.testview11914 \r\nAS \r\n    SELECT * FROM \r\n    (\r\n        VALUES(1,2),(2,4)\r\n    ) \r\nAS \r\nT(a, b);\r\nCREATE PROCEDURE testdb12673.dbo.testproc15434()\r\nAS BEGIN\r\n  CREATE VIEW testdb12673.dbo.testview11914 \r\n  AS \r\n    SELECT * FROM \r\n    (\r\n        VALUES(1,2),(2,4)\r\n    ) \r\n  AS \r\n  T(a, b);\r\nEND;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "d6b37a2c-e75d-468a-83d9-6a9856eb20d7",
+        "name": "testjob17297",
+        "type": "USql",
+        "submitter": "begoldsm@microsoft.com",
+        "account": null,
+        "degreeOfParallelism": 2,
+        "priority": 0,
+        "submitTime": "Fri, 20 Nov 2015 22:19:19 GMT",
+        "startTime": null,
+        "endTime": null,
+        "state": "Compiling",
+        "result": "Succeeded",
+        "errorMessage": null,
+        "storageAccounts": null,
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:19:19 GMT",
+            "requestedByUser": null,
+            "details": "userName:begoldsm@microsoft.com;submitMachine:N/A"
+          }
+        ],
+        "properties": {
+          "owner": "begoldsm@microsoft.com",
+          "runtimeVersion": "default",
+          "rootProcessNodeId": "00000000-0000-0000-0000-000000000000",
+          "algebraFilePath": "adl://testadlsc17231.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/19/d6b37a2c-e75d-468a-83d9-6a9856eb20d7/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "00:00:00",
+          "totalPausedTime": "00:00:00",
+          "totalQueuedTime": "00:00:00",
+          "totalRunningTime": "00:00:00",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

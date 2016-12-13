@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "api-version": "2015-10-01-preview",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "jobId": "a3f97739-43f2-4f55-9477-1cb728ff13b5",
+            "name": "azure sdk data lake analytics job",
+            "type": "USql",
+            "submitter": "begoldsm@microsoft.com",
+            "account": "1461c7a0-356e-4f3b-ae6a-7cbf85833aa6",
+            "degreeOfParallelism": 2,
+            "priority": 0,
+            "submitTime": "Fri, 20 Nov 2015 22:26:36 GMT",
+            "startTime": "Fri, 20 Nov 2015 22:27:19 GMT",
+            "endTime": "Fri, 20 Nov 2015 22:27:22 GMT",
+            "state": "Ended",
+            "result": "Succeeded",
+            "errorMessage": null,
+            "storageAccounts": null,
+            "stateAuditRecords": null,
+            "properties": null
+          },
+          {
+            "jobId": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+            "name": "azure sdk data lake analytics job",
+            "type": "USql",
+            "submitter": "begoldsm@microsoft.com",
+            "account": "1461c7a0-356e-4f3b-ae6a-7cbf85833aa6",
+            "degreeOfParallelism": 2,
+            "priority": 0,
+            "submitTime": "Fri, 20 Nov 2015 22:26:32 GMT",
+            "startTime": null,
+            "endTime": "Fri, 20 Nov 2015 22:26:35 GMT",
+            "state": "Ended",
+            "result": "Cancelled",
+            "errorMessage": null,
+            "storageAccounts": null,
+            "stateAuditRecords": null,
+            "properties": null
+          }
+        ],
+        "nextLink": null,
+        "count": null
+      }
+    }
+  }
+}

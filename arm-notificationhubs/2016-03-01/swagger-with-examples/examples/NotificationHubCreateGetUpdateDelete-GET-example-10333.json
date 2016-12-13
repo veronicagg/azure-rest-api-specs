@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "111c36dc-4047-4c69-acd5-301072ff1fc2",
+    "resourceGroupName": "TestRg-NH7931",
+    "namespaceName": "HydraNH-Namespace1129",
+    "notificationHubName": "HydraNH-NotificationHub9008azsmnet7002",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.NotificationHubs/namespaces/HydraNH-Namespace1129/notificationHubs/HydraNH-NotificationHub9008azsmnet7002' under resource group 'TestRg-NH7931' was not found."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "status": "Succeeded"
+      }
+    }
+  }
+}

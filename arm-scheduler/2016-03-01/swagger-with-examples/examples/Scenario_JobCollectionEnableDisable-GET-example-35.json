@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc24972",
+    "api-version": "2016-03-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc24972",
+        "type": "Microsoft.Scheduler/jobCollections",
+        "name": "jc24972",
+        "location": "South Central US",
+        "tags": {
+          "department": "marketing"
+        },
+        "properties": {
+          "sku": {
+            "name": "P10Premium"
+          },
+          "state": "Disabled",
+          "quota": {
+            "maxJobCount": 50,
+            "maxRecurrence": {
+              "frequency": "day",
+              "interval": 2
+            }
+          }
+        }
+      }
+    }
+  }
+}

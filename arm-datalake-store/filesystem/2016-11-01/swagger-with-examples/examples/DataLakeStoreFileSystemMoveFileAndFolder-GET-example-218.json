@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder017430%2FSDKTestMoveFile01.txt",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true",
+    "destination": "SDKTestFolder017430%2FSDKTestMoveFile01.txt"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "FileStatus": {
+          "length": 42,
+          "pathSuffix": "",
+          "type": "FILE",
+          "blockSize": 268435456,
+          "accessTime": 1478818936188,
+          "modificationTime": 1478818936246,
+          "replication": 1,
+          "permission": "770",
+          "owner": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "group": "2e6c02d2-a364-4530-9137-d17403996cbf",
+          "expirationTime": 0
+        }
+      }
+    }
+  }
+}

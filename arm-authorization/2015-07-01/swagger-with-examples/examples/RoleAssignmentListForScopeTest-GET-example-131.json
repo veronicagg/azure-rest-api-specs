@@ -1,0 +1,15 @@
+{
+  "parameters": {
+    "roleDefinitionId": "subscriptions",
+    "$filter": "atScope()",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [],
+        "nextLink": null
+      }
+    }
+  }
+}

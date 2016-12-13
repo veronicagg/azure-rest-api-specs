@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "api-version": "2015-01-14-preview",
+    "$filter": "platform%20eq%20'android'"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/apps/com.microsoft.skydrive.Android",
+            "name": "com.microsoft.skydrive.Android",
+            "type": "Microsoft.Intune/locations/apps",
+            "properties": {
+              "friendlyName": "OneDrive",
+              "platform": "android",
+              "appId": "b26aadf8-566f-4478-926f-589f601d9c74"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

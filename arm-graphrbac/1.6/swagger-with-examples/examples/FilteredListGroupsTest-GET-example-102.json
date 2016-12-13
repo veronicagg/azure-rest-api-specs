@@ -1,0 +1,33 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "api-version": "1.6",
+    "$filter": "startswith(displayName,'testGroup7')"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "odata.metadata": "https://graph.windows.net/1273adef-00a3-4086-a51a-dbcce1857d36/$metadata#directoryObjects/Microsoft.DirectoryServices.Group",
+        "value": [
+          {
+            "odata.type": "Microsoft.DirectoryServices.Group",
+            "objectType": "Group",
+            "objectId": "2447d261-fac2-4567-9453-e2566eee4314",
+            "deletionTimestamp": null,
+            "description": null,
+            "dirSyncEnabled": null,
+            "displayName": "testGroup7",
+            "lastDirSyncTime": null,
+            "mail": null,
+            "mailNickname": "testGroup7",
+            "mailEnabled": false,
+            "onPremisesSecurityIdentifier": null,
+            "provisioningErrors": [],
+            "proxyAddresses": [],
+            "securityEnabled": true
+          }
+        ]
+      }
+    }
+  }
+}

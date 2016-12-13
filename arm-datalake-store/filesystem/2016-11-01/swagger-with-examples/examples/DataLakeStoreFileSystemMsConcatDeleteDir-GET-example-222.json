@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01%2FmsconcatFolder",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MSGETFILESTATUS",
+    "write": "true",
+    "deleteSourceDirectory": "true"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileNotFoundException",
+          "message": "File/Folder does not exist: /SDKTestFolder01/msconcatFolder [23caee9f-084b-425b-98cc-57287c261134][2016-11-10T14:37:40.8518430-08:00]",
+          "javaClassName": "java.io.FileNotFoundException"
+        }
+      }
+    }
+  }
+}

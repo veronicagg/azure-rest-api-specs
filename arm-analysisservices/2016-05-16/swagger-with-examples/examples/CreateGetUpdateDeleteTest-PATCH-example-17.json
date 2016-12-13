@@ -1,0 +1,53 @@
+{
+  "parameters": {
+    "subscriptionId": "e48bff2b-f633-4bd6-857a-ff243767676e",
+    "resourceGroupName": "TestRG",
+    "serverName": "azsdktest",
+    "api-version": "2016-05-16",
+    "serverUpdateParameters": {
+      "sku": {
+        "name": "S1",
+        "tier": "Standard"
+      },
+      "tags": {
+        "updated1": "value1"
+      },
+      "properties": {
+        "asAdministrators": {
+          "members": [
+            "aztest0@stabletest.ccsctp.net",
+            "aztest1@stabletest.ccsctp.net",
+            "aztest2@aspaastestloop1.ccsctp.net"
+          ]
+        }
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/e48bff2b-f633-4bd6-857a-ff243767676e/resourceGroups/TestRG/providers/Microsoft.AnalysisServices/servers/azsdktest",
+        "name": "azsdktest",
+        "type": "Microsoft.AnalysisServices/servers",
+        "location": "West US",
+        "sku": {
+          "name": "S1",
+          "tier": "Standard"
+        },
+        "tags": {
+          "updated1": "value1"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "asAdministrators": {
+            "members": [
+              "aztest0@stabletest.ccsctp.net",
+              "aztest1@stabletest.ccsctp.net",
+              "aztest2@aspaastestloop1.ccsctp.net"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg4490",
+    "localNetworkGatewayName": "azsmnet9140",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "tags": {
+        "test": "value"
+      },
+      "properties": {
+        "localNetworkAddressSpace": {
+          "addressPrefixes": [
+            "192.168.0.0/16"
+          ]
+        },
+        "gatewayIpAddress": "192.168.3.4"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet9140",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/localNetworkGateways/azsmnet9140",
+        "etag": "W/\"f80fde6c-bf1f-4c8e-8d77-3cd50390485b\"",
+        "type": "Microsoft.Network/localNetworkGateways",
+        "location": "westus",
+        "tags": {
+          "test": "value"
+        },
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "65b63583-7d30-4f32-acad-93ec0d844814",
+          "localNetworkAddressSpace": {
+            "addressPrefixes": [
+              "192.168.0.0/16"
+            ]
+          },
+          "gatewayIpAddress": "192.168.3.4"
+        }
+      }
+    }
+  }
+}

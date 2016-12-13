@@ -1,0 +1,70 @@
+{
+  "parameters": {
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": null,
+            "name": "GitHub",
+            "type": "Microsoft.Web/sourcecontrols",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "name": "GitHub",
+              "token": "myToken",
+              "tokenSecret": "myTokenSecret",
+              "refreshToken": null,
+              "expirationTime": null
+            }
+          },
+          {
+            "id": null,
+            "name": "Bitbucket",
+            "type": "Microsoft.Web/sourcecontrols",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "name": "Bitbucket",
+              "token": null,
+              "tokenSecret": null,
+              "refreshToken": null,
+              "expirationTime": null
+            }
+          },
+          {
+            "id": null,
+            "name": "Dropbox",
+            "type": "Microsoft.Web/sourcecontrols",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "name": "Dropbox",
+              "token": null,
+              "tokenSecret": null,
+              "refreshToken": null,
+              "expirationTime": null
+            }
+          },
+          {
+            "id": null,
+            "name": "OneDrive",
+            "type": "Microsoft.Web/sourcecontrols",
+            "location": null,
+            "tags": null,
+            "properties": {
+              "name": "OneDrive",
+              "token": null,
+              "tokenSecret": null,
+              "refreshToken": null,
+              "expirationTime": null
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

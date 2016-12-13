@@ -1,0 +1,22 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "nodeName": "rameshr12",
+    "session": "80b6d83e-dbcf-43cd-8e60-43b5e5d742ac",
+    "pssession": "00000000-0000-0000-0000-000000000000",
+    "api-version": "2016-07-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourceGroups/sdktest/providers/Microsoft.ServerManagement/nodes/rameshr12/sessions/80b6d83e-dbcf-43cd-8e60-43b5e5d742ac/features/powerShellConsole/pssessions/00000000-0000-0000-0000-000000000000",
+        "name": "00000000-0000-0000-0000-000000000000",
+        "type": "Microsoft.ServerManagement/nodes/features/pssessions",
+        "properties": {
+          "sessionId": "4108dd13-fafb-4b45-93ea-14db87dec00b"
+        }
+      }
+    }
+  }
+}

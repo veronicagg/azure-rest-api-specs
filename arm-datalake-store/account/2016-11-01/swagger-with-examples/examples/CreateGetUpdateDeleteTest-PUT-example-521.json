@@ -1,0 +1,62 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg18565",
+    "name": "testdatalake14064acct2",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "identity": {
+        "type": "SystemAssigned"
+      },
+      "properties": {
+        "encryptionState": "Enabled",
+        "encryptionConfig": {
+          "type": "ServiceManaged"
+        },
+        "firewallState": "Disabled",
+        "firewallRules": [],
+        "trustedIdProviderState": "Disabled",
+        "trustedIdProviders": []
+      },
+      "location": "East US 2",
+      "tags": {
+        "updatedKey": "updatedValue"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "firewallState": "Disabled",
+          "firewallRules": [],
+          "trustedIdProviderState": "Disabled",
+          "trustedIdProviders": [],
+          "encryptionState": "Enabled",
+          "encryptionConfig": {
+            "type": "ServiceManaged"
+          },
+          "provisioningState": "Creating",
+          "state": null,
+          "endpoint": null,
+          "accountId": "d6be58d7-e95f-43a8-ba21-4df7d3ffe704",
+          "creationTime": null,
+          "lastModifiedTime": null
+        },
+        "location": "East US 2",
+        "tags": {
+          "updatedKey": "updatedValue"
+        },
+        "identity": {
+          "type": "SystemAssigned",
+          "principalId": "00000000-0000-0000-0000-000000000000",
+          "tenantId": "00000000-0000-0000-0000-000000000000"
+        },
+        "id": "/subscriptions/53d9063d-87ae-4ea8-be90-3686c3b8669f/resourceGroups/datalakerg18565/providers/Microsoft.DataLakeStore/accounts/testdatalake14064acct2",
+        "name": "testdatalake14064acct2",
+        "type": "Microsoft.DataLakeStore/accounts"
+      }
+    }
+  }
+}

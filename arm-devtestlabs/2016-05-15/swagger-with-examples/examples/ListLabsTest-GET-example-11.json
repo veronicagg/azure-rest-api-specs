@@ -1,0 +1,56 @@
+{
+  "parameters": {
+    "subscriptionId": "33855c90-c8cf-44a0-a266-9b548fb8e7b0",
+    "api-version": "2016-05-15"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "defaultStorageAccount": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/syn-rg-wu-20160525215223/providers/Microsoft.Storage/storageAccounts/msdtlvm923024953",
+              "artifactsStorageAccount": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/syn-rg-wu-20160525215223/providers/Microsoft.Storage/storageAccounts/msdtlvm986281397",
+              "vaultName": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/syn-rg-wu-20160525215223/providers/Microsoft.KeyVault/vaults/msdtl1136823260",
+              "labStorageType": "Standard",
+              "createdDate": "2016-05-25T14:52:43.3267606-07:00",
+              "provisioningState": "Succeeded",
+              "uniqueIdentifier": "a7344a2c-9840-47eb-86a4-d345c66f6d24"
+            },
+            "id": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourcegroups/syn-rg-wu-20160525215223/providers/microsoft.devtestlab/labs/syn-wu-20160525215223",
+            "name": "SYN-WU-20160525215223",
+            "type": "Microsoft.DevTestLab/labs",
+            "location": "West US",
+            "tags": {
+              "Service": "DtlMetrics",
+              "Region": "West US",
+              "MachineName": "RD00155DE09DDF",
+              "ProcessId": "167364",
+              "WebsiteName": "dtl-dev-metrics",
+              "IntervalId": "20160525215223",
+              "MonitorName": "SyntheticMonitor"
+            }
+          },
+          {
+            "properties": {
+              "defaultStorageAccount": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/keepintegrationtestresources/providers/Microsoft.Storage/storageAccounts/msdtlvm1114508600",
+              "artifactsStorageAccount": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/keepintegrationtestresources/providers/Microsoft.Storage/storageAccounts/msdtlvm1287512904",
+              "vaultName": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourceGroups/keepintegrationtestresources/providers/Microsoft.KeyVault/vaults/msdtl2063424927",
+              "labStorageType": "Standard",
+              "createdDate": "2016-05-04T16:05:53.560711-07:00",
+              "provisioningState": "Succeeded",
+              "uniqueIdentifier": "c5cdceb9-dd06-4466-bbbf-9063563d1627"
+            },
+            "id": "/subscriptions/33855c90-c8cf-44a0-a266-9b548fb8e7b0/resourcegroups/keepintegrationtestresources/providers/microsoft.devtestlab/labs/labforintegration",
+            "name": "LabForIntegration",
+            "type": "Microsoft.DevTestLab/labs",
+            "location": "Southeast Asia",
+            "tags": {
+              "CreatedOn": "5/4/2016 11:05:50 PM +00:00"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

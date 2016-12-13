@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg7047",
+    "virtualNetworkGatewayConnectionName": "azsmnet5494",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

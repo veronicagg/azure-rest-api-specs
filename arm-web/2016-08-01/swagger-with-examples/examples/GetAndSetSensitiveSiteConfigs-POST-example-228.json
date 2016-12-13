@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg2600",
+    "name": "csmws3971",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg2600/providers/Microsoft.Web/sites/csmws3971/config/metadata",
+        "name": "metadata",
+        "type": "Microsoft.Web/sites/config",
+        "location": "West US",
+        "tags": {
+          "tag1": "value1",
+          "tag2": ""
+        },
+        "properties": {
+          "Metadata 1": "Metadata Value 1"
+        }
+      }
+    }
+  }
+}

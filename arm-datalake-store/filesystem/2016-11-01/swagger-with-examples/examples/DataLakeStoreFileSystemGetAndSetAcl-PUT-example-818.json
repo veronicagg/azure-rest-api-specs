@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "directFilePath": "%2F",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "MODIFYACLENTRIES",
+    "aclspec": "other::---",
+    "fsaction": "rwx",
+    "streamContents": ""
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

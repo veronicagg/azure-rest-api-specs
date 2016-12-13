@@ -1,0 +1,119 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01",
+    "parameters": {
+      "properties": {
+        "name": "csmr9003",
+        "siteMode": "Limited",
+        "computeMode": "Shared",
+        "sku": "Free",
+        "workerSize": 0
+      },
+      "location": "WestUS",
+      "tags": {
+        "csmtn8884": ""
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg1265/providers/Microsoft.Web/sites/csmr9003",
+        "name": "csmr9003",
+        "type": "Microsoft.Web/sites",
+        "location": "WestUS",
+        "tags": {
+          "csmtn8884": ""
+        },
+        "properties": {
+          "name": "csmr9003",
+          "state": "Running",
+          "hostNames": [
+            "csmr9003.azurewebsites.net"
+          ],
+          "webSpace": "csmrg1265-WestUSwebspace",
+          "selfLink": "https://waws-prod-bay-061.api.azurewebsites.windows.net:454/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/webspaces/csmrg1265-WestUSwebspace/sites/csmr9003",
+          "repositorySiteName": "csmr9003",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmr9003.azurewebsites.net",
+            "csmr9003.scm.azurewebsites.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmr9003.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 0
+            },
+            {
+              "name": "csmr9003.scm.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 1
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": "Default1",
+          "serverFarmId": null,
+          "reserved": null,
+          "lastModifiedTimeUtc": "2016-07-27T00:43:33.713",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmr9003",
+          "trafficManagerHostNames": null,
+          "sku": "Free",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false,
+          "targetSwapSlot": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "microService": "WebSites",
+          "gatewaySiteName": null,
+          "clientAffinityEnabled": true,
+          "clientCertEnabled": false,
+          "hostNamesDisabled": false,
+          "domainVerificationIdentifiers": null,
+          "kind": null,
+          "outboundIpAddresses": "40.118.255.137,40.118.255.231,40.118.250.218,40.118.252.35",
+          "containerSize": 0,
+          "maxNumberOfWorkers": null,
+          "homeStamp": "waws-prod-bay-061",
+          "cloningInfo": null,
+          "hostingEnvironmentId": null,
+          "tags": {
+            "csmtn8884": ""
+          },
+          "resourceGroup": "csmrg1265",
+          "defaultHostName": "csmr9003.azurewebsites.net"
+        }
+      }
+    }
+  }
+}

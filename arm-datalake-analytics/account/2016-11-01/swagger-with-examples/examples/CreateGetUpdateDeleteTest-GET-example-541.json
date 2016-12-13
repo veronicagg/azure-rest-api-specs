@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "rgaba19536",
+    "accountName": "testaba18483",
+    "dataLakeStoreAccountName": "testdatalake27493",
+    "api-version": "2016-11-01",
+    "monitor": "true",
+    "expanded": "true"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "DataLakeStore Account does not exist."
+        }
+      }
+    }
+  }
+}

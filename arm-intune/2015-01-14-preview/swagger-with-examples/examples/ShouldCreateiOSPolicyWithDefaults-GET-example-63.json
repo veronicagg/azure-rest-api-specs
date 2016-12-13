@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "cc932f13-76dd-45e8-95d4-ae4bcc1e7855",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/providers/Microsoft.Intune/locations/fef.msua06/iosPolicies/cc932f13-76dd-45e8-95d4-ae4bcc1e7855",
+        "name": "cc932f13-76dd-45e8-95d4-ae4bcc1e7855",
+        "type": "Microsoft.Intune/locations/iosPolicies",
+        "properties": {
+          "touchId": "enable",
+          "fileEncryptionLevel": "deviceLocked",
+          "friendlyName": "IntuneiOSPolicy2713",
+          "description": "New Android Policy",
+          "accessRecheckOfflineTimeout": "P0DT12H00M",
+          "accessRecheckOnlineTimeout": "P0DT00H30M",
+          "appSharingFromLevel": "none",
+          "appSharingToLevel": "none",
+          "authentication": "required",
+          "clipboardSharingLevel": "blocked",
+          "dataBackup": "allow",
+          "deviceCompliance": "enable",
+          "managedBrowser": "required",
+          "fileSharingSaveAs": "allow",
+          "offlineWipeTimeout": "P1D",
+          "pin": "required",
+          "pinNumRetry": 15,
+          "numOfApps": 0,
+          "groupStatus": "notTargeted",
+          "lastModifiedTime": "2015-12-02T23:51:20Z"
+        }
+      }
+    }
+  }
+}

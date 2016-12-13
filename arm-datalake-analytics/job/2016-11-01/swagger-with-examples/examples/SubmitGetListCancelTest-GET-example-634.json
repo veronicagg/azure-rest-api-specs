@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "$select": "jobId"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "jobId": "a3f97739-43f2-4f55-9477-1cb728ff13b5"
+          },
+          {
+            "jobId": "e22cfe4d-4130-4996-9a7c-72b34c38e079"
+          }
+        ],
+        "nextLink": null,
+        "count": null
+      }
+    }
+  }
+}

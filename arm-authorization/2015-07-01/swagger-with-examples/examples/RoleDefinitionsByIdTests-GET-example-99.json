@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "roleAssignmentId": "",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Automation Operator",
+          "type": "BuiltInRole",
+          "description": "Automation Operators are able to start, stop, suspend, and resume jobs",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Automation/automationAccounts/jobs/streams/read",
+                "Microsoft.Automation/automationAccounts/read",
+                "Microsoft.Automation/automationAccounts/runbooks/read",
+                "Microsoft.Automation/automationAccounts/schedules/read",
+                "Microsoft.Automation/automationAccounts/schedules/write",
+                "Microsoft.Automation/automationAccounts/jobs/read",
+                "Microsoft.Automation/automationAccounts/jobs/write",
+                "Microsoft.Automation/automationAccounts/jobs/stop/action",
+                "Microsoft.Automation/automationAccounts/jobs/suspend/action",
+                "Microsoft.Automation/automationAccounts/jobs/resume/action",
+                "Microsoft.Automation/automationAccounts/jobSchedules/read",
+                "Microsoft.Automation/automationAccounts/jobSchedules/write",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "2015-08-18T01:05:03.391613Z",
+          "updatedOn": "2015-11-19T17:28:29.5941811Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/d3881f73-407a-4167-8283-e981cbba0404",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "d3881f73-407a-4167-8283-e981cbba0404"
+      }
+    }
+  }
+}

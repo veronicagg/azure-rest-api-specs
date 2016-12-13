@@ -1,0 +1,46 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg9841",
+    "networkInterfaceName": "azsmnet6898",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "ipConfigurations": [
+          {
+            "properties": {
+              "privateIPAllocationMethod": "Dynamic",
+              "privateIPAddressVersion": "IPv4",
+              "subnet": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg9841/providers/Microsoft.Network/virtualNetworks/azsmnet546/subnets/azsmnet5615"
+              },
+              "primary": true
+            },
+            "name": "azsmnet1333"
+          }
+        ],
+        "enableAcceleratedNetworking": true
+      },
+      "location": "East US",
+      "tags": {
+        "key": "value"
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidRequestFormat",
+          "message": "Cannot parse the request.",
+          "details": [
+            {
+              "code": "InvalidJson",
+              "message": "Could not find member 'enableAcceleratedNetworking' on object of type 'NetworkInterfaceProperties'. Path 'properties.enableAcceleratedNetworking', line 16, position 34."
+            }
+          ]
+        }
+      }
+    }
+  }
+}

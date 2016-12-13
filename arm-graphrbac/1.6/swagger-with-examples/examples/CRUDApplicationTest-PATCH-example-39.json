@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "tenantID": "1273adef-00a3-4086-a51a-dbcce1857d36",
+    "applicationObjectId": "400de24c-b7e8-450d-9fe9-31b826bf4ee2",
+    "api-version": "1.6",
+    "$filter": "identifierUris/any(c:%20c%20eq%20'http:%2F%2FadApplication1784%2Fhome')",
+    "parameters": {
+      "passwordCredentials": [
+        {
+          "startDate": "2016-08-03T16:58:59.8142041Z",
+          "endDate": "2017-08-03T16:58:59.8142041Z",
+          "keyId": "5134f942-7b88-4207-a6c6-7925dbdf6452",
+          "value": "AQIDBAUGBwgJCgECAwQFBgcICQoBAgMEBQYHCAkKAQI="
+        }
+      ]
+    }
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

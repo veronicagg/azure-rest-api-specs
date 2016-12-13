@@ -1,0 +1,64 @@
+{
+  "parameters":{
+    "resourceGroupName":"resourcegroupname",
+    "accountName": "accountname",
+    "api-version": "2015-04-08",
+    "subscriptionId": "subcriptionID"
+  },
+  "responses":{
+    "200":{ 
+      "body": {
+        "value": [
+            {
+            "id": "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.DocumentDB/databaseAccounts/{accountName}",
+            "name": "testDatabaseAccount",
+            "type": "Microsoft.DocumentDB/databaseaccount/",
+            "location": "West US",
+            "kind": "DocumentDB",
+            "tags": {
+                "key1": "value 1",
+                "key2": "value 2"
+            },
+            "properties": {
+                "provisioningState": "Succeeded",
+                "databaseAccountOfferType": "Standard",
+                "consistencyPolicy": {
+                "defaultConsistencyLevel": "Session",
+                "maxIntervalInSeconds": 5,
+                "maxStalenessPrefix": 100
+                },
+                "documentEndpoint": "testDatabaseAccount.documents.windows.net",
+                "writeLocations": [
+                {
+                    "id": "testDatabaseAccount-westus",
+                    "locationName": "West US",
+                    "documentEndpoint": "https://testDatabaseAccount-westus.documents.azure.com:443/",
+                    "provisioningState": "Succeeded",
+                    "failoverPriority": 0
+                }
+                ],
+                "readLocations": [
+                {
+                    "id": "testDatabaseAccount-westus",
+                    "locationName": "West US",
+                    "documentEndpoint": "https://testDatabaseAccount-westus.documents.azure.com:443/",
+                    "provisioningState": "Succeeded",
+                    "failoverPriority": 0
+                }
+                ],
+                "failoverPolicies": [
+                {
+                    "id": "testDatabaseAccount-westus",
+                    "locationName": "West US",
+                    "failoverPriority": 0
+                }
+                ]
+            }
+            }
+        ]
+      }
+    }
+  }
+}
+
+

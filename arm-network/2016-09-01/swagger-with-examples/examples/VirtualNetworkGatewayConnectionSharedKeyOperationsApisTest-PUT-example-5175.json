@@ -1,0 +1,100 @@
+{
+  "parameters": {
+    "subscriptionId": "64229c92-175a-4eba-a2fd-ee1f9e29766e",
+    "resourceGroupName": "csmrg4490",
+    "virtualNetworkGatewayConnectionName": "azsmnet209",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "location": "West US",
+      "properties": {
+        "virtualNetworkGateway1": {
+          "etag": "W/\"ef41f4e3-e37c-476c-b51a-af4d497e90c5\"",
+          "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworkGateways/azsmnet7390",
+          "location": "westus",
+          "tags": {
+            "key": "value"
+          },
+          "properties": {
+            "ipConfigurations": [
+              {
+                "name": "azsmnet4984",
+                "etag": "W/\"ef41f4e3-e37c-476c-b51a-af4d497e90c5\"",
+                "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworkGateways/azsmnet7390/ipConfigurations/azsmnet4984",
+                "properties": {
+                  "privateIPAllocationMethod": "Dynamic",
+                  "subnet": {
+                    "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworks/azsmnet5651/subnets/GatewaySubnet"
+                  },
+                  "publicIPAddress": {
+                    "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/publicIPAddresses/azsmnet2734"
+                  },
+                  "provisioningState": "Succeeded"
+                }
+              }
+            ],
+            "gatewayType": "Vpn",
+            "vpnType": "RouteBased",
+            "enableBgp": false,
+            "sku": {
+              "name": "Basic",
+              "tier": "Basic"
+            },
+            "vpnClientConfiguration": {
+              "vpnClientRootCertificates": [],
+              "vpnClientRevokedCertificates": []
+            },
+            "resourceGuid": "80eb4542-6628-4989-a71d-39c6f068cd88",
+            "provisioningState": "Succeeded"
+          }
+        },
+        "localNetworkGateway2": {
+          "etag": "W/\"4ab7c1aa-4feb-4aea-8359-f841f6196a5d\"",
+          "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/localNetworkGateways/azsmnet9140",
+          "location": "West US",
+          "tags": {
+            "test": "value"
+          },
+          "properties": {
+            "localNetworkAddressSpace": {
+              "addressPrefixes": [
+                "192.168.0.0/16"
+              ]
+            },
+            "gatewayIpAddress": "192.168.3.4",
+            "resourceGuid": "65b63583-7d30-4f32-acad-93ec0d844814",
+            "provisioningState": "Succeeded"
+          }
+        },
+        "connectionType": "IPsec",
+        "routingWeight": 3,
+        "sharedKey": "abc"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet209",
+        "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/connections/azsmnet209",
+        "etag": "W/\"7f7cd1a5-0047-4072-9950-33a0778d9795\"",
+        "type": "Microsoft.Network/connections",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "39016de6-6554-4ad5-9df1-fec3546c0736",
+          "virtualNetworkGateway1": {
+            "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/virtualNetworkGateways/azsmnet7390"
+          },
+          "localNetworkGateway2": {
+            "id": "/subscriptions/64229c92-175a-4eba-a2fd-ee1f9e29766e/resourceGroups/csmrg4490/providers/Microsoft.Network/localNetworkGateways/azsmnet9140"
+          },
+          "connectionType": "IPsec",
+          "routingWeight": 3,
+          "sharedKey": "3082019006092A864886F70D010703A08201813082017D0201003182014930820145020100302D3019311730150603550403130E6E72702D656E6372797074696F6E0210746B4C34A3B7AE9043C2456669BA258F300D06092A864886F70D01010105000482010095A80BC30B360516EEEBBDFA881641ECFA84FF82F5D8D1BA1DB8BE8F0F190E71A968EEB95917536C7FBCE53F30A0033948DB016B514AFB1C8CD8572154B5D443EC62AE8E6448F000CC8476BB4630FD68F944F6C1093372B2E13FA82CF7D267CE807085936B38E07C965132977F3D9B3D0A6B5A107FC4CBD310619BE61FFC9F36A03D65020F7F268F3B633C7FB1C1AAB01879C1C96F1AAC7E32785F805540E3AAEFB5C411F5D41BE690CA933E3CDA8A13323CCD9CE985F478956EE1073844250F72D50ED851EB956E3EB0D0514FB51EF0631DDBAAF904C1D4752EFBE7431160760DBE60069C4ADC2FA8B2B074174FD8FBE03B38C29A7C2D5A6AF4338B95871FB9302B06092A864886F70D010701301406082A864886F70D030704080DDC6E4BB03FDDC28008C060205DBDFAEA93",
+          "ingressBytesTransferred": 0,
+          "egressBytesTransferred": 0
+        }
+      }
+    }
+  }
+}

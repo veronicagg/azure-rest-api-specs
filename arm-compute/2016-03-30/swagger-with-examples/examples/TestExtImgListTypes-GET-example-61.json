@@ -1,0 +1,34 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "location": "westus",
+    "publisherName": "Microsoft.Compute",
+    "api-version": "2016-03-30"
+  },
+  "responses": {
+    "200": {
+      "body": [
+        {
+          "location": "westus",
+          "name": "BGInfo",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/BGInfo"
+        },
+        {
+          "location": "westus",
+          "name": "CustomScriptExtension",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/CustomScriptExtension"
+        },
+        {
+          "location": "westus",
+          "name": "JsonADDomainExtension",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/JsonADDomainExtension"
+        },
+        {
+          "location": "westus",
+          "name": "VMAccessAgent",
+          "id": "/Subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/Providers/Microsoft.Compute/Locations/westus/Publishers/Microsoft.Compute/ArtifactTypes/VMExtension/Types/VMAccessAgent"
+        }
+      ]
+    }
+  }
+}

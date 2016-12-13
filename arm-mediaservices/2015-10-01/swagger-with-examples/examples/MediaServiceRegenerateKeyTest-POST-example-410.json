@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "4c552dc7-a66c-4fb3-a3ee-0941f36833f6",
+    "resourceGroupName": "rg9361",
+    "mediaServiceName": "media2419",
+    "api-version": "2015-10-01",
+    "monitor": "true",
+    "RegenerateKeyInput": {
+      "keyType": "Secondary"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "key": "sYE2VhYclJ30xdE/5fa9Ql5vNoAkHMaNiK5kL0V7K6o="
+      }
+    }
+  }
+}

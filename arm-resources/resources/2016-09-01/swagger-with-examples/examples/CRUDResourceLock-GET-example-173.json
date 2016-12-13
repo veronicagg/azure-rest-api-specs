@@ -1,0 +1,60 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2015-01-01",
+    "$filter": "atScope()"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "Optional text notes."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/providers/Microsoft.Authorization/locks/serverlock",
+            "type": "Microsoft.Authorization/locks",
+            "name": "serverlock"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourcegroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/mylock2461",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock2461"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourcegroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/mylock7562",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock7562"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "optional text."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourcegroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/mylock8361",
+            "type": "Microsoft.Authorization/locks",
+            "name": "mylock8361"
+          },
+          {
+            "properties": {
+              "level": "CanNotDelete",
+              "notes": "Optional text notes."
+            },
+            "id": "/subscriptions/cd405abc-f3d2-45b1-b011-142dfdd79992/resourceGroups/Default-SQL-EastAsia/providers/Microsoft.Sql/servers/g6gsefjdal/databases/AutomatedSqlExport_manikdb_20131123T091548Z/providers/Microsoft.Authorization/locks/newlock",
+            "type": "Microsoft.Authorization/locks",
+            "name": "newlock"
+          }
+        ]
+      }
+    }
+  }
+}

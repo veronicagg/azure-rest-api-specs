@@ -1,0 +1,126 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceGroupName": "csmrg5758",
+    "deploymentName": "csmd7534",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "templateLink": {
+          "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json"
+        },
+        "parameters": {
+          "repoURL": {
+            "value": "https://github.com/devigned/az-roadshow-oss.git"
+          },
+          "siteName": {
+            "value": "csmr9719"
+          },
+          "hostingPlanName": {
+            "value": "someplan"
+          },
+          "sku": {
+            "value": "F1"
+          }
+        },
+        "mode": "Incremental"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Resources/deployments/csmd7534",
+        "name": "csmd7534",
+        "properties": {
+          "templateLink": {
+            "uri": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/201-web-app-github-deploy/azuredeploy.json",
+            "contentVersion": "1.0.0.0"
+          },
+          "parameters": {
+            "siteName": {
+              "type": "String",
+              "value": "csmr9719"
+            },
+            "hostingPlanName": {
+              "type": "String",
+              "value": "someplan"
+            },
+            "sku": {
+              "type": "String",
+              "value": "F1"
+            },
+            "workerSize": {
+              "type": "String",
+              "value": "0"
+            },
+            "repoURL": {
+              "type": "String",
+              "value": "https://github.com/devigned/az-roadshow-oss.git"
+            },
+            "branch": {
+              "type": "String",
+              "value": "master"
+            }
+          },
+          "mode": "Incremental",
+          "provisioningState": "Accepted",
+          "timestamp": "2016-07-27T00:33:43.2416412Z",
+          "duration": "PT0.729201S",
+          "correlationId": "77f041dc-85fe-4122-ad08-70ff3dbd88d9",
+          "providers": [
+            {
+              "namespace": "Microsoft.Web",
+              "resourceTypes": [
+                {
+                  "resourceType": "serverfarms",
+                  "locations": [
+                    "southcentralus"
+                  ]
+                },
+                {
+                  "resourceType": "sites",
+                  "locations": [
+                    "southcentralus"
+                  ]
+                },
+                {
+                  "resourceType": "sites/sourcecontrols",
+                  "locations": [
+                    null
+                  ]
+                }
+              ]
+            }
+          ],
+          "dependencies": [
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/serverfarms/someplan",
+                  "resourceType": "Microsoft.Web/serverfarms",
+                  "resourceName": "someplan"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/sites/csmr9719",
+              "resourceType": "Microsoft.Web/sites",
+              "resourceName": "csmr9719"
+            },
+            {
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/Sites/csmr9719",
+                  "resourceType": "Microsoft.Web/Sites",
+                  "resourceName": "csmr9719"
+                }
+              ],
+              "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/sites/csmr9719/sourcecontrols/web",
+              "resourceType": "Microsoft.Web/sites/sourcecontrols",
+              "resourceName": "csmr9719/web"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

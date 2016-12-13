@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "filePath": "SDKTestFolder01%2FSDKTestFile01.txt3032",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "SETEXPIRY",
+    "write": "true",
+    "expiryOption": "Absolute",
+    "expireTime": "253402300800000"
+  },
+  "responses": {
+    "500": {
+      "body": {
+        "RemoteException": {
+          "exception": "RuntimeException",
+          "message": "The added or subtracted value results in an un-representable DateTime.\r\nParameter name: value [][2016-11-10T14:48:40.1486388-08:00]",
+          "javaClassName": "java.lang.RuntimeException"
+        }
+      }
+    }
+  }
+}

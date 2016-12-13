@@ -1,0 +1,87 @@
+{
+  "parameters": {
+    "databaseName": "testdb15849",
+    "schemaName": "dbo",
+    "tableName": "testtbl13852",
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testaba25610.azuredatalakeanalytics.net/sqlip/$metadata#tables/$entity",
+        "computeAccountName": "testaba25610",
+        "databaseName": "testdb15849",
+        "schemaName": "dbo",
+        "tableName": "testtbl13852",
+        "columnList": [
+          {
+            "name": "UserId",
+            "type": "System.Int32"
+          },
+          {
+            "name": "Start",
+            "type": "System.DateTime"
+          },
+          {
+            "name": "Region",
+            "type": "System.String"
+          },
+          {
+            "name": "Query",
+            "type": "System.String"
+          },
+          {
+            "name": "Duration",
+            "type": "System.Int32"
+          },
+          {
+            "name": "Urls",
+            "type": "System.String"
+          },
+          {
+            "name": "ClickedUrls",
+            "type": "System.String"
+          }
+        ],
+        "indexList": [
+          {
+            "name": "idx1",
+            "indexKeys": [
+              {
+                "name": "Region",
+                "descending": false
+              }
+            ],
+            "columns": [
+              "Region",
+              "UserId"
+            ],
+            "distributionInfo": {
+              "type": 2,
+              "keys": [
+                {
+                  "name": "Region",
+                  "descending": false
+                }
+              ],
+              "count": 0,
+              "dynamicCount": 0
+            },
+            "partitionFunction": "aae5d43a-cd22-4a1e-9579-9bf820273c81",
+            "partitionKeyList": [
+              "UserId"
+            ],
+            "isColumnstore": false,
+            "indexId": 1,
+            "isUnique": false
+          }
+        ],
+        "partitionKeyList": [],
+        "externalTable": null,
+        "distributionInfo": null,
+        "version": "28fd08f8-debd-468f-916e-6ba9aaf032d1"
+      }
+    }
+  }
+}

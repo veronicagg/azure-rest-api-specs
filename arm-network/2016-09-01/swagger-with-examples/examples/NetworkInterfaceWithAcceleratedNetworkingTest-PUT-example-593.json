@@ -1,0 +1,71 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "resourceGroupName": "csmrg9841",
+    "virtualNetworkName": "azsmnet546",
+    "api-version": "2016-09-01",
+    "parameters": {
+      "properties": {
+        "addressSpace": {
+          "addressPrefixes": [
+            "10.0.0.0/16"
+          ]
+        },
+        "dhcpOptions": {
+          "dnsServers": [
+            "10.1.1.1",
+            "10.1.2.4"
+          ]
+        },
+        "subnets": [
+          {
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            },
+            "name": "azsmnet5615"
+          }
+        ]
+      },
+      "location": "East US"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet546",
+        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg9841/providers/Microsoft.Network/virtualNetworks/azsmnet546",
+        "etag": "W/\"1e6e8fef-2c4d-4ee0-806b-a729349da738\"",
+        "type": "Microsoft.Network/virtualNetworks",
+        "location": "eastus",
+        "properties": {
+          "provisioningState": "Updating",
+          "resourceGuid": "d969223c-f982-40e3-ba86-fd62e0e024d4",
+          "addressSpace": {
+            "addressPrefixes": [
+              "10.0.0.0/16"
+            ]
+          },
+          "dhcpOptions": {
+            "dnsServers": [
+              "10.1.1.1",
+              "10.1.2.4"
+            ]
+          },
+          "subnets": [
+            {
+              "name": "azsmnet5615",
+              "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg9841/providers/Microsoft.Network/virtualNetworks/azsmnet546/subnets/azsmnet5615",
+              "etag": "W/\"1e6e8fef-2c4d-4ee0-806b-a729349da738\"",
+              "properties": {
+                "provisioningState": "Updating",
+                "addressPrefix": "10.0.0.0/24",
+                "serviceTunnels": []
+              }
+            }
+          ],
+          "virtualNetworkPeerings": []
+        }
+      }
+    }
+  }
+}

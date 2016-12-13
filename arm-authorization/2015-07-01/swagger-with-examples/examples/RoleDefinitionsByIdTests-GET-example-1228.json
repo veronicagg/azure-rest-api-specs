@@ -1,0 +1,62 @@
+{
+  "parameters": {
+    "scope": "subscriptions",
+    "roleDefinitionId": "roleDefinitions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "DevTest Lab User",
+          "type": "BuiltInRole",
+          "description": "Letï¿½s you connect, start, restart, and shutdown virtual machines in your Azure DevTest Labs.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Compute/virtualMachines/*/read",
+                "Microsoft.Network/networkInterfaces/*/read",
+                "Microsoft.Network/publicIPAddresses/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Compute/availabilitySets/read",
+                "Microsoft.Compute/virtualMachines/read",
+                "Microsoft.Network/networkInterfaces/read",
+                "Microsoft.Network/publicIPAddresses/read",
+                "Microsoft.DevTestLab/Environments/*",
+                "Microsoft.DevTestLab/labs/createEnvironment/action",
+                "Microsoft.Compute/virtualMachines/start/action",
+                "Microsoft.Compute/virtualMachines/restart/action",
+                "Microsoft.Compute/virtualMachines/deallocate/action",
+                "Microsoft.Storage/storageAccounts/listKeys/action",
+                "Microsoft.Network/networkInterfaces/write",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/deployments/read",
+                "Microsoft.Resources/deployments/operations/read",
+                "Microsoft.Network/virtualNetworks/subnets/join/action",
+                "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
+                "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+                "Microsoft.Network/publicIPAddresses/join/action",
+                "Microsoft.Network/networkInterfaces/join/action",
+                "Microsoft.DevTestLab/labs/evaluatePolicies/action",
+                "Microsoft.DevTestLab/labs/evaluateAllowedSetPolicies/action",
+                "Microsoft.DevTestLab/*/read"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "2015-06-08T21:52:45.0657582Z",
+          "updatedOn": "2015-11-17T22:52:41.0020927Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/76283e04-6283-4c54-8f91-bcf1374a3c64",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "76283e04-6283-4c54-8f91-bcf1374a3c64"
+      }
+    }
+  }
+}

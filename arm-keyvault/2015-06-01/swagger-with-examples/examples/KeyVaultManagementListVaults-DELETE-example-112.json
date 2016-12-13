@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "subscriptionId": "4fbe2810-8ec4-4443-88f4-1d0a6a212d02",
+    "resourceGroupName": "sdktestrg811",
+    "vaultName": "sdktestvault5656",
+    "api-version": "2015-06-01",
+    "$top": "2",
+    "$skiptoken": "c2RrdGVzdHZhdWx0OTEyMg",
+    "$filter": "resourceType%20eq%20'Microsoft.KeyVault%2Fvaults'"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

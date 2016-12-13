@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "path": "SDKTestFolder01%2FSDKTestFile01.txt7750",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "RENAME",
+    "write": "true",
+    "destination": "SDKTestFolder017430%2FSDKTestMoveFile01.txt"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "boolean": true
+      }
+    }
+  }
+}

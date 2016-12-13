@@ -1,0 +1,55 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "integrationAccountName": "IntegrationAccount4325",
+    "partnerName": "IntegrationAccountPartner2651",
+    "api-version": "2015-08-01-preview",
+    "partner": {
+      "properties": {
+        "partnerType": "B2B",
+        "metadata": "IntegrationAccountPartner2651",
+        "content": {
+          "b2b": {
+            "businessIdentities": [
+              {
+                "Qualifier": "AA",
+                "Value": "ZZ"
+              }
+            ]
+          }
+        }
+      },
+      "name": "IntegrationAccountPartner2651",
+      "location": "westus",
+      "tags": {
+        "integrationAccountPartnerName": "IntegrationAccountPartner2651"
+      }
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "partnerType": "B2B",
+          "content": {
+            "b2b": {
+              "businessIdentities": [
+                {
+                  "qualifier": "AA",
+                  "value": "ZZ"
+                }
+              ]
+            }
+          },
+          "createdTime": "2016-07-20T17:22:07.6276231Z",
+          "changedTime": "2016-07-20T17:22:07.6280373Z",
+          "metadata": "IntegrationAccountPartner2651"
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/integrationAccounts/IntegrationAccount4325/partners/IntegrationAccountPartner2651",
+        "name": "IntegrationAccountPartner2651",
+        "type": "Microsoft.Logic/integrationAccounts/partners"
+      }
+    }
+  }
+}

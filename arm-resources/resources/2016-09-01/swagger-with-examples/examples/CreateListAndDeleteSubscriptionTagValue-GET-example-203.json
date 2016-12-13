@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/DATABASE_ALIAS",
+            "tagName": "DATABASE_ALIAS",
+            "count": {
+              "type": "Total",
+              "value": 1
+            },
+            "values": [
+              {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/DATABASE_ALIAS/tagValues/cleardb1",
+                "tagValue": "cleardb1",
+                "count": {
+                  "type": "Total",
+                  "value": 1
+                }
+              }
+            ]
+          },
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/csmtg6776",
+            "tagName": "csmtg6776",
+            "count": {
+              "type": "Total",
+              "value": 0
+            },
+            "values": [
+              {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/tagNames/csmtg6776/tagValues/csmtgv5290",
+                "tagValue": "csmtgv5290",
+                "count": {
+                  "type": "Total",
+                  "value": 0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

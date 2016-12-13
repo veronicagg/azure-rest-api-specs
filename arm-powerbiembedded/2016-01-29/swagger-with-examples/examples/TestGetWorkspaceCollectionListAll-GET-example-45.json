@@ -1,0 +1,844 @@
+{
+  "parameters": {
+    "subscriptionId": "3d1cd7a8-b035-4563-9288-dbe706cd672e",
+    "api-version": "2016-01-29"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/anbencic-wpc-test/providers/Microsoft.PowerBI/workspaceCollections/anbencic-test2",
+            "name": "anbencic-test2",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-03-23T02:45:38.733",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/gnccp/providers/Microsoft.PowerBI/workspaceCollections/SmokeTestDay1",
+            "name": "SmokeTestDay1",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-03-30T14:15:39.053",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/SmokeTest/providers/Microsoft.PowerBI/workspaceCollections/deleteme",
+            "name": "deleteme",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-03-30T14:20:55.937",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/WCRG/providers/Microsoft.PowerBI/workspaceCollections/dasd",
+            "name": "dasd",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-04-13T21:30:02.027",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/anbencic-gwc1/providers/Microsoft.PowerBI/workspaceCollections/anbencic1",
+            "name": "anbencic1",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-04-26T20:11:36.367",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureNodeSdkTestWorkspaceCollection571",
+            "name": "azureNodeSdkTestWorkspaceCollection571",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {
+              "tag1": "val1",
+              "tag2": "val2"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-18T23:27:32.587",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN01",
+            "name": "azureSkdNodeTestWCN01",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:14:30.25",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN02",
+            "name": "azureSkdNodeTestWCN02",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:19:13.73",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN03",
+            "name": "azureSkdNodeTestWCN03",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:21:14.123",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN04",
+            "name": "azureSkdNodeTestWCN04",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:28:18.717",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN05",
+            "name": "azureSkdNodeTestWCN05",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:29:01.757",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN06",
+            "name": "azureSkdNodeTestWCN06",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:30:29.61",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN07",
+            "name": "azureSkdNodeTestWCN07",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:33:15.777",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN08",
+            "name": "azureSkdNodeTestWCN08",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {
+              "criag": "boucher",
+              "tony": "ferrel"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:33:47.477",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN09",
+            "name": "azureSkdNodeTestWCN09",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {
+              "criag": "boucher",
+              "tony": "ferrel"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:35:55.867",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN10",
+            "name": "azureSkdNodeTestWCN10",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:45:20.403",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup3696/providers/Microsoft.PowerBI/workspaceCollections/azureSkdNodeTestWCN11",
+            "name": "azureSkdNodeTestWCN11",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {
+              "criag": "bouche4r",
+              "tony": "fer23rel"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T00:45:34.743",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup1234/providers/Microsoft.PowerBI/workspaceCollections/azureSdkTestWCN01",
+            "name": "azureSdkTestWCN01",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T01:32:07.46",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureSdkNodeTestResourceGroup1234/providers/Microsoft.PowerBI/workspaceCollections/azureSdkTestWCN02",
+            "name": "azureSdkTestWCN02",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-05-21T01:33:50.907",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureXplatCliTestResourceGroup5596/providers/Microsoft.PowerBI/workspaceCollections/azureXplatCliTestWorkspaceCollection1000",
+            "name": "azureXplatCliTestWorkspaceCollection1000",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-01T23:05:39.573",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/azureXplatCliTestResourceGroup5596/providers/Microsoft.PowerBI/workspaceCollections/azureXplatCliTestWorkspaceCollection1001",
+            "name": "azureXplatCliTestWorkspaceCollection1001",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "South Central US",
+            "tags": {
+              "powerbi": "awesome"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-01T23:06:59.417",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pslibtest6883/providers/Microsoft.PowerBI/workspaceCollections/wcnpslibtest6883",
+            "name": "wcnpslibtest6883",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-01T22:15:37.273",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pslibtest4656/providers/Microsoft.PowerBI/workspaceCollections/wcnpslibtest4656",
+            "name": "wcnpslibtest4656",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-01T22:15:40.413",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest/providers/Microsoft.PowerBI/workspaceCollections/pstest1",
+            "name": "pstest1",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T17:56:13.297",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest/providers/Microsoft.PowerBI/workspaceCollections/aa1",
+            "name": "aa1",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:01:31.877",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1011500215RG/providers/Microsoft.PowerBI/workspaceCollections/2147246621WC",
+            "name": "2147246621WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:05:33.233",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/2041717988RG/providers/Microsoft.PowerBI/workspaceCollections/949241476WC",
+            "name": "949241476WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:06:23.947",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/2041717988RG/providers/Microsoft.PowerBI/workspaceCollections/1439884177WC",
+            "name": "1439884177WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:06:25.287",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/78524606RG/providers/Microsoft.PowerBI/workspaceCollections/1409139546WC",
+            "name": "1409139546WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:10:29.953",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/78524606RG/providers/Microsoft.PowerBI/workspaceCollections/1165782426WC",
+            "name": "1165782426WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:10:31.26",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/719227136RG/providers/Microsoft.PowerBI/workspaceCollections/1902605558WC",
+            "name": "1902605558WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:17:23.457",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/719227136RG/providers/Microsoft.PowerBI/workspaceCollections/1595633633WC",
+            "name": "1595633633WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:17:26.523",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1097443339RG/providers/Microsoft.PowerBI/workspaceCollections/430911977WC",
+            "name": "430911977WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:19:23.44",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1097443339RG/providers/Microsoft.PowerBI/workspaceCollections/203857140WC",
+            "name": "203857140WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:19:24.137",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/157235929RG/providers/Microsoft.PowerBI/workspaceCollections/638555287WC",
+            "name": "638555287WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:21:25.573",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/157235929RG/providers/Microsoft.PowerBI/workspaceCollections/536561749WC",
+            "name": "536561749WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:21:27.337",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/2112748203RG/providers/Microsoft.PowerBI/workspaceCollections/207486223WC",
+            "name": "207486223WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:21:41.147",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/2112748203RG/providers/Microsoft.PowerBI/workspaceCollections/1346961203WC",
+            "name": "1346961203WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:21:42.267",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1381876150RG/providers/Microsoft.PowerBI/workspaceCollections/1787104699WC",
+            "name": "1787104699WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:21:53.753",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1161649764RG/providers/Microsoft.PowerBI/workspaceCollections/2124974926WC",
+            "name": "2124974926WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:22:07.36",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/1625227675RG/providers/Microsoft.PowerBI/workspaceCollections/1861772027WC",
+            "name": "1861772027WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:22:19.027",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/663336655RG/providers/Microsoft.PowerBI/workspaceCollections/583752547WC",
+            "name": "583752547WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:23:05.687",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest270531772RG/providers/Microsoft.PowerBI/workspaceCollections/pstest2039116815WC",
+            "name": "pstest2039116815WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:28:45.667",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest84331737RG/providers/Microsoft.PowerBI/workspaceCollections/pstest1208248122WC",
+            "name": "pstest1208248122WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:29:43.997",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest803832705RG/providers/Microsoft.PowerBI/workspaceCollections/pstest1923575858WC",
+            "name": "pstest1923575858WC",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-03T18:34:56.157",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/jiadji-resource-group/providers/Microsoft.PowerBI/workspaceCollections/jiadji-workspace-collection",
+            "name": "jiadji-workspace-collection",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-06T17:57:35.3",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/pstest/providers/Microsoft.PowerBI/workspaceCollections/WB345",
+            "name": "WB345",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-08T22:55:38.087",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg9337/providers/Microsoft.PowerBI/workspaceCollections/wc3322",
+            "name": "wc3322",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-17T19:36:15.763",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg9337/providers/Microsoft.PowerBI/workspaceCollections/wc9645",
+            "name": "wc9645",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-17T19:36:17.597",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg7710/providers/Microsoft.PowerBI/workspaceCollections/wc3755",
+            "name": "wc3755",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-17T19:36:25.287",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          },
+          {
+            "id": "/subscriptions/3d1cd7a8-b035-4563-9288-dbe706cd672e/resourceGroups/rg7779/providers/Microsoft.PowerBI/workspaceCollections/wc114",
+            "name": "wc114",
+            "type": "Microsoft.PowerBI/workspaceCollections",
+            "location": "West US",
+            "tags": {},
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdDate": "2016-06-17T19:36:27.337",
+              "status": "Active"
+            },
+            "sku": {
+              "name": "S1",
+              "tier": "Standard"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

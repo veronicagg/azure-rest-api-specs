@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "jobIdentity": "8c8c0020-38e2-4d9f-a271-f31df03b4063",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "parameters": {
+      "name": "testjob16387",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "\r\nDROP DATABASE IF EXISTS testdb15849; CREATE DATABASE testdb15849; \r\n//Create Table\r\nCREATE TABLE testdb15849.dbo.testtbl13852\r\n(\r\n        //Define schema of table\r\n        UserId          int, \r\n        Start           DateTime, \r\n        Region          string, \r\n        Query           string, \r\n        Duration        int, \r\n        Urls            string, \r\n        ClickedUrls     string,\r\n    INDEX idx1 //Name of index\r\n    CLUSTERED (Region ASC) //Column to cluster by\r\n    PARTITIONED BY BUCKETS (UserId) HASH (Region) //Column to partition by\r\n);\r\n\r\nALTER TABLE testdb15849.dbo.testtbl13852 ADD IF NOT EXISTS PARTITION (1);\r\n\r\nDROP FUNCTION IF EXISTS testdb15849.dbo.testtvf12607;\r\n\r\n//create table weblogs on space-delimited website log data\r\nCREATE FUNCTION testdb15849.dbo.testtvf12607()\r\nRETURNS @result TABLE\r\n(\r\n    s_date DateTime,\r\n    s_time string,\r\n    s_sitename string,\r\n    cs_method string, \r\n    cs_uristem string,\r\n    cs_uriquery string,\r\n    s_port int,\r\n    cs_username string, \r\n    c_ip string,\r\n    cs_useragent string,\r\n    cs_cookie string,\r\n    cs_referer string, \r\n    cs_host string,\r\n    sc_status int,\r\n    sc_substatus int,\r\n    sc_win32status int, \r\n    sc_bytes int,\r\n    cs_bytes int,\r\n    s_timetaken int\r\n)\r\nAS\r\nBEGIN\r\n\r\n    @result = EXTRACT\r\n        s_date DateTime,\r\n        s_time string,\r\n        s_sitename string,\r\n        cs_method string,\r\n        cs_uristem string,\r\n        cs_uriquery string,\r\n        s_port int,\r\n        cs_username string,\r\n        c_ip string,\r\n        cs_useragent string,\r\n        cs_cookie string,\r\n        cs_referer string,\r\n        cs_host string,\r\n        sc_status int,\r\n        sc_substatus int,\r\n        sc_win32status int,\r\n        sc_bytes int,\r\n        cs_bytes int,\r\n        s_timetaken int\r\n    FROM @\"/Samples/Data/WebLog.log\"\r\n    USING Extractors.Text(delimiter:' ');\r\n\r\nRETURN;\r\nEND;\r\nCREATE VIEW testdb15849.dbo.testview16733 \r\nAS \r\n    SELECT * FROM \r\n    (\r\n        VALUES(1,2),(2,4)\r\n    ) \r\nAS \r\nT(a, b);\r\nCREATE PROCEDURE testdb15849.dbo.testproc1345()\r\nAS BEGIN\r\n  CREATE VIEW testdb15849.dbo.testview16733 \r\n  AS \r\n    SELECT * FROM \r\n    (\r\n        VALUES(1,2),(2,4)\r\n    ) \r\n  AS \r\n  T(a, b);\r\nEND;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "8c8c0020-38e2-4d9f-a271-f31df03b4063",
+        "name": "testjob16387",
+        "type": "USql",
+        "submitter": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+        "degreeOfParallelism": 2,
+        "priority": 1000,
+        "submitTime": "2016-11-07T20:10:58.1204461-08:00",
+        "state": "Compiling",
+        "result": "Succeeded",
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "2016-11-07T20:10:58.1204461-08:00",
+            "details": "userName:;submitMachine:N/A"
+          }
+        ],
+        "properties": {
+          "owner": "adlsvc01@benwgoldoutlook.onmicrosoft.com",
+          "resources": [],
+          "runtimeVersion": "default",
+          "rootProcessNodeId": "00000000-0000-0000-0000-000000000000",
+          "algebraFilePath": "adl://testdatalake12038.azuredatalakestore.net/system/jobservice/jobs/Usql/2016/11/08/04/10/8c8c0020-38e2-4d9f-a271-f31df03b4063/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "PT0S",
+          "totalPausedTime": "PT0S",
+          "totalQueuedTime": "PT0S",
+          "totalRunningTime": "PT0S",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

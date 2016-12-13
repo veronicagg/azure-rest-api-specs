@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "subscriptionId": "53d9063d-87ae-4ea8-be90-3686c3b8669f",
+    "resourceGroupName": "datalakerg18565",
+    "accountName": "testdatalake14064",
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "204": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "parameters": {
+    "directFilePath": "SDKTestFolder01%2FSDKTestFile01.txt7385",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "CREATE",
+    "write": "true",
+    "streamContents": ""
+  },
+  "responses": {
+    "201": {
+      "body": ""
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "api-version": "2015-08-19",
+    "checkNameAvailabilityInput": {
+      "name": "----badname",
+      "type": "searchServices"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "nameAvailable": false,
+        "reason": "Invalid",
+        "message": "Service name must only contain lowercase letters, digits or dashes, cannot start or end with or contain consecutive dashes and is limited to 60 characters."
+      }
+    }
+  }
+}

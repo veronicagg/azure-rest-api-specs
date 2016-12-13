@@ -1,0 +1,127 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar4881",
+    "virtualMachineScaleSetName": "vmss9482",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$filter": "properties/latestModelApplied%20eq%20true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "instanceId": "0",
+            "sku": {
+              "name": "Standard_A0",
+              "tier": "Standard"
+            },
+            "properties": {
+              "latestModelApplied": true,
+              "vmId": "d3055942-1609-4cea-9442-cee59a82882b",
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2012-R2-Datacenter",
+                  "version": "4.0.20151120"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "test-os-0-2118250dfbd247e986d378e9e1b0f4d5",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://crptestar3018.blob.core.windows.net/crptestar432/test-os-0-2118250dfbd247e986d378e9e1b0f4d5.vhd"
+                  },
+                  "caching": "None"
+                }
+              },
+              "osProfile": {
+                "computerName": "test000000",
+                "adminUsername": "Foo12",
+                "customData": "Q3VzdG9tIGRhdGE=",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar4881/providers/Microsoft.Compute/virtualMachineScaleSets/vmss9482/virtualMachines/0/networkInterfaces/vmsstestnetconfig1541"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR4881/providers/Microsoft.Compute/virtualMachineScaleSets/vmss9482/virtualMachines/0",
+            "name": "vmss9482_0",
+            "type": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines",
+            "location": "southeastasia",
+            "tags": {
+              "RG": "rg",
+              "testTag": "1"
+            }
+          },
+          {
+            "instanceId": "1",
+            "sku": {
+              "name": "Standard_A0",
+              "tier": "Standard"
+            },
+            "properties": {
+              "latestModelApplied": true,
+              "vmId": "aad6fa0d-10ab-47bb-be2e-71225ea76d26",
+              "storageProfile": {
+                "imageReference": {
+                  "publisher": "MicrosoftWindowsServer",
+                  "offer": "WindowsServer",
+                  "sku": "2012-R2-Datacenter",
+                  "version": "4.0.20151120"
+                },
+                "osDisk": {
+                  "osType": "Windows",
+                  "name": "test-os-1-f8075f7e744f404198acada866f4e0fc",
+                  "createOption": "FromImage",
+                  "vhd": {
+                    "uri": "https://crptestar3018.blob.core.windows.net/crptestar432/test-os-1-f8075f7e744f404198acada866f4e0fc.vhd"
+                  },
+                  "caching": "None"
+                }
+              },
+              "osProfile": {
+                "computerName": "test000001",
+                "adminUsername": "Foo12",
+                "customData": "Q3VzdG9tIGRhdGE=",
+                "windowsConfiguration": {
+                  "provisionVMAgent": true,
+                  "enableAutomaticUpdates": true
+                },
+                "secrets": []
+              },
+              "networkProfile": {
+                "networkInterfaces": [
+                  {
+                    "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar4881/providers/Microsoft.Compute/virtualMachineScaleSets/vmss9482/virtualMachines/1/networkInterfaces/vmsstestnetconfig1541"
+                  }
+                ]
+              },
+              "provisioningState": "Succeeded"
+            },
+            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/CRPTESTAR4881/providers/Microsoft.Compute/virtualMachineScaleSets/vmss9482/virtualMachines/1",
+            "name": "vmss9482_1",
+            "type": "Microsoft.Compute/virtualMachineScaleSets/virtualMachines",
+            "location": "southeastasia",
+            "tags": {
+              "RG": "rg",
+              "testTag": "1"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

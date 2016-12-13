@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "subscriptionId": "f98da156-d5e6-44a1-99d8-1b6fd3f764ff",
+    "resourceGroupName": "csmrg5498",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "azsmnet7021",
+            "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/connections/azsmnet7021",
+            "etag": "W/\"826f16ff-c725-4369-802e-d896cf872219\"",
+            "type": "Microsoft.Network/connections",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "9a55fa97-924c-4096-a09e-8043c3cd8586",
+              "virtualNetworkGateway1": {
+                "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/virtualNetworkGateways/azsmnet3443"
+              },
+              "localNetworkGateway2": {
+                "id": "/subscriptions/f98da156-d5e6-44a1-99d8-1b6fd3f764ff/resourceGroups/csmrg5498/providers/Microsoft.Network/localNetworkGateways/azsmnet8914"
+              },
+              "connectionType": "IPsec",
+              "routingWeight": 3,
+              "enableBgp": true,
+              "ingressBytesTransferred": 0,
+              "egressBytesTransferred": 0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

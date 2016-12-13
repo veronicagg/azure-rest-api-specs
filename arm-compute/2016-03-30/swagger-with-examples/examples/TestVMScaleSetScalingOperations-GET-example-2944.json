@@ -1,0 +1,84 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar6554",
+    "vmScaleSetName": "vmss6305",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "sku": {
+          "name": "Standard_A0",
+          "tier": "Standard",
+          "capacity": 2
+        },
+        "properties": {
+          "upgradePolicy": {
+            "mode": "Automatic"
+          },
+          "virtualMachineProfile": {
+            "osProfile": {
+              "computerNamePrefix": "test",
+              "adminUsername": "Foo12",
+              "customData": "Q3VzdG9tIGRhdGE=",
+              "windowsConfiguration": {
+                "provisionVMAgent": true,
+                "enableAutomaticUpdates": true
+              },
+              "secrets": []
+            },
+            "storageProfile": {
+              "osDisk": {
+                "vhdContainers": [
+                  "https://crptestar414.blob.core.windows.net/crptestar248"
+                ],
+                "name": "test",
+                "createOption": "FromImage",
+                "caching": "None"
+              },
+              "imageReference": {
+                "publisher": "MicrosoftWindowsServer",
+                "offer": "WindowsServer",
+                "sku": "2012-R2-Datacenter",
+                "version": "4.0.20151120"
+              }
+            },
+            "networkProfile": {
+              "networkInterfaceConfigurations": [
+                {
+                  "name": "vmsstestnetconfig413",
+                  "properties": {
+                    "primary": true,
+                    "ipConfigurations": [
+                      {
+                        "name": "vmsstestnetconfig5213",
+                        "properties": {
+                          "subnet": {
+                            "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar6554/providers/Microsoft.Network/virtualNetworks/vn7072/subnets/sn7040"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "provisioningState": "Succeeded",
+          "overprovision": false
+        },
+        "id": "/subscriptions/0b1f6471-1bf0-4dda-aec3-cb9272f09590/resourceGroups/crptestar6554/providers/Microsoft.Compute/virtualMachineScaleSets/vmss6305",
+        "name": "vmss6305",
+        "type": "Microsoft.Compute/virtualMachineScaleSets",
+        "location": "southeastasia",
+        "tags": {
+          "RG": "rg",
+          "testTag": "1"
+        }
+      }
+    }
+  }
+}

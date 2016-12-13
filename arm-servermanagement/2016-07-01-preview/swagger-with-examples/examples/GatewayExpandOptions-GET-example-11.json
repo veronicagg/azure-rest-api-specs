@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "resourceGroupName": "sdktest",
+    "gatewayName": "rameshr12",
+    "api-version": "2016-07-01-preview",
+    "$expand": "download"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/rameshr12",
+        "name": "rameshr12",
+        "type": "microsoft.servermanagement/gateways",
+        "location": "centralus",
+        "etag": "W/\"datetime'2016-10-14T01%3A13%3A59.8545155Z'\"",
+        "properties": {
+          "created": "2016-10-14T01:13:56.0773541Z",
+          "updated": "2016-10-14T01:13:56.0773541Z",
+          "autoUpgrade": "On",
+          "upgradeMode": "Automatic",
+          "desiredVersion": null,
+          "minimumVersion": "1.0.1547.0",
+          "installerDownload": "https://pdrsmtrppreviewcus.blob.core.windows.net/cfb3fe0e0850549ab94ab2e0c3f601704/gateway.74fbaff8b99a42438b92c985e998f27a.zip?sv=2014-02-14&sr=b&sig=CkLMvU9i2TEOikKfYBbpBVXurH5PdhHUgL9VBC66MJA%3D&se=2016-10-22T20%3A51%3A35Z&sp=r"
+        }
+      }
+    }
+  }
+}

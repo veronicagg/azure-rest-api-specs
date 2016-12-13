@@ -1,0 +1,17 @@
+{
+  "parameters": {
+    "subscriptionId": "0b1f6471-1bf0-4dda-aec3-cb9272f09590",
+    "resourceGroupName": "crptestar957",
+    "vmName": "vm6746",
+    "vmExtensionName": "vmext01",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "$expand": "instanceView"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

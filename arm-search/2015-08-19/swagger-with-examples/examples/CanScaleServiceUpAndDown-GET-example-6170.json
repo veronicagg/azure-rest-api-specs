@@ -1,0 +1,29 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "resourceGroupName": "azsmnet3688",
+    "searchServiceName": "azs-5240",
+    "api-version": "2015-08-19"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/b80cf239-2c72-47ab-b309-b26aec4656b1/resourceGroups/azsmnet3688/providers/Microsoft.Search/searchServices/azs-5240",
+        "name": "azs-5240",
+        "type": "Microsoft.Search/searchServices",
+        "location": "West US",
+        "properties": {
+          "replicaCount": 1,
+          "partitionCount": 1,
+          "status": "provisioning",
+          "statusDetails": null,
+          "provisioningState": "provisioning",
+          "hostingMode": "Default"
+        },
+        "sku": {
+          "name": "basic"
+        }
+      }
+    }
+  }
+}

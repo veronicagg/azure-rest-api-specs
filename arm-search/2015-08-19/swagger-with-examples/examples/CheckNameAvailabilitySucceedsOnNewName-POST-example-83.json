@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "b80cf239-2c72-47ab-b309-b26aec4656b1",
+    "api-version": "2015-08-19",
+    "checkNameAvailabilityInput": {
+      "name": "newservice",
+      "type": "searchServices"
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "nameAvailable": true,
+        "reason": null,
+        "message": null
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "subscriptionId": "f7424430-103b-4ba3-bd9e-b6f0986f848a",
+    "resourceGroupName": "RecoveryServicesBackupTestRg",
+    "vaultName": "SDKTestRsVault",
+    "fabricName": "Azure",
+    "containerName": "IaasVMContainer%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "protectedItemName": "VM%3Biaasvmcontainerv2%3Bpstestrg%3Bpstestv2vm1",
+    "operationId": "75bb0afd-43cf-4f36-be0b-eb9ecba333c1",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "75bb0afd-43cf-4f36-be0b-eb9ecba333c1",
+        "name": "75bb0afd-43cf-4f36-be0b-eb9ecba333c1",
+        "status": "Succeeded",
+        "startTime": "2016-10-10T11:55:48.5250362Z",
+        "endTime": "2016-10-10T11:55:48.5250362Z",
+        "properties": {
+          "objectType": "OperationStatusJobExtendedInfo",
+          "jobId": "75734041-a36a-4195-bed3-4d17da8130d2"
+        }
+      }
+    }
+  }
+}

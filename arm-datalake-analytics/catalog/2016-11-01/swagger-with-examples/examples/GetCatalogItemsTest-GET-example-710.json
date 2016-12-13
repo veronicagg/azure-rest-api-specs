@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "databaseName": "testdb12673",
+    "schemaName": "dbo",
+    "procedureName": "testproc15434",
+    "api-version": "2015-10-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testadlac16849.azuredatalakeanalytics.net/sqlip/$metadata#procedures/$entity",
+        "computeAccountName": "testadlac16849",
+        "databaseName": "testdb12673",
+        "schemaName": "dbo",
+        "procName": "testproc15434",
+        "definition": "CREATE PROCEDURE testdb12673.dbo.testproc15434()\nAS BEGIN\n  CREATE VIEW testdb12673.dbo.testview11914 \n  AS \n    SELECT * FROM \n    (\n        VALUES(1,2),(2,4)\n    ) \n  AS \n  T(a, b);\nEND;",
+        "version": "47127319-3740-446f-be12-6568791a0bb7"
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup6649",
+    "profileName": "profile5996",
+    "endpointName": "endpoint4366",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "202": {
+      "body": {
+        "hostName": "endpoint4366.azureedge.net",
+        "originHostHeader": null,
+        "provisioningState": "Succeeded",
+        "resourceState": "Stopping",
+        "isHttpAllowed": true,
+        "isHttpsAllowed": true,
+        "queryStringCachingBehavior": "IgnoreQueryString",
+        "originPath": null,
+        "origins": [
+          {
+            "name": "origin1",
+            "properties": {
+              "hostName": "www.bing.com",
+              "httpPort": 1234,
+              "httpsPort": 8081
+            }
+          }
+        ],
+        "customDomains": [],
+        "contentTypesToCompress": [],
+        "isCompressionEnabled": false,
+        "optimizationType": null,
+        "geoFilters": []
+      }
+    }
+  }
+}

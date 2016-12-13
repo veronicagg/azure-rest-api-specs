@@ -1,0 +1,83 @@
+{
+  "parameters": {
+    "subscriptionId": "4fbe2810-8ec4-4443-88f4-1d0a6a212d02",
+    "resourceGroupName": "sdktestrg1220",
+    "vaultName": "sdktestvault3487",
+    "api-version": "2015-06-01",
+    "parameters": {
+      "location": "North Central US",
+      "tags": {
+        "tag1": "value1",
+        "tag2": "value2",
+        "tag3": "value3"
+      },
+      "properties": {
+        "vaultUri": "",
+        "tenantId": "dab60df3-eb31-470e-9aa7-0bb580c2624c",
+        "sku": {
+          "family": "A",
+          "name": "standard"
+        },
+        "accessPolicies": [
+          {
+            "tenantId": "dab60df3-eb31-470e-9aa7-0bb580c2624c",
+            "objectId": "8d3eb738-13c6-4117-aa01-b8aa50beba40",
+            "applicationId": "8b654ae6-39e7-4137-b959-7f5e3b5f35a4",
+            "permissions": {
+              "keys": [
+                "all"
+              ],
+              "certificates": [
+                "all"
+              ]
+            }
+          }
+        ],
+        "enabledForDeployment": true,
+        "enabledForDiskEncryption": true,
+        "enabledForTemplateDeployment": true
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/4fbe2810-8ec4-4443-88f4-1d0a6a212d02/resourceGroups/sdktestrg1220/providers/Microsoft.KeyVault/vaults/sdktestvault3487",
+        "name": "sdktestvault3487",
+        "type": "Microsoft.KeyVault/vaults",
+        "location": "North Central US",
+        "tags": {
+          "tag1": "value1",
+          "tag2": "value2",
+          "tag3": "value3"
+        },
+        "properties": {
+          "sku": {
+            "family": "A",
+            "name": "standard"
+          },
+          "tenantId": "dab60df3-eb31-470e-9aa7-0bb580c2624c",
+          "accessPolicies": [
+            {
+              "tenantId": "dab60df3-eb31-470e-9aa7-0bb580c2624c",
+              "objectId": "8d3eb738-13c6-4117-aa01-b8aa50beba40",
+              "applicationId": "8b654ae6-39e7-4137-b959-7f5e3b5f35a4",
+              "permissions": {
+                "keys": [
+                  "all"
+                ],
+                "certificates": [
+                  "all"
+                ]
+              }
+            }
+          ],
+          "enabledForDeployment": true,
+          "enabledForDiskEncryption": true,
+          "enabledForTemplateDeployment": true,
+          "vaultUri": "https://sdktestvault3487.vault.azure.net"
+        }
+      }
+    }
+  }
+}

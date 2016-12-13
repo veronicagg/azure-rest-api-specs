@@ -1,0 +1,119 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01",
+    "parameters": {
+      "properties": {
+        "name": "csmr4794",
+        "siteMode": "Limited",
+        "computeMode": "Shared",
+        "sku": "Free",
+        "workerSize": 0
+      },
+      "location": "WestUS",
+      "tags": {
+        "csmtn5829": "csmtv1793"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg3878/providers/Microsoft.Web/sites/csmr4794",
+        "name": "csmr4794",
+        "type": "Microsoft.Web/sites",
+        "location": "WestUS",
+        "tags": {
+          "csmtn5829": "csmtv1793"
+        },
+        "properties": {
+          "name": "csmr4794",
+          "state": "Running",
+          "hostNames": [
+            "csmr4794.azurewebsites.net"
+          ],
+          "webSpace": "csmrg3878-WestUSwebspace",
+          "selfLink": "https://waws-prod-bay-061.api.azurewebsites.windows.net:454/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/webspaces/csmrg3878-WestUSwebspace/sites/csmr4794",
+          "repositorySiteName": "csmr4794",
+          "owner": null,
+          "usageState": 0,
+          "enabled": true,
+          "adminEnabled": true,
+          "enabledHostNames": [
+            "csmr4794.azurewebsites.net",
+            "csmr4794.scm.azurewebsites.net"
+          ],
+          "siteProperties": {
+            "metadata": null,
+            "properties": [],
+            "appSettings": null
+          },
+          "availabilityState": 0,
+          "sslCertificates": null,
+          "csrs": [],
+          "cers": null,
+          "siteMode": null,
+          "hostNameSslStates": [
+            {
+              "name": "csmr4794.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 0
+            },
+            {
+              "name": "csmr4794.scm.azurewebsites.net",
+              "sslState": 0,
+              "ipBasedSslResult": null,
+              "virtualIP": null,
+              "thumbprint": null,
+              "toUpdate": null,
+              "toUpdateIpBasedSsl": null,
+              "ipBasedSslState": 0,
+              "hostType": 1
+            }
+          ],
+          "computeMode": null,
+          "serverFarm": "Default1",
+          "serverFarmId": null,
+          "reserved": null,
+          "lastModifiedTimeUtc": "2016-07-27T00:44:19.267",
+          "storageRecoveryDefaultState": "Running",
+          "contentAvailabilityState": 0,
+          "runtimeAvailabilityState": 0,
+          "siteConfig": null,
+          "deploymentId": "csmr4794",
+          "trafficManagerHostNames": null,
+          "sku": "Free",
+          "premiumAppDeployed": null,
+          "scmSiteAlsoStopped": false,
+          "targetSwapSlot": null,
+          "hostingEnvironment": null,
+          "hostingEnvironmentProfile": null,
+          "microService": "WebSites",
+          "gatewaySiteName": null,
+          "clientAffinityEnabled": true,
+          "clientCertEnabled": false,
+          "hostNamesDisabled": false,
+          "domainVerificationIdentifiers": null,
+          "kind": null,
+          "outboundIpAddresses": "40.118.255.137,40.118.255.231,40.118.250.218,40.118.252.35",
+          "containerSize": 0,
+          "maxNumberOfWorkers": null,
+          "homeStamp": "waws-prod-bay-061",
+          "cloningInfo": null,
+          "hostingEnvironmentId": null,
+          "tags": {
+            "csmtn5829": "csmtv1793"
+          },
+          "resourceGroup": "csmrg3878",
+          "defaultHostName": "csmr4794.azurewebsites.net"
+        }
+      }
+    }
+  }
+}

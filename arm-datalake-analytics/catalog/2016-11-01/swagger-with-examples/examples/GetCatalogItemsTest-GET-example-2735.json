@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "api-version": "2016-11-01",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "@odata.context": "https://testaba25610.azuredatalakeanalytics.net/sqlip/$metadata#databases",
+        "value": [
+          {
+            "computeAccountName": "testaba25610",
+            "databaseName": "master",
+            "version": "8364f838-9e4d-4586-b148-0b6c19d55382"
+          },
+          {
+            "computeAccountName": "testaba25610",
+            "databaseName": "testdb15849",
+            "version": "71eb7bb6-c1dd-47df-88cf-ce1972c273d7"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1515 @@
+{
+  "parameters": {
+    "subscriptionId": "a01fbab8-1714-4f94-8b67-40d7827a5efd",
+    "api-version": "2016-07-01-preview",
+    "$expand": "status"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/0d0c3c30-aa79-4e4c-a035-b51a3c5e820f",
+            "name": "0d0c3c30-aa79-4e4c-a035-b51a3c5e820f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T02%3A04%3A03.9059956Z'\"",
+            "properties": {
+              "created": "2016-10-13T02:04:01.9857401Z",
+              "updated": "2016-10-13T02:04:01.9857401Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/21dc40f4-aae4-460b-af3d-a1e2c5eb54ff",
+            "name": "21dc40f4-aae4-460b-af3d-a1e2c5eb54ff",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T07%3A04%3A03.6351728Z'\"",
+            "properties": {
+              "created": "2016-10-12T07:04:01.928651Z",
+              "updated": "2016-10-12T07:04:01.928651Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/3f409cf7-033c-4d8f-be46-1b4606fa9225",
+            "name": "3f409cf7-033c-4d8f-be46-1b4606fa9225",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T04%3A34%3A34.4246398Z'\"",
+            "properties": {
+              "created": "2016-10-13T04:34:31.8650537Z",
+              "updated": "2016-10-13T04:34:31.8650537Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/4eca30b6-5110-473d-bd70-9b898218a7dd",
+            "name": "4eca30b6-5110-473d-bd70-9b898218a7dd",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T04%3A04%3A40.739371Z'\"",
+            "properties": {
+              "created": "2016-10-12T04:04:38.2967956Z",
+              "updated": "2016-10-12T04:04:38.2967956Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/6c29eb6b-1ef0-41f8-8143-550a4ecfaa43",
+            "name": "6c29eb6b-1ef0-41f8-8143-550a4ecfaa43",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T15%3A19%3A09.0139825Z'\"",
+            "properties": {
+              "created": "2016-10-12T15:19:04.5333124Z",
+              "updated": "2016-10-12T15:19:04.5333124Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-rg/providers/microsoft.servermanagement/gateways/b69e5010-0e41-4a73-9c10-fe9a3155a5cc",
+            "name": "b69e5010-0e41-4a73-9c10-fe9a3155a5cc",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-18T15%3A34%3A22.2060165Z'\"",
+            "properties": {
+              "created": "2016-10-18T15:34:00.5804694Z",
+              "updated": "2016-10-18T15:34:00.5804694Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/01134a5e-3ec2-4d2f-af1d-136dc338b3cf",
+            "name": "01134a5e-3ec2-4d2f-af1d-136dc338b3cf",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T10%3A28%3A23.5462242Z'\"",
+            "properties": {
+              "created": "2016-10-12T10:28:20.9758757Z",
+              "updated": "2016-10-12T10:28:20.9758757Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0234f733-57aa-4e52-a9fd-c80017d5a48c",
+            "name": "0234f733-57aa-4e52-a9fd-c80017d5a48c",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T12%3A58%3A30.3697552Z'\"",
+            "properties": {
+              "created": "2016-10-12T12:58:26.1416549Z",
+              "updated": "2016-10-12T12:58:26.1416549Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/05a2f099-932f-4966-9ed7-fb6a928d15a5",
+            "name": "05a2f099-932f-4966-9ed7-fb6a928d15a5",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T14%3A51%3A20.1471393Z'\"",
+            "properties": {
+              "created": "2016-10-12T14:51:09.9163725Z",
+              "updated": "2016-10-12T14:51:09.9163725Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0868bfbf-b41c-475b-a621-3c158c60e398",
+            "name": "0868bfbf-b41c-475b-a621-3c158c60e398",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T16%3A13%3A32.0970792Z'\"",
+            "properties": {
+              "created": "2016-10-12T16:13:27.0042498Z",
+              "updated": "2016-10-12T16:13:27.0042498Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/095e1392-65a2-4fd9-94f7-4bd92e232294",
+            "name": "095e1392-65a2-4fd9-94f7-4bd92e232294",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T00%3A21%3A03.518574Z'\"",
+            "properties": {
+              "created": "2016-10-13T00:21:05.3663323Z",
+              "updated": "2016-10-13T00:21:05.3663323Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/09f25b15-65c9-45d2-81d3-021797ee6063",
+            "name": "09f25b15-65c9-45d2-81d3-021797ee6063",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T04%3A43%3A35.9363799Z'\"",
+            "properties": {
+              "created": "2016-10-13T04:43:32.4551231Z",
+              "updated": "2016-10-13T04:43:32.4551231Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0a9158d9-d8a7-494f-907e-bc78e630de51",
+            "name": "0a9158d9-d8a7-494f-907e-bc78e630de51",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T18%3A43%3A34.257676Z'\"",
+            "properties": {
+              "created": "2016-10-12T18:43:31.5436116Z",
+              "updated": "2016-10-12T18:43:31.5436116Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0bbd6335-ae80-410d-a9f5-5efd599d85ff",
+            "name": "0bbd6335-ae80-410d-a9f5-5efd599d85ff",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T09%3A13%3A34.4550321Z'\"",
+            "properties": {
+              "created": "2016-10-12T09:13:31.5269778Z",
+              "updated": "2016-10-12T09:13:31.5269778Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0c178b56-6a71-4f40-ab79-4a15d2c3251d",
+            "name": "0c178b56-6a71-4f40-ab79-4a15d2c3251d",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T11%3A36%3A02.6215273Z'\"",
+            "properties": {
+              "created": "2016-10-13T11:35:59.6318229Z",
+              "updated": "2016-10-13T11:35:59.6318229Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/0c19310f-15e2-43fe-b575-20b07ff90347",
+            "name": "0c19310f-15e2-43fe-b575-20b07ff90347",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T02%3A58%3A27.185071Z'\"",
+            "properties": {
+              "created": "2016-10-12T02:58:24.2146665Z",
+              "updated": "2016-10-12T02:58:24.2146665Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/1047ffc9-6b7f-40db-a456-cae06cf0b6af",
+            "name": "1047ffc9-6b7f-40db-a456-cae06cf0b6af",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T11%3A06%3A00.3240736Z'\"",
+            "properties": {
+              "created": "2016-10-12T11:06:00.6714635Z",
+              "updated": "2016-10-12T11:06:00.6714635Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/21790089-7b55-4009-829c-68704c9e5555",
+            "name": "21790089-7b55-4009-829c-68704c9e5555",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T21%3A50%3A59.0903847Z'\"",
+            "properties": {
+              "created": "2016-10-12T21:50:59.4759899Z",
+              "updated": "2016-10-12T21:50:59.4759899Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/25322c1e-5439-4c2f-ac20-12aa6cf09c64",
+            "name": "25322c1e-5439-4c2f-ac20-12aa6cf09c64",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-20T13%3A14%3A21.1731896Z'\"",
+            "properties": {
+              "created": "2016-10-20T13:13:25.3007224Z",
+              "updated": "2016-10-20T13:13:25.3007224Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/255fe0e5-d866-4598-8370-4ea31d8311b6",
+            "name": "255fe0e5-d866-4598-8370-4ea31d8311b6",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T09%3A43%3A27.2285893Z'\"",
+            "properties": {
+              "created": "2016-10-13T09:43:24.5702208Z",
+              "updated": "2016-10-13T09:43:24.5702208Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/2a89c366-028e-4618-a71c-d428160300d9",
+            "name": "2a89c366-028e-4618-a71c-d428160300d9",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T02%3A21%3A04.3253111Z'\"",
+            "properties": {
+              "created": "2016-10-12T02:21:01.3158192Z",
+              "updated": "2016-10-12T02:21:01.3158192Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/2a934371-1536-416e-b3ff-bdcc93ec6789",
+            "name": "2a934371-1536-416e-b3ff-bdcc93ec6789",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T15%3A28%3A43.2173644Z'\"",
+            "properties": {
+              "created": "2016-10-12T15:28:23.1976018Z",
+              "updated": "2016-10-12T15:28:23.1976018Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/2cdf387b-014e-452c-a169-a2e58abf280f",
+            "name": "2cdf387b-014e-452c-a169-a2e58abf280f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T19%3A21%3A02.6017076Z'\"",
+            "properties": {
+              "created": "2016-10-12T19:20:59.2647381Z",
+              "updated": "2016-10-12T19:20:59.2647381Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/2e8bff60-2c0a-458b-81a3-9f342fdaa7a4",
+            "name": "2e8bff60-2c0a-458b-81a3-9f342fdaa7a4",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T18%3A06%3A11.1853922Z'\"",
+            "properties": {
+              "created": "2016-10-12T18:06:06.1351636Z",
+              "updated": "2016-10-12T18:06:06.1351636Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/2f76ea60-db04-48fe-8787-9dc7b8b64d4b",
+            "name": "2f76ea60-db04-48fe-8787-9dc7b8b64d4b",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T01%3A36%3A06.8602933Z'\"",
+            "properties": {
+              "created": "2016-10-13T01:36:03.648855Z",
+              "updated": "2016-10-13T01:36:03.648855Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/32650bc7-618f-436e-8fec-7286ff805ee0",
+            "name": "32650bc7-618f-436e-8fec-7286ff805ee0",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T11%3A43%3A30.3158229Z'\"",
+            "properties": {
+              "created": "2016-10-12T11:43:26.6966252Z",
+              "updated": "2016-10-12T11:43:26.6966252Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/3a033d0d-08cf-49e6-a819-b83f6e590b65",
+            "name": "3a033d0d-08cf-49e6-a819-b83f6e590b65",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T09%3A51%3A05.6996434Z'\"",
+            "properties": {
+              "created": "2016-10-12T09:51:02.306992Z",
+              "updated": "2016-10-12T09:51:02.306992Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/3bc5783c-42ba-42c6-b14c-9956cd78cdc9",
+            "name": "3bc5783c-42ba-42c6-b14c-9956cd78cdc9",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T17%3A13%3A26.6050916Z'\"",
+            "properties": {
+              "created": "2016-10-13T17:13:24.1311603Z",
+              "updated": "2016-10-13T17:13:24.1311603Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/3cc9d06b-9dad-4f70-a599-1183f8386552",
+            "name": "3cc9d06b-9dad-4f70-a599-1183f8386552",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-20T12%3A21%3A47.6009467Z'\"",
+            "properties": {
+              "created": "2016-10-20T12:21:10.6824369Z",
+              "updated": "2016-10-20T12:21:10.6824369Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/3f6ce38e-26e7-459b-80c1-2eacd55c8ed4",
+            "name": "3f6ce38e-26e7-459b-80c1-2eacd55c8ed4",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T08%3A36%3A07.2067777Z'\"",
+            "properties": {
+              "created": "2016-10-12T08:36:07.3462881Z",
+              "updated": "2016-10-12T08:36:07.3462881Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/4224c9de-a85a-491f-ae96-415daa71fc3b",
+            "name": "4224c9de-a85a-491f-ae96-415daa71fc3b",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T06%3A35%3A58.7558927Z'\"",
+            "properties": {
+              "created": "2016-10-13T06:35:56.219087Z",
+              "updated": "2016-10-13T06:35:56.219087Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/424a3d48-61e1-40c9-b3b4-0c4f66a413ff",
+            "name": "424a3d48-61e1-40c9-b3b4-0c4f66a413ff",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T08%3A28%3A37.4408562Z'\"",
+            "properties": {
+              "created": "2016-10-13T08:28:34.953451Z",
+              "updated": "2016-10-13T08:28:34.953451Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/425bdfda-6bbf-40b2-a06f-b724021af027",
+            "name": "425bdfda-6bbf-40b2-a06f-b724021af027",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T12%3A51%3A03.3959388Z'\"",
+            "properties": {
+              "created": "2016-10-13T12:51:00.2903429Z",
+              "updated": "2016-10-13T12:51:00.2903429Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/4716a27f-85b5-41e1-b91b-3a01b01679ec",
+            "name": "4716a27f-85b5-41e1-b91b-3a01b01679ec",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T21%3A13%3A20.0462871Z'\"",
+            "properties": {
+              "created": "2016-10-12T21:13:17.5981387Z",
+              "updated": "2016-10-12T21:13:17.5981387Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/482b2187-814c-471f-894f-2e9bb754a3a9",
+            "name": "482b2187-814c-471f-894f-2e9bb754a3a9",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T05%3A58%3A29.4137767Z'\"",
+            "properties": {
+              "created": "2016-10-13T05:58:24.637843Z",
+              "updated": "2016-10-13T05:58:24.637843Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/4a0b3541-2fb3-4477-a26a-1aa15fb2a579",
+            "name": "4a0b3541-2fb3-4477-a26a-1aa15fb2a579",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T00%3A58%3A33.1296917Z'\"",
+            "properties": {
+              "created": "2016-10-13T00:58:35.7610835Z",
+              "updated": "2016-10-13T00:58:35.7610835Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/4fdb1efa-ecd6-4dda-a317-3bfc2fa01e27",
+            "name": "4fdb1efa-ecd6-4dda-a317-3bfc2fa01e27",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T13%3A28%3A27.5098976Z'\"",
+            "properties": {
+              "created": "2016-10-13T13:28:24.4711201Z",
+              "updated": "2016-10-13T13:28:24.4711201Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/5808bc55-3a44-47fd-aa50-d83d7c2f5125",
+            "name": "5808bc55-3a44-47fd-aa50-d83d7c2f5125",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T07%3A51%3A00.261279Z'\"",
+            "properties": {
+              "created": "2016-10-13T07:50:57.4398647Z",
+              "updated": "2016-10-13T07:50:57.4398647Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/59db6235-d111-4d99-bb79-09ae5f938864",
+            "name": "59db6235-d111-4d99-bb79-09ae5f938864",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T05%3A21%3A08.9130017Z'\"",
+            "properties": {
+              "created": "2016-10-13T05:21:06.1574055Z",
+              "updated": "2016-10-13T05:21:06.1574055Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/5b37af7a-0067-40e7-a970-59c94f4e48a3",
+            "name": "5b37af7a-0067-40e7-a970-59c94f4e48a3",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T17%3A28%3A28.709518Z'\"",
+            "properties": {
+              "created": "2016-10-12T17:28:26.508214Z",
+              "updated": "2016-10-12T17:28:26.508214Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/5b75b74e-349e-4a4a-b167-0afe7de827a1",
+            "name": "5b75b74e-349e-4a4a-b167-0afe7de827a1",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T19%3A58%3A26.0811535Z'\"",
+            "properties": {
+              "created": "2016-10-12T19:58:25.0569346Z",
+              "updated": "2016-10-12T19:58:25.0569346Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/5b8e6e8f-0b3b-4ba7-9c70-2cedd10447b9",
+            "name": "5b8e6e8f-0b3b-4ba7-9c70-2cedd10447b9",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T14%3A13%3A30.8333739Z'\"",
+            "properties": {
+              "created": "2016-10-12T14:13:28.2568288Z",
+              "updated": "2016-10-12T14:13:28.2568288Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/5bc7346a-8278-40fd-8637-a994fda3bc4f",
+            "name": "5bc7346a-8278-40fd-8637-a994fda3bc4f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T14%3A43%3A25.6978244Z'\"",
+            "properties": {
+              "created": "2016-10-13T14:43:22.7128413Z",
+              "updated": "2016-10-13T14:43:22.7128413Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/647682fd-4a28-4c56-8676-a9053cb7cf8c",
+            "name": "647682fd-4a28-4c56-8676-a9053cb7cf8c",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T00%3A28%3A40.0760407Z'\"",
+            "properties": {
+              "created": "2016-10-12T00:28:37.5474224Z",
+              "updated": "2016-10-12T00:28:37.5474224Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/6cb7ddc8-97c1-4b4c-ac44-7f4874bd4e37",
+            "name": "6cb7ddc8-97c1-4b4c-ac44-7f4874bd4e37",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T09%3A06%3A00.2549461Z'\"",
+            "properties": {
+              "created": "2016-10-13T09:05:57.4029586Z",
+              "updated": "2016-10-13T09:05:57.4029586Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/71809536-0f68-4222-b18e-f81e8f8cc2a4",
+            "name": "71809536-0f68-4222-b18e-f81e8f8cc2a4",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T14%3A06%3A05.0151419Z'\"",
+            "properties": {
+              "created": "2016-10-13T14:06:01.8899553Z",
+              "updated": "2016-10-13T14:06:01.8899553Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/76edf7c1-2726-4229-9627-4eb65e7cc23f",
+            "name": "76edf7c1-2726-4229-9627-4eb65e7cc23f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T23%3A43%3A22.5655208Z'\"",
+            "properties": {
+              "created": "2016-10-12T23:43:25.209978Z",
+              "updated": "2016-10-12T23:43:25.209978Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/7860ee51-02ad-482b-abf7-da898ff1e852",
+            "name": "7860ee51-02ad-482b-abf7-da898ff1e852",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T12%3A13%3A37.2212082Z'\"",
+            "properties": {
+              "created": "2016-10-13T12:13:34.4151015Z",
+              "updated": "2016-10-13T12:13:34.4151015Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/7c971e0d-4e5b-4999-8529-cb47b746613b",
+            "name": "7c971e0d-4e5b-4999-8529-cb47b746613b",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T05%3A28%3A44.8869087Z'\"",
+            "properties": {
+              "created": "2016-10-12T05:28:41.4253327Z",
+              "updated": "2016-10-12T05:28:41.4253327Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/7cf51bb9-570b-46ac-85d1-96d149015b2e",
+            "name": "7cf51bb9-570b-46ac-85d1-96d149015b2e",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-21T05%3A29%3A12.7503967Z'\"",
+            "properties": {
+              "created": "2016-10-21T05:28:33.42459Z",
+              "updated": "2016-10-21T05:28:33.42459Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/8119aa40-cc5f-4c0f-a49c-585e0c2dff49",
+            "name": "8119aa40-cc5f-4c0f-a49c-585e0c2dff49",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T07%3A58%3A32.1477319Z'\"",
+            "properties": {
+              "created": "2016-10-12T07:58:29.6597353Z",
+              "updated": "2016-10-12T07:58:29.6597353Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/836b0944-6b98-43f7-a187-d313aded73ae",
+            "name": "836b0944-6b98-43f7-a187-d313aded73ae",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T06%3A06%3A05.7771792Z'\"",
+            "properties": {
+              "created": "2016-10-12T06:06:03.5258981Z",
+              "updated": "2016-10-12T06:06:03.5258981Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/8b7ab283-acf9-4210-8f39-0a78f2208062",
+            "name": "8b7ab283-acf9-4210-8f39-0a78f2208062",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T23%3A13%3A34.2653065Z'\"",
+            "properties": {
+              "created": "2016-10-11T23:13:31.9095135Z",
+              "updated": "2016-10-11T23:13:31.9095135Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/90572a1b-5cf6-45c8-8015-e609a9f6e8c7",
+            "name": "90572a1b-5cf6-45c8-8015-e609a9f6e8c7",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T04%3A06%3A05.0289943Z'\"",
+            "properties": {
+              "created": "2016-10-13T04:06:02.4590598Z",
+              "updated": "2016-10-13T04:06:02.4590598Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/91c2d820-854c-42c6-8f34-8c558edbc512",
+            "name": "91c2d820-854c-42c6-8f34-8c558edbc512",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T07%3A21%3A05.8285079Z'\"",
+            "properties": {
+              "created": "2016-10-12T07:21:03.292515Z",
+              "updated": "2016-10-12T07:21:03.292515Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/922f4084-3c7f-4b0e-b748-d826ba5c2d9d",
+            "name": "922f4084-3c7f-4b0e-b748-d826ba5c2d9d",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T19%3A36%3A21.8552536Z'\"",
+            "properties": {
+              "created": "2016-10-12T19:36:03.69769Z",
+              "updated": "2016-10-12T19:36:03.69769Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/931e56b3-ee2e-4c37-8b14-727de93584e8",
+            "name": "931e56b3-ee2e-4c37-8b14-727de93584e8",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T12%3A21%3A00.3478359Z'\"",
+            "properties": {
+              "created": "2016-10-12T12:20:57.1379494Z",
+              "updated": "2016-10-12T12:20:57.1379494Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/96e980a8-f0ee-47d3-874a-d423f72db1f8",
+            "name": "96e980a8-f0ee-47d3-874a-d423f72db1f8",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T22%3A36%3A05.2709379Z'\"",
+            "properties": {
+              "created": "2016-10-11T22:36:03.0906655Z",
+              "updated": "2016-10-11T22:36:03.0906655Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/9c352f61-5c78-4294-a6a6-69b960d3d9ec",
+            "name": "9c352f61-5c78-4294-a6a6-69b960d3d9ec",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T06%3A43%3A29.2387237Z'\"",
+            "properties": {
+              "created": "2016-10-12T06:43:26.5728338Z",
+              "updated": "2016-10-12T06:43:26.5728338Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/9d6d6a89-e6a0-4174-84aa-930b095f0217",
+            "name": "9d6d6a89-e6a0-4174-84aa-930b095f0217",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T17%3A51%3A08.2830601Z'\"",
+            "properties": {
+              "created": "2016-10-13T17:51:05.2664271Z",
+              "updated": "2016-10-13T17:51:05.2664271Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/a0072b4d-80cf-4465-84b1-46b0855beb4b",
+            "name": "a0072b4d-80cf-4465-84b1-46b0855beb4b",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T01%3A06%3A10.0294458Z'\"",
+            "properties": {
+              "created": "2016-10-12T01:06:05.7293788Z",
+              "updated": "2016-10-12T01:06:05.7293788Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/a0bdbaaf-dff3-4471-8a43-f8c9999f9314",
+            "name": "a0bdbaaf-dff3-4471-8a43-f8c9999f9314",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T23%3A51%3A13.9282007Z'\"",
+            "properties": {
+              "created": "2016-10-11T23:51:11.3110408Z",
+              "updated": "2016-10-11T23:51:11.3110408Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/a3afd6f6-0a48-44e1-80bf-12ac65ee021e",
+            "name": "a3afd6f6-0a48-44e1-80bf-12ac65ee021e",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T20%3A36%3A04.1734275Z'\"",
+            "properties": {
+              "created": "2016-10-12T20:36:03.1345515Z",
+              "updated": "2016-10-12T20:36:03.1345515Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/acc0d449-84a3-44a1-9602-bf7d7516d3e8",
+            "name": "acc0d449-84a3-44a1-9602-bf7d7516d3e8",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T21%3A21%3A05.9636652Z'\"",
+            "properties": {
+              "created": "2016-10-11T21:21:03.7854088Z",
+              "updated": "2016-10-11T21:21:03.7854088Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/b34bdeae-cc7c-43ce-997b-5e747ff8d16f",
+            "name": "b34bdeae-cc7c-43ce-997b-5e747ff8d16f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T04%3A13%3A25.7455155Z'\"",
+            "properties": {
+              "created": "2016-10-12T04:13:22.6161544Z",
+              "updated": "2016-10-12T04:13:22.6161544Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/b4bd37eb-01a8-4653-9819-f3ea50550d0f",
+            "name": "b4bd37eb-01a8-4653-9819-f3ea50550d0f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T07%3A13%3A27.2138618Z'\"",
+            "properties": {
+              "created": "2016-10-13T07:13:25.3009963Z",
+              "updated": "2016-10-13T07:13:25.3009963Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/b9a8d957-5d76-453c-a153-8cb5e9d31188",
+            "name": "b9a8d957-5d76-453c-a153-8cb5e9d31188",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-20T17%3A06%3A26.1490599Z'\"",
+            "properties": {
+              "created": "2016-10-20T17:06:03.1384215Z",
+              "updated": "2016-10-20T17:06:03.1384215Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/bfdf6493-306f-4e9e-8859-0e6c9f472310",
+            "name": "bfdf6493-306f-4e9e-8859-0e6c9f472310",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T03%3A28%3A23.109485Z'\"",
+            "properties": {
+              "created": "2016-10-13T03:28:21.1041958Z",
+              "updated": "2016-10-13T03:28:21.1041958Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/c8ee64e7-44dd-4085-9b4c-3e38c5000fe1",
+            "name": "c8ee64e7-44dd-4085-9b4c-3e38c5000fe1",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T13%3A36%3A06.7466555Z'\"",
+            "properties": {
+              "created": "2016-10-12T13:36:03.8285367Z",
+              "updated": "2016-10-12T13:36:03.8285367Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/cab7632c-7173-45ef-a5f4-c5b541bd1b5d",
+            "name": "cab7632c-7173-45ef-a5f4-c5b541bd1b5d",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T02%3A13%3A27.3781443Z'\"",
+            "properties": {
+              "created": "2016-10-13T02:13:25.1848357Z",
+              "updated": "2016-10-13T02:13:25.1848357Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/ccb8b339-8266-42ca-8c9f-6bf5fca9ede7",
+            "name": "ccb8b339-8266-42ca-8c9f-6bf5fca9ede7",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T22%3A28%3A23.908293Z'\"",
+            "properties": {
+              "created": "2016-10-12T22:28:21.1221723Z",
+              "updated": "2016-10-12T22:28:21.1221723Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/ce263a17-eec4-46ec-bc13-996ec5990733",
+            "name": "ce263a17-eec4-46ec-bc13-996ec5990733",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T23%3A06%3A01.10735Z'\"",
+            "properties": {
+              "created": "2016-10-12T23:05:56.9244821Z",
+              "updated": "2016-10-12T23:05:56.9244821Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/d75eb6cd-a059-4ca0-bbe0-2a2ac2d7c5c3",
+            "name": "d75eb6cd-a059-4ca0-bbe0-2a2ac2d7c5c3",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T16%3A51%3A10.1136697Z'\"",
+            "properties": {
+              "created": "2016-10-12T16:51:07.4004384Z",
+              "updated": "2016-10-12T16:51:07.4004384Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/da8c79d3-65a3-414f-b152-e942895e2e11",
+            "name": "da8c79d3-65a3-414f-b152-e942895e2e11",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T21%3A58%3A28.949274Z'\"",
+            "properties": {
+              "created": "2016-10-11T21:58:25.7980447Z",
+              "updated": "2016-10-11T21:58:25.7980447Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/dbde5acb-b396-4dd6-bfe9-f8aacabd8434",
+            "name": "dbde5acb-b396-4dd6-bfe9-f8aacabd8434",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T16%3A06%3A17.6556444Z'\"",
+            "properties": {
+              "created": "2016-10-12T16:05:58.7528612Z",
+              "updated": "2016-10-12T16:05:58.7528612Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/ddd9e712-36bc-4671-8515-7c7050402b24",
+            "name": "ddd9e712-36bc-4671-8515-7c7050402b24",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T15%3A58%3A33.2267637Z'\"",
+            "properties": {
+              "created": "2016-10-13T15:58:29.3453445Z",
+              "updated": "2016-10-13T15:58:29.3453445Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/df4f36e3-3d69-413d-bffd-d51e51993fe9",
+            "name": "df4f36e3-3d69-413d-bffd-d51e51993fe9",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T10%3A58%3A25.1173608Z'\"",
+            "properties": {
+              "created": "2016-10-13T10:58:21.733313Z",
+              "updated": "2016-10-13T10:58:21.733313Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/e7280281-74fd-4fc5-b78f-064ca15484c5",
+            "name": "e7280281-74fd-4fc5-b78f-064ca15484c5",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T02%3A51%3A09.5155234Z'\"",
+            "properties": {
+              "created": "2016-10-13T02:51:03.8894942Z",
+              "updated": "2016-10-13T02:51:03.8894942Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/e7fe16f6-c3bb-48fb-9f98-e434f4ea6b52",
+            "name": "e7fe16f6-c3bb-48fb-9f98-e434f4ea6b52",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T15%3A21%3A03.5054355Z'\"",
+            "properties": {
+              "created": "2016-10-13T15:21:00.9406231Z",
+              "updated": "2016-10-13T15:21:00.9406231Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/eb2d3e09-2aa1-452a-99e4-2d60b9647ccd",
+            "name": "eb2d3e09-2aa1-452a-99e4-2d60b9647ccd",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-11T20%3A43%3A21.9468112Z'\"",
+            "properties": {
+              "created": "2016-10-11T20:43:19.0262986Z",
+              "updated": "2016-10-11T20:43:19.0262986Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/f1a143a3-2ac8-4dff-8a88-eac36a39742b",
+            "name": "f1a143a3-2ac8-4dff-8a88-eac36a39742b",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T15%3A36%3A04.4123166Z'\"",
+            "properties": {
+              "created": "2016-10-12T15:36:00.9271174Z",
+              "updated": "2016-10-12T15:36:00.9271174Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/f52dda58-4ea4-4fa5-8d06-3b7a5177c48c",
+            "name": "f52dda58-4ea4-4fa5-8d06-3b7a5177c48c",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T03%3A36%3A00.8794387Z'\"",
+            "properties": {
+              "created": "2016-10-12T03:35:57.3474092Z",
+              "updated": "2016-10-12T03:35:57.3474092Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/f680c624-babd-4ba1-9732-ef4ce91fa1dd",
+            "name": "f680c624-babd-4ba1-9732-ef4ce91fa1dd",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T10%3A21%3A01.7786452Z'\"",
+            "properties": {
+              "created": "2016-10-13T10:20:59.2224281Z",
+              "updated": "2016-10-13T10:20:59.2224281Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/f98b8e18-4ada-4d0c-b20b-96291daf9e0c",
+            "name": "f98b8e18-4ada-4d0c-b20b-96291daf9e0c",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-13T16%3A36%3A05.6135713Z'\"",
+            "properties": {
+              "created": "2016-10-13T16:36:03.0883658Z",
+              "updated": "2016-10-13T16:36:03.0883658Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/fabd8605-dbfd-43ad-92a2-0891cadceff3",
+            "name": "fabd8605-dbfd-43ad-92a2-0891cadceff3",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T01%3A43%3A27.6160646Z'\"",
+            "properties": {
+              "created": "2016-10-12T01:43:25.1939137Z",
+              "updated": "2016-10-12T01:43:25.1939137Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-rg/providers/microsoft.servermanagement/gateways/fd56c7a6-960c-4bfb-bb28-1abcb388999e",
+            "name": "fd56c7a6-960c-4bfb-bb28-1abcb388999e",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "Central US",
+            "etag": "W/\"datetime'2016-10-12T04%3A51%3A13.6298856Z'\"",
+            "properties": {
+              "created": "2016-10-12T04:51:09.0152179Z",
+              "updated": "2016-10-12T04:51:09.0152179Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-wellknown-rg/providers/microsoft.servermanagement/gateways/pd-gw-cu-01",
+            "name": "pd-gw-cu-01",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-08-17T19%3A29%3A20.702571Z'\"",
+            "properties": {
+              "created": "2016-08-12T17:44:04.6061445Z",
+              "updated": "2016-08-17T19:29:21.571621Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-wellknown-rg/providers/microsoft.servermanagement/gateways/pd-gw-cu-04",
+            "name": "pd-gw-cu-04",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-10-12T20%3A32%3A24.7339018Z'\"",
+            "properties": {
+              "created": "2016-10-12T20:30:03.0480064Z",
+              "updated": "2016-10-12T20:32:24.8004542Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/rsmt-rnr-rg/providers/microsoft.servermanagement/gateways/rameshr12",
+            "name": "rameshr12",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-09-16T19%3A04%3A41.4798931Z'\"",
+            "properties": {
+              "created": "2016-09-16T18:39:51.3851949Z",
+              "updated": "2016-09-16T19:04:40.0479978Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/rsmt-rnr-rg/providers/microsoft.servermanagement/gateways/rnr-gw-tp3-01",
+            "name": "rnr-gw-tp3-01",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-02-08T22%3A21%3A19.2125602Z'\"",
+            "properties": {
+              "created": "2016-01-26T19:09:40.9945377Z",
+              "updated": "2016-02-08T22:21:18.1682149Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/rameshr12",
+            "name": "rameshr12",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-10-14T01%3A13%3A59.8545155Z'\"",
+            "properties": {
+              "created": "2016-10-14T01:13:56.0773541Z",
+              "updated": "2016-10-14T01:13:56.0773541Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/sdktest/providers/microsoft.servermanagement/gateways/test_gateway_175399666",
+            "name": "test_gateway_175399666",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-10-21T20%3A50%3A52.1147344Z'\"",
+            "properties": {
+              "created": "2016-10-21T20:50:47.5290774Z",
+              "updated": "2016-10-21T20:50:51.5178552Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/wenjunp/providers/microsoft.servermanagement/gateways/wenjunp-vm2",
+            "name": "wenjunp-vm2",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "centralus",
+            "etag": "W/\"datetime'2016-09-29T00%3A04%3A23.977424Z'\"",
+            "properties": {
+              "created": "2016-03-22T22:27:47.6812427Z",
+              "updated": "2016-09-29T00:04:23.5219549Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-nu-rg/providers/microsoft.servermanagement/gateways/554a8c76-2276-4b7a-aa51-ba956cc3e87d",
+            "name": "554a8c76-2276-4b7a-aa51-ba956cc3e87d",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "North Europe",
+            "etag": "W/\"datetime'2016-10-14T23%3A53%3A21.3871661Z'\"",
+            "properties": {
+              "created": "2016-10-14T23:52:59.3408357Z",
+              "updated": "2016-10-14T23:52:59.3408357Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-nu-rg/providers/microsoft.servermanagement/gateways/5a73e54e-b792-43a6-bd0a-9b8be63541cc",
+            "name": "5a73e54e-b792-43a6-bd0a-9b8be63541cc",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "North Europe",
+            "etag": "W/\"datetime'2016-10-18T16%3A08%3A32.3189223Z'\"",
+            "properties": {
+              "created": "2016-10-18T16:07:59.5460219Z",
+              "updated": "2016-10-18T16:07:59.5460219Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch-nu-rg/providers/microsoft.servermanagement/gateways/7b160581-746b-4f74-8ef4-7993703a7c1f",
+            "name": "7b160581-746b-4f74-8ef4-7993703a7c1f",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "North Europe",
+            "etag": "W/\"datetime'2016-10-18T05%3A53%3A24.221687Z'\"",
+            "properties": {
+              "created": "2016-10-18T05:53:06.8935157Z",
+              "updated": "2016-10-18T05:53:06.8935157Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-nu-rg/providers/microsoft.servermanagement/gateways/0e7a8290-050d-4afb-a5ac-3eef135ecc37",
+            "name": "0e7a8290-050d-4afb-a5ac-3eef135ecc37",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "North Europe",
+            "etag": "W/\"datetime'2016-10-18T14%3A43%3A35.020383Z'\"",
+            "properties": {
+              "created": "2016-10-18T14:43:09.2126239Z",
+              "updated": "2016-10-18T14:43:09.2126239Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-scratch2-nu-rg/providers/microsoft.servermanagement/gateways/8afb04f1-b4d8-42c5-ba74-6c92bf5480f1",
+            "name": "8afb04f1-b4d8-42c5-ba74-6c92bf5480f1",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "North Europe",
+            "etag": "W/\"datetime'2016-10-18T20%3A58%3A59.0863515Z'\"",
+            "properties": {
+              "created": "2016-10-18T20:58:07.1203406Z",
+              "updated": "2016-10-18T20:58:07.1203406Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-wellknown-nu-rg/providers/microsoft.servermanagement/gateways/pd-gw-nu-04",
+            "name": "pd-gw-nu-04",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "northeurope",
+            "etag": "W/\"datetime'2016-10-13T17%3A46%3A08.6458988Z'\"",
+            "properties": {
+              "created": "2016-10-13T01:14:45.7168168Z",
+              "updated": "2016-10-13T17:46:09.188146Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          },
+          {
+            "id": "/subscriptions/a01fbab8-1714-4f94-8b67-40d7827a5efd/resourcegroups/pd-rnr-wellknown-nu-rg/providers/microsoft.servermanagement/gateways/rnr-gw-nu-01",
+            "name": "rnr-gw-nu-01",
+            "type": "microsoft.servermanagement/gateways",
+            "location": "northeurope",
+            "etag": "W/\"datetime'2016-04-13T23%3A06%3A45.7160507Z'\"",
+            "properties": {
+              "created": "2016-04-13T23:05:24.8818636Z",
+              "updated": "2016-04-13T23:06:45.2100617Z",
+              "autoUpgrade": "On",
+              "upgradeMode": "Automatic",
+              "desiredVersion": null,
+              "minimumVersion": "1.0.1547.0"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

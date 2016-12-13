@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+            "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+            "displayName": "Visual Studio Ultimate with MSDN",
+            "state": "Enabled",
+            "subscriptionPolicies": {
+              "locationPlacementId": "Public_2014-09-01",
+              "quotaId": "MSDN_2014-09-01",
+              "spendingLimit": "On"
+            },
+            "authorizationSource": "Legacy"
+          }
+        ]
+      }
+    }
+  }
+}

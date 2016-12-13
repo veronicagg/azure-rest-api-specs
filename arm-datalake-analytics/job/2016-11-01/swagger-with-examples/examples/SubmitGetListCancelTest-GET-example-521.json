@@ -1,0 +1,83 @@
+{
+  "parameters": {
+    "jobIdentity": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+    "api-version": "2015-10-01-preview",
+    "expanded": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "e22cfe4d-4130-4996-9a7c-72b34c38e079",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "begoldsm@microsoft.com",
+        "account": null,
+        "degreeOfParallelism": 2,
+        "priority": 0,
+        "submitTime": "Fri, 20 Nov 2015 22:26:32 GMT",
+        "startTime": null,
+        "endTime": "Fri, 20 Nov 2015 22:26:35 GMT",
+        "state": "Ended",
+        "result": "Cancelled",
+        "errorMessage": "{\"message\":\"Job was cancelled by begoldsm@microsoft.com.\"}",
+        "storageAccounts": null,
+        "stateAuditRecords": [
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:26:32 GMT",
+            "requestedByUser": null,
+            "details": "userName:begoldsm@microsoft.com;submitMachine:N/A"
+          },
+          {
+            "newState": "New",
+            "timeStamp": "Fri, 20 Nov 2015 22:26:35 GMT",
+            "requestedByUser": null,
+            "details": "CcsAttempts:1;Status:Dispatched"
+          },
+          {
+            "newState": "Ended",
+            "timeStamp": "Fri, 20 Nov 2015 22:26:35 GMT",
+            "requestedByUser": null,
+            "details": "result:CanceledByUser"
+          }
+        ],
+        "properties": {
+          "owner": "begoldsm@microsoft.com",
+          "resources": [
+            {
+              "name": "Profile",
+              "resourcePath": "adl://testdatalake12761.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/profile",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "__ScopeRuntimeStatistics__.xml",
+              "resourcePath": "adl://testdatalake12761.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/__ScopeRuntimeStatistics__.xml",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "Profile_System",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/profile_system",
+              "type": "StatisticsResource"
+            },
+            {
+              "name": "InternalDebugInfo",
+              "resourcePath": "adl://konasystem.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/InternalDebugInfo",
+              "type": "StatisticsResource"
+            }
+          ],
+          "runtimeVersion": "default",
+          "rootProcessNodeId": "00000000-0000-0000-0000-000000000000",
+          "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;",
+          "algebraFilePath": "adl://testdatalake12761.azuredatalakestore.net/system/jobservice/jobs/Usql/2015/11/20/22/26/e22cfe4d-4130-4996-9a7c-72b34c38e079/algebra.xml",
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "00:00:02.2343932",
+          "totalPausedTime": "00:00:00",
+          "totalQueuedTime": "00:00:00",
+          "totalRunningTime": "00:00:00",
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "parameters": {
+    "subscriptionId": "e33f361b-53c2-4cc7-b829-78906708387b",
+    "resourceGroupName": "crptestar5657",
+    "vmName": "vm2167",
+    "$top": "1",
+    "api-version": "2016-03-30",
+    "monitor": "true",
+    "parameters": {
+      "location": "SoutheastAsia",
+      "tags": {
+        "RG": "rg",
+        "testTag": "1"
+      },
+      "properties": {
+        "hardwareProfile": {
+          "vmSize": "Standard_D1"
+        },
+        "storageProfile": {
+          "imageReference": {
+            "publisher": "MicrosoftWindowsServer",
+            "offer": "WindowsServer",
+            "sku": "2012-R2-Datacenter",
+            "version": "4.0.201506"
+          },
+          "osDisk": {
+            "encryptionSettings": {
+              "diskEncryptionKey": {
+                "secretUrl": "https://testvault123.vault.azure.net/secrets/Test1/514ceb769c984379a7e0230bdd703272",
+                "sourceVault": {
+                  "id": "/subscriptions/21466899-20b2-463c-8c30-b8fb28a43248/resourceGroups/RgTest1/providers/Microsoft.KeyVault/vaults/TestVault123"
+                }
+              }
+            },
+            "name": "test",
+            "vhd": {
+              "uri": "https://crptestar5129.blob.core.windows.net/crptestar3563/oscrptestar6064.vhd"
+            },
+            "caching": "None",
+            "createOption": "fromImage"
+          }
+        },
+        "osProfile": {
+          "computerName": "test",
+          "adminUsername": "Foo12",
+          "adminPassword": "BaR@123crptestar5657"
+        },
+        "networkProfile": {
+          "networkInterfaces": [
+            {
+              "id": "/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/crptestar5657/providers/Microsoft.Network/networkInterfaces/nic526"
+            }
+          ]
+        },
+        "availabilitySet": {
+          "id": "/subscriptions/e33f361b-53c2-4cc7-b829-78906708387b/resourceGroups/crptestar5657/providers/Microsoft.Compute/availabilitySets/as5767"
+        }
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "InvalidParameter",
+          "target": "encryptionSettings.diskEncryptionKey.sourceVault.id",
+          "message": "The SubscriptionId:\"e33f361b-53c2-4cc7-b829-78906708387b\" of the request must match the SubscriptionId \"21466899-20b2-463c-8c30-b8fb28a43248\" contained in the Key Vault Id."
+        }
+      }
+    }
+  }
+}

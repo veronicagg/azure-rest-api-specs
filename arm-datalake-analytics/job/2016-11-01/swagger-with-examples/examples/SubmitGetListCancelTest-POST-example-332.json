@@ -1,0 +1,52 @@
+{
+  "parameters": {
+    "api-version": "2015-10-01-preview",
+    "expanded": "true",
+    "parameters": {
+      "jobId": "a3f97739-43f2-4f55-9477-1cb728ff13b5",
+      "name": "azure sdk data lake analytics job",
+      "type": "USql",
+      "degreeOfParallelism": 2,
+      "properties": {
+        "type": "USql",
+        "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "jobId": "a3f97739-43f2-4f55-9477-1cb728ff13b5",
+        "name": "azure sdk data lake analytics job",
+        "type": "USql",
+        "submitter": "begoldsm@microsoft.com",
+        "account": null,
+        "degreeOfParallelism": 0,
+        "priority": 0,
+        "submitTime": "Mon, 01 Jan 0001 00:00:00 GMT",
+        "startTime": null,
+        "endTime": null,
+        "state": "Ended",
+        "result": "Succeeded",
+        "errorMessage": null,
+        "storageAccounts": null,
+        "stateAuditRecords": null,
+        "properties": {
+          "resources": [],
+          "runtimeVersion": "kobo_vnext_4463905_21921f_restart",
+          "script": "DROP DATABASE IF EXISTS testdb; CREATE DATABASE testdb;",
+          "algebraFilePath": "mafs://accounts/testdatalake12761/fs/system/jobservice/jobs/Sqlip/a3f97739-43f2-4f55-9477-1cb728ff13b5/2015/11/20/22/27/algebra.xml",
+          "userPrincipals": [],
+          "compileMode": "Semantic",
+          "errorSource": "Unknown",
+          "totalCompilationTime": "00:00:00",
+          "totalPausedTime": "00:00:00",
+          "totalQueuedTime": "00:00:00",
+          "totalRunningTime": "00:00:00",
+          "diagnostics": [],
+          "type": "USql"
+        }
+      }
+    }
+  }
+}

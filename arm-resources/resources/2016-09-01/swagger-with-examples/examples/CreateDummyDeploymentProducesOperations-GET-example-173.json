@@ -1,0 +1,23 @@
+{
+  "parameters": {
+    "resourceId": "subscriptions",
+    "api-version": "2014-04-01-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "status": "Failed",
+        "error": {
+          "code": "DeploymentFailed",
+          "message": "The deployment operation failed.",
+          "details": [
+            {
+              "code": "BadRequest",
+              "message": "{\r\n  \"error\": {\r\n    \"code\": \"InvalidApiVersionParameter\",\r\n    \"message\": \"The api-version '1.0' is invalid. The api version must be of the following format: yyyy-MM-dd. This format supports the following suffixes: '-preview,-alpha,-beta,-rc,-privatepreview'.\"\r\n  }\r\n}"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

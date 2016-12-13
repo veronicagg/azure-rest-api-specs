@@ -1,0 +1,13 @@
+{
+  "parameters": {
+    "subscriptionId": "e48bff2b-f633-4bd6-857a-ff243767676e",
+    "resourceGroupName": "TestRG",
+    "serverName": "azsdktest",
+    "api-version": "2016-05-16"
+  },
+  "responses": {
+    "202": {
+      "body": ""
+    }
+  }
+}

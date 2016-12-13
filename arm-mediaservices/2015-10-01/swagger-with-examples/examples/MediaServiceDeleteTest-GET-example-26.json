@@ -1,0 +1,40 @@
+{
+  "parameters": {
+    "subscriptionId": "4c552dc7-a66c-4fb3-a3ee-0941f36833f6",
+    "resourceGroupName": "rg1411",
+    "api-version": "2015-10-01",
+    "monitor": "true"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "media4135",
+            "id": "/subscriptions/4c552dc7-a66c-4fb3-a3ee-0941f36833f6/resourcegroups/rg1411/providers/Microsoft.Media/mediaservices/media4135",
+            "type": "Microsoft.Media/mediaservices",
+            "tags": {
+              "key1": "value1",
+              "key2": "value2"
+            },
+            "location": "East US",
+            "properties": {
+              "apiEndpoints": [
+                {
+                  "endpoint": "https://wamsbluclus001rest-hs.cloudapp.net/api/",
+                  "majorVersion": "2"
+                }
+              ],
+              "storageAccounts": [
+                {
+                  "id": "/subscriptions/4c552dc7-a66c-4fb3-a3ee-0941f36833f6/resourceGroups/rg1411/providers/Microsoft.Storage/storageAccounts/sto6294",
+                  "isPrimary": true
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

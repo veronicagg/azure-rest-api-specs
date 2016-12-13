@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "policyName": "dad13bc8-0b39-493b-984f-ef9b0ebf8fc7",
+    "api-version": "2015-01-14-preview",
+    "$filter": "platform%20eq%20'ios'"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/iosPolicies/dad13bc8-0b39-493b-984f-ef9b0ebf8fc7/apps/com.microsoft.skydrive.IOS",
+            "name": "com.microsoft.skydrive.IOS",
+            "type": "Microsoft.Intune/locations/iosPolicies/apps",
+            "properties": {
+              "friendlyName": "OneDrive",
+              "platform": "ios",
+              "appId": "af124e86-4e96-495a-b70a-90f90ab96707"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

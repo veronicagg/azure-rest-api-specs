@@ -1,0 +1,30 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg6661",
+    "routeTableName": "azsmnet4436",
+    "routeName": "azsmnet9228",
+    "api-version": "2016-09-01",
+    "routeParameters": {
+      "properties": {
+        "addressPrefix": "10.0.1.0/24",
+        "nextHopType": "VnetLocal"
+      },
+      "name": "azsmnet9228"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "name": "azsmnet9228",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg6661/providers/Microsoft.Network/routeTables/azsmnet4436/routes/azsmnet9228",
+        "etag": "W/\"743a15b8-1529-4197-801d-9c9c9d27c08e\"",
+        "properties": {
+          "provisioningState": "Updating",
+          "addressPrefix": "10.0.1.0/24",
+          "nextHopType": "VnetLocal"
+        }
+      }
+    }
+  }
+}

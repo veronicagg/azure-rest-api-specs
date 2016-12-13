@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "hostName": "fef.msua06",
+    "userName": "d8aeb100-6e17-4cf7-bbda-169000d03c1e",
+    "api-version": "2015-01-14-preview"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/providers/Microsoft.Intune/locations/fef.msua06/users/d8aeb100-6e17-4cf7-bbda-169000d03c1e/devices/38BBFA62-371F-4AA8-BFDB-846EBD47A86A",
+            "name": "38BBFA62-371F-4AA8-BFDB-846EBD47A86A",
+            "type": "Microsoft.Intune/locations/users/devices",
+            "properties": {
+              "userId": "d8aeb100-6e17-4cf7-bbda-169000d03c1e",
+              "friendlyName": "iPad",
+              "platform": "IOS",
+              "platformVersion": "8.1",
+              "deviceType": "iPad"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

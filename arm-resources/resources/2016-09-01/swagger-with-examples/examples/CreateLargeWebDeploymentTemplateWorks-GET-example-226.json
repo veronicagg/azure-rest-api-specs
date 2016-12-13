@@ -1,0 +1,83 @@
+{
+  "parameters": {
+    "subscriptionId": "89ec4d1d-dcc7-4a3f-a701-0a5d074c8505",
+    "resourceGroupName": "csmrg5758",
+    "deploymentName": "csmd7534",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Resources/deployments/csmd7534/operations/82627D2E47ECB036",
+            "operationId": "82627D2E47ECB036",
+            "properties": {
+              "provisioningOperation": "Create",
+              "provisioningState": "Succeeded",
+              "timestamp": "2016-07-27T00:34:22.9883483Z",
+              "duration": "PT24.4677113S",
+              "trackingId": "a8711d13-c39b-49b3-8d42-18b0fbe472b8",
+              "serviceRequestId": "484c29d9-bc96-47c6-adff-369fdb663f5c",
+              "statusCode": "OK",
+              "targetResource": {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/sites/csmr9719/sourcecontrols/web",
+                "resourceType": "Microsoft.Web/sites/sourcecontrols",
+                "resourceName": "csmr9719/web"
+              }
+            }
+          },
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Resources/deployments/csmd7534/operations/A31439BFA766BC7D",
+            "operationId": "A31439BFA766BC7D",
+            "properties": {
+              "provisioningOperation": "Create",
+              "provisioningState": "Succeeded",
+              "timestamp": "2016-07-27T00:33:58.1880394Z",
+              "duration": "PT7.1255654S",
+              "trackingId": "89b926df-e7d5-40c1-bd86-141483b48e08",
+              "serviceRequestId": "29bb8d74-f809-4d1f-9bee-a2e47aed7b06",
+              "statusCode": "OK",
+              "targetResource": {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/sites/csmr9719",
+                "resourceType": "Microsoft.Web/sites",
+                "resourceName": "csmr9719"
+              }
+            }
+          },
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Resources/deployments/csmd7534/operations/335C961548E8A930",
+            "operationId": "335C961548E8A930",
+            "properties": {
+              "provisioningOperation": "Create",
+              "provisioningState": "Succeeded",
+              "timestamp": "2016-07-27T00:33:50.7235268Z",
+              "duration": "PT5.9378549S",
+              "trackingId": "03cfae2a-c1d8-4961-badb-493792d75522",
+              "serviceRequestId": "86f0efdd-693d-4d6a-8843-29659067d971",
+              "statusCode": "OK",
+              "targetResource": {
+                "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Web/serverfarms/someplan",
+                "resourceType": "Microsoft.Web/serverfarms",
+                "resourceName": "someplan"
+              }
+            }
+          },
+          {
+            "id": "/subscriptions/89ec4d1d-dcc7-4a3f-a701-0a5d074c8505/resourceGroups/csmrg5758/providers/Microsoft.Resources/deployments/csmd7534/operations/08587320272629652147",
+            "operationId": "08587320272629652147",
+            "properties": {
+              "provisioningOperation": "EvaluateDeploymentOutput",
+              "provisioningState": "Succeeded",
+              "timestamp": "2016-07-27T00:34:24.1224143Z",
+              "duration": "PT0.7807665S",
+              "trackingId": "2fa75dbb-2862-400d-8006-c6c48be2f833",
+              "statusCode": "OK",
+              "statusMessage": null
+            }
+          }
+        ]
+      }
+    }
+  }
+}

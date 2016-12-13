@@ -1,0 +1,194 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "api-version": "2016-06-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T01:02:00.1748177Z",
+              "changedTime": "2016-07-20T01:02:00.8713038Z",
+              "state": "Enabled",
+              "version": "08587326303646323366",
+              "accessEndpoint": "https://prod-13.westus.logic.azure.com:443/workflows/cd3e88cd44cb40cbab9c0b3bd386c9e0",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "runworkflowmanually": {
+                    "defaultValue": true,
+                    "type": "Bool"
+                  },
+                  "subscription": {
+                    "defaultValue": "1a66ce04-b633-4a0b-b2bc-a912ec8986a6",
+                    "type": "String"
+                  },
+                  "resourceGroup": {
+                    "defaultValue": "logicapps-e2e",
+                    "type": "String"
+                  },
+                  "authentication": {
+                    "defaultValue": {
+                      "type": "ActiveDirectoryOAuth",
+                      "audience": "https://management.azure.com/",
+                      "tenant": "00000000-0000-0000-0000-000000000000",
+                      "clientId": "00000000-0000-0000-0000-000000000000",
+                      "secret": "Dummy"
+                    },
+                    "type": "Object"
+                  }
+                },
+                "triggers": {},
+                "actions": {
+                  "listWorkflows": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "someUri",
+                      "authentication": "@parameters('authentication')"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf2755",
+            "name": "logicwf2755",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus",
+            "tags": {
+              "abc": "def"
+            }
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T01:02:18.4371587Z",
+              "changedTime": "2016-07-20T01:02:18.4381349Z",
+              "state": "Disabled",
+              "version": "08587326303471086078",
+              "accessEndpoint": "https://prod-14.westus.logic.azure.com:443/workflows/5989ec6181c148e689d6a7eef702e323",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {
+                  "runworkflowmanually": {
+                    "defaultValue": true,
+                    "type": "Bool"
+                  },
+                  "subscription": {
+                    "defaultValue": "1a66ce04-b633-4a0b-b2bc-a912ec8986a6",
+                    "type": "String"
+                  },
+                  "resourceGroup": {
+                    "defaultValue": "logicapps-e2e",
+                    "type": "String"
+                  },
+                  "authentication": {
+                    "defaultValue": {
+                      "type": "ActiveDirectoryOAuth",
+                      "audience": "https://management.azure.com/",
+                      "tenant": "00000000-0000-0000-0000-000000000000",
+                      "clientId": "00000000-0000-0000-0000-000000000000",
+                      "secret": "Dummy"
+                    },
+                    "type": "Object"
+                  }
+                },
+                "triggers": {},
+                "actions": {
+                  "listWorkflows": {
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "someUri",
+                      "authentication": "@parameters('authentication')"
+                    },
+                    "conditions": []
+                  }
+                },
+                "outputs": {}
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf4703",
+            "name": "logicwf4703",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          },
+          {
+            "properties": {
+              "provisioningState": "Succeeded",
+              "createdTime": "2016-07-20T01:02:11.7497186Z",
+              "changedTime": "2016-07-20T01:02:11.7504983Z",
+              "state": "Enabled",
+              "version": "08587326303538072628",
+              "accessEndpoint": "https://prod-10.westus.logic.azure.com:443/workflows/5c4b5821ecea4b3a896a96439f55d1a6",
+              "sku": {
+                "name": "Standard",
+                "plan": {
+                  "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+                  "type": "Microsoft.Web/ServerFarms",
+                  "name": "ServicePlan"
+                }
+              },
+              "definition": {
+                "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+                "contentVersion": "1.0.0.0",
+                "parameters": {},
+                "triggers": {
+                  "httpTrigger": {
+                    "recurrence": {
+                      "frequency": "Minute",
+                      "interval": 60
+                    },
+                    "type": "Http",
+                    "inputs": {
+                      "method": "GET",
+                      "uri": "invalidUri"
+                    }
+                  }
+                },
+                "actions": {},
+                "outputs": {
+                  "output1": {
+                    "type": "String",
+                    "value": "@trigger().outputs"
+                  }
+                }
+              },
+              "parameters": {}
+            },
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf8073",
+            "name": "logicwf8073",
+            "type": "Microsoft.Logic/workflows",
+            "location": "westus"
+          }
+        ]
+      }
+    }
+  }
+}

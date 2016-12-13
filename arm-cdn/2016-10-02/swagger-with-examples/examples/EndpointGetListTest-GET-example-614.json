@@ -1,0 +1,19 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup4106",
+    "profileName": "profile8568",
+    "endpointName": "endpoint4815",
+    "api-version": "2016-10-02"
+  },
+  "responses": {
+    "404": {
+      "body": {
+        "error": {
+          "code": "ResourceNotFound",
+          "message": "The Resource 'Microsoft.Cdn/profiles/profile8568/endpoints/endpoint4815' under resource group 'cdnResourceGroup4106' was not found."
+        }
+      }
+    }
+  }
+}

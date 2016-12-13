@@ -1,0 +1,96 @@
+{
+  "parameters": {
+    "subscriptionId": "5250dd92-b580-46be-b327-e6596c8de196",
+    "resourceGroupName": "flowrg",
+    "workflowName": "logicwf5425",
+    "api-version": "2016-06-01",
+    "workflow": {
+      "properties": {
+        "sku": {
+          "name": "Standard",
+          "plan": {
+            "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan"
+          }
+        },
+        "definition": {
+          "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+          "contentVersion": "1.0.0.0",
+          "parameters": {},
+          "triggers": {
+            "httpTrigger": {
+              "type": "Http",
+              "inputs": {
+                "method": "GET",
+                "uri": "invalidUri"
+              },
+              "recurrence": {
+                "frequency": "Minute",
+                "interval": 60
+              }
+            }
+          },
+          "actions": {},
+          "outputs": {
+            "output1": {
+              "type": "string",
+              "value": "@trigger().outputs"
+            }
+          }
+        }
+      },
+      "location": "westus"
+    }
+  },
+  "responses": {
+    "201": {
+      "body": {
+        "properties": {
+          "provisioningState": "Succeeded",
+          "createdTime": "2016-07-20T17:19:49.8202996Z",
+          "changedTime": "2016-07-20T17:19:49.8202996Z",
+          "state": "Enabled",
+          "version": "08587325716957505762",
+          "accessEndpoint": "https://prod-08.westus.logic.azure.com:443/workflows/49ddb0a78db445ce9d563604e7746358",
+          "sku": {
+            "name": "Standard",
+            "plan": {
+              "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourcegroups/flowrg/providers/microsoft.web/serverfarms/ServicePlan",
+              "type": "Microsoft.Web/ServerFarms",
+              "name": "ServicePlan"
+            }
+          },
+          "definition": {
+            "$schema": "http://schema.management.azure.com/providers/Microsoft.Logic/schemas/2014-12-01-preview/workflowdefinition.json#",
+            "contentVersion": "1.0.0.0",
+            "parameters": {},
+            "triggers": {
+              "httpTrigger": {
+                "recurrence": {
+                  "frequency": "Minute",
+                  "interval": 60
+                },
+                "type": "Http",
+                "inputs": {
+                  "method": "GET",
+                  "uri": "invalidUri"
+                }
+              }
+            },
+            "actions": {},
+            "outputs": {
+              "output1": {
+                "type": "String",
+                "value": "@trigger().outputs"
+              }
+            }
+          },
+          "parameters": {}
+        },
+        "id": "/subscriptions/5250dd92-b580-46be-b327-e6596c8de196/resourceGroups/flowrg/providers/Microsoft.Logic/workflows/logicwf5425",
+        "name": "logicwf5425",
+        "type": "Microsoft.Logic/workflows",
+        "location": "westus"
+      }
+    }
+  }
+}

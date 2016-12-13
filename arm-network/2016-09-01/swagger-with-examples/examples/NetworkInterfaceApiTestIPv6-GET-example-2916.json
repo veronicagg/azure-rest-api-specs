@@ -1,0 +1,286 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "dualstacknic353",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353",
+            "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+            "type": "Microsoft.Network/networkInterfaces",
+            "location": "westeurope",
+            "tags": {
+              "key": "value"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "046a2049-fc8f-4902-bab3-1fa4148d6845",
+              "ipConfigurations": [
+                {
+                  "name": "ipv4ipconfig792",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353/ipConfigurations/ipv4ipconfig792",
+                  "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/publicIPAddresses/azsmnet3708"
+                    },
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/virtualNetworks/azsmnet5425/subnets/azsmnet9491"
+                    },
+                    "primary": false,
+                    "privateIPAddressVersion": "IPv4"
+                  }
+                },
+                {
+                  "name": "ipv6ipconfig4450",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg2569/providers/Microsoft.Network/networkInterfaces/dualstacknic353/ipConfigurations/ipv6ipconfig4450",
+                  "etag": "W/\"a82d1221-3672-46d9-ba80-f3f80f4c94a0\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv6"
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": [],
+                "internalDomainNameSuffix": "eryjmui34cbu5omlmobeil1w1g.ax.internal.cloudapp.net"
+              },
+              "enableIPForwarding": false
+            }
+          },
+          {
+            "name": "nic1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/0/networkInterfaces/nic1",
+            "etag": "W/\"299f0eba-b478-4001-8bce-19f262a7536e\"",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "572f9bd5-0b64-46bd-a0ab-8b00064dfb94",
+              "ipConfigurations": [
+                {
+                  "name": "ipconfig1",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/0/networkInterfaces/nic1/ipConfigurations/ipconfig1",
+                  "etag": "W/\"299f0eba-b478-4001-8bce-19f262a7536e\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/virtualNetworks/vnet/subnets/subnet0"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4",
+                    "loadBalancerBackendAddressPools": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/loadBalancers/loadbalancer/backendAddressPools/pool1"
+                      }
+                    ],
+                    "loadBalancerInboundNatRules": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/loadBalancers/loadbalancer/inboundNatRules/natpool1.0"
+                      },
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/loadBalancers/loadbalancer/inboundNatRules/natpool2.0"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": []
+              },
+              "enableIPForwarding": false,
+              "virtualMachine": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/0"
+              }
+            }
+          },
+          {
+            "name": "nic1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/1/networkInterfaces/nic1",
+            "etag": "W/\"82ac4422-34de-45b0-9e09-80875d6e0d8b\"",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "7dca2d86-2ded-4e18-b0c6-288887e27112",
+              "ipConfigurations": [
+                {
+                  "name": "ipconfig1",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/1/networkInterfaces/nic1/ipConfigurations/ipconfig1",
+                  "etag": "W/\"82ac4422-34de-45b0-9e09-80875d6e0d8b\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.5",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/virtualNetworks/vnet/subnets/subnet0"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4",
+                    "loadBalancerBackendAddressPools": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/loadBalancers/loadbalancer/backendAddressPools/pool1"
+                      }
+                    ],
+                    "loadBalancerInboundNatRules": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Network/loadBalancers/loadbalancer/inboundNatRules/natpool1.1"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": []
+              },
+              "enableIPForwarding": false,
+              "virtualMachine": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-d580906b-4458-41bb-9e6e-e05e0e74a3c9/providers/Microsoft.Compute/virtualMachineScaleSets/nrptestvmss/virtualMachines/1"
+              }
+            }
+          },
+          {
+            "name": "myVMNic",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest_proxyRgwestus/providers/Microsoft.Network/networkInterfaces/myVMNic",
+            "etag": "W/\"9904d25b-0953-45ea-8f6f-5bee2ab8a2b9\"",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "06e0c5fb-3c50-4622-81ba-29936f4d7f21",
+              "ipConfigurations": [
+                {
+                  "name": "ipconfig1",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest_proxyRgwestus/providers/Microsoft.Network/networkInterfaces/myVMNic/ipConfigurations/ipconfig1",
+                  "etag": "W/\"9904d25b-0953-45ea-8f6f-5bee2ab8a2b9\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "publicIPAddress": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest_proxyRgwestus/providers/Microsoft.Network/publicIPAddresses/myPublicIP"
+                    },
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest_proxyRgwestus/providers/Microsoft.Network/virtualNetworks/MyVNET/subnets/Subnet"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4"
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": [],
+                "internalDomainNameSuffix": "35cns1suuteehe30mqmfvq4nre.d--x.internal.cloudapp.net"
+              },
+              "macAddress": "00-0D-3A-00-36-C7",
+              "enableIPForwarding": false,
+              "primary": true,
+              "virtualMachine": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest_proxyRgwestus/providers/Microsoft.Compute/virtualMachines/proxyVm"
+              }
+            },
+            "type": "Microsoft.Network/networkInterfaces"
+          },
+          {
+            "name": "nic1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/0/networkInterfaces/nic1",
+            "etag": "W/\"2f955313-50ac-46b0-a033-10086e5a8018\"",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "6ef4835c-3731-40eb-9eee-22f95ca1838d",
+              "ipConfigurations": [
+                {
+                  "name": "ip1",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/0/networkInterfaces/nic1/ipConfigurations/ip1",
+                  "etag": "W/\"2f955313-50ac-46b0-a033-10086e5a8018\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.4",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4",
+                    "loadBalancerBackendAddressPools": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/loadBalancers/lb1/backendAddressPools/addressPool1"
+                      }
+                    ],
+                    "loadBalancerInboundNatRules": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/loadBalancers/lb1/inboundNatRules/natPool1.0"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": []
+              },
+              "enableIPForwarding": false,
+              "virtualMachine": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/0"
+              }
+            }
+          },
+          {
+            "name": "nic1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/1/networkInterfaces/nic1",
+            "etag": "W/\"8d19598e-679c-4684-8a9f-65c9324bf3cf\"",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "2c3a7416-cdf6-47b9-823e-f19de6ac4121",
+              "ipConfigurations": [
+                {
+                  "name": "ip1",
+                  "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/1/networkInterfaces/nic1/ipConfigurations/ip1",
+                  "etag": "W/\"8d19598e-679c-4684-8a9f-65c9324bf3cf\"",
+                  "properties": {
+                    "provisioningState": "Succeeded",
+                    "privateIPAddress": "10.0.0.5",
+                    "privateIPAllocationMethod": "Dynamic",
+                    "subnet": {
+                      "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/virtualNetworks/vnet1/subnets/subnet1"
+                    },
+                    "primary": true,
+                    "privateIPAddressVersion": "IPv4",
+                    "loadBalancerBackendAddressPools": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/loadBalancers/lb1/backendAddressPools/addressPool1"
+                      }
+                    ],
+                    "loadBalancerInboundNatRules": [
+                      {
+                        "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Network/loadBalancers/lb1/inboundNatRules/natPool1.1"
+                      }
+                    ]
+                  }
+                }
+              ],
+              "dnsSettings": {
+                "dnsServers": [],
+                "appliedDnsServers": []
+              },
+              "enableIPForwarding": false,
+              "virtualMachine": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroup83f82294-6/providers/Microsoft.Compute/virtualMachineScaleSets/vmss1/virtualMachines/1"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

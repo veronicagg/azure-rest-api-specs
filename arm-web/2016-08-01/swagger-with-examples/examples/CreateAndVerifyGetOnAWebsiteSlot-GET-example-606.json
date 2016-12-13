@@ -1,0 +1,103 @@
+{
+  "parameters": {
+    "subscriptionId": "3312c132-fc40-493f-9c97-82d80256a313",
+    "resourceGroupName": "csmrg451",
+    "name": "csmws5306",
+    "api-version": "2015-08-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg451/providers/Microsoft.Web/sites/csmws5306/slots/staging",
+            "name": "csmws5306/staging",
+            "type": "Microsoft.Web/sites/slots",
+            "location": "West US",
+            "tags": null,
+            "properties": {
+              "name": "csmws5306(staging)",
+              "state": "Running",
+              "hostNames": [
+                "csmws5306-staging.waws-ppedf.windows-int.net"
+              ],
+              "webSpace": "csmrg451-WestUSwebspace",
+              "selfLink": "https://waws-ppedf-bay-001.api.admin-waws-ppedf.windows-int.net:454/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/webspaces/csmrg451-WestUSwebspace/sites/csmws5306",
+              "repositorySiteName": "csmws5306",
+              "owner": null,
+              "usageState": 0,
+              "enabled": true,
+              "adminEnabled": true,
+              "enabledHostNames": [
+                "csmws5306-staging.scm.waws-ppedf.windows-int.net",
+                "csmws5306-staging.waws-ppedf.windows-int.net"
+              ],
+              "siteProperties": {
+                "metadata": null,
+                "properties": [],
+                "appSettings": null
+              },
+              "availabilityState": 0,
+              "sslCertificates": null,
+              "csrs": [],
+              "cers": null,
+              "siteMode": null,
+              "hostNameSslStates": [
+                {
+                  "name": "csmws5306-staging.scm.waws-ppedf.windows-int.net",
+                  "sslState": 0,
+                  "ipBasedSslResult": null,
+                  "virtualIP": null,
+                  "thumbprint": null,
+                  "toUpdate": null,
+                  "toUpdateIpBasedSsl": null,
+                  "ipBasedSslState": 0,
+                  "hostType": 1
+                },
+                {
+                  "name": "csmws5306-staging.waws-ppedf.windows-int.net",
+                  "sslState": 0,
+                  "ipBasedSslResult": null,
+                  "virtualIP": null,
+                  "thumbprint": null,
+                  "toUpdate": null,
+                  "toUpdateIpBasedSsl": null,
+                  "ipBasedSslState": 0,
+                  "hostType": 0
+                }
+              ],
+              "computeMode": null,
+              "serverFarm": null,
+              "serverFarmId": "/subscriptions/3312c132-fc40-493f-9c97-82d80256a313/resourceGroups/csmrg451/providers/Microsoft.Web/serverfarms/cswhp8538",
+              "lastModifiedTimeUtc": "2015-12-11T01:53:17.633",
+              "storageRecoveryDefaultState": "Running",
+              "contentAvailabilityState": 0,
+              "runtimeAvailabilityState": 0,
+              "siteConfig": null,
+              "deploymentId": "csmws5306__4cd8",
+              "trafficManagerHostNames": null,
+              "sku": "Standard",
+              "premiumAppDeployed": null,
+              "scmSiteAlsoStopped": false,
+              "targetSwapSlot": null,
+              "hostingEnvironment": null,
+              "hostingEnvironmentProfile": null,
+              "microService": "WebSites",
+              "gatewaySiteName": null,
+              "clientAffinityEnabled": true,
+              "clientCertEnabled": false,
+              "hostNamesDisabled": false,
+              "domainVerificationIdentifiers": null,
+              "kind": null,
+              "outboundIpAddresses": "104.40.21.237,104.40.20.76,104.40.19.34,104.40.22.12",
+              "cloningInfo": null,
+              "hostingEnvironmentId": null,
+              "tags": null
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

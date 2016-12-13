@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "623d50f1-4fa8-4e46-a967-a9214aed43ab",
+    "resourceGroupName": "CS-SouthCentralUS-scheduler",
+    "jobCollectionName": "jc19657",
+    "api-version": "2016-03-01",
+    "$filter": "state%20eq%20Disabled",
+    "$top": "5"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "id": "/subscriptions/623d50f1-4fa8-4e46-a967-a9214aed43ab/resourceGroups/CS-SouthCentralUS-scheduler/providers/Microsoft.Scheduler/jobCollections/jc19657/jobs/j21028",
+            "type": "Microsoft.Scheduler/jobCollections/jobs",
+            "name": "jc19657/j21028",
+            "properties": {
+              "startTime": "2015-07-14T00:00:00Z",
+              "action": {
+                "request": {
+                  "uri": "http://www.google.com/",
+                  "method": "POST"
+                },
+                "type": "Http"
+              },
+              "state": "disabled"
+            }
+          }
+        ],
+        "nextLink": null
+      }
+    }
+  }
+}

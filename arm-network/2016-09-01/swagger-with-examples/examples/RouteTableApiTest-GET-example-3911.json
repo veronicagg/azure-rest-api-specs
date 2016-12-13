@@ -1,0 +1,35 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg8728",
+    "routeTableName": "azsmnet6082",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet6082",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg8728/providers/Microsoft.Network/routeTables/azsmnet6082",
+        "etag": "W/\"b19915e5-b8f2-4d9a-bcad-0cb8c14646f2\"",
+        "type": "Microsoft.Network/routeTables",
+        "location": "westus",
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "c7ba4e61-73b0-46f0-b8d9-2f820ecfeff4",
+          "routes": [
+            {
+              "name": "azsmnet640",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg8728/providers/Microsoft.Network/routeTables/azsmnet6082/routes/azsmnet640",
+              "etag": "W/\"b19915e5-b8f2-4d9a-bcad-0cb8c14646f2\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "addressPrefix": "10.0.1.0/24",
+                "nextHopType": "VnetLocal"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}

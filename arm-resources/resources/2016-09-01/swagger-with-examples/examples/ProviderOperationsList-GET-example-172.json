@@ -1,0 +1,212 @@
+{
+  "parameters": {
+    "resourceId": "providers",
+    "api-version": "2015-04-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "Microsoft.Insights/AlertRules/Write",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule write",
+              "description": "Writing to an alert rule configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Delete",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule delete",
+              "description": "Deleting an alert rule configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule read",
+              "description": "Reading an alert rule configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AutoscaleSettings/Write",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Autoscale",
+              "operation": "Autoscale Setting write",
+              "description": "Writing to an autoscale setting configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AutoscaleSettings/Delete",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Autoscale",
+              "operation": "Autoscale Setting delete",
+              "description": "Deleting an autoscale setting configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AutoscaleSettings/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Autoscale",
+              "operation": "Autoscale Setting read",
+              "description": "Reading an autoscale setting configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Incidents/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rule Incident resource",
+              "operation": "Alert Rule Incidents read",
+              "description": "Reading an alert rule incident configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/eventtypes/values/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Events",
+              "operation": "Event types management values read",
+              "description": "Read management event type values"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/eventtypes/digestevents/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Digest events",
+              "operation": "Event types management digest read",
+              "description": "Read management event type digest"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/DiagnosticSettings/Write",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Diagnostic settings",
+              "operation": "Diagnostic settings write",
+              "description": "Writing to diagnostic settings configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/DiagnosticSettings/Delete",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Diagnostic settings",
+              "operation": "Diagnostic settings delete",
+              "description": "Deleting diagnostic settings configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/DiagnosticSettings/Read",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Diagnostic settings",
+              "operation": "Diagnostic settings read",
+              "description": "Reading a diagnostic settings configuration"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AutoscaleSettings/Scaleup/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Autoscale",
+              "operation": "Autoscale scale up operation",
+              "description": "Autoscale scale up operation"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AutoscaleSettings/Scaledown/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Autoscale",
+              "operation": "Autoscale scale down operation",
+              "description": "Autoscale scale down operation"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Activated/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule activated",
+              "description": "Alert Rule activated"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Resolved/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule resolved",
+              "description": "Alert Rule resolved"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/AlertRules/Throttled/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Alert Rules",
+              "operation": "Alert Rule throttled",
+              "description": "Alert rule is throttled"
+            },
+            "properties": {}
+          },
+          {
+            "name": "Microsoft.Insights/Register/Action",
+            "display": {
+              "publisher": "Microsoft",
+              "provider": "Microsoft Monitoring Insights",
+              "resource": "Microsoft.Insights",
+              "operation": "Register Microsoft.Insights",
+              "description": "Register the microsoft insights provider"
+            },
+            "properties": {}
+          }
+        ]
+      }
+    }
+  }
+}

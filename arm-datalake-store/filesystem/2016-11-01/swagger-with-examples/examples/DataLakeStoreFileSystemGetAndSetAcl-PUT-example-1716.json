@@ -1,0 +1,14 @@
+{
+  "parameters": {
+    "setPermissionFilePath": "%2F",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "op": "SETACL",
+    "aclspec": "user::rwx%2Cgroup::rwx%2Cother::rwx"
+  },
+  "responses": {
+    "200": {
+      "body": ""
+    }
+  }
+}

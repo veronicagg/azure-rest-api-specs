@@ -1,0 +1,36 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-8028",
+    "topicName": "sdk-Topics-3490",
+    "authorizationRuleName": "sdk-AuthRules-6351",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "name": "sdk-AuthRules-6351",
+      "properties": {
+        "rights": [
+          "Listen",
+          "Send"
+        ]
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-8028/topics/sdk-Topics-3490/authorizationRules/sdk-AuthRules-6351",
+        "name": "sdk-AuthRules-6351",
+        "type": "Microsoft.ServiceBus/AuthorizationRules",
+        "location": "Australia East",
+        "tags": null,
+        "properties": {
+          "rights": [
+            "Listen",
+            "Send"
+          ]
+        }
+      }
+    }
+  }
+}

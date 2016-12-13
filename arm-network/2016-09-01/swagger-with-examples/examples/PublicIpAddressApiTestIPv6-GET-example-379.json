@@ -1,0 +1,140 @@
+{
+  "parameters": {
+    "subscriptionId": "a083c30e-d4e5-4dc1-b310-02aaf36b316a",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "csmipv6publicip9872",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/csmrg8131/providers/Microsoft.Network/publicIPAddresses/csmipv6publicip9872",
+            "etag": "W/\"d4caeead-1943-4473-b3fb-c7e94c0b4d1e\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "eastus",
+            "tags": {
+              "key": "value"
+            },
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "fa5ad299-beb3-4dfc-b523-387a6dbd6028",
+              "publicIPAddressVersion": "IPv6",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "domainNameLabel": "csmdnslabelpublicip1406",
+                "fqdn": "csmdnslabelpublicip1406.eastus.cloudapp.azure.com"
+              }
+            }
+          },
+          {
+            "name": "vmPublicIp",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-2d6e75cb-db49-424e-b0d1-faa7894136ab/providers/Microsoft.Network/publicIPAddresses/vmPublicIp",
+            "etag": "W/\"c2862ada-0935-4b78-a489-9d4c7eb8b318\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "84dad73a-7dac-4a0c-91cd-191e88fe16df",
+              "ipAddress": "23.101.36.54",
+              "publicIPAddressVersion": "IPv4",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "domainNameLabel": "nrpcsme2etest-vm-ip-4d87520c-c6d5-453a-ab61-9b6c3534a38e",
+                "fqdn": "nrpcsme2etest-vm-ip-4d87520c-c6d5-453a-ab61-9b6c3534a38e.westus.validation.cloudapp.azure.com"
+              },
+              "ipConfiguration": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-2d6e75cb-db49-424e-b0d1-faa7894136ab/providers/Microsoft.Network/networkInterfaces/networkInterface/ipConfigurations/ipconfig"
+              }
+            }
+          },
+          {
+            "name": "vmPublicIpv4160331015601-d766b22a503844e38b48834c3769d086",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-f140753a-04ec-4e0e-bb6a-6f34501168d0/providers/Microsoft.Network/publicIPAddresses/vmPublicIpv4160331015601-d766b22a503844e38b48834c3769d086",
+            "etag": "W/\"e2181de3-451f-4b22-bb11-bf6c33783ee2\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "69ee02df-9ccd-408d-bcff-4abf3d265381",
+              "ipAddress": "23.101.35.144",
+              "publicIPAddressVersion": "IPv4",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "domainNameLabel": "nrpe2e-ipv4-160331015601-d766b22a503844e38b48834c3769d086",
+                "fqdn": "nrpe2e-ipv4-160331015601-d766b22a503844e38b48834c3769d086.westus.validation.cloudapp.azure.com"
+              },
+              "ipConfiguration": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-f140753a-04ec-4e0e-bb6a-6f34501168d0/providers/Microsoft.Network/loadBalancers/NRP-IPv6-LB-160331015601-d766b22a503844e38b48834c3769d086/frontendIPConfigurations/frontend1"
+              }
+            }
+          },
+          {
+            "name": "vmPublicIpv6160331015601-3b27c1358f774f1cbcf28d65e2bc1083",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-f140753a-04ec-4e0e-bb6a-6f34501168d0/providers/Microsoft.Network/publicIPAddresses/vmPublicIpv6160331015601-3b27c1358f774f1cbcf28d65e2bc1083",
+            "etag": "W/\"1684f770-b459-42df-a3dd-616136fbe8f0\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "4b51fc06-1121-4c74-85ea-a51538c497b6",
+              "ipAddress": "2603:1030:409::3d",
+              "publicIPAddressVersion": "IPv6",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "domainNameLabel": "nrpe2e-ipv6-160331015601-3b27c1358f774f1cbcf28d65e2bc1083",
+                "fqdn": "nrpe2e-ipv6-160331015601-3b27c1358f774f1cbcf28d65e2bc1083.westus.validation.cloudapp.azure.com"
+              },
+              "ipConfiguration": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpcsme2etest-f140753a-04ec-4e0e-bb6a-6f34501168d0/providers/Microsoft.Network/loadBalancers/NRP-IPv6-LB-160331015601-d766b22a503844e38b48834c3769d086/frontendIPConfigurations/IPv6Frontend"
+              }
+            }
+          },
+          {
+            "name": "GwPip1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroupcc496626-4/providers/Microsoft.Network/publicIPAddresses/GwPip1",
+            "etag": "W/\"92c05166-2f30-4bfd-999c-46d371f02268\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "c93d69af-1aaa-415b-bd24-15462f0392ba",
+              "ipAddress": "137.116.25.115",
+              "publicIPAddressVersion": "IPv4",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "ipConfiguration": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroupcc496626-4/providers/Microsoft.Network/virtualNetworkGateways/VnetGw1/ipConfigurations/vnetGatewayConfig"
+              }
+            }
+          },
+          {
+            "name": "publicIp1",
+            "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroupdc4dbb7b-f/providers/Microsoft.Network/publicIPAddresses/publicIp1",
+            "etag": "W/\"f5df5214-54e8-414a-9f35-52364f30fa5d\"",
+            "type": "Microsoft.Network/publicIPAddresses",
+            "location": "westus",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "resourceGuid": "ca96ccb2-4d5f-4769-a6b0-6aca9ac4d36f",
+              "ipAddress": "137.116.25.97",
+              "publicIPAddressVersion": "IPv4",
+              "publicIPAllocationMethod": "Dynamic",
+              "idleTimeoutInMinutes": 4,
+              "dnsSettings": {
+                "fqdn": "c66f8705-1c53-488d-970d-70793ffd5dca.cloudapp.net"
+              },
+              "ipConfiguration": {
+                "id": "/subscriptions/a083c30e-d4e5-4dc1-b310-02aaf36b316a/resourceGroups/nrpTestResourceGroupdc4dbb7b-f/providers/Microsoft.Network/applicationGateways/applicationGateway1/frontendIPConfigurations/appGatewayFrontendIP"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "roleAssignmentId": "subscriptions",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleName": "Virtual Machine Contributor",
+          "type": "BuiltInRole",
+          "description": "Lets you manage virtual machines, but not access to them, and not the virtual network or storage account they’re connected to.",
+          "assignableScopes": [
+            "/"
+          ],
+          "permissions": [
+            {
+              "actions": [
+                "Microsoft.Storage/storageAccounts/read",
+                "Microsoft.Storage/storageAccounts/listKeys/action",
+                "Microsoft.Network/virtualNetworks/read",
+                "Microsoft.Network/virtualNetworks/subnets/join/action",
+                "Microsoft.Network/loadBalancers/read",
+                "Microsoft.Network/loadBalancers/backendAddressPools/join/action",
+                "Microsoft.Network/loadBalancers/inboundNatRules/join/action",
+                "Microsoft.Network/loadBalancers/inboundNatPools/join/action",
+                "Microsoft.Network/publicIPAddresses/read",
+                "Microsoft.Network/publicIPAddresses/join/action",
+                "Microsoft.Network/networkSecurityGroups/read",
+                "Microsoft.Network/networkSecurityGroups/join/action",
+                "Microsoft.Network/networkInterfaces/*",
+                "Microsoft.Network/locations/*",
+                "Microsoft.Network/applicationGateways/backendAddressPools/join/action",
+                "Microsoft.Compute/virtualMachines/*",
+                "Microsoft.Compute/virtualMachineScaleSets/*",
+                "Microsoft.Compute/availabilitySets/*",
+                "Microsoft.Compute/locations/*",
+                "Microsoft.Authorization/*/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/read",
+                "Microsoft.Resources/subscriptions/resourceGroups/deployments/*",
+                "Microsoft.Resources/deployments/*",
+                "Microsoft.Insights/alertRules/*",
+                "Microsoft.Support/*"
+              ],
+              "notActions": []
+            }
+          ],
+          "createdOn": "2015-06-02T00:18:27.3542698Z",
+          "updatedOn": "2015-11-11T22:09:35.9178935Z",
+          "createdBy": null,
+          "updatedBy": null
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c",
+        "type": "Microsoft.Authorization/roleDefinitions",
+        "name": "9980e02c-c2be-4d73-94e8-173b1dc7cf3c"
+      }
+    }
+  }
+}

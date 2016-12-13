@@ -1,0 +1,54 @@
+{
+  "parameters": {
+    "subscriptionId": "9532a63e-f2eb-4649-bb23-5ed01077ce80",
+    "resourceGroupName": "csmrg7817",
+    "networkInterfaceName": "azsmnet9670",
+    "api-version": "2016-09-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "azsmnet9670",
+        "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7817/providers/Microsoft.Network/networkInterfaces/azsmnet9670",
+        "etag": "W/\"8e987e9a-ec41-43c9-89a0-053add91fb56\"",
+        "location": "westus",
+        "tags": {
+          "key": "value"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "resourceGuid": "7a901fdb-b92a-4443-ae6b-79abb4d3481e",
+          "ipConfigurations": [
+            {
+              "name": "azsmnet5670",
+              "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7817/providers/Microsoft.Network/networkInterfaces/azsmnet9670/ipConfigurations/azsmnet5670",
+              "etag": "W/\"8e987e9a-ec41-43c9-89a0-053add91fb56\"",
+              "properties": {
+                "provisioningState": "Succeeded",
+                "privateIPAddress": "10.0.0.4",
+                "privateIPAllocationMethod": "Dynamic",
+                "subnet": {
+                  "id": "/subscriptions/9532a63e-f2eb-4649-bb23-5ed01077ce80/resourceGroups/csmrg7817/providers/Microsoft.Network/virtualNetworks/azsmnet4388/subnets/azsmnet9996"
+                },
+                "primary": true,
+                "privateIPAddressVersion": "IPv4"
+              }
+            }
+          ],
+          "dnsSettings": {
+            "dnsServers": [
+              "1.0.0.1",
+              "1.0.0.2"
+            ],
+            "appliedDnsServers": [],
+            "internalDnsNameLabel": "idnstest",
+            "internalFqdn": "idnstest.5mcjnrz1wmuenhkiypi055jltg.dx.internal.cloudapp.net",
+            "internalDomainNameSuffix": "5mcjnrz1wmuenhkiypi055jltg.dx.internal.cloudapp.net"
+          },
+          "enableIPForwarding": false
+        },
+        "type": "Microsoft.Network/networkInterfaces"
+      }
+    }
+  }
+}

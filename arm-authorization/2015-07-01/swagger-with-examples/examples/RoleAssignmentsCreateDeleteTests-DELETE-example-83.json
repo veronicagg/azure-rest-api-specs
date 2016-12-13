@@ -1,0 +1,25 @@
+{
+  "parameters": {
+    "scope": "subscriptions",
+    "roleAssignmentName": "roleAssignments",
+    "api-version": "2015-07-01"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "properties": {
+          "roleDefinitionId": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleDefinitions/de139f84-1756-47ae-9be6-808fbbe84772",
+          "principalId": "62de6b75-34e5-4704-9853-981d0e68d929",
+          "scope": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f",
+          "createdOn": "2015-11-30T06:51:25.8106474Z",
+          "updatedOn": "2015-11-30T06:51:25.8106474Z",
+          "createdBy": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0",
+          "updatedBy": "f8d526a0-54eb-4941-ae69-ebf4a334d0f0"
+        },
+        "id": "/subscriptions/4004a9fd-d58e-48dc-aeb2-4a4aec58606f/providers/Microsoft.Authorization/roleAssignments/8d728b63-596b-4ebd-8d34-90f0cfc5c0c6",
+        "type": "Microsoft.Authorization/roleAssignments",
+        "name": "8d728b63-596b-4ebd-8d34-90f0cfc5c0c6"
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "parameters": {
+    "subscriptionId": "8fbd19e9-e8e0-4224-89f6-b1d5d86fb4c4",
+    "resourceGroupName": "cdnResourceGroup6649",
+    "profileName": "profile5996",
+    "endpointName": "endpoint4366",
+    "originName": "origin1",
+    "api-version": "2016-10-02",
+    "originUpdateProperties": {
+      "properties": {
+        "httpPort": 99999,
+        "httpsPort": -2000
+      }
+    }
+  },
+  "responses": {
+    "400": {
+      "body": {
+        "error": {
+          "code": "BadRequest",
+          "message": "Property 'Origin.HttpPort' cannot be set to '99999'. Acceptable values are within range [1, 65535]; \nProperty 'Origin.HttpsPort' cannot be set to '-2000'. Acceptable values are within range [1, 65535]"
+        }
+      }
+    }
+  }
+}

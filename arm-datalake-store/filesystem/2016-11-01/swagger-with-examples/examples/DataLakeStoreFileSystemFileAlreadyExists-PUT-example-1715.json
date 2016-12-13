@@ -1,0 +1,21 @@
+{
+  "parameters": {
+    "setPermissionFilePath": "SDKTestFolder01%2FSDKTestFile01.txt4763",
+    "api-version": "2016-11-01",
+    "expanded": "true",
+    "syncFlag": "DATA",
+    "op": "CREATE",
+    "write": "true"
+  },
+  "responses": {
+    "403": {
+      "body": {
+        "RemoteException": {
+          "exception": "FileAlreadyExistsException",
+          "message": "[55dceb5e-6535-4861-8a48-05fb1da08fe7]][Op=CREATE][[<openHandle>d__28::MoveNext::0x83090009]] Path /SDKTestFolder01/SDKTestFile01.txt4763 already exists",
+          "javaClassName": "org.apache.hadoop.fs.FileAlreadyExistsException"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "parameters": {
+    "subscriptionId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5",
+    "resourceGroupName": "asfsdfsadfsadf",
+    "namespaceName": "sdk-Namespace-3746",
+    "api-version": "2015-08-01",
+    "parameters": {
+      "location": "Australia East",
+      "sku": {
+        "name": "Standard",
+        "tier": "Standard"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "id": "/subscriptions/69d753c5-9c09-46a5-ad79-5d71abac3fe5/resourceGroups/asfsdfsadfsadf/providers/Microsoft.ServiceBus/namespaces/sdk-Namespace-3746",
+        "name": "sdk-Namespace-3746",
+        "type": "Microsoft.ServiceBus/namespaces",
+        "location": "Australia East",
+        "kind": "Messaging",
+        "sku": {
+          "name": "Standard",
+          "tier": "Standard"
+        },
+        "tags": null,
+        "properties": {
+          "provisioningState": "Unknown",
+          "metricId": "69d753c5-9c09-46a5-ad79-5d71abac3fe5:sdk-Namespace-3746",
+          "enabled": false,
+          "namespaceType": "Messaging",
+          "messagingSku": 2
+        }
+      }
+    }
+  }
+}
