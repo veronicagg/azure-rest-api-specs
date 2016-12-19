@@ -19,7 +19,9 @@
     "z-schema": "^3.16.1"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "openapi-validator-tools": "git+https://github.com/Azure/openapi-validation-tools.git",
+    "swagger-tools": "^0.10.1"
   },
   "homepage": "https://github.com/azure/azure-rest-api-specs",
   "repository": {
@@ -30,6 +32,6 @@
     "url": "http://github.com/azure/azure-rest-api-specs/issues"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 3000"
   }
 }
