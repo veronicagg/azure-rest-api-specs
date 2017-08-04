@@ -586,7 +586,7 @@ Links: [Index](#index) | [Error vs. Warning](#error-vs-warning) | [Automated Rul
 Links: [Index](#index) | [Error vs. Warning](#error-vs-warning) | [Automated Rules](#automated-rules) | [RPC](#rpc-violations): [Errors](#rpc-errors) or [Warnings](#rpc-warnings) | [SDK](#sdk-violations): [Errors](#sdk-errors) or [Warnings](#sdk-warnings)
 
 ### <a name="R2004" />R2004 NonApplicationJsonType
-**Output Message**: Only content-type 'application/json' is supported by ARM..
+**Output Message**: Only 'application/json' content-type is supported by ARM..
 
 **Description**: Verifies whether operation supports "application/json" as consumes or produces section.
 
