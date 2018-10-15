@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "version": "2018-01-31",
+    "version": "2018-10-03-preview",
     "title": "ConsumptionManagementClient",
     "description": "Consumption management client provides access to consumption resources for Azure Enterprise Subscriptions."
   },
@@ -2081,7 +2081,7 @@
       "in": "query",
       "required": true,
       "type": "string",
-      "description": "Version of the API to be used with the client request. The current version is 2018-01-31."
+      "description": "Version of the API to be used with the client request. The current version is 2018-10-03-preview."
     },
     "subscriptionIdParameter": {
       "name": "subscriptionId",
