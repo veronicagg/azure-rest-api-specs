@@ -3,7 +3,7 @@
   "info": {
     "title": "Relay API",
     "description": "Use these API to manage Azure Relay resources through Azure Resource Manager.",
-    "version": "2017-04-01",
+    "version": "2018-10-02",
     "x-ms-code-generation-settings": { "name": "RelayManagementClient" }
   },
   "host": "management.azure.com",

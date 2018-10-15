@@ -1,6 +1,6 @@
 {
   "parameters": {
-    "api-version": "2017-04-01",
+    "api-version": "2018-10-02",
     "subscriptionId": "8c246e6a-cbc6-4a87-aff1-d6a886f376ef"
   },
   "responses": {
