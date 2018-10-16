@@ -2,7 +2,7 @@
   "parameters": {
     "virtualNetworkName": "vnetName",
     "resourceGroupName": "rg1",
-    "api-version": "2017-03-01",
+    "api-version": "2020-10-02",
     "subscriptionId": "subid"
   },
   "responses": {
