@@ -4,10 +4,10 @@
 
 This is the AutoRest configuration file for Network.
 
-
-
 ---
+
 ## Getting Started
+
 To build the SDK for FrontDoor, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -15,22 +15,33 @@ To build the SDK for FrontDoor, simply [Install AutoRest](https://aka.ms/autores
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
-
-
 ### Basic Information
+
 These are the global settings for the FrontDoor API.
 
 ``` yaml
 title: FrontDoorManagementClient
 description: FrontDoor Client
 openapi-type: arm
-tag: package-2018-08-preview
+tag: package-2018-01
 ```
 
+
+### Tag: package-2018-01
+
+These settings apply only when `--tag=package-2018-01` is specified on the command line.
+
+```yaml $(tag) == 'package-2018-01'
+input-file:
+  - Microsoft.Network/stable/2018-01-03/frontdoor.json
+  - Microsoft.Network/stable/2018-01-03/network.json
+  - Microsoft.Network/stable/2018-01-03/webapplicationfirewall.json
+```
 ### Tag: package-2018-08-preview
 
 These settings apply only when `--tag=package-2018-08-preview` is specified on the command line.
@@ -48,8 +59,8 @@ directive:
 ```
 
 ---
-# Code Generation
 
+# Code Generation
 
 ## Swagger to SDK
 
@@ -64,7 +75,6 @@ swagger-to-sdk:
   - repo: azure-sdk-for-js
   - repo: azure-sdk-for-node
 ```
-
 
 ## C#
 
