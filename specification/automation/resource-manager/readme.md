@@ -5,7 +5,9 @@
 This is the AutoRest configuration file for Automation.
 
 ---
+
 ## Getting Started
+
 To build the SDK for Automation, simply [Install AutoRest](https://aka.ms/autorest/install) and in this folder, run:
 
 > `autorest`
@@ -13,21 +15,51 @@ To build the SDK for Automation, simply [Install AutoRest](https://aka.ms/autore
 To see additional help and options, run:
 
 > `autorest --help`
+
 ---
 
 ## Configuration
 
 =======
+
 ### Basic Information
+
 These are the global settings for the Automation API.
 
 ``` yaml
 title: AutomationClient
 description: Automation Client
 openapi-type: arm
-tag: package-2018-06-preview
+tag: package-2025-01
 ```
 
+
+### Tag: package-2025-01
+
+These settings apply only when `--tag=package-2025-01` is specified on the command line.
+
+```yaml $(tag) == 'package-2025-01'
+input-file:
+  - Microsoft.Automation/stable/2025-01-01/account.json
+  - Microsoft.Automation/stable/2025-01-01/certificate.json
+  - Microsoft.Automation/stable/2025-01-01/connection.json
+  - Microsoft.Automation/stable/2025-01-01/connectionType.json
+  - Microsoft.Automation/stable/2025-01-01/credential.json
+  - Microsoft.Automation/stable/2025-01-01/dscCompilationJob.json
+  - Microsoft.Automation/stable/2025-01-01/dscConfiguration.json
+  - Microsoft.Automation/stable/2025-01-01/dscNode.json
+  - Microsoft.Automation/stable/2025-01-01/dscNodeConfiguration.json
+  - Microsoft.Automation/stable/2025-01-01/hybridRunbookWorkerGroup.json
+  - Microsoft.Automation/stable/2025-01-01/job.json
+  - Microsoft.Automation/stable/2025-01-01/jobSchedule.json
+  - Microsoft.Automation/stable/2025-01-01/linkedWorkspace.json
+  - Microsoft.Automation/stable/2025-01-01/module.json
+  - Microsoft.Automation/stable/2025-01-01/runbook.json
+  - Microsoft.Automation/stable/2025-01-01/schedule.json
+  - Microsoft.Automation/stable/2025-01-01/variable.json
+  - Microsoft.Automation/stable/2025-01-01/watcher.json
+  - Microsoft.Automation/stable/2025-01-01/webhook.json
+```
 ### Tag: package-2015-10
 
 These settings apply only when `--tag=package-2015-10` is specified on the command line.
@@ -53,7 +85,6 @@ input-file:
 - Microsoft.Automation/stable/2015-10-31/variable.json
 - Microsoft.Automation/stable/2015-10-31/webhook.json
 ```
-
 
 ### Tag: package-2017-05-preview
 
@@ -157,7 +188,9 @@ input-file:
 ```
 
 ---
+
 ## Suppression
+
 ``` yaml
 directive:
   - suppress: RequiredPropertiesMissingInResourceModel
@@ -184,6 +217,7 @@ directive:
 ```
 
 ---
+
 # Code Generation
 
 ## Swagger to SDK
@@ -201,7 +235,6 @@ swagger-to-sdk:
     after_scripts:
       - bundle install && rake arm:regen_all_profiles['azure_mgmt_automation']
 ```
-
 
 ## C#
 
@@ -234,11 +267,13 @@ python:
   package-version: 0.3.0
   clear-output-folder: true
 ```
+
 ``` yaml $(python) && $(python-mode) == 'update'
 python:
   no-namespace-folders: true
   output-folder: $(python-sdks-folder)/azure-mgmt-automation/azure/mgmt/automation
 ```
+
 ``` yaml $(python) && $(python-mode) == 'create'
 python:
   basic-setup-py: true
@@ -282,5 +317,3 @@ java:
 regenerate-manager: true
 generate-interface: true
 ```
-
-
