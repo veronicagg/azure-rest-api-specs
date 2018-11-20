@@ -4,7 +4,7 @@
     "resourceGroupName": "rg",
     "automationAccountName": "myAutomationAccount28",
     "connectionName": "myConnection",
-    "api-version": "2015-10-31",
+    "api-version": "2025-01-01",
     "parameters": {
       "name": "myConnection",
       "properties": {

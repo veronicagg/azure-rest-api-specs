@@ -4,7 +4,7 @@
     "resourceGroupName": "rg",
     "automationAccountName": "sampleAccount9",
     "variableName": "sampleVariable",
-    "api-version": "2015-10-31"
+    "api-version": "2025-01-01"
   },
   "responses": {
     "200": {}

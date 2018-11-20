@@ -3,7 +3,7 @@
     "subscriptionId": "subid",
     "resourceGroupName": "rg",
     "automationAccountName": "sampleAccount9",
-    "api-version": "2015-10-31"
+    "api-version": "2025-01-01"
   },
   "responses": {
     "200": {
@@ -1109,7 +1109,7 @@
           }
         }
       ],
-      "nextLink": "https://management.azure.com:443/subscriptions/subid/resourceGroups/rg/providers/Microsoft.Automation/automationAccounts/sampleAccount9/variables?api-version=2015-10-31&$skip=100"
+      "nextLink": "https://management.azure.com:443/subscriptions/subid/resourceGroups/rg/providers/Microsoft.Automation/automationAccounts/sampleAccount9/variables?api-version=2025-01-01&$skip=100"
     }
   }
 }
