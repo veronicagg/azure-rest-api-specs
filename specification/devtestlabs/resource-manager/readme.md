@@ -203,4 +203,8 @@ directive:
     from: DTL.json
     where: $.definitions
     reason: testing warning suppression
+  - suppress: DescriptionAndTitleMissing
+    from: DTL.json
+    where: $.definitions.CloudError.properties.error
+    reason: testing error suppression
 ```
