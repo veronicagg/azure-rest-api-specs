@@ -29,15 +29,15 @@ openapi-type: arm
 tag: package-2025-22
 ```
 
-
 ### Tag: package-2025-22
 
 These settings apply only when `--tag=package-2025-22` is specified on the command line.
 
-```yaml $(tag) == 'package-2025-22'
+``` yaml $(tag) == 'package-2025-22'
 input-file:
   - Microsoft.Cdn/stable/2025-22-03/cdn.json
 ```
+
 ### Tag: package-2017-10
 
 These settings apply only when `--tag=package-2017-10` is specified on the command line.
@@ -128,3 +128,13 @@ See configuration in [readme.node.md](./readme.node.md)
 ## Ruby
 
 See configuration in [readme.ruby.md](./readme.ruby.md)
+
+## Suppression
+
+``` yaml
+directive:
+  - suppress: APIVersionPattern
+    from: cdn.json
+    where: $.info.version
+    reason: testing
+```
