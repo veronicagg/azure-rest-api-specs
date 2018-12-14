@@ -82,6 +82,10 @@ directive:
     from: BatchManagement.json
     where: $.definitions.UserAccount
     reason: This field contains a secret (password) and is not returned on a get (but is required on a PUT/PATCH). Previous discussions with the modelling team had said that this was the correct way to model this type of field.
+  - suppress: PostOperationIdContainsUrlVerb
+    from: BatchManagement.json
+    where: '$.paths["/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Batch/batchAccounts/{accountName}/syncAutoStorageKeys"].post.operationId'
+    reason: testing suppression
 ```
 
 ### Tag: package-2017-05
