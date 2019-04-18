@@ -1,0 +1,18 @@
+{
+  "parameters": {
+    "accountName": "sampleacct",
+    "resourceGroupName": "Service6Client",
+    "api-version": "2019-05-12",
+    "subscriptionId": "subid"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "sampleacct",
+        "location": "uswest",
+        "id": "/subscriptions/subid/resourceGroups/Service6Client/providers/Microsoft.Service6/batchAccounts/sampleacct",
+        "type": "Microsoft.Service6/Service6"
+      }
+    }
+  }
+}
